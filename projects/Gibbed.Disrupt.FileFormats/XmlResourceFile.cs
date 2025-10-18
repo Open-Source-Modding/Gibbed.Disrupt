@@ -257,11 +257,16 @@ namespace Gibbed.Disrupt.FileFormats
             private readonly Dictionary<uint, string> _Offsets = new Dictionary<uint, string>();
             private readonly Dictionary<string, uint> _Values = new Dictionary<string, uint>();
 
+            int count = 0;
+
             public string Read(uint index)
             {
                 if (this._Offsets.ContainsKey(index) == false)
                 {
-                    throw new KeyNotFoundException();
+                    string result = "ERROR_" + count;
+                    count++;
+                    return result;
+                    //throw new KeyNotFoundException();
                 }
 
                 return this._Offsets[index];
