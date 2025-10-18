@@ -23,6 +23,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Gibbed.IO;
 
 namespace Gibbed.Disrupt.FileFormats
@@ -154,11 +155,71 @@ namespace Gibbed.Disrupt.FileFormats
             }
 
             WriteCount(output, this._Fields.Count, false, endian);
+            // If values[0] = values[2] set breakpoint
+            byte[] v0 = new byte[4];
+            byte[] v2 = new byte[4];
+            int i = 0;
+            foreach (var kv in this._Fields)
+            {
+                if (i == 0)
+                    v0 = kv.Value;
+                else if (i == 2)
+                    v2 = kv.Value;
+                i++;
+            }
+
+            bool useFE = false;
+            bool newFE = false;
+            if (v0.SequenceEqual(v2) && this._Fields.Count >= 3 && v0.Length > 0 && v2.Length > 0)
+            {
+                useFE = true;
+            }
+            else
+            {
+                List<byte[]> values = new List<byte[]>();
+                foreach (var kv in this._Fields)
+                {
+                    byte[] currVal = kv.Value;
+                    if (currVal.Length == 4 && currVal[0] == 0 && currVal[1] == 0 && currVal[2] == 0 && currVal[3] == 0)
+                        continue;
+                    int count = 0;
+                    foreach (byte[] prevVal in values)
+                    {
+                        if (output.Position > 0x775000 && prevVal.SequenceEqual(currVal) && prevVal.Length >= 4 && currVal.Length >= 4)
+                        {
+                            newFE = true;
+                            Console.WriteLine("Child num: " + count);
+                        }
+                        count++;
+                    }
+                    values.Add(kv.Value);
+                }
+            }
+            if (newFE)
+            {
+                Console.WriteLine("Found new format");
+                Console.WriteLine("Current pos: " + output.Position.ToString("X8"));
+            }
+            i = 0;
+            long initPos = 0;
             foreach (var kv in this._Fields)
             {
                 output.WriteValueU32(kv.Key, endian);
-                WriteCount(output, kv.Value.Length, false, endian);
-                output.WriteBytes(kv.Value);
+                if (!useFE || i != 2)
+                {
+                    WriteCount(output, kv.Value.Length, false, endian);
+                    if (i == 0)
+                        initPos = output.Position;
+                    output.WriteBytes(kv.Value);
+                }
+                else
+                {
+                    output.WriteValueU8(0xFE);
+                    // Need to write the number of bytes between
+                    byte offset = (byte) (output.Position - initPos);
+                    output.WriteBytes(new byte[] { offset, 0, 0, 0 });
+                }
+                i++;
             }
 
             foreach (var child in this.Children)
@@ -187,6 +248,7 @@ namespace Gibbed.Disrupt.FileFormats
             }
         }
 
+        // Read node, calls leaf node version
         public static BinaryObject Deserialize(
             BinaryObject parent,
             Stream input,
@@ -200,7 +262,7 @@ namespace Gibbed.Disrupt.FileFormats
 
             if (count == 0xFE)
             {
-                //Console.WriteLine("Pointer");
+                Console.WriteLine("Pointer");
             }
 
             var childCount = ReadCount(input, out var isOffset, endian);
@@ -218,6 +280,7 @@ namespace Gibbed.Disrupt.FileFormats
             return child;
         }
 
+        // Leaf nodes, can be recursive
         private void Deserialize(
             Stream input,
             uint childCount,
@@ -241,6 +304,10 @@ namespace Gibbed.Disrupt.FileFormats
 
                 var position = input.Position;
                 var size = ReadCount(input, out isOffset, endian);
+                if (input.Position > 0x775000)
+                {
+                    Console.WriteLine("Test");
+                }
                 if (isOffset == true)
                 {
                     input.Seek(position - size, SeekOrigin.Begin);

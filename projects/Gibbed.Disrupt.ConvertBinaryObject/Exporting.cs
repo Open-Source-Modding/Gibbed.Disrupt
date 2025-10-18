@@ -547,14 +547,6 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                     {
                         writer.WriteAttributeString("name", "text_MoveBlendID");
                     }
-                    else if (kv.Key == 0x81D483EF)
-                    {
-                        writer.WriteAttributeString("name", "text_MoveStateID");
-                    }
-                    else if (kv.Key == 0x33144E70)
-                    {
-                        writer.WriteAttributeString("name", "text_PMSValue");
-                    }
                     else
                     {
                         writer.WriteAttributeString("hash", kv.Key.ToString("X8"));
@@ -566,7 +558,7 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
 
                     if (fieldDef == null)
                     {
-                        if (kv.Key == 0x1063B98A || kv.Key == 0x641EEF6F || kv.Key == 0x81D483EF || kv.Key == 0x33144E70)
+                        if (kv.Key == 0x1063B98A || kv.Key == 0x641EEF6F)
                         {
                             writer.WriteAttributeString("type", FieldHandling.GetTypeName(FieldType.String));
                             FieldHandling.Export(
