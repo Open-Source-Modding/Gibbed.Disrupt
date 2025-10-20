@@ -95,21 +95,63 @@ namespace Gibbed.Disrupt.FileFormats
             get { return this[Hashing.CRC32.Compute(name)]; }
             set { this[Hashing.CRC32.Compute(name)] = value; }
         }
-#endregion
+
+        public override bool Equals(object obj)
+        {
+            if (!(obj is BinaryObject))
+            {
+                return false;
+            }
+            BinaryObject other = (BinaryObject)obj;
+            if (NameHash != other.NameHash)
+                return false;
+            if (Fields.Count != other.Fields.Count) return false;
+            foreach (uint key in Fields.Keys)
+            {
+                if (!other.Fields.ContainsKey(key))
+                    return false;
+                bool equal = Fields[key].SequenceEqual(other.Fields[key]);
+                if (!equal)
+                    return false;
+            }
+            return true;
+        }
+        #endregion
+
+        // Get the offset of the current node if it matches one of the previous children
+        // otherwise return -1
+        private int GetChildOffset(List<BinaryObject> pointers, BinaryObject node)
+        {
+            for (int i = 0; i < pointers.Count; i++)
+            {
+                BinaryObject ptr = pointers[i];
+                if (node.Equals(ptr))
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
         public void Serialize(
             Stream output,
             ref uint totalObjectCount,
             ref uint totalValueCount,
+            List<BinaryObject> pointers,
             Endian endian)
         {
-            pointers.Add(this);
+            //pointers.Add(this);
             totalObjectCount += (uint)this.Children.Count;
             totalValueCount += (uint)this._Fields.Count;
 
             WriteCount(output, this.Children.Count, false, endian);
 
             output.WriteValueU32(this.NameHash, endian);
+
+            if (this.NameHash == 0xEC1E98BF || this.NameHash == 0xFBB9B1D9)
+            {
+                Console.WriteLine("Test");
+            }
 
             WriteCount(output, this._Fields.Count, false, endian);
             foreach (var kv in this._Fields)
@@ -125,24 +167,17 @@ namespace Gibbed.Disrupt.FileFormats
                 {
                     int childOffset = GetChildOffset(pointers, child);
                     if (childOffset == -1)
-                    {
-                        child.Serialize(
-                            output,
-                            ref totalObjectCount,
-                            ref totalValueCount,
-                            pointers, endian);
-                    }
+                        pointers.Add(child);
                     else
-                    {
                         Console.WriteLine("GetChildOffset: " + childOffset);
-                        output.WriteValueU8(0xFE);
-                        // Need to write the number of bytes between
-                        uint offset = (uint)(childOffset);
-                        output.WriteValueU32(offset);
-                    }
+                    output.WriteValueU8(0xFE);
+                    // Need to write the number of bytes between
+                    uint offset = (uint)(childOffset);
+                    output.WriteValueU32(offset);
                 }
                 else
                 {
+                    pointers.Add(child);
                     child.Serialize(
                         output,
                         ref totalObjectCount,

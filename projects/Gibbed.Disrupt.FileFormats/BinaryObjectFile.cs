@@ -52,10 +52,12 @@ namespace Gibbed.Disrupt.FileFormats
             {
                 uint totalObjectCount = 0, totalValueCount = 0;
 
+                var pointers = new List<BinaryObject>();
+
                 this.Root.Serialize(
                     data,
                     ref totalObjectCount, ref totalValueCount,
-                    endian);
+                    pointers, endian);
                 data.Flush();
                 data.Position = 0;
 
