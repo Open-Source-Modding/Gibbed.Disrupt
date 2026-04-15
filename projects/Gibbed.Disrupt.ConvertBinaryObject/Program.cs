@@ -26,6 +26,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.XPath;
 using Gibbed.Disrupt.FileFormats;
+using Gibbed.Disrupt.FileFormats.Hashing;
 using NDesk.Options;
 
 namespace Gibbed.Disrupt.ConvertBinaryObject
@@ -39,6 +40,27 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
 
         private static void Main(string[] args)
         {
+            /*
+            ulong x = 0xE8A07076A1FD47B8;
+            ulong y = 13278860896243851496;
+            Console.WriteLine(0xCBF29CE484222325);
+
+            Console.WriteLine(FNV1a64.Compute("animations\\locomotion\\ai\\attractor\\a00-000-00_attractor-on-spot-look-front_mnpc_000f_unaware_pisto.mab").ToString("x10"));
+
+            Console.WriteLine(x.ToString("x10"));
+            Console.WriteLine(y.ToString("x10"));
+
+            string[] lines = File.ReadAllLines("C:\\Unpack_Decomp\\bin\\Debug\\net472\\filelist.txt");
+            foreach (string line in lines)
+            {
+                ulong hash = FNV1a64.Compute(line);
+                if (hash == x || hash == y)
+                {
+                    Console.WriteLine(line);
+                }
+            }
+            return;*/
+
             var mode = Mode.Unknown;
             string baseName = "";
             bool showHelp = false;

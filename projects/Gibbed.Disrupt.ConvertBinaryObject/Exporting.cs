@@ -539,6 +539,30 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                     {
                         writer.WriteAttributeString("name", fieldDef.Name);
                     }
+                    else if (kv.Key == 0x1063B98A)
+                    {
+                        writer.WriteAttributeString("name", "text_AnimID");
+                    }
+                    else if (kv.Key == 0x641EEF6F)
+                    {
+                        writer.WriteAttributeString("name", "text_MoveBlendID");
+                    }
+                    else if (kv.Key == 0x81D483EF)
+                    {
+                        writer.WriteAttributeString("name", "text_MoveStateID");
+                    }
+                    else if (kv.Key == 0x33144E70)
+                    {
+                        writer.WriteAttributeString("name", "text_PMSValue");
+                    }
+                    else if (kv.Key == 0x202CAB8A)
+                    {
+                        writer.WriteAttributeString("name", "text_202CAB8A");
+                    }
+                    else if (kv.Key == 0x2D054845)
+                    {
+                        writer.WriteAttributeString("name", "LocalName");
+                    }
                     else
                     {
                         writer.WriteAttributeString("hash", kv.Key.ToString("X8"));
@@ -546,8 +570,24 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
 
                     if (fieldDef == null)
                     {
-                        writer.WriteAttributeString("type", FieldHandling.GetTypeName(FieldType.BinHex));
-                        writer.WriteBinHex(kv.Value, 0, kv.Value.Length);
+                        if (kv.Key == 0x1063B98A || kv.Key == 0x641EEF6F || kv.Key == 0x81D483EF || kv.Key == 0x33144E70 || kv.Key == 0x202CAB8A || kv.Key == 0x2D054845)
+                        {
+                            writer.WriteAttributeString("type", FieldHandling.GetTypeName(FieldType.String));
+                            FieldHandling.Export(
+                                fieldDef,
+                                FieldType.String,
+                                FieldType.Invalid,
+                                kv.Value,
+                                0,
+                                kv.Value.Length,
+                                writer,
+                                out _);
+                        }
+                        else
+                        {
+                            writer.WriteAttributeString("type", FieldHandling.GetTypeName(FieldType.BinHex));
+                            writer.WriteBinHex(kv.Value, 0, kv.Value.Length);
+                        }
                     }
                     else
                     {

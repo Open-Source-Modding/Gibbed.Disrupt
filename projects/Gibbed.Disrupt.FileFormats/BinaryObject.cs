@@ -103,6 +103,7 @@ namespace Gibbed.Disrupt.FileFormats
             ref uint totalValueCount,
             Endian endian)
         {
+            pointers.Add(this);
             totalObjectCount += (uint)this.Children.Count;
             totalValueCount += (uint)this._Fields.Count;
 
@@ -120,11 +121,34 @@ namespace Gibbed.Disrupt.FileFormats
 
             foreach (var child in this.Children)
             {
-                child.Serialize(
-                    output,
-                    ref totalObjectCount,
-                    ref totalValueCount,
-                    endian);
+                if (this.NameHash == 0x09DA31FB)
+                {
+                    int childOffset = GetChildOffset(pointers, child);
+                    if (childOffset == -1)
+                    {
+                        child.Serialize(
+                            output,
+                            ref totalObjectCount,
+                            ref totalValueCount,
+                            pointers, endian);
+                    }
+                    else
+                    {
+                        Console.WriteLine("GetChildOffset: " + childOffset);
+                        output.WriteValueU8(0xFE);
+                        // Need to write the number of bytes between
+                        uint offset = (uint)(childOffset);
+                        output.WriteValueU32(offset);
+                    }
+                }
+                else
+                {
+                    child.Serialize(
+                        output,
+                        ref totalObjectCount,
+                        ref totalValueCount,
+                        pointers, endian);
+                }
             }
         }
 
@@ -135,6 +159,14 @@ namespace Gibbed.Disrupt.FileFormats
             Endian endian)
         {
             long position = input.Position;
+
+            int count = input.ReadByte();
+            input.Position--;
+
+            if (count == 0xFE)
+            {
+                //Console.WriteLine("Pointer");
+            }
 
             var childCount = ReadCount(input, out var isOffset, endian);
 

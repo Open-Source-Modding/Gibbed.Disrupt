@@ -49,7 +49,7 @@ namespace Gibbed.Disrupt.FileFormats.Hashing
                 hash *= 0x100000001B3ul;
                 hash ^= t;
             }
-            return hash;
+            return (hash & 0x1FFFFFFFFFFFFFFFuL) | 0xA000000000000000uL;
         }
     }
 }
