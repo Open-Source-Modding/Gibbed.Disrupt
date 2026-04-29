@@ -71,6 +71,19 @@ namespace Gibbed.Disrupt.Packing
             throw new NotSupportedException();
         }
 
+        private static byte GetNameHashVersionForPlatform(Big.Platform platform)
+        {
+            switch (platform)
+            {
+                case Big.Platform.Win64: return 50;
+                case Big.Platform.Xenon: return 55;
+                case Big.Platform.PS3: return 55;
+                case Big.Platform.WiiU: return 58;
+                case Big.Platform.Any: return 50;
+            }
+            throw new NotSupportedException();
+        }
+
         internal struct PendingEntry
         {
             public string Name;
@@ -160,6 +173,7 @@ namespace Gibbed.Disrupt.Packing
                 Version = version.Value,
                 Platform = platform,
                 CompressionVersion = GetCompressionVersionForPlatform(platform),
+                NameHashVersion = GetNameHashVersionForPlatform(platform),
             };
 
             if (verbose == true)

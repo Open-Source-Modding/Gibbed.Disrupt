@@ -134,20 +134,27 @@ namespace Gibbed.Disrupt.Packing
                 fat.Deserialize(input);
             }
 
-            if (extractFiles == true)
             {
                 THash wrappedComputeNameHash(string s) =>
                     fat.ComputeNameHash(s, tryGetHashOverride);
                 manager.LoadListsFileNames(wrappedComputeNameHash, out var hashes);
 
-                using (var input = File.OpenRead(datPath))
+                // When --no-files is set we still want the resolved name listing,
+                // but don't open/read .dat or write anything.
+                Stream input = null;
+                try
                 {
+                    if (extractFiles == true)
+                    {
+                        input = File.OpenRead(datPath);
+                    }
+
                     var entries = fat.Entries.OrderBy(e => e.Offset).ToArray();
                     if (entries.Length > 0)
                     {
                         if (verbose == true)
                         {
-                            Console.WriteLine("Unpacking files...");
+                            Console.WriteLine(extractFiles ? "Unpacking files..." : "Listing files (--no-files)...");
                         }
 
                         long current = 0;
@@ -198,19 +205,26 @@ namespace Gibbed.Disrupt.Packing
                             }
 
                             var entryPath = Path.Combine(outputPath, entryName);
-                            if (overwriteFiles == false &&
+                            if (extractFiles == true &&
+                                overwriteFiles == false &&
                                 File.Exists(entryPath) == true)
                             {
                                 continue;
                             }
 
-                            if (verbose == true)
+                            // Print listing always when verbose; --no-files still prints.
+                            if (verbose == true || extractFiles == false)
                             {
                                 Console.WriteLine(
                                     "[{0}/{1}] {2}",
                                     current.ToString(CultureInfo.InvariantCulture).PadLeft(padding),
                                     total,
                                     entryName);
+                            }
+
+                            if (extractFiles == false)
+                            {
+                                continue;
                             }
 
                             input.Seek(entry.Offset, SeekOrigin.Begin);
@@ -227,6 +241,10 @@ namespace Gibbed.Disrupt.Packing
                             }
                         }
                     }
+                }
+                finally
+                {
+                    input?.Dispose();
                 }
             }
         }
@@ -255,8 +273,9 @@ namespace Gibbed.Disrupt.Packing
                     return false;
                 }
 
-                string type;
-                string extension;
+                string type = "unknown";
+                string extension = null;
+                if (input != null)
                 {
                     var guess = new byte[64];
                     int read = 0;

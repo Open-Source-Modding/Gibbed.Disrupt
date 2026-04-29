@@ -199,16 +199,16 @@ namespace Gibbed.Disrupt.Packing
                     outputPath);
             }
 
+            var breakdown = new Breakdown()
+            {
+                Known = tracking.Names.Distinct().Count(),
+                Total = tracking.Hashes.Distinct().Count(),
+            };
+            Console.WriteLine("{0}", breakdown);
             var statusPath = Path.Combine(listsPath, "files", "status.txt");
             using (var output = new StreamWriter(statusPath, false, new UTF8Encoding(false)))
             {
-                output.WriteLine(
-                    "{0}",
-                    new Breakdown()
-                    {
-                        Known = tracking.Names.Distinct().Count(),
-                        Total = tracking.Hashes.Distinct().Count(),
-                    });
+                output.WriteLine("{0}", breakdown);
 
                 // TODO(gibbed): breakdown all archives individually
             }
