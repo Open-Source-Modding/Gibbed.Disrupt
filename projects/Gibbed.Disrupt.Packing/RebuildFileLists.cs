@@ -137,7 +137,6 @@ namespace Gibbed.Disrupt.Packing
 
             var outputPaths = new List<string>();
 
-            var breakdown = new Breakdown();
             var tracking = new Tracking();
 
             Console.WriteLine("Processing...");
