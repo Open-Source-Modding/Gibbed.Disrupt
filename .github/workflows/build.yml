@@ -24,12 +24,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: recursive
 
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
 
       - name: Restore
         run: dotnet restore
@@ -46,7 +46,7 @@ jobs:
           7z a -r -tzip -mx=9 "-x!*/LICENSE.txt" "-x!*/.git*" disrupt_${version}_with-debug-symbols.zip ./LICENSE.txt ./README.txt git-log.txt bin/*.exe bin/*.dll bin/*.pdb bin/projects
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: disrupt-${{ matrix.configuration }}
           path: '*.zip'
