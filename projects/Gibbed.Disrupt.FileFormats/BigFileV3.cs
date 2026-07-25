@@ -25,6 +25,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.IO;
+using System.Xml;
 using Gibbed.IO;
 using BigEntry = Gibbed.Disrupt.FileFormats.Big.Entry<uint>;
 
@@ -119,6 +120,41 @@ namespace Gibbed.Disrupt.FileFormats
             }
 
             output.WriteValueU32(0, endian);
+        }
+
+        public void SerializeNfo(Stream output)
+        {
+            var settings = new XmlWriterSettings
+            {
+                Indent = true,
+                IndentChars = "\t",
+                OmitXmlDeclaration = true
+            };
+
+            using (var writer = XmlWriter.Create(output, settings))
+            {
+                writer.WriteStartElement("Root");
+                writer.WriteStartElement("common");
+
+                foreach (var entry in this.Entries)
+                {
+                    writer.WriteStartElement("File");
+
+                    writer.WriteAttributeString("Path", entry.Name ?? "");
+
+                    writer.WriteAttributeString("Crc", entry.NameHash.ToString(CultureInfo.InvariantCulture));
+
+                    writer.WriteAttributeString("FilePosition", entry.Offset.ToString(CultureInfo.InvariantCulture));
+                    writer.WriteAttributeString("FileSize", entry.CompressedSize.ToString(CultureInfo.InvariantCulture));
+
+                    writer.WriteAttributeString("FileTime", entry.DataHash.ToString(CultureInfo.InvariantCulture));
+
+                    writer.WriteEndElement();
+                }
+
+                writer.WriteEndElement(); // common
+                writer.WriteEndElement(); // Root
+            }
         }
 
         public void Deserialize(Stream input)

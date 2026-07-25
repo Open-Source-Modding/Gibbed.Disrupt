@@ -93,7 +93,7 @@ namespace Gibbed.Disrupt.Packing
 
             string fatPath = extras[0];
             string outputPath = extras.Count > 1 ? extras[1] : Path.ChangeExtension(fatPath, null) + "_unpack";
-            string datPath;
+            string datPath, nfoPath;
 
             Regex filter = null;
             if (string.IsNullOrEmpty(filterPattern) == false)
@@ -104,11 +104,25 @@ namespace Gibbed.Disrupt.Packing
             if (Path.GetExtension(fatPath) == ".dat")
             {
                 datPath = fatPath;
-                fatPath = Path.ChangeExtension(fatPath, ".fat");
+                fatPath = Path.ChangeExtension(datPath, ".fat");
+                nfoPath = Path.ChangeExtension(datPath, ".nfo");
+            }
+            else if (Path.GetExtension(fatPath) == ".nfo")
+            {
+                nfoPath = fatPath;
+                fatPath = Path.ChangeExtension(nfoPath, ".fat");
+                datPath = Path.ChangeExtension(nfoPath, ".dat");
+            }
+            else if (Path.GetExtension(fatPath) == ".dup")
+            {
+                nfoPath = Path.ChangeExtension(fatPath, ".nfo");
+                fatPath = Path.ChangeExtension(nfoPath, ".fat");
+                datPath = Path.ChangeExtension(nfoPath, ".dat");
             }
             else
             {
                 datPath = Path.ChangeExtension(fatPath, ".dat");
+                nfoPath = Path.ChangeExtension(fatPath, ".nfo");
             }
 
             if (verbose == true)
@@ -135,9 +149,24 @@ namespace Gibbed.Disrupt.Packing
             }
 
             {
-                THash wrappedComputeNameHash(string s) =>
-                    fat.ComputeNameHash(s, tryGetHashOverride);
-                manager.LoadListsFileNames(wrappedComputeNameHash, out var hashes);
+                INameLookup<THash> hashes;
+
+                if (File.Exists(nfoPath))
+                {
+                    using (var nfoInput = File.OpenRead(nfoPath))
+                    {
+                        var nfo = new BigFileInfo();
+                        nfo.Deserialize(nfoInput);
+                        hashes = new NfoNameLookup<THash>(nfo);
+                    }
+                }
+                else
+                {
+                    THash wrappedComputeNameHash(string s) =>
+                        fat.ComputeNameHash(s, tryGetHashOverride);
+                    manager.LoadListsFileNames(wrappedComputeNameHash, out var hashList);
+                    hashes = new HashListLookupAdapter<THash>(hashList);
+                }
 
                 // When --no-files is set we still want the resolved name listing,
                 // but don't open/read .dat or write anything.
@@ -253,7 +282,7 @@ namespace Gibbed.Disrupt.Packing
             Stream input,
             Big.IArchive<THash> archive,
             Big.Entry<THash> entry,
-            ProjectData.HashList<THash> hashes,
+            INameLookup<THash> hashes,
             Func<THash, string> renderHash,
             bool extractUnknowns,
             bool onlyUnknowns,
@@ -333,11 +362,16 @@ namespace Gibbed.Disrupt.Packing
 
         private static string FilterEntryName(string entryName)
         {
-            entryName = entryName.Replace(@"/", @"\");
-            if (entryName.StartsWith(@"\") == true)
+            char sep = Path.DirectorySeparatorChar;
+            char altSep = '\\';
+
+            entryName = entryName.Replace(altSep, sep);
+
+            if (entryName.StartsWith(sep.ToString()))
             {
                 entryName = entryName.Substring(1);
             }
+
             return entryName;
         }
     }

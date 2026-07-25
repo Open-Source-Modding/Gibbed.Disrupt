@@ -21,6 +21,8 @@
  */
 
 using System;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace Gibbed.Disrupt.FileFormats
 {
@@ -45,6 +47,57 @@ namespace Gibbed.Disrupt.FileFormats
             out ProjectData.HashList<T> hashList)
         {
             hashList = project.LoadLists("*.filelist", hasher, Modifier);
+        }
+    }
+
+    public interface INameLookup<THash>
+    {
+        string this[THash hash] { get; }
+    }
+
+    public class NfoNameLookup<THash> : INameLookup<THash>
+    {
+        private readonly Dictionary<string, string> _map;
+
+        public NfoNameLookup(BigFileInfo nfo)
+        {
+            _map = new Dictionary<string, string>();
+
+            foreach (var entry in nfo.Entries)
+            {
+                if (string.IsNullOrEmpty(entry.Path))
+                {
+                    continue;
+                }
+
+                var path = entry.Path.Replace("/", "\\").TrimStart('\\');
+                _map[entry.Crc] = path;
+            }
+        }
+
+        public string this[THash hash]
+        {
+            get
+            {
+                string key = string.Format(CultureInfo.InvariantCulture, "{0}", hash);
+                _map.TryGetValue(key, out var value);
+                return value;
+            }
+        }
+    }
+
+    public class HashListLookupAdapter<THash> : INameLookup<THash>
+    {
+        private readonly ProjectData.HashList<THash> _inner;
+
+        public HashListLookupAdapter(ProjectData.HashList<THash> inner)
+        {
+            _inner = inner;
+        }
+
+        public string this[THash hash]
+        {
+            get { return _inner[hash]; }
         }
     }
 }

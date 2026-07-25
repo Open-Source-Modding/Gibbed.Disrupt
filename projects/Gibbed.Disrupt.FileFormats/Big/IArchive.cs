@@ -38,6 +38,7 @@ namespace Gibbed.Disrupt.FileFormats.Big
         List<Entry<T>> Entries { get; }
 
         void Serialize(Stream output);
+        void SerializeNfo(Stream output);
         void Deserialize(Stream input);
 
         T ComputeNameHash(string s, TryGetHashOverride<T> getOverride);

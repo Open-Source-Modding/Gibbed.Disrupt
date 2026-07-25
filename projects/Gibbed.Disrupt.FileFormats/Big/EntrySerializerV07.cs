@@ -58,6 +58,8 @@ namespace Gibbed.Disrupt.FileFormats.Big
                 Offset = (long)d << 2 | ((c >> 30) & 0x3u),
                 CompressionScheme = (byte)((b >> 0) & 0x3u),
                 CompressedSize = (int)((c >> 0) & 0x3FFFFFFFu),
+                Name = null,
+                DataHash = 0,
             };
         }
     }
