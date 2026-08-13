@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhotodetectiontargetconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selTargetType" type="Enum"/>
+	<field name="bIsOpSpecific" type="Boolean"/>
+	<field name="entLandmarkLocateEntity" type="BinHex"/>
+	<field name="bIsHidden" type="Boolean"/>
+	<field name="bCanExpire" type="Boolean"/>
+	<field name="iMinTimeToLive" type="Int32"/>
+	<field name="iMaxTimeToLive" type="Int32"/>
+	<field name="entProgression" type="BinHex"/>
+	<field name="bUseAllModifiers" type="Boolean"/>
+	<field name="bAddTrackingInfo" type="Boolean"/>
+	<field name="vectorPosition" type="Vector3"/>
+	<field name="fRadius" type="Float"/>
+	<field name="bDisplayMapMarker" type="Boolean"/>
+	<object name="locstridTargetName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTargetDesc">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="RulesConfigs">
+		<object name="RuleConfig">
+			<field name="pdruleRuleConfig" type="BinHex"/>
+			<field name="iNumberOfEntitiesToValidate" type="Int32"/>
+		</object>
+	</object>
+	<object name="PossibleModifiers">
+		<object name="Modifier">
+			<field name="pdmodifModifier" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridOverrideObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

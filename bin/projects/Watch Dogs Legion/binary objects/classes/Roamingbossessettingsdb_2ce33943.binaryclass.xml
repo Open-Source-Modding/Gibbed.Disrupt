@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Roamingbossessettingsdb_2ce33943Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="bEnabled" type="Boolean"/>
+	<object name="BossesSettings">
+		<object name="BossSettings">
+			<field name="disNomadObjectId" type="BinHex"/>
+			<field name="hidSingleObject" type="Boolean"/>
+			<field name="hidKey" type="BinHex"/>
+			<field name="hidValidationFailed" type="Boolean"/>
+			<field name="hidName" type="BinHex"/>
+			<object name="Requirements">
+				<object name="Requirements">
+					<field name="selType" type="BinHex"/>
+					<field name="selAffiliation" type="BinHex"/>
+					<field name="fValue" type="Float"/>
+				</object>
+			</object>
+			<object name="Variations">
+				<object name="Variations">
+					<field name="disNomadObjectId" type="BinHex"/>
+					<field name="hidSingleObject" type="Boolean"/>
+					<field name="hidKey" type="BinHex"/>
+					<field name="hidValidationFailed" type="Boolean"/>
+					<field name="hidName" type="BinHex"/>
+					<field name="fWeight" type="Float"/>
+					<field name="opslistOpConfig" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

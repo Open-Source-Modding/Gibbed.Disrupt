@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Deliverygameplayglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="entMapIconEntity" type="BinHex"/>
+	<field name="bUseStoryIcon" type="Boolean"/>
+	<field name="fWarningsDuration" type="Float"/>
+	<field name="iAtDamagePercentage" type="Int32"/>
+	<field name="fVisibilityRangeForHealthBar" type="Float"/>
+	<field name="fPursuedTeammatesRadiusCheck" type="Float"/>
+	<field name="fTimeToGetBackInVehicleWhenPursued" type="Float"/>
+	<field name="fAbandonmentWarningDisplayedAtDistanceFromTarget" type="Float"/>
+	<field name="fMaxAllowedDistanceFromTarget" type="Float"/>
+	<field name="fParkingRadiusForVehicleDeliveryAnyMode" type="Float"/>
+	<object name="locstridDestinationObjectiveMarkerLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridVehicleMarkerLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridGetOutOfVehicleLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridGetBackInVehicleLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDamageWarningLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEscapePursuersLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEscapePursuersWithIntegrityLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEscapePursuersWarningLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTeamEscapePursuersWarningLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTeamEscapePursuersWithIntegrityWarningLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridGetBackInVehicleWhenPursuedLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridAbandoningVehicleWarningLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridVehicleLostLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridAbandoningBuddyWarningLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridBuddyLostLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

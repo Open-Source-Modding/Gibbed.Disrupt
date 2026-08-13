@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmoduletrackersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<object name="CustomActions">
+			<object name="Action">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Triggers">
+			<object name="Action">
+				<field name="text_progressionplayeractionAction" type="String"/>
+				<field name="progressionplayeractionAction" type="BinHex"/>
+				<object name="Trigger">
+					<field name="rulesmithidRuleId" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

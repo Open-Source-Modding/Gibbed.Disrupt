@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PersonalcontractlayoutsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Layers"/>
+	<object name="Localisation">
+		<object name="UIStrings">
+			<object name="locstridGoToMessage"/>
+			<object name="locstridFullSuccessMessage"/>
+			<object name="locstridPartialSuccessMessage"/>
+			<object name="locstridFailMessage"/>
+		</object>
+	</object>
+</class>

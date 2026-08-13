@@ -1,0 +1,11 @@
+<class name="CGenericContextTrack">
+    <object name="CGenericContextTrack">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field hash="22958F3A" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+	  <inherit name="CReleaseEntityContextClip"/>
+	  <inherit name="CGenericContextClip"/>
+    </object>
+</class>

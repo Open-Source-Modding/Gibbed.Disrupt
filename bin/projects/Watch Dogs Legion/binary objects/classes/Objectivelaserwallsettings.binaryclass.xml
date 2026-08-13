@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivelaserwallsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="LaserWallData">
+		<field name="uRoomIndex" type="BinHex"/>
+		<field name="bShouldForceCombat" type="Boolean"/>
+		<object name="LaserPatterns">
+			<object name="LaserPattern">
+				<field name="fPatternStartDelay" type="Float"/>
+				<object name="Lasers">
+					<field name="entLaserEntity" type="BinHex"/>
+					<field name="fStartDelay" type="Float"/>
+					<object name="Lasers">
+						<field name="entLaserEntity" type="BinHex"/>
+						<field name="fStartDelay" type="Float"/>
+					</object>
+				</object>
+				<object name="PatternReinforcementData">
+					<field name="reinforcementgameplaydescriptorHuman" type="BinHex"/>
+					<field name="reinforcementgameplaydescriptorDrone" type="BinHex"/>
+				</object>
+				<object name="NextPatternTriggerConditions">
+					<field name="bNextPatternTriggersOnAllDestroyed" type="Boolean"/>
+					<field name="bNextPatternTriggersAfterDelay" type="Boolean"/>
+					<field name="fNextPatternTriggerDelay" type="Float"/>
+				</object>
+			</object>
+		</object>
+		<object name="GlobalReinforcementsData">
+			<field name="reinforcementgameplaydescriptorHuman" type="BinHex"/>
+			<field name="reinforcementgameplaydescriptorDrone" type="BinHex"/>
+		</object>
+		<object name="GameplayStartedDialog">
+			<field name="text_sndSoundId" type="String"/>
+			<field name="sndSoundId" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+		<object name="GameplayFinishedDialog">
+			<field name="text_sndSoundId" type="String"/>
+			<field name="sndSoundId" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+	</object>
+</class>

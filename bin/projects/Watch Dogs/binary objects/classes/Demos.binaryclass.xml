@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DemosParameters">
+	<inherit name="SharedParameters"/>
+	<field name="OperativeTeamName" type="BinHex"/>
+	<field name="RecruitmentLoopUpresBucketName" type="BinHex"/>
+	<field name="RecruitmentLoopFailureBucketName" type="BinHex"/>
+	<field name="bWillSetStartTime" type="Boolean"/>
+	<field name="iStartTimeHour" type="Int32"/>
+	<field name="iStartTimeMinutes" type="Int32"/>
+	<field name="envweatherpresetWeatherPreset" type="BinHex"/>
+	<field name="entSpawnPoint" type="BinHex"/>
+	<object name="AutoUnlockOpNames">
+		<object name="OpName">
+			<field name="text_StringValue" type="String"/>
+			<field name="StringValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="AutoStartOpNames">
+		<object name="OpName">
+			<field name="text_StringValue" type="String"/>
+			<field name="StringValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="AutoCompleteOpNames">
+		<object name="OpName">
+			<field name="text_StringValue" type="String"/>
+			<field name="StringValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ProgressionTagsMission">
+		<object name="progressiontagProgressionTag">
+			<field name="progressiontagProgressionTag" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RulesmithTriggers">
+		<object name="OnStartGameModeTrigger">
+			<field name="rulesmithidRuleId" type="BinHex"/>
+		</object>
+	</object>
+	<object name="tagcategoryselectionWorldBoundaryTag">
+		<field name="text_UITagCategorySelectionClassID" type="String"/>
+		<field name="UITagCategorySelectionClassID" type="BinHex"/>
+		<field name="tagcategoryUITagCategory" type="BinHex"/>
+		<field name="tagcategoryTagCategory" type="BinHex"/>
+		<field name="tagTag" type="BinHex"/>
+	</object>
+	<object name="WorldActivities">
+		<field name="bLockAdvancedCameraMode" type="Boolean"/>
+		<field name="bLockPhotomode" type="Boolean"/>
+		<field name="bLockPhotobooth" type="Boolean"/>
+		<field name="bLockGalleryApp" type="Boolean"/>
+		<field name="bUnlockAllCourierMissions" type="Boolean"/>
+		<field name="bRestrictCourierLocations" type="Boolean"/>
+	</object>
+</class>

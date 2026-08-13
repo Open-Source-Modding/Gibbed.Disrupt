@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="GoldrushtrackParameters">
+	<object name="CGoldRushCoin">
+        <field name="text_objstatdataStaticDataType" type="String"/>
+        <field name="objstatdataStaticDataType" type="BinHex"/>
+        <field name="sIdentifierString" type="BinHex"/>
+        <field name="mapicondescDBEntry" type="BinHex"/>
+        <field name="vectorPosition" type="Vector3"/>
+        <field name="fAngle" type="Float"/>
+        <field name="accessidRequiredId" type="BinHex"/>
+        <field name="hidPosition" type="Vector3"/>
+        <field name="uiTrackId" type="UInt32"/>
+        <field name="uiCoinStartIndex" type="UInt32"/>
+        <field name="uiCoinFinishIndex" type="UInt32"/>
+        <field name="selCoinType" type="Enum"/>
+    </object>
+</class>

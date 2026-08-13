@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpgenchapterregroupParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Start">
+		<field name="opgenobjectivefamilyObjectiveLogicFamilyDb" type="BinHex"/>
+		<field name="phonecommunicationsettingsIntroBriefing" type="BinHex"/>
+		<field name="bAllowMultiplayerDistanceSkip" type="Boolean"/>
+		<field name="bAllowSoloSkip" type="Boolean"/>
+		<object name="LocationsDefinitions">
+			<field name="selMode" type="Enum"/>
+			<object name="LocationDefinitions">
+				<object name="opgenlocationdefinitionLocationDefinition">
+					<field name="opgenlocationdefinitionLocationDefinition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="locstridObjectiveText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridObjectiveDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="End">
+		<field name="opgenobjectivefamilyObjectiveLogicFamilyDb" type="BinHex"/>
+		<field name="phonecommunicationsettingsIntroBriefing" type="BinHex"/>
+		<field name="bAllowMultiplayerDistanceSkip" type="Boolean"/>
+		<field name="bAllowSoloSkip" type="Boolean"/>
+		<object name="LocationsDefinitions">
+			<field name="selMode" type="Enum"/>
+			<object name="LocationDefinitions">
+				<object name="opgenlocationdefinitionLocationDefinition">
+					<field name="opgenlocationdefinitionLocationDefinition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="locstridObjectiveText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridObjectiveDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

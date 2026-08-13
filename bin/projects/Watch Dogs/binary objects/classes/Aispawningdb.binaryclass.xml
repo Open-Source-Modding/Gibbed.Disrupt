@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AispawningdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bValid" type="Boolean"/>
+	<field name="bIsStrict" type="Boolean"/>
+	<field name="archetypeconfiglistGrunt" type="BinHex"/>
+	<field name="archetypeconfiglistOverwatch" type="BinHex"/>
+	<field name="archetypeconfiglistRusher" type="BinHex"/>
+	<field name="archetypeconfiglistCaptain" type="BinHex"/>
+	<field name="archetypeconfiglistGrenadier" type="BinHex"/>
+	<field name="archetypeconfiglistDog" type="BinHex"/>
+	<field name="archetypeconfiglistDrone_Chase" type="BinHex"/>
+	<field name="archetypeconfiglistVehicle_Light" type="BinHex"/>
+	<field name="archetypeconfiglistVehicle_Medium" type="BinHex"/>
+	<field name="archetypeconfiglistVehicle_Heavy" type="BinHex"/>
+	<field name="archetypeconfiglistDrone_CT" type="BinHex"/>
+	<field name="archetypeconfiglistDrone_Riot" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_01" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_02" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_03" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_04" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_05" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_06" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_07" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_08" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_09" type="BinHex"/>
+	<field name="archetypeconfiglistRaid_10" type="BinHex"/>
+	<field name="archetypeconfiglistDrone_Kamikaze" type="BinHex"/>
+	<field name="archetypeconfiglistDrone_Ghost" type="BinHex"/>
+	<field name="archetypeconfiglistBoss_ContinentalAssassin" type="BinHex"/>
+	<field name="archetypeconfiglistBoss_Drone_QueenBee" type="BinHex"/>
+	<field name="archetypeconfiglistBoss_Marksman" type="BinHex"/>
+	<field name="archetypeconfiglistBoss_Witchdoctor" type="BinHex"/>
+	<field name="archetypeconfiglistElite_Grunt" type="BinHex"/>
+	<field name="archetypeconfiglistElite_Overwatch" type="BinHex"/>
+	<field name="archetypeconfiglistElite_Rusher" type="BinHex"/>
+	<field name="archetypeconfiglistElite_Captain" type="BinHex"/>
+	<field name="archetypeconfiglistElite_Grenadier" type="BinHex"/>
+	<field name="archetypeconfiglistOCO_Elite_Captain" type="BinHex"/>
+	<field name="archetypeconfiglistOCO_Elite_Grenadier" type="BinHex"/>
+	<field name="archetypeconfiglistOCO_Elite_Grunt" type="BinHex"/>
+	<field name="archetypeconfiglistOCO_Elite_Overwatch" type="BinHex"/>
+	<field name="archetypeconfiglistOCO_Elite_Rusher" type="BinHex"/>
+	<field name="archetypeconfiglistOCO_Elite_Grenadier_RedBlade" type="BinHex"/>
+	<field name="archetypeconfiglistOCO_Elite_Overwatch_RedBlade" type="BinHex"/>
+</class>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpswapcameraparamsdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="CameraParams">
+		<field name="text_fileAnimatedCamera" type="String"/>
+		<field name="fileAnimatedCamera" type="BinHex"/>
+		<field name="fAnimatedCameraBlendOutTime" type="Float"/>
+		<field name="fAnimatedCameraPreBlendPosOutTime" type="Float"/>
+		<field name="fCameraNearDistance" type="Float"/>
+		<field name="angvecCameraAngle" type="BinHex"/>
+		<field name="vecCameraOffset" type="BinHex"/>
+		<field name="bDisableCameraCollision" type="Boolean"/>
+		<field name="bEnableBlendOutDistance" type="Boolean"/>
+		<field name="fBlendOutDistance" type="Float"/>
+		<object name="depthOfFieldParams">
+			<field name="bEnable" type="Boolean"/>
+			<field name="fIntensity" type="Float"/>
+			<field name="fNearDofIntensity" type="Float"/>
+			<field name="fFarDofIntensity" type="Float"/>
+			<field name="fFocusDistance" type="Float"/>
+			<field name="fFocalLength" type="Float"/>
+			<field name="fFStop" type="Float"/>
+			<field name="fBokehBoostIntensity" type="Float"/>
+			<field name="fBokehBoostThreshold" type="Float"/>
+			<field name="fBokehContrast" type="Float"/>
+		</object>
+	</object>
+</class>

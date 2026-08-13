@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressiongeneralsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<field name="fAutoSaveCooldown" type="Float"/>
+		<field name="text_progressiontraitcategoryChallengeTraitCategory" type="String"/>
+		<field name="progressiontraitcategoryChallengeTraitCategory" type="BinHex"/>
+	</object>
+</class>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpgenvehicledescriptiondefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Affiliations">
+		<object name="Affiliation">
+			<field name="selAffiliation" type="Enum"/>
+		</object>
+	</object>
+	<object name="VehiculeFlags">
+		<object name="VehiculeFlag">
+			<field name="selVehiculeFlag" type="Enum"/>
+		</object>
+	</object>
+</class>

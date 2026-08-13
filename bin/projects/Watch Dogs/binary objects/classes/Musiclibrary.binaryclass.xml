@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MusiclibraryParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsRadioBlog" type="Boolean"/>
+	<field name="selType" type="Enum"/>
+	<field name="sndSong" type="BinHex"/>
+	<field name="text_fileCharacterPortrait" type="String"/>
+	<field name="fileCharacterPortrait" type="BinHex"/>
+	<field name="sAlbumArtFileName" type="String"/>
+	<object name="RadioVoices">
+		<object name="Voice">
+			<field name="sndSong" type="BinHex"/>
+		</object>
+	</object>
+</class>

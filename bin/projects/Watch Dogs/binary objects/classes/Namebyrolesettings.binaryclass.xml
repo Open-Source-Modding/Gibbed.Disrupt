@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NamebyrolesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="NameByRoleList">
+		<object name="OverridenNameByRole">
+			<field name="text_Role" type="String"/>
+			<field name="Role" type="BinHex"/>
+			<object name="locstridName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

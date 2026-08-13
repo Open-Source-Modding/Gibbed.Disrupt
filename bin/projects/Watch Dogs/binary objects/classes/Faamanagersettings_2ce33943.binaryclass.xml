@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Faamanagersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="FAAMissionsDataList"/>
+	<object name="opgeneratorsettingsGenerator">
+		<field name="RegroupNeededDistance" type="BinHex"/>
+		<field name="fDeliveryDestinationSearchMinDistance" type="Float"/>
+		<field name="fDeliveryDestinationSearchMaxDistance" type="Float"/>
+		<object name="Themes">
+			<object name="opgenthemeOpGenTheme">
+				<field name="opgenthemeOpGenTheme" type="BinHex"/>
+			</object>
+		</object>
+		<object name="WeightedPatterns">
+			<object name="Pattern">
+				<field name="fPickWeight" type="Float"/>
+				<object name="Pattern">
+					<field name="opslistOpConfigDbObject" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="OpNarrationSettings">
+			<object name="Themes">
+				<object name="Theme">
+					<field name="opgenthemeTheme" type="BinHex"/>
+					<field name="phonecommunicationsettingsOpTransitionBriefing" type="BinHex"/>
+					<field name="phonecommunicationsettingsOpFailBriefing" type="BinHex"/>
+					<field name="phonecommunicationsettingsRestartVoteBriefing" type="BinHex"/>
+					<object name="Combinations">
+						<object name="Combination">
+							<field name="Name" type="BinHex"/>
+							<field name="phonecommunicationsettingsOpIntroBriefing" type="BinHex"/>
+							<field name="phonecommunicationsettingsOpWrapUpBriefing" type="BinHex"/>
+							<object name="Plots">
+								<object name="Plot">
+									<field name="opgenplotPlot" type="BinHex"/>
+									<field name="phonecommunicationsettingsChapterIntroBriefing" type="BinHex"/>
+									<field name="phonecommunicationsettingsChapterEndBriefing" type="BinHex"/>
+									<object name="locstridOpDescription">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="ObjectiveFamilies">
+										<object name="ObjectiveFamily">
+											<field name="opgenobjectivefamilyObjectiveLogicFamilyDb" type="BinHex"/>
+											<object name="ObjectiveLogics">
+												<object name="ObjectiveLogic">
+													<field name="dgobjectivelogicObjectiveLogicDb" type="BinHex"/>
+													<object name="locstridFriendlyName">
+														<field name="LocalizationId" type="UInt64"/>
+													</object>
+													<object name="ObjectiveTextsSettings">
+														<object name="ObjectiveTextSettings">
+															<object name="locstridShortLocId">
+																<field name="LocalizationId" type="UInt64"/>
+															</object>
+															<object name="locstridSoloObjectiveLocIdFallback">
+																<field name="LocalizationId" type="UInt64"/>
+															</object>
+														</object>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+							<object name="OpNames">
+								<object name="OpName">
+									<object name="locstridOpName">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="OpRewardSettings">
+			<object name="RewardsForHouston">
+				<object name="RewardSettings">
+					<field name="onlinedifficultiesDifficulty" type="BinHex"/>
+					<field name="nDifficultyIndex" type="Enum"/>
+					<field name="oprewardsettingsRewardSettings" type="BinHex"/>
+				</object>
+			</object>
+			<object name="RewardsForSeoul">
+				<object name="RewardSettings">
+					<field name="onlinedifficultiesDifficulty" type="BinHex"/>
+					<field name="nDifficultyIndex" type="Enum"/>
+					<field name="oprewardsettingsRewardSettings" type="BinHex"/>
+				</object>
+			</object>
+			<object name="RewardsForCairo">
+				<object name="RewardSettings">
+					<field name="onlinedifficultiesDifficulty" type="BinHex"/>
+					<field name="nDifficultyIndex" type="Enum"/>
+					<field name="oprewardsettingsRewardSettings" type="BinHex"/>
+				</object>
+			</object>
+			<object name="RewardsForSydney">
+				<object name="RewardSettings">
+					<field name="onlinedifficultiesDifficulty" type="BinHex"/>
+					<field name="nDifficultyIndex" type="Enum"/>
+					<field name="oprewardsettingsRewardSettings" type="BinHex"/>
+				</object>
+			</object>
+			<object name="RewardsForCaracas">
+				<object name="RewardSettings">
+					<field name="onlinedifficultiesDifficulty" type="BinHex"/>
+					<field name="nDifficultyIndex" type="Enum"/>
+					<field name="oprewardsettingsRewardSettings" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="ObjectiveLogicPickerSettings">
+			<field name="PickingThresholdPercent" type="BinHex"/>
+			<object name="IntensitySettings">
+				<field name="fFactor" type="Float"/>
+				<object name="Curve">
+					<field name="fWeightPercentForSameIntensity" type="Float"/>
+					<field name="fWeightPercentForDifferentIntensity" type="Float"/>
+				</object>
+			</object>
+			<object name="GameplayRepetitionSettings">
+				<field name="fFactor" type="Float"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<object name="Curve">
+					<field name="fWeightPercentAtHistoryBegin" type="Float"/>
+					<field name="fWeightPercentAtHistoryEnd" type="Float"/>
+					<field name="fWeightPercentOutsideHistory" type="Float"/>
+				</object>
+			</object>
+			<object name="GameplayCategoryRepetitionSettings">
+				<field name="fFactor" type="Float"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<object name="Curve">
+					<field name="fWeightPercentAtHistoryBegin" type="Float"/>
+					<field name="fWeightPercentAtHistoryEnd" type="Float"/>
+					<field name="fWeightPercentOutsideHistory" type="Float"/>
+				</object>
+			</object>
+			<object name="OpPatternTropeTypeSettings">
+				<field name="fFactor" type="Float"/>
+				<field name="fDefaultWeightPercent" type="Float"/>
+				<object name="OPPatternSettings">
+					<object name="OPPatternSetting">
+						<field name="opslistPattern" type="BinHex"/>
+						<object name="TropeTypeSettings">
+							<object name="TropeTypeSetting">
+								<field name="fWeightPercent" type="Float"/>
+								<object name="tagcategoryselectionblackboardTags">
+									<object name="TagCategorySelectionArray">
+										<object name="TagCategorySelection">
+											<field name="text_hid_DTCTH_ClassName" type="String"/>
+											<field name="hid_DTCTH_ClassName" type="BinHex"/>
+											<field name="text_UITagCategorySelectionClassID" type="String"/>
+											<field name="UITagCategorySelectionClassID" type="BinHex"/>
+											<field name="tagcategoryUITagCategory" type="BinHex"/>
+											<field name="tagcategoryTagCategory" type="BinHex"/>
+											<field name="tagTag" type="BinHex"/>
+											<object name="Tags"/>
+										</object>
+									</object>
+									<object name="TagDescriptorUI">
+										<field name="text_hid_DTCTH_ClassName" type="String"/>
+										<field name="hid_DTCTH_ClassName" type="BinHex"/>
+										<object name="TagCategorySelectionDescriptors">
+											<object name="TagCategorySelectionDescriptor">
+												<field name="tagcategoryTagCategory" type="BinHex"/>
+												<field name="bMultiSelect" type="Boolean"/>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="TagAnySettings">
+				<field name="fFactor" type="Float"/>
+				<field name="fNonMatchingTagWeight" type="Float"/>
+				<field name="fInitialWeight" type="Float"/>
+				<object name="Curve">
+					<field name="fWeightPercentAtPick1" type="Float"/>
+					<field name="fPickX" type="Int32"/>
+					<field name="fWeightPercentAtPickX" type="Float"/>
+					<field name="fOutOfCurveBoundariesWeight" type="Float"/>
+				</object>
+			</object>
+			<object name="TagFreeroamSettings">
+				<field name="fFactor" type="Float"/>
+				<field name="fNonMatchingTagWeight" type="Float"/>
+				<field name="fInitialWeight" type="Float"/>
+				<object name="Curve">
+					<field name="fWeightPercentAtPick1" type="Float"/>
+					<field name="fPickX" type="Int32"/>
+					<field name="fWeightPercentAtPickX" type="Float"/>
+					<field name="fOutOfCurveBoundariesWeight" type="Float"/>
+				</object>
+			</object>
+			<object name="TagCoopSettings">
+				<field name="fFactor" type="Float"/>
+				<field name="fNonMatchingTagWeight" type="Float"/>
+				<field name="fInitialWeight" type="Float"/>
+				<object name="Curve">
+					<field name="fWeightPercentAtPick1" type="Float"/>
+					<field name="fPickX" type="Int32"/>
+					<field name="fWeightPercentAtPickX" type="Float"/>
+					<field name="fOutOfCurveBoundariesWeight" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="GeneratorHistory">
+		<field name="uiGameplayHistoryMaxSize" type="UInt32"/>
+		<field name="uiGameplayCategoryHistoryMaxSize" type="UInt32"/>
+		<field name="uiFirstChapterPlotHistoryMaxSize" type="UInt32"/>
+	</object>
+</class>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ReinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="basicwavereinforcementconfigBasicWaveReinforcementConfig" type="BinHex"/>
+	<field name="basicwavefelonyconfigBasicWaveFelonyConfig" type="BinHex"/>
+	<field name="bAllowSpawningInPlayerFoV" type="Boolean"/>
+	<field name="bIsDynamicSpawningEnabled" type="Boolean"/>
+	<field name="fDesiredTimeToReachTarget" type="Float"/>
+	<field name="fSpawnLocationMaxDistanceRatio" type="Float"/>
+	<field name="bFallbackToOnfootSpawning" type="Boolean"/>
+	<field name="bAllowAutomaticZoneLocking" type="Boolean"/>
+	<field name="bDisableDefenseZone" type="Boolean"/>
+	<field name="bShouldPlayDroneDeploymentBark" type="Boolean"/>
+	<field name="blkpDurationLoaded" type="BinHex"/>
+	<object name="CombatAndTargetPosition">
+		<field name="bAllPlayersAreThreats" type="Boolean"/>
+		<field name="bCheatTargetPosition" type="Boolean"/>
+		<field name="bKeepAliveTargetPosition" type="Boolean"/>
+		<object name="KeepAliveTargetPosition">
+			<field name="bKeepAliveTargetPositionInfinite" type="Boolean"/>
+			<field name="fKeepAliveTargetPositionDuration" type="Float"/>
+		</object>
+		<object name="CheatTargetPosition">
+			<field name="bCheatTargetPositionInfinite" type="Boolean"/>
+			<field name="fCheatTargetPositionDuration" type="Float"/>
+		</object>
+	</object>
+	<object name="ReinforcementGameplayBrick">
+		<field name="bReinforcementGameplayForceCombatOnAllPlayers" type="Boolean"/>
+		<field name="fReinforcementGameplayForceCombatDuration" type="Float"/>
+	</object>
+</class>

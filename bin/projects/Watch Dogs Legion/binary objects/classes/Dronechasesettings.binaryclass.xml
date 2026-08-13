@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronechasesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="OnFoot">
+		<field name="fCatchupSpeedSprintMultiplier" type="Float"/>
+		<field name="fFollowSpeedSprintMultiplier" type="Float"/>
+		<field name="fFollowPosTimeout" type="Float"/>
+		<field name="fFollowHoverMinTime" type="Float"/>
+		<field name="fFollowHoverMaxTime" type="Float"/>
+		<field name="fFollowFrontNoflyZone" type="Float"/>
+		<field name="fFollowFrontAngle" type="Float"/>
+		<field name="fFollowRearAngle" type="Float"/>
+		<field name="fFollowFrontMinDistance" type="Float"/>
+		<field name="fFollowFrontMaxDistance" type="Float"/>
+		<field name="fFollowRearMinDistance" type="Float"/>
+		<field name="fFollowRearMaxDistance" type="Float"/>
+		<field name="fPointRadius" type="Float"/>
+		<field name="fDelayBetweenWeaponFireAttempts" type="Float"/>
+		<field name="fForceShootDelay" type="Float"/>
+		<field name="fDelayBetweenWeaponFireAttemptsWhenHacked" type="Float"/>
+		<field name="fOrbitYawIncrement" type="Float"/>
+		<field name="fOrbitSpeed" type="Float"/>
+		<field name="fOrbitPosRndMinTime" type="Float"/>
+		<field name="fOrbitPosRndMaxTime" type="Float"/>
+		<field name="fOrbitMinDistance" type="Float"/>
+		<field name="fOrbitMaxDistance" type="Float"/>
+		<field name="fFollowHoldPosStiffness" type="Float"/>
+		<field name="fMeleeHeight" type="Float"/>
+		<field name="fCombatHeight" type="Float"/>
+		<field name="fShootRangeIfUnreachableTarget" type="Float"/>
+	</object>
+	<object name="InVehicle">
+		<field name="fMinSpeed" type="Float"/>
+		<field name="fMaxSpeedTargetMaxSpeedRatio" type="Float"/>
+		<field name="fMaxSpeedCap" type="Float"/>
+		<field name="fMaxSpeedChangeRate" type="Float"/>
+		<field name="fFollowDistance" type="Float"/>
+		<field name="fOrbitPointRadius" type="Float"/>
+		<field name="fSwitchToOrbitDistance" type="Float"/>
+		<field name="fOrbitResetDistance" type="Float"/>
+		<field name="fBehindResetDistance" type="Float"/>
+		<field name="fFrontResetDistance" type="Float"/>
+		<field name="fHoldRearPositionTime" type="Float"/>
+		<field name="fHoldFrontPositionTime" type="Float"/>
+		<field name="fOrbitYawIncrement" type="Float"/>
+		<field name="fFrontPositionAngle" type="Float"/>
+		<field name="fHeight" type="Float"/>
+		<field name="fInFrontHeight" type="Float"/>
+		<field name="fInFrontHeightRotationSpeedModifier" type="Float"/>
+		<field name="fNoLerpSpeedLimit" type="Float"/>
+		<field name="fOrbitLerp" type="Float"/>
+		<field name="fHoldBehindLerp" type="Float"/>
+		<field name="fHoldFrontLerp" type="Float"/>
+		<field name="fInVehicleWeaponFiredLerp" type="Float"/>
+		<field name="fWeaponFiredSpeedPenalty" type="Float"/>
+		<field name="fFirstWeaponFireDelay" type="Float"/>
+		<field name="fDelayBetweenWeaponFireAttempts" type="Float"/>
+		<field name="fDelayBetweenHitShots" type="Float"/>
+		<field name="fDelayBetweenWeaponFireAttemptsWhenHacked" type="Float"/>
+		<field name="iMaxDronesInFront" type="Int32"/>
+		<field name="fLerpDonutInnerRadius" type="Float"/>
+		<field name="fLerpDonutOuterRadius" type="Float"/>
+		<field name="fLerpDonutPredictionTime" type="Float"/>
+		<field name="fCatchupBoost" type="Float"/>
+		<object name="MaxSpeedModifiers">
+			<field name="iWeight" type="Int32"/>
+			<field name="hidDebugID" type="BinHex"/>
+			<field name="sDebugString" type="String"/>
+			<field name="colorDebugColor" type="VectorColor"/>
+			<object name="curveCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="ValueRule">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="MaxSpeedModifiers">
+				<field name="iWeight" type="Int32"/>
+				<field name="hidDebugID" type="BinHex"/>
+				<field name="sDebugString" type="String"/>
+				<field name="colorDebugColor" type="VectorColor"/>
+				<object name="curveCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="ValueRule">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="curveMaxSpeedModifierCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDelayBetweenWeaponFireModifier">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveLerpDonutSizeReducerCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="CanShootRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="OnDrone">
+		<field name="fHoldPosBeforeFiringTime" type="Float"/>
+		<field name="fFollowDistance" type="Float"/>
+		<field name="fFollowHeight" type="Float"/>
+		<field name="fFollowSpeed" type="Float"/>
+		<field name="fFirstWeaponFireDelay" type="Float"/>
+		<field name="fDelayBetweenWeaponFireAttempts" type="Float"/>
+	</object>
+</class>

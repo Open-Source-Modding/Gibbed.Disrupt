@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Fruitmachine_machinesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sName" type="String"/>
+	<field name="sName" type="BinHex"/>
+	<field name="bIsMultiline" type="Boolean"/>
+	<field name="bIsNudgeAndHold" type="Boolean"/>
+	<field name="bIsNexusmonBranded" type="Boolean"/>
+</class>

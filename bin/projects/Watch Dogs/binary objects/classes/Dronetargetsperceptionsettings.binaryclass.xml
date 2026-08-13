@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronetargetsperceptionsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxStressLevel" type="Float"/>
+	<field name="fSearchStressThreshold" type="Float"/>
+	<field name="fReactionStressThreshold" type="Float"/>
+	<field name="fStressDecreaseDefaultSpeed" type="Float"/>
+	<object name="HijackStoppedStressRules">
+		<field name="bReactOnlyForSearch" type="Boolean"/>
+		<object name="StressLevelRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="StressBonusRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="SwitchAllegianceStoppedStressRules">
+		<field name="bReactOnlyForSearch" type="Boolean"/>
+		<object name="StressLevelRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="StressBonusRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RCBroadcastAttractEndedStressRules">
+		<field name="bReactOnlyForSearch" type="Boolean"/>
+		<object name="StressLevelRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="StressBonusRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="StateOverrides">
+		<object name="StateOverrides">
+			<field name="selCurrentState" type="Enum"/>
+			<field name="fStressDecreaseSpeed" type="Float"/>
+		</object>
+	</object>
+</class>

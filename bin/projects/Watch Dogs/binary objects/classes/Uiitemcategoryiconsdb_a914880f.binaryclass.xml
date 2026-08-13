@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uiitemcategoryiconsdb_a914880fParameters">
+	<inherit name="SharedParameters"/>
+	<object name="IconDefault">
+		<field name="texturedbobjectIconSmall" type="BinHex"/>
+		<field name="texturedbobjectIconLarge" type="BinHex"/>
+		<object name="locstridNameLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="IconShock">
+		<field name="texturedbobjectIconSmall" type="BinHex"/>
+		<field name="texturedbobjectIconLarge" type="BinHex"/>
+		<object name="locstridNameLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="IconConcussion">
+		<field name="texturedbobjectIconSmall" type="BinHex"/>
+		<field name="texturedbobjectIconLarge" type="BinHex"/>
+		<object name="locstridNameLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="IconTranquilizer">
+		<field name="texturedbobjectIconSmall" type="BinHex"/>
+		<field name="texturedbobjectIconLarge" type="BinHex"/>
+		<object name="locstridNameLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="IconGas">
+		<field name="texturedbobjectIconSmall" type="BinHex"/>
+		<field name="texturedbobjectIconLarge" type="BinHex"/>
+		<object name="locstridNameLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

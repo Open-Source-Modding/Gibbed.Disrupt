@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Weapontypedb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PlayerWeaponModels">
+		<object name="WeaponModels">
+			<field name="WeaponModel" type="String"/>
+		</object>
+	</object>
+	<object name="NPCWeaponCategories">
+		<object name="WeaponCategories">
+			<field name="WeaponCategory" type="String"/>
+		</object>
+	</object>
+</class>

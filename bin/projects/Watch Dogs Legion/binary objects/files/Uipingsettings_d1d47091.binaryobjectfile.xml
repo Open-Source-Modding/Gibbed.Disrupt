@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Uipingsettings_d1d47091">
+	<object name="obj">
+		<inherit name="Uipingsettings_d1d47091Parameters"/>
+	</object>
+</file>

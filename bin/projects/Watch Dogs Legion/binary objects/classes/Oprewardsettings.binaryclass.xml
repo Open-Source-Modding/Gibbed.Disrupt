@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OprewardsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="CryptoCurrency">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="TechPointCurrency">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="ExoticRewards">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="Items">
+		<object name="Items"/>
+	</object>
+	<object name="Entities">
+		<object name="Entities"/>
+	</object>
+</class>

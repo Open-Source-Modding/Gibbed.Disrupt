@@ -1,0 +1,5 @@
+<file name="a02_m05_sc030_passenger_clara04" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

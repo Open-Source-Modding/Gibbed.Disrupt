@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EnticereventParameters">
+	<inherit name="SharedParameters"/>
+	<field name="CityLifeEntityId" type="BinHex"/>
+	<field name="vigdescEventDescription" type="BinHex"/>
+</class>

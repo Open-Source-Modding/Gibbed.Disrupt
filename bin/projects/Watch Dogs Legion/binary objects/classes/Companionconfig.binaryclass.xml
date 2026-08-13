@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CompanionconfigParameters">
+	<inherit name="SharedParameters"/>
+    <object name="GridConfig">
+        <field name="mapicondescMatchmakingGridIconDescription" type="BinHex"/>
+        <field name="mapicondescPlayFriendsGridIconDescription" type="BinHex"/>
+    </object>
+</class>

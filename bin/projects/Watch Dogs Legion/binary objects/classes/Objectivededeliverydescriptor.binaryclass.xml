@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivededeliverydescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="fAuthorizedRadius" type="Float"/>
+	<field name="fExplosionCountdownTimer" type="Float"/>
+	<field name="bExplodeVehicleOnFail" type="Boolean"/>
+	<field name="bDisplayDestinationArea" type="Boolean"/>
+	<field name="fParkingSpotRadius" type="Float"/>
+	<object name="locstridObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDescriptionLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridExplosionCountdownWarning">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridMainVehicleDriverObjective">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEscortPlayersObjective">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

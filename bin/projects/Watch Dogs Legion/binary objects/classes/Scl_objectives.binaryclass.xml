@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_objectivesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selType" type="Enum"/>
+	<field name="selCategory" type="Enum"/>
+	<field name="sFireIndicatorType" type="String"/>
+	<field name="iRollWeight" type="Int32"/>
+	<object name="locsectionidObjectiveName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="ObjectiveStates">
+		<object name="locsectionidObjectiveStates">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="ObjectiveStates">
+		    <object name="locsectionidObjectiveStates">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Parameters">
+		<field name="fTimerDuration" type="Float"/>
+		<field name="fTimerSoundThreshold" type="Float"/>
+		<field name="iTargetNumber" type="Int32"/>
+		<field name="text_archOverheadIconArchetype" type="String"/>
+		<field name="archOverheadIconArchetype" type="BinHex"/>
+		<field name="fOverheadIconZOffset" type="Float"/>
+		<field name="text_archTargetAreaHelperArchetype" type="String"/>
+		<field name="archTargetAreaHelperArchetype" type="BinHex"/>
+		<field name="fTargetAreaHelperRadius" type="Float"/>
+		<field name="fTargetAreaHelperOffset" type="Float"/>
+		<field name="colorTargetAreaHelperColor" type="VectorColor"/>
+		<field name="powergatheringsettingsPowerGatheringSettings" type="BinHex"/>
+		<field name="fSpawnPointExclusionRadius" type="Float"/>
+		<field name="fDownloadTime" type="Float"/>
+		<field name="fDownloadingAreaRadius" type="Float"/>
+		<field name="fIntrusionDetectedMessageDelay" type="Float"/>
+		<field name="iMinInitialOnscreenNPCs" type="Int32"/>
+		<field name="iMaxVehicleCountPerWave" type="Int32"/>
+		<field name="text_sSquadType" type="String"/>
+		<field name="sSquadType" type="BinHex"/>
+		<field name="bHasOnlyOneSquad" type="Boolean"/>
+		<field name="npcoverrideconfigSquadOverrideConfig" type="BinHex"/>
+		<field name="uiMinAI" type="Int64"/>
+		<field name="uiMaxAI" type="Int64"/>
+		<object name="locstridFailureMessage">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridKeyIntel">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOverheadIconText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="Groups">
+		<object name="Groups">
+			<field name="Groups" type="String"/>
+		</object>
+	</object>
+	<object name="ExclusionGroup">
+		<object name="ExclusionGroup">
+			<field name="ExclusionGroup" type="String"/>
+		</object>
+	</object>
+	<object name="ObjectiveDifficulty"/>
+</class>

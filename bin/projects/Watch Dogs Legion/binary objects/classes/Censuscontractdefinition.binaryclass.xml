@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CensuscontractdefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsSingleRole" type="Boolean"/>
+	<field name="bExclusive" type="Boolean"/>
+	<field name="bCanBeUsedForScheduleGeneration" type="Boolean"/>
+	<field name="bCanHaveAttendancesAddedByLivingCity" type="Boolean"/>
+	<field name="bIsSpecialCLOFallbackContract" type="Boolean"/>
+	<field name="uiRandomSelectionBias" type="UInt32"/>
+	<object name="A">
+		<object name="locstridNameMale">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridNameFemale">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="IsRoleDescriptionPossessive">
+			<field name="bLang_Czech" type="Boolean"/>
+			<field name="bLang_Danish" type="Boolean"/>
+			<field name="bLang_Dutch" type="Boolean"/>
+			<field name="bLang_English" type="Boolean"/>
+			<field name="bLang_Finnish" type="Boolean"/>
+			<field name="bLang_French" type="Boolean"/>
+			<field name="bLang_German" type="Boolean"/>
+			<field name="bLang_Hungarian" type="Boolean"/>
+			<field name="bLang_Italian" type="Boolean"/>
+			<field name="bLang_Japanese" type="Boolean"/>
+			<field name="bLang_Korean" type="Boolean"/>
+			<field name="bLang_Norwegian" type="Boolean"/>
+			<field name="bLang_Polish" type="Boolean"/>
+			<field name="bLang_Portuguese_Brazil" type="Boolean"/>
+			<field name="bLang_Portuguese_Portugal" type="Boolean"/>
+			<field name="bLang_Russian" type="Boolean"/>
+			<field name="bLang_Spanish" type="Boolean"/>
+			<field name="bLang_Swedish" type="Boolean"/>
+			<field name="bLang_Traditional_Chinese" type="Boolean"/>
+			<field name="bLang_Simplified_Chinese" type="Boolean"/>
+			<field name="bLang_Fake_Long_English" type="Boolean"/>
+			<field name="bLang_Spanish_Mexico" type="Boolean"/>
+			<field name="bLang_Arabic" type="Boolean"/>
+		</object>
+		<object name="locstridFormerRivalNameMale">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridFormerRivalNameFemale">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="IsFormerRoleDescriptionPossessive">
+			<field name="bLang_Czech" type="Boolean"/>
+			<field name="bLang_Danish" type="Boolean"/>
+			<field name="bLang_Dutch" type="Boolean"/>
+			<field name="bLang_English" type="Boolean"/>
+			<field name="bLang_Finnish" type="Boolean"/>
+			<field name="bLang_French" type="Boolean"/>
+			<field name="bLang_German" type="Boolean"/>
+			<field name="bLang_Hungarian" type="Boolean"/>
+			<field name="bLang_Italian" type="Boolean"/>
+			<field name="bLang_Japanese" type="Boolean"/>
+			<field name="bLang_Korean" type="Boolean"/>
+			<field name="bLang_Norwegian" type="Boolean"/>
+			<field name="bLang_Polish" type="Boolean"/>
+			<field name="bLang_Portuguese_Brazil" type="Boolean"/>
+			<field name="bLang_Portuguese_Portugal" type="Boolean"/>
+			<field name="bLang_Russian" type="Boolean"/>
+			<field name="bLang_Spanish" type="Boolean"/>
+			<field name="bLang_Swedish" type="Boolean"/>
+			<field name="bLang_Traditional_Chinese" type="Boolean"/>
+			<field name="bLang_Simplified_Chinese" type="Boolean"/>
+			<field name="bLang_Fake_Long_English" type="Boolean"/>
+			<field name="bLang_Spanish_Mexico" type="Boolean"/>
+			<field name="bLang_Arabic" type="Boolean"/>
+		</object>
+		<object name="Constraints">
+			<object name="tagcategoryselectionblackboardProfile">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+						<object name="Tags">
+							<object name="Tag">
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="B">
+		<object name="locstridNameMale">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridNameFemale">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="IsRoleDescriptionPossessive">
+			<field name="bLang_Czech" type="Boolean"/>
+			<field name="bLang_Danish" type="Boolean"/>
+			<field name="bLang_Dutch" type="Boolean"/>
+			<field name="bLang_English" type="Boolean"/>
+			<field name="bLang_Finnish" type="Boolean"/>
+			<field name="bLang_French" type="Boolean"/>
+			<field name="bLang_German" type="Boolean"/>
+			<field name="bLang_Hungarian" type="Boolean"/>
+			<field name="bLang_Italian" type="Boolean"/>
+			<field name="bLang_Japanese" type="Boolean"/>
+			<field name="bLang_Korean" type="Boolean"/>
+			<field name="bLang_Norwegian" type="Boolean"/>
+			<field name="bLang_Polish" type="Boolean"/>
+			<field name="bLang_Portuguese_Brazil" type="Boolean"/>
+			<field name="bLang_Portuguese_Portugal" type="Boolean"/>
+			<field name="bLang_Russian" type="Boolean"/>
+			<field name="bLang_Spanish" type="Boolean"/>
+			<field name="bLang_Swedish" type="Boolean"/>
+			<field name="bLang_Traditional_Chinese" type="Boolean"/>
+			<field name="bLang_Simplified_Chinese" type="Boolean"/>
+			<field name="bLang_Fake_Long_English" type="Boolean"/>
+			<field name="bLang_Spanish_Mexico" type="Boolean"/>
+			<field name="bLang_Arabic" type="Boolean"/>
+		</object>
+		<object name="locstridFormerRivalNameMale">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridFormerRivalNameFemale">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="IsFormerRoleDescriptionPossessive">
+			<field name="bLang_Czech" type="Boolean"/>
+			<field name="bLang_Danish" type="Boolean"/>
+			<field name="bLang_Dutch" type="Boolean"/>
+			<field name="bLang_English" type="Boolean"/>
+			<field name="bLang_Finnish" type="Boolean"/>
+			<field name="bLang_French" type="Boolean"/>
+			<field name="bLang_German" type="Boolean"/>
+			<field name="bLang_Hungarian" type="Boolean"/>
+			<field name="bLang_Italian" type="Boolean"/>
+			<field name="bLang_Japanese" type="Boolean"/>
+			<field name="bLang_Korean" type="Boolean"/>
+			<field name="bLang_Norwegian" type="Boolean"/>
+			<field name="bLang_Polish" type="Boolean"/>
+			<field name="bLang_Portuguese_Brazil" type="Boolean"/>
+			<field name="bLang_Portuguese_Portugal" type="Boolean"/>
+			<field name="bLang_Russian" type="Boolean"/>
+			<field name="bLang_Spanish" type="Boolean"/>
+			<field name="bLang_Swedish" type="Boolean"/>
+			<field name="bLang_Traditional_Chinese" type="Boolean"/>
+			<field name="bLang_Simplified_Chinese" type="Boolean"/>
+			<field name="bLang_Fake_Long_English" type="Boolean"/>
+			<field name="bLang_Spanish_Mexico" type="Boolean"/>
+			<field name="bLang_Arabic" type="Boolean"/>
+		</object>
+		<object name="Constraints">
+			<object name="tagcategoryselectionblackboardProfile">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+						<object name="Tags">
+							<object name="Tag">
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="DynamicFilter">
+		<field name="bHasChanceForEqualGender" type="Boolean"/>
+		<field name="fChanceForEqualGender" type="Float"/>
+		<field name="bHasChanceForEqualEthnicity" type="Boolean"/>
+		<field name="fChanceForEqualEthnicity" type="Float"/>
+		<field name="bHasChanceForEqualAgeRange" type="Boolean"/>
+		<field name="fChanceForEqualAgeRange" type="Float"/>
+		<field name="bHasChanceForEqualBirthplace" type="Boolean"/>
+		<field name="fChanceForEqualBirthplace" type="Float"/>
+		<field name="bHasChanceForEqualOccupation" type="Boolean"/>
+		<field name="fChanceForEqualOccupation" type="Float"/>
+		<field name="bHasChanceForEqualOccupationGroup" type="Boolean"/>
+		<field name="fChanceForEqualOccupationGroup" type="Float"/>
+		<field name="bHasChanceForEqualReligion" type="Boolean"/>
+		<field name="fChanceForEqualReligion" type="Float"/>
+		<field name="bHasChanceForEqualName" type="Boolean"/>
+		<field name="fChanceForEqualName" type="Float"/>
+		<field name="bHasChanceForEqualSurname" type="Boolean"/>
+		<field name="fChanceForEqualSurname" type="Float"/>
+	</object>
+	<object name="Attendances">
+		<object name="censusattendancedefinitionAttendance">
+			<field name="censusattendancedefinitionAttendance" type="BinHex"/>
+		</object>
+	</object>
+	<object name="AlternativeAttendances">
+		<object name="Dead">
+			<object name="censusattendancedefinitionAttendance">
+				<field name="censusattendancedefinitionAttendance" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Injured">
+			<object name="censusattendancedefinitionAttendance">
+				<field name="censusattendancedefinitionAttendance" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Arrested">
+			<object name="censusattendancedefinitionAttendance">
+				<field name="censusattendancedefinitionAttendance" type="BinHex"/>
+			</object>
+		</object>
+		<object name="PendingDeportation">
+			<object name="censusattendancedefinitionAttendance">
+				<field name="censusattendancedefinitionAttendance" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

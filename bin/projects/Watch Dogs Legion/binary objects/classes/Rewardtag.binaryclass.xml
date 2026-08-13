@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RewardtagParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="uiTagWeight" type="BinHex"/>
+	<field name="uiMaxTagItemsCount" type="BinHex"/>
+	<field name="rewardtagcategorySubTagCategory" type="BinHex"/>
+	<field name="bUsesTagWeightRule" type="Boolean"/>
+	<field name="TagDisplayName" type="String"/>
+	<object name="TagWeightRule">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="Boolean"/>
+	</object>
+</class>

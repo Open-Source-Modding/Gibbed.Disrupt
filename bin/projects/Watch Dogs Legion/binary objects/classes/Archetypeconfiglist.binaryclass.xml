@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ArchetypeconfiglistParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bValid" type="Boolean"/>
+	<field name="selValidAIType" type="Enum"/>
+	<object name="Configs">
+		<field name="bValid" type="Boolean"/>
+		<field name="selAgentType" type="Enum"/>
+		<field name="humanconfigHumanConfig" type="BinHex"/>
+		<field name="vehicleentityconfigVehicleConfig" type="BinHex"/>
+		<field name="animalconfigAnimalConfig" type="BinHex"/>
+		<field name="robotconfigRobotConfig" type="BinHex"/>
+		<field name="droneconfigDroneConfig" type="BinHex"/>
+		<object name="Configs">
+			<field name="bValid" type="Boolean"/>
+			<field name="selAgentType" type="Enum"/>
+			<field name="humanconfigHumanConfig" type="BinHex"/>
+			<field name="vehicleentityconfigVehicleConfig" type="BinHex"/>
+			<field name="animalconfigAnimalConfig" type="BinHex"/>
+			<field name="robotconfigRobotConfig" type="BinHex"/>
+			<field name="droneconfigDroneConfig" type="BinHex"/>
+		</object>
+	</object>
+</class>

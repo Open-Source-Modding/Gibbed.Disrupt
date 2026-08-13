@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Standalonebbox">
+	<object hash="DE9917E6">
+		<inherit name="Standalonebbox.fcbParameters"/>
+	</object>
+</file>

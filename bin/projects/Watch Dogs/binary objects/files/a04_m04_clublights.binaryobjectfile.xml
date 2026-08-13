@@ -1,0 +1,5 @@
+<file name="a04_m04_clublights" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

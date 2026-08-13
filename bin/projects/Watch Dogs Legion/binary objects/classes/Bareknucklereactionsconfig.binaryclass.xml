@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BareknucklereactionsconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fStallInitialTime" type="Float"/>
+	<field name="fStallTime" type="Float"/>
+	<object name="Reactions">
+		<object name="Reaction">
+			<field name="selReaction" type="Enum"/>
+			<field name="selWinning" type="Enum"/>
+			<field name="selGamePhase" type="Enum"/>
+			<field name="bWantSpecificActor" type="Boolean"/>
+			<field name="selSpecificActor" type="Enum"/>
+			<field name="fPriority" type="Float"/>
+			<field name="fProbability" type="Float"/>
+			<field name="selSound" type="Enum"/>
+			<field name="fSoundHypeMin" type="Float"/>
+			<field name="fSoundHypeMax" type="Float"/>
+			<field name="fSoundHypeBase" type="Float"/>
+			<field name="fSoundEventProbability" type="Float"/>
+			<field name="bForPlayerOnly" type="Boolean"/>
+			<field name="bPlayIfTopLevelOnly" type="Boolean"/>
+			<field name="bImmediate" type="Boolean"/>
+			<field name="fAnimDelay" type="Float"/>
+			<object name="Animations">
+				<object name="CrowdAnimation">
+					<field name="text_fileAnimPath" type="String"/>
+					<field name="fileAnimPath" type="BinHex"/>
+					<field name="fDurationMale" type="Float"/>
+					<field name="fDurationFemale" type="Float"/>
+					<field name="iWeight" type="Int32"/>
+				</object>
+			</object>
+			<object name="Bark">
+				<field name="bPlayOnAnnouncer" type="Boolean"/>
+				<field name="bPlayOnLocalPlayer" type="Boolean"/>
+				<field name="bIs2D" type="Boolean"/>
+				<field name="selTarget" type="Enum"/>
+				<field name="text_Bark" type="String"/>
+				<field name="Bark" type="BinHex"/>
+				<object name="MinMaxInterval">
+					<field name="fMin" type="Float"/>
+					<field name="fMax" type="Float"/>
+				</object>
+			</object>
+			<object name="Instances">
+				<field name="iMin" type="Int32"/>
+				<field name="iMax" type="Int32"/>
+			</object>
+			<object name="RepeatTime">
+				<field name="fMin" type="Float"/>
+				<field name="fMax" type="Float"/>
+			</object>
+		</object>
+	</object>
+</class>

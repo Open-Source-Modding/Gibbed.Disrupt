@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackingparametersParameters">
+	<inherit name="SharedParameters"/>
+	<object name="HackingGameplay">
+		<field name="bUseCameraContext" type="Boolean"/>
+		<object name="TimeParameters">
+			<field name="fHackingTimeLimit" type="Float"/>
+			<field name="fHackingSuccessTime" type="Float"/>
+			<field name="fHackingDecreaseSpeed" type="Float"/>
+			<field name="fHackingListenGraceTime" type="Float"/>
+			<field name="bInstantHack" type="Boolean"/>
+		</object>
+		<object name="HackingActionsLocalization">
+			<object name="HackingAction">
+				<field name="selHackingTypeAction" type="Enum"/>
+				<object name="locstridHackingActionOasisId">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

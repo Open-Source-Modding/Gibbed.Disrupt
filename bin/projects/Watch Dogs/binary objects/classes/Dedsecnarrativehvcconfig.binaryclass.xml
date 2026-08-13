@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DedsecnarrativehvcconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="tagHVCOccupationTag" type="BinHex"/>
+	<field name="selOnAccessGameplayTrigger" type="Enum"/>
+	<field name="selOnBeingProfiledTrigger" type="Enum"/>
+	<object name="OnEnteringLocationTriggers">
+		<object name="OnEnteringLocationTrigger">
+			<field name="selTrigger" type="Enum"/>
+			<object name="RequiredLocationTags">
+				<object name="Tag">
+					<field name="tagTag" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

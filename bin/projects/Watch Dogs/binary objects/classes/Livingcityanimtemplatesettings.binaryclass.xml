@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LivingcityanimtemplatesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sAnimTemplateName" type="String"/>
+	<field name="sAnimTemplateName" type="BinHex"/>
+	<field name="bIsForVigilante" type="Boolean"/>
+	<field name="fileMasterMoveStateId" type="String"/>
+	<field name="fileSlaveMoveStateId" type="String"/>
+</class>

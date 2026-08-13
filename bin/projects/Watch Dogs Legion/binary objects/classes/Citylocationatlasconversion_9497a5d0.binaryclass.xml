@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Citylocationatlasconversion_9497a5d0Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Filler">
+		<object name="LinkedAtlasType">
+			<field name="atlastypeAtlasType" type="String"/>
+		</object>
+	</object>
+	<object name="Micro">
+		<object name="LinkedAtlasType">
+			<field name="atlastypeAtlasType" type="String"/>
+		</object>
+	</object>
+	<object name="Small">
+		<object name="LinkedAtlasType">
+			<field name="atlastypeAtlasType" type="String"/>
+		</object>
+	</object>
+	<object name="Medium">
+		<object name="LinkedAtlasType">
+			<field name="atlastypeAtlasType" type="String"/>
+		</object>
+	</object>
+	<object name="Large">
+		<object name="LinkedAtlasType">
+			<field name="atlastypeAtlasType" type="String"/>
+		</object>
+	</object>
+</class>

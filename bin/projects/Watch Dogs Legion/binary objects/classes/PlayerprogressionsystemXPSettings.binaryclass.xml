@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlayerprogressionsystemXPSettingsParameters">
+	<object name="XPSettings">
+		<object name="Level">
+			<field name="uiLevelXP" type="UInt32" />
+			<field name="nLevelXP" type="Int32"/>
+			<field name="SkillPointToGiveOnReach" type="Int64"/>
+			<field name="TechPointToGiveOnReach" type="Int64"/>
+			<object name="locstridLevelName"/>
+			<object name="locstridLevelDescription"/>
+		</object>
+		<inherit name="PlayerprogressionsystemXPSettingsParameters"/>
+	</object>
+</class>

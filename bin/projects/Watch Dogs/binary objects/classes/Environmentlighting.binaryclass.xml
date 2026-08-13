@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EnvironmentlightingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bSunLightColorOverride" type="Boolean"/>
+	<field name="bMoonLightColorOverride" type="Boolean"/>
+	<field name="bSunLightIntensityOverride" type="Boolean"/>
+	<field name="bMoonLightIntensityOverride" type="Boolean"/>
+	<field name="bPaintedGIColorOverride" type="Boolean"/>
+	<field name="bPaintedGIIntensityOverride" type="Boolean"/>
+	<field name="bAmbientDirectionalContrastOverride" type="Boolean"/>
+	<field name="bAmbientSkyColorOverride" type="Boolean"/>
+	<field name="bAmbientSkyIntensityOverride" type="Boolean"/>
+	<field name="bAmbientGroundColorOverride" type="Boolean"/>
+	<field name="bAmbientGroundIntensityOverride" type="Boolean"/>
+	<field name="bAmbientSunFrontColorOverride" type="Boolean"/>
+	<field name="bAmbientSunFrontIntensityOverride" type="Boolean"/>
+	<field name="bAmbientSunBackColorOverride" type="Boolean"/>
+	<field name="bAmbientSunBackIntensityOverride" type="Boolean"/>
+	<field name="bWorldShadowContributionOverride" type="Boolean"/>
+	<field name="bStaticReflectionIntensityOverride" type="Boolean"/>
+	<field name="bStaticReflectionGISaturationOverride" type="Boolean"/>
+	<field name="bStaticReflectionIntensityDayOverride" type="Boolean"/>
+	<field name="bStaticReflectionIntensityNightOverride" type="Boolean"/>
+	<field name="fStaticReflectionGIDayInfluence" type="Float"/>
+	<field name="bStaticReflectionGIDayInfluenceOverride" type="Boolean"/>
+	<field name="fStaticReflectionGINightInfluence" type="Float"/>
+	<field name="bStaticReflectionGINightInfluenceOverride" type="Boolean"/>
+	<field name="bDynamicReflectionGIInfluenceOverride" type="Boolean"/>
+	<field name="bRimLightIntensityOverride" type="Boolean"/>
+	<field name="bGlobalLightsIntensity0Override" type="Boolean"/>
+	<field name="bGlobalLightsIntensity1Override" type="Boolean"/>
+	<field name="bGlobalLightsIntensity2Override" type="Boolean"/>
+	<field name="bGlobalLightsIntensity3Override" type="Boolean"/>
+	<field name="bProbeSkyBounceMultiplierOverride" type="Boolean"/>
+	<field name="bProbeSkyDirectMultiplierOverride" type="Boolean"/>
+	<field name="bProbeSunBounceMultiplierOverride" type="Boolean"/>
+	<field name="bProbeSaturationOverride" type="Boolean"/>
+	<field name="bProbeSkySaturationOverride" type="Boolean"/>
+	<field name="bProbeScaleOverride" type="Boolean"/>
+	<field name="bProbeLocalLightsMultiplierOverride" type="Boolean"/>
+	<field name="bProbeLocalLightsMultiplierInteriorOverride" type="Boolean"/>
+	<field name="bProbeBackgroundAmbientStrengthOverride" type="Boolean"/>
+	<field name="fProbeMinAmbientLimitsMultiplier" type="Float"/>
+	<field name="bProbeMinAmbientLimitsMultiplierOverride" type="Boolean"/>
+	<field name="bExposureValueOverride" type="Boolean"/>
+	<field name="fExposedWhitePoint" type="Float"/>
+	<field name="bExposedWhitePointOverride" type="Boolean"/>
+	<field name="bAutoExposureOverride" type="Boolean"/>
+	<field name="fSunShadowInertiaStartAngle" type="Float"/>
+	<field name="bSunShadowInertiaStartAngleOverride" type="Boolean"/>
+	<field name="fSunShadowInertiaEndAngle" type="Float"/>
+	<field name="bSunShadowInertiaEndAngleOverride" type="Boolean"/>
+	<field name="fSunLensFlareVisibility" type="Float"/>
+	<field name="bSunLensFlareVisibilityOverride" type="Boolean"/>
+	<object name="gradSunLightColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradMoonLightColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveSunLightIntensity">
+	    <inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveMoonLightIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradPaintedGIColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curvePaintedGIIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveAmbientDirectionalContrast">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradAmbientSkyColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveAmbientSkyIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradAmbientGroundColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveAmbientGroundIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradAmbientSunFrontColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveAmbientSunFrontIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradAmbientSunBackColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveAmbientSunBackIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveWorldShadowContribution">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveStaticReflectionIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveStaticReflectionGISaturation">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveStaticReflectionIntensityDay">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveStaticReflectionIntensityNight">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveDynamicReflectionGIInfluence">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRimLightIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveGlobalLightsIntensity0">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveGlobalLightsIntensity1">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveGlobalLightsIntensity2">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveGlobalLightsIntensity3">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveProbeSkyBounceMultiplier">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveProbeSkyDirectMultiplier">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveProbeSunBounceMultiplier">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveProbeSkySaturation">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveProbeSaturation">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveProbeScale">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveProbeLocalLightsMultiplier">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveProbeLocalLightsMultiplierInterior">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveProbeBackgroundAmbientStrength">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveExposureValue">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="AutoExposure">
+		<field name="selLuminanceComputationMethod" type="Enum"/>
+		<field name="fScreenPercentX" type="Float"/>
+		<field name="fScreenPercentY" type="Float"/>
+		<object name="curvePercentile">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTargetLuminance">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveSpeed">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveSpeedMultipler">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveMinimumExposureValue">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveMaximumExposureValue">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="AmbientOcclusion">
+		<field name="bWorldAOMultiplyOverride" type="Boolean"/>
+		<field name="bVertexAOMultiplyOverride" type="Boolean"/>
+		<object name="curveWorldAOMultiply">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveVertexAOMultiply">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="AmbientReflectionOverride">
+		<field name="fAmbientReflectionOverrideFactor" type="Float"/>
+		<field name="bAmbientReflectionOverrideFactorOverride" type="Boolean"/>
+		<field name="bAmbientReflectionTopColorOverride" type="Boolean"/>
+		<field name="bAmbientReflectionTopIntensityOverride" type="Boolean"/>
+		<field name="bAmbientReflectionBottomColorOverride" type="Boolean"/>
+		<field name="bAmbientReflectionBottomIntensityOverride" type="Boolean"/>
+		<object name="gradAmbientReflectionTopColor">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveAmbientReflectionTopIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="gradAmbientReflectionBottomColor">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveAmbientReflectionBottomIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

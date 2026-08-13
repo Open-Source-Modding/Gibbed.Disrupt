@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DigitaltriploadoutsdescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Loadouts">
+		<object name="Loadout">
+			<field name="itemsFirstWeapon" type="BinHex"/>
+			<field name="itemsSecondWeapon" type="BinHex"/>
+			<field name="bFirstWeaponFullAmmo" type="Boolean"/>
+			<field name="bSecondWeaponFullAmmo" type="Boolean"/>
+			<object name="locstridLoadoutName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

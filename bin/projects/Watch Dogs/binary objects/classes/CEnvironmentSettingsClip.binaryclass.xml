@@ -1,0 +1,16 @@
+<class name="CEnvironmentSettingsClip">
+    <object name="CEnvironmentSettingsClip">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field name="timeStartTime" type="Float"/>
+      <field name="timeDuration" type="Float"/>
+      <field name="timeEndTime" type="Float"/>
+      <field name="hidResizable" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+      <field name="KeepAlive" type="BinHex"/>
+      <field name="timeFadeIn" type="Float"/>
+      <field name="timeFadeOut" type="Float"/>
+      <field name="Preset" type="String"/>
+    </object>
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmoduleresourcessettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<object name="InitTrigger">
+			<field name="rulesmithidRuleId" type="BinHex"/>
+		</object>
+		<object name="GlobalCryptoMultiplier">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CurrentShopDiscountRatio">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

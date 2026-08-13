@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TurretsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxWeaponRotationSpeed" type="Float"/>
+	<object name="WeaponAngles">
+		<field name="fMinWeaponYaw" type="Float"/>
+		<field name="fMaxWeaponYaw" type="Float"/>
+		<field name="fMinWeaponPitch" type="Float"/>
+		<field name="fMaxWeaponPitch" type="Float"/>
+	</object>
+	<object name="Idle">
+		<field name="fReturnToStandByTimeMin" type="Float"/>
+		<field name="fReturnToStandByTimeMax" type="Float"/>
+		<field name="fWakeUpLookAtPosTimeMin" type="Float"/>
+		<field name="fWakeUpLookAtPosTimeMax" type="Float"/>
+		<field name="fWakeUpLookNearPlayerTimeMin" type="Float"/>
+		<field name="fWakeUpLookNearPlayerTimeMax" type="Float"/>
+		<field name="fWakeUpLookNearPlayerAngleMinDeg" type="Float"/>
+		<field name="fWakeUpLookNearPlayerAngleMaxDeg" type="Float"/>
+		<field name="turretidlemovementsettingsMovementSettings" type="BinHex"/>
+	</object>
+	<object name="Combat">
+		<field name="fAbandonTimeMin" type="Float"/>
+		<field name="fAbandonTimeMax" type="Float"/>
+		<field name="fOverchargeRocketFireRateModifier" type="Float"/>
+	</object>
+	<object name="TargetSelection">
+		<field name="fPlayerCandidateWeight" type="Float"/>
+		<field name="fPlayerCandidateControllingRCWeight" type="Float"/>
+		<field name="fDamageFromCandidateWeight" type="Float"/>
+		<field name="fDamageMemoryTimeMultiplier" type="Float"/>
+		<field name="fTargetChangeHysteresis" type="Float"/>
+		<field name="fTargetChangedDelayMin" type="Float"/>
+		<field name="fTargetChangedDelayMax" type="Float"/>
+		<field name="fTargetLostDelayMin" type="Float"/>
+		<field name="fTargetLostDelayMax" type="Float"/>
+		<field name="fTargetFoundDelayMin" type="Float"/>
+		<field name="fTargetFoundDelayMax" type="Float"/>
+		<object name="curveDistanceWeightCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="PerceptionThreat">
+		<field name="fLastDamageThreatTime" type="Float"/>
+		<field name="fLastFiredGunThreatTime" type="Float"/>
+	</object>
+</class>

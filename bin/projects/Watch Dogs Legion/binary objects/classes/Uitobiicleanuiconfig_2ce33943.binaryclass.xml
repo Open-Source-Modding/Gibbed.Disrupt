@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uitobiicleanuiconfig_2ce33943Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<object name="TobiiCleanUIGroups">
+		<object name="CleanUIGroup">
+			<field name="sCleanUIGropName" type="BinHex"/>
+			<field hash="C38BF66B" type="BinHex"/>
+			<object name="HudElementSettings">
+				<object name="TobiiCleanUIHudConfig">
+					<field name="uielementsettingsUIElementSetting" type="BinHex"/>
+					<field name="uitweensettingTobiiCleanUITweenSetting" type="BinHex"/>
+					<field name="bIsForceElement" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

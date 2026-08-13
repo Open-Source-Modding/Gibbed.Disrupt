@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Vehicledbanddataconfig_5cdfe789Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="selGameplayType" type="BinHex"/>
+	<field name="vehiclewheeledphyscomponentparamsWheeledPhysComponentDefaultDatabase" type="BinHex"/>
+	<object name="Parts">
+		<object name="part">
+			<field name="Name" type="String"/>
+			<field name="selRequired" type="BinHex"/>
+			<field name="selChassisCollision" type="BinHex"/>
+			<field name="selBallistic" type="BinHex"/>
+			<field name="selHang" type="BinHex"/>
+			<field name="selDetach" type="BinHex"/>
+			<field name="selDamageStates" type="BinHex"/>
+			<field name="vehiclepartDefaultDatabase" type="BinHex"/>
+		</object>
+	</object>
+</class>

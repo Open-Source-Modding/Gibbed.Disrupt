@@ -1,0 +1,5 @@
+<file name="health_20_fade_out" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

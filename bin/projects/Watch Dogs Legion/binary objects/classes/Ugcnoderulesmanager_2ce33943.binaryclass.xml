@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Ugcnoderulesmanager_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="OnFootRaceNodeRules">
+		<object name="NodeQtyRules">
+			<object name="StartNodeQtyRules">
+				<field name="iMin" type="Int32"/>
+				<field name="iMax" type="Int32"/>
+			</object>
+			<object name="RouteNodeRules">
+				<field name="iMin" type="Int32"/>
+				<field name="iMax" type="Int32"/>
+			</object>
+		</object>
+		<object name="AutoDropRule">
+			<field name="bEnableAutoNodeDrop" type="Boolean"/>
+			<field name="fAutoDropDistance" type="Float"/>
+		</object>
+		<object name="StartNodeRules">
+			<object name="NodeRule">
+				<object name="RuleInfo">
+					<field name="sFailedReasonDebug" type="String"/>
+					<object name="locstridFailedReason">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+				</object>
+				<object name="Process">
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
+					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
+					<object name="Values">
+						<field name="bInWaterRequired" type="Boolean"/>
+						<field name="fRadiusSquared" type="Float"/>
+						<field name="selOperator" type="BinHex"/>
+						<field name="bUsePrevious" type="Boolean"/>
+						<field name="bCheckStartPos" type="Boolean"/>
+						<field name="fVehicleUpwards" type="Float"/>
+						<field name="fPosOffset" type="Float"/>
+						<field name="fVerticalThreshold" type="Float"/>
+						<field name="fHorizontalThreshold" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="RouteNodeRules">
+			<object name="NodeRule">
+				<object name="RuleInfo">
+					<field name="sFailedReasonDebug" type="String"/>
+					<object name="locstridFailedReason">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+				</object>
+				<object name="Process">
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
+					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
+					<object name="Values">
+						<field name="bInWaterRequired" type="Boolean"/>
+						<field name="fRadiusSquared" type="Float"/>
+						<field name="selOperator" type="BinHex"/>
+						<field name="bUsePrevious" type="Boolean"/>
+						<field name="bCheckStartPos" type="Boolean"/>
+						<field name="fVehicleUpwards" type="Float"/>
+						<field name="fPosOffset" type="Float"/>
+						<field name="fVerticalThreshold" type="Float"/>
+						<field name="fHorizontalThreshold" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="TeleportRules">
+			<object name="NodeRule">
+				<object name="RuleInfo">
+					<field name="sFailedReasonDebug" type="String"/>
+					<object name="locstridFailedReason">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+				</object>
+				<object name="Process">
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
+					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
+					<object name="Values">
+						<field name="bInWaterRequired" type="Boolean"/>
+						<field name="fRadiusSquared" type="Float"/>
+						<field name="selOperator" type="BinHex"/>
+						<field name="bUsePrevious" type="Boolean"/>
+						<field name="bCheckStartPos" type="Boolean"/>
+						<field name="fVehicleUpwards" type="Float"/>
+						<field name="fPosOffset" type="Float"/>
+						<field name="fVerticalThreshold" type="Float"/>
+						<field name="fHorizontalThreshold" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="VehicleRaceNodeRules">
+		<object name="NodeQtyRules">
+			<object name="StartNodeQtyRules">
+				<field name="iMin" type="Int32"/>
+				<field name="iMax" type="Int32"/>
+			</object>
+			<object name="RouteNodeRules">
+				<field name="iMin" type="Int32"/>
+				<field name="iMax" type="Int32"/>
+			</object>
+		</object>
+		<object name="AutoDropRule">
+			<field name="bEnableAutoNodeDrop" type="Boolean"/>
+			<field name="fAutoDropDistance" type="Float"/>
+		</object>
+		<object name="StartNodeRules">
+			<object name="NodeRule">
+				<object name="RuleInfo">
+					<field name="sFailedReasonDebug" type="String"/>
+					<object name="locstridFailedReason">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+				</object>
+				<object name="Process">
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
+					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
+					<object name="Values">
+						<field name="bInWaterRequired" type="Boolean"/>
+						<field name="fRadiusSquared" type="Float"/>
+						<field name="selOperator" type="BinHex"/>
+						<field name="bUsePrevious" type="Boolean"/>
+						<field name="bCheckStartPos" type="Boolean"/>
+						<field name="fVehicleUpwards" type="Float"/>
+						<field name="fPosOffset" type="Float"/>
+						<field name="fVerticalThreshold" type="Float"/>
+						<field name="fHorizontalThreshold" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="RouteNodeRules">
+			<object name="NodeRule">
+				<object name="RuleInfo">
+					<field name="sFailedReasonDebug" type="String"/>
+					<object name="locstridFailedReason">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+				</object>
+				<object name="Process">
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
+					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
+					<object name="Values">
+						<field name="bInWaterRequired" type="Boolean"/>
+						<field name="fRadiusSquared" type="Float"/>
+						<field name="selOperator" type="BinHex"/>
+						<field name="bUsePrevious" type="Boolean"/>
+						<field name="bCheckStartPos" type="Boolean"/>
+						<field name="fVehicleUpwards" type="Float"/>
+						<field name="fPosOffset" type="Float"/>
+						<field name="fVerticalThreshold" type="Float"/>
+						<field name="fHorizontalThreshold" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="TeleportRules">
+			<object name="NodeRule">
+				<object name="RuleInfo">
+					<field name="sFailedReasonDebug" type="String"/>
+					<object name="locstridFailedReason">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+				</object>
+				<object name="Process">
+					<field name="text_ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="String"/>
+					<field name="ugcnoderuleprocessUgcNodeRuleProcessRuleType" type="BinHex"/>
+					<object name="Values">
+						<field name="bInWaterRequired" type="Boolean"/>
+						<field name="fRadiusSquared" type="Float"/>
+						<field name="selOperator" type="BinHex"/>
+						<field name="bUsePrevious" type="Boolean"/>
+						<field name="bCheckStartPos" type="Boolean"/>
+						<field name="fVehicleUpwards" type="Float"/>
+						<field name="fPosOffset" type="Float"/>
+						<field name="fVerticalThreshold" type="Float"/>
+						<field name="fHorizontalThreshold" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+    <object name="PointChallengeNodeRules">
+      <object name="NodeQtyRules">
+        <object name="StartNodeQtyRules">
+          <field name="iMin" type="Int32"/>
+          <field name="iMax" type="Int32"/>
+        </object>
+        <object name="RouteNodeRules">
+          <field name="iMin" type="Int32"/>
+          <field name="iMax" type="Int32"/>
+        </object>
+      </object>
+      <object name="AutoDropRule">
+        <field name="bEnableAutoNodeDrop" type="Boolean"/>
+      </object>
+      <object name="StartNodeRules" />
+      <object name="RouteNodeRules" />
+      <object name="TeleportRules" />
+    </object>
+</class>

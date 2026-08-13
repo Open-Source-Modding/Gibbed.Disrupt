@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PropcloselectorsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Selectors">
+		<object name="Selectors">
+			<field name="text_selSelectorID" type="String"/>
+			<field name="selSelectorID" type="Enum"/>
+			<field name="propPropDbName" type="BinHex"/>
+		</object>
+	</object>
+</class>

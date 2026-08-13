@@ -1,0 +1,5 @@
+<file name="lena" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

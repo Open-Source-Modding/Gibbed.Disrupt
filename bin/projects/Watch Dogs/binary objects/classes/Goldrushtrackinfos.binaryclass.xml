@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="GoldrushtrackinfosParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fGoldTime" type="Float"/>
+	<field name="fSilverTime" type="Float"/>
+	<field name="fBronzeTime" type="Float"/>
+	<field name="uiTrackId" type="Int64"/>
+	<field name="imageName" type="String"/>
+	<field name="bAvailableInTBoneDlc" type="Boolean"/>
+	<object name="locstridTrackName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTrackDesc"/>
+</class>

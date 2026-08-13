@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WaveagentcompositionconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="AgentCompositions">
+		<object name="AgentComposition">
+			<object name="IsValid">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="AgentCompositionEntries">
+				<object name="AgentCompositionEntry">
+					<field name="fInitialSpawnTimer" type="Float"/>
+					<field name="fRefillTimer" type="Float"/>
+					<object name="AgentSubcategorySettings">
+						<object name="AgentSubcategoryData">
+							<field name="selAgentSubcategory" type="Enum"/>
+							<field name="selVehicleType" type="Enum"/>
+							<field name="fRandomWeight" type="Float"/>
+							<field name="DesiredCount" type="BinHex"/>
+							<field name="selVehicleSettings" type="Enum"/>
+							<field name="RequiredCompositionPassengerCount" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

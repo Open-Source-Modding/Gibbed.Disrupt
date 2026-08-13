@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ScriptedeventgameplaypresetParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bShouldOverrideMaskState" type="Boolean"/>
+	<field name="bOverrideMaskState" type="Boolean"/>
+	<field name="bDisablePlayerInput" type="Boolean"/>
+	<field name="bDisconnectRCOnStart" type="Boolean"/>
+	<field name="sndOnStart" type="BinHex"/>
+	<field name="sndOnStartAlt" type="BinHex"/>
+	<field name="sndOnStop" type="BinHex"/>
+	<field name="sndOnStopAlt" type="BinHex"/>
+	<field name="sndtpSoundType" type="BinHex"/>
+	<field name="sndtpSoundTypeAlt" type="BinHex"/>
+	<object name="StateSequence">
+		<object name="StateData">
+			<field name="selStateType" type="Enum"/>
+			<field name="selFadeType" type="Enum"/>
+			<field name="fadeTransitionDuration" type="BinHex"/>
+			<field name="colorFadeColor" type="VectorColor"/>
+			<field name="text_sFadePostFx" type="String"/>
+			<field name="sFadePostFx" type="BinHex"/>
+			<field name="bWaitForFadeDuration" type="Boolean"/>
+			<field name="fadeDuration" type="BinHex"/>
+			<field name="bShouldShuffleTeleport" type="Boolean"/>
+			<field name="sRespawnLayerName" type="BinHex"/>
+			<field name="text_fileCinemaResourcePath" type="String"/>
+			<field name="fileCinemaResourcePath" type="BinHex"/>
+			<field name="cinemaResource" type="BinHex"/>
+			<field name="cinemaScenePivotId" type="BinHex"/>
+			<field name="bFadeOutWhenStarted" type="Boolean"/>
+			<field name="bStopAnimWhenBrickStops" type="Boolean"/>
+			<field name="fShakeStrength" type="Float"/>
+			<field name="fShakeAttenuationPower" type="Float"/>
+			<field name="fShakeDuration" type="Float"/>
+			<field name="vec3ShakeXYZRange" type="BinHex"/>
+			<field name="vec3ShakePRYRange" type="BinHex"/>
+			<field name="text_sRumbleId" type="String"/>
+			<field name="sRumbleId" type="BinHex"/>
+			<field name="fWaitDuration" type="Float"/>
+			<field name="fDuration" type="Float"/>
+			<field name="bRemoveWorldPropertyOverrideOnExit" type="Boolean"/>
+			<field name="text_psVFxParticles" type="String"/>
+			<field name="psVFxParticles" type="BinHex"/>
+			<field name="entAnchorEntity" type="BinHex"/>
+			<object name="TeleportEntitiesData">
+				<object name="TeleportEntity">
+					<field name="entTeleportEntity" type="BinHex"/>
+				</object>
+			</object>
+			<object name="localPlayerAnimParams">
+				<field name="text_fileAnimationPath" type="String"/>
+				<field name="fileAnimationPath" type="BinHex"/>
+				<field name="sAnchorName" type="BinHex"/>
+				<field name="bUseForceDisplacement" type="Boolean"/>
+				<field name="vectorAnchorLocalPositionOffset" type="Vector3"/>
+				<field name="vectorAnchorLocalOrientationOffset" type="Vector3"/>
+				<field name="bKillLayerAnimations" type="Boolean"/>
+				<field name="fileAnimatedCamera" type="BinHex"/>
+				<field name="fAnimatedCameraBlendInTime" type="Float"/>
+				<field name="fAnimatedCameraBlendOutTime" type="Float"/>
+				<field name="bAnimatedCameraDisableCollision" type="Boolean"/>
+				<field name="bNoCollisionInteraction" type="Boolean"/>
+				<field name="bAllowSafeCutInBodyAnim" type="Boolean"/>
+				<field name="bAllowFaceMaskLayerState" type="Boolean"/>
+				<object name="AnchorPartNames"/>
+			</object>
+			<object name="WorldProperties">
+				<object name="TimeOfDay">
+					<field name="bEnableTimeOfDay" type="Boolean"/>
+					<field name="uiHour" type="UInt32"/>
+					<field name="bDisableTimeScaling" type="Boolean"/>
+				</object>
+				<object name="Weather">
+					<field name="bEnableWeather" type="Boolean"/>
+					<field name="envweatherpresetWeatherPreset" type="BinHex"/>
+				</object>
+				<object name="Felony">
+					<field name="bDisableFelony" type="Boolean"/>
+				</object>
+				<object name="WorldSpawning">
+					<field name="bDisableWorldSpawning" type="Boolean"/>
+				</object>
+			</object>
+			<object name="Common">
+				<field name="text_sndStateStartSound" type="String"/>
+				<field name="sndStateStartSound" type="BinHex"/>
+				<field name="text_sndStateStopSound" type="String"/>
+				<field name="sndStateStopSound" type="BinHex"/>
+				<field name="sndtpStateStartSoundType" type="BinHex"/>
+				<field name="sndtpStateStopSoundType" type="BinHex"/>
+				<field name="entSoundEntity" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="LookAtData">
+		<field name="fInitialDelay" type="Float"/>
+		<field name="fOtherPlayersWeight" type="Float"/>
+		<field name="OtherPlayersMinDuration" type="BinHex"/>
+		<field name="OtherPlayersMaxDuration" type="BinHex"/>
+		<field name="fCameraWeight" type="Float"/>
+		<field name="fCameraMinDuration" type="Float"/>
+		<field name="fCameraMaxDuration" type="Float"/>
+		<field name="fNoLookAtWeight" type="Float"/>
+		<field name="fNoLookAtMinDuration" type="Float"/>
+		<field name="fNoLookAtMaxDuration" type="Float"/>
+		<field name="entMainLookAtTarget" type="BinHex"/>
+	</object>
+</class>

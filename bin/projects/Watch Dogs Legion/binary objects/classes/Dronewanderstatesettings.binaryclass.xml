@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronewanderstatesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fLandOnDockProbability" type="Float"/>
+	<field name="selLandingDockSize" type="Enum"/>
+	<field name="fLandingDockMaxDistance" type="Float"/>
+	<field name="fLandingDockIgnoreProbability" type="Float"/>
+	<object name="SwitchedAllegiance">
+		<field name="fMoveZOffset" type="Float"/>
+		<field name="fMoveSpeed" type="Float"/>
+		<field name="fMoveSpeedFar" type="Float"/>
+		<field name="fMoveLookAtMaxDistance" type="Float"/>
+		<field name="fMoveLookAtSpeedModifier" type="Float"/>
+		<field name="fMoveToPointAbandonTime" type="Float"/>
+		<field name="fPointVisibilityCheckMaxDistance" type="Float"/>
+		<field name="fOriginInspectionNearTolerance" type="Float"/>
+		<field name="fOriginInspectionTotalTime" type="Float"/>
+		<field name="fOriginInspectionRotationTime" type="Float"/>
+		<field name="fOriginInspectionRotationAngleDeg" type="Float"/>
+		<field name="fOriginInspectionRotationSpeedModifier" type="Float"/>
+		<field name="bOriginInspectionRotationLookLeftRight" type="Boolean"/>
+		<field name="fIdleLookAtTime" type="Float"/>
+		<field name="fIdleLookAtAngleDeg" type="Float"/>
+		<field name="fIdleLookAtSpeedModifier" type="Float"/>
+	</object>
+</class>

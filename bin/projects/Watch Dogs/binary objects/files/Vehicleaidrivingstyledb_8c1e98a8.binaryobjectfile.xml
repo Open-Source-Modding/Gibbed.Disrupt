@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Vehicleaidrivingstyledb_8c1e98a8">
+	<object name="obj">
+		<inherit name="Vehicleaidrivingstyledb_8c1e98a8Parameters"/>
+	</object>
+</file>

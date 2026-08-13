@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ClopacingeventconfigsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fOppressedMinCooldown" type="Float"/>
+	<field name="fOppressedMaxCooldown" type="Float"/>
+	<field name="fDefiantMinCooldown" type="Float"/>
+	<field name="fDefiantMaxCooldown" type="Float"/>
+	<field name="fPlayerSpeedThreashold" type="Float"/>
+	<field name="bShowMapIcon" type="Boolean"/>
+	<field name="bIsEnabledOnline" type="Boolean"/>
+</class>

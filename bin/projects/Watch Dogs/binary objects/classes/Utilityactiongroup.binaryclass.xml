@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UtilityactiongroupParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Actions">
+		<object name="utilityactionActions">
+			<field name="utilityactionActions" type="BinHex"/>
+		</object>
+	</object>
+</class>

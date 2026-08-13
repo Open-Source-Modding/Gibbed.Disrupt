@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlasmaqueryablerulesmithruleParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Rule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

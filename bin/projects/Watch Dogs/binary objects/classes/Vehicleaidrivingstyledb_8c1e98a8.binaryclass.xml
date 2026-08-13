@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Vehicleaidrivingstyledb_8c1e98a8Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="drvstylecfgWander" type="BinHex"/>
+	<field name="drvstylecfgReach" type="BinHex"/>
+	<field name="drvstylecfgReachNoRules" type="BinHex"/>
+	<field name="drvstylecfgSearch" type="BinHex"/>
+	<field name="drvstylecfgFlee" type="BinHex"/>
+	<field name="drvstylecfgFelonySlow" type="BinHex"/>
+	<field name="drvstylecfgFelonyLvl1" type="BinHex"/>
+	<field name="drvstylecfgFelonyLvl2" type="BinHex"/>
+	<field name="drvstylecfgFelonyLvl3" type="BinHex"/>
+	<field name="drvstylecfgFelonyLvl4" type="BinHex"/>
+	<field name="drvstylecfgFelonyLvl5" type="BinHex"/>
+	<field name="drvstylecfgChaseNoFelonyDefault" type="BinHex"/>
+	<field name="drvstylecfgFelonyAmbient" type="BinHex"/>
+</class>

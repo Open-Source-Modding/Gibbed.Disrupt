@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Limitedsoundlist_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="TestValue" type="BinHex"/>
+	<object name="LimitedSoundList">
+		<object name="LimitedSound">
+			<field name="MaxValue" type="BinHex"/>
+			<field name="text_sndLimitedSound" type="String"/>
+			<field name="sndLimitedSound" type="BinHex"/>
+		</object>
+	</object>
+</class>

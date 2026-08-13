@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DynamicgroupbehaviorsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bRegisterOnGameStart" type="Boolean"/>
+	<field name="fCooldownAfterLaunch" type="Float"/>
+	<field name="fCooldownBetweenEvaluations" type="Float"/>
+	<field name="selBoroughUprisingState" type="Enum"/>
+	<object name="EvaluatorSettings">
+		<field hash="6D1E1959" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<field name="fPMCsMaxDistFromHostage" type="Float"/>
+			<field name="fHostageMaxDistFromPlayer" type="Float"/>
+			<field name="fClanKellyMemberMaxDistFromPlayer" type="Float"/>
+			<field name="fCiviliansMaxDistFromClanKellyMember" type="Float"/>
+			<field name="fCiviliansMinDistFromClanKellyMember" type="Float"/>
+			<field name="fPMCMinIdleDuration" type="Float"/>
+			<object name="CLOs">
+				<field name="CLOId" type="BinHex"/>
+				<field name="selGroupBehaviorRole" type="Enum"/>
+				<field name="bIsManuallyActivated" type="Boolean"/>
+				<object name="CLOs">
+					<field name="CLOId" type="BinHex"/>
+					<field name="selGroupBehaviorRole" type="Enum"/>
+					<field name="bIsManuallyActivated" type="Boolean"/>
+				</object>
+			</object>
+			<field name="fMinDistanceFromPlayer" type="Float"/>
+			<field name="fMaxDistanceFromPlayer" type="Float"/>
+			<field name="fDroneMinDistanceFromPMC" type="Float"/>
+			<field name="fDroneMaxDistanceFromPMC" type="Float"/>
+			<field name="fDroneSelectionProbability" type="Float"/>
+			<field name="fDroneSelectionProbabilityFailedMinCooldown" type="Float"/>
+			<field name="fDroneSelectionProbabilityFailedMaxCooldown" type="Float"/>
+			<field name="fMinCooldownToSelectSamePMC" type="Float"/>
+			<field name="fMaxCooldownToSelectSamePMC" type="Float"/>
+			<field name="selDroneType" type="Enum"/>
+			<field name="fDroneMinDistanceFromPlayer" type="Float"/>
+			<field name="fDroneMaxDistanceFromPlayer" type="Float"/>
+			<field name="fCivilianMinDistanceFromDrone" type="Float"/>
+			<field name="fCivilianMaxDistanceFromDrone" type="Float"/>
+			<field name="fCivilianSelectionProbability" type="Float"/>
+			<field name="fCivilianSelectionProbabilityFailedMinCooldown" type="Float"/>
+			<field name="fCivilianSelectionProbabilityFailedMaxCooldown" type="Float"/>
+			<field name="fMinCooldownToSelectSameDrone" type="Float"/>
+			<field name="fMaxCooldownToSelectSameDrone" type="Float"/>
+			<object name="DroneTypes">
+				<object name="DroneType">
+					<field name="selDroneType" type="Enum"/>
+				</object>
+			</object>
+			<field name="fMinCooldownToSelectSameCivilian" type="Float"/>
+			<field name="fMaxCooldownToSelectSameCivilian" type="Float"/>
+			<object name="AdditionalConditions">
+				<object name="AdditionalConditionsRule">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+			</object>
+			<field name="fPMCsMaxDistFromPlayer" type="Float"/>
+			<field name="selPMCRole" type="Enum"/>
+			<field name="selDistracterRole" type="Enum"/>
+			<field name="selRescuerRole" type="Enum"/>
+			<field name="selPrisonerRole" type="Enum"/>
+			<field name="bRescuerAllowAnyProp" type="Boolean"/>
+			<object name="tagcategoryselectionRescuerPropWhitelist">
+							<field name="text_UITagCategorySelectionClassID" type="String"/>
+							<field name="UITagCategorySelectionClassID" type="BinHex"/>
+							<field name="tagcategoryUITagCategory" type="BinHex"/>
+							<object name="Tags"/>
+						</object>
+			<object name="RescuerExclusionTags"/>
+			<object name="PrisonerExclusionTags"/>
+			<object name="IsValidRescuerRule">
+							<field name="rulesmithidRule" type="BinHex"/>
+							<field name="rulesmithconstValue" type="BinHex"/>
+						</object>
+			<field name="selCivilianRole" type="Enum"/>
+			<field name="fCiviliansMaxDistFromPMC" type="Float"/>
+			<field name="fCiviliansMinDistFromPMC" type="Float"/>
+			<field name="bExcludeLoMoCiv" type="Boolean"/>
+			<field name="bCivilianAllowAnyProp" type="Boolean"/>
+			<object name="tagcategoryselectionCivilianPropWhitelist">
+							<field name="text_UITagCategorySelectionClassID" type="String"/>
+							<field name="UITagCategorySelectionClassID" type="BinHex"/>
+							<field name="tagcategoryUITagCategory" type="BinHex"/>
+							<object name="Tags">
+								<object name="Tag">
+												<field name="tagTag" type="BinHex"/>
+											</object>
+							</object>
+						</object>
+			<object name="CivilianExclusionTags">
+				<object name="Tag">
+								<field name="tagTag" type="BinHex"/>
+							</object>
+			</object>
+		</object>
+	</object>
+	<object name="ConditionalStrategies">
+		<object name="ConditionalStrategySet">
+			<object name="Preconditions">
+				<object name="Precondition">
+					<field hash="6D1E1959" type="String"/>
+					<field name="selType" type="Enum"/>
+					<object name="Object">
+						<field name="fPMCsMaxDistFromHostage" type="Float"/>
+						<field name="fHostageMaxDistFromPlayer" type="Float"/>
+						<field name="fClanKellyMemberMaxDistFromPlayer" type="Float"/>
+						<field name="fCiviliansMaxDistFromClanKellyMember" type="Float"/>
+						<field name="fCiviliansMinDistFromClanKellyMember" type="Float"/>
+						<field name="fPMCMinIdleDuration" type="Float"/>
+						<field name="fPMCsMaxDistFromPlayer" type="Float"/>
+						<field name="selPMCRole" type="Enum"/>
+						<field name="selDistracterRole" type="Enum"/>
+						<field name="selRescuerRole" type="Enum"/>
+						<field name="selPrisonerRole" type="Enum"/>
+						<field name="bRescuerAllowAnyProp" type="Boolean"/>
+						<object name="tagcategoryselectionRescuerPropWhitelist">
+							<field name="text_UITagCategorySelectionClassID" type="String"/>
+							<field name="UITagCategorySelectionClassID" type="BinHex"/>
+							<field name="tagcategoryUITagCategory" type="BinHex"/>
+							<object name="Tags"/>
+						</object>
+						<object name="RescuerExclusionTags"/>
+						<object name="PrisonerExclusionTags"/>
+						<object name="IsValidRescuerRule">
+							<field name="rulesmithidRule" type="BinHex"/>
+							<field name="rulesmithconstValue" type="BinHex"/>
+						</object>
+						<field name="selCivilianRole" type="Enum"/>
+						<field name="fCiviliansMaxDistFromPMC" type="Float"/>
+						<field name="fCiviliansMinDistFromPMC" type="Float"/>
+						<field name="bExcludeLoMoCiv" type="Boolean"/>
+						<field name="bCivilianAllowAnyProp" type="Boolean"/>
+						<object name="tagcategoryselectionCivilianPropWhitelist">
+							<field name="text_UITagCategorySelectionClassID" type="String"/>
+							<field name="UITagCategorySelectionClassID" type="BinHex"/>
+							<field name="tagcategoryUITagCategory" type="BinHex"/>
+							<object name="Tags">
+								<object name="Tag">
+												<field name="tagTag" type="BinHex"/>
+											</object>
+							</object>
+						</object>
+						<object name="CivilianExclusionTags">
+							<object name="Tag">
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+						<field name="selGroupBehaviorRole" type="Enum"/>
+						<object name="CensusFilter">
+							<object name="tagcategoryselectionblackboardProfile">
+								<object name="TagCategorySelectionArray">
+									<object name="TagCategorySelection">
+										<field name="text_hid_DTCTH_ClassName" type="String"/>
+										<field name="hid_DTCTH_ClassName" type="BinHex"/>
+										<field name="text_UITagCategorySelectionClassID" type="String"/>
+										<field name="UITagCategorySelectionClassID" type="BinHex"/>
+										<field name="tagcategoryUITagCategory" type="BinHex"/>
+										<field name="tagcategoryTagCategory" type="BinHex"/>
+										<field name="tagTag" type="BinHex"/>
+										<object name="Tags">
+											<object name="Tag">
+												<field name="tagTag" type="BinHex"/>
+											</object>
+										</object>
+									</object>
+								</object>
+								<object name="TagDescriptorUI">
+									<field name="text_hid_DTCTH_ClassName" type="String"/>
+									<field name="hid_DTCTH_ClassName" type="BinHex"/>
+									<object name="TagCategorySelectionDescriptors">
+										<object name="TagCategorySelectionDescriptor">
+											<field name="tagcategoryTagCategory" type="BinHex"/>
+											<field name="bMultiSelect" type="Boolean"/>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="WeightedStrategies">
+				<object name="WeightedStrategy">
+					<field name="text_fileStrategyCategory" type="String"/>
+					<field name="fileStrategyCategory" type="BinHex"/>
+					<field name="fWeight" type="Float"/>
+					<object name="BlackboardInitializers"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="WeightedStrategies">
+		<object name="WeightedStrategy">
+			<field name="text_fileStrategyCategory" type="String"/>
+			<field name="fileStrategyCategory" type="BinHex"/>
+			<field name="fWeight" type="Float"/>
+			<object name="BlackboardInitializers">
+				<object name="BlackboardValue">
+			<field name="text_sKey" type="String"/>
+			<field name="sKey" type="BinHex"/>
+			<object name="Value">
+				<field name="selType" type="Enum"/>
+				<field name="plasmaDialogTemplateID" type="BinHex"/>
+			</object>
+		</object>
+			</object>
+		</object>
+	</object>
+	<object name="BlackboardInitializers">
+		<object name="BlackboardValue">
+			<field name="text_sKey" type="String"/>
+			<field name="sKey" type="BinHex"/>
+			<object name="Value">
+				<field name="selType" type="Enum"/>
+				<field name="plasmaDialogTemplateID" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

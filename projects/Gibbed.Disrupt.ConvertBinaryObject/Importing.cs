@@ -35,6 +35,7 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
     internal class Importing
     {
         private readonly InfoManager _InfoManager;
+        private List<BinaryObject> _importedObjects;
 
         public Importing(InfoManager infoManager)
         {
@@ -46,7 +47,34 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
             string basePath,
             XPathNavigator nav)
         {
+            _importedObjects = new List<BinaryObject>();
+
+            var refAttr = nav.GetAttribute("ref", "");
+            if (string.IsNullOrWhiteSpace(refAttr) == false)
+            {
+                if (int.TryParse(refAttr, NumberStyles.Integer, CultureInfo.InvariantCulture, out var refId) == true &&
+                    refId >= 0 && refId < _importedObjects.Count)
+                {
+                    return _importedObjects[refId];
+                }
+                throw new InvalidOperationException();
+            }
+
             var root = new BinaryObject();
+
+            var idAttr = nav.GetAttribute("id", "");
+            if (string.IsNullOrWhiteSpace(idAttr) == false)
+            {
+                if (int.TryParse(idAttr, NumberStyles.Integer, CultureInfo.InvariantCulture, out var id) == true)
+                {
+                    while (_importedObjects.Count <= id)
+                    {
+                        _importedObjects.Add(null);
+                    }
+                    _importedObjects[id] = root;
+                }
+            }
+
             ReadNode(root, new BinaryObject[0], objectDef, basePath, nav);
             return root;
         }
@@ -110,7 +138,41 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
             var children = nav.Select("object");
             while (children.MoveNext() == true)
             {
+                if (children.Current == null)
+                {
+                    throw new InvalidOperationException();
+                }
+
+                var refAttr = children.Current.GetAttribute("ref", "");
+                if (string.IsNullOrWhiteSpace(refAttr) == false)
+                {
+                    if (int.TryParse(refAttr, NumberStyles.Integer, CultureInfo.InvariantCulture, out var refId) == true &&
+                        refId >= 0 && refId < _importedObjects.Count)
+                    {
+                        node.Children.Add(_importedObjects[refId]);
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException();
+                    }
+                    continue;
+                }
+
                 var child = new BinaryObject();
+
+                var idAttr = children.Current.GetAttribute("id", "");
+                if (string.IsNullOrWhiteSpace(idAttr) == false)
+                {
+                    if (int.TryParse(idAttr, NumberStyles.Integer, CultureInfo.InvariantCulture, out var id) == true)
+                    {
+                        while (_importedObjects.Count <= id)
+                        {
+                            _importedObjects.Add(null);
+                        }
+                        _importedObjects[id] = child;
+                    }
+                }
+
                 LoadChildNode(child, chain, objectDef, basePath, children.Current);
                 node.Children.Add(child);
             }

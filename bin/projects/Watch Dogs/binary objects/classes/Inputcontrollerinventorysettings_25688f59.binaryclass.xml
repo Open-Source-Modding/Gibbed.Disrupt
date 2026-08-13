@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Inputcontrollerinventorysettings_25688f59Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uisoundWheelOpeningSound" type="BinHex"/>
+	<field name="uisoundIndexChangeSound" type="BinHex"/>
+	<field name="uisoundWheelInvalidSelectionSound" type="BinHex"/>
+	<field name="uisoundDrivingStartAimingSound" type="BinHex"/>
+	<field name="uisoundDrivingStopAimingSound" type="BinHex"/>
+	<object name="InputSettings">
+		<field name="uAngleTeshold" type="UInt32"/>
+		<field name="fMouseInteractionsOriginX" type="Float"/>
+		<field name="fMouseInteractionsOriginY" type="Float"/>
+		<field name="fMouseInteractionAreaWidth" type="Float"/>
+		<field name="fMouseInteractionAreaHeight" type="Float"/>
+	</object>
+	<object name="Slots">
+		<object name="Slot0">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+			<field name="fMouseInteractionAreaPositionX" type="Float"/>
+			<field name="fMouseInteractionAreaPositionY" type="Float"/>
+		</object>
+		<object name="Slot1">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+			<field name="fMouseInteractionAreaPositionX" type="Float"/>
+			<field name="fMouseInteractionAreaPositionY" type="Float"/>
+		</object>
+		<object name="Slot2">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+			<field name="fMouseInteractionAreaPositionX" type="Float"/>
+			<field name="fMouseInteractionAreaPositionY" type="Float"/>
+		</object>
+		<object name="Slot3">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+			<field name="fMouseInteractionAreaPositionX" type="Float"/>
+			<field name="fMouseInteractionAreaPositionY" type="Float"/>
+		</object>
+		<object name="Slot4">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+			<field name="fMouseInteractionAreaPositionX" type="Float"/>
+			<field name="fMouseInteractionAreaPositionY" type="Float"/>
+		</object>
+		<object name="Slot5">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+			<field name="fMouseInteractionAreaPositionX" type="Float"/>
+			<field name="fMouseInteractionAreaPositionY" type="Float"/>
+		</object>
+		<object name="Slot6">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+			<field name="fMouseInteractionAreaPositionX" type="Float"/>
+			<field name="fMouseInteractionAreaPositionY" type="Float"/>
+		</object>
+		<object name="Slot7">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+			<field name="fMouseInteractionAreaPositionX" type="Float"/>
+			<field name="fMouseInteractionAreaPositionY" type="Float"/>
+		</object>
+	</object>
+</class>

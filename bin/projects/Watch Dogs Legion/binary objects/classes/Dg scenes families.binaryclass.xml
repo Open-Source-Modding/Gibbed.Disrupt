@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dg scenes familiesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selDGSceneFamilyType" type="Enum"/>
+	<field name="sDisplayName" type="String"/>
+	<field name="bSupportIngredientTransferData" type="Boolean"/>
+	<object name="SceneDbs">
+		<object name="dgsceneDGScene">
+			<field name="dgsceneDGScene" type="BinHex"/>
+		</object>
+	</object>
+</class>

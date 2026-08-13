@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EmotesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iBound" type="Int32"/>
+	<field name="bIsInterruptible" type="Boolean"/>
+</class>

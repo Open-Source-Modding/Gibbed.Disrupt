@@ -26,6 +26,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using Gibbed.Disrupt.FileFormats;
 using NDesk.Options;
 using Big = Gibbed.Disrupt.FileFormats.Big;
@@ -38,6 +39,11 @@ namespace Gibbed.Disrupt.Packing
         private static string GetExecutableName()
         {
             return Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+        }
+
+        private class EmptyNameLookup : FileFormats.INameLookup<THash>
+        {
+            public string this[THash hash] => null;
         }
 
         public static void Main(string[] args, string projectName)
@@ -54,6 +60,7 @@ namespace Gibbed.Disrupt.Packing
             string filterPattern = null;
             bool overwriteFiles = false;
             bool verbose = false;
+            int maxJobs = Environment.ProcessorCount;
 
             var options = new OptionSet()
             {
@@ -62,6 +69,7 @@ namespace Gibbed.Disrupt.Packing
                 { "nu|no-unknowns", "don't extract unknown files", v => extractUnknowns = v == null },
                 { "ou|only-unknowns", "only extract unknown files", v => onlyUnknowns = v != null },
                 { "f|filter=", "only extract files using pattern", v => filterPattern = v },
+                { "j|jobs=", "number of parallel jobs (default: CPU count)", v => maxJobs = int.Parse(v) },
                 { "v|verbose", "be verbose", v => verbose = v != null },
                 { "h|help", "show this message and exit", v => showHelp = v != null },
             };
@@ -130,8 +138,19 @@ namespace Gibbed.Disrupt.Packing
                 Console.WriteLine("Loading project...");
             }
 
-            var manager = ProjectData.Manager.Load(projectName);
-            if (manager.ActiveProject == null)
+            ProjectData.Project project = null;
+            try
+            {
+                project = ProjectHelpers.LoadProject(projectName);
+            }
+            catch (PlatformNotSupportedException)
+            {
+            }
+            catch (NotImplementedException)
+            {
+            }
+
+            if (project == null)
             {
                 Console.WriteLine("Warning: no active project loaded.");
             }
@@ -160,12 +179,16 @@ namespace Gibbed.Disrupt.Packing
                         hashes = new NfoNameLookup<THash>(nfo);
                     }
                 }
-                else
+                else if (project != null)
                 {
                     THash wrappedComputeNameHash(string s) =>
                         fat.ComputeNameHash(s, tryGetHashOverride);
-                    manager.LoadListsFileNames(wrappedComputeNameHash, out var hashList);
+                    project.LoadListsFileNames(wrappedComputeNameHash, out var hashList);
                     hashes = new HashListLookupAdapter<THash>(hashList);
+                }
+                else
+                {
+                    hashes = new EmptyNameLookup();
                 }
 
                 // When --no-files is set we still want the resolved name listing,
@@ -192,6 +215,9 @@ namespace Gibbed.Disrupt.Packing
 
                         var duplicates = new Dictionary<THash, int>();
 
+                        // Phase 1: resolve names for all entries (sequential, uses shared input stream for detection)
+                        var resolved = new List<(Big.Entry<THash> Entry, string Name, string Path, bool ShouldSkip)>();
+
                         foreach (var entry in entries)
                         {
                             current++;
@@ -206,6 +232,7 @@ namespace Gibbed.Disrupt.Packing
                                 onlyUnknowns,
                                 out var entryName) == false)
                             {
+                                resolved.Add((entry, null, null, true));
                                 continue;
                             }
 
@@ -230,6 +257,7 @@ namespace Gibbed.Disrupt.Packing
 
                             if (filter != null && filter.IsMatch(entryName) == false)
                             {
+                                resolved.Add((entry, null, null, true));
                                 continue;
                             }
 
@@ -238,6 +266,7 @@ namespace Gibbed.Disrupt.Packing
                                 overwriteFiles == false &&
                                 File.Exists(entryPath) == true)
                             {
+                                resolved.Add((entry, null, null, true));
                                 continue;
                             }
 
@@ -253,20 +282,73 @@ namespace Gibbed.Disrupt.Packing
 
                             if (extractFiles == false)
                             {
+                                resolved.Add((entry, null, null, true));
                                 continue;
                             }
 
-                            input.Seek(entry.Offset, SeekOrigin.Begin);
+                            resolved.Add((entry, entryName, entryPath, false));
+                        }
 
-                            var entryParent = Path.GetDirectoryName(entryPath);
-                            if (string.IsNullOrEmpty(entryParent) == false)
-                            {
-                                Directory.CreateDirectory(entryParent);
-                            }
+                        // Phase 2: extract files (sequential or parallel)
+                        if (maxJobs > 1)
+                        {
+                            var toExtract = resolved.Where(r => r.ShouldSkip == false).ToList();
+                            var completed = 0L;
+                            var totalToExtract = toExtract.Count;
+                            var pad = totalToExtract.ToString(CultureInfo.InvariantCulture).Length;
+                            var progressLock = new object();
 
-                            using (var output = File.Create(entryPath))
+                            Parallel.ForEach(toExtract, new ParallelOptions { MaxDegreeOfParallelism = maxJobs }, info =>
                             {
-                                EntryDecompression.Decompress(fat, entry, input, output);
+                                var entryParent = Path.GetDirectoryName(info.Path);
+                                if (string.IsNullOrEmpty(entryParent) == false)
+                                {
+                                    Directory.CreateDirectory(entryParent);
+                                }
+
+                                using (var datStream = File.Open(datPath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                                {
+                                    using (var output = File.Create(info.Path))
+                                    {
+                                        EntryDecompression.Decompress(fat, info.Entry, datStream, output);
+                                    }
+                                }
+
+                                if (verbose == true)
+                                {
+                                    lock (progressLock)
+                                    {
+                                        completed++;
+                                        Console.WriteLine(
+                                            "[{0}/{1}] {2}",
+                                            completed.ToString(CultureInfo.InvariantCulture).PadLeft(pad),
+                                            totalToExtract,
+                                            info.Name);
+                                    }
+                                }
+                            });
+                        }
+                        else
+                        {
+                            foreach (var info in resolved)
+                            {
+                                if (info.ShouldSkip == true)
+                                {
+                                    continue;
+                                }
+
+                                input.Seek(info.Entry.Offset, SeekOrigin.Begin);
+
+                                var entryParent = Path.GetDirectoryName(info.Path);
+                                if (string.IsNullOrEmpty(entryParent) == false)
+                                {
+                                    Directory.CreateDirectory(entryParent);
+                                }
+
+                                using (var output = File.Create(info.Path))
+                                {
+                                    EntryDecompression.Decompress(fat, info.Entry, input, output);
+                                }
                             }
                         }
                     }

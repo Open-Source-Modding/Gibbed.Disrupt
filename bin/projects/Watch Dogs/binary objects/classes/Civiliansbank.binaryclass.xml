@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CiviliansbankParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Bank">
+		<object name="Entry">
+			<field name="peopleinfoSpawnInfo" type="BinHex"/>
+			<field name="selBudgetCategory" type="Enum"/>
+			<field name="uiCoefficient" type="UInt32"/>
+		</object>
+	</object>
+	<object name="AllItems">
+		<object name="Item">
+			<field name="wolfskinitemdbItem" type="BinHex"/>
+			<field name="peopleinfoSpawnInfo" type="BinHex"/>
+		</object>
+	</object>
+</class>

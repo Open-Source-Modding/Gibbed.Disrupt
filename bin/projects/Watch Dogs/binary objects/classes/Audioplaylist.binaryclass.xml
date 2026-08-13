@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AudioplaylistParameters">
+	<inherit name="SharedParameters"/>
+	<field name="texturedbobjectPlaylistTexture" type="BinHex"/>
+	<object name="locstridPlaylistName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="AudioEventsAndTypes"/>
+</class>

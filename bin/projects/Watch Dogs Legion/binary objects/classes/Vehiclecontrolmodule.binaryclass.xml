@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclecontrolmoduleParameters">
+	<inherit name="SharedParameters"/>
+	<object name="LookAhead">
+		<field name="fMaxSpeedForLookAhead" type="Float"/>
+		<field name="fMinSpeedForLookAhead" type="Float"/>
+		<field name="fMinLookAhead" type="Float"/>
+		<field name="fMaxLookAheadDistance" type="Float"/>
+		<field name="fMaxLookAheadCurve" type="Float"/>
+	</object>
+	<object name="SteeringControlParameters">
+		<field name="fKp" type="Float"/>
+		<field name="fKi" type="Float"/>
+		<field name="fKd" type="Float"/>
+		<field name="fKpSlow" type="Float"/>
+	</object>
+	<object name="SpeedControlParameters">
+		<field name="fKpThrottle" type="Float"/>
+		<field name="fKiThrottle" type="Float"/>
+		<field name="fBrakingThreshold" type="Float"/>
+		<field name="fBrakeGain" type="Float"/>
+		<field name="fMaxBrakeForSpeedLimitChanges" type="Float"/>
+	</object>
+	<object name="Speed">
+		<field name="fMin_speedCff" type="Float"/>
+		<field name="fMax_speedCff" type="Float"/>
+		<field name="fSpeedEpsilon" type="Float"/>
+		<field name="fDefaultStressMaxSpeed" type="Float"/>
+	</object>
+	<object name="Others">
+		<field name="fMaxBrakeForTraffic" type="Float"/>
+		<field name="fMaxThrottleForTraffic" type="Float"/>
+		<field name="fMinThrottleForTraffic" type="Float"/>
+		<field name="fCornerSpeedModifierForTraffic" type="Float"/>
+	</object>
+</class>

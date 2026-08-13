@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhotodetectionruleconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="RuleConfig">
+		<field name="selConditionalOperator" type="Enum"/>
+		<object name="DetectionRules">
+			<object name="Rule">
+				<field hash="6D1E1959" type="String"/>
+				<field name="selType" type="Enum"/>
+				<object name="Object">
+					<field name="bAreAllPlayersNeededForThePhoto" type="Boolean"/>
+					<field name="fMinPlayerVisibility" type="Float"/>
+					<field name="selTagType" type="Enum"/>
+					<field name="selPrevTagType" type="Enum"/>
+					<object name="tagcategoryselectionblackboardRequiredTags">
+						<object name="TagCategorySelectionArray">
+							<object name="TagCategorySelection">
+								<field name="text_hid_DTCTH_ClassName" type="String"/>
+								<field name="hid_DTCTH_ClassName" type="BinHex"/>
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<object name="Tags"/>
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+						<object name="TagDescriptorUI">
+							<field name="text_hid_DTCTH_ClassName" type="String"/>
+							<field name="hid_DTCTH_ClassName" type="BinHex"/>
+							<object name="TagCategorySelectionDescriptors">
+								<object name="TagCategorySelectionDescriptor">
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="bMultiSelect" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object name="tagcategoryselectionblackboardCLOActionTags">
+						<object name="TagCategorySelectionArray">
+							<object name="TagCategorySelection">
+								<field name="text_hid_DTCTH_ClassName" type="String"/>
+								<field name="hid_DTCTH_ClassName" type="BinHex"/>
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<object name="Tags"/>
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+						<object name="TagDescriptorUI">
+							<field name="text_hid_DTCTH_ClassName" type="String"/>
+							<field name="hid_DTCTH_ClassName" type="BinHex"/>
+							<object name="TagCategorySelectionDescriptors">
+								<object name="TagCategorySelectionDescriptor">
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="bMultiSelect" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+					<field name="tagTargetTag" type="BinHex"/>
+					<field name="fMinVisibilityPercentage" type="Float"/>
+					<field name="fMinViewportVisibilityPercentage" type="Float"/>
+					<field name="text_fileAliveStrategy" type="String"/>
+					<field name="fileAliveStrategy" type="BinHex"/>
+					<field name="fRuleCooldownTimer" type="Float"/>
+					<object name="AliveBehaviors">
+						<object name="Behavior">
+							<field name="text_fileAliveBehavior" type="String"/>
+							<field name="fileAliveBehavior" type="BinHex"/>
+						</object>
+					</object>
+					<field name="fEntityMinScreenDrawPercentage" type="Float"/>
+					<field name="fEntityMinVisibilityPercentage" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

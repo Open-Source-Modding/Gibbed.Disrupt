@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MindjackriftdataParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fRiftOpenWarningCriticalMessageDuration" type="Float"/>
+	<object name="TeleportEntities">
+		<object name="TeleportEntity">
+			<field name="entTeleportEntity" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RiftOpenedPhases">
+		<object name="SMindjackRiftOpenedState">
+			<field name="text_archWeakPointsArchetype" type="String"/>
+			<field name="archWeakPointsArchetype" type="BinHex"/>
+			<field name="entTeleportOverideEntity" type="BinHex"/>
+			<field name="bRequestReinforcement" type="Boolean"/>
+			<field name="reinforcementgameplaydescriptorRiftOpenedReinforcement" type="BinHex"/>
+			<object name="WeakpointsOffSetList">
+				<object name="ndVec3">
+					<field name="ndVec3" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="locstridRiftOpenCriticalMessage">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="StateArchetype">
+		<field name="text_archOpenedRiftArchetype" type="String"/>
+		<field name="archOpenedRiftArchetype" type="BinHex"/>
+		<field name="text_archUnlockedRiftArchetype" type="String"/>
+		<field name="archUnlockedRiftArchetype" type="BinHex"/>
+	</object>
+	<object name="Particules">
+		<field name="text_psRiftCubeSpawnParticles" type="String"/>
+		<field name="psRiftCubeSpawnParticles" type="BinHex"/>
+		<object name="States">
+			<field name="text_psRiftClosedParticles" type="String"/>
+			<field name="psRiftClosedParticles" type="BinHex"/>
+			<field name="text_psRiftOpenedParticles" type="String"/>
+			<field name="psRiftOpenedParticles" type="BinHex"/>
+			<field name="text_psRiftUnlockedParticles" type="String"/>
+			<field name="psRiftUnlockedParticles" type="BinHex"/>
+			<field name="psRiftTeleportedParticles" type="BinHex"/>
+		</object>
+		<object name="Transitions">
+			<field name="psRiftClosingParticles" type="BinHex"/>
+			<field name="text_psRiftOpeningParticles" type="String"/>
+			<field name="psRiftOpeningParticles" type="BinHex"/>
+			<field name="text_psRiftUnlockingParticles" type="String"/>
+			<field name="psRiftUnlockingParticles" type="BinHex"/>
+			<field name="text_psRiftTeleportingParticles" type="String"/>
+			<field name="psRiftTeleportingParticles" type="BinHex"/>
+		</object>
+	</object>
+	<object name="TransitionTimer">
+		<field name="fClosedToOpenedTransitionDuration" type="Float"/>
+		<field name="fOpenedToTeleportTransitionDuration" type="Float"/>
+		<field name="fTeleportToClosedTransitionDuration" type="Float"/>
+		<field name="fOpenedToUnlockedTransitionDuration" type="Float"/>
+	</object>
+	<object name="SoundFX">
+		<field name="text_sndAmbientSoundStart" type="String"/>
+		<field name="sndAmbientSoundStart" type="BinHex"/>
+		<field name="text_sndAmbientSoundStop" type="String"/>
+		<field name="sndAmbientSoundStop" type="BinHex"/>
+		<field name="sndtpAmbientSoundStartType" type="BinHex"/>
+		<field name="sndtpAmbientSoundStopType" type="BinHex"/>
+		<field name="fClosedRiftRTPCValue" type="Float"/>
+		<field name="fOpenedRiftRTPCValue" type="Float"/>
+		<field name="fUnlockedRiftRTPCValue" type="Float"/>
+		<field name="text_sndRiftOpensSound" type="String"/>
+		<field name="sndRiftOpensSound" type="BinHex"/>
+		<field name="text_sndRiftClosesSound" type="String"/>
+		<field name="sndRiftClosesSound" type="BinHex"/>
+		<field name="sndEscapeTransitionBeginSound" type="BinHex"/>
+		<field name="text_sndGhostPurgeSound" type="String"/>
+		<field name="sndGhostPurgeSound" type="BinHex"/>
+		<field name="sndBulletHitSound" type="BinHex"/>
+		<field name="text_sndRiftDestroyedSound" type="String"/>
+		<field name="sndRiftDestroyedSound" type="BinHex"/>
+		<field name="sndtpRiftOpensSoundType" type="BinHex"/>
+		<field name="sndtpRiftClosesSoundType" type="BinHex"/>
+		<field name="sndtpEscapeTransitionBeginSoundType" type="BinHex"/>
+		<field name="sndtpGhostPurgeSoundType" type="BinHex"/>
+		<field name="sndtpBulletHitSoundType" type="BinHex"/>
+		<field name="sndtpRiftDestroyedSoundType" type="BinHex"/>
+		<object name="sndvarAmbientSoundRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+	<object name="Hint">
+		<field name="text_archHintArchetype" type="String"/>
+		<field name="archHintArchetype" type="BinHex"/>
+		<field name="fHintInitialDelay" type="Float"/>
+		<field name="bHintShouldLoop" type="Boolean"/>
+		<field name="fHintLoopDelay" type="Float"/>
+		<object name="HintPathList">
+			<object name="HintPath">
+				<field name="entPatrolPath" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Barks">
+		<field name="entBarksEntityId" type="BinHex"/>
+		<field name="selBarkPriority" type="Enum"/>
+		<field name="fReachDistance" type="Float"/>
+		<field name="text_BarkReachRift" type="String"/>
+		<field name="BarkReachRift" type="BinHex"/>
+		<field name="fPlayCombatBarksMinTime" type="Float"/>
+		<field name="fplayCombatBarksMaxTime" type="BinHex"/>
+		<field name="fCombatCoolDownDuration" type="Float"/>
+		<field name="text_BarkRiftDestroyed" type="String"/>
+		<field name="BarkRiftDestroyed" type="BinHex"/>
+		<object name="PlayerShootAtRiftBarks">
+			<object name="BarkId">
+				<field name="text_BarkId" type="String"/>
+				<field name="BarkId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="RiftTeleportBarks">
+			<object name="BarkId">
+				<field name="text_BarkId" type="String"/>
+				<field name="BarkId" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

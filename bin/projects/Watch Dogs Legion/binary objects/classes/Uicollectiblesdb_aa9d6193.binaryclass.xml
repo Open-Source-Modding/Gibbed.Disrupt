@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uicollectiblesdb_aa9d6193Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_progressioncollectablecategoryTubeCollectibleStringId" type="String"/>
+	<field name="progressioncollectablecategoryTubeCollectibleStringId" type="BinHex"/>
+	<field name="text_progressioncollectablecategoryPubCollectibleStringId" type="String"/>
+	<field name="progressioncollectablecategoryPubCollectibleStringId" type="BinHex"/>
+	<field name="text_progressioncollectablecategoryDartsCollectibleStringId" type="String"/>
+	<field name="progressioncollectablecategoryDartsCollectibleStringId" type="BinHex"/>
+	<field name="text_progressioncollectablecategoryKickupCollectibleStringId" type="String"/>
+	<field name="progressioncollectablecategoryKickupCollectibleStringId" type="BinHex"/>
+	<field name="text_progressioncollectablecategoryParcelFoxCollectibleStringId" type="String"/>
+	<field name="progressioncollectablecategoryParcelFoxCollectibleStringId" type="BinHex"/>
+	<field name="text_progressioncollectablecategoryShoppingCollectibleStringId" type="String"/>
+	<field name="progressioncollectablecategoryShoppingCollectibleStringId" type="BinHex"/>
+	<object name="Activities">
+		<object name="Activity">
+			<field name="text_progressioncollectablecategoryCollectibleStringId" type="String"/>
+			<field name="progressioncollectablecategoryCollectibleStringId" type="BinHex"/>
+			<field name="selActivitiesFilter" type="Enum"/>
+			<field name="sUIIconName" type="String"/>
+			<object name="locstridTranslation">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Collectibles">
+		<object name="Collectible">
+			<field name="text_progressioncollectablecategoryCollectibleStringId" type="String"/>
+			<field name="progressioncollectablecategoryCollectibleStringId" type="BinHex"/>
+			<field name="selCollectiblesFilter" type="Enum"/>
+			<field name="sUIIconName" type="String"/>
+			<object name="locstridTranslation">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

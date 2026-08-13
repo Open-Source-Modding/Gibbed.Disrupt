@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BasicwavefelonyconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="squadbhvparamsSquadBhvParams" type="BinHex"/>
+	<field name="fallbacktrackingconfigFallbackTrackingConfig" type="BinHex"/>
+	<object name="HeatLevel0WaveSettings">
+		<field name="bIsInfinite" type="Boolean"/>
+		<field name="fDesiredTimeToReachTarget" type="Float"/>
+		<field name="fOnFootMinSpawnDistance" type="Float"/>
+		<field name="fOnFootMaxSpawnDistance" type="Float"/>
+		<field name="fDroneMinSpawnDistance" type="Float"/>
+		<field name="fDroneMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleMinSpawnDistance" type="Float"/>
+		<field name="fVehicleMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleUnspawnSelectionCooldown" type="Float"/>
+		<field name="bCollectInterceptPoints" type="Boolean"/>
+		<object name="Waves"/>
+	</object>
+	<object name="HeatLevel1WaveSettings">
+		<field name="bIsInfinite" type="Boolean"/>
+		<field name="fDesiredTimeToReachTarget" type="Float"/>
+		<field name="fOnFootMinSpawnDistance" type="Float"/>
+		<field name="fOnFootMaxSpawnDistance" type="Float"/>
+		<field name="fDroneMinSpawnDistance" type="Float"/>
+		<field name="fDroneMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleMinSpawnDistance" type="Float"/>
+		<field name="fVehicleMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleUnspawnSelectionCooldown" type="Float"/>
+		<field name="bCollectInterceptPoints" type="Boolean"/>
+		<object name="Waves">
+			<object name="Wave">
+				<field name="waveagentcompositionconfigAgentCompositionConfig" type="BinHex"/>
+				<field name="bUseInitialSpawnDelay" type="Boolean"/>
+				<field name="fInitialSpawnDelay" type="Float"/>
+				<field name="fSpawnUnitCooldown" type="Float"/>
+				<field name="bUseTimeCondition" type="Boolean"/>
+				<field name="fTimeUntilNextWave" type="Float"/>
+				<field name="bUseRemainingRatioCondition" type="Boolean"/>
+				<field name="fRemainingRatioToForceNextWave" type="Float"/>
+				<field name="fRemainingRatioTimeUntilNextWave" type="Float"/>
+				<field name="bUseMaintainNPCCountCondition" type="Boolean"/>
+				<field name="fMinNPCMaintainCount" type="Int32"/>
+				<field name="fMaintainCountSpawnDelay" type="Float"/>
+				<field name="bMaintainCountIncludeLayoutAI" type="Boolean"/>
+				<field name="bUseDeathTollCondition" type="Boolean"/>
+				<field name="uiDeathTollToForceNextWave" type="UInt32"/>
+				<field name="fDeathTollTimeUntilNextWave" type="Float"/>
+				<field name="bPauseUntilDominoEvent" type="Boolean"/>
+				<object name="UnitGroupList">
+					<object name="UnitGroup">
+						<field name="unitgroupUnitGroup" type="BinHex"/>
+						<object name="CanSpawnWhenTargetIs">
+							<field name="bOnFoot" type="Boolean"/>
+							<field name="bInAVehicle" type="Boolean"/>
+							<field name="bInWater" type="Boolean"/>
+							<field name="bNotInWater" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="HeatLevel2WaveSettings">
+		<field name="bIsInfinite" type="Boolean"/>
+		<field name="fDesiredTimeToReachTarget" type="Float"/>
+		<field name="fOnFootMinSpawnDistance" type="Float"/>
+		<field name="fOnFootMaxSpawnDistance" type="Float"/>
+		<field name="fDroneMinSpawnDistance" type="Float"/>
+		<field name="fDroneMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleMinSpawnDistance" type="Float"/>
+		<field name="fVehicleMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleUnspawnSelectionCooldown" type="Float"/>
+		<field name="bCollectInterceptPoints" type="Boolean"/>
+		<object name="Waves">
+			<object name="Wave">
+				<field name="waveagentcompositionconfigAgentCompositionConfig" type="BinHex"/>
+				<field name="bUseInitialSpawnDelay" type="Boolean"/>
+				<field name="fInitialSpawnDelay" type="Float"/>
+				<field name="fSpawnUnitCooldown" type="Float"/>
+				<field name="bUseTimeCondition" type="Boolean"/>
+				<field name="fTimeUntilNextWave" type="Float"/>
+				<field name="bUseRemainingRatioCondition" type="Boolean"/>
+				<field name="fRemainingRatioToForceNextWave" type="Float"/>
+				<field name="fRemainingRatioTimeUntilNextWave" type="Float"/>
+				<field name="bUseMaintainNPCCountCondition" type="Boolean"/>
+				<field name="fMinNPCMaintainCount" type="Int32"/>
+				<field name="fMaintainCountSpawnDelay" type="Float"/>
+				<field name="bMaintainCountIncludeLayoutAI" type="Boolean"/>
+				<field name="bUseDeathTollCondition" type="Boolean"/>
+				<field name="uiDeathTollToForceNextWave" type="UInt32"/>
+				<field name="fDeathTollTimeUntilNextWave" type="Float"/>
+				<field name="bPauseUntilDominoEvent" type="Boolean"/>
+				<object name="UnitGroupList">
+					<object name="UnitGroup">
+						<field name="unitgroupUnitGroup" type="BinHex"/>
+						<object name="CanSpawnWhenTargetIs">
+							<field name="bOnFoot" type="Boolean"/>
+							<field name="bInAVehicle" type="Boolean"/>
+							<field name="bInWater" type="Boolean"/>
+							<field name="bNotInWater" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="HeatLevel3WaveSettings">
+		<field name="bIsInfinite" type="Boolean"/>
+		<field name="fDesiredTimeToReachTarget" type="Float"/>
+		<field name="fOnFootMinSpawnDistance" type="Float"/>
+		<field name="fOnFootMaxSpawnDistance" type="Float"/>
+		<field name="fDroneMinSpawnDistance" type="Float"/>
+		<field name="fDroneMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleMinSpawnDistance" type="Float"/>
+		<field name="fVehicleMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleUnspawnSelectionCooldown" type="Float"/>
+		<field name="bCollectInterceptPoints" type="Boolean"/>
+		<object name="Waves">
+			<object name="Wave">
+				<field name="waveagentcompositionconfigAgentCompositionConfig" type="BinHex"/>
+				<field name="bUseInitialSpawnDelay" type="Boolean"/>
+				<field name="fInitialSpawnDelay" type="Float"/>
+				<field name="fSpawnUnitCooldown" type="Float"/>
+				<field name="bUseTimeCondition" type="Boolean"/>
+				<field name="fTimeUntilNextWave" type="Float"/>
+				<field name="bUseRemainingRatioCondition" type="Boolean"/>
+				<field name="fRemainingRatioToForceNextWave" type="Float"/>
+				<field name="fRemainingRatioTimeUntilNextWave" type="Float"/>
+				<field name="bUseMaintainNPCCountCondition" type="Boolean"/>
+				<field name="fMinNPCMaintainCount" type="Int32"/>
+				<field name="fMaintainCountSpawnDelay" type="Float"/>
+				<field name="bMaintainCountIncludeLayoutAI" type="Boolean"/>
+				<field name="bUseDeathTollCondition" type="Boolean"/>
+				<field name="uiDeathTollToForceNextWave" type="UInt32"/>
+				<field name="fDeathTollTimeUntilNextWave" type="Float"/>
+				<field name="bPauseUntilDominoEvent" type="Boolean"/>
+				<object name="UnitGroupList">
+					<object name="UnitGroup">
+						<field name="unitgroupUnitGroup" type="BinHex"/>
+						<object name="CanSpawnWhenTargetIs">
+							<field name="bOnFoot" type="Boolean"/>
+							<field name="bInAVehicle" type="Boolean"/>
+							<field name="bInWater" type="Boolean"/>
+							<field name="bNotInWater" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="HeatLevel4WaveSettings">
+		<field name="bIsInfinite" type="Boolean"/>
+		<field name="fDesiredTimeToReachTarget" type="Float"/>
+		<field name="fOnFootMinSpawnDistance" type="Float"/>
+		<field name="fOnFootMaxSpawnDistance" type="Float"/>
+		<field name="fDroneMinSpawnDistance" type="Float"/>
+		<field name="fDroneMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleMinSpawnDistance" type="Float"/>
+		<field name="fVehicleMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleUnspawnSelectionCooldown" type="Float"/>
+		<field name="bCollectInterceptPoints" type="Boolean"/>
+		<object name="Waves">
+			<object name="Wave">
+				<field name="waveagentcompositionconfigAgentCompositionConfig" type="BinHex"/>
+				<field name="bUseInitialSpawnDelay" type="Boolean"/>
+				<field name="fInitialSpawnDelay" type="Float"/>
+				<field name="fSpawnUnitCooldown" type="Float"/>
+				<field name="bUseTimeCondition" type="Boolean"/>
+				<field name="fTimeUntilNextWave" type="Float"/>
+				<field name="bUseRemainingRatioCondition" type="Boolean"/>
+				<field name="fRemainingRatioToForceNextWave" type="Float"/>
+				<field name="fRemainingRatioTimeUntilNextWave" type="Float"/>
+				<field name="bUseMaintainNPCCountCondition" type="Boolean"/>
+				<field name="fMinNPCMaintainCount" type="Int32"/>
+				<field name="fMaintainCountSpawnDelay" type="Float"/>
+				<field name="bMaintainCountIncludeLayoutAI" type="Boolean"/>
+				<field name="bUseDeathTollCondition" type="Boolean"/>
+				<field name="uiDeathTollToForceNextWave" type="UInt32"/>
+				<field name="fDeathTollTimeUntilNextWave" type="Float"/>
+				<field name="bPauseUntilDominoEvent" type="Boolean"/>
+				<object name="UnitGroupList">
+					<object name="UnitGroup">
+						<field name="unitgroupUnitGroup" type="BinHex"/>
+						<object name="CanSpawnWhenTargetIs">
+							<field name="bOnFoot" type="Boolean"/>
+							<field name="bInAVehicle" type="Boolean"/>
+							<field name="bInWater" type="Boolean"/>
+							<field name="bNotInWater" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="HeatLevel5WaveSettings">
+		<field name="bIsInfinite" type="Boolean"/>
+		<field name="fDesiredTimeToReachTarget" type="Float"/>
+		<field name="fOnFootMinSpawnDistance" type="Float"/>
+		<field name="fOnFootMaxSpawnDistance" type="Float"/>
+		<field name="fDroneMinSpawnDistance" type="Float"/>
+		<field name="fDroneMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleMinSpawnDistance" type="Float"/>
+		<field name="fVehicleMaxSpawnDistance" type="Float"/>
+		<field name="fVehicleUnspawnSelectionCooldown" type="Float"/>
+		<field name="bCollectInterceptPoints" type="Boolean"/>
+		<object name="Waves">
+			<object name="Wave">
+				<field name="waveagentcompositionconfigAgentCompositionConfig" type="BinHex"/>
+				<field name="bUseInitialSpawnDelay" type="Boolean"/>
+				<field name="fInitialSpawnDelay" type="Float"/>
+				<field name="fSpawnUnitCooldown" type="Float"/>
+				<field name="bUseTimeCondition" type="Boolean"/>
+				<field name="fTimeUntilNextWave" type="Float"/>
+				<field name="bUseRemainingRatioCondition" type="Boolean"/>
+				<field name="fRemainingRatioToForceNextWave" type="Float"/>
+				<field name="fRemainingRatioTimeUntilNextWave" type="Float"/>
+				<field name="bUseMaintainNPCCountCondition" type="Boolean"/>
+				<field name="fMinNPCMaintainCount" type="Int32"/>
+				<field name="fMaintainCountSpawnDelay" type="Float"/>
+				<field name="bMaintainCountIncludeLayoutAI" type="Boolean"/>
+				<field name="bUseDeathTollCondition" type="Boolean"/>
+				<field name="uiDeathTollToForceNextWave" type="UInt32"/>
+				<field name="fDeathTollTimeUntilNextWave" type="Float"/>
+				<field name="bPauseUntilDominoEvent" type="Boolean"/>
+				<object name="UnitGroupList">
+					<object name="UnitGroup">
+						<field name="unitgroupUnitGroup" type="BinHex"/>
+						<object name="CanSpawnWhenTargetIs">
+							<field name="bOnFoot" type="Boolean"/>
+							<field name="bInAVehicle" type="Boolean"/>
+							<field name="bInWater" type="Boolean"/>
+							<field name="bNotInWater" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Operativeswaptransitionserviceconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="GlobalRules">
+		<object name="AnyOpSwapsEnabled">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="SilverOpSwapsEnabled">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="SpecificRules">
+		<object name="MinOperativesBeforeSilverOpSwaps">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="MaxOperativesInAnySilverOpSwaps">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="DurationOfOpSwapAssignmentMinutes">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="SameOperativeInSilverOpSwapCooldownMinutes">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="AnyOperativeInSilverOpSwapCooldownMinutes">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="WeatherBasedFilteringEnabled">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="TimeOfDayFilteringEnabled">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="WorldSearchParams">
+		<field name="fVerticalSearchOffset" type="Float"/>
+	</object>
+	<object name="RespawnConfig">
+		<object name="ScheduleLocationOPSwap">
+			<object name="ScheduledRespawnConfig">
+				<object name="VolumeBasedSearchParam">
+					<field name="vectorSearchAABBExtents" type="Vector3"/>
+				</object>
+			</object>
+		</object>
+		<object name="TacticalOPSwap">
+			<field name="text_archSpawnPointType" type="String"/>
+			<field name="archSpawnPointType" type="BinHex"/>
+			<object name="CapturedDelay">
+				<field name="uiHours" type="UInt32"/>
+				<field name="uiMinutes" type="UInt32"/>
+				<field name="uiSeconds" type="UInt32"/>
+			</object>
+			<object name="DeathDelay">
+				<field name="uiHours" type="UInt32"/>
+				<field name="uiMinutes" type="UInt32"/>
+				<field name="uiSeconds" type="UInt32"/>
+			</object>
+			<object name="CapturedRespawnConfig">
+				<object name="RingBasedSearchParam">
+					<field name="fMinDistance" type="Float"/>
+					<field name="fMaxDistance" type="Float"/>
+				</object>
+			</object>
+			<object name="DeathRespawnConfig">
+				<object name="RingBasedSearchParam">
+					<field name="fMinDistance" type="Float"/>
+					<field name="fMaxDistance" type="Float"/>
+				</object>
+			</object>
+			<object name="Online">
+				<object name="CloneActorMinDisplacement">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

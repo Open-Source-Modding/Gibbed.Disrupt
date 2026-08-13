@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NanodronegameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="OverrideValues">
+		<field name="droneconfigDroneConfig" type="BinHex"/>
+		<field name="entDroneSpawnEntityId" type="BinHex"/>
+		<field name="entInteractionEntityId" type="BinHex"/>
+		<field name="entInteractionFeedbackEntity" type="BinHex"/>
+		<field name="entInteractionRedLightEntity" type="BinHex"/>
+		<field name="sLMALayerName" type="BinHex"/>
+		<field name="bLoadOnInteract" type="Boolean"/>
+		<field name="bRespawnDroneWhenDestroyed" type="Boolean"/>
+		<field name="bFailOnDroneDestruction" type="Boolean"/>
+		<field name="bOnlyPlayIntroOnce" type="Boolean"/>
+		<field name="fWarningDuration" type="Float"/>
+		<object name="locstridRCWarningTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRCLocalWarningBody">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRCRemoteWarningBody">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="BaseDBValues">
+		<field name="fDronePostIntroTeleportDelay" type="Float"/>
+		<field name="entDronePostIntroTeleportLocEntityId" type="BinHex"/>
+		<field name="entIntroSequenceCenterSceneEntityId" type="BinHex"/>
+		<field name="text_fileIntroSequenceResourcePath" type="String"/>
+		<field name="fileIntroSequenceResourcePath" type="BinHex"/>
+		<field name="text_sndMuteExternalSounds" type="String"/>
+		<field name="sndMuteExternalSounds" type="BinHex"/>
+		<field name="text_sndUnmuteExternalSounds" type="String"/>
+		<field name="sndUnmuteExternalSounds" type="BinHex"/>
+		<field name="text_sndStartAlarmSound" type="String"/>
+		<field name="sndStartAlarmSound" type="BinHex"/>
+		<field name="text_sndStopAlarmSound" type="String"/>
+		<field name="sndStopAlarmSound" type="BinHex"/>
+		<field name="sndtpMuteExternalSoundsType" type="BinHex"/>
+		<field name="sndtpUnmuteExternalSoundsType" type="BinHex"/>
+		<field name="sndtpStartAlarmSoundType" type="BinHex"/>
+		<field name="sndtpStopAlarmSoundType" type="BinHex"/>
+		<object name="SoundAndTypeStartBeepingSound">
+			<field name="text_sndSoundId" type="String"/>
+			<field name="sndSoundId" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+		<object name="SoundAndTypeStopBeepingSound">
+			<field name="text_sndSoundId" type="String"/>
+			<field name="sndSoundId" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+	</object>
+</class>

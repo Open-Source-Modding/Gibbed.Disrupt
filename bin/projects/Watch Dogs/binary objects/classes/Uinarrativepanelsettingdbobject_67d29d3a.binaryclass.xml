@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uinarrativepanelsettingdbobject_67d29d3aParameters">
+	<inherit name="SharedParameters"/>
+	<object name="NarrativeTeamSpeak">
+		<field name="sndCardShowSFX" type="BinHex"/>
+		<field name="sndCardHideSFX" type="BinHex"/>
+		<field name="text_sndStartSFX" type="String"/>
+		<field name="sndStartSFX" type="BinHex"/>
+		<field name="text_sndEndSFX" type="String"/>
+		<field name="sndEndSFX" type="BinHex"/>
+		<field name="sndtpCardShowSFXType" type="BinHex"/>
+		<field name="sndtpCardHideSFXType" type="BinHex"/>
+		<field name="sndtpStartSFXType" type="BinHex"/>
+		<field name="sndtpEndSFXType" type="BinHex"/>
+		<object name="ElementEffectDbObjs"/>
+	</object>
+	<object name="NarrativePhoneCall">
+		<field name="sndCardShowSFX" type="BinHex"/>
+		<field name="sndCardHideSFX" type="BinHex"/>
+		<field name="sndStartSFX" type="BinHex"/>
+		<field name="sndEndSFX" type="BinHex"/>
+		<field name="sndtpCardShowSFXType" type="BinHex"/>
+		<field name="sndtpCardHideSFXType" type="BinHex"/>
+		<field name="sndtpStartSFXType" type="BinHex"/>
+		<field name="sndtpEndSFXType" type="BinHex"/>
+		<object name="ElementEffectDbObjs"/>
+	</object>
+</class>

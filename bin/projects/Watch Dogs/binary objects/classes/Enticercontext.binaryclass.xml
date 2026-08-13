@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EnticercontextParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selTimeOfDaySpawning" type="Enum"/>
+	<field name="selBoroughUprisingCategory" type="Enum"/>
+	<object name="Time">
+		<object name="TimeOfDay">
+			<field name="selTimeOfDay" type="Enum"/>
+		</object>
+	</object>
+	<object name="Rain">
+		<object name="RainIntensity">
+			<field name="selRainIntensity" type="Enum"/>
+		</object>
+	</object>
+	<object name="AdditionalConditions">
+		<object name="AdditionalConditionsRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

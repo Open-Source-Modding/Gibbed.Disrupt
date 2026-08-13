@@ -1,0 +1,5 @@
+<file name="postprinter_forcecover" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

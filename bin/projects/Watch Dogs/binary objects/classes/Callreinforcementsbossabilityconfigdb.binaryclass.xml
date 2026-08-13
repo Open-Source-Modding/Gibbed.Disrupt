@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CallreinforcementsbossabilityconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaximumDistance" type="Float"/>
+	<field name="fCountdownTime" type="Float"/>
+	<field name="reinforcementconfigReinforcementConfig" type="BinHex"/>
+	<field name="fRemainingEnemiesCountToConsiderReinforcementDefeated" type="Int32"/>
+	<field name="text_CustomLightsName" type="String"/>
+	<field name="CustomLightsName" type="BinHex"/>
+</class>

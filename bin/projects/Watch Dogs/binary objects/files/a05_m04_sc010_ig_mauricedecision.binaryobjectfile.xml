@@ -1,0 +1,5 @@
+<file name="a05_m04_sc010_ig_mauricedecision" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

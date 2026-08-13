@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uihacklociddb_0d44a800Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="locstridAccessId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridAttrack">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridAudio">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridBankAccount">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridBattery">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridCallEnemyFaction">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridCar">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridCashPile">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridChat">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDisableCallReinforcement">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDisruptComm">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDistract">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDownload">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEmail">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEngineOverheat">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridExplosive">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPhoneOverheat">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIntel">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLockBrakes">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLockLeftWheel">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLockRightWheel">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridMusicLibrary">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridNarrative">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridNarrativeHook">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPersonalCamera">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPoliceSearch">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRobotReboot">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRobotAttractor">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRobotRepulsor">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRobotLoveBull">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRemoteControlDown">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRemoteControlLeft">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRemoteControlRight">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRemoteControlUp">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSystemKey">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridVideoFile">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridVoice">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTrigger">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientArm">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientAttract">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientShutdown">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDogShockCollar">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRemoteControlToggle">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRobotAlarm">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTBoneLeftWeapon">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTBoneRightWeapon">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTBoneBackWeapon">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridARBetrayToughness">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridHitman">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerAccessPoint">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerElectric">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerExplosive">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerHackable">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerMovable">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerRemoteControlled">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerSecurity">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerVRPuzzleLoader">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerVRPuzzleNode">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIngredientTriggerUnlockVRPuzzleNode">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridActivateFlatbedPlatform">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridProxy">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridUnproxy">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRobotHijack">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneScan">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneHijack">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDisable">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneMalfunction">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPuppet">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEngineer">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridCloneAccess">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridKillNPC">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridGunLock">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridExoSuitLock">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridARGlasses">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLeverage">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridProvoke">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridBite">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridShock">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRCJumperDockSpawn">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDockSpawnScanner">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDockSpawnNews">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDockSpawnMedical">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDockSpawnDelivery">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDockSpawnConstruction">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDockSpawnChase">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDockSpawnRiot">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDockSpawnCT">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRCHijack">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSecurityCameraHijack">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFight">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPage1">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPage2">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPage3">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRevealMainSwitch">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridReward">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridStartOp">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRcOvercharge">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridBetray">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneSwitchAllegiance">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneBroadcast">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneDropCargo">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRCReturnToOwner">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRCEngageTargets">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRCRepair">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDownloadAccessIDKey">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDroneHijackReboot">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridProjectileReturnToOwner">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIncreaseCrimeDebt">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDecreaseCrimeDebt">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIncreaseWantedLevel">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDecreaseWantedLevel">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIssueRendition">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRevokeRendition">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

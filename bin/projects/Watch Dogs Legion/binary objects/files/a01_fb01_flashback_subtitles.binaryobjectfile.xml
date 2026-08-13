@@ -1,0 +1,5 @@
+<file name="a01_fb01_flashback_subtitles" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

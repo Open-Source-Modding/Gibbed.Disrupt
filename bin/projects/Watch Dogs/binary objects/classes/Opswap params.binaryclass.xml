@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Opswap paramsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selOPSwapQuality" type="Enum"/>
+	<field name="opswapcameraparamsCameraParamsDB" type="BinHex"/>
+	<object name="BronzeOpSwapParams">
+		<field name="singleclocreationsettingsOpSwapSingleCLOCreationSettings" type="BinHex"/>
+	</object>
+	<object name="SilverOpSwapParams">
+		<field name="cloactCLOAction" type="BinHex"/>
+		<field name="cloactlistCLOActionList" type="BinHex"/>
+	</object>
+	<object name="CameraParams">
+		<field name="text_fileAnimatedCamera" type="String"/>
+		<field name="fileAnimatedCamera" type="BinHex"/>
+		<field name="fAnimatedCameraBlendOutTime" type="Float"/>
+		<field name="fAnimatedCameraPreBlendPosOutTime" type="Float"/>
+		<field name="fCameraNearDistance" type="Float"/>
+		<field name="angvecCameraAngle" type="BinHex"/>
+		<field name="vecCameraOffset" type="BinHex"/>
+		<field name="bDisableCameraCollision" type="Boolean"/>
+		<field name="bEnableBlendOutDistance" type="Boolean"/>
+		<field name="fBlendOutDistance" type="Float"/>
+		<object name="depthOfFieldParams">
+			<field name="bEnable" type="Boolean"/>
+			<field name="fIntensity" type="Float"/>
+			<field name="fNearDofIntensity" type="Float"/>
+			<field name="fFarDofIntensity" type="Float"/>
+			<field name="fFocusDistance" type="Float"/>
+			<field name="fFocalLength" type="Float"/>
+			<field name="fFStop" type="Float"/>
+			<field name="fBokehBoostIntensity" type="Float"/>
+			<field name="fBokehBoostThreshold" type="Float"/>
+			<field name="fBokehContrast" type="Float"/>
+		</object>
+	</object>
+	<object name="Audio">
+		<field name="phonecommunicationsettingsTeamSpeakPhoneCommSetting" type="BinHex"/>
+	</object>
+	<object name="BaseParams">
+		<field name="bIsAlwaysAvailable" type="Boolean"/>
+		<field name="fCoolDownInMinutes" type="Float"/>
+		<field name="selTimeOfDayAllowed" type="Enum"/>
+		<field name="selRainIntensity" type="Enum"/>
+	</object>
+</class>

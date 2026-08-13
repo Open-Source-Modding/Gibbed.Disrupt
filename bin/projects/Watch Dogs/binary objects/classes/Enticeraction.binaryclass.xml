@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EnticeractionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsShowcase" type="Boolean"/>
+	<field name="bSit" type="Boolean"/>
+	<field name="bCanBeTalker" type="Boolean"/>
+	<field name="bPlaySoundInAnim" type="Boolean"/>
+	<field name="bCanBecomeDenunciator" type="Boolean"/>
+	<field name="bIsSynchronized" type="Boolean"/>
+	<field name="bIsIOP" type="Boolean"/>
+	<field name="selActionDescription" type="Enum"/>
+    <object name="CityLifeActionSettings">
+        <field name="fileMoveStateId" type="String"/>
+        <field name="bHasEntryAnim" type="Boolean"/>
+        <field name="bHasExitAnim" type="Boolean"/>
+		<field name="fileExitMoveStateId" type="String"/>
+        <field name="bLoopAnim" type="Boolean"/>
+        <field name="bStopLoopOnPlayerProximity" type="Boolean"/>
+		<field name="fStopLoopRadius" type="Float"/>
+        <field name="bConversationBehavior" type="Boolean"/>
+		<field name="selConversationRole" type="Enum"/>
+        <field name="bProximityBehavior" type="Boolean"/>
+        <field name="bTriggeredBehavior" type="Boolean"/>
+        <field name="selBhvPriority" type="Enum"/>
+        <field name="bVigilanteReactionBhv" type="Boolean"/>
+		<field name="fileVigilanteReactionMoveStateId" type="String"/>
+        <object name="StartPMSSettings">
+            <object name="PMSValuesOnQuit">
+			    <object name="PMSValue">
+			        <field name="text_pmsPMSName" type="String"/>
+			        <field name="pmsPMSName" type="BinHex"/>
+					<field name="selEnumValue" type="Enum"/>
+					<field name="fFloatValue" type="Float"/>
+			        <field name="bBoolValue" type="Boolean"/>
+			    </object>
+			</object>
+        </object>
+        <object name="QuitSettings">
+            <object name="PMSValuesOnQuit">
+			    <object name="PMSValue">
+			        <field name="text_pmsPMSName" type="String"/>
+			        <field name="pmsPMSName" type="BinHex"/>
+					<field name="selEnumValue" type="Enum"/>
+					<field name="fFloatValue" type="Float"/>
+			        <field name="bBoolValue" type="Boolean"/>
+			    </object>
+			</object>
+        </object>
+        <object name="ProximitySettings">
+            <field name="fileActionMoveStateId" type="String"/>
+            <field name="fileCycleMoveStateId" type="String"/>
+            <field name="selOnAnimEnd" type="Enum"/>
+        </object>
+        <object name="TriggeredBehavior">
+            <field name="fileActionMoveStateId" type="String"/>
+            <field name="fileCycleMoveStateId" type="String"/>
+            <field name="selOnAnimEnd" type="Enum"/>
+        </object>
+    </object>
+    <object name="Barks">
+        <field name="ProlongedProximityBark" type="BinHex"/>
+        <object name="ProximityBarks"/>
+    </object>
+    <object name="Identity">
+        <field name="selGender" type="Enum"/>
+        <field name="civbankCiviliansBank" type="BinHex"/>
+        <field name="text_tmplDialogActor" type="String"/>
+        <field name="tmplDialogActor" type="BinHex"/>
+        <field name="dialactorlistDialogActorsList" type="BinHex"/>
+        <object name="TagSpec">
+            <object name="Normal">
+                <field name="hidSingleObject" type="Boolean"/>
+                <field name="hidName" type="BinHex"/>
+                <field name="hidKey" type="BinHex"/>
+                <field name="graphickitmodelModel" type="BinHex"/>
+                <field name="graphickitcollectionCollection" type="BinHex"/>
+                <object name="IncludeTags">
+                    <object name="Tag">
+                        <field name="selTag" type="Enum"/>
+                    </object>
+                </object>
+                <object name="ExcludeTags">
+                    <object name="Tag">
+                        <field name="selTag" type="Enum"/>
+                    </object>
+                </object>
+                <object name="ValidModels">
+				    <object name="Models">
+					<object name="graphickitmodelModel">
+						<field name="graphickitmodelModel" type="BinHex"/>
+					</object>
+				</object>
+                    <object name="graphickitmodelModel">
+                        <field name="graphickitmodelModel" type="BinHex"/>
+                    </object>
+                </object>
+            </object>
+            <object name="HighEnd">
+                <field name="hidSingleObject" type="Boolean"/>
+                <field name="hidName" type="BinHex"/>
+                <field name="hidKey" type="BinHex"/>
+                <field name="graphickitmodelModel" type="BinHex"/>
+                <field name="graphickitcollectionCollection" type="BinHex"/>
+                <object name="IncludeTags">
+                    <object name="Tag">
+                        <field name="selTag" type="Enum"/>
+                    </object>
+                </object>
+                <object name="ExcludeTags">
+                    <object name="Tag">
+                        <field name="selTag" type="Enum"/>
+                    </object>
+                </object>
+                <object name="ValidModels">
+                    <object name="Models">
+					    <object name="graphickitmodelModel">
+					    	<field name="graphickitmodelModel" type="BinHex"/>
+					    </object>
+				    </object>
+                    <object name="graphickitmodelModel">
+                        <field name="graphickitmodelModel" type="BinHex"/>
+                    </object>
+                </object>
+            </object>
+        </object>
+        <object name="ProfilerSettings">
+            <field name="profilerinfofilterProfileFilter" type="BinHex"/>
+            <field name="fileProfilerThumbnailOverride" type="BinHex"/>
+            <field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+            <field name="fDefaultBehaviorAnalysisPercentage" type="Float"/>
+            <object name="locsectionidProfile">
+                <field name="LocalizationId" type="Int64"/>
+            </object>
+            <object name="BehaviorAnalysisTitles">
+                <object name="locstridPassive">
+				    <field name="LocalizationId" type="Int64"/>
+				</object>
+                <object name="locstridActive">
+				    <field name="LocalizationId" type="Int64"/>
+				</object>
+            </object>
+        </object>
+        <object name="GraphicKitTagSpec">
+            <field name="hidSingleObject" type="BinHex"/>
+            <field name="hidName" type="BinHex"/>
+            <field name="hidKey" type="BinHex"/>
+            <field name="graphickitmodelModel" type="BinHex"/>
+            <field name="graphickitcollectionCollection" type="BinHex"/>
+            <object name="IncludeTags">
+				<object name="Tag">
+					<field name="selTag" type="Enum"/>
+				</object>
+            </object>
+            <object name="ExcludeTags">
+				<object name="Tag">
+					<field name="selTag" type="Enum"/>
+				</object>
+            </object>
+            <object name="ValidModels">
+				<object name="Models">
+					<object name="graphickitmodelModel">
+						<field name="graphickitmodelModel" type="BinHex"/>
+					</object>
+				</object>
+            </object>
+        </object>
+    </object>
+    <object name="RewardSettings">
+        <field name="itemlistsRewardList" type="BinHex"/>
+    </object>
+    <object name="EnticerQuitSettings">
+        <object name="NormalQuit">
+            <field name="selWalkSpeed" type="Enum"/>
+            <field name="selThreatState" type="Enum"/>
+            <field name="selState" type="Enum"/>
+            <field name="text_sBark" type="String"/>
+            <field name="sBark" type="BinHex"/>
+            <field name="civreactcontextReactionContext" type="BinHex"/>
+			<field name="fDuration" type="Float"/>
+        </object>
+        <object name="BeforeTurningPointQuit">
+            <field name="selWalkSpeed" type="Enum"/>
+            <field name="selThreatState" type="Enum"/>
+            <field name="selState" type="Enum"/>
+            <field name="text_sBark" type="String"/>
+            <field name="sBark" type="BinHex"/>
+            <field name="civreactcontextReactionContext" type="BinHex"/>
+			<field name="fDuration" type="Float"/>
+        </object>
+        <object name="AfterTurningPointQuit">
+            <field name="selWalkSpeed" type="Enum"/>
+            <field name="selThreatState" type="Enum"/>
+            <field name="selState" type="Enum"/>
+            <field name="text_sBark" type="String"/>
+            <field name="sBark" type="BinHex"/>
+            <field name="civreactcontextReactionContext" type="BinHex"/>
+			<field name="fDuration" type="Float"/>
+        </object>
+    </object>
+	<object name="AtlasProperties">
+		<field name="bExportToAtlas" type="Boolean"/>
+		<field name="atlastypeElementType" type="BinHex"/>
+	</object>
+</class>

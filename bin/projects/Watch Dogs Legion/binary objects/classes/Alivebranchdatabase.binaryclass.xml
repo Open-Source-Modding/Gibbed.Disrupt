@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AlivebranchdatabaseParameters">
+	<inherit name="SharedParameters"/>
+    <object name="DynamicallyTypedBranches">
+        <object name="Branch">
+            <field name="text_selType" type="String"/>
+            <field name="selType" type="Enum"/>
+            <object name="Object">
+                <field name="sComment" type="BinHex"/>
+                <field name="selEventType" type="Enum"/>
+                <field name="EventSubType" type="BinHex"/>
+                <field name="text_fileBehaviorCategory" type="String"/>
+                <field name="fileBehaviorCategory" type="BinHex"/>
+                <field name="bIsBail" type="Boolean"/>
+                <field name="selBailPriority" type="Enum"/>
+                <field name="fileSuggestedStrategyOnBail" type="BinHex"/>
+                <field name="selScope" type="Enum"/>
+                <field name="selDoubleBranchResponse" type="Enum"/>
+                <field name="bCanReturn" type="Boolean"/>
+                <field name="bCanBeDeferred" type="Boolean"/>
+                <field name="selBlockingEventMode" type="Enum"/>
+                <field name="selMinimumIntensity" type="Enum"/>
+                <object name="BlockingEvents" />
+                <object name="GenericBlockingEvents" />
+                <object name="BranchPreconditions" />
+                <object name="IncidentLists">
+                    <object name="incidentlistIncidentList">
+                        <field name="incidentlistIncidentList" type="BinHex"/>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</class>

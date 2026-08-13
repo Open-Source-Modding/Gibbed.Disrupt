@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Weaponsoundsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="sndvarWeaponDistanceRtpc">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="BinHex"/>
+	</object>
+	<object name="sndvarASRLoopCountRtpc">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="PlayerWeaponsModels">
+		<object name="WeaponModels">
+			<field name="text_selWeaponModel" type="String"/>
+			<field name="selWeaponModel" type="Enum"/>
+			<field name="fDistantSoundDistance" type="Float"/>
+			<object name="WeaponSoundObject">
+				<field name="fASRStartRtpcValue" type="Float"/>
+				<field name="fASRStopRtpcValue" type="Float"/>
+				<field name="text_sndFire" type="String"/>
+				<field name="sndFire" type="BinHex"/>
+				<field name="sndDistantFire" type="BinHex"/>
+				<field name="sndPreBakedReverbStart" type="BinHex"/>
+				<field name="sndPreBakedReverbStop" type="BinHex"/>
+				<field name="sndPressTrigger" type="BinHex"/>
+				<field name="sndMovingPart" type="BinHex"/>
+				<field name="text_sndReload" type="String"/>
+				<field name="sndReload" type="BinHex"/>
+				<field name="text_sndNoAmmoFire" type="String"/>
+				<field name="sndNoAmmoFire" type="BinHex"/>
+				<field name="text_sndDraw" type="String"/>
+				<field name="sndDraw" type="BinHex"/>
+				<field name="text_sndHolster" type="String"/>
+				<field name="sndHolster" type="BinHex"/>
+				<field name="text_sndBulletWizz" type="String"/>
+				<field name="sndBulletWizz" type="BinHex"/>
+				<field name="sndtpFireType" type="BinHex"/>
+				<field name="sndtpDistantFireType" type="BinHex"/>
+				<field name="sndtpPreBakedReverbStartType" type="BinHex"/>
+				<field name="sndtpPreBakedReverbStopType" type="BinHex"/>
+				<field name="sndtpPressTriggerType" type="BinHex"/>
+				<field name="sndtpMovingPartType" type="BinHex"/>
+				<field name="sndtpReloadType" type="BinHex"/>
+				<field name="sndtpNoAmmoFireType" type="BinHex"/>
+				<field name="sndtpDrawType" type="BinHex"/>
+				<field name="sndtpHolsterType" type="BinHex"/>
+				<field name="sndtpBulletWizzType" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="NPCWeaponsCategories">
+		<object name="WeaponCategories">
+			<field name="text_selWeaponCategory" type="String"/>
+			<field name="selWeaponCategory" type="Enum"/>
+			<field name="fDistantSoundDistance" type="Float"/>
+			<object name="WeaponSoundObjects">
+				<object name="WeaponSoundObject">
+					<field name="fASRStartRtpcValue" type="Float"/>
+					<field name="fASRStopRtpcValue" type="Float"/>
+					<field name="text_sndFire" type="String"/>
+					<field name="sndFire" type="BinHex"/>
+					<field name="sndDistantFire" type="BinHex"/>
+					<field name="sndPreBakedReverbStart" type="BinHex"/>
+					<field name="sndPreBakedReverbStop" type="BinHex"/>
+					<field name="sndPressTrigger" type="BinHex"/>
+					<field name="sndMovingPart" type="BinHex"/>
+					<field name="sndReload" type="BinHex"/>
+					<field name="sndNoAmmoFire" type="BinHex"/>
+					<field name="text_sndDraw" type="String"/>
+					<field name="sndDraw" type="BinHex"/>
+					<field name="text_sndHolster" type="String"/>
+					<field name="sndHolster" type="BinHex"/>
+					<field name="sndBulletWizz" type="BinHex"/>
+					<field name="sndtpFireType" type="BinHex"/>
+					<field name="sndtpDistantFireType" type="BinHex"/>
+					<field name="sndtpPreBakedReverbStartType" type="BinHex"/>
+					<field name="sndtpPreBakedReverbStopType" type="BinHex"/>
+					<field name="sndtpPressTriggerType" type="BinHex"/>
+					<field name="sndtpMovingPartType" type="BinHex"/>
+					<field name="sndtpReloadType" type="BinHex"/>
+					<field name="sndtpNoAmmoFireType" type="BinHex"/>
+					<field name="sndtpDrawType" type="BinHex"/>
+					<field name="sndtpHolsterType" type="BinHex"/>
+					<field name="sndtpBulletWizzType" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

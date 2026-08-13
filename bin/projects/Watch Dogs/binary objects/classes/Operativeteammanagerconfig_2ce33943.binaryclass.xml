@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Operativeteammanagerconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PersistentStateConfig">
+		<object name="Common">
+			<field name="fHealthValueOnInjuredState" type="Float"/>
+		</object>
+		<object name="Timeouts">
+			<object name="CapturedTimeouts">
+				<field name="fWantedLevel1" type="Float"/>
+				<field name="fWantedLevel2" type="Float"/>
+				<field name="fWantedLevel3" type="Float"/>
+				<field name="fWantedLevel4" type="Float"/>
+				<field name="fWantedLevel5" type="Float"/>
+				<field name="fWantedLevel6" type="Float"/>
+			</object>
+			<object name="InjuredTimeouts">
+				<field name="fInjuryTimeout" type="Float"/>
+			</object>
+		</object>
+		<object name="TimeoutCalculationRules">
+			<object name="CapturedStateTimeoutCalculation">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="InjuryRecoveryTimeoutCalculation">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+		</object>
+		<object name="CounterCalculationRules">
+			<object name="StaminaCalculation">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="CameraTransitionConfig">
+		<object name="CameraTransitions">
+			<field name="fPostArrestCameraSecondsTimeout" type="Float"/>
+			<field name="fPostInjuryCameraSecondsTimeout" type="Float"/>
+			<field name="fPostDeathCameraSecondsTimeout" type="Float"/>
+		</object>
+	</object>
+	<object name="HealthCalculationConfig">
+		<object name="NumHealthBarSegments">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="HealthPointsPerSegment">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="HealthPointsScale">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="HealthRegenRate">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="HealthRegenDelay">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="InventoryConfig">
+		<field name="shopcomponentsettingsWeaponShop" type="BinHex"/>
+		<field name="shopcomponentsettingsClothingShop" type="BinHex"/>
+		<field name="itemlistDefaultMasks" type="BinHex"/>
+		<field name="itemsDefaultWeapon" type="BinHex"/>
+		<field name="bShouldExoticWeaponGiveProgression" type="Boolean"/>
+		<object name="DefaultUniformTag">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ItemSlotConfigRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="text_rulesmithconstValue" type="String"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ItemSlotConfigs">
+			<object name="Config">
+				<field name="text_sName" type="String"/>
+				<field name="sName" type="BinHex"/>
+				<object name="SlotConfig">
+					<object name="Slot">
+						<field name="selCategory" type="Enum"/>
+						<field name="bSelectable" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="DefaultOperativeInventoryItemList">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="text_rulesmithconstValue" type="String"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="InventoryItemLists">
+			<object name="itemlistInventoryItemList">
+				<field name="itemlistInventoryItemList" type="BinHex"/>
+			</object>
+		</object>
+		<object name="InventoryItemListNames">
+			<object name="Name">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+			</object>
+		</object>
+		<object name="DefaultWeaponSet">
+			<object name="itemsItem">
+				<field name="itemsItem" type="BinHex"/>
+			</object>
+		</object>
+		<object name="ShouldApplyDefaultWeaponRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="WeaponProgressionElements">
+			<object name="WeaponProgressionElement">
+				<field name="selWeaponType" type="Enum"/>
+				<field name="text_progressionelementProgressionElement" type="String"/>
+				<field name="progressionelementProgressionElement" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="EmoteConfig">
+		<field name="emoteInsultEmote" type="BinHex"/>
+		<object name="DefaultEmotes">
+			<object name="Emotes">
+				<field name="itemsEmote" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="TagConfig">
+		<field name="tagcategoryUniformTagCategory" type="BinHex"/>
+		<object name="TagCategories">
+			<object name="tagcategoryTagCategories">
+				<field name="tagcategoryTagCategories" type="BinHex"/>
+			</object>
+		</object>
+		<object name="TagNames">
+			<object name="Name">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="TeamProgression">
+		<object name="nMinOperativeSlots">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="nMaxOperativeSlots">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="TeamCapacity">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnlineRecruitTeamCapacity">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="TeamAbilityGlobalParams">
+			<field name="text_progressionplayeractionAnyTeamAbilityExecutedTrackerAction" type="String"/>
+			<field name="progressionplayeractionAnyTeamAbilityExecutedTrackerAction" type="BinHex"/>
+			<object name="CanCheckAnyTeamAbilityThisFrame">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+		</object>
+		<object name="TeamAbilities">
+			<object name="TeamAbility">
+				<field name="text_teamabilityexecutemethodExecuteMethodName" type="String"/>
+				<field name="teamabilityexecutemethodExecuteMethodName" type="BinHex"/>
+				<field name="text_progressionplayeractionCheckTrackerAction" type="String"/>
+				<field name="progressionplayeractionCheckTrackerAction" type="BinHex"/>
+				<field name="text_progressionplayeractionOnExecutedTrackerAction" type="String"/>
+				<field name="progressionplayeractionOnExecutedTrackerAction" type="BinHex"/>
+				<field name="selNarrativeTrigger" type="Enum"/>
+				<object name="CanBeProvider">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+				<object name="CanBeConsumer">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+				<object name="CanCheckThisFrame">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="GameplayRules">
+		<object name="AreGameStartRespawnRulesActive">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanRespawnOnDeathDuringGamestart">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CurrentGameModeAllowsPermaDeath">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanOperativeBeCaptured">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ChanceForOperativeToAvoidDeath">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ChanceForOperativeToAvoidJail">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ChanceForOperativeToAvoidHospital">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="InvincibilityAfterRespawnDuration">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="InvisibilityAfterRespawnDuration">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanUseGamestartOperativeController">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanRespawnInForbiddenZone">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="IsVoluntaryOpSwapEnabled">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OwnedVehicleWorldPosSysMaxDistance">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_difficultysettings_82481e96.objParameters">
+	<inherit name="SharedParameters"/>
+	<object name="DefaultEnemyTypes">
+		<field name="sclrangetypesEnemyTypes" type="BinHex"/>
+		<object name="DefaultEnemyTypes">
+			<field name="sclrangetypesEnemyTypes" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Patrols">
+		<field name="fMinAngleBetweenPatrolSegments" type="Float"/>
+		<field name="fMaxAngleBetweenPatrolSegmentsRequiringStop" type="Float"/>
+		<field name="fDistanceFactorForCircularPatrols" type="Float"/>
+		<object name="AnimationInfos">
+			<field name="attactAttractorActionKey" type="BinHex"/>
+			<field name="fActionDuration" type="Float"/>
+			<object name="AnimationInfos">
+				<field name="attactAttractorActionKey" type="BinHex"/>
+				<field name="fActionDuration" type="Float"/>
+			</object>
+		</object>
+		<object name="DefaultPatrolProfiles"/>
+	</object>
+	<object name="Resources"/>
+	<object name="Endure">
+		<object name="Vehicles">
+			<field name="vehiclebhvsetupBehaviorSetup" type="BinHex"/>
+			<field name="fStopRangeMinimumDistance" type="Float"/>
+			<field name="fStopRangeMaximumDistance" type="Float"/>
+			<field name="fStopRangeMinimumDistanceFromOtherVehicles" type="Float"/>
+			<field name="fStopRangeMaximumDistanceFromOtherVehicles" type="Float"/>
+			<field name="fStopRangeMinimumDistanceFromDestination" type="Float"/>
+			<field name="fStopRangeMaximumDistanceFromDestination" type="Float"/>
+			<field name="fStopRangeSpeedThreshold" type="Float"/>
+			<object name="VehicleArchetypes">
+				<object name="VehicleArchetype">
+					<field name="text_archVehicleArchetype" type="String"/>
+					<field name="archVehicleArchetype" type="BinHex"/>
+				</object>
+			</object>
+			<object name="VehicleArchetypesByFaction">
+				<object name="VehicleArchetype">
+					<field name="selFaction" type="Enum"/>
+					<object name="VehicleArchetypes">
+						<object name="VehicleArchetype">
+							<field name="text_archVehicleArchetype" type="String"/>
+							<field name="archVehicleArchetype" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="SpawnParameters">
+			<field name="fNPCSpawnPointMinCoverHeight" type="Float"/>
+			<field name="iNPCSpawnPointMinCoverAngleCutoff" type="Int32"/>
+		</object>
+		<object name="WaveParameters">
+			<field name="iMinimumWaveCount" type="Int32"/>
+			<field name="iMaximumWaveCount" type="Int32"/>
+			<field name="fMinimumWaveDelay" type="Float"/>
+			<field name="fMaximumWaveDelay" type="Float"/>
+			<field name="iDefaultMinimumInitialOnscreenNPCs" type="Int32"/>
+			<field name="iDefaultMaximumVehicleCountPerWave" type="Int32"/>
+			<field name="iAliveNpcCountToTriggerNextWave" type="Int32"/>
+		</object>
+	</object>
+	<object name="Objectives">
+		<object name="Download">
+			<field name="fDownloadCoopSpeedCoefficient" type="Float"/>
+			<field name="fDownloadLastRemainingObjectiveSpeedCoefficient" type="Float"/>
+			<object name="DefaultDownloadArchetypes">
+				<object name="DownloadArchetype">
+					<field name="text_archDownloadArchetype" type="String"/>
+					<field name="archDownloadArchetype" type="BinHex"/>
+				</object>
+			</object>
+			<object name="DownloadArchetypesByFaction">
+				<object name="DownloadArchetype">
+					<field name="selFaction" type="Enum"/>
+					<object name="ObjectiveArchetypes">
+						<object name="ObjectiveArchetype">
+							<field name="text_archObjectiveArchetype" type="String"/>
+							<field name="archObjectiveArchetype" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Destroy">
+			<object name="DefaultDestroyArchetypes">
+				<object name="DestroyArchetype">
+					<field name="text_archDestroyArchetype" type="String"/>
+					<field name="archDestroyArchetype" type="BinHex"/>
+				</object>
+			</object>
+			<object name="DestroyArchetypesByFaction">
+				<object name="DestroyArchetype">
+					<field name="selFaction" type="Enum"/>
+					<object name="ObjectiveArchetypes">
+						<object name="ObjectiveArchetype">
+							<field name="text_archObjectiveArchetype" type="String"/>
+							<field name="archObjectiveArchetype" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="CommonArenaConfig">
+		<field name="text_archReachPointArchetype" type="String"/>
+		<field name="archReachPointArchetype" type="BinHex"/>
+		<field name="text_archWarningZoneArchetype" type="String"/>
+		<field name="archWarningZoneArchetype" type="BinHex"/>
+		<field name="text_archMissionAreaArchetype" type="String"/>
+		<field name="archMissionAreaArchetype" type="BinHex"/>
+		<field name="text_archLaneRestrictionsControllerArchetype" type="String"/>
+		<field name="archLaneRestrictionsControllerArchetype" type="BinHex"/>
+		<object name="locstridReachText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="ReinforcementsCallerParameters">
+		<field name="iMinReinforcementsCallerCount" type="Int32"/>
+		<field name="iMaxReinforcementsCallerCount" type="Int32"/>
+		<field name="fCalledReinforcementsDifficultyBudgetModifier" type="Float"/>
+		<field name="iCalledReinforcementsMinimumWaveCount" type="Int32"/>
+		<field name="iCalledReinforcementsMaximumWaveCount" type="Int32"/>
+	</object>
+	<object name="MissionEndingParameters">
+		<object name="ReinforcementsParameters">
+			<field name="fMissionEndReinforcementsChance" type="Float"/>
+			<field name="fReinforcementsDifficultyBudgetModifier" type="Float"/>
+			<field name="iReinforcementsMinimumWaveCount" type="Int32"/>
+			<field name="iReinforcementsMaximumWaveCount" type="Int32"/>
+		</object>
+		<object name="FleeParameters">
+			<field name="vehiclebhvsetupBehaviorSetup" type="BinHex"/>
+			<field name="fleeonfootconfigFleeOnFootConfig" type="BinHex"/>
+			<field name="iMaxAliveNPCCountToTriggerFlee" type="Int32"/>
+			<field name="fNpcFleeChance" type="Float"/>
+			<field name="iNpcFleeVehicleCount" type="Int32"/>
+			<field name="iNpcFleeVehicleSpawnMaxDistanceFromCenter" type="Int32"/>
+		</object>
+	</object>
+	<object name="Fail">
+		<field name="fFailMessageDuration" type="Float"/>
+		<object name="locstridAllPlayersDeadText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridAPlayerHasQuitText"/>
+	</object>
+	<object name="LootSpawn">
+		<field name="iRandomLootSpawnCountMin" type="Int32"/>
+		<field name="iRandomLootSpawnCountMax" type="Int32"/>
+		<field name="iDestroyLootSpawnCountMin" type="Int32"/>
+		<field name="iDestroyLootSpawnCountMax" type="Int32"/>
+		<field name="text_archRandomLootArchetype" type="String"/>
+		<field name="archRandomLootArchetype" type="BinHex"/>
+		<field name="text_archDestroyLootArchetype" type="String"/>
+		<field name="archDestroyLootArchetype" type="BinHex"/>
+	</object>
+	<object name="FixerCam">
+		<field name="text_archSecondaryCameraForCoopArchetype" type="String"/>
+		<field name="archSecondaryCameraForCoopArchetype" type="BinHex"/>
+	</object>
+	<object name="Profiler">
+		<field name="fProfilerSwitchDuration" type="Float"/>
+	</object>
+	<object name="BackgroundSounds">
+		<field name="sndContractStartSound" type="BinHex"/>
+		<field name="sndContractStopSound" type="BinHex"/>
+	</object>
+	<object name="HudSettings">
+		<field name="layoutdbobjectDlcHomeLayoutDbObject" type="BinHex"/>
+		<field name="itemsClothShopDLCSurvivalGuideItem" type="BinHex"/>
+		<object name="GWNotificationSettings">
+			<field name="rewardhudnotificationGWPerk" type="BinHex"/>
+			<field name="rewardhudnotificationGWEndDailyRoundPlayed" type="BinHex"/>
+			<field name="rewardhudnotificationGWEndDailyRoundUnplayed" type="BinHex"/>
+			<field name="rewardhudnotificationGWDailyPlayerRankUpdated" type="BinHex"/>
+			<field name="rewardhudnotificationGWGangTagEarned" type="BinHex"/>
+			<field name="rewardhudnotificationGWOutfitUnlocked" type="BinHex"/>
+		</object>
+		<object name="Timers">
+			<field name="fMissionStartMessageDuration" type="Float"/>
+			<field name="fNewObjectiveMessagesDuration" type="Float"/>
+			<field name="fWarningLeavingMissionAreaMessageDuration" type="Float"/>
+			<field name="fWarningEnteringRestrictedAreaMessageDuration" type="Float"/>
+			<field name="fMissionEndMessageDuration" type="Float"/>
+			<field name="fPDAMessagesDuration" type="Float"/>
+			<field name="fMissionEndMessageTrigger" type="Float"/>
+			<field name="fRewardsTrigger" type="Float"/>
+			<field name="fFixerCameraDuration" type="Float"/>
+			<field name="fPostFixerCameraDuration" type="Float"/>
+			<field name="fOptionalObjectiveMessageDuration" type="Float"/>
+		</object>
+		<object name="FactionHudSettings">
+			<object name="Faction">
+				<field name="selFaction" type="Enum"/>
+				<field name="sIconName" type="String"/>
+				<field name="sPopupImageName" type="String"/>
+				<field name="sDailyPopupImageName" type="String"/>
+				<field name="sFireIndicatorType" type="String"/>
+				<object name="Localisation">
+					<object name="locstridGangName">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+					<object name="locstridGangDescription">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+					<object name="locstridGangRewardReputation">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="HudLocalizationIds">
+			<object name="locstridGangsWarContractDesignation">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridCounterReputationDesignation">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridGangsWarMarkerMap">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDailyRecapTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDailyRecapDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDogtagTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTotalDogtagTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridUnplayedCurrentDaily">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridUnplayedPastDaily">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridOptionalObjectivesTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridMainMissionMarkerCampaignTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridMainMissionMarkerMissionName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPendingRewardTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridGangTagPageHeader">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridGangTagPageDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

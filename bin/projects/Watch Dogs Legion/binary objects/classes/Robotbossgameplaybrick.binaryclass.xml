@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RobotbossgameplaybrickParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="fMaxRadiusRatioFromEventPos" type="BinHex"/>
+	<field name="fPlayerReachRadius" type="BinHex"/>
+	<field name="discoverysettingsDiscoverySettings" type="BinHex"/>
+	<field name="fEngagementDistFromEvent" type="BinHex"/>
+	<field name="fDelayToEnableHackable" type="BinHex"/>
+	<field name="fMinDistBetweenHackerAndDangerousHackable" type="BinHex"/>
+	<field name="uiMaxElementToArm" type="BinHex"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToEnable" type="BinHex"/>
+	<field name="fTriggerTeamSpeakRadius" type="BinHex"/>
+	<field name="fFailMessageDuration" type="BinHex"/>
+	<field name="fMinDistFromEntityToFleeTo" type="BinHex"/>
+	<field name="possyselementObjectiveMarker" type="BinHex"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToEnableForLight" type="BinHex"/>
+	<field name="failTimerMaxDuration" type="BinHex"/>
+	<field name="fSearchAreaRadius" type="BinHex"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToDisarm" type="BinHex"/>
+	<field name="fMinDistToGoToSecondPlayer" type="BinHex"/>
+	<field name="fMinDistBetweenHackerAndHackableToEnable" type="BinHex"/>
+	<field name="possyselementEventMarker" type="BinHex"/>
+	<field name="fDistToDeactivateEvent" type="BinHex"/>
+	<field name="phonecommunicationsettingsPhoneCommunicationSettings" type="BinHex"/>
+	<field name="fMinDistBetweenPlayerAndHackableWhenWantToArm" type="BinHex"/>
+	<field name="fPlayerDiscoveryRadius" type="BinHex"/>
+	<field name="fCheckHackableToArmFrequency" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleGoAwayBhvSetup" type="BinHex"/>
+	<field name="possyselementObjectiveMarkerTeammate" type="BinHex"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToArm" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleStopBhvSetup" type="BinHex"/>
+	<field name="bSendTrackingEvent" type="BinHex"/>
+	<field name="texturedbobjectMissionModuleTextureIcon" type="BinHex"/>
+	<field name="bUseDistanceForEngagement" type="BinHex"/>
+	<field name="fEventCompletedMessageDuration" type="BinHex"/>
+	<field name="fDisengagementDistFromEvent" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleGoToBhvSetup" type="BinHex"/>
+	<field name="fUnspawnDistance" type="BinHex"/>
+	<field name="uiNumberOfSucceededEventToUnlockProgressionReward" type="BinHex"/>
+	<field name="failTimerMaxDistanceWhenDurationAtZero" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleFleeBhvSetup" type="BinHex"/>
+	<field name="selHowToReactToEvent" type="BinHex"/>
+	<field name="itemlistsProgressionReward" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleWanderBhvSetup" type="BinHex"/>
+	<field name="clorobotcreationsettingsRobotCreationSettings" type="BinHex"/>
+	<field name="fMaxDistWithHacker" type="BinHex"/>
+	<field name="fDistFromEventToSwicthMode" type="BinHex"/>
+	<field name="fMinRadiusRatioFromEventPos" type="BinHex"/>
+	<field name="possyselementObjectiveMarkerOpponent" type="BinHex"/>
+	<field name="fEventPropositionDisplayduration" type="BinHex"/>
+	<field name="bEnableWhenHackableBehindHacker" type="BinHex"/>
+	<field name="selHackingConnectionColor" type="BinHex"/>
+	<object name="locstridEventPropositionDescriptionLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridWarningMessageWhenQuitSearchAreaLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridEventCompletedLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridEventFailedLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridEventFailedReasonPlayersEliminatedLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridEventAbortedByAnotherPlayerLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridWarningMessageHeaderWhenQuitSearchAreaLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridObjectiveLootRobotLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridEventPropositionInputActionLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridTutorialUseNetHackMessageLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridEventFailedAIEscapedLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridEventPropositionTitleLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridEventFailedReasonLootDestroyedLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridObjectiveDisableRobotLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridTutorialUseNetHackMessageWhenInCarLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="IAHackingLineSettings">
+		<field name="fWorldOffset" type="BinHex"/>
+		<field name="fileLineTexture" type="BinHex"/>
+		<field name="fTimedLineDuration" type="BinHex"/>
+		<object name="curveLineWidthOverDist">
+			<field name="hidNumKnots" type="BinHex"/>
+			<object name="Knots">
+				<object name="Knot">
+					<field name="Type" type="BinHex"/>
+					<field name="Info" type="BinHex"/>
+					<field name="Value" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="locstridEventPropositionInputActionLocIdPCSpecific">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridEventStartedLocId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+</class>

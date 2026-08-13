@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RobotconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="PGTConfig">
+		<field name="bIsLongRange" type="Boolean"/>
+	</object>
+	<object name="Properties">
+		<field name="bIsBuddyAI" type="Boolean"/>
+		<field name="bIsPlayerAlly" type="Boolean"/>
+		<field name="selMindSet" type="Enum"/>
+		<field name="bIsFactionAffiliate" type="Boolean"/>
+		<field name="bForceRespawnAfterCheckpoint" type="Boolean"/>
+		<field name="stimtableStimEffectTable" type="BinHex"/>
+		<field name="navigationconfigNavigationConfig" type="BinHex"/>
+		<field name="fleebehaviordescriptorFleeConfig" type="BinHex"/>
+		<field name="rewardconfigRewardConfig" type="BinHex"/>
+		<field name="selRobotType" type="Enum"/>
+		<field name="selBarkGroup" type="Enum"/>
+		<field name="bDisableIdleBarks" type="Boolean"/>
+		<field name="fScanSelectDistance" type="Float"/>
+		<field name="fScanSelectRadius" type="Float"/>
+		<field name="fScanApproachDistance" type="Float"/>
+		<field name="fStoppingPredictionTime" type="Float"/>
+		<field name="vecTagOffset" type="BinHex"/>
+		<field name="vecProfilerOffset" type="BinHex"/>
+		<field name="fPunchDamage" type="Float"/>
+		<field name="robotpersonalitymoduleparametersPersonalityModuleParameters" type="BinHex"/>
+		<field name="robotnavigationparametersNavigationParameters" type="BinHex"/>
+		<field name="robotphysicsparametersPhysicsParameters" type="BinHex"/>
+		<field name="hackingdefinitionHackingDefinition" type="BinHex"/>
+		<field name="selAffiliation" type="Enum"/>
+		<field name="personalityPersonalityConfig" type="BinHex"/>
+		<field name="accuracyconfigAccuracyConfig" type="BinHex"/>
+		<field name="detectionlevelsettingsDetectionLevelSettings" type="BinHex"/>
+		<field name="clotriggerbhvsettingsTriggerBehavior" type="BinHex"/>
+		<field name="clotriggerbhvsettingsTriggerBehaviorPeer" type="BinHex"/>
+		<field name="bOverrideProfilerSettings" type="Boolean"/>
+		<object name="AIAgentConfig">
+			<field name="selSubcategory" type="Enum"/>
+			<field name="selDecorator" type="Enum"/>
+			<field name="bMeleeOnly" type="Boolean"/>
+			<field name="bIsElite" type="Boolean"/>
+			<field name="bIsBoss" type="Boolean"/>
+			<field name="bIsUnique" type="Boolean"/>
+			<field name="bIsOCO" type="Boolean"/>
+			<field name="bShowHackReminder" type="Boolean"/>
+			<object name="TagInfo">
+				<field name="selTagIndicatorCategory" type="Enum"/>
+				<field name="selTagIndicatorDefense" type="Enum"/>
+				<field name="selTagIndicatorBehavior" type="Enum"/>
+			</object>
+		</object>
+		<object name="OverriddenProfilerSettings">
+			<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+			<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+			<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+			<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+			<field name="vectorProfilerSoftLockIconOffset" type="Vector3"/>
+			<field name="bIsProfilerSticky" type="Boolean"/>
+			<field name="bProfilerApplyTargetOffsetToBonePos" type="Boolean"/>
+			<field name="vectorProfilerScoringQuadSizeModifier" type="Vector3"/>
+			<field name="vectorProfilerScoringQuadCenterOffset" type="Vector3"/>
+			<field name="vectorProfilerScoringQuadSizeModifierVehicle" type="Vector3"/>
+			<field name="vectorProfilerScoringQuadCenterOffsetVehicle" type="Vector3"/>
+			<field name="bProfilerHighSpeedTargetable" type="Boolean"/>
+			<field name="bProfilerTargetOnlyInHighSpeed" type="Boolean"/>
+			<field name="fProfilerAdditionalTargetScore" type="Float"/>
+			<field name="fProfilerAdditionalTargetScoreVehicle" type="Float"/>
+			<field name="selProfileColorTypeOverride" type="Enum"/>
+			<field name="selIngredientProfilerCategory" type="Enum"/>
+			<object name="locsectionidProfile">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="IconLocations"/>
+			<object name="TargetingBoneNames"/>
+		</object>
+	</object>
+</class>

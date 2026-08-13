@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Inputcontrollercharacterwheelsettings_f0a5635c">
+	<object name="obj">
+		<inherit name="Inputcontrollercharacterwheelsettings_f0a5635cParameters"/>
+	</object>
+</file>

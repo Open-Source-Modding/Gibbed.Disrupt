@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WeaponsubstitutionconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iBaseWeaponIndex" type="Int32"/>
+	<object name="SelectionRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="Weapons">
+		<object name="itemsWeapon">
+			<field name="itemsWeapon" type="BinHex"/>
+		</object>
+	</object>
+</class>

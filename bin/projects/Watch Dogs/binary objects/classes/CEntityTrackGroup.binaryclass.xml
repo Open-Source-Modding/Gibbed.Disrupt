@@ -1,0 +1,46 @@
+<class name="CEntityTrackGroup">
+    <object name="CEntityTrackGroup">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field hash="22958F3A"/>
+        <field name="disMuted"/>
+        <field name="selEntityProvider" type="Enum"/>
+        <field name="bReleaseEntityFromCinema" type="Boolean"/>
+        <field name="Position" type="Vector3"/>
+        <field name="Angles" type="Vector3"/>
+        <field name="text_hidArchetypeName" type="String"/>
+        <field name="hidArchetypeName"/>
+        <field name="entityspawnerEntitySpawner" type="String"/>
+        <field name="bDestroyEntityOnStop" type="Boolean"/>
+		<field name="sEntityOutputAnchor" type="String"/>
+        <field name="sEntityInputAnchor" type="String"/>
+        <field name="bKeepInitialTransform" type="Boolean"/>
+        <object name="PropertiesContext">
+            <field name="selPhysics" type="Enum"/>
+            <field name="selMotionBlur" type="Enum"/>
+        </object>
+        <object name="PropertiesOutputContext">
+            <field name="selPhysics_" type="Enum"/>
+            <field name="selMotionBlur_" type="Enum"/>
+            <field name="selBinding_" type="Enum"/>
+        </object>
+        <object name="Tracks">
+		    <inherit name="COverlayTrack"/>
+		    <inherit name="CSequenceTrackGroup"/>
+		    <inherit name="CCameraTrackGroup"/>
+		    <inherit name="CGenericContextTrack"/>
+		    <inherit name="CMovementTrack"/>
+		    <inherit name="CLightTrack"/>
+		    <inherit name="CFacialAnimationSequenceTrack"/>
+            <inherit name="CEventSequenceTrack"/>
+            <inherit name="CAnimationSequenceTrack"/>
+			<inherit name="CGraphicModifierSequenceTrack"/>
+			<inherit name="CDialogSequenceTrack"/>
+			<inherit name="CSoundSequenceTrack"/>
+			<inherit name="CSimpleAnimationSequenceTrack"/>
+            <inherit name="CLightSequenceTrack"/>
+			<inherit name="CParticleSequenceTrack"/>
+        </object>
+    </object>
+</class>

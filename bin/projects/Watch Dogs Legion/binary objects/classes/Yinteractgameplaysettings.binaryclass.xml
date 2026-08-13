@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="YinteractgameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archDataYInteractArchetypeResource" type="String"/>
+	<field name="archDataYInteractArchetypeResource" type="BinHex"/>
+	<field name="bForceDisableAfterCompleteOnce" type="Boolean"/>
+</class>

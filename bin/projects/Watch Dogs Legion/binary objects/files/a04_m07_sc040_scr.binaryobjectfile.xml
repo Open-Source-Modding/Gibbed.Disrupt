@@ -1,0 +1,5 @@
+<file name="a04_m07_sc040_scr" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Eventprogressionlists_f3c492e0Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ProgressionEventLists">
+		<object name="ProgressionEventList">
+			<field name="accessidRequiredAccessId" type="BinHex"/>
+			<field name="randomeventlistsUnlockedEventList" type="BinHex"/>
+		</object>
+	</object>
+</class>

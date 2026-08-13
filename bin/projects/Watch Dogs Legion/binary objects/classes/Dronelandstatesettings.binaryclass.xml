@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronelandstatesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="MoveSubState">
+		<field name="fMoveNearTolerance" type="Float"/>
+		<field name="fMoveZOffset" type="Float"/>
+		<object name="curveMoveSpeedCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="PositioningSubState">
+		<field name="fPositioningSpeed" type="Float"/>
+		<field name="fPositioningTimeMin" type="Float"/>
+		<field name="fPositioningTimeMax" type="Float"/>
+	</object>
+	<object name="MoveDownSubState">
+		<field name="fMoveDownSpeed" type="Float"/>
+	</object>
+	<object name="LandSubState">
+		<field name="fLandSpeed" type="Float"/>
+		<field name="fLandTime" type="Float"/>
+	</object>
+	<object name="LandedSubState">
+		<field name="fReturnToStandbyTimeMin" type="Float"/>
+		<field name="fReturnToStandbyTimeMax" type="Float"/>
+	</object>
+</class>

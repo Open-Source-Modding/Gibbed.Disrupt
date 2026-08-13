@@ -1,0 +1,23 @@
+<class name="CGenericContextClip">
+    <object name="CGenericContextClip">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field name="timeStartTime" type="Float"/>
+      <field name="timeDuration" type="Float"/>
+      <field name="timeEndTime" type="Float"/>
+      <field name="hidResizable" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+      <object name="PropertiesContext">
+        <field name="selPhysics" type="Enum"/>
+        <field name="selMotionBlur" type="Enum"/>
+        <field name="selGodMode" type="Enum"/>
+        <field name="selEnableAI" type="Enum"/>
+        <field name="selForceDisplacement" type="Enum"/>
+        <field name="selWeaponType" type="Enum"/>
+        <field name="selIsIndoors" type="Enum"/>
+        <field name="selIsInsideTrain" type="Enum"/>
+		<field name="selPlayerMaskState" type="Enum"/>
+      </object>
+    </object>
+</class>

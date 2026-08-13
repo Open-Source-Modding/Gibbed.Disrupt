@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Ringofsteelsettings_b52c1524">
+	<object name="obj">
+		<inherit name="Ringofsteelsettings_b52c1524Parameters"/>
+	</object>
+</file>

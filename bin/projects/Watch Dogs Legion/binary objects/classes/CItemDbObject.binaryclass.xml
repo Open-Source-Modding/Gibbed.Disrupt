@@ -1,0 +1,20 @@
+<class name="CItemDbObject">
+	<inherit name="CNomadDbObjectNamed" />
+	<field name="text_itemdescriptorItemDescriptor" type="String" />
+	<field name="itemdescriptorItemDescriptor" type="StringId" />
+	<field name="itemsBaseItem" type="BinHex" />
+	<object name="ItemDescriptor">
+		<inherit name="CItemDescriptorCar"
+		         condition_field="^itemdescriptorItemDescriptor"
+		         condition_type="StringId"
+		         condition_value="ItemDescriptorCar" />
+		<inherit name="CItemDescriptorCloth"
+		         condition_field="^itemdescriptorItemDescriptor"
+		         condition_type="StringId"
+		         condition_value="ItemDescriptorCloth" />
+		<inherit name="CItemDescriptorSurvivalGuide"
+		         condition_field="^itemdescriptorItemDescriptor"
+		         condition_type="StringId"
+		         condition_value="ItemDescriptorSurvivalGuide" />
+	</object>
+</class>

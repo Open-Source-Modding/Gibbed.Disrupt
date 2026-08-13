@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CloactionlistParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsPartOfAScenarioOnSpawn" type="Boolean"/>
+	<field name="bIsCensusActivity" type="Boolean"/>
+	<field name="bChooseActionAfterSpawn" type="Boolean"/>
+	<object name="Bank">
+		<object name="Entry">
+			<field name="cloactAction" type="BinHex"/>
+			<field name="uiCoefficient" type="UInt32"/>
+		</object>
+	</object>
+</class>

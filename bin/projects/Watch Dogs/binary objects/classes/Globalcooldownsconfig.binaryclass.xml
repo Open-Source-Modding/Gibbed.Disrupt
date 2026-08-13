@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="GlobalcooldownsconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ConfigEntries">
+		<object name="Entry">
+			<field name="selHackCategory" type="Enum"/>
+			<field name="fCooldown" type="Float"/>
+		</object>
+	</object>
+</class>

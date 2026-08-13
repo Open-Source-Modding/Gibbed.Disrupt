@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicleaidrivingstyleconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Behavior">
+		<field name="bIgnoreTrafficLights" type="Boolean"/>
+		<field name="bIgnorePedestrians" type="Boolean"/>
+		<field name="bIgnorePolice" type="Boolean"/>
+		<field name="bIgnorePlayer" type="Boolean"/>
+		<field name="bIgnoreSpiderBot" type="Boolean"/>
+		<field name="bUseStuckMonitor" type="Boolean"/>
+		<field name="bComputeAllObstaclePOIs" type="Boolean"/>
+		<field name="bIsReckless" type="Boolean"/>
+		<field name="bCanOvertake" type="Boolean"/>
+		<field name="dWanderHistoryOverride" type="BinHex"/>
+		<object name="PathFlags">
+			<field name="bUseRegularTraffic" type="Boolean"/>
+			<field name="bStartOnShortcut" type="Boolean"/>
+			<field name="bNarrowRoadPenalty" type="Boolean"/>
+			<field name="bUseShortcuts" type="Boolean"/>
+			<field name="bStartOncoming" type="Boolean"/>
+			<field name="bInhibitDirectionChange" type="Boolean"/>
+			<field name="bUseOncoming" type="Boolean"/>
+			<field name="bUsePartialBlockedLanes" type="Boolean"/>
+			<field name="bUseGates" type="Boolean"/>
+			<field name="bUseOncomingOnShortcuts" type="Boolean"/>
+		</object>
+	</object>
+	<object name="Navigation">
+		<field name="fDesiredThrottleAcceleration" type="Float"/>
+		<field name="fDesiredBrakingDeceleration" type="Float"/>
+		<field name="fCornerEntranceSpeedModifier" type="Float"/>
+		<field name="fSteeringSpeedModifier" type="Float"/>
+		<field name="fSpeedLimitModifier" type="Float"/>
+	</object>
+	<object name="EngineHacks">
+		<field name="fEngineHeatFactor" type="Float"/>
+		<field name="fTransmissionRatioHeatFactor" type="Float"/>
+		<field name="fGlobalTyreFrictionScale" type="Float"/>
+	</object>
+	<object name="NoPhysicsMovement">
+		<field name="fNoPhysicsMaxSpeed" type="Float"/>
+	</object>
+</class>

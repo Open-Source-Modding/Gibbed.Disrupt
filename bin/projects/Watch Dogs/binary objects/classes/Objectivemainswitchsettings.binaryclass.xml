@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivemainswitchsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="sMainSwitchEntryPlaceholder" type="BinHex"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridMainSwitchEntry">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

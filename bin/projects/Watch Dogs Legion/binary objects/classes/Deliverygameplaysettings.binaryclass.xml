@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DeliverygameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsBuddyDelivery" type="Boolean"/>
+	<field name="bUseEscapeRadius" type="Boolean"/>
+	<field name="bNeedsToEscapePursuersToCompleteDelivery" type="Boolean"/>
+	<field name="bDisplayArea" type="Boolean"/>
+	<field name="fAreaRadius" type="Float"/>
+	<field name="bDeactivateDestinationUIOnEscapePursuersPhase" type="Boolean"/>
+	<field name="buddyaisettingsBuddyAISettings" type="BinHex"/>
+	<field name="bUseMeetingAtDestination" type="Boolean"/>
+	<field name="bShouldLeaveInWanderUponDelivery" type="Boolean"/>
+	<field name="bShouldLeaveInFleeUponDelivery" type="Boolean"/>
+	<field name="bIsGoingToBeTalker" type="Boolean"/>
+	<field name="bUsePGTArenaAsFleeThreat" type="Boolean"/>
+	<field name="fleebehaviordescriptorBuddyFleeBhvDescriptor" type="BinHex"/>
+	<field name="sBuddyDeliverBarkTriggerName" type="BinHex"/>
+	<field name="locategameplaydescriptorEntityToDeliverLocateDescriptor" type="BinHex"/>
+	<field name="bIsTimed" type="Boolean"/>
+	<field name="fTimeToDeliver" type="Float"/>
+	<field name="bStartTimerOnVehicleEnteredInsteadOfDeliveryStart" type="Boolean"/>
+	<field name="selVehicleHealthBarDisplayMode" type="Enum"/>
+	<field name="bUseOnlineNotifications" type="Boolean"/>
+	<object name="DestinationAnySettings">
+		<field name="LocationDescriptionID" type="BinHex"/>
+	</object>
+	<object name="locstridVehicleHealthBarHeader">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="VehicleStolenCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="DeliveredCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

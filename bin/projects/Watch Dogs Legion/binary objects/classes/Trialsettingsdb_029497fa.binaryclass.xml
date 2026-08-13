@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Trialsettingsdb_029497faParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="BinHex"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="BinHex"/>
+	<field name="text_hidName" type="BinHex"/>
+	<field name="hidName" type="BinHex"/>
+	<object hash="E56C0798">
+		<field name="texturedbobjectTexture" type="BinHex"/>
+		<object hash="F78F34A3">
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object hash="328382FD">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+		</object>
+		<object hash="BC5E944A">
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object hash="328382FD">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object hash="669C7033">
+		<field name="texturedbobjectTexture" type="BinHex"/>
+		<object hash="F78F34A3">
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object hash="328382FD">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+		</object>
+		<object hash="BC5E944A">
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object hash="328382FD">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object hash="B541A00F">
+		<field name="texturedbobjectTexture" type="BinHex"/>
+		<object hash="F78F34A3">
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object hash="328382FD">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+		</object>
+		<object hash="BC5E944A">
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object hash="328382FD">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object hash="DDB11C10">
+		<field name="texturedbobjectTexture" type="BinHex"/>
+		<object hash="F78F34A3">
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object hash="328382FD">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+		</object>
+		<object hash="BC5E944A">
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object hash="328382FD">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

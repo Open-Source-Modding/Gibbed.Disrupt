@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChasemaneuverconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMinTimeBetweenManeuvers" type="BinHex"/>
+	<object name="Maneuvers">
+		<object name="Maneuver">
+			<field name="selType" type="Enum"/>
+			<field name="bEnabledIfTargetSlow" type="BinHex"/>
+			<field name="bEnabledIfTargetFast" type="BinHex"/>
+			<field name="uiMaxManeuversInTimerPeriod" type="BinHex"/>
+			<field name="fManeuverTimePeriod" type="BinHex"/>
+			<field name="fPreActivateDuration" type="BinHex"/>
+			<field name="fMaxDuration" type="Float"/>
+			<field name="fGlobalCooldownTime" type="BinHex"/>
+			<field name="fAgentCooldownTime" type="BinHex"/>
+			<object name="VehicleTypes">
+				<field name="bChaser" type="Boolean"/>
+				<field name="bMuscle" type="Boolean"/>
+				<field name="bSUV" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+</class>

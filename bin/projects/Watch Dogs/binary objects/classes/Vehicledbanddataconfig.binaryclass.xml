@@ -1,0 +1,20 @@
+<class name="vehicledbanddataconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selGameplayType" type="Enum"/>
+	<field name="vehiclegenericphyscomponentparamsVehiclePhysComponentDefaultDatabase" type="BinHex"/>
+	<field name="vehiclewheeledphyscomponentparamsWheeledPhysComponentDefaultDatabase" type="BinHex"/>
+	<field name="vehiclefloatingphyscomponentparamsWheeledPhysComponentDefaultDatabase" type="BinHex"/>
+	<field name="vehiclehelicopterphyscomponentparamsWheeledPhysComponentDefaultDatabase" type="BinHex"/>
+	<object name="Parts">
+		<object name="part">
+			<field name="Name" type="String"/>
+			<field name="selRequired" type="Enum"/>
+			<field name="selChassisCollision" type="Enum"/>
+			<field name="selBallistic" type="Enum"/>
+			<field name="selHang" type="Enum"/>
+			<field name="selDetach" type="Enum"/>
+			<field name="selDamageStates" type="Enum"/>
+			<field name="vehiclepartDefaultDatabase" type="BinHex"/>
+		</object>
+	</object>
+</class>

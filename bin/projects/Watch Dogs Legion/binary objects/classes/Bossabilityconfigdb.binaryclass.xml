@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BossabilityconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selType" type="Enum"/>
+	<field name="arcloakbossabilityconfigARCloakAbilityConfig" type="BinHex"/>
+</class>

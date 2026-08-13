@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OnlinedifficultyobjectParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bHasScaledRewards" type="Boolean"/>
+	<object name="locstridDisplayName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="OperativeXPModfierRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="CryptoModifierRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="ResistanceXPModifierRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

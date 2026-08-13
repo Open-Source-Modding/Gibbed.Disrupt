@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Itemvariety">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="ItemvarietyParameters"/>
+		</object>
+	</object>
+</file>

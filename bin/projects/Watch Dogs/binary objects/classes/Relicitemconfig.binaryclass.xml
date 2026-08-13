@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RelicitemconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archWireframe" type="String"/>
+	<field name="archWireframe" type="BinHex"/>
+	<field name="archFinished" type="BinHex"/>
+	<field name="texturedbobjectRelicIcon" type="BinHex"/>
+	<field name="selDataDriveCategory" type="Enum"/>
+	<field name="bIsOPSpecific" type="Boolean"/>
+	<object name="Pieces">
+		<object name="RelicPiece">
+			<field name="itemsRelicPiece" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridRelicName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRelicDescription">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="RelicDescriptionParagraphs">
+		<object name="locstridParagraph">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="RelicDescriptionParagraphs">
+			<object name="locstridParagraph">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="OnRelicCompletedTrigger">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+</class>

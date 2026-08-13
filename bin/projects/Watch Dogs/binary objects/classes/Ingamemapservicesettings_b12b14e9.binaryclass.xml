@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Ingamemapservicesettings_b12b14e9Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="ingamemapservicesettingsentryDefaultMap" type="BinHex"/>
+	<field name="vec2NorthDirection" type="Vector2"/>
+	<field name="mapicondescNorthSymbolMinimapArabic" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapBrazilianPortuguese" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapDutch" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapEnglish" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapFrench" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapGerman" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapItalian" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapJapanese" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapKorean" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapMexicanSpanish" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapPolish" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapRussian" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapSimplifiedChinese" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapSpanish" type="BinHex"/>
+	<field name="mapicondescNorthSymbolMinimapTraditionalChinese" type="BinHex"/>
+	<field name="uizonesettingsBuildingSetting" type="BinHex"/>
+	<field name="uizonesettingsWorldMapRedZoneSetting" type="BinHex"/>
+	<field name="uizonesettingsKeyLocationSetting" type="BinHex"/>
+	<field name="fIconFramingMaxOffsetX" type="Float"/>
+	<field name="fIconFramingMaxOffsetY" type="Float"/>
+	<field name="fIconFramingMinZoomDistance" type="Float"/>
+	<field name="fIconFramingMaxZoomDistance" type="Float"/>
+	<field name="uitweensettingFramingCameraTweenSettings" type="BinHex"/>
+	<object name="FogOfWar">
+		<field name="colorColor" type="VectorColor"/>
+		<field name="Alpha" type="BinHex"/>
+	</object>
+	<object name="MapFilterItems">
+		<field name="selFilterType" type="Enum"/>
+		<field name="mapicondescMapIcon" type="BinHex"/>
+		<field name="texturedbobjectFilterTexture" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="MapFilterItems">
+			<field name="selFilterType" type="Enum"/>
+			<field name="mapicondescMapIcon" type="BinHex"/>
+			<field name="texturedbobjectFilterTexture" type="BinHex"/>
+			<object name="locstridName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="BoroughBorders">
+		<field name="colorOppressedColor" type="VectorColor"/>
+		<field name="colorDefiantColor" type="VectorColor"/>
+		<field name="colorPulseColor" type="VectorColor"/>
+		<object name="FullZoomIn">
+			<field name="bAllowBoroughPanel" type="Boolean"/>
+			<field name="bDisplayBoroughBorders" type="Boolean"/>
+			<field name="bDisplayFocusedBoroughOnly" type="Boolean"/>
+			<object name="Focused">
+				<field name="fBorderSizeX" type="Float"/>
+				<field name="fBorderSizeY" type="Float"/>
+			</object>
+			<object name="Unfocused">
+				<field name="fBorderSizeX" type="Float"/>
+				<field name="fBorderSizeY" type="Float"/>
+			</object>
+		</object>
+		<object name="MidZoomIn">
+			<field name="bAllowBoroughPanel" type="Boolean"/>
+			<field name="bDisplayBoroughBorders" type="Boolean"/>
+			<field name="bDisplayFocusedBoroughOnly" type="Boolean"/>
+			<object name="Focused">
+				<field name="fBorderSizeX" type="Float"/>
+				<field name="fBorderSizeY" type="Float"/>
+			</object>
+			<object name="Unfocused">
+				<field name="fBorderSizeX" type="Float"/>
+				<field name="fBorderSizeY" type="Float"/>
+			</object>
+		</object>
+		<object name="MidZoomOut">
+			<field name="bAllowBoroughPanel" type="Boolean"/>
+			<field name="bDisplayBoroughBorders" type="Boolean"/>
+			<field name="bDisplayFocusedBoroughOnly" type="Boolean"/>
+			<object name="Focused">
+				<field name="fBorderSizeX" type="Float"/>
+				<field name="fBorderSizeY" type="Float"/>
+			</object>
+			<object name="Unfocused">
+				<field name="fBorderSizeX" type="Float"/>
+				<field name="fBorderSizeY" type="Float"/>
+			</object>
+		</object>
+		<object name="FullZoomOut">
+			<field name="bAllowBoroughPanel" type="Boolean"/>
+			<field name="bDisplayBoroughBorders" type="Boolean"/>
+			<field name="bDisplayFocusedBoroughOnly" type="Boolean"/>
+			<object name="Focused">
+				<field name="fBorderSizeX" type="Float"/>
+				<field name="fBorderSizeY" type="Float"/>
+			</object>
+			<object name="Unfocused">
+				<field name="fBorderSizeX" type="Float"/>
+				<field name="fBorderSizeY" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="BoroughLiberation">
+		<field name="uitweensettingBoroughLiberationHoverTweenSettings" type="BinHex"/>
+		<field name="uitweensettingBoroughLiberationZoomOutTweenSettings" type="BinHex"/>
+		<field name="fBoroughLiberationStartDistance" type="Float"/>
+		<field name="fBoroughLiberationMidDistance" type="Float"/>
+		<field name="fBoroughLiberationEndDistance" type="Float"/>
+	</object>
+	<object name="OnlineActivity">
+		<object name="OnlineActivityPreviewSettings">
+			<object name="ActivityPreview">
+				<field name="bIsVisibleKillSwitch" type="Boolean"/>
+				<field name="vectorIconPosition" type="Vector3"/>
+				<field name="mapicondescMapIconDescription" type="BinHex"/>
+				<object name="VisibilityRule">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+				<object name="locstridOnlineActivityNameLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridOnlineActivityTypeLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

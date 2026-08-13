@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Ringofsteelsettings_b52c1524Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fActivationDistance" type="Float"/>
+	<field name="fDeactivationDistance" type="Float"/>
+	<field name="fActivationDistanceForArrest" type="Float"/>
+	<field name="fDeactivationDistanceForArrest" type="Float"/>
+	<field name="uiWantedLevelForTrigger" type="UInt32"/>
+	<field name="uiWantedLevelForTriggerArrest" type="UInt32"/>
+	<field name="fTimerUpdateHeatInsideZone" type="Float"/>
+	<field name="sndCheckpointActivationSound" type="BinHex"/>
+	<field name="sndtpCheckpointActivationSoundType" type="BinHex"/>
+	<field name="sndTargetDetectedSound" type="BinHex"/>
+	<field name="sndtpTargetDetectedSoundType" type="BinHex"/>
+	<field name="text_TargetDetectedBark" type="String"/>
+	<field name="TargetDetectedBark" type="BinHex"/>
+	<object name="RandomNPCFelony">
+		<field name="fNPCFelonyTriggerProbabilityPercentage" type="Float"/>
+		<field name="fMinRandomNPCFelonyInterval" type="Float"/>
+		<field name="fMaxRandomNPCFelonyInterval" type="Float"/>
+		<field name="fFelonyPlayerCamProximityVertical" type="Float"/>
+	</object>
+	<object name="Profiler">
+		<field name="text_sndProfileGrantedSound" type="String"/>
+		<field name="sndProfileGrantedSound" type="BinHex"/>
+		<field name="sndtpProfileGrantedSoundType" type="BinHex"/>
+		<field name="text_sndProfileDeniedSound" type="String"/>
+		<field name="sndProfileDeniedSound" type="BinHex"/>
+		<field name="sndtpProfileDeniedSoundType" type="BinHex"/>
+		<field name="fDisplayProfileDelay" type="Float"/>
+		<field name="fDisappearProfileDelay" type="Float"/>
+	</object>
+	<object name="StateChangeSound">
+		<field name="sndtpCheckpointStateSoundType" type="BinHex"/>
+		<field name="text_sndCheckpointStateInactiveSound" type="String"/>
+		<field name="sndCheckpointStateInactiveSound" type="BinHex"/>
+		<field name="text_sndCheckpointStateWarningSound" type="String"/>
+		<field name="sndCheckpointStateWarningSound" type="BinHex"/>
+		<field name="text_sndCheckpointStateAggressiveSound" type="String"/>
+		<field name="sndCheckpointStateAggressiveSound" type="BinHex"/>
+	</object>
+	<object name="Propaganda">
+		<field name="text_PropagandaDialog" type="String"/>
+		<field name="PropagandaDialog" type="BinHex"/>
+		<field name="text_WarningStateActivationDialog" type="String"/>
+		<field name="WarningStateActivationDialog" type="BinHex"/>
+		<field name="text_AggressiveStateActivationDialog" type="String"/>
+		<field name="AggressiveStateActivationDialog" type="BinHex"/>
+		<field name="fMinInitialPropagandaDelay" type="Float"/>
+		<field name="fMaxInitialPropagandaDelay" type="Float"/>
+		<field name="fMinPropagandaDelay" type="Float"/>
+		<field name="fMaxPropagandaDelay" type="Float"/>
+	</object>
+	<object name="HintSystemParameters">
+		<field name="fHintCheckDelay" type="Float"/>
+		<field name="fHintCheckDistance" type="Float"/>
+	</object>
+</class>

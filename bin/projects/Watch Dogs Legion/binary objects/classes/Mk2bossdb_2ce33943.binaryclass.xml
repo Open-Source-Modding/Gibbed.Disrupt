@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Mk2bossdb_2ce33943Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="fFlyingHeight" type="BinHex"/>
+	<field name="fHoverHeight" type="BinHex"/>
+	<field name="fSpeed" type="BinHex"/>
+	<field name="fMaxAngularVelocity" type="BinHex"/>
+	<field name="fAngularAcceleration" type="BinHex"/>
+	<field name="fAOETriggerRadius" type="BinHex"/>
+	<field name="fAOEDamageRadius" type="BinHex"/>
+	<field name="fAOEDamage" type="BinHex"/>
+	<field name="fAOEChargingTime" type="BinHex"/>
+	<field name="fAOECooldownTime" type="BinHex"/>
+	<field name="text_AOEBlastParticlesBoneName" type="String"/>
+	<field name="AOEBlastParticlesBoneName" type="BinHex"/>
+	<field name="text_psAOEBlastChargingParticle" type="BinHex"/>
+	<field name="psAOEBlastChargingParticle" type="BinHex"/>
+	<field name="text_psAOEBlastTriggerParticle" type="BinHex"/>
+	<field name="psAOEBlastTriggerParticle" type="BinHex"/>
+	<field name="text_psAOEBlastGroundChargingParticle" type="BinHex"/>
+	<field name="psAOEBlastGroundChargingParticle" type="BinHex"/>
+	<field name="text_psAOEBlastGroundTriggerParticle" type="BinHex"/>
+	<field name="psAOEBlastGroundTriggerParticle" type="BinHex"/>
+	<field name="text_sndSFXAOEChargeUp" type="BinHex"/>
+	<field name="sndSFXAOEChargeUp" type="BinHex"/>
+	<field name="text_sndSFXAOEFire" type="BinHex"/>
+	<field name="sndSFXAOEFire" type="BinHex"/>
+	<field name="sndtpSFXAOEChargeUpType" type="BinHex"/>
+	<field name="sndtpSFXAOEFireType" type="BinHex"/>
+	<field name="text_archRocketArchetype" type="BinHex"/>
+	<field name="archRocketArchetype" type="BinHex"/>
+	<field name="text_archRocketTargetMarkerArchetype" type="BinHex"/>
+	<field name="archRocketTargetMarkerArchetype" type="BinHex"/>
+	<field name="fRocketTargetFadeDelay" type="BinHex"/>
+	<field name="fRocketsCooldownTimePhase2" type="BinHex"/>
+	<field name="fRocketsCooldownTimePhase3" type="BinHex"/>
+	<field name="fRocketTargetZoneRadiusPhase2" type="BinHex"/>
+	<field name="fRocketTargetPhase2MaxRandomOffset" type="BinHex"/>
+	<field name="fRocketTargetPhase3MaxRandomOffset" type="BinHex"/>
+	<field name="fRocketTargetPhase2MinRandomOffset" type="BinHex"/>
+	<field name="fRocketTargetPhase3MinRandomOffset" type="BinHex"/>
+	<field name="fRocketsAnimationMultiplierPhase2" type="BinHex"/>
+	<field name="fRocketsAnimationMultiplierPhase3" type="BinHex"/>
+	<field name="text_psRocketGroundTargetParticle" type="BinHex"/>
+	<field name="psRocketGroundTargetParticle" type="BinHex"/>
+	<field name="fRocketGroundTargetParticleScale" type="BinHex"/>
+	<field name="text_sndRocketsStartSound" type="BinHex"/>
+	<field name="sndRocketsStartSound" type="BinHex"/>
+	<field name="sndtpRocketsStartSoundType" type="BinHex"/>
+	<object name="locstridNameLocalizationId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="sndvarActiveSoundRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="BinHex"/>
+	</object>
+	<object name="RightRocketBoneNames">
+		<object name="RocketBoneName">
+			<field name="text_RocketBoneName" type="String"/>
+			<field name="RocketBoneName" type="BinHex"/>
+		</object>
+	</object>
+	<object name="LeftRocketBoneNames">
+		<object name="RocketBoneName">
+			<field name="text_RocketBoneName" type="String"/>
+			<field name="RocketBoneName" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridRocketsWarningLocalizationId">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object hash="01E2A9A3">
+		<field name="text_sndPhaseStartSound" type="BinHex"/>
+		<field name="sndPhaseStartSound" type="BinHex"/>
+		<field name="sndtpPhaseStartSoundType" type="BinHex"/>
+		<field name="fPhaseHealthPercentage" type="BinHex"/>
+	</object>
+	<object hash="386F9566">
+		<field name="text_sndPhaseStartSound" type="BinHex"/>
+		<field name="sndPhaseStartSound" type="BinHex"/>
+		<field name="sndtpPhaseStartSoundType" type="BinHex"/>
+		<field name="fPhaseHealthPercentage" type="BinHex"/>
+	</object>
+	<object hash="2F148125">
+		<field name="text_sndPhaseStartSound" type="BinHex"/>
+		<field name="sndPhaseStartSound" type="BinHex"/>
+		<field name="sndtpPhaseStartSoundType" type="BinHex"/>
+		<field name="fPhaseHealthPercentage" type="BinHex"/>
+	</object>
+	<object hash="4B75ECEC">
+		<field name="sndPhaseStartSound" type="BinHex"/>
+		<field name="sndtpPhaseStartSoundType" type="BinHex"/>
+		<field name="fPhaseHealthPercentage" type="BinHex"/>
+	</object>
+	<object name="WeakSpots">
+		<object name="WeakSpot">
+			<field name="text_sTag" type="String"/>
+			<field name="sTag" type="BinHex"/>
+			<field name="selActivePhase" type="BinHex"/>
+			<field name="text_HealthBarBoneName" type="String"/>
+			<field name="HealthBarBoneName" type="BinHex"/>
+			<field name="vectorHealthBarOffset" type="BinHex"/>
+			<field name="text_sDestroyedMaterialName" type="BinHex"/>
+			<field name="sDestroyedMaterialName" type="BinHex"/>
+			<field name="text_psDestroyedParticle" type="BinHex"/>
+			<field name="psDestroyedParticle" type="BinHex"/>
+			<field name="text_DestroyedParticleBone" type="String"/>
+			<field name="DestroyedParticleBone" type="BinHex"/>
+			<field name="sndDestroyedSound" type="BinHex"/>
+			<field name="sndtpDestroyedSoundType" type="BinHex"/>
+			<field name="text_sMaterialSlot" type="String"/>
+			<field name="sMaterialSlot" type="BinHex"/>
+			<field name="text_matActiveMaterial" type="String"/>
+			<field name="matActiveMaterial" type="BinHex"/>
+			<field name="text_matDestroyedMaterial" type="BinHex"/>
+			<field name="matDestroyedMaterial" type="BinHex"/>
+			<object name="BoneNames">
+				<object name="BoneName">
+					<field name="text_BoneName" type="String"/>
+					<field name="BoneName" type="BinHex"/>
+				</object>
+			</object>
+			<object name="Armor">
+				<object name="Armor">
+					<field name="text_archArmorArchetype" type="BinHex"/>
+					<field name="archArmorArchetype" type="BinHex"/>
+					<field name="text_ArmorBoneName" type="String"/>
+					<field name="ArmorBoneName" type="BinHex"/>
+					<field name="text_psArmorRemovedParticle" type="BinHex"/>
+					<field name="psArmorRemovedParticle" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

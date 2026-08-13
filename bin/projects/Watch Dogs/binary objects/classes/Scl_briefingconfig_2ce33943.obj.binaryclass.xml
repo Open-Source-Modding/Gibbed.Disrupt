@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_briefingconfig_2ce33943.objParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Club">
+		<object name="BriefingSettings">
+			<field name="iNarrativeID" type="Int32"/>
+			<field name="sclphonecallsettingsIntroPhoneCall" type="BinHex"/>
+			<field name="sclphonecallsettingsOutroPhoneCall" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Fixers">
+		<object name="BriefingSettings">
+			<field name="iNarrativeID" type="Int32"/>
+			<field name="sclphonecallsettingsIntroPhoneCall" type="BinHex"/>
+			<field name="sclphonecallsettingsOutroPhoneCall" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Militia">
+		<object name="BriefingSettings">
+			<field name="iNarrativeID" type="Int32"/>
+			<field name="sclphonecallsettingsIntroPhoneCall" type="BinHex"/>
+			<field name="sclphonecallsettingsOutroPhoneCall" type="BinHex"/>
+		</object>
+	</object>
+</class>

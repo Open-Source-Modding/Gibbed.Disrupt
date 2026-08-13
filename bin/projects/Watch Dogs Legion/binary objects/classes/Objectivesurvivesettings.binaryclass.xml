@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivesurvivesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="reinforcementconfigReinforcementConfig" type="BinHex"/>
+	<field name="selAffiliation" type="Enum"/>
+	<field name="bUseLocationProperties" type="Boolean"/>
+	<field name="bUseReinforcementZone" type="Boolean"/>
+	<field name="bDisableReinforcementCalling" type="Boolean"/>
+	<field name="bUseReinforcementSearchTarget" type="Boolean"/>
+	<field name="bDisableFelony" type="Boolean"/>
+	<field name="bForceCombatOnAllPlayers" type="Boolean"/>
+	<field name="fForceCombatDuration" type="Float"/>
+	<field name="bForceCombatDurationInfinite" type="Boolean"/>
+	<field name="bForceLKP" type="Boolean"/>
+	<field name="fForceLKPRadius" type="Float"/>
+	<field name="bForceInfiniteReinforcementsForbidden" type="Boolean"/>
+	<field name="bKeepTargertingOnOperativeChange" type="Boolean"/>
+	<field name="bDuplicateReinforcementForEachPlayer" type="Boolean"/>
+	<field name="bForceInfiniteSearch" type="Boolean"/>
+	<field name="bForceTargetingOnParticipatingPlayers" type="Boolean"/>
+	<field name="bShouldUseFeedback" type="Boolean"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="ReinforcementSearchTarget">
+		<field name="TargetSceneID" type="BinHex"/>
+		<field name="TargetRole" type="BinHex"/>
+	</object>
+	<object name="locstridWarningReinforcementsCalledHeader">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridWarningReinforcementsCalledMessage">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

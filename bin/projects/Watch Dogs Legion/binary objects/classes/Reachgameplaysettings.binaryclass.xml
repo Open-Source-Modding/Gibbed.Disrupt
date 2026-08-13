@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ReachgameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fRangeToReachTarget" type="Float"/>
+	<field name="bMustBeOnSameFloor" type="Boolean"/>
+	<field name="bIsLineOfSightMandatory" type="Boolean"/>
+	<field name="bPlayerMustInteractWithTargetToCompleteReach" type="Boolean"/>
+	<field name="bMustLocateTargetToCompleteReach" type="Boolean"/>
+	<field name="bPartyMustReachTarget" type="Boolean"/>
+	<field name="sDebugAnnotationText" type="BinHex"/>
+	<field name="bMustEscape" type="Boolean"/>
+	<field name="fEscapePursuersWarningDuration" type="Float"/>
+	<field name="bIsReachLocation" type="Boolean"/>
+	<field name="iFelonyLevel" type="Int32"/>
+	<field name="bTriggerSearch" type="Boolean"/>
+	<field name="fSearchRadius" type="Float"/>
+	<field name="yinteractgameplaydescriptorInteractDescriptor" type="BinHex"/>
+	<field name="locategameplaydescriptorLocateDescriptor" type="BinHex"/>
+	<field name="fRequiredPlayersPercentage" type="Float"/>
+	<field name="bDisableNeededPlayerCountJIPRuleForRaids" type="Boolean"/>
+	<object name="locstridEscapePursuersLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEscapePursuersWarningLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTeamEscapePursuersLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="ReachLocationActivities"/>
+	<object name="WaitingForOtherPartyReachCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="WaitingForOtherPartyEscapeCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

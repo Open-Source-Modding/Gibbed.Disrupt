@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Wolfskindbsettings_02fbf0c5Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archDefaultArchetype" type="String"/>
+	<field name="archDefaultArchetype" type="BinHex"/>
+	<field name="wolfskinitemdbBlankDNA" type="BinHex"/>
+	<object name="DefaultHumanTagSpecs">
+		<object name="wolfskintagspecTagSpec">
+			<field name="wolfskintagspecTagSpec" type="BinHex"/>
+		</object>
+	</object>
+	<object name="DefaultAnimalTagSpecs">
+		<object name="wolfskintagspecTagSpec">
+			<field name="wolfskintagspecTagSpec" type="BinHex"/>
+		</object>
+	</object>
+</class>

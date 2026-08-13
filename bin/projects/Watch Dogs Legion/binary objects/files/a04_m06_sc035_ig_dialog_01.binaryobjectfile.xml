@@ -1,0 +1,5 @@
+<file name="a04_m06_sc035_ig_dialog_01" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

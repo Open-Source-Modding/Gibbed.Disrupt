@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Madlightglobalparams_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileExposureMaskTexture" type="String"/>
+	<field name="fileExposureMaskTexture" type="BinHex"/>
+	<field name="fExposureMaskSize" type="Float"/>
+	<field name="fEthnicityBlackExposureOffset" type="Float"/>
+	<field name="fEthnicityCaucasianExposureOffset" type="Float"/>
+	<field name="fEthnicityEastAsianExposureOffset" type="Float"/>
+	<field name="fEthnicityIndianSubContinentExposureOffset" type="Float"/>
+	<field name="fEthnicityMiddleEasternExposureOffset" type="Float"/>
+	<object name="curveGiIntensityMapping">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

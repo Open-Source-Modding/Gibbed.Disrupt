@@ -1,0 +1,5 @@
+<file name="a02_m08d_sc010_ig_exposebedbug_soundtemp" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

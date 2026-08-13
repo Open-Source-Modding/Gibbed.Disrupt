@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Arminimapsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="InvasionMapSettings">
+		<field name="fMapRadius" type="Float"/>
+		<field name="fileFireResource" type="String"/>
+	</object>
+</class>

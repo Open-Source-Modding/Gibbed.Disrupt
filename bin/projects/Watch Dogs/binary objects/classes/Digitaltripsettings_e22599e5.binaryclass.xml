@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Digitaltripsettings_e22599e5Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fInvitePopupDuration" type="Float"/>
+	<field name="fFriendBonusPecentage" type="Float"/>
+	<field name="fMaxNoTeleportDistance" type="Float"/>
+	<field name="selVmcOverrideMode" type="Enum"/>
+	<object name="Modes">
+		<object name="Mode">
+			<field name="selModeType" type="Enum"/>
+			<field name="texturedbobjectModeImage" type="BinHex"/>
+			<field name="texturedbobjectAdvertisingImage" type="BinHex"/>
+			<field name="selTeamMode" type="Enum"/>
+			<field name="bIsSandboxMode" type="Boolean"/>
+			<field name="iMinPlayersForAutoStart" type="Int32"/>
+			<field name="iMinPlayersForPrivateStart" type="Int32"/>
+			<field name="iMaxPlayers" type="Int32"/>
+			<field name="selActivityStatus" type="Enum"/>
+			<field name="selMissionMessageType" type="Enum"/>
+			<field name="fullscreentutorialFullscreenTutorial" type="BinHex"/>
+			<field name="sEndGameRewardsId" type="String"/>
+			<field name="sDailyBonudRewardsId" type="String"/>
+			<field name="bUseBonusRewardCategory" type="Boolean"/>
+			<field name="digitaltripoverridedescriptorGameplayOverrides" type="BinHex"/>
+			<field name="shopcomponentsettingsCustomizationSettings" type="BinHex"/>
+			<field name="digitaltriploadoutsdescriptorLoadouts" type="BinHex"/>
+			<object name="locstridName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridLobbySubtitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridInviteTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridMissionStartLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridMissionStartSubLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridMissionSuccessLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridMissionFailedLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridInviteContent">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridMinimapName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridMinimapModeName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridMinimapRequirements">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridMinimapDescription">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="Descriptors">
+				<object name="Descriptor">
+					<field name="digitaltripmodeDescriptor" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="ModesQuickPlay">
+			<field name="selModeType" type="Enum"/>
+			<field name="texturedbobjectModeImage" type="BinHex"/>
+			<field name="texturedbobjectAdvertisingImage" type="BinHex"/>
+			<field name="selTeamMode" type="Enum"/>
+			<field name="bIsSandboxMode" type="Boolean"/>
+			<field name="iMinPlayersForAutoStart" type="Int32"/>
+			<field name="iMinPlayersForPrivateStart" type="Int32"/>
+			<field name="iMaxPlayers" type="Int32"/>
+			<field name="selActivityStatus" type="Enum"/>
+			<field name="selMissionMessageType" type="Enum"/>
+			<field name="fullscreentutorialFullscreenTutorial" type="BinHex"/>
+			<field name="sEndGameRewardsId" type="String"/>
+			<field name="sDailyBonudRewardsId" type="String"/>
+			<field name="bUseBonusRewardCategory" type="Boolean"/>
+			<field name="digitaltripoverridedescriptorGameplayOverrides" type="BinHex"/>
+			<field name="shopcomponentsettingsCustomizationSettings" type="BinHex"/>
+			<field name="digitaltriploadoutsdescriptorLoadouts" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLobbySubtitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridInviteTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMissionStartLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMissionStartSubLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMissionSuccessLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMissionFailedLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridInviteContent">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMinimapName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMinimapModeName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMinimapRequirements">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMinimapDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="Descriptors"/>
+	</object>
+</class>

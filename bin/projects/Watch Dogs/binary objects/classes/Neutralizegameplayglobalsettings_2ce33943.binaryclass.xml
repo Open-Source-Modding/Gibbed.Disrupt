@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Neutralizegameplayglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ObjOutcomesForCensusStates">
+		<object name="ObjOutcomeForRecruitedActor">
+			<field name="selObjectiveOutcome" type="Enum"/>
+			<field name="phonecommunicationsettingsOutcomeTeamspeak" type="BinHex"/>
+			<object name="locstridFailLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="ObjOutcomeForInjuredAndUnspawnedActor">
+			<field name="selObjectiveOutcome" type="Enum"/>
+			<field name="phonecommunicationsettingsOutcomeTeamspeak" type="BinHex"/>
+			<object name="locstridFailLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="ObjOutcomeForArrestedAndUnspawnedActor">
+			<field name="selObjectiveOutcome" type="Enum"/>
+			<field name="phonecommunicationsettingsOutcomeTeamspeak" type="BinHex"/>
+			<object name="locstridFailLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="ObjOutcomeForDeadAndUnspawnedActor">
+			<field name="selObjectiveOutcome" type="Enum"/>
+			<field name="phonecommunicationsettingsOutcomeTeamspeak" type="BinHex"/>
+			<object name="locstridFailLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

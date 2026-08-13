@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Hackingplayersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+    <field name="fDownloadBaseDuration" type="Float"/>
+    <field name="fVictimUnawareDuration" type="Float"/>
+	<field name="fInstallDownloadDuration" type="Float"/>
+	<field name="fConnectingSpeedLimit" type="Float"/>
+	<field name="fDownloadPausedDuration" type="Float"/>
+	<field name="fDownloadPausedMinimumDuration" type="Float"/>
+	<field name="fCounterHackingDuration" type="Float"/>
+	<field name="fThreatDetectionDuration" type="Float"/>
+	<field name="fSearchTargetDuration" type="Float"/>
+	<field name="fFleeDuration" type="Float"/>
+	<field name="fResultDuration" type="Float"/>
+	<field name="fDownloadPausedDistance" type="Float"/>
+	<field name="fMessageRepetitonTime" type="Float"/>
+	<field name="bVictimLKPActivated" type="Boolean"/>
+	<field name="fVictimLKPDuration" type="Float"/>
+	<field name="bIsHackerLKPActivated" type="Boolean"/>
+	<field name="fHackerLKPDuration" type="Float"/>
+	<field name="missionlistMissionToStartOnHack" type="BinHex"/>
+	<field name="fInstallDownloadMaxDistance" type="Float"/>
+	<field name="fDownloadOutOfRangeDuration" type="Float"/>
+	<field name="fFleeLOSGameplayDelay" type="Float"/>
+	<field name="fChaseLOSHysteresis" type="Float"/>
+	<field name="fSpottedByTargetWarningDuration" type="Float"/>
+	<field name="fFleeLOSGameplayDuration" type="Float"/>
+	<field name="fFleeWithoutLOSDuration" type="Float"/>
+	<field name="fFleeLosingLOSHysteresis" type="Float"/>
+	<field name="fFleeDelayBeforeLOSWarning" type="Float"/>
+	<field name="fFleeLOSWarningDuration" type="Float"/>
+	<field name="mapicondescChaseDiskIcon" type="BinHex"/>
+	<field name="fHackerTutorialDelay" type="Float"/>
+	<field name="fVictimProfilerDelayBeforeFleeStart" type="Float"/>
+	<field name="fEvadeSuccessDistance" type="Float"/>
+	<field name="fKickOutWarningDuration" type="Float"/>
+	<field name="fKickOutCooldownDuration" type="Float"/>
+	<field name="fMaxXPReward" type="Int32"/>
+	<field name="fMaxCashReward" type="Int32"/>
+	<field name="mapicondescVictimObjectiveIcon" type="BinHex"/>
+	<field name="mapicondescVictimRedIcon" type="BinHex"/>
+	<field name="mapicondescVictimWhiteIcon" type="BinHex"/>
+	<field name="text_archExclusionZone" type="String"/>
+	<field name="archExclusionZone" type="BinHex"/>
+	<field name="fTargetingHysteresis" type="BinHex"/>
+	<field name="fMaxTargetingAngleToReticule" type="BinHex"/>
+	<field name="powergatheringsettingsPowerGatheringSettingsForHackingVictim" type="BinHex"/>
+	<field name="iMaxCivilianSelected" type="Int32"/>
+	<field name="fMinDistanceToProposeTeleport" type="Float"/>
+	<field name="fMaxDistanceToDismissProposeTeleport" type="Float"/>
+	<field name="fInvaderPotentialLoss" type="Float"/>
+	<field name="fInvaderPotentialGain" type="Float"/>
+	<field name="fVictimPotentialLoss" type="Float"/>
+	<field name="fVictimPotentialGain" type="Float"/>
+	<field name="fNotoriousFixerConstant" type="Float"/>
+	<field name="fBountyConstant" type="Float"/>
+	<field name="fMinDistanceToResetProposeTeleport" type="Float"/>
+	<object name="curveDownloadSpeedForTime">
+      <inherit name="KnotsParameters"/>
+    </object>
+	<object name="curveDownloadSpeedForRoleSwitch">
+      <inherit name="KnotsParameters"/>
+    </object>
+	<object name="VictimProfileLineSettings">
+		<field name="text_fileLineTexture" type="String"/>
+		<field name="fileLineTexture" type="BinHex"/>
+		<field name="fWorldOffset" type="Float"/>
+		<field name="fTimedLineDuration" type="Float"/>
+		<object name="curveLineWidthOverDist">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="VictimFleeProfileLineSettings">
+		<field name="text_fileLineTexture" type="String"/>
+		<field name="fileLineTexture" type="BinHex"/>
+		<field name="fWorldOffset" type="Float"/>
+		<field name="fTimedLineDuration" type="Float"/>
+		<object name="curveLineWidthOverDist">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="DownloadZoneRadius">
+		<object name="DownloadZioneRadiusStep">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+	</object>
+	<object name="SearchZoneFeedback">
+		<field name="bSearchZoneIsActivated" type="Boolean"/>
+		<field name="colorSearchZoneCircleColor" type="VectorColor"/>
+		<field name="fSearchZoneCircleAlpha" type="Float"/>
+		<field name="colorSearchZoneCircleHackerColor" type="VectorColor"/>
+		<field name="fSearchZoneCircleHackerAlpha" type="Float"/>
+		<field name="mapicondescSearchZoneIcon" type="BinHex"/>
+		<field name="mapicondescSearchZoneCircle" type="BinHex"/>
+		<field name="fSearchZoneRadius" type="Float"/>
+		<field name="fSearchZoneInnerRadius" type="Float"/>
+	</object>
+	<object name="NewRewards">
+        <field name="itemlistsTimeoutHacker" type="BinHex"/>
+        <field name="itemlistsSuccessHacker" type="BinHex"/>
+        <field name="itemlistsMissionHackerKilledHacker" type="BinHex"/>
+        <field name="itemlistsMissionVictimKilledHacker" type="BinHex"/>
+        <field name="itemlistsOutOfRangeHacker" type="BinHex"/>
+        <field name="itemlistsDetectedHacker" type="BinHex"/>
+        <field name="itemlistsEscapeHacker" type="BinHex"/>
+        <field name="itemlistsBonusHackerKilledHacker" type="BinHex"/>
+        <field name="itemlistsBonusVictimKilledHacker" type="BinHex"/>
+        <field name="itemlistsTimeoutVictim" type="BinHex"/>
+        <field name="itemlistsSuccessVictim" type="BinHex"/>
+        <field name="itemlistsMissionHackerKilledVictim" type="BinHex"/>
+        <field name="itemlistsMissionVictimKilledVictim" type="BinHex"/>
+        <field name="itemlistsOutOfRangeVictim" type="BinHex"/>
+        <field name="itemlistsDetectedVictim" type="BinHex"/>
+        <field name="itemlistsEscapeVictim" type="BinHex"/>
+        <field name="itemlistsBonusHackerKilledVictim" type="BinHex"/>
+        <field name="itemlistsBonusVictimKilledVictim" type="BinHex"/>
+    </object>
+    <object name="Rewards">
+      <object name="HackerPunishment">
+	    <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+      <object name="HackerLoss">
+        <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+      <object name="HackerPartialLoss">
+        <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+      <object name="HackerPartialWin">
+        <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+      <object name="HackerWin">
+        <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+      <object name="VictimLoss">
+        <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+      <object name="VictimPartialLoss">
+        <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+      <object name="VictimConsolationPrize">
+        <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+      <object name="VictimWin">
+        <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+      <object name="VictimBonusWin">
+        <inherit name="HackingplayersettingsRewardsParameters"/>
+      </object>
+    </object>
+	<object name="ProfiledEntityGiven">
+      <field name="fMinAngle" type="Float"/>
+      <field name="fMinDistance" type="Float"/>
+      <object name="curveTimeCurve">
+        <inherit name="KnotsParameters"/>
+      </object>
+    </object>
+	<object name="HackingNetwork">
+        <object name="curvePortCost">
+            <inherit name="KnotsParameters"/>
+        </object>
+    </object>
+	<object name="CivilianSelectionPMSValuesExcluded">
+		<object name="PMSValue">
+			<field name="text_pmsPMSName" type="String"/>
+			<field name="pmsPMSName" type="BinHex"/>
+			<field name="selEnumValue" type="Enum"/>
+		</object>
+	</object>
+	<object name="EndRewardConfig">
+		<object name="EndCaseConfigs">
+			<object name="InvaderKillHimselfProfiled">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderTimedOutDuringInstallationAndVictimAware">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderKillHimselfNotProfiled">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="DisconnectionBeforeHackAndVictimAware">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="VictimKilledHimselfDuringFleeAfterHack">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderKilledAfterHack">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderTryToKillTheVictim">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderProfiledBeforeHackAndEvade">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderLeaveTheZone">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderKilledBeforeHack">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderTimedOutBeforeHackAndVictimAware">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="DisconnectionBeforeHackAndVictimUnaware">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderTimedOutBeforeHackAndVictimUnaware">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="DisconnectionAfterHack">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderQuitBeforeHackAndVictimAware">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderTimedOutDuringInstallationAndVictimUnaware">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderCompleteHack">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderProfiledAfterHackAndEvade">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderQuitAfterHack">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="VictimKilledHimselfDuringFleeBeforeHack">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderQuitBeforeHackAndVictimUnaware">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderKillHimselfProfiledBeforeHack">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+			<object name="InvaderKillHimselfNotProfiledBeforeHack">
+				<object name="Invader">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+				<object name="Victim">
+					<inherit name="HackingplayersettingsRewardsParameters"/>
+				</object>
+			</object>
+		</object>
+		<object name="curveCashWinRatioCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveCashWLossRatioCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveXPWinRatioCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveXPLossRatioCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveReputationWinRatioCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveReputationLossRatioCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

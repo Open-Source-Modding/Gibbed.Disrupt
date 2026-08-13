@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VirtualmapcameracontrollerParameters">
+	<inherit name="SharedParameters"/>
+	<field name="hidMinDistance" type="BinHex"/>
+	<field name="hidMaxDistance" type="BinHex"/>
+	<field name="bUseTargetViewingAngle" type="Boolean"/>
+	<field name="angle" type="BinHex"/>
+	<field name="fieldofview" type="BinHex"/>
+	<field name="fDistance" type="Float"/>
+</class>

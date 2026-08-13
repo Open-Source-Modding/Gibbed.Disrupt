@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Witnesssettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DenunciatorSettings">
+		<object name="Misc">
+			<field name="fDenunciatorDelay" type="Float"/>
+			<field name="text_fileDenunciatorGPSTexture" type="String"/>
+			<field name="fileDenunciatorGPSTexture" type="BinHex"/>
+			<field name="fMaxTimeToReachSafeZone" type="Float"/>
+			<field name="fDelayBetween911andDenunciator" type="Float"/>
+			<field name="fDelayBetweenReactionAndDenunciator" type="Float"/>
+			<field name="fForceDenunciatorSearchRadius" type="Float"/>
+			<field name="text_sDefaultDenunciatorBark" type="String"/>
+			<field name="sDefaultDenunciatorBark" type="BinHex"/>
+			<field name="text_sDenunciatorBarkFromDetector" type="String"/>
+			<field name="sDenunciatorBarkFromDetector" type="BinHex"/>
+			<field name="sndDenunciatorStart" type="BinHex"/>
+			<field name="sndDenunciatorPrevented" type="BinHex"/>
+			<object name="curveDenunciatorProbabilityCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="DenunciatorGPSTexture">
+				<field name="text_fileIconTexture" type="String"/>
+				<field name="fileIconTexture" type="BinHex"/>
+			</object>
+			<object name="DenunciatorDisruptedGPSTexture">
+				<field name="text_fileIconTexture" type="String"/>
+				<field name="fileIconTexture" type="BinHex"/>
+			</object>
+			<object name="BlumeAgentDenunciatorGPSTexture">
+				<field name="text_fileIconTexture" type="String"/>
+				<field name="fileIconTexture" type="BinHex"/>
+			</object>
+			<object name="curveSinglePlayerWitnessHeatScale">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveMultiPlayerWitnessHeatScale">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curvePortalPlayerWitnessHeatScale">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveInvasionPlayerWitnessHeatScale">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="PMSValuesNeeded">
+				<object name="PMSValue">
+					<field name="text_pmsPMSName" type="String"/>
+					<field name="pmsPMSName" type="BinHex"/>
+					<field name="selEnumValue" type="Enum"/>
+				</object>
+			</object>
+			<object name="PMSValuesExcluded">
+				<object name="PMSValue">
+					<field name="text_pmsPMSName" type="String"/>
+					<field name="pmsPMSName" type="BinHex"/>
+					<field name="selEnumValue" type="Enum"/>
+				</object>
+			</object>
+		</object>
+		<object name="HeatLevelSettings">
+			<object name="HeatLevel1">
+				<field name="fDenunciatorMaxDist" type="Float"/>
+				<field name="iMaxDenunciators" type="Int32"/>
+				<field name="fCallSpeed" type="Float"/>
+				<field name="fOnSpotDistance" type="Float"/>
+				<field name="fWalkingDenunciatorRatio" type="Float"/>
+			</object>
+			<object name="HeatLevel2">
+				<field name="fDenunciatorMaxDist" type="Float"/>
+				<field name="iMaxDenunciators" type="Int32"/>
+				<field name="fCallSpeed" type="Float"/>
+				<field name="fOnSpotDistance" type="Float"/>
+				<field name="fWalkingDenunciatorRatio" type="Float"/>
+			</object>
+			<object name="HeatLevel3">
+				<field name="fDenunciatorMaxDist" type="Float"/>
+				<field name="iMaxDenunciators" type="Int32"/>
+				<field name="fCallSpeed" type="Float"/>
+				<field name="fOnSpotDistance" type="Float"/>
+				<field name="fWalkingDenunciatorRatio" type="Float"/>
+			</object>
+			<object name="HeatLevel4">
+				<field name="fDenunciatorMaxDist" type="Float"/>
+				<field name="iMaxDenunciators" type="Int32"/>
+				<field name="fCallSpeed" type="Float"/>
+				<field name="fOnSpotDistance" type="Float"/>
+				<field name="fWalkingDenunciatorRatio" type="Float"/>
+			</object>
+			<object name="HeatLevel5">
+				<field name="fDenunciatorMaxDist" type="Float"/>
+				<field name="iMaxDenunciators" type="Int32"/>
+				<field name="fCallSpeed" type="Float"/>
+				<field name="fOnSpotDistance" type="Float"/>
+				<field name="fWalkingDenunciatorRatio" type="Float"/>
+			</object>
+		</object>
+		<object name="Incidents">
+			<object name="AimedByARGun">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="AimedByGun">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="ARGunShot">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="Arrest">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="BlackoutStart_Day">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="BlackoutStop_Day">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="BlackoutStart_Night">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="BlackoutStop_Night">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="BlumeAgentHacked">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="BulletImpact">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CivilianAnxiety">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CivilianPanic">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CivilianSpiderTankPanic">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CivilianHitByACarButNotDead_ReputationOnly">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CarCrash">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CarCrashBig">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CarCrashPileup">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CarHackedAlarm">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CarHonk">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CarHonkPlayer">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="Carjacking">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CarOnOpenBridge">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CarSiren">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CarTheft">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CommunicationDisrupted">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CopNonLethalShot">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CopNonLethalTakedown">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="CuriousBhv">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="KilledMobster">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="DeadBody">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="DenunciatorAttacked">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="ElectricSpark">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="Fire">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="FleeFromShop">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="GrenadeInEnvironment">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="GrenadeInHand">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="GunShot">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="GunShotAtPolice">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="GunShotInPanic">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="HackedEntityMalfunction">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="HitByVehicle">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="HoldUpShopkeeper">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="IncomingClimber">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="IncomingThreat">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="IncomingRunner">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="KilledCivilian">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="KilledCivilianByCar">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="KilledPolice">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="LargeBump">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="LargeCloseObjectBroken">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="LargeExplosion">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="MyCloseObjectBroken">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="MyCloseObjectBigBroken">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="MyCarJackingFinished">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="MyCarJackingFinishedRunAway">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="MyTakeDownFinished">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="OffRoadDriving">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="OnLeaderQuitCuriosity">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="OnLeaderQuitAnxiety">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="OnLeaderQuitPanic">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="OwnCarStolen">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="PanicInside">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="PeopleDie">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="PersonAttacked">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="PlayerPlayingARGame">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="PlayerProximity">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="ProlongedPlayerProximity">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="PuddleSplash">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="RainStart">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="RainStop">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="ReputationGood">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="ReputationBad">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="RunningPeopleProximity">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="ShutDownMediaBroadcast">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="SmallBump">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="SmallCloseObjectBroken">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="SmallExplosion">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="SpecialBroadcast">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="SteamPipe">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="SteamPipeExplosion">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="SECarAccident">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="ThreatProximity">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="UncommonAction">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="UnholsteredGun">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="XIngredientHack_Audio">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="XIngredientHack_MechanicalBig">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="XIngredientHack_MechanicalSmall">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="XIngredientHack_Visual">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="BlackoutStart">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="BlackoutStop">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+			<object name="HitByProjectile">
+				<inherit name="WitnesssettingsIncidentsParameters"/>
+			</object>
+		</object>
+		<object name="ForceDenunciatorSettings">
+			<object name="KilledByGun">
+				<field name="fMinDelay" type="Float"/>
+				<field name="fRequastMinDelay" type="Float"/>
+				<field name="iMaxDensity" type="Int32"/>
+				<field name="iMinCivilianKilled" type="Int32"/>
+				<field name="fCivilianKilledInterval" type="Float"/>
+				<field name="fCanForceDelay" type="Float"/>
+				<field name="fMinDelayAfterForced" type="Float"/>
+				<field name="iExtraKillForDenunciatorKill" type="Int32"/>
+			</object>
+			<object name="KilledByCar">
+				<field name="fMinDelay" type="Float"/>
+				<field name="fRequastMinDelay" type="Float"/>
+				<field name="iMaxDensity" type="Int32"/>
+				<field name="iMinCivilianKilled" type="Int32"/>
+				<field name="fCivilianKilledInterval" type="Float"/>
+				<field name="fCanForceDelay" type="Float"/>
+				<field name="fMinDelayAfterForced" type="Float"/>
+				<field name="iExtraKillForDenunciatorKill" type="Int32"/>
+			</object>
+		</object>
+		<object name="AiForceDenunciatorSettings">
+			<field name="fVigilanteDenunciatorProbability" type="Float"/>
+			<field name="fGunFightDenunciatorProbability" type="Float"/>
+			<field name="fGunFightDenunciatorTimeBetweenThreeShot" type="Float"/>
+			<field name="fGunFightVerificationCheckDelay" type="Float"/>
+		</object>
+	</object>
+	<object name="BlumeAgentDenunciatorSettings">
+		<field name="dialactorlistDialogActorsList" type="BinHex"/>
+		<field name="fMinDenunciateDelay" type="Float"/>
+		<field name="fMaxDenunciateDelay" type="Float"/>
+		<field name="fDenunciateTime" type="Float"/>
+		<field name="fSafeDistance" type="Float"/>
+		<field name="fProfileCoolDown" type="Float"/>
+		<field name="iMinHackInterval" type="Int32"/>
+		<field name="iMaxHackInterval" type="Int32"/>
+		<object name="GPSTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="ExcludedRewardItems">
+			<object name="ExcludedRewardItem">
+				<field name="itemsItem" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridNoveltyFact">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="DetectorSettings">
+		<field name="text_Bark" type="String"/>
+		<field name="Bark" type="BinHex"/>
+		<field name="fDetectorDelay" type="Float"/>
+		<field name="fDistanceMaxToDetect" type="Float"/>
+		<field name="fDistanceMaxToLooseInterest" type="Float"/>
+		<field name="fSafeDistanceForDenunciator" type="Float"/>
+		<field name="fMinDistBetweenDetectors" type="Float"/>
+		<field name="selVisibilityAngle" type="Enum"/>
+		<field name="iGoodReputationDetectorProbability" type="Int32"/>
+		<field name="GoodRepBark" type="BinHex"/>
+		<field name="fDistanceMinBetweenDetectors" type="Float"/>
+		<field name="text_fileDetectorGPSTexture" type="String"/>
+		<field name="fileDetectorGPSTexture" type="BinHex"/>
+		<object name="DetectorGPSTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="HeatLevelSettings">
+			<object name="HeatLevel1">
+				<field name="iMaxDetector" type="Int32"/>
+			</object>
+			<object name="HeatLevel2">
+				<field name="iMaxDetector" type="Int32"/>
+			</object>
+			<object name="HeatLevel3">
+				<field name="iMaxDetector" type="Int32"/>
+			</object>
+			<object name="HeatLevel4">
+				<field name="iMaxDetector" type="Int32"/>
+			</object>
+			<object name="HeatLevel5">
+				<field name="iMaxDetector" type="Int32"/>
+			</object>
+		</object>
+		<object name="PMSValuesNeeded">
+			<object name="PMSValue">
+				<field name="text_pmsPMSName" type="String"/>
+				<field name="pmsPMSName" type="BinHex"/>
+				<field name="selEnumValue" type="Enum"/>
+			</object>
+		</object>
+		<object name="PMSValuesExcluded">
+			<object name="PMSValue">
+				<field name="text_pmsPMSName" type="String"/>
+				<field name="pmsPMSName" type="BinHex"/>
+				<field name="selEnumValue" type="Enum"/>
+			</object>
+		</object>
+	</object>
+	<object name="PanicInvestigation">
+		<field name="fTimer" type="Float"/>
+		<field name="iMinCivilians" type="Int32"/>
+		<field name="fBaseProbability" type="Float"/>
+		<field name="fIndividualProbability" type="Float"/>
+	</object>
+	<object name="CompanionFelonSetting">
+		<field name="mapicondescIncidentReportIcon" type="BinHex"/>
+		<field name="mapicondescOperatorActionIcon" type="BinHex"/>
+	</object>
+</class>

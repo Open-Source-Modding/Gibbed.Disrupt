@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RaidworldpropertysettingsParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="bIsHeavyFogGameplay" type="BinHex"/>
+	<object name="WorldProperties">
+		<object name="TimeOfDay">
+			<field name="bEnableTimeOfDay" type="BinHex"/>
+			<field name="uiHour" type="BinHex"/>
+			<field name="bDisableTimeScaling" type="BinHex"/>
+		</object>
+		<object name="Weather">
+			<field name="bEnableWeather" type="BinHex"/>
+			<field name="envweatherpresetWeatherPreset" type="BinHex"/>
+		</object>
+		<object name="Felony">
+			<field name="bDisableFelony" type="BinHex"/>
+		</object>
+		<object name="WorldSpawning">
+			<field name="bDisableWorldSpawning" type="Boolean"/>
+			<field name="bDisableCLOEventsSpawning" type="Boolean"/>
+		</object>
+	</object>
+	<object name="locstridDisplayName">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+</class>

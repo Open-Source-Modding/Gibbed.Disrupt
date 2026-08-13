@@ -1,0 +1,5 @@
+<file name="a02_m07_sc010_claraloop" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UimissionappvillainviewdataParameters">
+	<inherit name="SharedParameters"/>
+	<field name="texturedbobjectVillainViewImage" type="BinHex"/>
+	<object name="locstridTitleLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDescriptionLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="VillainNames">
+		<object name="Name">
+			<object name="locstridVillainName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

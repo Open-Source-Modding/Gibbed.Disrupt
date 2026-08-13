@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MindjackgameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="MindjackData">
+		<field name="text_fileVisionLossPostFxTexture" type="String"/>
+		<field name="fileVisionLossPostFxTexture" type="BinHex"/>
+		<field name="fVisionLossDelay" type="Float"/>
+		<field name="fVisionBlurredDuration" type="Float"/>
+		<field name="fMindBreakStartTime" type="Float"/>
+		<field name="fMindBreakDuration" type="Float"/>
+		<field name="fVisionGainSpeed" type="Float"/>
+		<field name="fVisionLossCriticalratio" type="Float"/>
+		<field name="text_psCriticalVisionLossFX" type="String"/>
+		<field name="psCriticalVisionLossFX" type="BinHex"/>
+		<field name="psPlayerVisionLossFX" type="BinHex"/>
+		<field name="text_psLostVisionFX" type="String"/>
+		<field name="psLostVisionFX" type="BinHex"/>
+		<field name="fVisionLossStartAlpha" type="Float"/>
+		<field name="fVisionLossEndAlpha" type="Float"/>
+		<field name="fVisionLossRatioOnGhostExplosion" type="Float"/>
+		<field name="bGhostExplosionVisionLossProportionalToDistance" type="Boolean"/>
+		<field name="fRelicLifeTimeRatioLossOnGhostExplosion" type="Float"/>
+		<field name="bGhostExplosionRelicLifeTimeLossProportionalToDistance" type="Boolean"/>
+		<field name="text_sndMindjackFailSound" type="String"/>
+		<field name="sndMindjackFailSound" type="BinHex"/>
+		<field name="sndtpMindjackFailSoundType" type="BinHex"/>
+		<field name="text_sndAmbientSoundStart" type="String"/>
+		<field name="sndAmbientSoundStart" type="BinHex"/>
+		<field name="sndtpAmbientSoundStartType" type="BinHex"/>
+		<field name="text_sndAmbientSoundStop" type="String"/>
+		<field name="sndAmbientSoundStop" type="BinHex"/>
+		<field name="sndtpAmbientSoundStopType" type="BinHex"/>
+		<field name="text_sndLocalPlayerDeathSoundStart" type="String"/>
+		<field name="sndLocalPlayerDeathSoundStart" type="BinHex"/>
+		<field name="sndtpLocalPlayerDeathSoundStartType" type="BinHex"/>
+		<field name="text_sndLocalPlayerDeathSoundStop" type="String"/>
+		<field name="sndLocalPlayerDeathSoundStop" type="BinHex"/>
+		<field name="sndtpLocalPlayerDeathSoundStopType" type="BinHex"/>
+		<field name="fBoundingWall3DSoundGroundOffset" type="Float"/>
+		<field name="text_sndBoundingWallSoundStart" type="String"/>
+		<field name="sndBoundingWallSoundStart" type="BinHex"/>
+		<field name="sndtpBoundingWallStartType" type="BinHex"/>
+		<field name="text_sndBoundingWallStop" type="String"/>
+		<field name="sndBoundingWallStop" type="BinHex"/>
+		<field name="sndtpBoundingWallStopType" type="BinHex"/>
+		<field name="entBarksEntityId" type="BinHex"/>
+		<field name="selDefaultBarkPriority" type="Enum"/>
+		<field name="fPlayDefaultBarkMinDelay" type="Float"/>
+		<field name="fPlayDefaultBarkMaxDelay" type="Float"/>
+		<field name="selBarkPriority" type="Enum"/>
+		<field name="text_BarkPlayerDied" type="String"/>
+		<field name="BarkPlayerDied" type="BinHex"/>
+		<field name="text_BarkRelicPicked" type="String"/>
+		<field name="BarkRelicPicked" type="BinHex"/>
+		<field name="text_BarkGhostCombat" type="String"/>
+		<field name="BarkGhostCombat" type="BinHex"/>
+		<field name="fLowVisionRatio" type="Float"/>
+		<field name="text_BarkLowVision" type="String"/>
+		<field name="BarkLowVision" type="BinHex"/>
+		<field name="fFinalFadeToBlackExtraDuration" type="Float"/>
+		<field name="scriptedeventgameplaypresetFailureCinematicPreset" type="BinHex"/>
+		<field name="bSpawnEntityInScriptedEvent" type="Boolean"/>
+		<field name="bClearWorldSpawningOnStart" type="Boolean"/>
+		<field name="bOverrideWorldPropertySettingsOnExit" type="Boolean"/>
+		<object name="curveBlurredVision">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveMindBroken">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="sndvarAmbientSoundRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="DefaultBarks">
+			<object name="BarkId">
+				<field name="text_BarkId" type="String"/>
+				<field name="BarkId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="PostDeathEntities">
+			<object name="EntitiesData">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+				<field name="entSpawnPoint" type="BinHex"/>
+			</object>
+		</object>
+		<object name="WorldProperties">
+			<object name="TimeOfDay">
+				<field name="bEnableTimeOfDay" type="Boolean"/>
+				<field name="uiHour" type="UInt32"/>
+				<field name="bDisableTimeScaling" type="Boolean"/>
+			</object>
+			<object name="Weather">
+				<field name="bEnableWeather" type="Boolean"/>
+				<field name="envweatherpresetWeatherPreset" type="BinHex"/>
+			</object>
+			<object name="Felony">
+				<field name="bDisableFelony" type="Boolean"/>
+			</object>
+			<object name="WorldSpawning">
+				<field name="bDisableWorldSpawning" type="Boolean"/>
+			</object>
+		</object>
+		<object name="ExitWorldProperties">
+			<object name="TimeOfDay">
+				<field name="bEnableTimeOfDay" type="Boolean"/>
+				<field name="uiHour" type="UInt32"/>
+				<field name="bDisableTimeScaling" type="Boolean"/>
+			</object>
+			<object name="Weather">
+				<field name="bEnableWeather" type="Boolean"/>
+				<field name="envweatherpresetWeatherPreset" type="BinHex"/>
+			</object>
+			<object name="Felony">
+				<field name="bDisableFelony" type="Boolean"/>
+			</object>
+			<object name="WorldSpawning">
+				<field name="bDisableWorldSpawning" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+</class>

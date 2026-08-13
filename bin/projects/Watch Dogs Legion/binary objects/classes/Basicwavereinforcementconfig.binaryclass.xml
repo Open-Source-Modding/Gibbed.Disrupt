@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BasicwavereinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsInfinite" type="Boolean"/>
+	<field name="squadbhvparamsSquadBhvParams" type="BinHex"/>
+	<object name="Waves">
+		<object name="Wave">
+			<field name="waveagentcompositionconfigAgentCompositionConfig" type="BinHex"/>
+			<field name="bUseInitialSpawnDelay" type="Boolean"/>
+			<field name="fInitialSpawnDelay" type="Float"/>
+			<field name="fSpawnUnitCooldown" type="Float"/>
+			<field name="bUseTimeCondition" type="Boolean"/>
+			<field name="fTimeUntilNextWave" type="Float"/>
+			<field name="bUseRemainingRatioCondition" type="Boolean"/>
+			<field name="fRemainingRatioToForceNextWave" type="Float"/>
+			<field name="fRemainingRatioTimeUntilNextWave" type="Float"/>
+			<field name="bUseMaintainNPCCountCondition" type="Boolean"/>
+			<field name="fMinNPCMaintainCount" type="Int32"/>
+			<field name="fMaintainCountSpawnDelay" type="Float"/>
+			<field name="bMaintainCountIncludeLayoutAI" type="Boolean"/>
+			<field name="bUseDeathTollCondition" type="Boolean"/>
+			<field name="uiDeathTollToForceNextWave" type="UInt32"/>
+			<field name="fDeathTollTimeUntilNextWave" type="Float"/>
+			<field name="bPauseUntilDominoEvent" type="Boolean"/>
+			<object name="UnitGroupList">
+				<object name="UnitGroup">
+					<field name="unitgroupUnitGroup" type="BinHex"/>
+					<object name="CanSpawnWhenTargetIs">
+						<field name="bOnFoot" type="Boolean"/>
+						<field name="bInAVehicle" type="Boolean"/>
+						<field name="bInWater" type="Boolean"/>
+						<field name="bNotInWater" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

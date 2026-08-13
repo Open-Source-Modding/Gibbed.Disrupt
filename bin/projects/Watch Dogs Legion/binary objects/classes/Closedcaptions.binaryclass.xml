@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ClosedcaptionsParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<object name="ClosedCaptions">
+		<object name="ClosedCaption">
+			<field name="sndSoundEvent" type="BinHex"/>
+			<field name="closedcaptionsubgroupSubGroup" type="BinHex"/>
+			<field name="sCloseCaptionName" type="BinHex"/>
+			<object name="locstridClosedCaption">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+			<object name="TimingInformation">
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bIsContinuousSound" type="Boolean"/>
+			</object>
+			<object name="DisplayInformation">
+				<field name="selSubtitleType" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

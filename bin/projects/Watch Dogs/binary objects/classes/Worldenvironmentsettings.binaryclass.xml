@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WorldenvironmentsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bUseAsDefault" type="Boolean"/>
+	<field name="fRestingWeatherAdvancingScale" type="Float"/>
+	<field name="fSunLensFlareFadeStartAngle" type="Float"/>
+	<field name="fSunLensFlareFadeEndAngle" type="Float"/>
+	<field name="fSunBelowHorizonFactor" type="Float"/>
+	<field name="fSunStaticShadowThresholdAngle" type="Float"/>
+	<field name="fTimeScale" type="Float"/>
+	<field name="text_WorldId" type="String"/>
+	<field name="WorldId" type="BinHex"/>
+	<field name="fBlackoutMoonLightingFactor" type="Float"/>
+	<field name="fileLightIesAtlas" type="BinHex"/>
+	<field name="bEnableLocalExposure" type="Boolean"/>
+	<field name="bRemapLocalExposure" type="Boolean"/>
+	<field name="text_fileDistantLightsTexture" type="String"/>
+	<field name="fileDistantLightsTexture" type="BinHex"/>
+	<field name="text_fileColorRemapVolumeTexture" type="String"/>
+	<field name="fileColorRemapVolumeTexture" type="BinHex"/>
+	<field name="fMinGILevel" type="Float"/>
+	<field name="fMaxGIBooster" type="Float"/>
+	<field name="fMinAmbient" type="Float"/>
+	<field name="vector4MinAmbientBasisVectorFactors" type="Vector4"/>
+	<field name="vector2MinAmbientBasisVectorFactors2" type="Vector2"/>
+	<field name="fMinAmbientBlackoutMultiplier" type="Float"/>
+	<field name="fMinAmbientTintAmount" type="Float"/>
+	<object name="curveVertexAOIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveVertexAOIntensityCG">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="DistantLightsSettings">
+		<field name="fNearSize" type="Float"/>
+		<field name="fSize" type="Float"/>
+		<field name="fIntensityLog2" type="Float"/>
+		<field name="fMinPixelSize" type="Float"/>
+		<field name="fFlickerPerMeter" type="Float"/>
+		<field name="fFadeInStartDistance" type="Float"/>
+		<field name="fFadeInEndDistance" type="Float"/>
+	</object>
+	<object name="HDRColorGrading">
+		<field name="text_fileNeutralLUT" type="String"/>
+		<field name="fileNeutralLUT" type="BinHex"/>
+		<field name="text_fileNeutralLUTHDR" type="String"/>
+		<field name="fileNeutralLUTHDR" type="BinHex"/>
+		<field name="fBoroughTransitionTime" type="Float"/>
+		<field name="fIndoorOutdoorTransitionTime" type="Float"/>
+		<field name="fIndoorIndoorTransitionTime" type="Float"/>
+		<field name="fTimeOfDayTransitionTime" type="Float"/>
+		<field name="uExteriorMoodsCount" type="BinHex"/>
+		<field name="uExteriorTimeOfDayRangesCount" type="BinHex"/>
+		<field name="uInteriorMoodsCount" type="BinHex"/>
+		<field name="uInteriorTimeOfDayRangesCount" type="BinHex"/>
+		<object name="ExteriorTimeOfDayRanges">
+			<object name="Ranges">
+				<field name="fStart" type="Float"/>
+				<field name="fEnd" type="Float"/>
+			</object>
+		</object>
+		<object name="ExteriorColorGradingLUTS">
+			<object name="Presets">
+				<field name="strPresetName" type="BinHex"/>
+				<object name="MoodLUTTextures">
+					<object name="Moods">
+						<object name="TexturesSDR">
+							<object name="Texture">
+								<field name="text_fileTexture" type="String"/>
+								<field name="fileTexture" type="BinHex"/>
+								<field name="text_fileLUT" type="String"/>
+								<field name="fileLUT" type="BinHex"/>
+							</object>
+						</object>
+						<object name="TexturesHDR">
+							<object name="Texture">
+								<field name="text_fileTexture" type="String"/>
+								<field name="fileTexture" type="BinHex"/>
+								<field name="text_fileLUT" type="String"/>
+								<field name="fileLUT" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="InteriorTimeOfDayRanges">
+			<object name="Ranges">
+				<field name="fStart" type="Float"/>
+				<field name="fEnd" type="Float"/>
+			</object>
+		</object>
+		<object name="InteriorColorGradingLUTS">
+			<object name="Presets">
+				<field name="strPresetName" type="BinHex"/>
+				<object name="MoodLUTTextures">
+					<object name="Moods">
+						<object name="TexturesSDR">
+							<object name="Texture">
+								<field name="text_fileTexture" type="String"/>
+								<field name="fileTexture" type="BinHex"/>
+								<field name="text_fileLUT" type="String"/>
+								<field name="fileLUT" type="BinHex"/>
+							</object>
+						</object>
+						<object name="TexturesHDR">
+							<object name="Texture">
+								<field name="text_fileTexture" type="String"/>
+								<field name="fileTexture" type="BinHex"/>
+								<field name="text_fileLUT" type="String"/>
+								<field name="fileLUT" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="FogVolumes">
+		<field name="fAmbientIntensity" type="Float"/>
+		<field name="fAmbientSunShadow" type="Float"/>
+		<field name="fAmbientAttenuationRange" type="Float"/>
+		<field name="bReceiveShadow" type="Boolean"/>
+		<field name="vectorFlowDirection" type="Vector3"/>
+		<field name="fFlowSpeed" type="Float"/>
+		<field name="vectorNoiseWeights" type="Vector3"/>
+		<field name="vectorNoiseFrequencies" type="Vector3"/>
+		<field name="fNoiseScale" type="Float"/>
+		<field name="uiMinFogIntervalDays" type="UInt32"/>
+		<field name="uiMaxFogIntervalDays" type="UInt32"/>
+		<field name="uiFogStartHour" type="UInt32"/>
+		<field name="uiFogLatestStartHour" type="UInt32"/>
+		<field name="uiFogEndHour" type="UInt32"/>
+		<field name="uiFogInitialStartDelayDays" type="UInt32"/>
+		<field name="uiFogForecastHours" type="UInt32"/>
+		<field name="fFogSmoothFadeTimeSeconds" type="Float"/>
+		<field name="text_fileNoiseTexture" type="String"/>
+		<field name="fileNoiseTexture" type="BinHex"/>
+	</object>
+	<object name="Rain">
+		<field name="fEmitterDistanceOffset" type="Float"/>
+		<field name="fSpeedScaling" type="Float"/>
+		<field name="text_fileSplashesTexture" type="String"/>
+		<field name="fileSplashesTexture" type="BinHex"/>
+		<field name="text_fileRainDropTexture" type="String"/>
+		<field name="fileRainDropTexture" type="BinHex"/>
+		<field name="text_fileRainStreakTexture" type="String"/>
+		<field name="fileRainStreakTexture" type="BinHex"/>
+		<field name="text_fileRainFlowTexture" type="String"/>
+		<field name="fileRainFlowTexture" type="BinHex"/>
+		<field name="text_fileRainHeightNoiseTexture" type="String"/>
+		<field name="fileRainHeightNoiseTexture" type="BinHex"/>
+		<field name="fSplashesSize" type="Float"/>
+		<field name="fSplashesThreshold" type="Float"/>
+		<field name="fSplashesColorIntensity" type="Float"/>
+		<field name="fSplashesSpawnRange" type="Float"/>
+		<object name="RainEmitters"/>
+		<object name="gradColor">
+			<object name="Knots">
+				<object name="Knot">
+					<field name="Value" type="Vector4"/>
+					<field name="Info" type="Vector4"/>
+					<field name="Type" type="BinHex"/>
+					<field name="Position" type="BinHex"/>
+					<field name="Color" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="Rain">
+			<object name="RainCascades">
+				<field name="fNearCascadeRange" type="Float"/>
+				<field name="fMidCascadeRange" type="Float"/>
+				<field name="fFarCascadeRange" type="Float"/>
+				<field name="fNearCascadeDensity" type="Float"/>
+				<field name="fMidCascadeDensity" type="Float"/>
+				<field name="fFarCascadeDensity" type="Float"/>
+			</object>
+			<field name="fEmitterDistanceOffset" type="Float"/>
+			<field name="fSpeedScaling" type="Float"/>
+			<field name="text_fileSplashesTexture" type="String"/>
+			<field name="fileSplashesTexture" type="BinHex"/>
+			<field name="text_fileRainDropTexture" type="String"/>
+			<field name="fileRainDropTexture" type="BinHex"/>
+			<field name="text_fileRainStreakTexture" type="String"/>
+			<field name="fileRainStreakTexture" type="BinHex"/>
+			<field name="text_fileRainFlowTexture" type="String"/>
+			<field name="fileRainFlowTexture" type="BinHex"/>
+			<field name="text_fileRainHeightNoiseTexture" type="String"/>
+			<field name="fileRainHeightNoiseTexture" type="BinHex"/>
+			<field name="fSplashesSize" type="Float"/>
+			<field name="fSplashesThreshold" type="Float"/>
+			<field name="fSplashesColorIntensity" type="Float"/>
+			<field name="fSplashesSpawnRange" type="Float"/>
+			<object name="RainEmitters"/>
+			<object name="gradColor">
+				<object name="Knots">
+					<object name="Knot">
+						<field name="Value" type="Vector4"/>
+						<field name="Info" type="Vector4"/>
+						<field name="Type" type="BinHex"/>
+						<field name="Position" type="BinHex"/>
+						<field name="Color" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<field name="fRainScrollingSpeed" type="Float"/>
+			<field name="fRainSkewFactor" type="Float"/>
+			<field name="fRainColorIntensity" type="Float"/>
+			<field name="fRainLightIntensity" type="Float"/>
+			<field name="fRainLightsMinIntensity" type="Float"/>
+			<field name="fRainSpecularPower" type="Float"/>
+			<field name="fRainSpecularLevel" type="Float"/>
+			<field name="fRainFadeOutDistance" type="Float"/>
+			<field name="fRainStreakColorLevel" type="Float"/>
+			<field name="fRainTimeScalePower" type="Float"/>
+			<field name="fRainEVMin" type="Float"/>
+			<field name="fRainEVMax" type="Float"/>
+			<field name="fRainIntensity" type="Float"/>
+			<field name="fRainHighLightBoost" type="Float"/>
+			<field name="fRainIntensityForRippleMaxIntensity" type="Float"/>
+			<field name="fRainIntensityForSplashesMaxIntensity" type="Float"/>
+		</object>
+		<object name="RainCascades">
+			<field name="fNearCascadeRange" type="Float"/>
+			<field name="fMidCascadeRange" type="Float"/>
+			<field name="fFarCascadeRange" type="Float"/>
+			<field name="fNearCascadeDensity" type="Float"/>
+			<field name="fMidCascadeDensity" type="Float"/>
+			<field name="fFarCascadeDensity" type="Float"/>
+		</object>
+	</object>
+	<object name="DynamicRainStreaks">
+		<field name="fDropSpawnRate" type="Float"/>
+		<field name="fDropInitialiMoveChance" type="Float"/>
+		<field name="fDropMoveChance" type="Float"/>
+		<field name="fDropMaxVelocity" type="Float"/>
+		<field name="fDropVerticalAcceleration" type="Float"/>
+		<field name="fDropHorizontalAcceleration" type="Float"/>
+		<field name="fDropBaseLifetime" type="Float"/>
+		<field name="fDropLifetimeVariance" type="Float"/>
+		<field name="fDropBaseSize" type="Float"/>
+		<field name="fDropSizeVariance" type="Float"/>
+		<field name="fDropMaxSize" type="Float"/>
+	</object>
+	<object name="Water">
+		<field name="fWaterDepth" type="Float"/>
+		<field name="fToShoreWaterSpeed" type="Float"/>
+		<field name="fFromShoreWaterSpeed" type="Float"/>
+		<field name="fShoreWaterSoakingSpeed" type="Float"/>
+		<field name="fMinimumShoreWaterSoakingLevel" type="Float"/>
+		<field name="fMaxShoreDryness" type="Float"/>
+		<field name="fWetSandColorIntensity" type="Float"/>
+		<field name="bDownAndSoakShoreCoordinated" type="Boolean"/>
+		<object name="curveToShoreWaterMovement">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFromShoreWaterMovement">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveShoreWaterSoakingMovement">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="BaseWaves">
+			<field name="fReflectionIntensity" type="Float"/>
+			<field name="fFoamTextureScale" type="Float"/>
+			<field name="text_fileBaseWaveTexture" type="String"/>
+			<field name="fileBaseWaveTexture" type="BinHex"/>
+			<field name="text_fileFoamTexture" type="String"/>
+			<field name="fileFoamTexture" type="BinHex"/>
+			<field name="text_fileScatteringTexture" type="String"/>
+			<field name="fileScatteringTexture" type="BinHex"/>
+			<field name="text_fileCausticTexture" type="String"/>
+			<field name="fileCausticTexture" type="BinHex"/>
+			<field name="text_fileWaveIntensityTexture" type="String"/>
+			<field name="fileWaveIntensityTexture" type="BinHex"/>
+			<field name="text_fileWaterDetailNormalMap" type="String"/>
+			<field name="fileWaterDetailNormalMap" type="BinHex"/>
+			<field name="fDetailNormalMapScale" type="Float"/>
+			<field name="fDetailNormalMapScrolling" type="Float"/>
+			<field name="fDetailNormalMapIntensity" type="Float"/>
+			<field name="fSpecularRoughness" type="Float"/>
+			<field name="fSpecularDetailMapSpeed" type="Float"/>
+			<field name="fSpecularDetailMapScale" type="Float"/>
+			<field name="fSpecularDetailMapBias" type="Float"/>
+			<field name="fSpecularDetailMapNormalLobe" type="Float"/>
+			<field name="fCausticMapScale" type="Float"/>
+			<field name="uiCausticTextureArraySize" type="UInt32"/>
+			<field name="fCausticFadeInStart" type="Float"/>
+			<field name="fCausticFadeInEnd" type="Float"/>
+			<field name="fCausticFadeOutStart" type="Float"/>
+			<field name="fCausticFadeOutEnd" type="Float"/>
+			<field name="fCausticIntensityScale" type="Float"/>
+			<field name="fCausticIntensityBias" type="Float"/>
+			<field name="fCausticFPS" type="Float"/>
+			<field name="clrCausticColor" type="VectorColor"/>
+			<field name="fFoamDepthPower" type="Float"/>
+			<field name="fFoamTerrainContourFactor" type="Float"/>
+			<field name="fFoamAlbedo" type="Float"/>
+			<field name="fTerrainHeightCoefficient" type="Float"/>
+		</object>
+		<object name="Scattering">
+			<field name="fScatteringCoef" type="Float"/>
+			<field name="fPhaseCoef" type="Float"/>
+			<field name="fExtinctionExp" type="Float"/>
+			<field name="fExtinctionCoef" type="Float"/>
+			<field name="clrExtinctionColor" type="VectorColor"/>
+		</object>
+	</object>
+	<object name="WeatherSystem">
+		<field name="fWeatherTransitionTime" type="Float"/>
+		<field name="fToMasterTransitionTime" type="Float"/>
+		<field name="fFromMasterTransitionTime" type="Float"/>
+		<field name="fMasterOverrideTransitionTime" type="Float"/>
+		<field name="fWeatherMasterIdTransitionTime" type="Float"/>
+		<field name="fWeatherMasterStepTransitionTime" type="Float"/>
+		<field name="fCloudTransitionTime" type="Float"/>
+		<field name="uiNumSequencesBeforeRepeat" type="UInt32"/>
+		<field name="uiNumSequencesBeforeRainOrFogRepeat" type="UInt32"/>
+		<field name="fWetnessAccumulationDurationMin" type="Float"/>
+		<field name="fWetnessAccumulationDurationMax" type="Float"/>
+		<field name="fWetnessDryingDuration" type="Float"/>
+		<field name="fDampnessAccumulationDurationMin" type="Float"/>
+		<field name="fDampnessAccumulationDurationMax" type="Float"/>
+		<field name="fDampnessDryingDuration" type="Float"/>
+		<field name="fRaindropRippleSize" type="Float"/>
+		<field name="fRainHeightNoiseSize" type="Float"/>
+		<field name="fRainHeightNoiseRange" type="Float"/>
+		<field name="fPuddleStartAccumulationDurationMin" type="Float"/>
+		<field name="fPuddleStartAccumulationDurationMax" type="Float"/>
+		<field name="fPuddleStartDryingDuration" type="Float"/>
+		<field name="fPuddleEndAccumulationDurationMin" type="Float"/>
+		<field name="fPuddleEndAccumulationDurationMax" type="Float"/>
+		<field name="fPuddleEndDryingDuration" type="Float"/>
+		<field name="fPuddleExtraNormalMapSize" type="Float"/>
+		<field name="fPuddleExtraNormalMapIntensity" type="Float"/>
+		<field name="fPuddleExtraNormalMapSpeed" type="Float"/>
+		<field name="fTopFogWetness" type="Float"/>
+		<field name="fTopFogWetnessMinDensity" type="Float"/>
+		<field name="fTopFogWetnessMaxDensity" type="Float"/>
+		<field name="fTopFogWetnessAccumulationDuration" type="Float"/>
+		<object name="MaterialWetnessSettings">
+			<object name="Wetness">
+				<object name="GenericDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="GenericGround">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="GenericGroundHighPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="GenericGroundLowPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="GenericDirtyGround">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="GenericDirtyGroundHighPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="GenericDirtyGroundLowPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TerrainDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TerrainLowPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TerrainMediumPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TerrainHighPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TerrainDirtyLowPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TerrainDirtyMediumPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TerrainDirtyHighPorosity">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="ClothDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="ClothImpermeable">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="ClothPermeable">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="SkinDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="BuildingDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="PlantDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TreeDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TreeTrunk">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="TreeLeaf">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="CarGenericDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="CarPaintDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="GlassDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="GlassCarWindow">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+				<object name="HairDefault">
+					<field name="fBaseColorMultiplier" type="Float"/>
+					<field name="fRoughnessMultiplier" type="Float"/>
+					<field name="fNormalMapIntensityMultiplier" type="Float"/>
+					<field name="fRaindropRippleIntensity" type="Float"/>
+					<field name="vector4PuddleColor" type="VectorColor"/>
+				</object>
+			</object>
+		</object>
+		<object name="WeatherForecastSettings">
+			<field name="fTemperatureRateOfChange" type="Float"/>
+			<field name="fCloudyTemperatureDelta" type="Float"/>
+			<field name="fRainyTemperatureDelta" type="Float"/>
+			<field name="fRandomTemperatureDelta" type="Float"/>
+			<object name="curveTemperatureCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+	</object>
+	<object name="Sky">
+		<field name="fSkydomeDawnHour" type="Float"/>
+		<field name="fSkydomeDuskHour" type="Float"/>
+		<field name="fSunAndMoonViewAngle" type="Float"/>
+		<field name="fSunIlluminance" type="Float"/>
+		<field name="fMoonIlluminance" type="Float"/>
+		<field name="fStarsIlluminance" type="Float"/>
+		<field name="fLightPollutionIlluminance" type="Float"/>
+		<field name="fAmbientValueClampMax" type="Float"/>
+		<field name="fSkySunTurbidity" type="Float"/>
+		<field name="text_fileSunFlareTexture" type="String"/>
+		<field name="fileSunFlareTexture" type="BinHex"/>
+		<field name="text_fileSunFlareTimeOfDayColorTexture" type="String"/>
+		<field name="fileSunFlareTimeOfDayColorTexture" type="BinHex"/>
+		<field name="fSunFlareTextureSize" type="Float"/>
+		<field name="fSunFlareMaxUniformScale" type="Float"/>
+		<field name="fSunFlareMaxBottomScale" type="Float"/>
+		<field name="fRotationAxisPitch" type="Float"/>
+		<field name="fSunElevationNightMin" type="Float"/>
+		<field name="fSunElevationNightMax" type="Float"/>
+		<field name="fGoldenHourStretchFactor" type="Float"/>
+		<field name="fSunRiseYaw" type="Float"/>
+		<field name="fSunMIEScattering" type="Float"/>
+		<field name="fFakeEarthShadowHeightProjection" type="Float"/>
+		<field name="fFakeEarthShadowHeightSmooth" type="Float"/>
+		<field name="fSunIntensityInertiaAngle" type="Float"/>
+		<field name="fSunShadowInertiaStartAngle" type="Float"/>
+		<field name="fSunShadowInertiaEndAngle" type="Float"/>
+		<field name="angMaxAngleLag" type="Float"/>
+		<field name="angCatchupAngularSpeed" type="Float"/>
+		<field name="vec2CatchupSpeedControlCamAngle" type="Vector2"/>
+		<field name="vec2CatchupSpeedControlCamPos" type="Vector2"/>
+		<field name="angAngleStep" type="Float"/>
+		<field name="fSkyMoonTurbidity" type="Float"/>
+		<field name="clrMoonColor" type="VectorColor"/>
+		<field name="text_fileMoonTexture" type="String"/>
+		<field name="fileMoonTexture" type="BinHex"/>
+		<field name="clrMoonShadowColor" type="VectorColor"/>
+		<field name="fMoonShadowIntensity" type="Float"/>
+		<field name="fMoonMIEScattering" type="Float"/>
+		<field name="fMoonInscatteringFactor" type="Float"/>
+		<field name="fMoonPhase" type="Float"/>
+		<field name="fMoonCloudIntensity" type="Float"/>
+		<field name="fNightSkyIntensity" type="Float"/>
+		<field name="clrNightSkyTopColor" type="VectorColor"/>
+		<field name="clrNightSkyHorizonColor" type="VectorColor"/>
+		<field name="fNightSkyGradientGamma" type="Float"/>
+		<field name="fNightSkyGIFactor" type="Float"/>
+		<field name="text_fileLightPollutionTexture" type="String"/>
+		<field name="fileLightPollutionTexture" type="BinHex"/>
+		<field name="fLightPollutionFalloff" type="Float"/>
+		<field name="text_fileFogRegionTexture" type="String"/>
+		<field name="fileFogRegionTexture" type="BinHex"/>
+		<field name="fFogRegionHeightMax" type="Float"/>
+		<field name="text_fileFog2DNoiseTexture" type="String"/>
+		<field name="fileFog2DNoiseTexture" type="BinHex"/>
+		<field name="fFog2DNoiseScale" type="Float"/>
+		<field name="text_fileFog3DNoiseTexture" type="String"/>
+		<field name="fileFog3DNoiseTexture" type="BinHex"/>
+		<field name="fFog3DNoiseScale" type="Float"/>
+		<field name="fBelowHorizonCloudsLighting" type="Float"/>
+		<field name="fAirDensity" type="Float"/>
+		<field name="fAirHeightMax" type="Float"/>
+		<field name="fAirNearSafeDistance" type="Float"/>
+		<field name="fAirNearSafeFalloff" type="Float"/>
+		<field name="clrAirColor" type="VectorColor"/>
+		<object name="curveArtisticBrunetonSkySunLobeIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveArtisticBrunetonSkySunLobeGamma">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveArtisticBrunetonSkyVisualIntensty">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveAerialPerscpectiveFogScattering">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveAerialPerscpectiveFogExtinction">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveSkyIntensityForMainView">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="SunRiseTime">
+			<field name="uiHours" type="UInt32"/>
+			<field name="uiMinutes" type="UInt32"/>
+			<field name="uiSeconds" type="UInt32"/>
+		</object>
+		<object name="SunSetTime">
+			<field name="uiHours" type="UInt32"/>
+			<field name="uiMinutes" type="UInt32"/>
+			<field name="uiSeconds" type="UInt32"/>
+		</object>
+		<object name="curveSunSpriteScale">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="gradSunColorHack">
+			<object name="Knots">
+				<object name="Knot">
+					<field name="Value" type="Vector4"/>
+					<field name="Info" type="Vector4"/>
+					<field name="Type" type="BinHex"/>
+					<field name="Position" type="BinHex"/>
+					<field name="Color" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="curveSunColorHackIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="MoonRiseTime">
+			<field name="uiHours" type="UInt32"/>
+			<field name="uiMinutes" type="UInt32"/>
+			<field name="uiSeconds" type="UInt32"/>
+		</object>
+		<object name="MoonSetTime">
+			<field name="uiHours" type="UInt32"/>
+			<field name="uiMinutes" type="UInt32"/>
+			<field name="uiSeconds" type="UInt32"/>
+		</object>
+		<object name="gradMoonSkyColorGradian">
+			<object name="Knots">
+				<object name="Knot">
+					<field name="Value" type="Vector4"/>
+					<field name="Info" type="Vector4"/>
+					<field name="Type" type="BinHex"/>
+					<field name="Position" type="BinHex"/>
+					<field name="Color" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="curveMoonSpriteScale">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveMoonSpriteIntensityScale">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveSSRFallOffDistance">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveSSRFallOffLength">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="GlobalLightColor">
+		<object name="LightColorTextures">
+			<object name="Texture">
+				<field name="text_fileLUT" type="String"/>
+				<field name="fileLUT" type="BinHex"/>
+				<field name="text_fileTexture" type="String"/>
+				<field name="fileTexture" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Wind">
+		<field name="text_fileWindGlobalNoiseTexture" type="String"/>
+		<field name="fileWindGlobalNoiseTexture" type="BinHex"/>
+		<field name="fWindGlobalNoiseTextureRange" type="Float"/>
+		<field name="angWindDirection" type="Float"/>
+		<object name="curveWindBaseSpeedDelta">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="WorldStaticReflection">
+		<field name="bTransitionEnabled" type="Boolean"/>
+		<field name="fileDefaultDayReflectionTexture" type="BinHex"/>
+		<field name="fileDefaultNightReflectionTexture" type="BinHex"/>
+		<field name="fRegularBlendTime" type="Float"/>
+		<field name="fDayNightBlendTime" type="Float"/>
+		<field name="fFakeReflectionScalingStrength" type="Float"/>
+		<field name="fFakeReflectionScalingEndDistance" type="Float"/>
+		<field name="fDayExposureValue" type="Float"/>
+		<field name="fNightExposureValue" type="Float"/>
+		<object name="DayStartTime">
+			<field name="uiHours" type="UInt32"/>
+			<field name="uiMinutes" type="UInt32"/>
+			<field name="uiSeconds" type="UInt32"/>
+		</object>
+		<object name="DayEndTime">
+			<field name="uiHours" type="UInt32"/>
+			<field name="uiMinutes" type="UInt32"/>
+			<field name="uiSeconds" type="UInt32"/>
+		</object>
+		<object name="CustomEnvironmentMaps">
+			<object name="Map">
+				<field name="fBrightnessScale" type="Float"/>
+				<field name="text_fileTexture" type="String"/>
+				<field name="fileTexture" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Misc">
+		<field name="text_fileWhiteVolume" type="String"/>
+		<field name="fileWhiteVolume" type="BinHex"/>
+		<field name="text_fileBandLimitedNoise" type="String"/>
+		<field name="fileBandLimitedNoise" type="BinHex"/>
+		<field name="fSSAOIntensity" type="Float"/>
+		<field name="fConfettiKillVolumeMaxDistance" type="Float"/>
+	</object>
+</class>

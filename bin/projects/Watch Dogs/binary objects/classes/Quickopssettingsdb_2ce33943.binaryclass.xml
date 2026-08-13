@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Quickopssettingsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnabled" type="Boolean"/>
+	<object name="QuickOpsSettings">
+		<object name="QuickOpSettings">
+			<field name="opslistOpConfig" type="BinHex"/>
+			<field name="bIsSuitableForOnboarding" type="Boolean"/>
+			<field name="bIsEnabled" type="Boolean"/>
+			<object name="OpTexts">
+				<object name="OpText">
+					<object name="locstridOpName">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+					<object name="locstridOpDescription">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

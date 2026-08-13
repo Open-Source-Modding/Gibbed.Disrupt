@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uinotificationsettings_a69c8a60Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="locstridOpenAppText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="Map">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="MediaPlayer">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="AppStore">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="Tutorial">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="AudioLogs">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="CarOnDemand">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="ContactList">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="TaxiActivity">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="SongSneak">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="HackerSpace">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="Activities">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="LeaderboardNewSeason">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="LeaderboardDivisionChange">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="DataDriveAppFiles">
+		<field name="selNotificationDisplayType" type="Enum"/>
+		<field name="text_sndShowSound" type="String"/>
+		<field name="sndShowSound" type="BinHex"/>
+		<field name="texturedbobjectSmallIconTexture" type="BinHex"/>
+		<field name="uimenutileAppIconSmartphoneTile" type="BinHex"/>
+		<field name="sLargeIconLinkageName" type="BinHex"/>
+		<field name="uicolorpalettesettingsColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTitleColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsTextColor" type="BinHex"/>
+		<object name="locstridTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSmallContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLargeContentText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

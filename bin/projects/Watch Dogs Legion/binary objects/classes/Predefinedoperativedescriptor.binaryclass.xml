@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PredefinedoperativedescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<object name="OperativeDescriptor">
+		<field name="selSelectionPoolPriority" type="Enum"/>
+		<field name="texturedbobjectPortraitTexture" type="BinHex"/>
+		<field name="uiDesiredSlotNumber" type="UInt32"/>
+		<field name="wolfskinitemdbOverrideWolfSkinItem" type="BinHex"/>
+		<field name="selWantedMask" type="Enum"/>
+		<field name="propMaskPropDbName" type="BinHex"/>
+		<field name="itemlistDefaultInventoryItemList" type="BinHex"/>
+		<field name="sDialogPersona" type="BinHex"/>
+		<field name="prismPrismProfile" type="BinHex"/>
+		<field name="text_progressiongadgetwithemptyOverrideGadget" type="String"/>
+		<field name="progressiongadgetwithemptyOverrideGadget" type="BinHex"/>
+		<field name="selOverrideOperativeSource" type="Enum"/>
+		<field name="censuspredefinedactordescriptorCensusActorDesc" type="BinHex"/>
+		<field name="selItemULCIconType" type="Enum"/>
+		<object name="SpawningOverrides">
+			<field name="bUseOverrideSpawnLoc" type="Boolean"/>
+		</object>
+		<object name="CensusBaseProfileTags">
+			<object name="tagcategoryselectionblackboardProfile">
+				<object name="TagCategorySelectionArray"/>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="CensusExclusionProfileTags">
+			<object name="tagcategoryselectionblackboardProfile">
+				<object name="TagCategorySelectionArray"/>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

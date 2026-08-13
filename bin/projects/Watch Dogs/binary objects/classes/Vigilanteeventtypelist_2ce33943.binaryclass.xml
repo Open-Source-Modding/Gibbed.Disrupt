@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Vigilanteeventtypelist_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="VigilanteEventTypes">
+		<object name="VigilanteEventType">
+			<field name="text_sEventType" type="String"/>
+			<field name="sEventType" type="BinHex"/>
+			<object name="Variations">
+				<field name="text_sVariation" type="String"/>
+				<field name="sVariation" type="BinHex"/>
+				<field name="lcanimtemplAnimTemplate" type="BinHex"/>
+				<object name="Variations">
+					<field name="text_sVariation" type="String"/>
+					<field name="sVariation" type="BinHex"/>
+					<field name="lcanimtemplAnimTemplate" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

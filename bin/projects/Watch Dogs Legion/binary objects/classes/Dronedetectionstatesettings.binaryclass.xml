@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronedetectionstatesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMinGaugeRatio" type="Float"/>
+	<field name="fAbandonTimeMin" type="Float"/>
+	<field name="fAbandonTimeMax" type="Float"/>
+</class>

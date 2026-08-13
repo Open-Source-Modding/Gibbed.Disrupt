@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackerspacetalkernarrativeParameters">
+	<inherit name="SharedParameters"/>
+	<field name="conversationinteractionConversationSettings" type="BinHex"/>
+	<object name="ActivationRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

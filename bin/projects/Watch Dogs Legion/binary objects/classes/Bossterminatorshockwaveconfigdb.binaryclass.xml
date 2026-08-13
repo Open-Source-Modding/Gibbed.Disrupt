@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BossterminatorshockwaveconfigdbParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="fAimingDuration" type="BinHex"/>
+	<field name="fCooldown" type="BinHex"/>
+	<field name="fTriggerRange" type="BinHex"/>
+	<field name="fHeatFromAttack" type="BinHex"/>
+	<field name="text_sPreparingAttackRumbleId" type="BinHex"/>
+	<field name="sPreparingAttackRumbleId" type="BinHex"/>
+	<field name="text_sAttackRumbleId" type="BinHex"/>
+	<field name="sAttackRumbleId" type="BinHex"/>
+	<field name="text_sAttackAftermathRumbleId" type="BinHex"/>
+	<field name="sAttackAftermathRumbleId" type="BinHex"/>
+	<field name="sAttackAftermathRumbleRadius" type="BinHex"/>
+	<object name="Explosion">
+		<field name="ExplosionCenter" type="Vector3"/>
+		<field name="ExplosionImpulseDividerHACK" type="BinHex"/>
+		<object name="ExplosionStim">
+			<field name="text_hidEventName" type="String"/>
+			<field name="hidEventName" type="BinHex"/>
+			<field name="hidTargetEntityId" type="BinHex"/>
+			<field name="text_sDetail" type="String"/>
+			<field name="sDetail" type="BinHex"/>
+			<field name="selType" type="BinHex"/>
+			<field name="bShowCone" type="Boolean"/>
+			<field name="bUseOcclusion" type="BinHex"/>
+			<field name="fDamage" type="BinHex"/>
+			<field name="curvelibDamageFalloff" type="BinHex"/>
+			<field name="fPhysImpulse" type="BinHex"/>
+			<field name="fPhysImpulseFalloffFactor" type="BinHex"/>
+			<field name="fShockWaveSpeed" type="BinHex"/>
+			<field name="fWindStartRadius" type="BinHex"/>
+			<field name="fWindEndRadius" type="BinHex"/>
+			<field name="fWindStartItensity" type="BinHex"/>
+			<field name="fWindEndIntensity" type="BinHex"/>
+			<field name="fWindTime" type="BinHex"/>
+			<object name="RadiusSettings">
+				<field name="fRadius" type="BinHex"/>
+			</object>
+			<object name="AltitudeSliceSettings">
+				<field name="fMaxAlt" type="BinHex"/>
+				<field name="fMinAlt" type="BinHex"/>
+			</object>
+			<object name="LevelSettings">
+				<field name="fLevel" type="BinHex"/>
+				<field name="bFalloff" type="BinHex"/>
+				<field name="fFalloffMinLevel" type="BinHex"/>
+			</object>
+			<object name="EntityRestrictions">
+				<field name="bRestrictToEntities" type="Boolean"/>
+			</object>
+		</object>
+		<object name="ExtraStims">
+			<object name="Stim">
+				<field name="text_hidEventName" type="String"/>
+				<field name="hidEventName" type="BinHex"/>
+				<field name="hidTargetEntityId" type="BinHex"/>
+				<field name="sDetail" type="BinHex"/>
+				<field name="selType" type="Boolean"/>
+				<field name="bShowCone" type="Boolean"/>
+				<object name="RadiusSettings">
+					<field name="fRadius" type="BinHex"/>
+				</object>
+				<object name="AltitudeSliceSettings">
+					<field name="fMaxAlt" type="BinHex"/>
+					<field name="fMinAlt" type="BinHex"/>
+				</object>
+				<object name="LevelSettings">
+					<field name="fLevel" type="BinHex"/>
+					<field name="bFalloff" type="Boolean"/>
+					<field name="fFalloffMinLevel" type="BinHex"/>
+				</object>
+				<object name="EntityRestrictions">
+					<field name="bRestrictToEntities" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="VFX">
+		<field name="text_psRangeParticles" type="BinHex"/>
+		<field name="psRangeParticles" type="BinHex"/>
+	</object>
+</class>

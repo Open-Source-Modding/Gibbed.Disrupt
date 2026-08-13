@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Racingconfigstreet_b1120c08Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="BinHex"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="BinHex"/>
+	<field name="text_hidName" type="BinHex"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="entPlayerClubSpawnPoint" type="BinHex"/>
+	<field name="missionlistMissionThatUnlocksRaces" type="BinHex"/>
+	<object name="PlayerVehicle">
+		<field name="text_archDefaultPlayerVehicle" type="BinHex"/>
+		<field name="archDefaultPlayerVehicle" type="BinHex"/>
+		<field name="archShadowVehicle" type="BinHex"/>
+	</object>
+	<object name="Perks">
+		<field name="perkdesclistMultiplayerPerksToRemove" type="BinHex"/>
+		<field name="perkdesclistMultiplayerPerksToAdd" type="BinHex"/>
+	</object>
+	<object name="MenuPages">
+		<field name="uimenupageRaceEndMenuPage" type="BinHex"/>
+		<field name="uimenupageRaceCentralMenuPage" type="BinHex"/>
+		<field name="uimenupageRaceDetailsMenuPagePC" type="BinHex"/>
+	</object>
+	<object name="Shop">
+		<object name="VehicleItems" />
+	</object>
+	<object name="Practice">
+		<field name="itemsOnlineRaceTileDescription" type="BinHex"/>
+		<object name="Races">
+			<object name="Race">
+				<field name="raceconfigRace" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object hash="4A3328D2">
+		<field name="fOffTrackDistance" type="BinHex"/>
+	</object>
+</class>

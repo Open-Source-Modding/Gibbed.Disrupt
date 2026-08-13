@@ -1,0 +1,5 @@
+<file name="profiler" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

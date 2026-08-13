@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uionlinerankiconsdb_d92a3bd9Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="RankIcons">
+		<object name="RankIcon">
+			<field name="uMinRank" type="BinHex"/>
+			<field name="uMaxRank" type="BinHex"/>
+			<field name="texturedbobjectOnlineRankUpIcon" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RankIconsBlurred">
+		<object name="RankIconBlurred">
+			<field name="uMinRank" type="BinHex"/>
+			<field name="uMaxRank" type="BinHex"/>
+			<field name="texturedbobjectOnlineRankUpIcon" type="BinHex"/>
+		</object>
+	</object>
+</class>

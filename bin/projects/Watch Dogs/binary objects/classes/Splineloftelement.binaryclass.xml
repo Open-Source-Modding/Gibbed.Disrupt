@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SplineloftelementParameters">
+	<inherit name="SharedParameters"/>
+</class>

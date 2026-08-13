@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uitutorialslociddb_a779dd70Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="locstridActionText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="TutorialCategoriesLocId">
+		<object name="locstridMenus">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridFactionsAndConflict">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridHacking">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMissionAndProgression">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridNavigationAndDriving">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOnline">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWeapons">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWorldAndActivities">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

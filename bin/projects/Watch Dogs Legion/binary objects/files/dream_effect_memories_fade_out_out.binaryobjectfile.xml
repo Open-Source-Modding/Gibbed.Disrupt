@@ -1,0 +1,5 @@
+<file name="dream_effect_memories_fade_out_out" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

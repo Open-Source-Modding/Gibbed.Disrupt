@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RcmaterialconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="MaterialMapping">
+		<object name="MaterialMappings">
+			<field name="text_matMaterialResource" type="String"/>
+			<field name="matMaterialResource" type="BinHex"/>
+			<field name="text_sMaterialSlotName" type="String"/>
+			<field name="sMaterialSlotName" type="BinHex"/>
+		</object>
+	</object>
+</class>

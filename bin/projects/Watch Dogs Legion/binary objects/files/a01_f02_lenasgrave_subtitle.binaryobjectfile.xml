@@ -1,0 +1,5 @@
+<file name="a01_f02_lenasgrave_subtitle" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

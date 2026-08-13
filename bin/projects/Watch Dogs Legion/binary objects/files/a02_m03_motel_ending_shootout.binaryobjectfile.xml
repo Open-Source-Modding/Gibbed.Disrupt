@@ -1,0 +1,5 @@
+<file name="a02_m03_motel_ending_shootout" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

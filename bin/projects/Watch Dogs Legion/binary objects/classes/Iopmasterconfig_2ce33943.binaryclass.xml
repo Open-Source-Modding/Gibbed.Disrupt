@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Iopmasterconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="IOPSystemicBusEvents">
+		<field name="sndStartIOPSystemicBusEvent" type="BinHex"/>
+		<field name="sndStopIOPSystemicBusEvent" type="BinHex"/>
+		<field name="sndtpStartIOPSystemicBusEventType" type="BinHex"/>
+		<field name="sndtpStopIOPSystemicBusEventType" type="BinHex"/>
+		<object name="DisconnectionScreen">
+			<field name="text_sndIOPDisconnectSound" type="String"/>
+			<field name="sndIOPDisconnectSound" type="BinHex"/>
+			<field name="sndtpIOPDisconnectSoundType" type="BinHex"/>
+			<object name="locstridDisconnectHeaderText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridDisconnectMainText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

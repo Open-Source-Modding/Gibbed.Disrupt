@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Loottruckseamlesstargetvsinstigatedbountyhuntermatchingsessionconfig_9feaff1eParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="BinHex"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="BinHex"/>
+	<field name="text_hidName" type="BinHex"/>
+	<field name="hidName" type="BinHex"/>
+	<object name="GameSessionInfoConfig">
+		<field name="disNomadObjectId" type="BinHex"/>
+		<field name="hidSingleObject" type="BinHex"/>
+		<field name="hidKey" type="BinHex"/>
+		<field name="hidValidationFailed" type="BinHex"/>
+		<field name="hidName" type="BinHex"/>
+		<field name="fWeight" type="BinHex"/>
+		<field name="fScoreOffset" type="BinHex"/>
+		<field name="sDesiredClientCount" type="BinHex"/>
+		<field name="selCoopPreference" type="BinHex"/>
+		<field name="selCoopRestriction" type="BinHex"/>
+	</object>
+	<object hash="88350C41">
+		<field name="disNomadObjectId" type="BinHex"/>
+		<field name="hidSingleObject" type="BinHex"/>
+		<field name="hidKey" type="BinHex"/>
+		<field name="hidValidationFailed" type="BinHex"/>
+		<field name="hidName" type="BinHex"/>
+		<field name="fWeight" type="BinHex"/>
+		<field name="fScoreOffset" type="BinHex"/>
+		<field name="fDistanceMin" type="BinHex"/>
+		<field name="fDistanceIdealMin" type="BinHex"/>
+		<field name="fDistanceIdealMax" type="BinHex"/>
+		<field name="fDistanceMax" type="BinHex"/>
+		<field name="fDistanceWeight" type="BinHex"/>
+		<field name="fClosingSpeedMin" type="BinHex"/>
+		<field name="fClosingSpeedMax" type="BinHex"/>
+		<field name="fDistanceModulationFactor" type="BinHex"/>
+	</object>
+</class>

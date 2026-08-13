@@ -1,0 +1,5 @@
+<file name="xa02_m07_sc106_mcp_cryingbaby" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

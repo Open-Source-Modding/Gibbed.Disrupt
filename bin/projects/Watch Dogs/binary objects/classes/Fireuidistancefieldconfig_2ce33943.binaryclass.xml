@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Fireuidistancefieldconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="SDFFontThicknessMin" type="BinHex"/>
+	<field name="SDFFontThicknessMax" type="BinHex"/>
+	<field name="SDFFontSmoothingMin" type="BinHex"/>
+	<field name="SDFFontSmoothingMax" type="BinHex"/>
+	<field name="SDFOutlineWidth" type="BinHex"/>
+	<field name="SDFShadowStrength" type="BinHex"/>
+	<field name="SDFShadowAlpha" type="BinHex"/>
+	<field name="SDFShadowAngle" type="BinHex"/>
+</class>

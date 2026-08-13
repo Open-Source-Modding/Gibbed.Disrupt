@@ -1,0 +1,5 @@
+<file name="a02_m08a_sc050_scr_bedbugandrabbit_prerender" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

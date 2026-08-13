@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MadcameraparamsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selType" type="Enum"/>
+	<field name="text_fileAnimatedCamera" type="String"/>
+	<field name="fileAnimatedCamera" type="BinHex"/>
+	<field name="selRoleAttachTo" type="Enum"/>
+	<field name="selRoleLookAt" type="Enum"/>
+	<field name="fFOV" type="Float"/>
+	<field name="selRootTypePos" type="Enum"/>
+	<field name="vec3OffsetPos" type="BinHex"/>
+	<field name="selSmoothingTypePos" type="Enum"/>
+	<field name="fMovementTimePos" type="Float"/>
+	<field name="bReactToCollisions" type="Boolean"/>
+	<field name="bAllowCrossingTheLinePre" type="Boolean"/>
+	<field name="bAllowCrossingTheLinePost" type="Boolean"/>
+	<field name="bIsCloseUpCamera" type="Boolean"/>
+	<field name="selSmoothingTypeLookAt" type="Enum"/>
+	<field name="fMovementTimeLookAt" type="Float"/>
+	<field name="fFramingMinDistance" type="Float"/>
+	<field name="vec3FramingAdjustmentAtMin" type="BinHex"/>
+	<field name="fFramingMaxDistance" type="Float"/>
+	<field name="vec3FramingAdjustmentAtMax" type="BinHex"/>
+	<field name="vec3DollySpeed" type="BinHex"/>
+	<field name="vec3DollyStart" type="BinHex"/>
+	<field name="bDollyUseTarget" type="Boolean"/>
+	<field name="bAdjustForHeight" type="Boolean"/>
+	<field name="fHigherHeightCap" type="Float"/>
+	<field name="fHigherHeightAdjustment" type="Float"/>
+	<field name="fLowerHeightCap" type="Float"/>
+	<field name="fLowerHeightAdjustment" type="Float"/>
+	<field name="bShakeEnabled" type="Boolean"/>
+	<field name="selShakeType" type="Enum"/>
+	<field name="fShakeSpeed" type="Float"/>
+	<field name="fShakeAmplitude" type="Float"/>
+	<field name="bExposureOverride" type="Boolean"/>
+	<field name="fExposureValue" type="Float"/>
+	<field name="bDofOverride" type="Boolean"/>
+	<field name="fDofFstop" type="Float"/>
+	<field name="fDofNearPlanePercentage" type="Float"/>
+	<field name="fDofFarPlanePercentage" type="Float"/>
+	<field name="fDofFocusPointBlendSpeed" type="Float"/>
+	<field name="bDofStaticFocusPoint" type="Boolean"/>
+	<field name="fDofFocusPointDistance" type="Float"/>
+	<field name="selDofFocusPointReference" type="Enum"/>
+	<field name="fDofFocusPointOffset" type="Float"/>
+	<field name="plasmalightrigLightRig" type="BinHex"/>
+	<object name="targets">
+		<object name="Target">
+			<field name="selRole" type="Enum"/>
+			<field name="fWeight" type="Float"/>
+			<field name="selRootTypeLookAt" type="Enum"/>
+			<field name="vec3OffsetLookAt" type="BinHex"/>
+		</object>
+	</object>
+	<object name="speakersToHide">
+		<object name="Speaker">
+			<field name="selSpeaker" type="Enum"/>
+		</object>
+	</object>
+</class>

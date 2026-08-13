@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmodulesharedinventorysettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<field name="itemlistDefaultTeamInventoryItemList" type="BinHex"/>
+		<object name="RewardItems">
+			<object name="Item">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+				<field name="itemsItem" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Soundtagaudioswitchdb_24eb02daParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Fabric">
+		<object name="sndswtpFabricSwitch">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="FabricTagValues">
+			<object name="FabricTagSwitch">
+				<object name="tagcategoryselectionAudioSwitchTag">
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="tagTag" type="BinHex"/>
+				</object>
+				<object name="sndswvlAudioSwitchValue">
+					<field name="SoundId" type="BinHex"/>
+					<field name="SoundGuid" type="String"/>
+				</object>
+			</object>
+		</object>
+		<object name="sndswvlDefaultFabric">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+	<object name="Shoes">
+		<object name="sndswtpShoesSwitch">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="ShoeTagValues">
+			<object name="ShoeTagSwitch">
+				<object name="tagcategoryselectionAudioSwitchTag">
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="tagTag" type="BinHex"/>
+				</object>
+				<object name="sndswvlAudioSwitchValue">
+					<field name="SoundId" type="BinHex"/>
+					<field name="SoundGuid" type="String"/>
+				</object>
+			</object>
+		</object>
+		<object name="sndswvlDefaultShoe">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+	<object name="Gear">
+		<object name="sndswtpGearSwitch">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="GearTagValues">
+			<object name="GearTagSwitch">
+				<object name="tagcategoryselectionAudioSwitchTag">
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="tagTag" type="BinHex"/>
+				</object>
+				<object name="sndswvlAudioSwitchValue">
+					<field name="SoundId" type="BinHex"/>
+					<field name="SoundGuid" type="String"/>
+				</object>
+			</object>
+		</object>
+		<object name="sndswvlDefaultGear">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+</class>

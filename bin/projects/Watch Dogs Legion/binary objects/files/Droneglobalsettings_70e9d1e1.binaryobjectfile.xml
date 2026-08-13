@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Droneglobalsettings_70e9d1e1">
+	<object name="obj">
+		<inherit name="Droneglobalsettings_70e9d1e1Parameters"/>
+	</object>
+</file>

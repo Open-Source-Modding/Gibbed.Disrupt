@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WolfskinconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileConfigPath" type="String"/>
+	<field name="fileConfigPath" type="BinHex"/>
+	<field name="graphickitmodeltypeGraphicKitModelType" type="BinHex"/>
+	<field name="wolfskinitemdbDefaultDNA" type="BinHex"/>
+</class>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DgnarrativeconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Triggers">
+		<object name="Trigger">
+			<object name="TriggerCondition">
+				<field name="bIsRepeatable" type="Boolean"/>
+				<field name="bUseGlobalCooldown" type="Boolean"/>
+				<field name="fCooldown" type="Float"/>
+				<field name="bUseGlobalDelayToStartAfterTrigger" type="Boolean"/>
+				<field name="fMinTimeToStartAfterTrigger" type="Float"/>
+				<object name="Conditions">
+					<object name="Condition">
+						<field hash="6D1E1959" type="String"/>
+						<field name="selType" type="Enum"/>
+						<object name="Object">
+							<field name="fMaxRangeToPickNPC" type="Float"/>
+							<field name="selGroupBehaviorRole" type="Enum"/>
+							<object name="MatchingAgentStates">
+								<object name="State">
+									<field name="selNPCState" type="Enum"/>
+								</object>
+							</object>
+							<field name="text_SeenTriggerName" type="String"/>
+							<field name="SeenTriggerName" type="BinHex"/>
+							<field name="BlockingTriggerName" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="Configs">
+				<object name="dggroupbhvconfigConfig">
+					<field name="dggroupbhvconfigConfig" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_enemytypesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiValue" type="Int64"/>
+	<object name="EnemyTypes">
+		<object name="Types">
+			<field name="selFaction" type="Enum"/>
+			<object name="Archetypes">
+				<field name="text_archArchetypes" type="String"/>
+				<field name="archArchetypes" type="BinHex"/>
+				<object name="Archetypes">
+					<field name="text_archArchetypes" type="String"/>
+					<field name="archArchetypes" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

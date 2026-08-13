@@ -1,0 +1,32 @@
+<class name="SequenceParameters">
+    <object name="CCinematicSequence">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId"/>
+        <field name="hidIncremental"/>
+        <field name="bUseTimeNoSlowmo" type="Boolean"/>
+        <field name="bLoop" type="Boolean"/>
+        <field name="bResetEventOnLoop" type="Boolean"/>
+        <field hash="AEA7E7C7" type="String"/>
+        <field name="hidVersion" type="Enum"/>
+        <field name="bFramerateControl" type="Boolean"/>
+        <field name="bSkipable" type="Boolean"/>
+        <field name="bDisableMotionBlur" type="Boolean"/>
+        <field name="bFreezeEntityForPrepare" type="Boolean"/>
+		<inherit name="CSequenceTrackGroup"/>
+        <object name="SyncPoints">
+            <object name="CSequenceSyncPoint">
+                <field name="sName" type="String"/>
+                <field name="disUniqueId"/>
+                <field name="timeTime" type="Float"/>
+                <field name="selSyncPointType" type="Enum"/>
+                <field name="bPauseWhenReached" type="Boolean"/>
+                <field name="bPreloadAnimsAtThisPoint" type="Boolean"/>
+            </object>
+        </object>
+        <object name="Transition">
+            <field name="bToTransition" type="Boolean"/>
+			<field name="selTransitionType" type="Enum"/>
+            <field name="FromTransition"/>
+        </object>
+    </object>
+</class>

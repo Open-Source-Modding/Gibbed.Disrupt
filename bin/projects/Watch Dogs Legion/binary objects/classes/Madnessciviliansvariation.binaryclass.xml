@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MadnessciviliansvariationParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sDebugName" type="String"/>
+	<field name="text_archCivilianArchetype" type="String"/>
+	<field name="archCivilianArchetype" type="BinHex"/>
+	<field name="fLifePoints" type="Float"/>
+	<field name="iScorePoints" type="Int32"/>
+	<field name="iSoulsAmount" type="Int32"/>
+	<field name="fProportion" type="Float"/>
+	<field name="fDispersion" type="Float"/>
+	<field name="fWakeupDistance" type="Float"/>
+	<field name="fDodgeDistance" type="Float"/>
+	<field name="fDodgeAnticipationFactor" type="Float"/>
+	<field name="fDodgeAngle" type="Float"/>
+	<field name="fDodgeDuration" type="Float"/>
+	<field name="fDodgeCoolDownDuration" type="Float"/>
+	<field name="fCarSpeedLow" type="Float"/>
+	<field name="fCarSpeedHigh" type="Float"/>
+	<field name="text_archHeadFX" type="String"/>
+	<field name="archHeadFX" type="BinHex"/>
+	<field name="text_archBodyFX" type="String"/>
+	<field name="archBodyFX" type="BinHex"/>
+	<field name="text_archHandsFX" type="String"/>
+	<field name="archHandsFX" type="BinHex"/>
+	<field name="text_archFeetFX" type="String"/>
+	<field name="archFeetFX" type="BinHex"/>
+	<field name="text_archImpactFX" type="String"/>
+	<field name="archImpactFX" type="BinHex"/>
+	<field name="archDisappearanceFX" type="BinHex"/>
+	<field name="text_archExplosionForSoulFX" type="String"/>
+	<field name="archExplosionForSoulFX" type="BinHex"/>
+	<field name="text_archSoulFX" type="String"/>
+	<field name="archSoulFX" type="BinHex"/>
+	<field name="text_archSoulAbsorptionFX" type="String"/>
+	<field name="archSoulAbsorptionFX" type="BinHex"/>
+	<field name="peopleinfoPeopleSpawnInfo" type="BinHex"/>
+	<field name="civreactcontextReactionContext" type="BinHex"/>
+	<object name="canDodge">
+		<field name="Normal" type="Int64"/>
+		<field name="HighEnd" type="Int64"/>
+	</object>
+	<object name="BehaviorModifier">
+		<field name="bDontMove" type="Boolean"/>
+		<field name="bPanic" type="Boolean"/>
+		<field name="bExplodeOnDeath" type="Boolean"/>
+		<field name="bRunTowardsPlayer" type="Boolean"/>
+		<field name="text_archExplosion" type="String"/>
+		<field name="archExplosion" type="BinHex"/>
+		<field name="fCollisionRadius" type="Float"/>
+		<field name="fFrontalImpulseStrength" type="Float"/>
+		<field name="fLateralLowSpeedFactor" type="Float"/>
+		<field name="fLateralHighSpeedFactor" type="Float"/>
+	</object>
+</class>

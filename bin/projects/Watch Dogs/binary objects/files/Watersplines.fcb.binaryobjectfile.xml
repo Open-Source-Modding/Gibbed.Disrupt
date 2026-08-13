@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Watersplines">
+	<object name="WaterSplineNetwork">
+		<inherit name="Watersplines.fcbParameters"/>
+	</object>
+</file>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SystemicmainswitchParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selMainSwitchType" type="Enum"/>
+	<field name="censusmetaintrigueresolutionbucketOnSwitchActionBucket" type="BinHex"/>
+	<field name="bRequiresSystemicNarrative" type="Boolean"/>
+	<field name="censusactormemorydefinitionPostHackMemory" type="BinHex"/>
+	<field name="phonecommunicationsettingsPostHackSMSMessage" type="BinHex"/>
+	<object name="locstridMainSwitchText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackerspacesettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="CityLocationId" type="BinHex"/>
+	<field name="text_objlayHackerSpaceLayer" type="String"/>
+	<field name="objlayHackerSpaceLayer" type="BinHex"/>
+	<field name="entSpawnPointEntity" type="BinHex"/>
+	<field name="entExternalSpawnpointEntity" type="BinHex"/>
+	<field name="vecExternalSpawnpointPosSysOffset" type="BinHex"/>
+	<object name="IsHackerpaceEnabled">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="IsHackerspaceAvailableForAssignment">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

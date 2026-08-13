@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Scl_briefingconfig_2ce33943">
+	<object name="obj">
+		<inherit name="Scl_briefingconfig_2ce33943.objParameters"/>
+	</object>
+</file>

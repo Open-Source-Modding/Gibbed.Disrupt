@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uiworldexportsettingsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="OperativeIdleAnimationInMenu">
+		<field name="text_fileAnimationPath" type="String"/>
+		<field name="fileAnimationPath" type="BinHex"/>
+		<field name="sAnchorName" type="BinHex"/>
+		<field name="bUseForceDisplacement" type="Boolean"/>
+		<field name="vectorAnchorLocalPositionOffset" type="Vector3"/>
+		<field name="vectorAnchorLocalOrientationOffset" type="Vector3"/>
+		<field name="bKillLayerAnimations" type="Boolean"/>
+		<field name="fileAnimatedCamera" type="BinHex"/>
+		<field name="fAnimatedCameraBlendInTime" type="Float"/>
+		<field name="fAnimatedCameraBlendOutTime" type="Float"/>
+		<field name="bAnimatedCameraDisableCollision" type="Boolean"/>
+		<field name="bNoCollisionInteraction" type="Boolean"/>
+		<field name="bAllowSafeCutInBodyAnim" type="Boolean"/>
+		<field name="bAllowFaceMaskLayerState" type="Boolean"/>
+		<object name="AnchorPartNames"/>
+	</object>
+</class>

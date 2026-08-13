@@ -1,0 +1,11 @@
+<class name="CAnimationSequenceTrack">
+    <object name="CAnimationSequenceTrack">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field name="22958F3A"/>
+        <field name="disMuted"/>
+        <inherit name="CAnimationClip"/>
+		<inherit name="CSecondaryMotionColliderClip"/>
+    </object>
+</class>

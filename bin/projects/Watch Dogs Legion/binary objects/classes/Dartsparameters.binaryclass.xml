@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DartsparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fSpeed" type="Float"/>
+	<field name="fSpeedVariance" type="Float"/>
+	<field name="fGravity" type="Float"/>
+	<field name="fOrientationRandomness" type="Float"/>
+	<field name="fWobbleFrequency" type="Float"/>
+	<field name="fWobbleOrientationMagnitude" type="Float"/>
+	<field name="fWobbleOffsetMagnitude" type="Float"/>
+	<field name="fWobbleOffsetDelay" type="Float"/>
+	<field name="fCollisionLimit" type="Float"/>
+	<field name="fCollisionCorrection" type="Float"/>
+	<field name="fCollisionCorrectionTime" type="Float"/>
+	<field name="fCollisionReaction" type="Float"/>
+	<field name="fPostHitOscillationFrequency" type="Float"/>
+	<field name="fPostHitOscillationMagnitude" type="Float"/>
+	<field name="fPostHitOscillationFade" type="Float"/>
+	<field name="fCenterOfMassOffset" type="Float"/>
+	<field name="text_sSoundTriggerDialogEvent" type="String"/>
+	<field name="sSoundTriggerDialogEvent" type="BinHex"/>
+	<field name="bCanPlayBark2D" type="Boolean"/>
+	<field name="fPlayerUIRotation" type="Float"/>
+	<field name="fOpponentUIRotation" type="Float"/>
+	<field name="fLogMessageDuration" type="Float"/>
+	<object name="ReticleParameters">
+		<field name="fTargetDiameter" type="Float"/>
+		<field name="fTargetVisibleTimer" type="Float"/>
+		<field name="fTargetSwayRadius" type="Float"/>
+		<field name="fTargetSwayMacroSpeed" type="Float"/>
+		<field name="fTargetSwaySpeed" type="Float"/>
+		<field name="fDrunkLevelThreshold" type="Float"/>
+		<field name="fArrowInaccuracyThreshold" type="Float"/>
+		<object name="curveTargetScaleCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTargetUserForce">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTargetSpeedMin">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTargetSpeedMax">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTargetInertia">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTargetSway">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="ReticleParameters">
+			<field name="fTargetDiameter" type="Float"/>
+			<field name="fTargetVisibleTimer" type="Float"/>
+			<field name="fTargetSwayRadius" type="Float"/>
+			<field name="fTargetSwayMacroSpeed" type="Float"/>
+			<field name="fTargetSwaySpeed" type="Float"/>
+			<field name="fDrunkLevelThreshold" type="Float"/>
+			<field name="fArrowInaccuracyThreshold" type="Float"/>
+			<object name="curveTargetScaleCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveTargetUserForce">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveTargetSpeedMin">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveTargetSpeedMax">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveTargetInertia">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveTargetSway">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+	</object>
+	<object name="StimsReactionDartsHighValue">
+		<object name="GeneratedStims">
+			<object name="Stim">
+				<field name="stims" type="BinHex"/>
+				<field name="vectorLocalTranslationOffset" type="Vector3"/>
+				<field name="vectorWorldTranslationOffset" type="Vector3"/>
+				<field name="bIsPersistent" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+	<object name="StimsReactionDartsMiss">
+		<object name="GeneratedStims">
+			<object name="Stim">
+				<field name="stims" type="BinHex"/>
+				<field name="vectorLocalTranslationOffset" type="Vector3"/>
+				<field name="vectorWorldTranslationOffset" type="Vector3"/>
+				<field name="bIsPersistent" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+	<object name="AnimatedCameraTrackCollectionResource">
+		<object name="AnimatedCamera">
+			<field name="text_fileTrackColectionPath" type="String"/>
+			<field name="fileTrackColectionPath" type="BinHex"/>
+		</object>
+	</object>
+	<object name="WinRewardRulesmith">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="BonusWinRewardRulesmith">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="DartsHumanConfigs">
+		<object name="HumanConfigs">
+			<field name="humanconfigHumanConfig" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridPlayerJoinedTitle">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPlayerJoinedSubtitle">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPlayerLeftTitle">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPlayerLeftSubtitle">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="NoSkillStrategy">
+		<field name="iThrowNumberMin" type="Int32"/>
+		<field name="iThrowNumberMax" type="Int32"/>
+		<field name="iCheckOutThreshold" type="Int32"/>
+		<field name="fErrorSize" type="Float"/>
+		<field name="fErrorStepSize" type="Float"/>
+		<field name="fEheckOutErrorSize" type="Float"/>
+		<field name="fCheckOutErrorStepSize" type="Float"/>
+		<field name="iRewardIndex" type="Int32"/>
+		<field name="selRank" type="Enum"/>
+		<object name="TargetNumbers"/>
+	</object>
+	<object name="AmateurStrategy">
+		<field name="iThrowNumberMin" type="Int32"/>
+		<field name="iThrowNumberMax" type="Int32"/>
+		<field name="iCheckOutThreshold" type="Int32"/>
+		<field name="fErrorSize" type="Float"/>
+		<field name="fErrorStepSize" type="Float"/>
+		<field name="fEheckOutErrorSize" type="Float"/>
+		<field name="fCheckOutErrorStepSize" type="Float"/>
+		<field name="iRewardIndex" type="Int32"/>
+		<field name="selRank" type="Enum"/>
+		<object name="TargetNumbers"/>
+	</object>
+	<object name="ExpertStrategy">
+		<field name="iThrowNumberMin" type="Int32"/>
+		<field name="iThrowNumberMax" type="Int32"/>
+		<field name="iCheckOutThreshold" type="Int32"/>
+		<field name="fErrorSize" type="Float"/>
+		<field name="fErrorStepSize" type="Float"/>
+		<field name="fEheckOutErrorSize" type="Float"/>
+		<field name="fCheckOutErrorStepSize" type="Float"/>
+		<field name="iRewardIndex" type="Int32"/>
+		<field name="selRank" type="Enum"/>
+		<object name="TargetNumbers"/>
+	</object>
+	<object name="ProfessionalStrategy">
+		<field name="iThrowNumberMin" type="Int32"/>
+		<field name="iThrowNumberMax" type="Int32"/>
+		<field name="iCheckOutThreshold" type="Int32"/>
+		<field name="fErrorSize" type="Float"/>
+		<field name="fErrorStepSize" type="Float"/>
+		<field name="fEheckOutErrorSize" type="Float"/>
+		<field name="fCheckOutErrorStepSize" type="Float"/>
+		<field name="iRewardIndex" type="Int32"/>
+		<field name="selRank" type="Enum"/>
+		<object name="TargetNumbers"/>
+	</object>
+	<object name="Rank1Probabilities">
+		<field name="fNoSkillProbability" type="Float"/>
+		<field name="fAmateurProbability" type="Float"/>
+		<field name="fExportProbability" type="Float"/>
+		<field name="fProfessionalProbability" type="Float"/>
+	</object>
+	<object name="Rank2Probabilities">
+		<field name="fNoSkillProbability" type="Float"/>
+		<field name="fAmateurProbability" type="Float"/>
+		<field name="fExportProbability" type="Float"/>
+		<field name="fProfessionalProbability" type="Float"/>
+	</object>
+	<object name="Rank3Probabilities">
+		<field name="fNoSkillProbability" type="Float"/>
+		<field name="fAmateurProbability" type="Float"/>
+		<field name="fExportProbability" type="Float"/>
+		<field name="fProfessionalProbability" type="Float"/>
+	</object>
+</class>

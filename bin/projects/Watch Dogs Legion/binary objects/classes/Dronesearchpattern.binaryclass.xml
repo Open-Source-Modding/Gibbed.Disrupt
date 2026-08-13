@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronesearchpatternParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selOrientation" type="Enum"/>
+	<field name="selLoopType" type="Enum"/>
+	<object name="curveSearchPattern">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uirewardtrackoverridesdb_10c6a3a2Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="RewardOverrideInfos">
+		<object name="RewardOverrideInfo">
+			<field name="text_sId" type="String"/>
+			<field name="sId" type="BinHex"/>
+			<field name="texturedbobjectSmallImage" type="BinHex"/>
+			<field name="texturedbobjectBigImage" type="BinHex"/>
+			<object name="locstridName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridType">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

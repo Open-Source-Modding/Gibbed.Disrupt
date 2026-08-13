@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Retargeting_boneoffsetsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="BoneOffsets">
+		<object name="SRetargetingBoneOffset">
+			<field name="text_BoneName" type="String"/>
+			<field name="BoneName" type="BinHex"/>
+			<field name="Offset" type="BinHex"/>
+		</object>
+	</object>
+	<object name="BoneLinks">
+		<object name="SRetargetingBoneLinking">
+			<field name="text_BoneToAdjust" type="String"/>
+			<field name="BoneToAdjust" type="BinHex"/>
+			<field name="text_BoneParent" type="String"/>
+			<field name="BoneParent" type="BinHex"/>
+			<field name="text_BoneOffsetReferential" type="String"/>
+			<field name="BoneOffsetReferential" type="BinHex"/>
+			<field name="vecOffset" type="BinHex"/>
+			<field name="angvecRotOffset" type="BinHex"/>
+			<field name="bRotation" type="Boolean"/>
+			<field name="bTranslation" type="Boolean"/>
+		</object>
+	</object>
+</class>

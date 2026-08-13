@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ProfilingpathpresetParameters">
+	<inherit name="SharedParameters"/>
+	<field name="colorLineColor" type="VectorColor"/>
+	<field name="fLineColorAlpha" type="Float"/>
+	<field name="fLineSize" type="Float"/>
+	<field name="bIsKeyLocation" type="Boolean"/>
+	<field name="fLineZOffset" type="Float"/>
+	<field name="nMultiZLineNumber" type="Enum"/>
+	<field name="fZOffsetPerMultiLine" type="Float"/>
+	<field name="bEnclosed" type="Boolean"/>
+	<field name="selOrientation" type="Enum"/>
+</class>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EditormaterialoverridesetParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Slots">
+        <object name="Slot">
+		    <field name="text_szSlotName" type="String"/>
+		    <field name="szSlotName" type="BinHex"/>
+		    <field name="matMaterial" type="String"/>
+        </object>
+    </object>
+</class>

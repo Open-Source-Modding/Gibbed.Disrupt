@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlayergamepreferencesParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ContractTypePreferences">
+		<object name="ContractTypePreference">
+			<field name="text_stridNameId" type="String"/>
+			<field name="stridNameId" type="BinHex"/>
+			<field name="text_typeMissionPropertiesLinkedContractType" type="String"/>
+			<field name="typeMissionPropertiesLinkedContractType" type="BinHex"/>
+			<object name="locstridName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPropositionTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPropositionDesc">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

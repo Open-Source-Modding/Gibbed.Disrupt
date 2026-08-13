@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Playericondb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="colorLocalPlayerColor" type="VectorColor"/>
+	<field name="colorObjectivePlayerColor" type="VectorColor"/>
+	<field name="colorNeutralPlayerColor" type="VectorColor"/>
+	<field name="colorTeammatePlayerColor" type="VectorColor"/>
+	<field name="colorEnemyPlayerColor" type="VectorColor"/>
+	<field name="mapicondescDefaultPlayerMapIcon" type="BinHex"/>
+	<field name="mapicondescFriendlyPlayerMapIcon" type="BinHex"/>
+	<field name="mapicondescDefaultPlayerRedMapIcon" type="BinHex"/>
+	<field name="mapicondescDefaultPlayerGreenMapIcon" type="BinHex"/>
+	<object name="locstridNeutralPlayerMapTypeTag">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEnemyPlayerMapTypeTag">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTeammatePlayerMapTypeTag">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

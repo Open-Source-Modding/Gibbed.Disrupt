@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmoduleelementssettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<object name="Elements">
+			<object name="Element">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+				<object name="IsActive">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+				<object name="Atoms">
+					<object hash="80724A45">
+					<field hash="AD6C934B" type="String"/>
+					<field name="progressionatomAtomId" type="BinHex"/>
+					</object>
+				</object>
+				<object name="GlobalAtoms">
+					<object hash="80724A45">
+					<field hash="AD6C934B" type="String"/>
+					<field name="progressionatomAtomId" type="BinHex"/>
+					</object>
+				</object>
+				<object name="Items">
+					<object name="Item">
+						<field name="itemsItem" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

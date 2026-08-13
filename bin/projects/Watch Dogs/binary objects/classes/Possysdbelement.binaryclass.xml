@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PossysdbelementParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_possysdescriptorDescriptorType" type="String"/>
+	<field name="possysdescriptorDescriptorType" type="BinHex"/>
+	<object name="PosSysDescriptor">
+		<field name="vectorPositionOffset" type="Vector3"/>
+		<field name="bIsOccludable" type="Boolean"/>
+		<field name="fOcclusionThresholdIN" type="Float"/>
+		<field name="fOcclusionThresholdOUT" type="Float"/>
+		<field name="bDisplayInWorld" type="Boolean"/>
+		<field name="bDisplayInMiniMap" type="Boolean"/>
+		<field name="bDisplayInWorldMap" type="Boolean"/>
+		<field name="bDisplayInRaids" type="Boolean"/>
+		<field name="fRadius" type="Float"/>
+		<field name="selZoneType" type="Enum"/>
+		<field name="selActivityTyp" type="Enum"/>
+		<field name="text_sFakeMissionID" type="String"/>
+		<field name="sFakeMissionID" type="BinHex"/>
+		<object name="locstridWorldMapIconLabel">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWorldMapInteractionLabel">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWorldMapDescriptionLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<field name="selMissionType" type="Enum"/>
+		<field name="selObjectiveType" type="Enum"/>
+		<object name="locstridDefaultObjectiveText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<field name="mapicondescMapIconDescription" type="BinHex"/>
+		<field name="selPosSysLayer" type="Enum"/>
+		<field name="bCanBind" type="Boolean"/>
+		<field name="bDisplayDescription" type="Boolean"/>
+		<field name="bDisplayDistance" type="Boolean"/>
+		<field name="bDefaultMapOnly" type="Boolean"/>
+		<field name="fNearScale" type="Float"/>
+		<field name="fNearScaleDistance" type="Float"/>
+		<field name="fFarScale" type="Float"/>
+		<field name="fFarScaleDistance" type="Float"/>
+		<field name="selOnlineActivityType" type="Enum"/>
+		<field name="selOnlineActivitySubType" type="Enum"/>
+		<field name="bHaveIndex" type="Boolean"/>
+		<field name="uiIndex" type="UInt32"/>
+		<field name="bIsPostLaunchContent" type="Boolean"/>
+		<field name="bVisibleDuringCombat" type="Boolean"/>
+		<field name="bVisibleDuringFelony" type="Boolean"/>
+		<field name="bVisibleWhenPlayerIsInRedZone" type="Boolean"/>
+		<field name="bVisibleDuringCelebration" type="Boolean"/>
+		<field name="bVisibleDuringOnboarding" type="Boolean"/>
+		<object name="locstridDefaultDescriptionText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CharactercardParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ProgressionElements">
+		<object name="ProgressionElement">
+			<field name="text_progressionelementProgressionElement" type="String"/>
+			<field name="progressionelementProgressionElement" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Blurbs">
+		<object name="Blurb">
+			<field name="text_sLabel" type="String"/>
+			<field name="sLabel" type="BinHex"/>
+			<object name="CensusFilter">
+				<object name="InclusionFilter">
+					<object name="tagcategoryselectionblackboardProfile">
+						<object name="TagCategorySelectionArray">
+							<object name="TagCategorySelection">
+								<field name="text_hid_DTCTH_ClassName" type="String"/>
+								<field name="hid_DTCTH_ClassName" type="BinHex"/>
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="tagTag" type="BinHex"/>
+								<object name="Tags"/>
+							</object>
+						</object>
+						<object name="TagDescriptorUI">
+							<field name="text_hid_DTCTH_ClassName" type="String"/>
+							<field name="hid_DTCTH_ClassName" type="BinHex"/>
+							<object name="TagCategorySelectionDescriptors">
+								<object name="TagCategorySelectionDescriptor">
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="bMultiSelect" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="ExclusionFilter">
+					<object name="tagcategoryselectionblackboardProfile">
+						<object name="TagCategorySelectionArray">
+							<object name="TagCategorySelection">
+								<field name="text_hid_DTCTH_ClassName" type="String"/>
+								<field name="hid_DTCTH_ClassName" type="BinHex"/>
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="tagTag" type="BinHex"/>
+								<object name="Tags"/>
+							</object>
+						</object>
+						<object name="TagDescriptorUI">
+							<field name="text_hid_DTCTH_ClassName" type="String"/>
+							<field name="hid_DTCTH_ClassName" type="BinHex"/>
+							<object name="TagCategorySelectionDescriptors">
+								<object name="TagCategorySelectionDescriptor">
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="bMultiSelect" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="UIDisplays">
+				<object name="UIDisplay">
+					<object name="locstridUIDisplay">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

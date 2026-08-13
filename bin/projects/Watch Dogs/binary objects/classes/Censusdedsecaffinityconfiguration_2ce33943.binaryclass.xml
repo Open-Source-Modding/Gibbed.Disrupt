@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Censusdedsecaffinityconfiguration_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ChanceForPositiveAffinityInOppressedBorough">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="ChanceForPositiveAffinityInDefiantBorough">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="MemoriesToApplyOnBoroughUprising">
+		<object name="Entry">
+			<field name="districtBorough" type="BinHex"/>
+			<field name="censusactormemorydefinitionMemory" type="BinHex"/>
+		</object>
+	</object>
+	<object name="OccupationGroupsToForceNegativeAffinity">
+		<object name="tagcategoryselectionTag">
+			<field name="text_UITagCategorySelectionClassID" type="String"/>
+			<field name="UITagCategorySelectionClassID" type="BinHex"/>
+			<field name="tagcategoryUITagCategory" type="BinHex"/>
+			<field name="tagcategoryTagCategory" type="BinHex"/>
+			<field name="tagTag" type="BinHex"/>
+		</object>
+	</object>
+	<object name="OccupationGroupsToForcePositiveAffinity"/>
+	<object name="OccupationGroupsThatDoNotWantBoroughUprising">
+		<object name="tagcategoryselectionTag">
+			<field name="text_UITagCategorySelectionClassID" type="String"/>
+			<field name="UITagCategorySelectionClassID" type="BinHex"/>
+			<field name="tagcategoryUITagCategory" type="BinHex"/>
+			<field name="tagcategoryTagCategory" type="BinHex"/>
+			<field name="tagTag" type="BinHex"/>
+		</object>
+	</object>
+</class>

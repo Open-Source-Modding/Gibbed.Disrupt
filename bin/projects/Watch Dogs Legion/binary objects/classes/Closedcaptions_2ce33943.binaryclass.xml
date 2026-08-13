@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Closedcaptions_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ClosedCaptions">
+		<object name="ClosedCaption">
+			<field name="Name" type="String"/>
+			<field name="text_sndSoundEvent" type="String"/>
+			<field name="sndSoundEvent" type="BinHex"/>
+			<field name="closedcaptionsubgroupSubGroup" type="BinHex"/>
+			<field name="sCloseCaptionName" type="String"/>
+			<object name="locstridClosedCaption">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="TimingInformation">
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bIsContinuousSound" type="Boolean"/>
+			</object>
+			<object name="DisplayInformation">
+				<field name="selSubtitleType" type="Enum"/>
+			</object>
+		</object>
+	</object>
+</class>

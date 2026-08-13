@@ -1,0 +1,21 @@
+<class name="CDialogClip">
+    <object name="CDialogClip">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId" type="BinHex"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field name="timeStartTime" type="Float"/>
+        <field name="timeDuration" type="Float"/>
+        <field name="timeEndTime" type="Float"/>
+        <field name="hidResizable" type="BinHex"/>
+        <field name="disMuted" type="BinHex"/>
+        <field name="sndSoundId" type="BinHex"/>
+        <field name="bFollowEntity" type="Boolean"/>
+        <field name="bForceStop" type="Boolean"/>
+        <field name="bAlwaysTrigger" type="Boolean"/>
+        <field name="bPlayFacialAnimation" type="Boolean"/>
+        <field name="bShowSubTitles" type="Boolean"/>
+        <object name="locstridLocalizationID">
+            <field name="LocalizationId" type="Int64"/>
+        </object>
+	</object>
+</class>

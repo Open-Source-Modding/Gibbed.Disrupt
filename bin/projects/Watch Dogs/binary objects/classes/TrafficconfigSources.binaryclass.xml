@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TrafficconfigSourcesParameters">
+	<object name="EnvelopeType">
+		<field name="selNormal" type="Enum"/>
+		<field name="selHighEnd" type="Enum"/>
+	</object>
+    <object name="fMinUnSpawnRadiusFOV">
+        <field name="Normal" type="Float"/>
+        <field name="HighEnd" type="Float"/>
+    </object>
+	<object name="SafeSphere">
+		<object name="Radius">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+	</object>
+	<object name="MinUnspawnRadiusFOV">
+		<field name="Normal" type="Float"/>
+		<field name="HighEnd" type="Float"/>
+	</object>
+	<object name="FirstSphere">
+		<object name="Radius">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="UnspawnExtraRadius">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="Offset">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="RadiusMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="OffsetMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="MinSpeedForDynamicChange">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="MaxSpeedForDynamicChange">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="SpeedAtRadiusMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="SpeedAtOffsetMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+	</object>
+	<object name="SecondSphere">
+		<object name="Radius">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="UnspawnExtraRadius">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="Offset">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="RadiusMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="OffsetMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="MinSpeedForDynamicChange">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="MaxSpeedForDynamicChange">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="SpeedAtRadiusMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="SpeedAtOffsetMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+	</object>
+	<object name="ThirdSphere">
+		<object name="Radius">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="UnspawnExtraRadius">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="Offset">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="RadiusMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="OffsetMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="MinSpeedForDynamicChange">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="MaxSpeedForDynamicChange">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="SpeedAtRadiusMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+		<object name="SpeedAtOffsetMax">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+	</object>
+    <object name="AgressiveSphere">
+      <object name="Radius">
+        <field name="Normal" type="Float"/>
+        <field name="HighEnd" type="Float"/>
+      </object>
+    </object>
+    <object name="InnerSphere">
+      <object name="Radius">
+        <field name="Normal" type="Float"/>
+        <field name="HighEnd" type="Float"/>
+      </object>
+    </object>
+</class>

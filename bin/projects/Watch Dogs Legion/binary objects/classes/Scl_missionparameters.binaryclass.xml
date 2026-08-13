@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_missionparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="strActivationLayer" type="String"/>
+	<field name="strMissionLayer" type="String"/>
+	<field name="entMissionStartTrigger" type="BinHex"/>
+	<field name="entMapPoint" type="BinHex"/>
+	<field name="entMainMissionMapPoint" type="BinHex"/>
+	<field name="entCamera" type="BinHex"/>
+	<field name="entForbiddenZoneId" type="BinHex"/>
+	<field name="entLaneRestrictionControllerId" type="BinHex"/>
+	<field name="entMissionAreaWarningId" type="BinHex"/>
+	<field name="entMissionAreaFelonyId" type="BinHex"/>
+	<field name="entWarningZoneId" type="BinHex"/>
+	<field name="entDestinationId" type="BinHex"/>
+	<field name="bCanTargetFleeAway" type="Boolean"/>
+	<field name="uMaxSniperCount" type="Int64"/>
+	<object name="PatrolParameters">
+		<field name="hidSingleObject" type="Boolean"/>
+		<field name="hidName" type="BinHex"/>
+		<field name="hidKey" type="BinHex"/>
+		<field name="fProportionOfPatrol" type="Float"/>
+		<field name="uiMinPatrolPoints" type="Int64"/>
+		<field name="uiMaxPatrolPoints" type="Int64"/>
+		<field name="fMinDistanceBetweenPatrolPoints" type="Float"/>
+		<field name="fMaxDistanceBetweenPatrolPoints" type="Float"/>
+		<field name="fMinProportionOfPatrolStops" type="Float"/>
+		<field name="fMinStopDelay" type="Float"/>
+		<field name="fMaxStopDelay" type="Float"/>
+	</object>
+	<object name="Platform">
+		<field name="bExcludedFromCurrentGen" type="Boolean"/>
+	</object>
+	<object name="ExclusionGroup">
+		<object name="ExclusionGroup">
+			<field name="ExclusionGroup" type="BinHex"/>
+		</object>
+	</object>
+</class>

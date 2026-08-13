@@ -1,0 +1,160 @@
+<class name="CombinedMoveFile">
+  <object name="PMSVALUEDESCLIST" />
+  <object name="ANIMPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="text_AnimID" type="String" />
+      <field name="AnimID" type="BinHex" />
+    </object>
+  </object>
+  <object name="BLENDPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="BlendDurationFrame" type="BinHex" />
+      <field name="BlendDisplacementDurationFrame" type="Enum" />
+      <field name="BlendDisplacementMode" type="BinHex" />
+      <field name="selBlendType" type="Enum" />
+      <field name="BlendFactor" type="BinHex" />
+      <field name="BlendInc" type="Boolean" />
+    </object>
+  </object>
+  <object name="CLIPPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="ClipStartFrame" type="BinHex" />
+      <field name="ClipLateStartFrame" type="BinHex" />
+      <field name="ClipSafeCutFrame" type="BinHex" />
+      <field name="ClipCutFrame" type="Enum" />
+      <field name="ClipEndFrame" type="Enum" />
+      <field name="Loop" type="Boolean" />
+    </object>
+  </object>
+  <object name="LAYERPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="selLayerMode" type="BinHex" />
+      <field name="selSetWeight" type="BinHex" />
+      <field name="Root" type="Float" />
+      <field name="LowerBack" type="Float" />
+      <field name="MiddleBack" type="Float" />
+      <field name="UpperBack" type="Float" />
+      <field name="LUpperArm" type="Float" />
+      <field name="LForeArm" type="Float" />
+      <field name="LHand" type="Float" />
+      <field name="RUpperArm" type="Float" />
+      <field name="RForeArm" type="Float" />
+      <field name="RHand" type="Float" />
+      <field name="Neck" type="Float" />
+      <field name="Head" type="Float" />
+      <field name="LThigh" type="Float" />
+      <field name="LCalf" type="Float" />
+      <field name="LFoot" type="Float" />
+      <field name="LToe" type="Float" />
+      <field name="RThigh" type="Float" />
+      <field name="RCalf" type="Float" />
+      <field name="RFoot" type="Float" />
+      <field name="RToe" type="Float" />
+      <field name="HeadRoot" type="Float" />
+      <field name="Displacement" type="BinHex" />
+    </object>
+  </object>
+  <object name="LOOAKATPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="IsLookAtAllowed" type="Boolean" />
+      <field name="DownMax" type="Float" />
+      <field name="UpMax" type="Float" />
+      <field name="LeftMax" type="Float" />
+      <field name="RightMax" type="Float" />
+    </object>
+  </object>
+  <object name="MOVEBLENDPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="text_MoveBlendID" type="String" />
+      <field name="MoveBlendID" type="BinHex" />
+    </object>
+  </object>
+  <object name="MOVESTATEPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="text_MoveStateID" type="String" />
+      <field name="MoveStateID" type="BinHex" />
+    </object>
+  </object>
+  <object name="PMSVALUEPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="text_PMSValue" type="String" />
+      <field name="PMSValue" type="BinHex" />
+    </object>
+  </object>
+  <object name="RAGDOLLPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="PhysicsStartFrame" type="Enum" />
+      <field name="PhysicsBlend" type="BinHex" />
+      <field name="PhysicsBlendInDelay" type="Float" />
+      <field name="selPhysicsRagdollController" type="BinHex" />
+      <object name="RigidBodyControllerPreset">
+        <field name="Value" type="Float" />
+        <field name="CriteriaValue" type="Float" />
+      </object>
+      <object name="PoweredConstraintPreset">
+        <field name="Value" type="Float" />
+        <field name="CriteriaValue" type="Float" />
+      </object>
+    </object>
+  </object>
+  <object name="SECONDARYMOTIONPARAM_VALUES">
+    <object name="something">
+      <field name="hash" type="BinHex" />
+      <field name="AnimBlendRatio" type="Float" />
+      <field name="AnimInjectionRatio" type="Float" />
+    </object>
+  </object>
+  <object name="ANIMPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="BLENDPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="CLIPPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="LAYERPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="LOOAKATPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="MOVEBLENDPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="MOVESTATEPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="PMSVALUEPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="RAGDOLLPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="SECONDARYMOTIONPARAM_FIXUPS">
+    <field name="offsetsArray" type="BinHex" />
+    <field name="hashesArray" type="BinHex" />
+  </object>
+  <object name="PerMoveResourceInfo">
+    <field name="sizes" type="BinHex" />
+    <field name="rootNodeIds" type="BinHex" />
+  </object>
+</class>

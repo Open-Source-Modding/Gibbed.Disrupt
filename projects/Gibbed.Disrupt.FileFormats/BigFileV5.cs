@@ -174,7 +174,10 @@ namespace Gibbed.Disrupt.FileFormats
 
             if (IsKnownVersion(version, platform, compressionVersion, nameHashVersion) == false)
             {
-                throw new FormatException("unknown version/platform/CV/NHV combination");
+                Console.Error.WriteLine(
+                    "WARNING: unknown version/platform/CV/NHV combination " +
+                    "(version={0}, platform={1}, CV={2}, NHV={3}), proceeding anyway.",
+                    version, platform, compressionVersion, nameHashVersion);
             }
 
             var archiveHash = input.ReadValueU64(endian);

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Digitalboardsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="BoardTexts">
+		<object name="locsectionidBoardText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="BoardTexts">
+			<object name="locsectionidBoardText">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="TexturePaths">
+		<object name="TexturePaths">
+			<field name="fileTextureName" type="String"/>
+		</object>
+	</object>
+</class>

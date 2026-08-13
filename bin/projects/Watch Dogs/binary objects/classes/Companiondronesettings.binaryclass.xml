@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CompaniondronesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="companiondroneactiondefIdleAction" type="BinHex"/>
+	<field name="companiondroneactiondefActiveAction" type="BinHex"/>
+</class>

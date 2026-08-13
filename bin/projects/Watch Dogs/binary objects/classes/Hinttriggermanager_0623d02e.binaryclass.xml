@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Hinttriggermanager_0623d02eParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TutorialsList">
+		<object name="Tutorials">
+			<field name="text_progressionplayeractionTriggerAction" type="String"/>
+			<field name="progressionplayeractionTriggerAction" type="BinHex"/>
+			<field name="iPriority" type="Int32"/>
+			<field name="fDisplayTime" type="Float"/>
+			<field name="bIsFullscreen" type="Boolean"/>
+			<field name="bOncePerSession" type="Boolean"/>
+			<field name="bAllowOnInactiveOperatives" type="Boolean"/>
+			<field name="itemsTutorial" type="BinHex"/>
+			<field name="text_CompletedAction" type="String"/>
+			<field name="CompletedAction" type="BinHex"/>
+			<field name="fReTriggerTime" type="Float"/>
+			<object name="CanShowTutorial">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="FullscreenTutorial">
+				<object name="FullScreenTutorials"/>
+				<object name="FullScreenTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

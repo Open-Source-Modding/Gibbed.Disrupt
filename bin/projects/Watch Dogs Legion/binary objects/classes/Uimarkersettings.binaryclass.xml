@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UimarkersettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_uimarkerdescriptorDescriptorType" type="String"/>
+	<field name="uimarkerdescriptorDescriptorType" type="BinHex"/>
+	<object name="UIMarkerDescriptor">
+		<field name="bUseEnemyPriorityManagement" type="Boolean"/>
+		<field name="EntityManagementPriority" type="BinHex"/>
+		<field name="EntityManagementSlot" type="BinHex"/>
+		<field name="fScaleFactor" type="Float"/>
+		<object name="DownloadTransferTypeSettings">
+			<field name="colorTextColor" type="VectorColor"/>
+			<field name="fAlpha" type="Float"/>
+			<object name="locstridLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="UploadTransferTypeSettings">
+			<field name="colorTextColor" type="VectorColor"/>
+			<field name="fAlpha" type="Float"/>
+			<object name="locstridLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="EraseTransferTypeSettings">
+			<field name="colorTextColor" type="VectorColor"/>
+			<field name="fAlpha" type="Float"/>
+			<object name="locstridLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="SearchingTransferTypeSettings">
+			<field name="colorTextColor" type="VectorColor"/>
+			<field name="fAlpha" type="Float"/>
+			<object name="locstridLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<field name="uicolorpalettesettingsStunnedShort" type="BinHex"/>
+		<field name="uicolorpalettesettingsStunnedMedium" type="BinHex"/>
+		<field name="uicolorpalettesettingsStunnedLong" type="BinHex"/>
+		<field name="uicolorpalettesettingsConflict" type="BinHex"/>
+		<field name="uicolorpalettesettingsConflictEnforcer" type="BinHex"/>
+		<field name="uicolorpalettesettingsAlertEnforcer" type="BinHex"/>
+		<field name="uicolorpalettesettingsSearchEnforcer" type="BinHex"/>
+		<field name="uicolorpalettesettingsSearch" type="BinHex"/>
+		<field name="uicolorpalettesettingsAlertSoft" type="BinHex"/>
+		<field name="uicolorpalettesettingsAlertHard" type="BinHex"/>
+		<field name="uicolorpalettesettingsWarnArrest" type="BinHex"/>
+		<field name="uicolorpalettesettingsSmellTracking" type="BinHex"/>
+		<field name="uicolorpalettesettingsDetecting" type="BinHex"/>
+		<field name="uisoundOnMovement" type="BinHex"/>
+		<field name="uicolorpalettesettingsHackable" type="BinHex"/>
+		<field name="uicolorpalettesettingsNotHackable" type="BinHex"/>
+		<field name="uicolorpalettesettingsHackableWithPenalty" type="BinHex"/>
+		<field name="fMaxDistanceToHide" type="Float"/>
+		<field name="fMinDistanceToHide" type="Float"/>
+		<field name="uicolorpalettesettingsNeutralColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsDeadColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsEnemyColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsInGroupColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsCoopColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsLocalColor" type="BinHex"/>
+		<field name="iNearDistance" type="Int32"/>
+		<field name="iMediumDistance" type="Int32"/>
+		<field name="iFarDistance" type="Int32"/>
+		<field name="iDistanceVisibility" type="Int32"/>
+		<field name="iSandboxDistanceVisibility" type="Int32"/>
+		<field name="fStatusIconDisplayTime" type="Float"/>
+		<field name="fPlayerOrderDisplayTime" type="Float"/>
+		<field name="fVerticalVisibilityRange" type="Float"/>
+		<field name="fHorizontalVisibilityRange" type="Float"/>
+		<field name="fRangeVisibilityThreshold" type="Float"/>
+		<field name="fObjectiveHideDistance" type="Float"/>
+		<field name="fRevealAnimationDuration" type="Float"/>
+		<field name="uisoundOnRevealAnimation" type="BinHex"/>
+		<field name="bShowNameOnWorldMarker" type="Boolean"/>
+		<field name="bShowDistanceOnWorldMarker" type="Boolean"/>
+		<field name="uisoundDisplaySound" type="BinHex"/>
+		<field name="uisoundHoldInteractionSound" type="BinHex"/>
+		<field name="uicolorpalettesettingsAvailableColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsUnavailableColor" type="BinHex"/>
+		<object name="locstridFullNameTemplate">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<field name="fShowHideFadeDuration" type="Float"/>
+		<field name="fMinimumDisplayDuration" type="Float"/>
+		<field name="fHealthBarDeltaDelayTweenTime" type="Float"/>
+		<field name="fHealthBarDeltaTweenTime" type="Float"/>
+		<object name="locstridHealthBarImmuneText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<field name="fHealthPerSegment" type="Float"/>
+		<field name="fHealthBarWidth" type="Float"/>
+		<field name="bShowClampedDefaultBadge" type="Boolean"/>
+		<field name="bShowClampedAlertBadge" type="Boolean"/>
+		<field name="bShowClampedDetectionBadge" type="Boolean"/>
+		<field name="bShowClampedWarnBadge" type="Boolean"/>
+		<field name="bShowClampedArrestBadge" type="Boolean"/>
+		<field name="bShowClampedCombatBadge" type="Boolean"/>
+		<field name="bShowClampedSearchBadge" type="Boolean"/>
+		<field name="bShowClampedHackEscalationBadge" type="Boolean"/>
+		<field name="bShowHealthBarWhenHurt" type="Boolean"/>
+		<field name="bShowAttackFlash" type="Boolean"/>
+		<field name="fShowHealthBarSegments" type="Float"/>
+		<field name="fShowHealthBarDisplayTime" type="Float"/>
+		<field name="fMaxDistanceForFullDetails" type="Float"/>
+		<field name="fClampingThreshold" type="Float"/>
+		<field name="fClampingPercent" type="Float"/>
+		<field name="fAttackFlashDuration" type="Float"/>
+		<field name="DangerousEnemyLevelDifference" type="BinHex"/>
+		<field name="uicolorpalettesettingsNormalEnemyLevelColour" type="BinHex"/>
+		<field name="uicolorpalettesettingsDangerEnemyLevelColour" type="BinHex"/>
+		<field name="uicolorpalettesettingsNormalClampArrowColour" type="BinHex"/>
+		<field name="uicolorpalettesettingsCombatClampArrowColour" type="BinHex"/>
+		<field name="uisoundOnEnterNormalBadge" type="BinHex"/>
+		<field name="uisoundOnEnterAlertBadge" type="BinHex"/>
+		<field name="uisoundOnEnterDetectionBadge" type="BinHex"/>
+		<field name="uisoundOnEnterWarnBadge" type="BinHex"/>
+		<field name="uisoundOnEnterArrestBadge" type="BinHex"/>
+		<field name="uisoundOnEnterCombatBadge" type="BinHex"/>
+		<field name="uisoundOnEnterSearchBadge" type="BinHex"/>
+		<field name="uisoundOnEnterHackEscalationBadge" type="BinHex"/>
+		<field name="uisoundOnExitNormalBadge" type="BinHex"/>
+		<field name="uisoundOnExitAlertBadge" type="BinHex"/>
+		<field name="uisoundOnExitDetectionBadge" type="BinHex"/>
+		<field name="uisoundOnExitWarnBadge" type="BinHex"/>
+		<field name="uisoundOnExitArrestBadge" type="BinHex"/>
+		<field name="uisoundOnExitCombatBadge" type="BinHex"/>
+		<field name="uisoundOnExitSearchBadge" type="BinHex"/>
+		<field name="uisoundOnExitHackEscalationBadge" type="BinHex"/>
+		<field name="fMinDistanceForScale" type="Float"/>
+		<field name="fMaxDistanceForScale" type="Float"/>
+		<field name="fScaleFactorAtMaxDistance" type="Float"/>
+		<field name="fClampScreenThreshold" type="Float"/>
+		<field name="fClampScreenValue" type="Float"/>
+		<field name="uicolorpalettesettingsDefaultColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsDefaultIconColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsDefaultBackgroundColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsAllyInstigatorBackgroundColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsEnemyInstigatorBackgroundColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsRewardBackgroundColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsNarrativeRewardBackgroundColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsDangerousBackgroundColor" type="BinHex"/>
+		<field name="vec2FirstPersonDroneAnchorPos" type="BinHex"/>
+		<field name="fIconTimeOut" type="Float"/>
+		<field name="uicolorpalettesettingsBroadcastColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsDenunciationBlumeColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsDenunciationNpcColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsDisruptedColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsDisruptedProgressColor" type="BinHex"/>
+		<field name="fNearScale" type="Float"/>
+		<field name="fNearScaleDistance" type="Float"/>
+		<field name="fFarScale" type="Float"/>
+		<field name="fFarScaleDistance" type="Float"/>
+		<object name="locstridDistanceText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

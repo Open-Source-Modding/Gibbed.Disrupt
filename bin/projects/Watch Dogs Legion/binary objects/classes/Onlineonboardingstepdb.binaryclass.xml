@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OnlineonboardingstepdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selType" type="Enum"/>
+	<field name="selState" type="Enum"/>
+	<field name="phonecommunicationsettingsNarrativenPhoneCommunication" type="BinHex"/>
+	<field name="districtDistrict" type="BinHex"/>
+	<field name="text_sActivityName" type="String"/>
+	<field name="sActivityName" type="BinHex"/>
+	<field name="needsRequest" type="BinHex"/>
+	<object name="StepMissions">
+		<object name="opslistOpConfigDbObject">
+			<field name="opslistOpConfigDbObject" type="BinHex"/>
+		</object>
+	</object>
+</class>

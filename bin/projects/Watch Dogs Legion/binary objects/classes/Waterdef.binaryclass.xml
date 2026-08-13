@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WaterdefParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsWater" type="Boolean"/>
+	<field name="text_fileFlowTexture" type="String"/>
+	<field name="fileFlowTexture" type="BinHex"/>
+	<field name="colorWaterColor" type="VectorColor"/>
+	<field name="fFlowSpeed" type="Float"/>
+	<field name="fTangentFlowSpeed" type="Float"/>
+	<field name="fFlowTextureSize" type="Float"/>
+	<field name="fDisplacementScale" type="Float"/>
+	<field name="fAttenuation" type="Float"/>
+	<field name="fWaveIntensity" type="Float"/>
+	<field name="fWaveIntensityStormy" type="Float"/>
+	<field name="fFoamIntensity" type="Float"/>
+	<field name="fDebrisIntensity" type="Float"/>
+	<field name="bUsedInWaterMask" type="Boolean"/>
+</class>

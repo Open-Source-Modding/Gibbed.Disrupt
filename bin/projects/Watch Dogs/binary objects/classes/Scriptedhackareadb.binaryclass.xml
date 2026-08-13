@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ScriptedhackareadbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_scriptedhackareaselHackAreaType" type="String"/>
+	<field name="scriptedhackareaselHackAreaType" type="BinHex"/>
+	<object name="HackArea">
+		<field name="fUpdateDelayTime" type="Float"/>
+		<field name="fLifeTime" type="Float"/>
+		<field name="bClearEffectOnLeave" type="Boolean"/>
+		<field name="fRadius" type="Float"/>
+		<field name="fZValue" type="Float"/>
+		<field name="bUseSphericalArea" type="Boolean"/>
+		<field name="vec3LocalCameraOffset" type="BinHex"/>
+		<field name="vec3LocalCameraOffsetVehicle" type="BinHex"/>
+		<field name="bUseDirIncar" type="Boolean"/>
+		<field name="bDebugMovementEnabled" type="Boolean"/>
+		<field name="fDebugMovementMaxOffset" type="Float"/>
+		<field name="fDebugMovementSpeed" type="Float"/>
+		<field name="bDebugsingleForwardSpawn" type="Boolean"/>
+		<object name="OnEnterEffects">
+			<field name="scriptedhackeffectdbHackEffect" type="BinHex"/>
+			<field name="fOverrideProbability" type="Float"/>
+			<object name="OnEnterEffects">
+				<field name="scriptedhackeffectdbHackEffect" type="BinHex"/>
+				<field name="fOverrideProbability" type="Float"/>
+			</object>
+		</object>
+		<object name="OnExitEffects"/>
+		<object name="OnActivateEffects"/>
+	</object>
+</class>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PrismactorlistParameters">
+	<object name="libobj">
+		<inherit name="SharedParameters"/>
+		<field name="selLanguage" type="Enum"/>
+		<field name="text_PlasmaPersona" type="String"/>
+		<field name="PlasmaPersona" type="BinHex"/>
+		<field name="fPitchScaling" type="Float"/>
+		<field name="fVolumeScaling" type="Float"/>
+		<field name="fFFScale" type="Float"/>
+		<field name="fFormantScale" type="Float"/>
+		<field name="fFormantShift" type="Float"/>
+		<field name="fFormantOneShift" type="Float"/>
+		<field name="fFormantTwoShift" type="Float"/>
+		<field name="fFormantThreeShift" type="Float"/>
+		<field name="fFrequencyOne" type="Float"/>
+		<field name="fGainOne" type="Float"/>
+		<field name="fQOne" type="Float"/>
+		<field name="u32FilterTypeOne" type="BinHex"/>
+		<field name="fFrequencyTwo" type="Float"/>
+		<field name="fGainTwo" type="Float"/>
+		<field name="fQTwo" type="Float"/>
+		<field name="u32FilterTypeTwo" type="BinHex"/>
+		<object name="tagcategoryselectionFashionTag">
+			<field name="text_UITagCategorySelectionClassID" type="String"/>
+			<field name="UITagCategorySelectionClassID" type="BinHex"/>
+			<field name="tagcategoryUITagCategory" type="BinHex"/>
+			<object name="Tags"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ThrowprojectilebossabilityconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selProjectileType" type="Enum"/>
+	<object name="ChooseTargetStrategyParams">
+		<field name="selType" type="Enum"/>
+		<field name="fRadius" type="Float"/>
+		<object name="Criteria">
+			<object name="Criterion">
+				<field name="selType" type="Enum"/>
+				<object name="curveCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="ThrowActionParams">
+		<field name="bDrop" type="Boolean"/>
+		<field name="bDropIfNotThrown" type="Boolean"/>
+		<field name="bRoll" type="Boolean"/>
+		<field name="bOverrideThrowSpeed" type="Boolean"/>
+	</object>
+</class>

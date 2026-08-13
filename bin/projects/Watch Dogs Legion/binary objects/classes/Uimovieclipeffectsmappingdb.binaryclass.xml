@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UimovieclipeffectsmappingdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="MovieClipEffectsMapping">
+		<object name="MovieClipEffectsMapping">
+			<field name="sMovieClipDPS" type="String"/>
+			<field name="uimovieclipeffectsEffectsSettings" type="BinHex"/>
+		</object>
+	</object>
+</class>

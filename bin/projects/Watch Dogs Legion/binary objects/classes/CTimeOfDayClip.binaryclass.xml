@@ -1,0 +1,19 @@
+<class name="CTimeOfDayClip">
+    <object name="CTimeOfDayClip">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field name="timeStartTime" type="Float"/>
+      <field name="timeDuration" type="Float"/>
+      <field name="timeEndTime" type="Float"/>
+      <field name="hidResizable" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+      <field name="KeepAlive" type="BinHex"/>
+      <object name="TimeOfDay">
+        <field name="nHours" type="Int32"/>
+        <field name="nMinutes" type="Int32"/>
+        <field name="fFadeInTime" type="Float"/>
+        <field name="fFadeOutTime" type="Float"/>
+      </object>
+    </object>
+</class>

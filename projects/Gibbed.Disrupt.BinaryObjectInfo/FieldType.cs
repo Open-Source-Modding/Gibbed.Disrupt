@@ -37,9 +37,11 @@ namespace Gibbed.Disrupt.BinaryObjectInfo
         UInt64, // unsigned long long
         Int64, // signed long long
         Float, // float
+        Vector, // generic vector (size determined at runtime)
         Vector2, // ndVec2
         Vector3, // ndVec3
         Vector4, // ndVec4
+        VectorColor, // ndVec4 with hex color notation
         Quaternion, // ndQuat
         String, // ndString
         Enum, // enum

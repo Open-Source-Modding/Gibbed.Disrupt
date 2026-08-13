@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Locationpickerglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Default">
+		<field name="fPickWeightThresholdPercent" type="Float"/>
+		<object name="DistanceEvaluator">
+			<field name="fFactor" type="Float"/>
+			<field name="fDistanceDonutMinDistance" type="Float"/>
+			<field name="fDistanceDonutMaxDistance" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentAt0" type="Float"/>
+				<field name="fWeightPercentAtDonutMin" type="Float"/>
+				<field name="fWeightPercentInDonut" type="Float"/>
+				<field name="fWeightPercentAtDonutMax" type="Float"/>
+				<field name="fWeightPercentAtMax" type="Float"/>
+				<field name="fMaxDistance" type="Float"/>
+			</object>
+		</object>
+		<object name="PlayStyleEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentIfRight" type="Float"/>
+				<field name="fWeightPercentIfWrong" type="Float"/>
+			</object>
+		</object>
+		<object name="HistoryEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="CurveSettings">
+				<field name="fWeightPercentAtHistoryTop" type="Float"/>
+				<field name="fWeightPercentAtHistoryBottom" type="Float"/>
+				<field name="fWeightPercentNotInHistory" type="Float"/>
+			</object>
+		</object>
+		<object name="PlayerCountEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentForMatchingLocations" type="Float"/>
+				<field name="fWeightPercentForNonMatchingLocations" type="Float"/>
+			</object>
+			<object name="tagcategoryselectionblackboardPreferedLocationsFor1Players">
+				<object name="TagCategorySelectionArray"/>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="tagcategoryselectionblackboardPreferedLocationsFor2Players">
+				<object name="TagCategorySelectionArray"/>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="tagcategoryselectionblackboardPreferedLocationsFor3Players">
+				<object name="TagCategorySelectionArray"/>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="tagcategoryselectionblackboardPreferedLocationsFor4Players">
+				<object name="TagCategorySelectionArray"/>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="LOP">
+		<field name="fPickWeightThresholdPercent" type="Float"/>
+		<object name="DistanceEvaluator">
+			<field name="fFactor" type="Float"/>
+			<field name="fDistanceDonutMinDistance" type="Float"/>
+			<field name="fDistanceDonutMaxDistance" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentAt0" type="Float"/>
+				<field name="fWeightPercentAtDonutMin" type="Float"/>
+				<field name="fWeightPercentInDonut" type="Float"/>
+				<field name="fWeightPercentAtDonutMax" type="Float"/>
+				<field name="fWeightPercentAtMax" type="Float"/>
+				<field name="fMaxDistance" type="Float"/>
+			</object>
+		</object>
+		<object name="PlayStyleEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentIfRight" type="Float"/>
+				<field name="fWeightPercentIfWrong" type="Float"/>
+			</object>
+		</object>
+		<object name="HistoryEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="CurveSettings">
+				<field name="fWeightPercentAtHistoryTop" type="Float"/>
+				<field name="fWeightPercentAtHistoryBottom" type="Float"/>
+				<field name="fWeightPercentNotInHistory" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="FAA">
+		<field name="fPickWeightThresholdPercent" type="Float"/>
+		<object name="DistanceEvaluator">
+			<field name="fFactor" type="Float"/>
+			<field name="fDistanceDonutMinDistance" type="Float"/>
+			<field name="fDistanceDonutMaxDistance" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentAt0" type="Float"/>
+				<field name="fWeightPercentAtDonutMin" type="Float"/>
+				<field name="fWeightPercentInDonut" type="Float"/>
+				<field name="fWeightPercentAtDonutMax" type="Float"/>
+				<field name="fWeightPercentAtMax" type="Float"/>
+				<field name="fMaxDistance" type="Float"/>
+			</object>
+		</object>
+		<object name="HistoryEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="CurveSettings">
+				<field name="fWeightPercentAtHistoryTop" type="Float"/>
+				<field name="fWeightPercentAtHistoryBottom" type="Float"/>
+				<field name="fWeightPercentNotInHistory" type="Float"/>
+			</object>
+		</object>
+		<object name="PlayerCountEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentForMatchingLocations" type="Float"/>
+				<field name="fWeightPercentForNonMatchingLocations" type="Float"/>
+			</object>
+			<object name="tagcategoryselectionblackboardPreferedLocationsFor1Players">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<object name="Tags">
+							<object name="Tag">
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="tagcategoryselectionblackboardPreferedLocationsFor2Players">
+				<object name="TagCategorySelectionArray"/>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="tagcategoryselectionblackboardPreferedLocationsFor3Players">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<object name="Tags">
+							<object name="Tag">
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="tagcategoryselectionblackboardPreferedLocationsFor4Players">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<object name="Tags">
+							<object name="Tag">
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ComplexityEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentForMatchingLocations" type="Float"/>
+				<field name="fWeightPercentForNonMatchingLocations" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="FOP">
+		<field name="fPickWeightThresholdPercent" type="Float"/>
+		<object name="DistanceEvaluator">
+			<field name="fFactor" type="Float"/>
+			<field name="fDistanceDonutMinDistance" type="Float"/>
+			<field name="fDistanceDonutMaxDistance" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentAt0" type="Float"/>
+				<field name="fWeightPercentAtDonutMin" type="Float"/>
+				<field name="fWeightPercentInDonut" type="Float"/>
+				<field name="fWeightPercentAtDonutMax" type="Float"/>
+				<field name="fWeightPercentAtMax" type="Float"/>
+				<field name="fMaxDistance" type="Float"/>
+			</object>
+		</object>
+		<object name="PlayStyleEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentIfRight" type="Float"/>
+				<field name="fWeightPercentIfWrong" type="Float"/>
+			</object>
+		</object>
+		<object name="HistoryEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="CurveSettings">
+				<field name="fWeightPercentAtHistoryTop" type="Float"/>
+				<field name="fWeightPercentAtHistoryBottom" type="Float"/>
+				<field name="fWeightPercentNotInHistory" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="RevengeOp">
+		<field name="fPickWeightThresholdPercent" type="Float"/>
+		<object name="DistanceEvaluator">
+			<field name="fFactor" type="Float"/>
+			<field name="fDistanceDonutMinDistance" type="Float"/>
+			<field name="fDistanceDonutMaxDistance" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentAt0" type="Float"/>
+				<field name="fWeightPercentAtDonutMin" type="Float"/>
+				<field name="fWeightPercentInDonut" type="Float"/>
+				<field name="fWeightPercentAtDonutMax" type="Float"/>
+				<field name="fWeightPercentAtMax" type="Float"/>
+				<field name="fMaxDistance" type="Float"/>
+			</object>
+		</object>
+		<object name="PlayStyleEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="Curve">
+				<field name="fWeightPercentIfRight" type="Float"/>
+				<field name="fWeightPercentIfWrong" type="Float"/>
+			</object>
+		</object>
+		<object name="HistoryEvaluator">
+			<field name="fFactor" type="Float"/>
+			<object name="CurveSettings">
+				<field name="fWeightPercentAtHistoryTop" type="Float"/>
+				<field name="fWeightPercentAtHistoryBottom" type="Float"/>
+				<field name="fWeightPercentNotInHistory" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="BucketEvaluator">
+		<field name="fFactor" type="Float"/>
+		<object name="AreBucket2LocationsAvailableForDynamicLocationCastingRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="Curve">
+			<field name="fRelativeWeightForBucket1Locations" type="Float"/>
+			<field name="fRelativeWeightForBucket2Locations" type="Float"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RoaddestructionholeParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archHoleShape" type="String"/>
+	<field name="archHoleShape" type="BinHex"/>
+	<field name="text_archVisualSigns" type="String"/>
+	<field name="archVisualSigns" type="BinHex"/>
+	<field name="vectorHoleSize" type="Vector3"/>
+	<field name="sMistPostEffectRadius" type="BinHex"/>
+	<object name="ParticlesSystems">
+		<field name="text_psSteamLeakParticlesSystem" type="String"/>
+		<field name="psSteamLeakParticlesSystem" type="BinHex"/>
+		<field name="text_psExplosionParticlesSystem" type="String"/>
+		<field name="psExplosionParticlesSystem" type="BinHex"/>
+	</object>
+	<object name="Sounds">
+		<field name="sndSteamLeakSound" type="BinHex"/>
+		<field name="sndSteamLeakSoundStop" type="BinHex"/>
+		<field name="sndSteamExpulsionSound" type="BinHex"/>
+		<field name="sndSteamExpulsionSoundStop" type="BinHex"/>
+		<field name="sndExplosionSound" type="BinHex"/>
+	</object>
+	<object name="Physics">
+		<field name="fExplosionPushForce" type="Float"/>
+		<field name="fSteamEjectionMaxPushForce" type="Float"/>
+		<field name="vectorSteamEjectionPushBoxSize" type="Vector3"/>
+		<object name="curveSteamEjectionPushForceOverTime">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curvePushForceRatioOverDistance">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="CameraShakes">
+		<object name="Explosion">
+			<field name="fMaxStrength" type="Float"/>
+			<field name="fAttenuation" type="Float"/>
+			<field name="fDuration" type="Float"/>
+			<field name="vectorXYZRange" type="Vector3"/>
+			<field name="angvecPRYRange" type="Vector3"/>
+			<field name="fMaxDistance" type="Float"/>
+			<object name="curveStrengthOverDistance">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="SteamEjection">
+			<field name="fMaxStrength" type="Float"/>
+			<field name="fPeriod" type="Float"/>
+			<field name="vectorXYZRange" type="Vector3"/>
+			<field name="angvecPRYRange" type="Vector3"/>
+			<field name="fMaxDistance" type="Float"/>
+			<object name="curveStrengthOverDistance">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveStrengthOverTime">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+	</object>
+	<object name="Aftermath">
+		<field name="text_archRoadworks" type="String"/>
+		<field name="archRoadworks" type="BinHex"/>
+		<field name="text_archRoadworksVehicles" type="String"/>
+		<field name="archRoadworksVehicles" type="BinHex"/>
+		<field name="fDelayForRoadworks" type="Float"/>
+		<field name="fDelayForReset" type="Float"/>
+	</object>
+</class>

@@ -1,0 +1,5 @@
+<file name="dream_effect_memories" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

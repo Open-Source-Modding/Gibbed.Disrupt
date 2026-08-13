@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpchapterconfigsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sPS5ActivityID" type="String"/>
+	<field name="uUbiPlayerProgressionValue" type="BinHex"/>
+</class>

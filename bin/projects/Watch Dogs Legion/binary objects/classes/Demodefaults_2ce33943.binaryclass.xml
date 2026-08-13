@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Demodefaults_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="demoNewGameDemo" type="BinHex"/>
+	<field name="demoNewOnlineGameDemo" type="BinHex"/>
+	<field name="demoDefaultDevelopmentDemo" type="BinHex"/>
+	<field name="demoDefaultTestMapDemo" type="BinHex"/>
+	<field name="demoVmcDemo" type="BinHex"/>
+	<field name="demoBenchmarkDemo" type="BinHex"/>
+</class>

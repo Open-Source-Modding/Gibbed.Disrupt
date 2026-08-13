@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Detectionhudconfig_8474b6ef">
+	<object name="obj">
+		<inherit name="Detectionhudconfig_8474b6efParameters"/>
+	</object>
+</file>

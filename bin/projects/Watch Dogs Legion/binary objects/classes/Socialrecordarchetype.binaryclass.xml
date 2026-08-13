@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SocialrecordarchetypeParameters">
+	<inherit name="SharedParameters"/>
+	<object name="SocialRecordGenerator">
+		<field name="fWeight" type="Float"/>
+		<object name="SocialRecordType">
+			<object name="SocialRecordType">
+				<object name="locsectionidTravelRecordType"/>
+			</object>
+		</object>
+		<object name="SocialRecordGenerator">
+			<field name="fWeight" type="Float"/>
+			<object name="SocialRecordType">
+				<object name="locsectionidTravelRecordType"/>
+				<object name="SocialRecordType">
+					<object name="locsectionidTravelRecordType"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

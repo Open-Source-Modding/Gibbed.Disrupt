@@ -1,0 +1,5 @@
+<file name="07_tripstate03" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

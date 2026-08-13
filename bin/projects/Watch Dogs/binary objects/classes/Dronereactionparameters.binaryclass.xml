@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronereactionparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selReactionType" type="Enum"/>
+	<object name="LookAtParams">
+		<field name="selLookAtPosType" type="Enum"/>
+		<field name="fMinDuration" type="Float"/>
+		<field name="fMaxDuration" type="Float"/>
+	</object>
+	<object name="BarkParams">
+		<field name="fBarkDelayMin" type="Float"/>
+		<field name="fBarkDelayMax" type="Float"/>
+	</object>
+	<object name="DelayParams">
+		<field name="fAsynchroReactionDelayMin" type="Float"/>
+		<field name="fAsynchroReactionDelayMax" type="Float"/>
+	</object>
+</class>

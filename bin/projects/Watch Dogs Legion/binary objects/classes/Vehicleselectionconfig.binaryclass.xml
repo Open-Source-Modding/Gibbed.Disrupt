@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicleselectionconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bCanHijack" type="Boolean"/>
+	<field name="fSearchRadius" type="Float"/>
+	<object name="AllowedVehicles">
+		<object name="Flags">
+			<field name="bBike" type="Boolean"/>
+			<field name="bBoat" type="Boolean"/>
+			<field name="bHeavy" type="Boolean"/>
+			<field name="bHelicopter" type="Boolean"/>
+			<field name="bCar" type="Boolean"/>
+			<field name="bVan" type="Boolean"/>
+			<field name="bTruck" type="Boolean"/>
+			<field name="bBus" type="Boolean"/>
+			<field name="bPolice" type="Boolean"/>
+			<field name="bFire" type="Boolean"/>
+			<field name="bAmbulance" type="Boolean"/>
+			<field name="bTaxi" type="Boolean"/>
+			<field name="bRail" type="Boolean"/>
+			<field name="bToyCar" type="Boolean"/>
+			<field name="bScissorLift" type="Boolean"/>
+			<field name="bFlyingDrone" type="Boolean"/>
+			<field name="bArmoredCar" type="Boolean"/>
+			<field name="bMilitary" type="Boolean"/>
+			<field name="bVintage" type="Boolean"/>
+			<field name="bSport" type="Boolean"/>
+		</object>
+	</object>
+	<object name="ExcludedVehicles">
+		<object name="Flags">
+			<field name="bBike" type="Boolean"/>
+			<field name="bBoat" type="Boolean"/>
+			<field name="bHeavy" type="Boolean"/>
+			<field name="bHelicopter" type="Boolean"/>
+			<field name="bCar" type="Boolean"/>
+			<field name="bVan" type="Boolean"/>
+			<field name="bTruck" type="Boolean"/>
+			<field name="bBus" type="Boolean"/>
+			<field name="bPolice" type="Boolean"/>
+			<field name="bFire" type="Boolean"/>
+			<field name="bAmbulance" type="Boolean"/>
+			<field name="bTaxi" type="Boolean"/>
+			<field name="bRail" type="Boolean"/>
+			<field name="bToyCar" type="Boolean"/>
+			<field name="bScissorLift" type="Boolean"/>
+			<field name="bFlyingDrone" type="Boolean"/>
+			<field name="bArmoredCar" type="Boolean"/>
+			<field name="bMilitary" type="Boolean"/>
+			<field name="bVintage" type="Boolean"/>
+			<field name="bSport" type="Boolean"/>
+		</object>
+	</object>
+</class>

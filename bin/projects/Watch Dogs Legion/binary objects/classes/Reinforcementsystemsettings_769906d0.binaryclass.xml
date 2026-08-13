@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Reinforcementsystemsettings_769906d0Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiMaxAgentBudget" type="UInt32"/>
+	<field name="gpctxspecCinematicGameplayContext" type="BinHex"/>
+	<object name="MaxAgentBudgetsPerType">
+		<field name="uiVehicleMaxAgentBudget" type="UInt32"/>
+		<field name="uiNPCMaxAgentBudget" type="UInt32"/>
+		<field name="uiChopperMaxAgentBudget" type="UInt32"/>
+		<field name="uiBoatMaxAgentBudget" type="UInt32"/>
+		<field name="uiDroneMaxAgentBudget" type="UInt32"/>
+	</object>
+</class>

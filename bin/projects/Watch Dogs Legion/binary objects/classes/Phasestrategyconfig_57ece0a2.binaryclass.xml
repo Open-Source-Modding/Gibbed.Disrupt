@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Phasestrategyconfig_57ece0a2Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="BinHex"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="BinHex"/>
+	<field name="text_hidName" type="BinHex"/>
+	<field name="hidName" type="BinHex"/>
+	<object hash="B61222C2">
+		<field hash="FF71D091" type="BinHex"/>
+		<field hash="C90B5312" type="BinHex"/>
+		<field hash="38DE4E63" type="BinHex"/>
+		<field hash="94D7DC06" type="BinHex"/>
+		<field hash="A2AD5F85" type="BinHex"/>
+		<field hash="537842F4" type="BinHex"/>
+		<field hash="A130C28E" type="BinHex"/>
+		<field hash="C52FEDE6" type="BinHex"/>
+		<field hash="900D385D" type="BinHex"/>
+	</object>
+	<object hash="56804E24">
+		<field hash="0075F05B" type="BinHex"/>
+		<field hash="C7DAA0C0" type="BinHex"/>
+		<field hash="E2D52FAA" type="BinHex"/>
+		<field hash="6BD3FCCC" type="BinHex"/>
+		<field hash="AC7CAC57" type="BinHex"/>
+		<field hash="8973233D" type="BinHex"/>
+		<field hash="AB4B2286" type="BinHex"/>
+		<field hash="5295E70C" type="BinHex"/>
+		<field hash="B080DF9F" type="BinHex"/>
+	</object>
+	<object hash="BD275895">
+		<field hash="2B974135" type="BinHex"/>
+		<field hash="598FF2CA" type="BinHex"/>
+		<field hash="5B7B9E0E" type="BinHex"/>
+		<field hash="CDE1730F" type="BinHex"/>
+	</object>
+	<object hash="C9100BCC">
+		<field hash="82539CC1" type="BinHex"/>
+	</object>
+	<object hash="A9878CEB">
+		<field hash="38101852" type="BinHex"/>
+	</object>
+	<object hash="18CEF343">
+		<field hash="25BEA167" type="BinHex"/>
+	</object>
+	<object name="Curves">
+		<object hash="CA4ED88A">
+			<field name="hidNumKnots" type="BinHex"/>
+			<object name="Knots">
+				<object name="Knot">
+					<field name="Value" type="BinHex"/>
+					<field name="Info" type="BinHex"/>
+					<field name="Type" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

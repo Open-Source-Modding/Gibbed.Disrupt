@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HitreactionconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="curveFullBodyTriggerFactorOverTime">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveFullBodyTriggerFactorOverTimeLTL">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveFullBodyTriggerFactorOverTimeConcussion">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveFullBodyTriggerFactorOverTimeTranquilizer">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="ForcedFullBodyReaction">
+		<field name="fForceFullBodyOnHeadShotsFactor" type="Float"/>
+		<field name="fForceFullBodyOnExplosionsFactor" type="Float"/>
+		<field name="fForceFullBodyOnFirstTimeFactor" type="Float"/>
+		<field name="fForceFullBodyOnHeadShotsFactorLTL" type="Float"/>
+		<field name="fForceFullBodyOnFirstTimeFactorLTL" type="Float"/>
+		<field name="fForceFullBodyOnHeadShotsFactorConcussion" type="Float"/>
+		<field name="fForceFullBodyOnFirstTimeFactorConcussion" type="Float"/>
+		<field name="fForceFullBodyOnHeadShotsFactorTranquilizer" type="Float"/>
+		<field name="fForceFullBodyOnFirstTimeFactorTranquilizer" type="Float"/>
+	</object>
+</class>

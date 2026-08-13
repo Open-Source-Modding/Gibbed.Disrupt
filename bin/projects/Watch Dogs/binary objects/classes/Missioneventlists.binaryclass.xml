@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MissioneventlistsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="CountLimitToUnlockTriggerRadius" type="BinHex"/>
+	<field name="vigdescEventDescription" type="BinHex"/>
+	<object name="MissionEventLists">
+		<object name="MissionEventList">
+			<field name="missionlistMission" type="BinHex"/>
+		</object>
+	</object>
+</class>

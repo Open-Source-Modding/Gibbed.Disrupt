@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SpawnwavesconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="WavesListsByNumOfPlayers1-2And3-4">
+		<object name="WaveList">
+			<object name="Waves">
+				<object name="Wave">
+					<field name="MinToSpawn" type="BinHex"/>
+					<field name="MaxToSpawn" type="BinHex"/>
+					<field name="TargetDifficultyValue" type="BinHex"/>
+					<field name="iNumRequiredJammer" type="Int32"/>
+					<field name="iMinNumRequiredJammer" type="Int32"/>
+					<field name="fJammerHackRate" type="Float"/>
+					<field name="fDelayBeforeJammersAreSelected" type="Float"/>
+					<field name="DelayBeforeWaveSpawns" type="BinHex"/>
+					<field name="bSetIsInCombat" type="Boolean"/>
+					<field name="text_swcConditionType" type="String"/>
+					<field name="swcConditionType" type="BinHex"/>
+					<object name="SpawnPointGroupTypeList">
+						<object name="SpawnPointGroupType">
+							<field name="selSpawnPointGroupType" type="Enum"/>
+						</object>
+					</object>
+					<object name="EnemyDefinitionList">
+						<object name="EnemyDefinition">
+							<field name="swedEnemyDefinition" type="BinHex"/>
+						</object>
+					</object>
+					<object name="SpecialEnemyDefinitionList">
+						<object name="SpecialEnemyDefinition">
+							<field name="selSpecialSpawnPointGroupType" type="Enum"/>
+							<field name="iNumEnemyToSpawn" type="Int32"/>
+							<field name="bSpawnAsJammer" type="Boolean"/>
+							<field name="swedEnemyDefinition" type="BinHex"/>
+						</object>
+					</object>
+					<object name="ConditionSettings">
+						<field name="nEnemiesRemaining" type="Int32"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

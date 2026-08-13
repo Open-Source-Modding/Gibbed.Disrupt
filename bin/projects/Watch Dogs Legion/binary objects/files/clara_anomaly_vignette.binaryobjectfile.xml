@@ -1,0 +1,5 @@
+<file name="clara_anomaly_vignette" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

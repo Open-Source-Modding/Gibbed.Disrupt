@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmoduleupgradessettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<object name="InitTrigger">
+			<field name="rulesmithidRuleId" type="BinHex"/>
+		</object>
+		<object name="EquipGadgetTrigger">
+			<field name="rulesmithidRuleId" type="BinHex"/>
+		</object>
+		<object name="Upgrades">
+			<object name="Upgrade">
+				<field name="text_NameId" type="String"/>
+				<field name="NameId" type="BinHex"/>
+				<field name="uiclassupgradeUI" type="BinHex"/>
+				<object name="Levels">
+					<object name="Level">
+						<field name="Cost" type="Int32"/>
+						<field name="OnlineCost" type="Int32"/>
+						<object name="Atoms">
+							<object name="Atom">
+								<field name="text_progressionatomAtomId" type="String"/>
+								<field name="progressionatomAtomId" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -97,14 +97,12 @@ namespace Gibbed.Disrupt.Packing
 
             Console.WriteLine("Loading project...");
 
-            var manager = Manager.Load(projectName);
-            if (manager.ActiveProject == null)
+            var project = ProjectHelpers.LoadProject(projectName);
+            if (project == null)
             {
                 Console.WriteLine("Nothing to do: no active project loaded.");
                 return;
             }
-
-            var project = manager.ActiveProject;
             byte? nameHashVersion = null;
             HashList<THash> knownHashes = null;
 
@@ -179,7 +177,7 @@ namespace Gibbed.Disrupt.Packing
 
                     THash wrappedComputeNameHash(string s) =>
                         fat.ComputeNameHash(s, tryGetHashOverride);
-                    manager.LoadListsFileNames(wrappedComputeNameHash, out knownHashes);
+                    project.LoadListsFileNames(wrappedComputeNameHash, out knownHashes);
                 }
                 else if (nameHashVersion != fat.NameHashVersion)
                 {

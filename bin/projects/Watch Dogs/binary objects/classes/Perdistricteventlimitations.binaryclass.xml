@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PerdistricteventlimitationsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iVigilanteEventMaxCount" type="Int32"/>
+	<field name="iMissionEventMaxCount" type="Int32"/>
+	<field name="iItemEventMaxCount" type="Int32"/>
+	<field name="iGridVigilanteEventMaxCount" type="Int32"/>
+	<field name="iGridMissionEventMaxCount" type="Int32"/>
+	<field name="iGridItemEventMaxCount" type="Int32"/>
+</class>

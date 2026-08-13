@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhotocameramenuitemsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selSettingType" type="Enum"/>
+	<field name="sUiMovieClipName" type="BinHex"/>
+	<field name="bIsEditableByPlayer" type="Boolean"/>
+	<field name="bIsAvailableInCinematics" type="Boolean"/>
+	<field name="cinematicmodeColorFilter" type="BinHex"/>
+	<field name="selStickerBlendType" type="Enum"/>
+	<field name="selStickerHorizontalAlignment" type="Enum"/>
+	<field name="selStickerVerticalAlignment" type="Enum"/>
+	<field name="fileStickerTexture" type="BinHex"/>
+	<field name="fMinValue" type="Float"/>
+	<field name="fMaxValue" type="Float"/>
+	<field name="fDefaultValue" type="Float"/>
+	<field name="bUseGameCameraDefaultValue" type="Boolean"/>
+	<field name="bIsAffectedByFocus" type="Boolean"/>
+	<field name="fDefaultValueWhenFocusActive" type="Float"/>
+	<field name="bDefaultToggleValue" type="Boolean"/>
+	<object name="locstridSettingName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="PhotoModes">
+		<object name="PhotoMode">
+			<field name="selPhotoMode" type="Enum"/>
+		</object>
+	</object>
+</class>

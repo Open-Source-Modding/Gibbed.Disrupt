@@ -1,19 +1,19 @@
 [submodule "projects/Gibbed.IO"]
 	path = projects/Gibbed.IO
-	url = https://github.com/gibbed/Gibbed.IO.git
-	branch = vs2017
+	url = https://github.com/Selene0623/Gibbed.IO
+	branch = main
 [submodule "projects/NDesk.Options"]
 	path = projects/NDesk.Options
-	url = https://github.com/gibbed/NDesk.Options.git
-	branch = vs2017
+	url = git@github.com:Selene0623/NDesk.Options.git
+	branch = main
 [submodule "projects/XCompression"]
 	path = projects/XCompression
-	url = https://github.com/gibbed/XCompression.git
-	branch = vs2017
+	url = git@github.com:Selene0623/XCompression.git
+	branch = main
 [submodule "projects/Gibbed.ProjectData"]
 	path = projects/Gibbed.ProjectData
-	url = https://github.com/gibbed/Gibbed.ProjectData.git
-	branch = vs2017
+	url = git@github.com:Selene0623/Gibbed.ProjectData.git
+	branch = main
 [submodule "bin/projects/Watch Dogs/files"]
 	path = bin/projects/Watch Dogs/files
 	url = https://github.com/gibbed/WDFileLists.git

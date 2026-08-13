@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronestrafesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsEnabled" type="Boolean"/>
+	<field name="fMoveDistance" type="Float"/>
+	<field name="fMoveSpeed" type="Float"/>
+	<field name="fDuration" type="Float"/>
+	<field name="fAngleMin" type="Float"/>
+	<field name="fAngleMax" type="Float"/>
+	<object name="curveAllowedAngleCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

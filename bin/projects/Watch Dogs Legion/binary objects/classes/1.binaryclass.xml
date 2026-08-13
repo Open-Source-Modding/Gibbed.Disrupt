@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="1saveParameters">
+	<object name="NWOfflineUniqueVisitData">
+		<object name="UnquieOfflineVisits"/>
+	</object>
+	<object name="NWBadgeValueOverTime">
+		<object name="NexuswallaTrackingBadge"/>
+	</object>
+	<object name="TrackingSystem">
+		<object name="TrackingSystem">
+			<object name="Stat">
+				<field name="StatId" type="BinHex"/>
+				<object name="StatContexts">
+					<object name="Context">
+						<field name="ContextId" type="BinHex"/>
+						<field name="Value" type="BinHex"/>
+						<field name="HasUnsentDelta" type="Boolean"/>
+						<field name="UnsentDelta" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="PDABadgeNotifications">
+		<field name="HomeTile_CarOnDemand" type="BinHex"/>
+		<field name="HomeTile_Contracts" type="BinHex"/>
+		<field name="HomeTile_Tutorials" type="BinHex"/>
+		<field name="HomeTile_Pills" type="BinHex"/>
+		<field name="HomeTile_CashRun" type="BinHex"/>
+		<field name="HomeTile_Challenges" type="BinHex"/>
+		<field name="HomeTile_MusicPlayer" type="BinHex"/>
+		<field name="HomeTile_AudioLogs" type="BinHex"/>
+		<object name="CarOnDemand">
+            <object name="CarOnDemand">
+                <field hash="FFFFFFFF" type="Boolean"/>
+                <field name="CarId" type="BinHex"/>
+            </object>
+		</object>
+		<object name="Contracts">
+			<object name="Contract">
+				<field hash="FFFFFFFF" type="Boolean"/>
+				<field name="ContractId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Tutorials">
+			<object name="Tutorial">
+				<field hash="FFFFFFFF" type="Boolean"/>
+				<field name="TutorialId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Pills">
+			<object name="Pill">
+				<field hash="FFFFFFFF" type="Boolean"/>
+				<field name="PillId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="CashRun"/>
+		<object name="Challenges"/>
+		<object name="MusicPlayer">
+			<object name="Song">
+				<field hash="FFFFFFFF" type="Boolean"/>
+				<field name="SongId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="AudioLogs">
+			<object name="AudioLog">
+				<field hash="FFFFFFFF" type="Boolean"/>
+				<field name="AudioLogId" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="NWServiceOnlineReset">
+		<field name="bOnlineSaveResetRequired" type="Boolean"/>
+	</object>
+	<object name="GameplayContentUnlockServiceSaveData">
+		<object name="UlcUnlocksCodes">
+			<object name="UlcUnlocksCode">
+				<field name="UlcUnlocksCode" type="BinHex"/>
+			</object>
+		</object>
+		<object name="UplayUnlocks">
+			<object name="UplayUnlock">
+				<field name="UplayUnlock" type="BinHex"/>
+			</object>
+		</object>
+		<object name="GamerProfileUnlocks">
+			<object name="GamerProfileUnlock">
+				<field name="GamerProfileUnlock" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="GameInviteServiceSaveGameData">
+		<field name="bIsMultiplayerUnlockedForInvites" type="Boolean"/>
+	</object>
+	<object name="MusicDBSaveStateMultiplayer">
+		<object name="DBSongs">
+			<object name="DBSong">
+				<field name="SongID" type="BinHex"/>
+				<field name="selSongState" type="Enum"/>
+			</object>
+		</object>
+	</object>
+</class>

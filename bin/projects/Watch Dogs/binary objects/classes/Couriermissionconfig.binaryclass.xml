@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CouriermissionconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_MissionType" type="String"/>
+	<field name="MissionType" type="BinHex"/>
+	<field name="bIsSystemic" type="Boolean"/>
+	<field name="bHasProbability" type="Boolean"/>
+	<field name="bPersistent" type="Boolean"/>
+	<field name="fProbability" type="Float"/>
+	<field name="iForcedNumberOfMissions" type="Int32"/>
+	<field name="bIsTimed" type="Boolean"/>
+	<field name="iTimeDiffLevel" type="Int32"/>
+	<field name="bIsFragile" type="Boolean"/>
+	<field name="iFragileDiffLevel" type="Int32"/>
+	<field name="bIsSmuggle" type="Boolean"/>
+	<field name="iSmuggleDiffLevel" type="Int32"/>
+	<field name="iFelonyStars" type="Int32"/>
+	<field name="bPlayHardMissionTeamspeack" type="Boolean"/>
+	<field name="text_MinimumRankNeededId" type="String"/>
+	<field name="MinimumRankNeededId" type="BinHex"/>
+	<field name="fPickupToDropoffMinDistance" type="Float"/>
+	<field name="fPickupToDropoffMaxDistance" type="Float"/>
+	<object name="EventsAndResponses">
+		<object name="EventAndResponse">
+			<object name="Event">
+				<field name="selEventType" type="Enum"/>
+			</object>
+			<object name="Response">
+				<field name="selResponseType" type="Enum"/>
+				<field name="fDelay" type="Float"/>
+				<field name="sndSound" type="BinHex"/>
+				<field name="sndtpSoundType" type="BinHex"/>
+				<field name="text_selId" type="String"/>
+				<field name="selId" type="Enum"/>
+				<field name="iFelonyStars" type="Int32"/>
+				<object name="locstridMessage">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="RelativeTo">
+					<field name="selRelationType" type="Enum"/>
+					<field name="fFixedValue" type="Float"/>
+					<field name="fRelationMultiplier" type="Float"/>
+					<field name="fBaseValue" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="MainTimer">
+		<field name="text_TimerName" type="String"/>
+		<field name="TimerName" type="BinHex"/>
+		<field name="selTimerType" type="Enum"/>
+		<field name="bStartPaused" type="Boolean"/>
+		<field name="fStartCountdownSoundTime" type="Float"/>
+		<field name="fStartFastTickSoundTime" type="Float"/>
+		<field name="fFastTickInterval" type="Float"/>
+		<field name="fTime" type="Float"/>
+		<object name="RelativeTo">
+			<field name="selRelationType" type="Enum"/>
+			<field name="fFixedValue" type="Float"/>
+			<field name="fRelationMultiplier" type="Float"/>
+			<field name="fBaseValue" type="Float"/>
+		</object>
+	</object>
+	<object name="Timers"/>
+	<object name="locstridDeliveryItem">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

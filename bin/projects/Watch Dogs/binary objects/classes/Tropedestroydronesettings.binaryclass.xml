@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TropedestroydronesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="dronebankDronesBank" type="BinHex"/>
+	<object name="PickableInfos">
+		<object name="pickableInfo">
+			<field name="text_archPickableArchetype" type="String"/>
+			<field name="archPickableArchetype" type="BinHex"/>
+			<field name="iSpawnNbTicket" type="Int32"/>
+		</object>
+	</object>
+</class>

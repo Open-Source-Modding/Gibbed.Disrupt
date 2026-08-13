@@ -1,0 +1,5 @@
+<file name="postx_camera_sample" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

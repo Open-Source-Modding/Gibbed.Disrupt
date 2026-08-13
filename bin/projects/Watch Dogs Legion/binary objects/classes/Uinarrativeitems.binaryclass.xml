@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UinarrativeitemsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selType" type="Enum"/>
+	<field name="texturedbobjectIconSource" type="BinHex"/>
+	<field name="iRelevantOp" type="Int32"/>
+	<object name="locstridSubjectLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSenderLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRecipientLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridNameLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridKeyLocationLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridContentLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

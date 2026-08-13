@@ -1,0 +1,5 @@
+<file name="opencustodyroomdoor" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

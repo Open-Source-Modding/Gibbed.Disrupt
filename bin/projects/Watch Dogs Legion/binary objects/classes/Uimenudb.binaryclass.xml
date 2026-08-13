@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UimenudbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_uimenutypeidMenu" type="String"/>
+	<field name="uimenutypeidMenu" type="BinHex"/>
+	<object name="MenuProperties">
+		<field name="selLoadingTileId" type="Enum"/>
+		<field name="fMinLoadingFeedbackTime" type="Float"/>
+		<field name="bIsMaskingWorld" type="Boolean"/>
+		<field name="uimenutileControlReminderTileId" type="BinHex"/>
+		<field name="uisoundOpenSound" type="BinHex"/>
+		<field name="uisoundCloseSound" type="BinHex"/>
+		<field name="uisoundOpenGallerySound" type="BinHex"/>
+		<field name="uisoundCloseGallerySound" type="BinHex"/>
+		<field name="selBackgroundTileId" type="Enum"/>
+		<field name="selPageHeaderTileId" type="Enum"/>
+		<field name="uimenupageMainMenuHomepage" type="BinHex"/>
+		<field name="uimenupagePauseMenuHomepage" type="BinHex"/>
+		<field name="uisoundPlayMainMenuSound" type="BinHex"/>
+		<field name="uisoundStopMainMenuSound" type="BinHex"/>
+		<field name="uisoundPlayPauseMenuSound" type="BinHex"/>
+		<field name="uisoundStopPauseMenuSound" type="BinHex"/>
+		<field name="uisoundOnlinePlayPauseMenuSound" type="BinHex"/>
+		<field name="uisoundOnlineStopPauseMenuSound" type="BinHex"/>
+		<field name="videosMainMenuBackgroundVideo" type="BinHex"/>
+		<field name="texturedbobjectMainMenuBackgroundVideoTransparentOverlay" type="BinHex"/>
+		<field name="texturedbobjectMainMenuBackgroundImage" type="BinHex"/>
+		<field name="fIdleTimeBeforeIdlePageIsShown" type="Float"/>
+		<field name="selBreadcrumbTileId" type="Enum"/>
+		<field name="selNotificationTileId" type="Enum"/>
+		<field name="selOnlineStoreTileId" type="Enum"/>
+		<field name="selSwitchOperativeTileId" type="Enum"/>
+		<field name="fNotificationDisplayTime" type="Float"/>
+		<field name="uInitialPageIndex" type="UInt32"/>
+		<field name="uimenutilePageIndexTile" type="BinHex"/>
+		<field name="selHeaderTileId" type="Enum"/>
+		<field name="selHomepageGlassTileId" type="Enum"/>
+		<field name="selSmartphoneGlassTileId" type="Enum"/>
+		<field name="selSmartphoneLinesTileId" type="Enum"/>
+		<field name="selFooterTileId" type="Enum"/>
+		<field name="bShouldPauseTheGameWhenMenuIsActivated" type="Boolean"/>
+		<field name="uisoundOpenSmartphoneSound" type="BinHex"/>
+		<field name="uisoundCloseSmartphoneSound" type="BinHex"/>
+		<object name="locstridNotificationMessage">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridAlternateNotificationMessage">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<field name="uisoundSwitchTabSound" type="BinHex"/>
+		<field name="selInGameMenuHomepageGlassTileId" type="Enum"/>
+		<field name="selNavigationBarTileId" type="Enum"/>
+		<field name="uDefaultTabIndex" type="BinHex"/>
+		<field name="bTrackLastOpenedTab" type="Boolean"/>
+		<object name="NavigationTabData">
+			<field name="uimenupageMenuPage" type="BinHex"/>
+			<field name="bVisibleFromBeginning" type="Boolean"/>
+			<object name="locstridName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="PersistentLayerUIResources">
+		<object name="PersistentFeuFile">
+			<field name="filePersistentFeuFiles" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Tiles">
+		<object name="Tile">
+			<field name="uimenutileTile" type="BinHex"/>
+		</object>
+	</object>
+</class>

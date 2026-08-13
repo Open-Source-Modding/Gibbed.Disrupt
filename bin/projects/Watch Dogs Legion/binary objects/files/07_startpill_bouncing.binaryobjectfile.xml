@@ -1,0 +1,5 @@
+<file name="07_startpill_bouncing" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

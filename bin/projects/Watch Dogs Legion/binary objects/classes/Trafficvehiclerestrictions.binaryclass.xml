@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TrafficvehiclerestrictionsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selRestrictionType" type="Enum"/>
+	<field name="vehiclegroupVehicleGroup" type="BinHex"/>
+	<field name="colorDebugColor" type="VectorColor"/>
+</class>

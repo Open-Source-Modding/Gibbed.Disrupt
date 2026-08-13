@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DgsceneingredientParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archArchetype" type="String"/>
+	<field name="archArchetype" type="BinHex"/>
+	<object name="tagcategoryselectionblackboardFeatureTags">
+		<object name="TagCategorySelectionArray">
+			<object name="TagCategorySelection">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<object name="Tags">
+					<object name="Tag">
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="TagDescriptorUI">
+			<field name="text_hid_DTCTH_ClassName" type="String"/>
+			<field name="hid_DTCTH_ClassName" type="BinHex"/>
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="BoundingBox">
+		<field name="vectorBBoxMin" type="Vector3"/>
+		<field name="vectorBBoxMax" type="Vector3"/>
+	</object>
+</class>

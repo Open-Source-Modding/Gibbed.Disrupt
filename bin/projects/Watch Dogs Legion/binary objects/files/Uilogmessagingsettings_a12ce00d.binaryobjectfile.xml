@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Uilogmessagingsettings_a12ce00d">
+	<object name="obj">
+		<inherit name="Uilogmessagingsettings_a12ce00dParameters"/>
+	</object>
+</file>

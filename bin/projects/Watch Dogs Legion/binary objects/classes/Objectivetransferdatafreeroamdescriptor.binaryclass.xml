@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivetransferdatafreeroamdescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="selTransferType" type="Enum"/>
+	<field name="fRemoteHackTransferDuration" type="Float"/>
+	<field name="bTriggerFailOnHumanTargetDeath" type="Boolean"/>
+	<field name="downloadgameplaydescriptorDownloadGameplaySettings" type="BinHex"/>
+	<field name="bSendStimOnDataTransferStartedToTarget" type="Boolean"/>
+	<object name="locstridObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDescriptionLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="TransferSettings">
+		<field name="fTransferRadius" type="Float"/>
+		<field name="bUseOverrideRadius" type="Boolean"/>
+		<field name="bAdaptCountOfRequiredPlayersToCountOfSessionPeers" type="Boolean"/>
+		<field name="bStartDownloadForAllPlayers" type="Boolean"/>
+		<field name="bShouldDisplayMissingPlayerLocation" type="Boolean"/>
+		<field name="selTransferRadiusShape" type="Enum"/>
+		<field name="fCylinderShapeZOffsetTop" type="Float"/>
+		<field name="fCylinderShapeZOffsetBottom" type="Float"/>
+		<field name="fPauseWarningDuration" type="Float"/>
+		<field name="bActivateMultiplayerBoost" type="Boolean"/>
+		<field name="fBoostCoefByPlayer" type="Float"/>
+		<field name="bSendAttractStimOnDownloadStart" type="Boolean"/>
+		<field name="fAttractStimRadius" type="Float"/>
+		<object name="MissingPlayerLocationIds"/>
+		<object name="locstridPauseWarningLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="ProgressBarTextOverride">
+			<object name="locstridTextOnProgressBar">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridTextOnProgressBarOnOutOfRange">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="locstridActionTargetText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="TriggerEventsOnFollowingRatiosReached">
+			<object name="Ratio">
+				<field name="Ratio" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="locstridHackingWheelHackTextLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="DownloadStartedOnlineNotification">
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="DownloadStartedCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="locstridDataLostFailLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

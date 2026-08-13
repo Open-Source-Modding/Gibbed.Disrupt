@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Censusinitialmemorydb_cfc65950">
+	<object name="obj">
+		<inherit name="Censusinitialmemorydb_cfc65950Parameters"/>
+	</object>
+</file>

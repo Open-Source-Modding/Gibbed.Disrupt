@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PubliceventsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnabled" type="Boolean"/>
+	<object name="IsAllowedRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="LowerBoundFrequencyRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="UpperBoundFrequenceRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="ShouldTriggerRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="MinLocationDistanceRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="MaxLocationDistanceRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="FrontFacingDampeningRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="InRangeDampeningRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="OutOfRangeDampeningRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="PublicEventsList">
+		<object name="publiceventslistPublicEventDbObject">
+			<field name="publiceventslistPublicEventDbObject" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SpawnunitsbossabilityconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="psSpawningParticles" type="BinHex"/>
+	<field name="vectorParticlesOffset" type="Vector3"/>
+	<object name="Groups">
+		<object name="Groups">
+			<field name="fSpawnDelay" type="Float"/>
+			<object name="Units">
+				<object name="Units">
+					<field name="vectorSpawnOffset" type="Vector3"/>
+					<field name="selUnitType" type="Enum"/>
+					<field name="droneconfigDroneConfig" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UiworlddbsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Map">
+		<object name="CameraHorizontalBounds">
+			<field name="fMinimum" type="Float"/>
+			<field name="fMaximum" type="Float"/>
+		</object>
+		<object name="CameraVerticalBounds">
+			<field name="fMinimum" type="Float"/>
+			<field name="fMaximum" type="Float"/>
+		</object>
+	</object>
+</class>

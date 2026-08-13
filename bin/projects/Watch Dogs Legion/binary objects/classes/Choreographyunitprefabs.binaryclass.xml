@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChoreographyunitprefabsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="curveActivityCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

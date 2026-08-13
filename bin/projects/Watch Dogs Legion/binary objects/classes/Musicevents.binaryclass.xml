@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MusiceventsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="texturedbobjectEventTexture" type="BinHex"/>
+	<field name="text_sndMusicEvent" type="String"/>
+	<field name="sndMusicEvent" type="BinHex"/>
+	<field name="sndtpMusicEventType" type="BinHex"/>
+	<field name="bDJSystemEnabled" type="Boolean"/>
+	<field name="selRadioStation" type="Enum"/>
+	<object name="locstridEventName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridArtistName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

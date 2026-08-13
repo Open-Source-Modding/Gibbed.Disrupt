@@ -1,0 +1,5 @@
+<file name="adrenaline_loop" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

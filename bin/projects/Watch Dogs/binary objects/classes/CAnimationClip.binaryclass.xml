@@ -1,0 +1,28 @@
+<class name="CAnimationClip">
+    <object name="CAnimationClip">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field name="timeStartTime" type="Float"/>
+        <field name="timeDuration" type="Float"/>
+        <field name="timeEndTime" type="Float"/>
+        <field name="hidResizable" type="Boolean"/>
+        <field name="disMuted"/>
+        <field name="text_sAnimation" type="String"/>
+        <field name="sAnimation"/>
+        <field name="timeBlendTime" type="Float"/>
+        <field name="timeAnimStartTime" type="Float"/>
+        <field name="timeAnimStopTime" type="Float"/>
+        <field name="bResizable" type="Boolean"/>
+        <field name="bLooping" type="Boolean"/>
+        <field name="bHoldLastFrame" type="Boolean"/>
+        <field name="hidAnchorName" type="String"/>
+        <field name="hidHasAnchor"/>
+        <field name="hidAnimCRC"/>
+        <field name="hidAnimDuration" type="Float"/>
+        <field name="bForceDisableAnchor" type="Boolean"/>
+        <field name="disMoveName" type="String"/>
+        <field name="disMoveBlendPath" type="String"/>
+        <field name="MovePathID" type="String"/>
+    </object>
+</class>

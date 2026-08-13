@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Bossregistrydb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Bosses">
+		<object name="Boss">
+			<field name="text_sID" type="String"/>
+			<field name="sID" type="BinHex"/>
+			<field name="bossconfigBossConfig" type="BinHex"/>
+		</object>
+	</object>
+</class>

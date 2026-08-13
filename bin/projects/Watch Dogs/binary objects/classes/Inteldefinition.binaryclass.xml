@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="InteldefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="censuspredefinedactordescriptorPredefinedActorDescriptor" type="BinHex"/>
+	<field name="phonecommunicationsettingsIntelActivatedTeamSpeak" type="BinHex"/>
+	<field name="phonecommunicationsettingsIntelDeactivatedTeamSpeakInjured" type="BinHex"/>
+	<field name="phonecommunicationsettingsIntelDeactivatedTeamSpeakInjuredPlayerCaused" type="BinHex"/>
+	<field name="phonecommunicationsettingsIntelDeactivatedTeamSpeakArrested" type="BinHex"/>
+	<field name="phonecommunicationsettingsIntelDeactivatedTeamSpeakArrestedPlayerCaused" type="BinHex"/>
+	<field name="phonecommunicationsettingsIntelDeactivatedTeamSpeakDeath" type="BinHex"/>
+	<field name="phonecommunicationsettingsIntelDeactivatedTeamSpeakDeathPlayerCaused" type="BinHex"/>
+	<field name="phonecommunicationsettingsIntelDeactivatedTeamSpeakResentment" type="BinHex"/>
+	<field name="iIntelGroupIndex" type="Int32"/>
+	<field name="censuscontractdefinitionContractDefinitionForFullSchedule" type="BinHex"/>
+	<field name="selIntelType" type="Enum"/>
+	<field name="itemsActivationHint" type="BinHex"/>
+	<field name="bDisableNotificationsOverride" type="Boolean"/>
+	<field name="bAllowMultiQueueOverride" type="Boolean"/>
+	<field name="bSupportsReactivation" type="Boolean"/>
+	<field name="bRequiresBeingInCLOForActivation" type="Boolean"/>
+	<field name="bRequiresUniformForActivation" type="Boolean"/>
+	<object name="ActivationRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="locstridTitle">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDescription">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="AttendanceDefinitionsForFullSchedule">
+		<object name="censusattendancedefinitionAttendance">
+			<field name="censusattendancedefinitionAttendance" type="BinHex"/>
+		</object>
+	</object>
+</class>

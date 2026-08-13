@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uirewardmessagingsettings_8dd5154eParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Unset">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="Clothing">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="CryptoNegative">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="Emote">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="Mask">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="Mod">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="NewPerkSlot">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="OnlineXP">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="PremiumOperative">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="ProgressionBooster">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="RecruitAvailable">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="PositiveAffinityChange">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="Relic">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="ResistanceXP">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="Revenge">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="TeamTraitDiscovered">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="TechPoint">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="TraitDiscovered">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="Vehicle">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="VehicleSkin">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="Weapon">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="WeaponSkin">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="RaidModeUnlocked">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="UpgradeUnlocked">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+	<object name="NewOperative">
+		<field name="texturedbobjectIcon" type="BinHex"/>
+	</object>
+</class>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Soundwallasettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fSearchRadius" type="Float"/>
+	<object name="SoundSettings">
+		<field name="text_sndWallaPlaySound" type="String"/>
+		<field name="sndWallaPlaySound" type="BinHex"/>
+		<field name="text_sndWallaStopSound" type="String"/>
+		<field name="sndWallaStopSound" type="BinHex"/>
+		<field name="sndtpWallaPlaySoundType" type="BinHex"/>
+		<field name="sndtpWallaStopSoundType" type="BinHex"/>
+		<object name="sndvarCellSizeRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarCellDistanceFromPlayerRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarNPCCountRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswtpCellMoodSwitch">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlCellMoodRelaxed">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlCellMoodAngry">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlCellMoodAfraid">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlCellMoodHappy">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlCellMoodStressed">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlCellMoodProtest">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlCellMoodBareknuckle">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+	<object name="CellSettings">
+		<field name="fCellRadiusSquared" type="Float"/>
+		<field name="iMinCellSize" type="Int32"/>
+		<field name="iMaxCellCount" type="Int32"/>
+	</object>
+</class>

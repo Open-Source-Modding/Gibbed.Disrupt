@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Civiliannavigationsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PathFollowingSettings">
+		<field name="fCrossingRatio" type="Float"/>
+		<field name="fFleeCrossingRatio" type="Float"/>
+		<field name="selFollowTurningAngle" type="Enum"/>
+		<field name="selNavMeshEdgeTurningAngle" type="Enum"/>
+		<field name="fStartAccelerateAfterNewPathDelay" type="Float"/>
+		<field name="fIgnoreLookBackDelay" type="Float"/>
+		<field name="iMaxDirectioNChangeBecauseOfThreat" type="Int32"/>
+	</object>
+	<object name="PathComputationSettings">
+		<field name="fDistToRecoverFromOutsideNavmesh" type="Float"/>
+		<field name="fDistToFindANavMeshHelperExit" type="Float"/>
+		<field name="fDistToFindANavMeshHelperPoint" type="Float"/>
+		<field name="fDistToFindASpline" type="Float"/>
+		<field name="bAllowDeadEnd" type="Boolean"/>
+	</object>
+</class>

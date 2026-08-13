@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CiviliancompositionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="civbankCiviliansBank" type="BinHex"/>
+	<object name="CivilianDistributions">
+		<object name="CivilianDistribution">
+			<field name="civdistCivilianDistribution" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Settings">
+		<field name="bOverrideCLODensity" type="Boolean"/>
+		<field name="uiCLODensity" type="UInt32"/>
+		<field name="bOverrideTimeOfDayCivilianSpawnDensity" type="Boolean"/>
+		<object name="curveTimeOfDayCivilianSpawnDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="ContextualSettings">
+			<object name="ContextualCompositionSetting">
+				<field name="entcontContext" type="BinHex"/>
+				<field name="fEnticerRatio" type="Float"/>
+			</object>
+		</object>
+	</object>
+</class>

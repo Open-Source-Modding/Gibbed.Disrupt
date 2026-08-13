@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Objectiveneutralizeraid2bossfightsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="Target">
+		<field name="TargetSceneID" type="BinHex"/>
+		<field name="text_TargetRole" type="String"/>
+		<field name="TargetRole" type="BinHex"/>
+	</object>
+</class>

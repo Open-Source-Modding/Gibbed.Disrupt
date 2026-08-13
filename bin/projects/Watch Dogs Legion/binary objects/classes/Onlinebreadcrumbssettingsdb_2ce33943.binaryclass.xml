@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Onlinebreadcrumbssettingsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="phonecommunicationsettingsNextMissionActivationPhoneCommunication" type="BinHex"/>
+	<object name="AreEnabled">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="LowerBoundFrequencyRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="UpperBoundFrequenceRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="ShouldTriggerRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="SinglePlayerOpsList">
+		<object name="opslistOpConfigDbObject">
+			<field name="opslistOpConfigDbObject" type="BinHex"/>
+		</object>
+	</object>
+	<object name="MultiPlayerOpsList">
+		<object name="opslistOpConfigDbObject">
+			<field name="opslistOpConfigDbObject" type="BinHex"/>
+		</object>
+	</object>
+	<object name="WarningPopupMaxShowing">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

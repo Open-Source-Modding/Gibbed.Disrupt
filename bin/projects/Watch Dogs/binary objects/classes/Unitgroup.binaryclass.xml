@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UnitgroupParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bValid" type="Boolean"/>
+	<object name="Groups">
+		<object name="Group">
+			<field name="bAffiliationOverride" type="Boolean"/>
+			<field name="selAffiliation" type="Enum"/>
+			<field name="aispawningdbOverrideAiSpawningDb" type="BinHex"/>
+			<field name="bEnableFelonyVehicleSelection" type="Boolean"/>
+			<object name="AISpawningTypes">
+				<object name="AISpawningType">
+					<field name="selArchetype" type="Enum"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

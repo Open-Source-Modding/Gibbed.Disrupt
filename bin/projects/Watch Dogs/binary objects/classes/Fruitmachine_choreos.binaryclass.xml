@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Fruitmachine_choreosParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selFruitMachineChoreosTypes" type="Enum"/>
+	<field name="fruitmachinetypesMachineType" type="BinHex"/>
+	<field name="fDuration" type="Float"/>
+	<object name="FruitMachineChoreoState">
+		<object name="State">
+			<field name="fTime" type="Float"/>
+			<object name="FruitMachineLightDb">
+				<object name="fruitmachinelightsFruitMachineLight">
+					<field name="fruitmachinelightsFruitMachineLight" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

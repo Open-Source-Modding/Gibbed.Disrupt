@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CompaniondroneactionsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="CompanionDroneAction">
+		<field hash="6D1E1959" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<field name="bControlLightColor" type="Boolean"/>
+			<field name="colorLightColor" type="VectorColor"/>
+			<field name="fMinDuration" type="Float"/>
+			<field name="fDelayBetweenShots" type="Float"/>
+			<field name="fBurstDuration" type="Float"/>
+			<field name="fRange" type="Float"/>
+			<field name="fHealingPerSecond" type="Float"/>
+			<field name="fMaxHealingPerSecondRatio" type="Float"/>
+			<field name="fDetectionProgressToTrigger" type="Float"/>
+			<field name="fCloakDuration" type="Float"/>
+			<field name="fCooldown" type="Float"/>
+			<object name="MoveParams">
+				<field name="fIdleMoveSpeed" type="Float"/>
+				<field name="fDistToCatchUp" type="Float"/>
+				<field name="fSpeedToCatchUp" type="Float"/>
+				<field name="fRunAlongMinOwnerSpeed" type="Float"/>
+				<field name="fRunAlongEnterDelay" type="Float"/>
+				<field name="fMoveSpeed" type="Float"/>
+				<field name="vectorOffsetFromTarget" type="Vector3"/>
+				<field name="vector2HorizontalRange" type="Vector2"/>
+				<field name="vector2VerticalRange" type="Vector2"/>
+				<field name="vector2BackFrontRange" type="Vector2"/>
+				<field name="vector2MoveFrequencyRandomRange" type="Vector2"/>
+			</object>
+		</object>
+	</object>
+</class>

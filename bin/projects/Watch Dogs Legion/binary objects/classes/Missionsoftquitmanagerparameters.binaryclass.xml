@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MissionsoftquitmanagerparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fWarningDuration" type="Float"/>
+	<field name="bHideMissionAreaOnEnter" type="Boolean"/>
+	<object name="locstridWarningLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridCompletedLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Inputcontrolleritemselectionsettings_326b5309Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fPopupDisplayTime" type="Float"/>
+	<object name="Sounds">
+		<field name="uisoundPopupSelectionSound" type="BinHex"/>
+		<field name="uisoundPopupAlreadySelectedSound" type="BinHex"/>
+		<field name="uisoundPopupUnavailableSelectionSound" type="BinHex"/>
+		<field name="uisoundPopupCloseSound" type="BinHex"/>
+	</object>
+</class>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CombatdronesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fAproachSpeed" type="Float"/>
+	<field name="fCombatSpeed" type="Float"/>
+	<field name="fCombatRange" type="Float"/>
+	<field name="fShootRange" type="Float"/>
+	<field name="fShootRangeIfUnreachableTarget" type="Float"/>
+	<field name="fShootTimeBeforeFiring" type="Float"/>
+	<field name="fMeleeHeight" type="Float"/>
+	<field name="fCombatHeight" type="Float"/>
+	<field name="fShootTimeout" type="Float"/>
+	<field name="fTargetStunnedWaitTime" type="Float"/>
+	<field name="fPlayerDownWaitTime" type="Float"/>
+	<field name="bForceAcquireTicket" type="Boolean"/>
+	<field name="fGetUpThresholdHeight" type="Float"/>
+	<field name="fGetUpSpeed" type="Float"/>
+	<field name="fGetUpAbandonTime" type="Float"/>
+	<field name="fStrafeRange" type="Float"/>
+	<field name="fMoveBackRange" type="Float"/>
+	<field name="fLookAtValidLKPDelayMin" type="Float"/>
+	<field name="fLookAtValidLKPDelayMax" type="Float"/>
+	<field name="bCanFireRockets" type="Boolean"/>
+	<field name="bCanThrowGrenades" type="Boolean"/>
+	<field name="selMoveAndShootType" type="Enum"/>
+	<field name="bCanSupress" type="Boolean"/>
+	<field name="fSupressDistance" type="Float"/>
+	<field name="fSupressDelay" type="Float"/>
+	<field name="fSupressMovementSpeed" type="Float"/>
+	<field name="fCorrectHeightCooldownTime" type="Float"/>
+	<field name="fIdleMultiplier" type="Float"/>
+	<field name="fIdleBurstMultiplier" type="Float"/>
+	<field name="bCanShootTargetVehicle" type="Boolean"/>
+	<field name="fLKPRefreshRate" type="Float"/>
+	<field name="fLKPRefreshRateInVehicle" type="Float"/>
+	<field name="fSwitchToFullCombatTimeout" type="Float"/>
+	<field name="text_sndSwitchToFullCombatSoundReset" type="String"/>
+	<field name="sndSwitchToFullCombatSoundReset" type="BinHex"/>
+	<field name="sndtpSwitchToFullCombatSoundTypeReset" type="BinHex"/>
+	<field name="text_sndSwitchToFullCombatSoundBegin" type="String"/>
+	<field name="sndSwitchToFullCombatSoundBegin" type="BinHex"/>
+	<field name="sndtpSwitchToFullCombatSoundtypeBegin" type="BinHex"/>
+	<field name="text_sndSwitchToFullCombatSoundEndHostile" type="String"/>
+	<field name="sndSwitchToFullCombatSoundEndHostile" type="BinHex"/>
+	<field name="sndtpSwitchToFullCombatSoundTypeEndHostile" type="BinHex"/>
+	<field name="text_sndSwitchToFullCombatSoundEndCancel" type="String"/>
+	<field name="sndSwitchToFullCombatSoundEndCancel" type="BinHex"/>
+	<field name="sndtpSwitchToFullCombatSoundTypeEndCancel" type="BinHex"/>
+	<field name="bUseNonPlayerExplosionDamageMultiplier" type="Boolean"/>
+	<object name="ShootSettings">
+		<field name="iNumberBurstPerShotMin" type="Int32"/>
+		<field name="iNumberBurstPerShotMax" type="Int32"/>
+		<field name="iNumberBulletPerBurstMin" type="Int32"/>
+		<field name="iNumberBulletPerBurstMax" type="Int32"/>
+		<field name="iROSHeatLevelToStartfire" type="Int32"/>
+		<field name="fBurstDelayMin" type="Float"/>
+		<field name="fBurstDelayMax" type="Float"/>
+		<field name="fLookAtTurnSpeedModifier" type="Float"/>
+		<field name="fPreShootDelay" type="Float"/>
+		<field name="text_sndPreShootSound" type="String"/>
+		<field name="sndPreShootSound" type="BinHex"/>
+		<field name="sndtpPreShootSoundType" type="BinHex"/>
+		<field name="bIsValid" type="Boolean"/>
+	</object>
+	<object name="Grenade">
+		<field name="fTimeout" type="Float"/>
+		<field name="fStartTimeout" type="Float"/>
+		<field name="fTimeBeforeFiring" type="Float"/>
+		<field name="vec2Range" type="BinHex"/>
+		<field name="iGrenadesCountInVolley" type="Int32"/>
+		<field name="fNextGrenadesDistance" type="Float"/>
+		<field name="fMinAngleBetweenNextGrenades" type="Float"/>
+		<field name="fRefreshTargetPosDistance" type="Float"/>
+		<field name="fTargetVelocityFactor" type="Float"/>
+		<field name="bShouldAskSquad" type="Boolean"/>
+		<field name="bShouldCheckAboveItself" type="Boolean"/>
+		<field name="bShouldForceThrowRocket" type="Boolean"/>
+		<object name="curveVolleyRandomAngleCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="CheckLKP">
+		<field name="fDelayMin" type="Float"/>
+		<field name="fDelayMax" type="Float"/>
+		<field name="fApproachMaxDistance" type="Float"/>
+		<field name="fApproachNearTolerance" type="Float"/>
+		<field name="fApproachMoveSpeed" type="Float"/>
+		<field name="fApproachAbandonTime" type="Float"/>
+		<field name="fRotationTimeMin" type="Float"/>
+		<field name="fRotationTimeMax" type="Float"/>
+		<field name="fRotationsTotalTime" type="Float"/>
+		<field name="fRotationAngle" type="Float"/>
+		<field name="fRotationSpeedModifier" type="Float"/>
+		<field name="fOverrideCheckLKPTimer" type="Float"/>
+	</object>
+	<object name="SupressShootSettings">
+		<field name="iNumberBurstPerShotMin" type="Int32"/>
+		<field name="iNumberBurstPerShotMax" type="Int32"/>
+		<field name="iNumberBulletPerBurstMin" type="Int32"/>
+		<field name="iNumberBulletPerBurstMax" type="Int32"/>
+		<field name="iROSHeatLevelToStartfire" type="Int32"/>
+		<field name="fBurstDelayMin" type="Float"/>
+		<field name="fBurstDelayMax" type="Float"/>
+		<field name="fLookAtTurnSpeedModifier" type="Float"/>
+		<field name="fPreShootDelay" type="Float"/>
+		<field name="text_sndPreShootSound" type="String"/>
+		<field name="sndPreShootSound" type="BinHex"/>
+		<field name="sndtpPreShootSoundType" type="BinHex"/>
+		<field name="bIsValid" type="Boolean"/>
+	</object>
+	<object name="LowHealthModifiers">
+		<field name="fLowHealthPercent" type="Float"/>
+		<field name="fLowHealthSpeedModifier" type="Float"/>
+		<field name="fLowHealthDistanceModifier" type="Float"/>
+		<field name="fCriticalHealthPercent" type="Float"/>
+		<field name="fCriticalHealthSpeedModifier" type="Float"/>
+		<field name="fCriticalHealthDistanceModifier" type="Float"/>
+	</object>
+	<object name="CallForReinforcementsDelay">
+		<field name="fMin" type="Float"/>
+		<field name="fMax" type="Float"/>
+	</object>
+</class>

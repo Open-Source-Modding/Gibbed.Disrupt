@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhasestrategydecoratorsettingsParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field hash="199F11BC" type="BinHex"/>
+	<field hash="24CCC261" type="BinHex"/>
+	<field name="sndProximityActivationSound" type="BinHex"/>
+	<field hash="3163A0DE" type="BinHex"/>
+	<field hash="42EA7F29" type="BinHex"/>
+	<field name="selDecoratorType" type="BinHex"/>
+	<field name="selHackRequired" type="BinHex"/>
+	<field name="sndInteractionAvailableSound" type="BinHex"/>
+	<field name="sndRegenerateStartSound" type="BinHex"/>
+	<field hash="711F3080" type="BinHex"/>
+	<field hash="73465A88" type="BinHex"/>
+	<field name="sndInteractionUnavailableSound" type="BinHex"/>
+	<field name="sndOnHackPressed" type="BinHex"/>
+	<field hash="8CBC56D5" type="BinHex"/>
+	<field hash="AE75EE76" type="BinHex"/>
+	<field name="sndProximityDeActivationSound" type="BinHex"/>
+	<field name="sndRegenerateStopSound" type="BinHex"/>
+	<field name="bShouldDrainBattery" type="BinHex"/>
+	<field name="sndOnHackReleased" type="BinHex"/>
+	<field name="sndInteractionSound" type="BinHex"/>
+	<field name="sndCallReinforcementSound" type="BinHex"/>
+	<object name="InteractionProperties">
+		<object name="Interactions">
+			<object name="Interaction">
+				<object name="Logic">
+					<field name="uiConeWidth" type="BinHex"/>
+					<field name="vectorOffsetFromEntity" type="BinHex"/>
+					<field name="fDistanceInteraction" type="BinHex"/>
+					<field name="uiConeYawOffset" type="BinHex"/>
+					<field name="bEnable" type="BinHex"/>
+				</object>
+				<object name="Indicator">
+					<field name="selButtonType" type="BinHex"/>
+					<field name="vectorIconOffsetFromEntity" type="BinHex"/>
+					<field name="selInteractionIconType" type="BinHex"/>
+					<object name="locstridInteractionText">
+						<field name="LocalizationId" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

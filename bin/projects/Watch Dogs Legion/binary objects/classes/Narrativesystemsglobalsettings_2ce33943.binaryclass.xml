@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Narrativesystemsglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="GlobalDedSecNarrative">
+		<field name="fOncePerOperativeSharedCooldownDuration" type="Float"/>
+		<object name="DedSecNarrativeEnabledRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

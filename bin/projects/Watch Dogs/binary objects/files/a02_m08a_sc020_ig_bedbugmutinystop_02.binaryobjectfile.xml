@@ -1,0 +1,5 @@
+<file name="a02_m08a_sc020_ig_bedbugmutinystop_02" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

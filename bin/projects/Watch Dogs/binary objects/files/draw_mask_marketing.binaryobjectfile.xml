@@ -1,0 +1,5 @@
+<file name="draw_mask_marketing" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

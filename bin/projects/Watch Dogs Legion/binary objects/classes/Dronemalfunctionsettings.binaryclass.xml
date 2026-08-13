@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronemalfunctionsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiMalfunctionCountInVolley" type="UInt32"/>
+	<field name="vec2MalfunctionRange" type="BinHex"/>
+	<field name="fMalfunctionInitialFireDelay" type="Float"/>
+	<field name="fMalfunctionChanceToTargetEnemies" type="Float"/>
+	<field name="fMalfunctionMinDistBetweenShots" type="Float"/>
+	<field name="bSendSearchStim" type="Boolean"/>
+	<field name="bSendWasMalfunctioningIncident" type="Boolean"/>
+</class>

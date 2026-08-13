@@ -1,0 +1,5 @@
+<file name="protect_clara_00" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

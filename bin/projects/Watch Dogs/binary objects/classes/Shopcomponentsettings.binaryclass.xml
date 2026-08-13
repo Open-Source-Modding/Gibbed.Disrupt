@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ShopcomponentsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiShopCashMin" type="UInt32"/>
+	<field name="uiShopCashMax" type="UInt32"/>
+	<field name="itemsReward" type="BinHex"/>
+	<field name="bIsVendingMachine" type="Boolean"/>
+	<field name="bCanAutoBuyItems" type="Boolean"/>
+	<object name="locstridInteractionText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridStealText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="ShopMenu">
+		<field name="uimenupageMenuPage" type="BinHex"/>
+	</object>
+	<object name="InventoryItems">
+		<object name="Item">
+			<field name="itemsItem" type="BinHex"/>
+		</object>
+	</object>
+</class>

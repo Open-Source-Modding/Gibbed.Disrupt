@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Stumbldescriptor_97fb04c8Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiAppRowsCount" type="UInt32"/>
+	<field name="possyselementTrackedTargetMarker" type="BinHex"/>
+	<field name="fAddModifierProbability" type="Float"/>
+	<field name="fSingleShotProbability" type="Float"/>
+	<field name="fMultiShotProbability" type="Float"/>
+	<field name="uiMinNumberOfPossibleShots" type="UInt32"/>
+	<field name="uiMaxNumberOfPossibleShots" type="UInt32"/>
+	<field name="fSameModifierValueProbability" type="Float"/>
+	<field name="fDifferentModifierValueProbability" type="Float"/>
+	<object name="locstridStumblAppLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="RulesmithReward">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="RulesmithFollowersCount">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="locstridTrackedTargetObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="DedsecPropagandaInfo">
+		<object name="PropagandaInfo">
+			<object name="locstridTopText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BottomTexts">
+				<object name="BottomText">
+					<object name="locstridBottomText">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

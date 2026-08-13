@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Subtitlesettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="SubtitleSettings">
+		<field name="iBarkDistance" type="Int32"/>
+		<field name="castedcharactersAiSpeakerPersona" type="BinHex"/>
+		<field name="iSubtitleLineBordersWidth" type="Int32"/>
+		<object name="locstridPoliceRadioDisplayName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDefaultBarkMaleName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDefaultBarkFemaleName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOccupationTemplateLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="LanguageSettings">
+			<field name="iMaxCharactersPerLine" type="Int32"/>
+			<field name="iMinCharactersPerLine" type="Int32"/>
+			<field name="fWidthPerCharacter" type="Float"/>
+		</object>
+		<object name="AsianLanguageSettings">
+			<field name="iMaxCharactersPerLineAsian" type="Int32"/>
+			<field name="iMinCharactersPerLineAsian" type="Int32"/>
+			<field name="fWidthPerCharacterAsian" type="Float"/>
+			<field name="fWidthPerCharacterArabic" type="Float"/>
+			<object name="AsianLanguagesLineWrapping">
+				<object name="AsianLanguageLineWrapping">
+					<field name="selLanguage" type="Enum"/>
+				</object>
+			</object>
+			<object name="AsianLanguagesNumberChars">
+				<field name="selLanguage" type="Enum"/>
+				<object name="AsianLanguagesNumberChars">
+					<field name="selLanguage" type="Enum"/>
+				</object>
+			</object>
+			<object name="locstridLineBreakLeadingChars">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridLineBreakTrailingChars">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="PunctuationSettings">
+			<object name="Languages">
+				<field name="selLanguage" type="Enum"/>
+				<object name="Languages">
+					<field name="selLanguage" type="Enum"/>
+				</object>
+			</object>
+			<object name="locstridPunctuationMarks">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridEndPunctuationMarks">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PunctuationSettings">
+				<object name="Languages">
+					<object name="Languages">
+						<field name="selLanguage" type="Enum"/>
+					</object>
+				</object>
+				<object name="locstridPunctuationMarks">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridEndPunctuationMarks">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="FontSettings">
+		<object name="DefaultSettings">
+			<field name="uicolorpalettesettingsNarrativeFontColor" type="BinHex"/>
+			<field name="uicolorpalettesettingsBarkFontColor" type="BinHex"/>
+		</object>
+		<object name="DifferentSpeakerSettings">
+			<field name="bUseDifferentColorsForSpeakers" type="Boolean"/>
+			<field name="uicolorpalettesettingsPlayerFontColor" type="BinHex"/>
+			<field name="uicolorpalettesettingsAISpeakerFontColor" type="BinHex"/>
+			<field name="uicolorpalettesettingsTeamFontColor" type="BinHex"/>
+			<field name="uicolorpalettesettingsOtherFontColor" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ClosedCaptionSettings">
+		<field name="fClosedCaptionsHistoryPeriod" type="Float"/>
+		<field name="fClosedCaptionsShowPeriod" type="Float"/>
+		<field name="fDirectionNearbyDistance" type="Float"/>
+		<field name="fActiveCombatCooldown" type="Float"/>
+	</object>
+	<object name="BarkSettings">
+		<field name="fLowPriorityBarkCooldown" type="Float"/>
+		<field name="fBarkCooldown" type="Float"/>
+		<field name="fBarkShowPeriod" type="Float"/>
+		<field name="fHighPriorityBarkMaxDistance" type="Float"/>
+		<field name="fLowPriorityBarkMaxDistance" type="Float"/>
+	</object>
+	<object name="SubtitleSelectionSettings">
+		<object name="SubtitlesTrackSettings">
+			<field name="fUnskippableMaxDuration" type="Float"/>
+			<field name="fUnskippableMaxDelay" type="Float"/>
+			<field name="fSkippableMinRemainTime" type="Float"/>
+			<field name="fSkippableMinSkipTime" type="Float"/>
+		</object>
+		<object name="PlasmaShowSettings">
+			<field name="fShowInSightDistanceFactor" type="Float"/>
+			<field name="fShowOutSightDistanceFactor" type="Float"/>
+			<field name="fHideDistanceFactor" type="Float"/>
+			<field name="fOcclusionFactor" type="Float"/>
+		</object>
+		<object name="PlasmaSwitchSettings">
+			<field name="fVisibilityEpsilon" type="Float"/>
+			<field name="fOldInSightMultiplier" type="Float"/>
+			<field name="fNewInSightMultiplier" type="Float"/>
+			<field name="fOldOutSightMultiplier" type="Float"/>
+			<field name="fNewOutSightMultiplier" type="Float"/>
+		</object>
+		<object name="BarksShowSettings">
+			<field name="fShowInSightDistanceFactor" type="Float"/>
+			<field name="fShowOutSightDistanceFactor" type="Float"/>
+			<field name="fHideDistanceFactor" type="Float"/>
+			<field name="fOcclusionFactor" type="Float"/>
+		</object>
+		<object name="BarksSwitchSettings">
+			<field name="fVisibilityEpsilon" type="Float"/>
+			<field name="fOldInSightMultiplier" type="Float"/>
+			<field name="fNewInSightMultiplier" type="Float"/>
+			<field name="fOldOutSightMultiplier" type="Float"/>
+			<field name="fNewOutSightMultiplier" type="Float"/>
+		</object>
+	</object>
+</class>

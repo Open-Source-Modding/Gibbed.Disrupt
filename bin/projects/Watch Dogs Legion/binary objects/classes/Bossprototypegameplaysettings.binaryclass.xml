@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BossprototypegameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="BossData">
+		<field name="fTerminalActivationDelay" type="Float"/>
+		<field name="fStageBootDuration" type="Float"/>
+		<field name="fLobbyCinematicBossVisibilityDuration" type="Float"/>
+		<field name="fStageCompleteDuration" type="Float"/>
+		<field name="fWipeDroneStartDelay" type="Float"/>
+		<field name="fScreenStartupDelay" type="Float"/>
+		<field name="fMicrodroneHintDelay" type="Float"/>
+		<field name="fFirstRoomMessageDelay" type="Float"/>
+		<field name="fWarningTerminalActiveDelay" type="Float"/>
+		<field name="sndRoomActivationSound" type="BinHex"/>
+		<field name="sndRoomFailSound" type="BinHex"/>
+		<field name="text_sndBossScreenUpdate" type="String"/>
+		<field name="sndBossScreenUpdate" type="BinHex"/>
+		<field name="text_sndRoomWipeAttackStarted" type="String"/>
+		<field name="sndRoomWipeAttackStarted" type="BinHex"/>
+		<field name="text_sndRoomWipeAttackAborted" type="String"/>
+		<field name="sndRoomWipeAttackAborted" type="BinHex"/>
+		<field name="text_sndRoomWeakspotOpen" type="String"/>
+		<field name="sndRoomWeakspotOpen" type="BinHex"/>
+		<field name="text_sndDPSStageStart" type="String"/>
+		<field name="sndDPSStageStart" type="BinHex"/>
+		<field name="text_sndDPSStageStop" type="String"/>
+		<field name="sndDPSStageStop" type="BinHex"/>
+		<field name="text_sndMuteSoundEvents" type="String"/>
+		<field name="sndMuteSoundEvents" type="BinHex"/>
+		<field name="text_sndUnmuteSoundEvents" type="String"/>
+		<field name="sndUnmuteSoundEvents" type="BinHex"/>
+		<field name="sndBulletAttenuationStartEvent" type="BinHex"/>
+		<field name="sndBulletAttenuationStopEvent" type="BinHex"/>
+		<field name="sndtpRoomActivationSoundType" type="BinHex"/>
+		<field name="sndtpRoomFailSoundType" type="BinHex"/>
+		<field name="sndtpBossScreenUpdateType" type="BinHex"/>
+		<field name="sndtpRoomWipeAttackStartedType" type="BinHex"/>
+		<field name="sndtpRoomWipeAttackAbortedType" type="BinHex"/>
+		<field name="sndtpRoomWeakspotOpenType" type="BinHex"/>
+		<field name="sndtpDPSStageStartType" type="BinHex"/>
+		<field name="sndtpDPSStageStopType" type="BinHex"/>
+		<field name="sndtpMuteSoundEventsType" type="BinHex"/>
+		<field name="sndtpUnmuteSoundEventsType" type="BinHex"/>
+		<field name="sndtpBulletAttenuationStartEventType" type="BinHex"/>
+		<field name="sndtpBulletAttenuationStopEventType" type="BinHex"/>
+		<field name="fDelayDialogWipeStarted" type="Float"/>
+		<field name="fDelayDialogWipeAborted" type="Float"/>
+		<field name="fDelayDialogRoomStageTransition" type="Float"/>
+		<field name="fReinforcementLightsDuration" type="Float"/>
+		<field name="entGameplayResetterId" type="BinHex"/>
+		<field name="fWarningDuration" type="Float"/>
+		<field name="fWipeDroneWipeChargeDuration" type="Float"/>
+		<field name="fWipeLowHealthWipeChargeDuration" type="Float"/>
+		<field name="fWipeNoRoomsWipeChargeDuration" type="Float"/>
+		<field name="fRoomWeakspotDialogDelay" type="Float"/>
+		<field name="fDPSDuration" type="Float"/>
+		<field name="fDPSMaxDamageRatio" type="Float"/>
+		<field name="fGameplayReadyStartDelay" type="Float"/>
+		<field name="entBossCarcassArchetypeSpawnPoint" type="BinHex"/>
+		<object name="RoomsData">
+			<object name="RoomData">
+				<field name="entPathIndicatorLightEntity" type="BinHex"/>
+				<field name="entPathIndicatorMaterialEntity" type="BinHex"/>
+				<object name="ColorSequenceData">
+					<object name="ColorSequenceData">
+						<field name="fDisplayColorTime" type="Float"/>
+						<field name="iSequenceLength" type="Int32"/>
+						<field name="fCompleteSequenceInputMaxDelay" type="Float"/>
+						<field name="fSequenceInputMaxDelay" type="Float"/>
+						<field name="fRestartSequenceDisplayDelay" type="Float"/>
+						<field name="fDroneForceExitDelay" type="Float"/>
+						<field name="fGameplayCompletedDelay" type="Float"/>
+						<field name="entResetEntityID" type="BinHex"/>
+						<field name="entSequenceDisplayEntityId" type="BinHex"/>
+						<field name="fWarningDuration" type="Float"/>
+						<field name="entObjectiveMarkerEntity" type="BinHex"/>
+						<object name="SequenceColors">
+							<object name="Color">
+								<field name="colorColor" type="VectorColor"/>
+							</object>
+						</object>
+						<object name="SequenceEntitieIDs">
+							<object name="EntityId">
+								<field name="entEntityID" type="BinHex"/>
+							</object>
+						</object>
+						<object name="LockedEntitieIDs"/>
+						<object name="locstridSequenceSuccessLogTitleLocId">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+						<object name="locstridSequenceSuccessLogMessageLocId">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+						<object name="locstridSequenceSuccessDisplay1LocId">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+						<object name="locstridSequenceSuccessDisplay2LocId">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+						<object name="locstridSequenceBadInputTitleLocId">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+						<object name="locstridSequenceBadInputMsgLocId">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+						<object name="ObjectiveMarkerHighlightEntities">
+							<object name="EntityId">
+								<field name="entEntityID" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="DroneGameplayDatas">
+			<object name="DroneGameplayData">
+				<object name="OverrideValues">
+					<field name="droneconfigDroneConfig" type="BinHex"/>
+					<field name="entDroneSpawnEntityId" type="BinHex"/>
+					<field name="entInteractionEntityId" type="BinHex"/>
+					<field name="entInteractionFeedbackEntity" type="BinHex"/>
+					<field name="entInteractionRedLightEntity" type="BinHex"/>
+					<field name="sLMALayerName" type="BinHex"/>
+					<field name="bLoadOnInteract" type="Boolean"/>
+					<field name="bRespawnDroneWhenDestroyed" type="Boolean"/>
+					<field name="bFailOnDroneDestruction" type="Boolean"/>
+					<field name="bOnlyPlayIntroOnce" type="Boolean"/>
+					<field name="fWarningDuration" type="Float"/>
+					<object name="locstridRCWarningTitle">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+					<object name="locstridRCLocalWarningBody">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+					<object name="locstridRCRemoteWarningBody">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="BaseDBValues">
+					<field name="fDronePostIntroTeleportDelay" type="Float"/>
+					<field name="entDronePostIntroTeleportLocEntityId" type="BinHex"/>
+					<field name="entIntroSequenceCenterSceneEntityId" type="BinHex"/>
+					<field name="text_fileIntroSequenceResourcePath" type="String"/>
+					<field name="fileIntroSequenceResourcePath" type="BinHex"/>
+					<field name="text_sndMuteExternalSounds" type="String"/>
+					<field name="sndMuteExternalSounds" type="BinHex"/>
+					<field name="text_sndUnmuteExternalSounds" type="String"/>
+					<field name="sndUnmuteExternalSounds" type="BinHex"/>
+					<field name="sndStartAlarmSound" type="BinHex"/>
+					<field name="sndStopAlarmSound" type="BinHex"/>
+					<field name="sndtpMuteExternalSoundsType" type="BinHex"/>
+					<field name="sndtpUnmuteExternalSoundsType" type="BinHex"/>
+					<field name="sndtpStartAlarmSoundType" type="BinHex"/>
+					<field name="sndtpStopAlarmSoundType" type="BinHex"/>
+					<object name="SoundAndTypeStartBeepingSound">
+						<field name="text_sndSoundId" type="String"/>
+						<field name="sndSoundId" type="BinHex"/>
+						<field name="sndtpSoundType" type="BinHex"/>
+					</object>
+					<object name="SoundAndTypeStopBeepingSound">
+						<field name="text_sndSoundId" type="String"/>
+						<field name="sndSoundId" type="BinHex"/>
+						<field name="sndtpSoundType" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Rotations">
+			<object name="RotationData">
+				<field name="uiSequenceLength" type="UInt32"/>
+				<field name="reinforcementgameplaydescriptorSequence1" type="BinHex"/>
+				<field name="reinforcementgameplaydescriptorWipeDrone" type="BinHex"/>
+				<field name="reinforcementgameplaydescriptorRepairDrone" type="BinHex"/>
+				<object name="ReinforcementTerminalsData">
+					<object name="reinforcementgameplaydescriptorReinforcementGameplayDescriptor">
+						<field name="reinforcementgameplaydescriptorReinforcementGameplayDescriptor" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="BossScreenIds">
+			<object name="ScreenEntityId">
+				<field name="entScreenEntityId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="RoomStageTransitionsAndTypes">
+			<object name="BarkStageTransistion">
+				<field name="text_sndSoundId" type="String"/>
+				<field name="sndSoundId" type="BinHex"/>
+				<field name="sndtpSoundType" type="BinHex"/>
+			</object>
+		</object>
+		<object name="ReinforcementLights">
+			<object name="EntityId">
+				<field name="entEntityID" type="BinHex"/>
+			</object>
+		</object>
+		<object name="BossStaticBase">
+			<object name="StaticBaseData">
+				<field name="entStaticBaseID" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridwarningInactiveTerminalHeader">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningInactiveTerminalBody">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningRoomSuccessHeader">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningRoomSuccessBody">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningRoomFailureHeader">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningRoomFailureBody">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningAllRoomInactiveHeader">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningAllRoomInactiveBody">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningTerminalActiveHeader">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningTerminalActiveHeaderSingular">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridwarningTerminalActiveBody">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="BossCarcassArchetypesToSpawn">
+			<object name="BossCarcassArchetypeData">
+				<field name="text_archBossCarcassArchetype" type="String"/>
+				<field name="archBossCarcassArchetype" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

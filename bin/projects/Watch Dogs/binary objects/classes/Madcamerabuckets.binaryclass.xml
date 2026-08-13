@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MadcamerabucketsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Cameras">
+		<object name="CameraParams">
+			<field name="plasmaparamsCameraParams" type="BinHex"/>
+		</object>
+	</object>
+</class>

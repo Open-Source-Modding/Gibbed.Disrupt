@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scenetotexturemanagerconfig_474aa83cParameters">
+	<inherit name="SharedParameters"/>
+	<field name="vector4DebugDisplayScreenPositions" type="Vector4"/>
+	<field name="bForceDebugDisplay" type="Boolean"/>
+	<field name="selDebugDisplayPrimitiveFlag1" type="Enum"/>
+	<field name="selDebugDisplayPrimitiveFlag2" type="Enum"/>
+	<field name="selDebugDisplayPrimitiveFlag3" type="Enum"/>
+	<field name="selDebugDisplayPrimitiveBlendMode" type="Enum"/>
+	<field name="archDebugArchetypeToLoad" type="BinHex"/>
+	<field name="scenetotexturestudioobjectDebugStudioObject" type="BinHex"/>
+	<field name="iRenderResolutionSizeX" type="Int32"/>
+	<field name="iRenderResolutionSizeY" type="Int32"/>
+</class>

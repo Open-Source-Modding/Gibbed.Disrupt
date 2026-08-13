@@ -1,0 +1,5 @@
+<file name="a02_m03_sc020_scr_passenger_aiden_exit_and_cover" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

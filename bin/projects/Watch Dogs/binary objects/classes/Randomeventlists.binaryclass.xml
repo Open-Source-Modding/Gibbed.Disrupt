@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RandomeventlistsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="RandomEvents">
+		<object name="RandomEventList">
+			<field name="randomeventsRandomEvent" type="BinHex"/>
+			<field name="iOccurrences" type="Int32"/>
+		</object>
+	</object>
+</class>

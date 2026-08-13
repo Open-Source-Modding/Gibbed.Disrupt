@@ -1,0 +1,21 @@
+<class name="CCameraClip">
+    <object name="CCameraClip">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field name="timeStartTime" type="Float"/>
+        <field name="timeDuration" type="Float"/>
+        <field name="timeEndTime" type="Float"/>
+        <field name="hidResizable" type="Boolean"/>
+        <field name="disMuted" type="Boolean"/>
+        <field name="text_sAnimationTrackCollectionResource" type="String"/>
+        <field name="sAnimationTrackCollectionResource"/>
+        <field name="bResizable" type="Boolean"/>
+        <field name="hidAnimationTrackCollectionDuration" type="Float"/>
+        <field name="timeBlendInTime" type="Float"/>
+        <field name="timeBlendOutTime" type="Float"/>
+        <field name="vector2BlendCurve" type="Vector2"/>
+        <field name="timeAnimStartTime" type="Float"/>
+        <field name="timeAnimStopTime" type="Float"/>
+    </object> 
+</class>

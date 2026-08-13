@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Soundtagaudioswitchdb_24eb02da">
+	<object name="obj">
+		<inherit name="Soundtagaudioswitchdb_24eb02daParameters"/>
+	</object>
+</file>

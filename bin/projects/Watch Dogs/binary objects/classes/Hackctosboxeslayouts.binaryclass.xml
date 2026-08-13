@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackctosboxeslayoutsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="MissionLayerName" type="String"/>
+    <field name="entStarterEntity" type="BinHex"/>
+    <object name="ctOSBoxes">
+      <object name="ctOSBox">
+        <field name="entCTOSBox" type="BinHex"/>
+      </object>
+    </object>
+</class>

@@ -1,0 +1,5 @@
+<file name="e3adrenaline_fadein" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Districtsmanagersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="sndvarCurrentBoroughDefiantRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="sndvarLiberatedBoroughsCountRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

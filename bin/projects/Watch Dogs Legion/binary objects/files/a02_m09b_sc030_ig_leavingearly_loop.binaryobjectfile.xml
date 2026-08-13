@@ -1,0 +1,5 @@
+<file name="a02_m09b_sc030_ig_leavingearly_loop" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

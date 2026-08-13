@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Fasttravelconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="TimeSkip">
+		<field name="uiHours" type="UInt32"/>
+		<field name="uiMinutes" type="UInt32"/>
+		<field name="uiSeconds" type="UInt32"/>
+	</object>
+	<object name="CanFastTravelRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="CanFastTravelToHackerspaceRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

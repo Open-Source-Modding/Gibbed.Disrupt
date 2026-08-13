@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhotocameramenucategoriesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="pcmenuitemDefaultSelection" type="BinHex"/>
+	<object name="locstridCategoryName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="CategoryItems">
+		<object name="Item">
+			<field name="pcmenuitemItem" type="BinHex"/>
+		</object>
+	</object>
+</class>

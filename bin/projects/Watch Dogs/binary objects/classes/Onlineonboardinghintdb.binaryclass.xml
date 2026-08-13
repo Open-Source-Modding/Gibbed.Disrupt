@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OnlineonboardinghintdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selHint" type="Enum"/>
+	<field name="itemsTutorialItem" type="BinHex"/>
+	<field name="phonecommunicationsettingsNarrativenPhoneCommunication" type="BinHex"/>
+	<field name="selType" type="Enum"/>
+	<object name="TimerTriggerRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

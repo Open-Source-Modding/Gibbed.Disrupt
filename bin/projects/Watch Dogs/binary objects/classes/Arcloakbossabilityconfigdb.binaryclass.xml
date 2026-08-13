@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ArcloakbossabilityconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsEnabledImmediateRechargeOnDamagePerTimeLapse" type="Boolean"/>
+	<field name="fImmediateRechargeRequiredDamageRatio" type="Float"/>
+	<field name="fImmediateRechargeObservedTimeLapse" type="Float"/>
+	<field name="bIsUsingARCloakBarks" type="Boolean"/>
+	<field name="ARCloakAbility" type="BinHex"/>
+	<object name="ARCloakParameters">
+		<field name="fDuration" type="Float"/>
+		<field name="fRechargeTime" type="Float"/>
+		<field name="fUnbreakableCloakTime" type="Float"/>
+		<field name="fEnemyProximityRadius" type="Float"/>
+		<field name="bFlashbangEnabled" type="Boolean"/>
+		<field name="fFlashbangRadius" type="Float"/>
+		<object name="FlashbangStims">
+			<object name="GeneratedStims">
+				<object name="Stim">
+					<field name="stims" type="BinHex"/>
+					<field name="vectorLocalTranslationOffset" type="Vector3"/>
+					<field name="vectorWorldTranslationOffset" type="Vector3"/>
+					<field name="bIsPersistent" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

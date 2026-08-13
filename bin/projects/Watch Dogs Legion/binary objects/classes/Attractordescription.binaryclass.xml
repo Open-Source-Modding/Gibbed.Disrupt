@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AttractordescriptionParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Bank">
+		<object name="Entry">
+			<field name="attactAction" type="BinHex"/>
+			<field name="uiCoefficient" type="Int64"/>
+		</object>
+	</object>
+</class>

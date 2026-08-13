@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Speechproperties_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="FeedbackNames">
+		<object name="UnassignedLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="OrbisPadLocalization">
+			<object name="UpLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="DownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="ALocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="XLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="YLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="StartLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BackLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadUpDownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLeftRightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LleftThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="DurangoPadLocalization">
+			<object name="UpLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="DownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="ALocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="XLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="YLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="StartLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BackLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadUpDownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLeftRightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LleftThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="SteamPadLocalization">
+			<object name="UpLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="DownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="ALocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="XLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="YLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="StartLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BackLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadUpDownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLeftRightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LleftThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="YetiPadLocalization">
+			<object name="UpLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="DownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="ALocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="XLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="YLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="StartLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BackLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadUpDownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLeftRightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LleftThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="SwitchPadLocalization">
+			<object name="UpLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="DownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickXLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickYLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightTriggerLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="ALocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="XLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="YLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="StartLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="BackLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightBumperLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LeftStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightStickLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadUpDownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="PadLeftRightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="LleftThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightThumbLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="MouseLocalization">
+			<object name="LeftLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="RightLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="MiddleLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="Btn4LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="Btn5LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="Btn6LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="Btn7LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="Btn8LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="WheelUpLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="WheelDownLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="LanguageNames">
+		<object name="czech">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="danish">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="dutch">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="english">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="finnish">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="french">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="german">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="hungarian">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="italian">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="japanese">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="korean">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="norwegian">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="polish">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="brazilian">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="portuguesePortugal">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="russian">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="spanish">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="swedish">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="cht">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="chs">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="fakeLongEnglish">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="mexican">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="arabic">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

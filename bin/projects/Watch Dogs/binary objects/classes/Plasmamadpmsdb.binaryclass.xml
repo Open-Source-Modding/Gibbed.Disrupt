@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlasmamadpmsdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selBooleanOperator" type="Enum"/>
+	<object name="PMSList">
+		<field name="selCompareType" type="Enum"/>
+		<object name="PmsValue">
+			<field name="text_pmsPMSName" type="String"/>
+			<field name="pmsPMSName" type="BinHex"/>
+			<field name="selEnumValue" type="Enum"/>
+		</object>
+		<object name="PMSList">
+			<field name="selCompareType" type="Enum"/>
+			<object name="PmsValue">
+				<field name="text_pmsPMSName" type="String"/>
+				<field name="pmsPMSName" type="BinHex"/>
+				<field name="selEnumValue" type="Enum"/>
+			</object>
+		</object>
+	</object>
+	<object name="PMSDatabases">
+		<object name="plasmapmsPMS_DB">
+			<field name="plasmapmsPMS_DB" type="BinHex"/>
+		</object>
+	</object>
+</class>

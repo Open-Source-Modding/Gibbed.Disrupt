@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LaserwallgameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="LaserWallData">
+		<field name="uRoomIndex" type="BinHex"/>
+		<field name="bShouldForceCombat" type="Boolean"/>
+		<object name="LaserPatterns">
+			<object name="LaserPattern">
+				<field name="fPatternStartDelay" type="Float"/>
+				<object name="Lasers">
+					<field name="entLaserEntity" type="BinHex"/>
+					<field name="fStartDelay" type="Float"/>
+				</object>
+				<object name="PatternReinforcementData">
+					<field name="reinforcementgameplaydescriptorHuman" type="BinHex"/>
+					<field name="reinforcementgameplaydescriptorDrone" type="BinHex"/>
+				</object>
+				<object name="NextPatternTriggerConditions">
+					<field name="bNextPatternTriggersOnAllDestroyed" type="Boolean"/>
+					<field name="bNextPatternTriggersAfterDelay" type="Boolean"/>
+					<field name="fNextPatternTriggerDelay" type="Float"/>
+				</object>
+			</object>
+		</object>
+		<object name="GlobalReinforcementsData">
+			<field name="reinforcementgameplaydescriptorHuman" type="BinHex"/>
+			<field name="reinforcementgameplaydescriptorDrone" type="BinHex"/>
+		</object>
+		<object name="GameplayStartedDialog">
+			<field name="sndSoundId" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+		<object name="GameplayFinishedDialog">
+			<field name="sndSoundId" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+	</object>
+</class>

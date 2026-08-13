@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EnticerdescriptionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsSynchronized" type="Boolean"/>
+	<field name="selActionDescription" type="Enum"/>
+	<object name="Bank">
+		<object name="Entry">
+			<field name="entactAction" type="BinHex"/>
+			<field name="uiCoefficient" type="Int64"/>
+		</object>
+	</object>
+</class>

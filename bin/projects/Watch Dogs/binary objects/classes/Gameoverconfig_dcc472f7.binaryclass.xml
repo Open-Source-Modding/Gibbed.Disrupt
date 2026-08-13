@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Gameoverconfig_dcc472f7Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fGameOverTimeBeforeBlackScreen" type="Float"/>
+	<field name="fGameOverTimeBeforeRespawn" type="Float"/>
+	<field name="fNormalDeathTimeBeforeBlackScreen" type="Float"/>
+	<field name="fNormalDeathTimeBeforeRespawn" type="Float"/>
+	<field name="fDeathInVehicleTimeBeforeBlackScreen" type="Float"/>
+	<field name="fDeathInVehicleTimeBeforeRespawn" type="Float"/>
+	<field name="fArrestTimeBeforeBlackScreen" type="Float"/>
+	<field name="fArrestTimeBeforeRespawn" type="Float"/>
+	<field name="fInjuredInVehicleTimeBeforeBlackScreen" type="Float"/>
+	<field name="fInjuredInVehicleTimeBeforeRespawn" type="Float"/>
+	<field name="fTimeShiftRatio" type="Float"/>
+	<field name="fTimeShiftTransitionDuration" type="Float"/>
+	<field name="vec2TimeShiftTransitionSCurve" type="Vector2"/>
+</class>

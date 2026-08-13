@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SkyParameters">
+	<inherit name="SharedParameters"/>
+    <object name="kfgradSkyDomeColorSunSide">
+        <inherit name="KnotsParameters"/>
+    </object>
+    <object name="kfgradSkyDomeColorSunOppositeSide">
+        <inherit name="KnotsParameters"/>
+    </object>
+    <object name="curveSkyDomeIntensity">
+        <inherit name="KnotsParameters"/>
+    </object>
+    <object name="curveSunSpriteIntensity">
+        <inherit name="KnotsParameters"/>
+    </object>
+    <object name="curveMoonSpriteIntensity">
+        <inherit name="KnotsParameters"/>
+    </object>
+</class>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WitnesssettingsIncidentsParameters">
+	<field name="iDenunciatorProbability" type="Int32"/>
+	<field name="iDenunciatorProbabilityMP" type="Int32"/>
+	<field name="iDenunciatorProbabilityInvasion" type="Int32"/>
+	<field name="fDenunciatorMax" type="Int16"/>
+	<field name="fSafeDistance" type="Float"/>
+	<field name="bCheckThreatProximity" type="Boolean"/>
+	<field name="fDistance" type="Float"/>
+	<field name="bCheckThreatInCar" type="Boolean"/>
+	<field name="bForceOnSpot" type="Boolean"/>
+    <field name="fWalkingSafeDistance" type="Float"/>
+    <field name="text_DenunciatorBark" type="String"/>
+    <field name="DenunciatorBark" type="BinHex"/>
+    <field name="iDenunciatorProbabilityPortal" type="Int32"/>
+</class>

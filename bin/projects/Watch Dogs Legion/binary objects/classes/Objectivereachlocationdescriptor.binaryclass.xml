@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivereachlocationdescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="fReachLocationActivityRange" type="Float"/>
+	<field name="fRequiredPlayersPercentage" type="Float"/>
+	<field name="bDisableNeededPlayerCountJIPRuleForRaids" type="Boolean"/>
+	<object name="locstridObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDescriptionLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="ReachLocationActivities">
+		<object name="ReachLocationActivity">
+			<field name="text_progressioncollectablecategoryActivityId" type="String"/>
+			<field name="progressioncollectablecategoryActivityId" type="BinHex"/>
+		</object>
+	</object>
+</class>

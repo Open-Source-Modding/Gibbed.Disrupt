@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RoadsplineanchorspawndefParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<object name="SpawnInfos">
+		<object name="SpawnInfo">
+			<field name="sHeader" type="String"/>
+			<field name="sDescription" type="String"/>
+			<field name="selAlign" type="BinHex"/>
+			<field name="vectorPositionOffset" type="Vector3"/>
+			<field name="angvecAngleOffset" type="Vector3"/>
+			<field name="bStayVertical" type="Boolean"/>
+			<field name="fileProxyObject" type="BinHex"/>
+			<field name="prefabPrefabToSpawn" type="BinHex"/>
+			<field name="archArchetypeToSpawn" type="BinHex"/>
+			<field name="text_fileProxyObject" type="String"/>
+			<object name="GizmoParams">
+				<field name="bAllowRotation" type="Boolean"/>
+				<field name="bAllowMove" type="Boolean"/>
+				<field name="bDisplay" type="Boolean"/>
+				<field name="colorColor" type="VectorColor"/>
+				<field name="fAlpha" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="LoftInfos">
+		<object name="LoftInfo">
+			<field name="splineloftLoftElement" type="BinHex"/>
+			<field name="selStartAlign" type="BinHex"/>
+			<field name="selEndAlign" type="BinHex"/>
+			<field name="vectorPositionOffset2" type="Vector3"/>
+			<field name="fStartDist2" type="Float"/>
+			<field name="fEndDist2" type="Float"/>
+			<field name="bOrthogonalToRoad" type="Boolean"/>
+			<field name="sDescription" type="BinHex"/>
+		</object>
+	</object>
+	<object name="CrosswalkParams">
+		<field name="bIsCrosswalk" type="Boolean"/>
+		<object name="Visual">
+			<object name="ClippingInfos">
+				<field name="bEnableClipping" type="Boolean"/>
+				<field name="fStartDist" type="Float"/>
+				<field name="fEndDist" type="Float"/>
+				<field name="bSpawnCaps" type="Boolean"/>
+			</object>
+			<object name="Deformation">
+				<field name="bEnableLowerSidewalkForAnchorCrosswalk" type="Boolean"/>
+				<object name="LowerSidewalkInfoForAnchorCrosswalk">
+					<field name="fInnerFalloff" type="Float"/>
+					<field name="fInnerMorphDist" type="Float"/>
+					<field name="fInnerInfluenceRadius2" type="Float"/>
+					<field name="fWidth" type="Float"/>
+					<field name="fBorderFalloffDist" type="Float"/>
+				</object>
+			</object>
+		</object>
+		<object name="Logic">
+			<field name="selIntersectionType" type="BinHex"/>
+			<field name="fVehiclesStopDistance" type="Float"/>
+			<field name="fParkingExtraDistance" type="Float"/>
+		</object>
+	</object>
+</class>

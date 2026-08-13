@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ItemsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_itemdescriptorItemDescriptor" type="String"/>
+	<field name="itemdescriptorItemDescriptor" type="BinHex"/>
+	<object name="ItemDescriptor">
+		<field name="discoverysettingsDiscoverySettings" type="BinHex"/>
+		<field name="bIsRewardPartOfMission" type="Boolean"/>
+		<field name="opslistOpDatabaseID" type="BinHex"/>
+		<field name="texturedbobjectHeaderImage" type="BinHex"/>
+		<field name="texturedbobjectTileImage" type="BinHex"/>
+		<field name="bIsCompatibleWithAllVehicles" type="Boolean"/>
+		<field name="matoverrideMaterialSetOverride" type="BinHex"/>
+		<field name="bIsSticker" type="Boolean"/>
+		<field name="colorPaintJobColor" type="VectorColor"/>
+		<field name="bIsInShop" type="Boolean"/>
+		<field name="uiSellPrice" type="UInt32"/>
+		<field name="texturedbobjectTutorialImage" type="BinHex"/>
+		<field name="bHasLimitedDuration" type="Boolean"/>
+		<field name="bIsTutorialMenuItem" type="Boolean"/>
+		<field name="selTutorialCategory" type="Enum"/>
+		<field name="selFrequencyFlag" type="Enum"/>
+		<field name="bHasShortcutToTutorialMenu" type="Boolean"/>
+		<field name="itemsTutorialItem" type="BinHex"/>
+		<field name="bHasShortcutToMenus" type="Boolean"/>
+		<field name="uimenupageMenuShortcut" type="BinHex"/>
+		<field name="text_hintmanagermenuparamscallbackMenuParamsCallback" type="String"/>
+		<field name="hintmanagermenuparamscallbackMenuParamsCallback" type="BinHex"/>
+		<field name="bIsFlyingDrone" type="Boolean"/>
+		<field name="selAttackingAttachedBone" type="Enum"/>
+		<field name="selSpecificWeapon" type="Enum"/>
+		<field name="selWeaponInHand" type="Enum"/>
+		<field name="selWeaponGrip" type="Enum"/>
+		<field name="fHealth" type="Float"/>
+		<field name="fAlcohol" type="Float"/>
+		<field name="emoteEmote" type="BinHex"/>
+		<field name="texturedbobjectDisplayTexture" type="BinHex"/>
+		<field name="texturedbobjectLockedTexture" type="BinHex"/>
+		<field name="sBoneName" type="String"/>
+		<field name="text_archArchetypeSmall" type="String"/>
+		<field name="archArchetypeSmall" type="BinHex"/>
+		<field name="text_archArchetypeBig" type="String"/>
+		<field name="archArchetypeBig" type="BinHex"/>
+		<field name="fDuration" type="Float"/>
+		<field name="fileAnimation" type="BinHex"/>
+		<field name="selActivityType" type="Enum"/>
+		<field name="progressiontagProgressionTag" type="BinHex"/>
+		<field name="wolfskinitemdbWolfskinItem" type="BinHex"/>
+		<field name="fTopSpeed" type="Float"/>
+		<field name="fAcceleration" type="Float"/>
+		<field name="fToughness" type="Float"/>
+		<field name="fHandling" type="Float"/>
+		<field name="bIsOffroad" type="Boolean"/>
+		<field name="bUnlockableOnEnter" type="Boolean"/>
+		<field name="bLockedByDefault" type="Boolean"/>
+		<field name="itemcategoryPDAAppCategory" type="BinHex"/>
+		<field name="texturedbobjectDefaultImage" type="BinHex"/>
+		<field name="texturedbobjectSelectedImage" type="BinHex"/>
+		<field name="itemsItem" type="BinHex"/>
+		<field name="scenetotexturestudioobjectDetailsViewStudioObject" type="BinHex"/>
+		<field name="bHasUniquePaintJob" type="Boolean"/>
+		<field name="bCanCustomizePaintJob" type="Boolean"/>
+		<field name="text_predefrewardoperativedescwithemptyRewardOperative" type="String"/>
+		<field name="predefrewardoperativedescwithemptyRewardOperative" type="BinHex"/>
+		<field name="musiclibraryRewardSpecificSong" type="BinHex"/>
+		<field name="itemsItemInBox" type="BinHex"/>
+		<field name="disItemInBoxHasUnlimitedMaxCountInInventory" type="BinHex"/>
+		<field name="bDownloadable" type="Boolean"/>
+		<field name="selDownloadRadiusSize" type="Enum"/>
+		<field name="fDownloadDuration" type="Float"/>
+		<field name="bAvailableOnNPCDeath" type="Boolean"/>
+		<field name="uPower" type="UInt32"/>
+		<field name="fDamage" type="Float"/>
+		<field name="fFiringRate" type="Float"/>
+		<field name="fRange" type="Float"/>
+		<field name="fStability" type="Float"/>
+		<field name="fReload" type="Float"/>
+		<field name="fAccuracy" type="Float"/>
+		<field name="bIsExotic" type="Boolean"/>
+		<field name="weaponWeaponParam" type="BinHex"/>
+		<field name="itemsBulletItem" type="BinHex"/>
+		<field name="texturedbobjectInventoryWheelTexture" type="BinHex"/>
+		<field name="texturedbobjectEquipmentModuleTexture" type="BinHex"/>
+		<field name="texturedbobjectAmmoTexture" type="BinHex"/>
+		<field name="texturedbobjectShopTexture" type="BinHex"/>
+		<field name="texturedbobjectShopLockedTexture" type="BinHex"/>
+		<field name="texturedbobjectLoadoutTexture" type="BinHex"/>
+		<field name="sIconTag" type="BinHex"/>
+		<field name="itemsAlternativeItem" type="BinHex"/>
+		<field name="weaponsubstitutionconfigWeaponSubstitutionConfig" type="BinHex"/>
+		<field name="texturedbobjectHeaderTexture" type="BinHex"/>
+		<field name="bAppliedToAllWeapons" type="Boolean"/>
+		<field name="selRarity" type="Enum"/>
+		<field name="graphickitmodelModel" type="BinHex"/>
+		<field name="selProjectileType" type="Enum"/>
+		<field name="selAttachedBone" type="Enum"/>
+		<object name="ItemDescription">
+			<field name="selItemULCIconType" type="Enum"/>
+			<object name="locstridItemNameId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridItemDescriptionId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridItemDescriptionIdKeyboard">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridItemLongDescriptionId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridDedsecAppRewardTag">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="ProgressionDescription">
+			<object name="locstridProgressionName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridProgressionShortDescription">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridProgressionLongDescription">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="InventoryProperties">
+			<field name="disItemNotStoredInInventory" type="BinHex"/>
+			<field name="bCanBeAcquiredOnlyOnce" type="Boolean"/>
+			<field name="bUnlimitedCountInInventory" type="Boolean"/>
+			<field name="uiMaxCountInInventory" type="UInt32"/>
+			<field name="iCooldownTime" type="Int32"/>
+		</object>
+		<object name="ItemUnlockCondition">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ItemShownInMenusCondition">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="RuleItemsList">
+			<object name="RuleBasedItem">
+				<field name="itemsItemInBox" type="BinHex"/>
+				<object name="CanUseItem">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+				<object name="CanUseItem2">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="Quantity">
+			<field name="selQuantityType" type="Enum"/>
+			<field name="uiMin" type="UInt32"/>
+			<field name="uiMax" type="UInt32"/>
+			<field name="uiQuantity" type="UInt32"/>
+		</object>
+		<object name="EquipableProperties">
+			<field name="selEquippableType" type="Enum"/>
+			<field name="bIsGadget" type="Boolean"/>
+			<field name="characterabilityCharacterAbility" type="BinHex"/>
+		</object>
+		<object name="AssetsProperties">
+			<field name="fileItemImageFileName" type="BinHex"/>
+			<field name="sItemIconTextureName" type="String"/>
+			<field name="text_archItemArchetype" type="String"/>
+			<field name="archItemArchetype" type="BinHex"/>
+			<field name="text_ConstraintForArchetypeLoading" type="String"/>
+			<field name="ConstraintForArchetypeLoading" type="BinHex"/>
+		</object>
+		<object name="RewardProperties">
+			<field name="selLootingFeedbackType" type="Enum"/>
+			<field name="texturedbobjectRewardIcon" type="BinHex"/>
+			<field name="texturedbobjectRewardImage" type="BinHex"/>
+			<field name="fileItemTextureName" type="BinHex"/>
+			<object name="locstridTitleRewardMessage">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridDescriptionRewardMessage">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridSubtextRewardMessage">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="CanUseWeapon">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="locstridCategoryNameId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="Links">
+			<object name="ItemLink">
+				<field name="itemsItem" type="BinHex"/>
+				<field name="text_matMaterial" type="String"/>
+				<field name="matMaterial" type="BinHex"/>
+				<field name="text_sMaterialOverrideSlotName" type="String"/>
+				<field name="sMaterialOverrideSlotName" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridLockedUiText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="ActivityAudioFile">
+			<field name="musiceventsAudioFile" type="BinHex"/>
+		</object>
+		<object name="ActivityChat">
+			<field name="bIsChatTrigerredByEvents" type="Boolean"/>
+			<object name="locsectionidChat">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="ActivityEmail">
+			<object name="locsectionidMail">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="SkinElements">
+			<object name="SkinElement">
+				<field name="text_sMaterialSlot" type="String"/>
+				<field name="sMaterialSlot" type="BinHex"/>
+				<field name="text_matMaterial" type="String"/>
+				<field name="matMaterial" type="BinHex"/>
+			</object>
+		</object>
+		<object name="ActivityConversation">
+			<field name="text_ConversationBark" type="String"/>
+			<field name="ConversationBark" type="BinHex"/>
+			<field name="text_ConversationTrigger" type="String"/>
+			<field name="ConversationTrigger" type="BinHex"/>
+			<field name="sndOneSidedConvo" type="BinHex"/>
+		</object>
+		<object name="ItemList">
+			<object name="Item">
+				<field name="bUseCandidateRewards" type="Boolean"/>
+				<field name="bSpawnItem" type="Boolean"/>
+				<field name="bIsPersistent" type="Boolean"/>
+				<field name="itemsItemDBObject" type="BinHex"/>
+			</object>
+		</object>
+		<object name="CanUseClothingItemRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ModelPart">
+			<field name="hidVersion" type="BinHex"/>
+			<field name="uniqueidnocopyUniqueID" type="BinHex"/>
+			<field name="graphickitpartPart" type="BinHex"/>
+			<field name="selPoseDefinitionId" type="Enum"/>
+			<field name="selPoseDefinitionPathID" type="Enum"/>
+			<field name="facialposedefinitionExtraFacialPoseDefinition" type="BinHex"/>
+			<field hash="7E23AAAE" type="String"/>
+			<field name="selVisualModelOverride" type="Enum"/>
+			<object name="BoneAnchor">
+				<field name="selBoneName" type="Enum"/>
+				<field name="vectorTranslation" type="Vector3"/>
+				<field name="angvecRotation" type="BinHex"/>
+				<field name="vectorNonUniformScale" type="Vector3"/>
+			</object>
+		</object>
+		<object name="ConsumableProperties">
+			<field name="bImmediateConsumption" type="Boolean"/>
+			<field name="sndConsumedSuccess" type="BinHex"/>
+			<field name="sndtpConsumedSuccessType" type="BinHex"/>
+			<field name="sndConsumedFailure" type="BinHex"/>
+			<field name="sndtpConsumedFailureType" type="BinHex"/>
+			<field name="bPlayAnimationOnConsume" type="Boolean"/>
+			<field name="fCooldownDuration" type="Float"/>
+			<field name="texturedbobjectInventoryWheelTexture" type="BinHex"/>
+			<field name="texturedbobjectEquipmentModuleTexture" type="BinHex"/>
+			<field name="texturedbobjectShopTexture" type="BinHex"/>
+			<object name="locstridConsumedDescription">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="DisruptCommSpecific">
+			<field name="text_sndDisruptionSound" type="String"/>
+			<field name="sndDisruptionSound" type="BinHex"/>
+			<field name="sndtpDisruptionSoundType" type="BinHex"/>
+			<field name="sCinemaPostFxName" type="BinHex"/>
+			<field name="text_psParticleSystem" type="String"/>
+			<field name="psParticleSystem" type="BinHex"/>
+			<field name="vectorParticleSystemRelativeLocation" type="Vector3"/>
+			<field name="fDisruptDuration" type="Float"/>
+			<field name="fEnemyPlayerSlowDownloadFactor" type="Float"/>
+		</object>
+		<object name="ClothBundle">
+			<object name="Cloth">
+				<field name="itemsCloth" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridLockedDetails">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridManufacturer">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="UniquePaintJob">
+			<field name="texturedbobjectUniquePaintJobImage" type="BinHex"/>
+		</object>
+		<object name="ShouldRefillWeapon">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShouldRefillHealth">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShouldRefillCurrentWeaponClip">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShouldResetClassAbilityCooldown">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="AmmoRefillAmount">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="bAllowPickupWhileFull">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="MaxBulletCountOverride">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="LockedEntities">
+			<object name="LockedEntityId">
+				<field name="entLockedEntityId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="CharacterWheelProperties">
+			<field name="texturedbobjectTexture" type="BinHex"/>
+		</object>
+	</object>
+</class>

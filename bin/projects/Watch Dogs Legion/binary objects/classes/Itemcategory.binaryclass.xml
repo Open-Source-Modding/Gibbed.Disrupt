@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ItemcategoryParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnable" type="Boolean"/>
+	<field name="sFrameLabel" type="String"/>
+	<field name="texturedbobjectCategoryIcon" type="BinHex"/>
+	<field name="bIsAShopCategory" type="Boolean"/>
+	<field name="selShopCategoryType" type="Enum"/>
+	<field name="uCategoryPriority" type="UInt32"/>
+	<field name="selRewardType" type="Enum"/>
+	<object name="locstridItemCategoryNameId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridItemCategoryDescriptionId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridItemCategoryRewardName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

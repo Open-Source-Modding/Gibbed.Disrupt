@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Environmentdefaults_949a1cfdParameters">
+	<inherit name="SharedParameters"/>
+	<field name="skycolorsettingsSky" type="BinHex"/>
+</class>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Shellgame_variationsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ShellGameMoves">
+		<object name="ShellGameMove">
+			<field name="shellgamemoveShellGameMove" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AttractorsbanksdatabaseobjectParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bCivilian" type="Boolean"/>
+	<field name="bAI" type="Boolean"/>
+	<object name="Bank">
+		<object name="Entry">
+			<field name="attactAction" type="BinHex"/>
+			<field name="uiCoefficient" type="Int64"/>
+		</object>
+	</object>
+	<object name="AI">
+		<field name="bAIUnaware" type="Boolean"/>
+		<field name="bAIAlertSoft" type="Boolean"/>
+		<field name="bAICombat" type="Boolean"/>
+		<field name="bAIInvestigate" type="Boolean"/>
+		<field name="bAIHunt" type="Boolean"/>
+		<field name="bAIAlertHard" type="Boolean"/>
+		<field name="bAIAware" type="Boolean"/>
+		<field name="bAIUseCurrentRunningSpeed" type="Boolean"/>
+		<field name="fAIRunningSpeed" type="Float"/>
+		<field name="selAIWalkType" type="Enum"/>
+	</object>
+</class>

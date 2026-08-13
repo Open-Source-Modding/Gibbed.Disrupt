@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ScriptedhackeffectdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_scriptedhackeffectselHackEffectType" type="String"/>
+	<field name="scriptedhackeffectselHackEffectType" type="BinHex"/>
+	<field name="psVFX" type="BinHex"/>
+	<object name="HackEffect">
+		<field name="fLifetime" type="Float"/>
+		<field name="fProbability" type="Float"/>
+		<field name="selType" type="Enum"/>
+		<field name="fDroneSpeed" type="Float"/>
+		<field name="fTriggerRadius" type="Float"/>
+		<field name="text_psThemisVFX" type="String"/>
+		<field name="psThemisVFX" type="BinHex"/>
+		<field name="text_sndTargetingSound" type="String"/>
+		<field name="sndTargetingSound" type="BinHex"/>
+		<field name="sndtpTargetingSoundType" type="BinHex"/>
+		<field name="vectorVFXMinAngle" type="Vector3"/>
+		<field name="vectorVFXMaxAngle" type="Vector3"/>
+		<field name="fDeathDelay" type="Float"/>
+		<field name="selEffectStim" type="Enum"/>
+		<field name="bLoopEffect" type="Boolean"/>
+		<field name="EffectTeamSpeak" type="BinHex"/>
+		<field name="bReverseLogic" type="Boolean"/>
+		<field name="selRepelType" type="Enum"/>
+		<field name="bIsSilent" type="Boolean"/>
+		<field name="bLooping" type="Boolean"/>
+		<object name="RequiredFlags">
+			<object name="RequiredFlagsList">
+				<field name="selEntityCategoryFlag" type="Enum"/>
+			</object>
+		</object>
+		<object name="ForbiddenFlags">
+			<object name="ForbiddenFlagsList">
+				<field name="selEntityCategoryFlag" type="Enum"/>
+			</object>
+		</object>
+		<object name="VisChainList">
+			<field name="selVisualEffectType" type="Enum"/>
+			<field name="bEnable" type="Boolean"/>
+			<field name="fNextEffectDelay" type="Float"/>
+			<field name="fEnableTime" type="Float"/>
+			<object name="VisChainList">
+				<field name="selVisualEffectType" type="Enum"/>
+				<field name="bEnable" type="Boolean"/>
+				<field name="fNextEffectDelay" type="Float"/>
+				<field name="fEnableTime" type="Float"/>
+			</object>
+		</object>
+		<object name="HackChain">
+			<object name="HackChainList">
+				<field name="selCategory" type="Enum"/>
+				<field name="fDelayTime" type="Float"/>
+				<field name="fDelayTimeRandMax" type="Float"/>
+				<field name="bIsSilent" type="Boolean"/>
+				<field name="bIsWaitEvent" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+</class>

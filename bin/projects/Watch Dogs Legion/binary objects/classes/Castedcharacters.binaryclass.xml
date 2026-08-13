@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CastedcharactersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selCharacterSex" type="Enum"/>
+	<field name="selCharacterArchetype" type="Enum"/>
+	<field name="text_DialogPersona" type="String"/>
+	<field name="DialogPersona" type="BinHex"/>
+	<field name="text_DialogMapping" type="String"/>
+	<field name="DialogMapping" type="BinHex"/>
+	<field name="tmplDialogActorOverride" type="BinHex"/>
+	<field name="prismPrismActor" type="BinHex"/>
+	<field name="sndExternalSource" type="BinHex"/>
+	<field name="humanconfigHumanConfig" type="BinHex"/>
+	<field name="wolfskinitemdbOptionalWolfSkinItemDBOverride" type="BinHex"/>
+	<field name="texturedbobjectPortraitTexture" type="BinHex"/>
+	<field name="bUseBagleyAnimForTeamspeaks" type="Boolean"/>
+	<object name="locstridCharacterFirstName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridCharacterLastName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="tagcategoryselectionCastedCharacterTag">
+		<field name="text_UITagCategorySelectionClassID" type="String"/>
+		<field name="UITagCategorySelectionClassID" type="BinHex"/>
+		<field name="tagcategoryUITagCategory" type="BinHex"/>
+		<field name="tagcategoryTagCategory" type="BinHex"/>
+		<field name="tagTag" type="BinHex"/>
+	</object>
+</class>

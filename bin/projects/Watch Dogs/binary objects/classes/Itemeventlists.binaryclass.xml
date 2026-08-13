@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ItemeventlistsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ItemEventLists">
+		<object name="ItemEventList">
+			<field name="text_archItemArchetype" type="String"/>
+			<field name="archItemArchetype" type="BinHex"/>
+			<object name="locstridRelatedConversation"/>
+			<object name="RelatedConversationLists">
+				<object name="locstridRelatedConversation">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+				<object name="RelatedConversationLists">
+					<object name="locstridRelatedConversation">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

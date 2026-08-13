@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BareknucklearenaconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="entBareKnuckleComponentEntityID" type="BinHex"/>
+	<field name="iArenaIndex" type="Int32"/>
+	<field name="tagArenaTag" type="BinHex"/>
+	<field name="tagcategoryTagCategoryArena" type="BinHex"/>
+	<field name="bIsTeleportInSameLayer" type="Boolean"/>
+	<field name="vectorTeleportOffset" type="Vector3"/>
+	<field name="fTeleportYawOffset" type="Float"/>
+	<field name="sLayerNameToLoad" type="String"/>
+	<field name="bCanTriggerCelebrationModule" type="Boolean"/>
+	<field name="bShowObjective" type="Boolean"/>
+	<object name="locstridArenaName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

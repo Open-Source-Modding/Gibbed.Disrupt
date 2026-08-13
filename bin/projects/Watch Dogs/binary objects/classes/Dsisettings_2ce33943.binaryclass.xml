@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dsisettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bHoustonIsActivated" type="Boolean"/>
+	<field name="bSeoulIsActivated" type="Boolean"/>
+	<field name="bCairoIsActivated" type="Boolean"/>
+	<field name="bSydneyIsActivated" type="Boolean"/>
+	<field name="bCaracasIsActivated" type="Boolean"/>
+</class>

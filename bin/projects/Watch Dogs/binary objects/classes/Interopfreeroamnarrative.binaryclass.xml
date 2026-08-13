@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="InteropfreeroamnarrativeParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fDelay" type="Float"/>
+	<object name="ActivationRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="PhoneCommEntries">
+		<object name="Entry">
+			<field name="phonecommunicationsettingsEntry" type="BinHex"/>
+		</object>
+	</object>
+</class>

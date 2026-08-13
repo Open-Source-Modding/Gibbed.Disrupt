@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Modsglobalconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="MODIFY_ENABLE_DISRUPT_ON_CLOAK">
+		<field name="psActivationParticleFx" type="BinHex"/>
+	</object>
+</class>

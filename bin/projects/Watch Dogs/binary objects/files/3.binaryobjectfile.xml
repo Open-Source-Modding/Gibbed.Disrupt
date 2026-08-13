@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="3">
+	<object name="NexusSaveGameDLC">
+		<inherit name="3saveParameters"/>
+	</object>
+</file>

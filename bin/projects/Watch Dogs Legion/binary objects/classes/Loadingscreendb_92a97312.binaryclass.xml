@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Loadingscreendb_92a97312Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="TimeBetweenTips" type="BinHex"/>
+	<object name="locstridLoadingTipTitleLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="SinglePlayer">
+		<object name="CommonData">
+			<field name="CommonDataRequired" type="BinHex"/>
+			<object name="Backgrounds"/>
+			<object name="Videos">
+				<object name="videosVideo">
+					<field name="videosVideo" type="BinHex"/>
+				</object>
+			</object>
+			<object name="Tips">
+				<object name="TipData">
+					<field name="bUseRule" type="Boolean"/>
+					<object name="locstridTip">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+					<object name="Available">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ContextualData"/>
+	</object>
+	<object name="OpSwap">
+		<object name="CommonData">
+			<field name="CommonDataRequired" type="BinHex"/>
+			<object name="Backgrounds"/>
+			<object name="Videos">
+				<object name="videosVideo">
+					<field name="videosVideo" type="BinHex"/>
+				</object>
+			</object>
+			<object name="Tips">
+				<object name="TipData">
+					<field name="bUseRule" type="Boolean"/>
+					<object name="locstridTip">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+					<object name="Available">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ContextualData">
+			<object name="Entry">
+				<field name="CommonDataRequired" type="BinHex"/>
+				<field name="ContextualID" type="BinHex"/>
+				<field name="tagContextualTag" type="BinHex"/>
+				<object name="Backgrounds"/>
+				<object name="Videos">
+					<object name="videosVideo">
+						<field name="videosVideo" type="BinHex"/>
+					</object>
+				</object>
+				<object name="Tips"/>
+			</object>
+		</object>
+	</object>
+	<object name="FastTravel">
+		<object name="CommonData">
+			<field name="CommonDataRequired" type="BinHex"/>
+			<object name="Backgrounds"/>
+			<object name="Videos">
+				<object name="videosVideo">
+					<field name="videosVideo" type="BinHex"/>
+				</object>
+			</object>
+			<object name="Tips">
+				<object name="TipData">
+					<field name="bUseRule" type="Boolean"/>
+					<object name="locstridTip">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+					<object name="Available">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ContextualData"/>
+	</object>
+	<object name="MultiSandbox">
+		<object name="CommonData">
+			<field name="CommonDataRequired" type="BinHex"/>
+			<object name="Backgrounds"/>
+			<object name="Videos">
+				<object name="videosVideo">
+					<field name="videosVideo" type="BinHex"/>
+				</object>
+			</object>
+			<object name="Tips">
+				<object name="TipData">
+					<field name="bUseRule" type="Boolean"/>
+					<object name="locstridTip">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+					<object name="Available">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ContextualData"/>
+	</object>
+	<object name="MultiInstanceMode">
+		<object name="CommonData">
+			<field name="CommonDataRequired" type="BinHex"/>
+			<object name="Backgrounds"/>
+			<object name="Videos"/>
+			<object name="Tips"/>
+		</object>
+		<object name="ContextualData">
+			<object name="Entry">
+				<field name="CommonDataRequired" type="BinHex"/>
+				<field name="ContextualID" type="String"/>
+				<field name="tagContextualTag" type="BinHex"/>
+				<object name="Backgrounds"/>
+				<object name="Videos">
+					<object name="videosVideo">
+						<field name="videosVideo" type="BinHex"/>
+					</object>
+				</object>
+				<object name="Tips">
+					<object name="TipData">
+						<field name="bUseRule" type="Boolean"/>
+						<object name="locstridTip">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+						<object name="Available">
+							<field name="rulesmithidRule" type="BinHex"/>
+							<field name="rulesmithconstValue" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="MultiRaidBrief">
+		<object name="CommonData">
+			<field name="CommonDataRequired" type="BinHex"/>
+			<object name="Backgrounds"/>
+			<object name="Videos">
+				<object name="videosVideo">
+					<field name="videosVideo" type="BinHex"/>
+				</object>
+			</object>
+			<object name="Tips">
+				<object name="TipData">
+					<field name="bUseRule" type="Boolean"/>
+					<object name="locstridTip">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+					<object name="Available">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ContextualData">
+			<object name="Entry">
+				<field name="CommonDataRequired" type="BinHex"/>
+				<field name="ContextualID" type="String"/>
+				<field name="tagContextualTag" type="BinHex"/>
+				<object name="Backgrounds"/>
+				<object name="Videos">
+					<object name="videosVideo">
+						<field name="videosVideo" type="BinHex"/>
+					</object>
+				</object>
+				<object name="Tips"/>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,10 @@
+<class name="CSimpleAnimationSequenceTrack">
+    <object name="CSimpleAnimationSequenceTrack">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field hash="22958F3A"/>
+        <field name="disMuted"/>
+		<inherit name="CSimpleAnimationClip"/>
+    </object>
+</class>

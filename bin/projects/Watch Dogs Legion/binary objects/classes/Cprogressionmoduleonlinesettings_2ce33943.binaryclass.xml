@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmoduleonlinesettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<field name="CurrencyTypeName" type="String"/>
+		<field name="BoosterTypeName" type="String"/>
+		<field name="ElitePassTypeName" type="String"/>
+		<field name="SeasonPassTypeName" type="String"/>
+		<field name="MissionTypeName" type="String"/>
+		<field name="PremiumCurrencyId" type="String"/>
+		<field name="OnlineTokenId" type="String"/>
+		<field name="OnlineCryptoId" type="String"/>
+		<field name="OnlineXPId" type="BinHex"/>
+		<field name="SinglePlayerCryptoId" type="String"/>
+		<field name="ModPartId" type="String"/>
+		<field name="ProgressionBoosterId" type="String"/>
+		<field name="TeamSlotId" type="String"/>
+		<field name="UpgradeId" type="String"/>
+		<field name="UpgradeMetaId" type="String"/>
+		<field name="UpgradeLevelMetaId" type="String"/>
+		<field name="CryptoId" type="String"/>
+		<field name="PremiumStoreShopId" type="String"/>
+		<object name="CanSyncOnlineData">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ItemTriggers">
+			<object name="Trigger">
+				<field name="ItemId" type="String"/>
+				<object name="Trigger">
+					<field name="rulesmithidRuleId" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

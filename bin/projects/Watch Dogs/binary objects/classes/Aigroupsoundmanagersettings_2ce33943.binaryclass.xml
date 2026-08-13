@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Aigroupsoundmanagersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fTimeIntervalWalkieTalkie" type="Float"/>
+	<field name="fRandomDeltaTimeWalkieTalkie" type="Float"/>
+	<object name="WalkieTalkieSounds">
+		<field name="sndEmergency" type="BinHex"/>
+		<field name="sndLawEnforcement" type="BinHex"/>
+		<field name="sndFirm" type="BinHex"/>
+		<field name="sndGangs" type="BinHex"/>
+		<field name="sndtpEmergencyType" type="BinHex"/>
+		<field name="sndtpLawEnforcementType" type="BinHex"/>
+		<field name="sndtpFirmType" type="BinHex"/>
+		<field name="sndtpGangsType" type="BinHex"/>
+	</object>
+</class>

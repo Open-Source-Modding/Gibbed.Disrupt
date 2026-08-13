@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Shellgame_progressionParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ShellGameProgressionSteps">
+		<object name="Steps">
+			<object name="ShellGameDifficulties">
+				<object name="ShellGameDifficulty">
+					<field name="shellgamedifficultyShellGameDifficulty" type="BinHex"/>
+					<field name="uiBet" type="Int64"/>
+					<object name="ShellGameDifficulty">
+						<field name="shellgamedifficultyShellGameDifficulty" type="BinHex"/>
+						<field name="uiBet" type="Int64"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

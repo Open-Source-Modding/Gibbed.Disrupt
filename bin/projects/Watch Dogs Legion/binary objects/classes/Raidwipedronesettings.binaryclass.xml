@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RaidwipedronesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxDistanceToConnect" type="Float"/>
+	<field name="fMovementSpeed" type="Float"/>
+	<field name="fRetryMoveCommandDuration" type="Float"/>
+	<field name="fRetryMaximumDistance" type="Float"/>
+	<field name="fEntityGridSearchDuration" type="Float"/>
+	<field name="fEntityGridMaxDistance" type="Float"/>
+	<field name="fHeightAboveBossAverage" type="Float"/>
+	<field name="fHeightAboveBossMaxDeviation" type="Float"/>
+	<field name="fRepairAmountPerSecond" type="Float"/>
+	<object name="Beam">
+		<field name="text_psMuzzle" type="String"/>
+		<field name="psMuzzle" type="BinHex"/>
+		<field name="text_psImpact" type="String"/>
+		<field name="psImpact" type="BinHex"/>
+		<field name="sndFireBeamStartSound" type="BinHex"/>
+		<field name="sndFireBeamStopSound" type="BinHex"/>
+		<field name="sndtpFireBeamStartSoundType" type="BinHex"/>
+		<field name="sndtpFireBeamStopSoundType" type="BinHex"/>
+		<field name="fTargetVerticalOffset" type="Float"/>
+		<field name="vectorMuzzleOffset" type="Vector3"/>
+		<field name="text_archBeamArchetype" type="String"/>
+		<field name="archBeamArchetype" type="BinHex"/>
+		<field name="text_sBeamMaterialName" type="String"/>
+		<field name="sBeamMaterialName" type="BinHex"/>
+		<field name="colorBeamColor" type="VectorColor"/>
+		<field name="fBeamScale" type="Float"/>
+		<field name="fBeamExtension" type="Float"/>
+	</object>
+</class>

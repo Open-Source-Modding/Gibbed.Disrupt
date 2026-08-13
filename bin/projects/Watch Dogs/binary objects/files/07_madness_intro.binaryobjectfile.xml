@@ -1,0 +1,5 @@
+<file name="07_madness_intro" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

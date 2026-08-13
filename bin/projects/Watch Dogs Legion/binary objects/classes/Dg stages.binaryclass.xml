@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dg stagesParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Stage">
+		<field name="ChildDescriptionIndex" type="BinHex"/>
+		<object name="Descriptions">
+			<object name="Description">
+				<field hash="6D1E1959" type="String"/>
+				<field name="selType" type="Enum"/>
+				<object name="Object">
+					<field name="vectorRelativeOffset" type="Vector3"/>
+					<field name="angvecRelativeAngle" type="BinHex"/>
+					<field name="InternalIdentifier" type="BinHex"/>
+					<field name="ParentIdentifier" type="BinHex"/>
+					<field name="Guid" type="String"/>
+					<object name="Data">
+						<field name="text_RoleName" type="String"/>
+						<field name="RoleName" type="BinHex"/>
+						<field name="text_archArchetype" type="String"/>
+						<field name="archArchetype" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="UserSettings"/>
+	</object>
+</class>

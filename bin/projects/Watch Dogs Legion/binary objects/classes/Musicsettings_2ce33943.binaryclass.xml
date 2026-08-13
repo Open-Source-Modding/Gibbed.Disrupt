@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Musicsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="MusicEvents">
+		<field name="musiceventsLoadingMusicStart" type="BinHex"/>
+		<field name="musiceventsLoadingMusicStop" type="BinHex"/>
+		<field name="text_sndMute2DMusicEvent" type="String"/>
+		<field name="sndMute2DMusicEvent" type="BinHex"/>
+		<field name="text_sndUnMute2DMusicEvent" type="String"/>
+		<field name="sndUnMute2DMusicEvent" type="BinHex"/>
+		<field name="text_sndTurnRadioOnEvent" type="String"/>
+		<field name="sndTurnRadioOnEvent" type="BinHex"/>
+		<field name="text_sndTurnRadioOffEvent" type="String"/>
+		<field name="sndTurnRadioOffEvent" type="BinHex"/>
+		<field name="text_sndChangeRadioStation" type="String"/>
+		<field name="sndChangeRadioStation" type="BinHex"/>
+	</object>
+	<object name="MusicRtpcs">
+		<object name="sndvarPositioningRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarPlayerInVehicleRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarSpeakerSizeRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarNPCRadioDopplerRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarMusicPlaybackSpeedRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="MusicRTPCValues">
+			<field name="fNPCRadioDopplerScale" type="Float"/>
+			<field name="fPositioningValue2D" type="Float"/>
+			<field name="fPositioningValue3D" type="Float"/>
+		</object>
+	</object>
+	<object name="MusicSwitches">
+		<object name="PlaybackMode">
+			<object name="sndswtpPlaybackMode">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndswvlPlaybackInVehicle">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndswvlPlaybackOutsideVehicle">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+		</object>
+		<object name="MusicPositioning2D3D">
+			<object name="sndswtpMusicPositioning">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndswvlMusic2D">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndswvlMusic3D">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+		</object>
+		<object name="InteriorExterior">
+			<object name="sndswtpInteriorExterior">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndswvlInterior">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndswvlExterior">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+		</object>
+	</object>
+	<object name="DRAMA">
+		<field name="iTracksBeforeInterlude" type="Int32"/>
+		<object name="DRAMALevel">
+			<object name="sndstgrDRAMAConflictLevel">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndstvlDRAMAConflictLevel0">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndstvlDRAMAConflictLevel1">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndstvlDRAMAConflictLevel2">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+		</object>
+		<object name="DRAMADirection">
+			<object name="sndstgrDRAMADirection">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndstvlDRAMADirectionUp">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndstvlDRAMADirectionDown">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+		</object>
+		<object name="DRAMATransitions">
+			<field name="fElapsedTimeSinceLastTransitionShort" type="Float"/>
+			<field name="fElapsedTimeSinceLastTransitionMedium" type="Float"/>
+			<field name="fElapsedTimeSinceLastTransitionLong" type="Float"/>
+			<object name="OneLevelIncreaseDelays">
+				<inherit name="SharedParameters"/>
+				<field name="fElapsedTimeShort" type="Float"/>
+				<field name="fElapsedTimeMedium" type="Float"/>
+				<field name="fElapsedTimeLong" type="Float"/>
+			</object>
+			<object name="OneLevelDecreaseDelays">
+				<inherit name="SharedParameters"/>
+				<field name="fElapsedTimeShort" type="Float"/>
+				<field name="fElapsedTimeMedium" type="Float"/>
+				<field name="fElapsedTimeLong" type="Float"/>
+			</object>
+			<object name="TwoLevelIncreaseDelays">
+				<inherit name="SharedParameters"/>
+				<field name="fElapsedTimeShort" type="Float"/>
+				<field name="fElapsedTimeMedium" type="Float"/>
+				<field name="fElapsedTimeLong" type="Float"/>
+			</object>
+			<object name="TwoLevelDecreaseDelays">
+				<inherit name="SharedParameters"/>
+				<field name="fElapsedTimeShort" type="Float"/>
+				<field name="fElapsedTimeMedium" type="Float"/>
+				<field name="fElapsedTimeLong" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="MusicLanguage">
+		<object name="sndswtpMusicLanguage">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlBrazilian">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlEnglish">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlFrench">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlGerman">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlItalian">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlJapanese">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlRussian">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlSpanish">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Kickupdescriptor_406b69daParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fGravity" type="Float"/>
+	<field name="fGravityVariation" type="Float"/>
+	<field name="fCelebrationDuration" type="Float"/>
+	<field name="text_fileHappyCelebrationDecisionTree" type="String"/>
+	<field name="fileHappyCelebrationDecisionTree" type="BinHex"/>
+	<field name="text_fileSadCelebrationDecisionTree" type="String"/>
+	<field name="fileSadCelebrationDecisionTree" type="BinHex"/>
+	<field name="text_fileWarmUpDecisionTree" type="String"/>
+	<field name="fileWarmUpDecisionTree" type="BinHex"/>
+	<field name="text_fileDeniedEnterDecisionTree" type="String"/>
+	<field name="fileDeniedEnterDecisionTree" type="BinHex"/>
+	<field name="bLoadConfiguration" type="Boolean"/>
+	<field name="bOverrideHardcodedValues" type="Boolean"/>
+	<field name="bEnableFishEye" type="Boolean"/>
+	<field name="fFishEyeIntensity" type="Float"/>
+	<field name="vec2FishEyeTesselationFactor" type="BinHex"/>
+	<field name="bOrbitEnabled" type="Boolean"/>
+	<field name="fOrbitSpeed" type="Float"/>
+	<field name="fOrbitLeftAngle" type="Float"/>
+	<field name="fOrbitRightAngle" type="Float"/>
+	<field name="bTrickCameraFOVEnabled" type="Boolean"/>
+	<field name="fTrickCameraDesiredFOV" type="Float"/>
+	<field name="fTrickCameraTransitionDuration" type="Float"/>
+	<field name="fWindowOfOpportunity" type="Float"/>
+	<field name="text_archBall" type="String"/>
+	<field name="archBall" type="BinHex"/>
+	<field name="vectorBallStartPosition" type="Vector3"/>
+	<field name="fBallRadius" type="Float"/>
+	<field name="fBallImpulse" type="Float"/>
+	<field name="iInitialHitsDuration" type="Int32"/>
+	<field name="iCycleHitsDuration" type="Int32"/>
+	<field name="iMinimumAvailableBodyParts" type="Int32"/>
+	<field name="bCountOkHitsForAnimationSpeed" type="Boolean"/>
+	<field name="bCountPerfectHitsForAnimationSpeed" type="Boolean"/>
+	<field name="bButtonOptimalRangeInPercentage" type="Boolean"/>
+	<field name="fLookAtHeightWeight" type="Float"/>
+	<field name="fLookAtBallWeight" type="Float"/>
+	<field name="fPlayingStimSendInterval" type="Float"/>
+	<field name="stimsPlayingStim" type="BinHex"/>
+	<field name="text_sndStartSound" type="String"/>
+	<field name="sndStartSound" type="BinHex"/>
+	<field name="sndtpStartSoundType" type="BinHex"/>
+	<field name="text_sndEndSound" type="String"/>
+	<field name="sndEndSound" type="BinHex"/>
+	<field name="sndtpEndSoundType" type="BinHex"/>
+	<field name="text_sndGoalCompleteSound" type="String"/>
+	<field name="sndGoalCompleteSound" type="BinHex"/>
+	<field name="sndtpGoalCompleteSoundType" type="BinHex"/>
+	<field name="text_sndFailSound" type="String"/>
+	<field name="sndFailSound" type="BinHex"/>
+	<field name="sndtpFailSoundType" type="BinHex"/>
+	<field name="text_sndBallGroundCollisionSound" type="String"/>
+	<field name="sndBallGroundCollisionSound" type="BinHex"/>
+	<field name="sndtpBallGroundCollisionSoundType" type="BinHex"/>
+	<field name="text_sndBallPlayerCollisionSound" type="String"/>
+	<field name="sndBallPlayerCollisionSound" type="BinHex"/>
+	<field name="sndtpBallPlayerCollisionSoundType" type="BinHex"/>
+	<field name="fMaxBallVelocity" type="Float"/>
+	<field name="fVerticalBallVelocityThreshold" type="Float"/>
+	<field name="sndScoreSound" type="BinHex"/>
+	<field name="sndtpScoreSoundType" type="BinHex"/>
+	<field name="text_sndTrickSound" type="String"/>
+	<field name="sndTrickSound" type="BinHex"/>
+	<field name="sndtpTrickSoundType" type="BinHex"/>
+	<field name="text_sndTrickChainSound" type="String"/>
+	<field name="sndTrickChainSound" type="BinHex"/>
+	<field name="sndtpTrickChainSoundType" type="BinHex"/>
+	<field name="iSinglePlayerSeatIndex" type="Int32"/>
+	<field name="iPerfectHitScoreBase" type="Int32"/>
+	<field name="iPerfectHitScoreIncrementer" type="Int32"/>
+	<field name="iTrickHitScoreBase" type="Int32"/>
+	<field name="iTrickHitScoreIncrementer" type="Int32"/>
+	<field name="iPerfectCombosRequiredForTricks" type="Int32"/>
+	<field name="iTrickCombos" type="Int32"/>
+	<field name="fPerfectBarMaxPercentage" type="Float"/>
+	<field name="fPerfectBarMinPercentage" type="Float"/>
+	<field name="fTrickBarMaxPercentage" type="Float"/>
+	<field name="fTrickBarMinPercentage" type="Float"/>
+	<field name="iTrickBarDecreaseSteps" type="Int32"/>
+	<field name="fVisionImpairedOverlayAlpha" type="Float"/>
+	<field name="fMinBarOffsetWhenDrunkLevelLow" type="Float"/>
+	<field name="fMaxBarOffsetWhenDrunkLevelLow" type="Float"/>
+	<field name="fMinBarOffsetWhenDrunkLevelMedium" type="Float"/>
+	<field name="fMaxBarOffsetWhenDrunkLevelMedium" type="Float"/>
+	<field name="fMinBarOffsetWhenDrunkLevelHigh" type="Float"/>
+	<field name="fMaxBarOffsetWhenDrunkLevelHigh" type="Float"/>
+	<field name="vectorMaxCameraShakeTranslation" type="Vector3"/>
+	<field name="vectorMaxCameraShakeRotation" type="Vector3"/>
+	<field name="fPlayerJoinedSessionLogDuration" type="Float"/>
+	<field name="iOnlineChallengeReadyTime1" type="Int32"/>
+	<field name="iOnlineChallengeReadyTime2" type="Int32"/>
+	<field name="iOnlineChallengeReadyTime3" type="Int32"/>
+	<field name="iOnlineChallengeDuration" type="Int32"/>
+	<field name="fOnlineChallengeCriticalTime" type="Float"/>
+	<field name="iNumberOfHitsForStreakBark" type="Int32"/>
+	<field name="text_StreakBarkId" type="String"/>
+	<field name="StreakBarkId" type="BinHex"/>
+	<field name="phonecommunicationsettingsFirstIntro" type="BinHex"/>
+	<field name="fGenericAttentionRequestTime" type="Float"/>
+	<field name="selAchievementGoalLevel" type="Enum"/>
+	<field name="iAchievementGoalIndex" type="Int32"/>
+	<object name="StartingAnimations">
+		<field name="text_StanceName" type="String"/>
+		<field name="StanceName" type="BinHex"/>
+		<field name="HitsUntilStanceChange" type="BinHex"/>
+		<field name="bFixedStanceId" type="Boolean"/>
+		<field name="bStartingAnimations" type="Boolean"/>
+		<object name="AnimationsData">
+			<field name="text_selLinkedBodyPart" type="String"/>
+			<field name="selLinkedBodyPart" type="Enum"/>
+			<field hash="28008E43" type="String"/>
+			<field name="selBodyPart" type="Enum"/>
+			<field name="text_fileHitDecisionTree" type="String"/>
+			<field name="fileHitDecisionTree" type="BinHex"/>
+			<object name="AnimationSpecificData">
+				<field name="vectorImpactPositon" type="Vector3"/>
+				<field name="sHitAnimationName" type="String"/>
+				<field name="text_fileSingleAnimation" type="String"/>
+				<field name="fileSingleAnimation" type="BinHex"/>
+				<field name="fStartBlend" type="Float"/>
+				<field name="fImpactTime" type="Float"/>
+				<field name="fAnimationDuration" type="Float"/>
+				<field name="selImpactType" type="Enum"/>
+				<field name="bIsFemale" type="Boolean"/>
+				<field name="iNavigationArchetype" type="Int32"/>
+				<object name="PmsConditions"/>
+				<object name="AnimationSpecificData">
+					<field name="vectorImpactPositon" type="Vector3"/>
+					<field name="sHitAnimationName" type="String"/>
+					<field name="text_fileSingleAnimation" type="String"/>
+					<field name="fileSingleAnimation" type="BinHex"/>
+					<field name="fStartBlend" type="Float"/>
+					<field name="fImpactTime" type="Float"/>
+					<field name="fAnimationDuration" type="Float"/>
+					<field name="selImpactType" type="Enum"/>
+					<field name="bIsFemale" type="Boolean"/>
+					<field name="iNavigationArchetype" type="Int32"/>
+					<object name="PmsConditions"/>
+				</object>
+			</object>
+			<object name="AnimationsData">
+				<field name="text_selLinkedBodyPart" type="String"/>
+				<field name="selLinkedBodyPart" type="Enum"/>
+				<field hash="28008E43" type="String"/>
+				<field name="selBodyPart" type="Enum"/>
+				<field name="text_fileHitDecisionTree" type="String"/>
+				<field name="fileHitDecisionTree" type="BinHex"/>
+				<object name="AnimationSpecificData">
+					<field name="vectorImpactPositon" type="Vector3"/>
+					<field name="sHitAnimationName" type="String"/>
+					<field name="text_fileSingleAnimation" type="String"/>
+					<field name="fileSingleAnimation" type="BinHex"/>
+					<field name="fStartBlend" type="Float"/>
+					<field name="fImpactTime" type="Float"/>
+					<field name="fAnimationDuration" type="Float"/>
+					<field name="selImpactType" type="Enum"/>
+					<field name="bIsFemale" type="Boolean"/>
+					<field name="iNavigationArchetype" type="Int32"/>
+					<object name="PmsConditions"/>
+					<object name="AnimationSpecificData">
+						<field name="vectorImpactPositon" type="Vector3"/>
+						<field name="sHitAnimationName" type="String"/>
+						<field name="text_fileSingleAnimation" type="String"/>
+						<field name="fileSingleAnimation" type="BinHex"/>
+						<field name="fStartBlend" type="Float"/>
+						<field name="fImpactTime" type="Float"/>
+						<field name="fAnimationDuration" type="Float"/>
+						<field name="selImpactType" type="Enum"/>
+						<field name="bIsFemale" type="Boolean"/>
+						<field name="iNavigationArchetype" type="Int32"/>
+						<object name="PmsConditions"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="TricksData"/>
+		<object name="BodyPartsData">
+			<object name="BodyPartData">
+				<field name="text_BodyPartName" type="String"/>
+				<field name="BodyPartName" type="BinHex"/>
+				<field name="uitagInputDisplay" type="BinHex"/>
+				<field name="text_AssociatedButton" type="String"/>
+				<field name="AssociatedButton" type="BinHex"/>
+				<field name="vectorButtonOffset" type="Vector3"/>
+				<field name="fLookAtHeight" type="Float"/>
+				<field name="fMinimumGravity" type="Float"/>
+				<field name="vectorAngularVelocityBiasMin" type="Vector3"/>
+				<field name="vectorAngularVelocityBiasMax" type="Vector3"/>
+				<field name="sndStartSound" type="BinHex"/>
+				<field name="sndtpStartSoundType" type="BinHex"/>
+			</object>
+		</object>
+		<object name="BreakAnimationsData">
+			<object name="BreakAnimationData">
+				<field hash="28008E43" type="String"/>
+				<field name="selBodyPart" type="Enum"/>
+				<field name="text_fileBreakDecisionTree" type="String"/>
+				<field name="fileBreakDecisionTree" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="DefaultStance">
+		<field name="text_StanceName" type="String"/>
+		<field name="StanceName" type="BinHex"/>
+		<field name="HitsUntilStanceChange" type="BinHex"/>
+		<field name="bFixedStanceId" type="Boolean"/>
+		<field name="bStartingAnimations" type="Boolean"/>
+		<object name="AnimationsData">
+			<field name="text_selLinkedBodyPart" type="String"/>
+			<field name="selLinkedBodyPart" type="Enum"/>
+			<field hash="28008E43" type="String"/>
+			<field name="selBodyPart" type="Enum"/>
+			<field name="text_fileHitDecisionTree" type="String"/>
+			<field name="fileHitDecisionTree" type="BinHex"/>
+			<object name="AnimationSpecificData">
+				<field name="vectorImpactPositon" type="Vector3"/>
+				<field name="sHitAnimationName" type="String"/>
+				<field name="text_fileSingleAnimation" type="String"/>
+				<field name="fileSingleAnimation" type="BinHex"/>
+				<field name="fStartBlend" type="Float"/>
+				<field name="fImpactTime" type="Float"/>
+				<field name="fAnimationDuration" type="Float"/>
+				<field name="selImpactType" type="Enum"/>
+				<field name="bIsFemale" type="Boolean"/>
+				<field name="iNavigationArchetype" type="Int32"/>
+				<object name="PmsConditions"/>
+				<object name="AnimationSpecificData">
+					<field name="vectorImpactPositon" type="Vector3"/>
+					<field name="sHitAnimationName" type="String"/>
+					<field name="text_fileSingleAnimation" type="String"/>
+					<field name="fileSingleAnimation" type="BinHex"/>
+					<field name="fStartBlend" type="Float"/>
+					<field name="fImpactTime" type="Float"/>
+					<field name="fAnimationDuration" type="Float"/>
+					<field name="selImpactType" type="Enum"/>
+					<field name="bIsFemale" type="Boolean"/>
+					<field name="iNavigationArchetype" type="Int32"/>
+					<object name="PmsConditions"/>
+				</object>
+			</object>
+			<object name="AnimationsData">
+				<field name="text_selLinkedBodyPart" type="String"/>
+				<field name="selLinkedBodyPart" type="Enum"/>
+				<field hash="28008E43" type="String"/>
+				<field name="selBodyPart" type="Enum"/>
+				<field name="text_fileHitDecisionTree" type="String"/>
+				<field name="fileHitDecisionTree" type="BinHex"/>
+				<object name="AnimationSpecificData">
+					<field name="vectorImpactPositon" type="Vector3"/>
+					<field name="sHitAnimationName" type="String"/>
+					<field name="text_fileSingleAnimation" type="String"/>
+					<field name="fileSingleAnimation" type="BinHex"/>
+					<field name="fStartBlend" type="Float"/>
+					<field name="fImpactTime" type="Float"/>
+					<field name="fAnimationDuration" type="Float"/>
+					<field name="selImpactType" type="Enum"/>
+					<field name="bIsFemale" type="Boolean"/>
+					<field name="iNavigationArchetype" type="Int32"/>
+					<object name="PmsConditions"/>
+					<object name="AnimationSpecificData">
+						<field name="vectorImpactPositon" type="Vector3"/>
+						<field name="sHitAnimationName" type="String"/>
+						<field name="text_fileSingleAnimation" type="String"/>
+						<field name="fileSingleAnimation" type="BinHex"/>
+						<field name="fStartBlend" type="Float"/>
+						<field name="fImpactTime" type="Float"/>
+						<field name="fAnimationDuration" type="Float"/>
+						<field name="selImpactType" type="Enum"/>
+						<field name="bIsFemale" type="Boolean"/>
+						<field name="iNavigationArchetype" type="Int32"/>
+						<object name="PmsConditions"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="TricksData">
+			<object name="TricksData">
+				<field name="iLevel" type="Int32"/>
+				<object name="locstridLevelName">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="AnimationsData">
+					<field name="text_selLinkedBodyPart" type="String"/>
+					<field name="selLinkedBodyPart" type="Enum"/>
+					<field hash="28008E43" type="String"/>
+					<field name="selBodyPart" type="Enum"/>
+					<field name="text_fileHitDecisionTree" type="String"/>
+					<field name="fileHitDecisionTree" type="BinHex"/>
+					<object name="AnimationSpecificData">
+						<field name="vectorImpactPositon" type="Vector3"/>
+						<field name="sHitAnimationName" type="String"/>
+						<field name="text_fileSingleAnimation" type="String"/>
+						<field name="fileSingleAnimation" type="BinHex"/>
+						<field name="fStartBlend" type="Float"/>
+						<field name="fImpactTime" type="Float"/>
+						<field name="fAnimationDuration" type="Float"/>
+						<field name="selImpactType" type="Enum"/>
+						<field name="bIsFemale" type="Boolean"/>
+						<field name="iNavigationArchetype" type="Int32"/>
+						<object name="PmsConditions"/>
+						<object name="AnimationSpecificData">
+							<field name="vectorImpactPositon" type="Vector3"/>
+							<field name="sHitAnimationName" type="String"/>
+							<field name="text_fileSingleAnimation" type="String"/>
+							<field name="fileSingleAnimation" type="BinHex"/>
+							<field name="fStartBlend" type="Float"/>
+							<field name="fImpactTime" type="Float"/>
+							<field name="fAnimationDuration" type="Float"/>
+							<field name="selImpactType" type="Enum"/>
+							<field name="bIsFemale" type="Boolean"/>
+							<field name="iNavigationArchetype" type="Int32"/>
+							<object name="PmsConditions"/>
+						</object>
+					</object>
+					<object name="AnimationsData">
+						<field name="text_selLinkedBodyPart" type="String"/>
+						<field name="selLinkedBodyPart" type="Enum"/>
+						<field hash="28008E43" type="String"/>
+						<field name="selBodyPart" type="Enum"/>
+						<field name="text_fileHitDecisionTree" type="String"/>
+						<field name="fileHitDecisionTree" type="BinHex"/>
+						<object name="AnimationSpecificData">
+							<field name="vectorImpactPositon" type="Vector3"/>
+							<field name="sHitAnimationName" type="String"/>
+							<field name="text_fileSingleAnimation" type="String"/>
+							<field name="fileSingleAnimation" type="BinHex"/>
+							<field name="fStartBlend" type="Float"/>
+							<field name="fImpactTime" type="Float"/>
+							<field name="fAnimationDuration" type="Float"/>
+							<field name="selImpactType" type="Enum"/>
+							<field name="bIsFemale" type="Boolean"/>
+							<field name="iNavigationArchetype" type="Int32"/>
+							<object name="PmsConditions"/>
+							<object name="AnimationSpecificData">
+								<field name="vectorImpactPositon" type="Vector3"/>
+								<field name="sHitAnimationName" type="String"/>
+								<field name="text_fileSingleAnimation" type="String"/>
+								<field name="fileSingleAnimation" type="BinHex"/>
+								<field name="fStartBlend" type="Float"/>
+								<field name="fImpactTime" type="Float"/>
+								<field name="fAnimationDuration" type="Float"/>
+								<field name="selImpactType" type="Enum"/>
+								<field name="bIsFemale" type="Boolean"/>
+								<field name="iNavigationArchetype" type="Int32"/>
+								<object name="PmsConditions"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="BodyPartsData">
+			<object name="BodyPartData">
+				<field name="text_BodyPartName" type="String"/>
+				<field name="BodyPartName" type="BinHex"/>
+				<field name="uitagInputDisplay" type="BinHex"/>
+				<field name="text_AssociatedButton" type="String"/>
+				<field name="AssociatedButton" type="BinHex"/>
+				<field name="vectorButtonOffset" type="Vector3"/>
+				<field name="fLookAtHeight" type="Float"/>
+				<field name="fMinimumGravity" type="Float"/>
+				<field name="vectorAngularVelocityBiasMin" type="Vector3"/>
+				<field name="vectorAngularVelocityBiasMax" type="Vector3"/>
+				<field name="text_sndStartSound" type="String"/>
+				<field name="sndStartSound" type="BinHex"/>
+				<field name="sndtpStartSoundType" type="BinHex"/>
+			</object>
+		</object>
+		<object name="BreakAnimationsData">
+			<object name="BreakAnimationData">
+				<field hash="28008E43" type="String"/>
+				<field name="selBodyPart" type="Enum"/>
+				<field name="text_fileBreakDecisionTree" type="String"/>
+				<field name="fileBreakDecisionTree" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Stances"/>
+	<object name="DeniedArchetypes">
+		<object name="selDeniedArchetype">
+			<field name="selDeniedArchetype" type="Enum"/>
+		</object>
+	</object>
+	<object name="curveBallStartAnimationAlong">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveBallStartAnimationUp">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveBallStartAnimationRoll">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="BodyPartsOrder">
+		<object name="BodyPart">
+			<field name="text_Id" type="String"/>
+			<field name="Id" type="BinHex"/>
+		</object>
+	</object>
+	<object name="curveAvailableBodyPartsInitial">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveMaximumDuplicatesInitial">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveAnimationSpeedInitial">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveButtonOptimalRangeInitial">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveAvailableBodyPartsCycle">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveMaximumDuplicatesCycle">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveAnimationSpeedCycle">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveButtonOptimalRangeCycle">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="TutorialItems">
+		<object name="TutorialItem">
+			<field name="itemsTutorialItem" type="BinHex"/>
+		</object>
+	</object>
+	<object name="TutorialItemsMP">
+		<object name="TutorialItem">
+			<field name="itemsTutorialItem" type="BinHex"/>
+		</object>
+	</object>
+	<object name="NextScoreBenchmarkGetter">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="SPReward">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="curveLookAtChangeSpeed">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="sndvarBallVelocity">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="locstridFeedbackOkLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFeedbackPerfectLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFeedbackTooLateLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFeedbackWrongButtonLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFeedbackTimeUpLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTutorialLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRewardLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="PlacementLocIds">
+		<object name="locstridPlacement">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="PlacementLocIds">
+			<object name="locstridPlacement">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="locstridPlayerJoinedSessionLogHeader">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPlayerJoinedSessionLogText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPlayerLeftSessionLogHeader">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPlayerLeftSessionLogText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="GenericIntroPhoneComms">
+		<object name="phonecommunicationsettingsGenericIntro">
+			<field name="phonecommunicationsettingsGenericIntro" type="BinHex"/>
+		</object>
+	</object>
+	<object name="CompletedTrigger">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="RewardValueGetter">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="BonusRewardValueGetter">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="DrunkLevelThreshold">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="TutorialGoals">
+		<object name="Goal">
+			<field hash="6D1E1959" type="String"/>
+			<field name="selType" type="Enum"/>
+			<object name="Object">
+				<field name="itemsRewardItem" type="BinHex"/>
+				<field name="iScore" type="Int32"/>
+				<object name="locstridGoalTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridGoalDescription">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridGoalShortDescription">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridGoalProgress">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="LockedBodyParts">
+					<object name="LockedBodyPart">
+						<field name="text_selUnlockedBodyPart" type="String"/>
+						<field name="selUnlockedBodyPart" type="Enum"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="IntermediateGoals">
+		<object name="Goal">
+			<field hash="6D1E1959" type="String"/>
+			<field name="selType" type="Enum"/>
+			<object name="Object">
+				<field name="itemsRewardItem" type="BinHex"/>
+				<field name="iTargetTime" type="Int32"/>
+				<object name="locstridGoalTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridGoalDescription">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridGoalShortDescription">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridGoalProgress">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="LockedBodyParts"/>
+			</object>
+		</object>
+	</object>
+	<object name="ExpertGoals">
+		<object name="Goal">
+			<field hash="6D1E1959" type="String"/>
+			<field name="selType" type="Enum"/>
+			<object name="Object">
+				<field name="itemsRewardItem" type="BinHex"/>
+				<field name="iTargetTime" type="Int32"/>
+				<object name="locstridGoalTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridGoalDescription">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridGoalShortDescription">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridGoalProgress">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="LockedBodyParts"/>
+			</object>
+		</object>
+	</object>
+</class>

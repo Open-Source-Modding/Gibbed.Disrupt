@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Ugcconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="UGCPersistence">
+		<field name="disNextId" type="BinHex"/>
+		<field name="iDefaultPersistenceId" type="Int32"/>
+		<object name="Persistence">
+			<object name="PersistenceData">
+				<field name="disId" type="BinHex"/>
+				<field name="bPermanentUgc" type="Boolean"/>
+				<field name="iTimePeriodHours" type="Int32"/>
+				<field name="iMinRewardCycles" type="Int32"/>
+				<field name="iMaxRewardCycles" type="Int32"/>
+				<field name="iCost" type="Int32"/>
+				<field name="sDebugName" type="String"/>
+				<object name="locstridLocalisedName">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Monetization">
+		<field name="iNumFreeUgcAllowed" type="Int32"/>
+		<field name="iFreeUgcCooldownPeriod" type="Int32"/>
+		<field name="iMaxFreeEnabledUgcPersistenceCost" type="Int32"/>
+		<field name="iMaxFreeEnabledUgcEntranceFee" type="Int32"/>
+		<field name="iUgcBaseCost" type="Int32"/>
+		<field name="iNumFreeUgcNodes" type="Int32"/>
+		<field name="iNodeCost" type="Int32"/>
+		<field name="bFreeUgcNodeAllowedInPaidUgc" type="Boolean"/>
+		<field name="fEntranceFeeCostPercentage" type="Float"/>
+		<field name="fEntranceFeeRewardSplit" type="Float"/>
+	</object>
+	<object name="MissionIDs">
+	  <field name="missionlistOnFootRaceMission" type="BinHex"/>
+	  <field name="missionlistVehicleRaceMission" type="BinHex"/>
+	  <field name="missionlistPointChallengeMission" type="BinHex"/>
+	  <field name="missionlistFreestyleRaceMission" type="BinHex"/>
+	</object>
+	<object name="Audio">
+		<field name="sndAddNodeSoundId" type="BinHex"/>
+		<field name="sndRemoveNodeSoundId" type="BinHex"/>
+		<field name="sndMoveNodeSoundId" type="BinHex"/>
+		<field name="sndUndoOperationSoundId" type="BinHex"/>
+		<field name="sndFailedOperationSoundId" type="BinHex"/>
+		<field name="sndSelectFocusSoundId" type="BinHex"/>
+	</object>
+	<object name="Misc">
+		<field name="iMaxNodes" type="Int32"/>
+		<field name="fOnFootRadius" type="Float"/>
+		<field name="fInVehicleRadius" type="Float"/>
+		<field name="fCoinHeightOffset" type="Float"/>
+		<field name="text_archGoldRushChallenge" type="String"/>
+		<field name="archGoldRushChallenge" type="BinHex"/>
+		<field name="text_archGoldRushCreation" type="String"/>
+		<field name="archGoldRushCreation" type="BinHex"/>
+		<field name="text_archGoldRushVehicleCreation" type="String"/>
+		<field name="archGoldRushVehicleCreation" type="BinHex"/>
+		<field name="text_archGoldRushStartPoint" type="String"/>
+		<field name="archGoldRushStartPoint" type="BinHex"/>
+		<field name="text_archGoldRushCreationFocus" type="String"/>
+		<field name="archGoldRushCreationFocus" type="BinHex"/>
+		<field name="mapicondescGoldRushStart" type="BinHex"/>
+		<field name="mapicondescGoldRushCoin" type="BinHex"/>
+		<field name="randomeventsUGCPropositionRandomEvent" type="BinHex"/>
+		<field name="fUGCPropositionInterval" type="Float"/>
+		<field name="fUGCPropositionDuration" type="Float"/>
+		<field name="fUGCUnclaimedCashCheckInterval" type="Float"/>
+		<object name="BlockedAccessList">
+			<object name="AccessId">
+		    	<field name="accessidId" type="BinHex"/>
+		  	</object>
+		</object>
+	</object>
+</class>

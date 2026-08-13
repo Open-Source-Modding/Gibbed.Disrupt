@@ -53,10 +53,13 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                                 ? objectFileDef.Object
                                 : null;
 
+            var pointerMap = new Dictionary<BinaryObject, int>();
+            var nextId = 0;
+
             using (var writer = XmlWriter.Create(outputPath, settings))
             {
                 writer.WriteStartDocument();
-                WriteNode(infoManager, writer, new BinaryObject[0], bof.Root, objectDef, objectFileDef);
+                WriteNode(infoManager, writer, new BinaryObject[0], bof.Root, objectDef, objectFileDef, pointerMap, ref nextId);
                 writer.WriteEndDocument();
             }
         }
@@ -201,13 +204,17 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                                 using (var itemWriter = XmlWriter.Create(itemPath, settings))
                                 {
                                     itemWriter.WriteStartDocument();
+                                    var itemPointerMap = new Dictionary<BinaryObject, int>();
+                                    var itemNextId = 0;
                                     WriteNode(
                                         infoManager,
                                         itemWriter,
                                         chain,
                                         item,
                                         itemDef,
-                                        null);
+                                        null,
+                                        itemPointerMap,
+                                        ref itemNextId);
                                     itemWriter.WriteEndDocument();
                                 }
                             }
@@ -339,13 +346,17 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                         using (var itemWriter = XmlWriter.Create(itemPath, settings))
                         {
                             itemWriter.WriteStartDocument();
+                            var itemPointerMap = new Dictionary<BinaryObject, int>();
+                            var itemNextId = 0;
                             WriteNode(
                                 infoManager,
                                 itemWriter,
                                 chain,
                                 item,
                                 itemDef,
-                                null);
+                                null,
+                                itemPointerMap,
+                                ref itemNextId);
                             itemWriter.WriteEndDocument();
                         }
                     }
@@ -438,13 +449,17 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                         using (var itemWriter = XmlWriter.Create(itemPath, settings))
                         {
                             itemWriter.WriteStartDocument();
+                            var itemPointerMap = new Dictionary<BinaryObject, int>();
+                            var itemNextId = 0;
                             WriteNode(
                                 infoManager,
                                 itemWriter,
                                 chain,
                                 item,
                                 itemDef,
-                                null);
+                                null,
+                                itemPointerMap,
+                                ref itemNextId);
                             itemWriter.WriteEndDocument();
                         }
                     }
@@ -487,8 +502,21 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
             IEnumerable<BinaryObject> parentChain,
             BinaryObject node,
             ClassDefinition def,
-            ObjectFileDefinition objectFileDef)
+            ObjectFileDefinition objectFileDef,
+            Dictionary<BinaryObject, int> pointerMap,
+            ref int nextId)
         {
+            if (pointerMap.TryGetValue(node, out var existingId) == true)
+            {
+                writer.WriteStartElement("object");
+                writer.WriteAttributeString("ref", existingId.ToString());
+                writer.WriteEndElement();
+                return;
+            }
+
+            var id = nextId++;
+            pointerMap[node] = id;
+
             var chain = parentChain.Concat(new[] { node });
 
             var originalDef = def;
@@ -507,6 +535,7 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
             }
 
             writer.WriteStartElement("object");
+            writer.WriteAttributeString("id", id.ToString());
 
             if (originalDef != null && originalDef.Name != null && originalDef.Hash == node.NameHash)
             {
@@ -539,6 +568,10 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                     {
                         writer.WriteAttributeString("name", fieldDef.Name);
                     }
+                    else if (KnownFields.TryGet(kv.Key, out var knownFieldName, out _) == true)
+                    {
+                        writer.WriteAttributeString("name", knownFieldName);
+                    }
                     else if (kv.Key == 0x1063B98A)
                     {
                         writer.WriteAttributeString("name", "text_AnimID");
@@ -552,17 +585,26 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                         writer.WriteAttributeString("hash", kv.Key.ToString("X8"));
                     }
 
-                    // Fields: 0xEC1E98BF or 0xFBB9B1D9
-                    // hard code nodes for offsets for now
-                    // add .Equals to BinaryObject
-
                     if (fieldDef == null)
                     {
-                        if (kv.Key == 0x1063B98A || kv.Key == 0x641EEF6F)
+                        if (KnownFields.TryGet(kv.Key, out _, out var knownFieldType) == true)
+                        {
+                            writer.WriteAttributeString("type", FieldHandling.GetTypeName(knownFieldType));
+                            FieldHandling.Export(
+                                null,
+                                knownFieldType,
+                                FieldType.Invalid,
+                                kv.Value,
+                                0,
+                                kv.Value.Length,
+                                writer,
+                                out _);
+                        }
+                        else if (kv.Key == 0x1063B98A || kv.Key == 0x641EEF6F)
                         {
                             writer.WriteAttributeString("type", FieldHandling.GetTypeName(FieldType.String));
                             FieldHandling.Export(
-                                fieldDef,
+                                null,
                                 FieldType.String,
                                 FieldType.Invalid,
                                 kv.Value,
@@ -606,7 +648,7 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                 foreach (var childNode in node.Children)
                 {
                     var childDef = def?.GetObjectDefinition(childNode.NameHash, chain);
-                    WriteNode(infoManager, writer, chain, childNode, childDef, null);
+                    WriteNode(infoManager, writer, chain, childNode, childDef, null, pointerMap, ref nextId);
                 }
             }
             else if (def.DynamicNestedClasses == true)
@@ -614,7 +656,7 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                 foreach (var childNode in node.Children)
                 {
                     var childDef = infoManager.GetClassDefinition(childNode.NameHash);
-                    WriteNode(infoManager, writer, chain, childNode, childDef, null);
+                    WriteNode(infoManager, writer, chain, childNode, childDef, null, pointerMap, ref nextId);
                 }
             }
 

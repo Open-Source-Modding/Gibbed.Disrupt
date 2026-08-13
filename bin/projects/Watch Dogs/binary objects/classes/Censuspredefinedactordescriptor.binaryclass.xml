@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CensuspredefinedactordescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<field name="tagDesignationTag" type="BinHex"/>
+	<field name="uiNameOverride" type="UInt32"/>
+	<field name="uiSurnameOverride" type="UInt32"/>
+	<field name="bOverrideDedSecAffinity" type="Boolean"/>
+	<field name="selDedSecAffinity" type="Enum"/>
+	<field name="peopleinfoPeopleSpawnInfoOverride" type="BinHex"/>
+	<field name="tmplDialogActorOverride" type="BinHex"/>
+	<field name="bForceNoRelations" type="Boolean"/>
+	<field name="characterdeckCharacterDeckOverride" type="BinHex"/>
+	<field name="bOverrideAge" type="Boolean"/>
+	<field name="uiAge" type="UInt32"/>
+	<field name="bOverrideIncome" type="Boolean"/>
+	<field name="uiIncome" type="UInt32"/>
+	<field name="bOverrideExtendedProfilerEntries" type="Boolean"/>
+	<object name="BaseInclusionFilter">
+		<object name="tagcategoryselectionblackboardProfile">
+			<object name="TagCategorySelectionArray">
+				<object name="TagCategorySelection">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="tagTag" type="BinHex"/>
+					<object name="Tags">
+						<object name="Tag">
+							<field name="tagTag" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="TagDescriptorUI">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<object name="TagCategorySelectionDescriptors">
+					<object name="TagCategorySelectionDescriptor">
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="bMultiSelect" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="BaseExclusionFilter">
+		<object name="tagcategoryselectionblackboardProfile">
+			<object name="TagCategorySelectionArray">
+				<object name="TagCategorySelection">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="tagTag" type="BinHex"/>
+					<object name="Tags">
+						<object name="Tag">
+							<field name="tagTag" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="TagDescriptorUI">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<object name="TagCategorySelectionDescriptors">
+					<object name="TagCategorySelectionDescriptor">
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="bMultiSelect" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="OverrideFilter">
+		<object name="tagcategoryselectionblackboardProfile">
+			<object name="TagCategorySelectionArray">
+				<object name="TagCategorySelection">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="tagTag" type="BinHex"/>
+					<object name="Tags">
+						<object name="Tag">
+							<field name="tagTag" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="TagDescriptorUI">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<object name="TagCategorySelectionDescriptors">
+					<object name="TagCategorySelectionDescriptor">
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="bMultiSelect" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="InitialMemories">
+		<object name="censusactormemorydefinitionMemory">
+			<field name="censusactormemorydefinitionMemory" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ExtendedProfilerEntries">
+		<object name="Entry">
+			<object name="locstridLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="locstridBlurbOverride">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

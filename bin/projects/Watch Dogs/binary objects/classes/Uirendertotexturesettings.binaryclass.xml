@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UirendertotexturesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_uirendertotexturedescriptorDescriptorType" type="String"/>
+	<field name="uirendertotexturedescriptorDescriptorType" type="BinHex"/>
+	<object name="UIRenderToTextureDescriptor">
+		<field name="fileFeuPath" type="BinHex"/>
+		<field name="sMainContainerName" type="String"/>
+		<field name="Width" type="BinHex"/>
+		<field name="Height" type="BinHex"/>
+		<field name="uInvalidRoomFrame" type="BinHex"/>
+		<field name="uInvalidSequenceFrame" type="BinHex"/>
+		<field name="uisoundTerminalActivatedSound" type="BinHex"/>
+		<field name="uisoundTerminalDeactivedSound" type="BinHex"/>
+		<field name="uisoundTerminalUpdatedSound" type="BinHex"/>
+		<field name="uisoundTerminalWrongInputSound" type="BinHex"/>
+		<object name="locstridInputWaiting">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRoom1">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRoom2">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridError1">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridError2">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridFailure">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<field name="InitializationDuration" type="BinHex"/>
+		<object name="locstridScreenOff">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSequenceScreen">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSequenceFailed">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBossVulnerable">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWipeDronesAttack">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridStep1Name">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridStep2Name">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridStep3Name">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridStep4Name">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridStepStateOff">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridStepStateOngoing">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridStepStateCompleted">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridStepFailedSubtext">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWipeScreenMainText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWipeScreenSubtext">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Defaultspawningdbglobal_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bValid" type="Boolean"/>
+	<field name="aispawningdbDefaultAiSpawningDb" type="BinHex"/>
+	<field name="humanconfigDefaultCivilianConfig" type="BinHex"/>
+	<field name="vehiclesbankDefaultCivilianVehicleBank" type="BinHex"/>
+	<field name="aispawningtypeReplacingArchetypeForGrenadier" type="BinHex"/>
+	<field name="aispawningtypeReplacingArchetypeForCaptain" type="BinHex"/>
+	<field name="aispawningtypeReplacingArchetypeForRiotDrone" type="BinHex"/>
+	<field name="aispawningtypeReplacingArchetypeForCTDrone" type="BinHex"/>
+	<object name="GrenadierIsUnlocked">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="CaptainIsUnlocked">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="RiotDroneIsUnlocked">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="CTDroneIsUnlocked">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="EliteUnitIsUnlocked">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WebtvtlayoutsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="MissionLayerName" type="String"/>
+	<object name="StartWebTvTStations">
+		<field name="entStartWebTvTStation" type="BinHex"/>
+		<object name="StartWebTvTStations">
+			<field name="entStartWebTvTStation" type="BinHex"/>
+		</object>
+	</object>
+</class>

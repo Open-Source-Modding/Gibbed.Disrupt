@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WolfskinitemdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileItemPath" type="String"/>
+	<field name="fileItemPath" type="BinHex"/>
+	<object name="SubItemDBs">
+		<object name="Item">
+			<field hash="B857F415" type="String"/>
+			<field name="text_Slot" type="String"/>
+			<field name="Slot" type="BinHex"/>
+			<field name="wolfskinitemdbDBItem" type="BinHex"/>
+		</object>
+	</object>
+	<object name="MissingSubItemDBs">
+		<object name="Item">
+			<field name="text_Slot" type="String"/>
+			<field name="Slot" type="BinHex"/>
+			<field name="wolfskinitemdbDBItem" type="BinHex"/>
+			<field name="text_Item" type="String"/>
+			<field name="Item" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ItemTags">
+		<object name="Tag">
+			<object name="tagcategoryselectionTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

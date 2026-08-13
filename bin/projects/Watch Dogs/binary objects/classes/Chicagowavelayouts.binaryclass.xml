@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChicagowavelayoutsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="MissionLayerName" type="String"/>
+	<object name="Volumes">
+		<object name="Volume">
+			<field name="entVolume" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Columns">
+		<object name="Column">
+			<field name="entColumn" type="BinHex"/>
+		</object>
+	</object>
+</class>

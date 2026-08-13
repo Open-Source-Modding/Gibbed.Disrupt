@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Puppethackconfig_ccecf4a3">
+	<object name="obj">
+		<inherit name="Puppethackconfig_ccecf4a3Parameters"/>
+	</object>
+</file>

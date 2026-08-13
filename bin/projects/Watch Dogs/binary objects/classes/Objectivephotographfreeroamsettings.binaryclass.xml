@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivephotographfreeroamsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="pdcfgPhotoTargetConfig" type="BinHex"/>
+	<field name="bFailOnTargetNeutralized" type="Boolean"/>
+	<field name="bCloseCameraOnCompletion" type="Boolean"/>
+	<field name="timergameplaydescriptorEntityToPhotographTimerDescriptor" type="BinHex"/>
+	<object name="locstridObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDescriptionLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTargetNeutralizedFailLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTimerFailLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

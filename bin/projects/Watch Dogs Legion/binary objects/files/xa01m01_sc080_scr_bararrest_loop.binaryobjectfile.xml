@@ -1,0 +1,5 @@
+<file name="xa01m01_sc080_scr_bararrest_loop" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

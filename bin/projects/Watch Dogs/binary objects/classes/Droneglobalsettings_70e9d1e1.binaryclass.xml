@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Droneglobalsettings_70e9d1e1Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DeactivationTakedownLightFlickerCurves">
+		<object name="curveDeactivationTakedownCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="MalfunctionLightFlickerCurves">
+		<object name="curveMalfunctionCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="DroneDockGlobalSettings">
+		<field name="fMinSpawnDroneDistance" type="Float"/>
+		<field name="fMaxSpawnDroneDistance" type="Float"/>
+		<field name="fSpawnDroneIdealHeight" type="Float"/>
+		<field name="fSpawnDroneMinHeight" type="Float"/>
+		<field name="fFallbackSpawnDroneDistance" type="Float"/>
+		<field name="fClosestDockEvalDistance" type="Float"/>
+		<object name="HackingFeedback">
+			<field name="fHackingFeedbackMinDistance" type="Float"/>
+			<field name="fHackingFeedbackMinTime" type="Float"/>
+			<field name="bUseHackingFeedbackMaxTime" type="Boolean"/>
+			<field name="fHackingFeedbackMaxTime" type="Float"/>
+		</object>
+		<object name="DroneSpawnWeights">
+			<field name="iDroneSpawnWeightLimit" type="Int32"/>
+			<field name="iCombatDroneSpawnWeight" type="Int32"/>
+			<field name="iAmbientDroneSpawnWeight" type="Int32"/>
+		</object>
+		<object name="WarningMessages">
+			<field name="fObstructedWarningTime" type="Float"/>
+			<field name="fAssignedWarningTime" type="Float"/>
+			<field name="fUnavailableWarningTime" type="Float"/>
+			<object name="locstridObstructedWarning">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridAssignedWarning">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUnavailableWarning">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="DroneIncidentGlobalSettings">
+		<field name="fLargeBumpIncidentSpeedThreshold" type="Float"/>
+	</object>
+	<object name="DronePickableGlobalSettings">
+		<field name="vectorPickableMaxSize" type="Vector3"/>
+	</object>
+	<object name="DroneDeliveryGlobalSettings">
+		<field name="text_archDiamondPickableArchetype" type="String"/>
+		<field name="archDiamondPickableArchetype" type="BinHex"/>
+		<object name="DeliverySpawningBoxes">
+			<object name="PickableInfos">
+				<object name="pickableInfo">
+					<field name="text_archPickableArchetype" type="String"/>
+					<field name="archPickableArchetype" type="BinHex"/>
+					<field name="iSpawnNbTicket" type="Int32"/>
+				</object>
+			</object>
+		</object>
+		<object name="DockSpawningDrone">
+			<field name="iNbTicketDockNoSpawn" type="Int32"/>
+			<field name="iNbTicketDockSpawnOnStandBy" type="Int32"/>
+			<field name="iNbTicketDockSpawnOnShutdown" type="Int32"/>
+		</object>
+		<object name="DeliveryLandOnDock">
+			<field name="iNbTicketLandOnDock" type="Int32"/>
+			<field name="iNbTicketNoLandOnDock" type="Int32"/>
+		</object>
+		<object name="DeliveryWithBoxLandOnDock">
+			<field name="iNbTicketWithBoxLandOnDock" type="Int32"/>
+			<field name="iNbTicketWithBoxNoLandOnDock" type="Int32"/>
+		</object>
+		<object name="CommonBoxRewardTicket">
+			<field name="iNbTicketCommonBoxGiveXP" type="Int32"/>
+			<field name="iNbTicketCommonBoxGiveCrypto" type="Int32"/>
+			<field name="iNbTicketCommonBoxGiveBoth" type="Int32"/>
+		</object>
+		<object name="RareBoxRewardTicket">
+			<field name="iNbTicketRareBoxGiveXP" type="Int32"/>
+			<field name="iNbTicketRareBoxGiveCrypto" type="Int32"/>
+			<field name="iNbTickeRaretBoxGiveBoth" type="Int32"/>
+		</object>
+	</object>
+	<object name="CombatDroneGlobalSettings">
+		<field name="fGrenadeSquadTimeout" type="Float"/>
+		<field name="fCanDetectRemoteControlledDroneDelay" type="Float"/>
+		<field name="fStopCombatingDisconnectedDroneDelay" type="Float"/>
+		<object name="RocketSettings">
+			<object name="HomingRocketTargetTypes">
+				<field name="bIncludePlayer" type="Boolean"/>
+				<field name="bIncludeHumans" type="Boolean"/>
+				<field name="bIncludeAnimals" type="Boolean"/>
+				<field name="bIncludeRobots" type="Boolean"/>
+				<field name="bIncludeDrones" type="Boolean"/>
+				<field name="bIncludeVehicles" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+	<object name="DroneConfigDefaultSettings">
+		<object name="ChaseDroneSettings">
+			<inherit name="SharedParameters"/>
+			<object name="OnFoot">
+				<field name="fCatchupSpeedSprintMultiplier" type="Float"/>
+				<field name="fFollowSpeedSprintMultiplier" type="Float"/>
+				<field name="fFollowPosTimeout" type="Float"/>
+				<field name="fFollowHoverMinTime" type="Float"/>
+				<field name="fFollowHoverMaxTime" type="Float"/>
+				<field name="fFollowFrontNoflyZone" type="Float"/>
+				<field name="fFollowFrontAngle" type="Float"/>
+				<field name="fFollowRearAngle" type="Float"/>
+				<field name="fFollowFrontMinDistance" type="Float"/>
+				<field name="fFollowFrontMaxDistance" type="Float"/>
+				<field name="fFollowRearMinDistance" type="Float"/>
+				<field name="fFollowRearMaxDistance" type="Float"/>
+				<field name="fPointRadius" type="Float"/>
+				<field name="fDelayBetweenWeaponFireAttempts" type="Float"/>
+				<field name="fForceShootDelay" type="Float"/>
+				<field name="fDelayBetweenWeaponFireAttemptsWhenHacked" type="Float"/>
+				<field name="fOrbitYawIncrement" type="Float"/>
+				<field name="fOrbitSpeed" type="Float"/>
+				<field name="fOrbitPosRndMinTime" type="Float"/>
+				<field name="fOrbitPosRndMaxTime" type="Float"/>
+				<field name="fOrbitMinDistance" type="Float"/>
+				<field name="fOrbitMaxDistance" type="Float"/>
+				<field name="fFollowHoldPosStiffness" type="Float"/>
+				<field name="fMeleeHeight" type="Float"/>
+				<field name="fCombatHeight" type="Float"/>
+				<field name="fShootRangeIfUnreachableTarget" type="Float"/>
+			</object>
+			<object name="InVehicle">
+				<field name="fMinSpeed" type="Float"/>
+				<field name="fMaxSpeedTargetMaxSpeedRatio" type="Float"/>
+				<field name="fMaxSpeedCap" type="Float"/>
+				<field name="fMaxSpeedChangeRate" type="Float"/>
+				<field name="fFollowDistance" type="Float"/>
+				<field name="fOrbitPointRadius" type="Float"/>
+				<field name="fSwitchToOrbitDistance" type="Float"/>
+				<field name="fOrbitResetDistance" type="Float"/>
+				<field name="fBehindResetDistance" type="Float"/>
+				<field name="fFrontResetDistance" type="Float"/>
+				<field name="fHoldRearPositionTime" type="Float"/>
+				<field name="fHoldFrontPositionTime" type="Float"/>
+				<field name="fOrbitYawIncrement" type="Float"/>
+				<field name="fFrontPositionAngle" type="Float"/>
+				<field name="fHeight" type="Float"/>
+				<field name="fInFrontHeight" type="Float"/>
+				<field name="fInFrontHeightRotationSpeedModifier" type="Float"/>
+				<field name="fNoLerpSpeedLimit" type="Float"/>
+				<field name="fOrbitLerp" type="Float"/>
+				<field name="fHoldBehindLerp" type="Float"/>
+				<field name="fHoldFrontLerp" type="Float"/>
+				<field name="fInVehicleWeaponFiredLerp" type="Float"/>
+				<field name="fWeaponFiredSpeedPenalty" type="Float"/>
+				<field name="fFirstWeaponFireDelay" type="Float"/>
+				<field name="fDelayBetweenWeaponFireAttempts" type="Float"/>
+				<field name="fDelayBetweenHitShots" type="Float"/>
+				<field name="fDelayBetweenWeaponFireAttemptsWhenHacked" type="Float"/>
+				<field name="iMaxDronesInFront" type="Int32"/>
+				<field name="fLerpDonutInnerRadius" type="Float"/>
+				<field name="fLerpDonutOuterRadius" type="Float"/>
+				<field name="fLerpDonutPredictionTime" type="Float"/>
+				<field name="fCatchupBoost" type="Float"/>
+				<object name="MaxSpeedModifiers"/>
+				<object name="curveMaxSpeedModifierCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveDelayBetweenWeaponFireModifier">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveLerpDonutSizeReducerCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="CanShootRule">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+			</object>
+			<object name="OnDrone">
+				<field name="fHoldPosBeforeFiringTime" type="Float"/>
+				<field name="fFollowDistance" type="Float"/>
+				<field name="fFollowHeight" type="Float"/>
+				<field name="fFollowSpeed" type="Float"/>
+				<field name="fFirstWeaponFireDelay" type="Float"/>
+				<field name="fDelayBetweenWeaponFireAttempts" type="Float"/>
+			</object>
+		</object>
+		<object name="CombatDroneSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fAproachSpeed" type="Float"/>
+			<field name="fCombatSpeed" type="Float"/>
+			<field name="fCombatRange" type="Float"/>
+			<field name="fShootRange" type="Float"/>
+			<field name="fShootRangeIfUnreachableTarget" type="Float"/>
+			<field name="fShootTimeBeforeFiring" type="Float"/>
+			<field name="fMeleeHeight" type="Float"/>
+			<field name="fCombatHeight" type="Float"/>
+			<field name="fShootTimeout" type="Float"/>
+			<field name="fTargetStunnedWaitTime" type="Float"/>
+			<field name="fPlayerDownWaitTime" type="Float"/>
+			<field name="bForceAcquireTicket" type="Boolean"/>
+			<field name="fGetUpThresholdHeight" type="Float"/>
+			<field name="fGetUpSpeed" type="Float"/>
+			<field name="fGetUpAbandonTime" type="Float"/>
+			<field name="fStrafeRange" type="Float"/>
+			<field name="fMoveBackRange" type="Float"/>
+			<field name="fLookAtValidLKPDelayMin" type="Float"/>
+			<field name="fLookAtValidLKPDelayMax" type="Float"/>
+			<field name="bCanFireRockets" type="Boolean"/>
+			<field name="bCanThrowGrenades" type="Boolean"/>
+			<field name="selMoveAndShootType" type="Enum"/>
+			<field name="bCanSupress" type="Boolean"/>
+			<field name="fSupressDistance" type="Float"/>
+			<field name="fSupressDelay" type="Float"/>
+			<field name="fSupressMovementSpeed" type="Float"/>
+			<field name="fCorrectHeightCooldownTime" type="Float"/>
+			<field name="fIdleMultiplier" type="Float"/>
+			<field name="fIdleBurstMultiplier" type="Float"/>
+			<field name="bCanShootTargetVehicle" type="Boolean"/>
+			<field name="fLKPRefreshRate" type="Float"/>
+			<field name="fLKPRefreshRateInVehicle" type="Float"/>
+			<field name="fSwitchToFullCombatTimeout" type="Float"/>
+			<field name="sndSwitchToFullCombatSoundReset" type="BinHex"/>
+			<field name="sndtpSwitchToFullCombatSoundTypeReset" type="BinHex"/>
+			<field name="sndSwitchToFullCombatSoundBegin" type="BinHex"/>
+			<field name="sndtpSwitchToFullCombatSoundtypeBegin" type="BinHex"/>
+			<field name="sndSwitchToFullCombatSoundEndHostile" type="BinHex"/>
+			<field name="sndtpSwitchToFullCombatSoundTypeEndHostile" type="BinHex"/>
+			<field name="sndSwitchToFullCombatSoundEndCancel" type="BinHex"/>
+			<field name="sndtpSwitchToFullCombatSoundTypeEndCancel" type="BinHex"/>
+			<field name="bUseNonPlayerExplosionDamageMultiplier" type="Boolean"/>
+			<object name="ShootSettings">
+				<field name="iNumberBurstPerShotMin" type="Int32"/>
+				<field name="iNumberBurstPerShotMax" type="Int32"/>
+				<field name="iNumberBulletPerBurstMin" type="Int32"/>
+				<field name="iNumberBulletPerBurstMax" type="Int32"/>
+				<field name="iROSHeatLevelToStartfire" type="Int32"/>
+				<field name="fBurstDelayMin" type="Float"/>
+				<field name="fBurstDelayMax" type="Float"/>
+				<field name="fLookAtTurnSpeedModifier" type="Float"/>
+				<field name="fPreShootDelay" type="Float"/>
+				<field name="sndPreShootSound" type="BinHex"/>
+				<field name="sndtpPreShootSoundType" type="BinHex"/>
+				<field name="bIsValid" type="Boolean"/>
+			</object>
+			<object name="Grenade">
+				<field name="fTimeout" type="Float"/>
+				<field name="fStartTimeout" type="Float"/>
+				<field name="fTimeBeforeFiring" type="Float"/>
+				<field name="vec2Range" type="BinHex"/>
+				<field name="iGrenadesCountInVolley" type="Int32"/>
+				<field name="fNextGrenadesDistance" type="Float"/>
+				<field name="fMinAngleBetweenNextGrenades" type="Float"/>
+				<field name="fRefreshTargetPosDistance" type="Float"/>
+				<field name="fTargetVelocityFactor" type="Float"/>
+				<field name="bShouldAskSquad" type="Boolean"/>
+				<field name="bShouldCheckAboveItself" type="Boolean"/>
+				<field name="bShouldForceThrowRocket" type="Boolean"/>
+				<object name="curveVolleyRandomAngleCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="CheckLKP">
+				<field name="fDelayMin" type="Float"/>
+				<field name="fDelayMax" type="Float"/>
+				<field name="fApproachMaxDistance" type="Float"/>
+				<field name="fApproachNearTolerance" type="Float"/>
+				<field name="fApproachMoveSpeed" type="Float"/>
+				<field name="fApproachAbandonTime" type="Float"/>
+				<field name="fRotationTimeMin" type="Float"/>
+				<field name="fRotationTimeMax" type="Float"/>
+				<field name="fRotationsTotalTime" type="Float"/>
+				<field name="fRotationAngle" type="Float"/>
+				<field name="fRotationSpeedModifier" type="Float"/>
+				<field name="fOverrideCheckLKPTimer" type="Float"/>
+			</object>
+			<object name="SupressShootSettings">
+				<field name="iNumberBurstPerShotMin" type="Int32"/>
+				<field name="iNumberBurstPerShotMax" type="Int32"/>
+				<field name="iNumberBulletPerBurstMin" type="Int32"/>
+				<field name="iNumberBulletPerBurstMax" type="Int32"/>
+				<field name="iROSHeatLevelToStartfire" type="Int32"/>
+				<field name="fBurstDelayMin" type="Float"/>
+				<field name="fBurstDelayMax" type="Float"/>
+				<field name="fLookAtTurnSpeedModifier" type="Float"/>
+				<field name="fPreShootDelay" type="Float"/>
+				<field name="sndPreShootSound" type="BinHex"/>
+				<field name="sndtpPreShootSoundType" type="BinHex"/>
+				<field name="bIsValid" type="Boolean"/>
+			</object>
+			<object name="LowHealthModifiers">
+				<field name="fLowHealthPercent" type="Float"/>
+				<field name="fLowHealthSpeedModifier" type="Float"/>
+				<field name="fLowHealthDistanceModifier" type="Float"/>
+				<field name="fCriticalHealthPercent" type="Float"/>
+				<field name="fCriticalHealthSpeedModifier" type="Float"/>
+				<field name="fCriticalHealthDistanceModifier" type="Float"/>
+			</object>
+			<object name="CallForReinforcementsDelay">
+				<field name="fMin" type="Float"/>
+				<field name="fMax" type="Float"/>
+			</object>
+		</object>
+		<object name="CompanionDroneSettings">
+			<inherit name="SharedParameters"/>
+			<field name="companiondroneactiondefIdleAction" type="BinHex"/>
+			<field name="companiondroneactiondefActiveAction" type="BinHex"/>
+		</object>
+		<object name="ConstructionDroneSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fMinHealthRatioToOperate" type="Float"/>
+			<object name="PickUpAndDropState">
+				<field name="fMoveToPickableNearTolerance" type="Float"/>
+				<field name="fMoveToDropPointNearTolerance" type="Float"/>
+				<field name="fMoveOverPickableOffset" type="Float"/>
+				<field name="fMoveDownSpeed" type="Float"/>
+				<field name="fAttachDetachDuration" type="Float"/>
+				<field name="fRoadAvoidanceElevation" type="Float"/>
+				<field name="fDefaultAvoidanceElevation" type="Float"/>
+				<field name="fWaitAfterAttachDetachDuration" type="Float"/>
+				<field name="fWaitForNewSubStateMinDuration" type="Float"/>
+				<field name="fWaitForNewSubStateMaxDuration" type="Float"/>
+				<field name="fPickableMoveToleranceIfFar" type="Float"/>
+				<field name="fPickableMoveToleranceIfNear" type="Float"/>
+				<object name="curveMoveToPickableSpeedCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMoveToDropPointSpeedCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+		<object name="KamikazeDroneSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fDefaultfollowSpeed" type="Float"/>
+			<field name="fSprintfollowSpeed" type="Float"/>
+			<field name="fFollowHeight" type="Float"/>
+			<field name="fBlindFollowHeight" type="Float"/>
+			<field name="fFollowSpeedSelfDestruct" type="Float"/>
+			<field name="fSelfDestructTriggerRange" type="Float"/>
+			<field name="fSelfDestructBuildupDuration" type="Float"/>
+			<field name="fExplosiveNearbyStimTriggerRange" type="Float"/>
+			<field name="fInitialHoverDuration" type="Float"/>
+			<field name="fPreSelfDestructSoundTriggerRange" type="Float"/>
+			<field name="fLocalPlayerInRange" type="Float"/>
+			<field name="bShowExplosionIcon" type="Boolean"/>
+			<field name="bHasMaxKamikazeDuration" type="Boolean"/>
+			<field name="fMaxKamikazeDuration" type="Float"/>
+		</object>
+		<object name="RaidBossBlumeDroneSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fStatusChangeDuration" type="Float"/>
+			<field name="fInvisibilityDuration" type="Float"/>
+			<field name="fDamageZonePeriod" type="Float"/>
+			<field name="fRepairStimPeriod" type="Float"/>
+			<field name="fWeakStateAngleLookAt" type="Float"/>
+			<field name="fWeakStateAngleMaxDiff" type="Float"/>
+			<object name="Targeting">
+				<field name="fAggroDecayRelativeRate" type="Float"/>
+				<field name="fAggroGainOnBossDamage" type="Float"/>
+				<field name="fAggroGainOnOpenArea" type="Float"/>
+				<field name="fAggroOpenAreaPeriod" type="Float"/>
+				<field name="fAggroGainOnNPCDamage" type="Float"/>
+				<field name="fSwitchTargetDuration" type="Float"/>
+				<field name="bSwitchTargetOnChoosingMachineguns" type="Boolean"/>
+				<field name="bSwitchTargetInMachinegunSequence" type="Boolean"/>
+				<field name="bSwitchTargetOnChoosingRocketLaunchers" type="Boolean"/>
+				<field name="bUseDoubleTargeting" type="Boolean"/>
+				<field name="bTargetRemoteControlledUnits" type="Boolean"/>
+				<field name="fDualTargetingMaxAngle" type="Float"/>
+				<field name="fDualTargetingSwitchSideMinAngle" type="Float"/>
+			</object>
+			<object name="Weaponry">
+				<field name="fWeaponAngleOffset" type="Float"/>
+				<field name="bMachineGunChargeOnlyOnNewTarget" type="Boolean"/>
+				<field name="iBulletBurstCountMax" type="Int32"/>
+				<field name="fBulletBurstDurationCharge" type="Float"/>
+				<field name="fBulletBurstDurationRest" type="Float"/>
+				<field name="fBulletBurstDurationShooting" type="Float"/>
+				<field name="fSequenceResetDuration" type="Float"/>
+				<object name="Rockets">
+					<field name="fRocketMaxAngle" type="Float"/>
+					<field name="fRocketMaxDuration" type="Float"/>
+					<object name="RocketSequenceDuration">
+						<object name="SequenceDurationItem">
+							<field name="fHealthThreshold" type="Float"/>
+							<field name="iRocketWavesCount" type="Int32"/>
+							<field name="fWeaponFireRateModifier" type="Float"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="BonesWipeAttack">
+				<field name="fDefaultStiffness" type="Float"/>
+				<object name="MobileBones"/>
+			</object>
+			<object name="DamageZoneStim">
+				<field name="text_hidEventName" type="String"/>
+				<field name="hidEventName" type="BinHex"/>
+				<field name="hidTargetEntityId" type="BinHex"/>
+				<field name="sDetail" type="BinHex"/>
+				<field name="selType" type="Enum"/>
+				<field name="bShowCone" type="Boolean"/>
+				<object name="RadiusSettings">
+					<field name="fRadius" type="Float"/>
+				</object>
+				<object name="AltitudeSliceSettings">
+					<field name="fMaxAlt" type="Float"/>
+					<field name="fMinAlt" type="Float"/>
+				</object>
+				<object name="LevelSettings">
+					<field name="fLevel" type="Float"/>
+					<field name="bFalloff" type="Boolean"/>
+					<field name="fFalloffMinLevel" type="Float"/>
+				</object>
+				<object name="EntityRestrictions">
+					<field name="bRestrictToEntities" type="Boolean"/>
+				</object>
+			</object>
+			<object name="Wipe">
+				<field name="fWipeDurationCriticalHealth" type="Float"/>
+				<field name="fWipeDurationWipeDroneCountReached" type="Float"/>
+				<field name="fWipeDurationRoomsFailed" type="Float"/>
+				<field name="iWipeDroneCountMax" type="Int32"/>
+				<field name="fCriticalHealthRatio" type="Float"/>
+				<field name="bDestroyWipeDronesWhenWeak" type="Boolean"/>
+			</object>
+			<object name="SFX">
+				<field name="sndSFXMachineGunGoOut" type="BinHex"/>
+				<field name="sndSFXMachineGunGoIn" type="BinHex"/>
+				<field name="sndSFXMachineGunCharge" type="BinHex"/>
+				<field name="sndSFXMachineGunChargeLoud" type="BinHex"/>
+				<field name="sndtpSFXMachineGunGoOutType" type="BinHex"/>
+				<field name="sndtpSFXMachineGunGoInType" type="BinHex"/>
+				<field name="sndtpSFXMachineGunChargeType" type="BinHex"/>
+				<field name="sndtpSFXMachineGunChargeLoudType" type="BinHex"/>
+				<field name="fWeaponRotationShortAngleThreshold" type="Float"/>
+				<field name="sndSFXRocketLauncherGoOut" type="BinHex"/>
+				<field name="sndSFXRocketLauncherGoIn" type="BinHex"/>
+				<field name="sndSFXWipeAttackGoOut" type="BinHex"/>
+				<field name="sndSFXWipeAttackGoIn" type="BinHex"/>
+				<field name="sndSFXWipeAttackBefore" type="BinHex"/>
+				<field name="sndSFXWipeAttackCondemned" type="BinHex"/>
+				<field name="sndSFXStartReload" type="BinHex"/>
+				<field name="sndSFXStopReload" type="BinHex"/>
+				<field name="sndtpSFXRocketLauncherGoOutType" type="BinHex"/>
+				<field name="sndtpSFXRocketLauncherGoInType" type="BinHex"/>
+				<field name="sndtpSFXWipeAttackGoOutType" type="BinHex"/>
+				<field name="sndtpSFXWipeAttackGoInType" type="BinHex"/>
+				<field name="sndtpSFXWipeAttackBeforeType" type="BinHex"/>
+				<field name="sndtpSFXWipeAttackCondemnedType" type="BinHex"/>
+				<field name="sndtpSFXStartReloadType" type="BinHex"/>
+				<field name="sndtpSFXStopReloaTyped" type="BinHex"/>
+				<field name="fBossRotationAngleThreshold" type="Float"/>
+				<field name="sndFirstWipeDroneConnected" type="BinHex"/>
+				<field name="sndSecondWipeDroneConnected" type="BinHex"/>
+				<field name="sndWipeDroneDisconnected" type="BinHex"/>
+				<field name="sndRepairStart" type="BinHex"/>
+				<field name="sndRepairStop" type="BinHex"/>
+				<field name="sndBossVulnerable" type="BinHex"/>
+				<field name="sndBossInvincible" type="BinHex"/>
+				<field name="sndBossDefeated" type="BinHex"/>
+				<field name="sndtpFirstWipeDroneConnectedType" type="BinHex"/>
+				<field name="sndtpSecondWipeDroneConnectedType" type="BinHex"/>
+				<field name="sndtpWipeDroneDisconnectedType" type="BinHex"/>
+				<field name="sndtpRepairStartType" type="BinHex"/>
+				<field name="sndtpRepairStopType" type="BinHex"/>
+				<field name="sndtpBossVulnerableType" type="BinHex"/>
+				<field name="sndtpBossInvincibleType" type="BinHex"/>
+				<field name="sndtpBossDefeatedType" type="BinHex"/>
+				<object name="Barks">
+					<field name="BarkWeakpointClosed" type="BinHex"/>
+					<field name="BarkWeakpointOpened" type="BinHex"/>
+					<field name="BarkWipeAttack" type="BinHex"/>
+					<field name="BarkWipeAttackAborted" type="BinHex"/>
+					<field name="BarkWipeAttackCriticalHealth" type="BinHex"/>
+					<field name="BarkRepaired" type="BinHex"/>
+				</object>
+			</object>
+			<object name="VFX">
+				<field name="WipeSuccessPostFX" type="BinHex"/>
+				<field name="psCriticalSmoke" type="BinHex"/>
+				<field name="iCriticalSmokeBone" type="Int32"/>
+				<field name="psDamageZone" type="BinHex"/>
+				<field name="vectorDamageZoneOffset" type="Vector3"/>
+			</object>
+		</object>
+		<object name="RaidWipeDroneSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fMaxDistanceToConnect" type="Float"/>
+			<field name="fMovementSpeed" type="Float"/>
+			<field name="fRetryMoveCommandDuration" type="Float"/>
+			<field name="fRetryMaximumDistance" type="Float"/>
+			<field name="fEntityGridSearchDuration" type="Float"/>
+			<field name="fEntityGridMaxDistance" type="Float"/>
+			<field name="fHeightAboveBossAverage" type="Float"/>
+			<field name="fHeightAboveBossMaxDeviation" type="Float"/>
+			<field name="fRepairAmountPerSecond" type="Float"/>
+			<object name="Beam">
+				<field name="psMuzzle" type="BinHex"/>
+				<field name="psImpact" type="BinHex"/>
+				<field name="sndFireBeamStartSound" type="BinHex"/>
+				<field name="sndFireBeamStopSound" type="BinHex"/>
+				<field name="sndtpFireBeamStartSoundType" type="BinHex"/>
+				<field name="sndtpFireBeamStopSoundType" type="BinHex"/>
+				<field name="fTargetVerticalOffset" type="Float"/>
+				<field name="vectorMuzzleOffset" type="Vector3"/>
+				<field name="archBeamArchetype" type="BinHex"/>
+				<field name="sBeamMaterialName" type="BinHex"/>
+				<field name="colorBeamColor" type="VectorColor"/>
+				<field name="fBeamScale" type="Float"/>
+				<field name="fBeamExtension" type="Float"/>
+			</object>
+		</object>
+		<object name="NewsDroneSettings">
+			<inherit name="SharedParameters"/>
+			<field name="bCanCaptureNews" type="Boolean"/>
+		</object>
+		<object name="TurretSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fMaxWeaponRotationSpeed" type="Float"/>
+			<object name="WeaponAngles">
+				<field name="fMinWeaponYaw" type="Float"/>
+				<field name="fMaxWeaponYaw" type="Float"/>
+				<field name="fMinWeaponPitch" type="Float"/>
+				<field name="fMaxWeaponPitch" type="Float"/>
+			</object>
+			<object name="Idle">
+				<field name="fReturnToStandByTimeMin" type="Float"/>
+				<field name="fReturnToStandByTimeMax" type="Float"/>
+				<field name="fWakeUpLookAtPosTimeMin" type="Float"/>
+				<field name="fWakeUpLookAtPosTimeMax" type="Float"/>
+				<field name="fWakeUpLookNearPlayerTimeMin" type="Float"/>
+				<field name="fWakeUpLookNearPlayerTimeMax" type="Float"/>
+				<field name="fWakeUpLookNearPlayerAngleMinDeg" type="Float"/>
+				<field name="fWakeUpLookNearPlayerAngleMaxDeg" type="Float"/>
+				<field name="turretidlemovementsettingsMovementSettings" type="BinHex"/>
+			</object>
+			<object name="Combat">
+				<field name="fAbandonTimeMin" type="Float"/>
+				<field name="fAbandonTimeMax" type="Float"/>
+				<field name="fOverchargeRocketFireRateModifier" type="Float"/>
+			</object>
+			<object name="TargetSelection">
+				<field name="fPlayerCandidateWeight" type="Float"/>
+				<field name="fPlayerCandidateControllingRCWeight" type="Float"/>
+				<field name="fDamageFromCandidateWeight" type="Float"/>
+				<field name="fDamageMemoryTimeMultiplier" type="Float"/>
+				<field name="fTargetChangeHysteresis" type="Float"/>
+				<field name="fTargetChangedDelayMin" type="Float"/>
+				<field name="fTargetChangedDelayMax" type="Float"/>
+				<field name="fTargetLostDelayMin" type="Float"/>
+				<field name="fTargetLostDelayMax" type="Float"/>
+				<field name="fTargetFoundDelayMin" type="Float"/>
+				<field name="fTargetFoundDelayMax" type="Float"/>
+				<object name="curveDistanceWeightCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="PerceptionThreat">
+				<field name="fLastDamageThreatTime" type="Float"/>
+				<field name="fLastFiredGunThreatTime" type="Float"/>
+			</object>
+		</object>
+		<object name="DroneDogfightSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fMoveSpeed" type="Float"/>
+			<field name="fSideMoveAngleMin" type="Float"/>
+			<field name="fSideMoveAngleMax" type="Float"/>
+			<field name="fVerticalMoveAngleMin" type="Float"/>
+			<field name="fVerticalMoveAngleMax" type="Float"/>
+			<field name="fMoveRangeMin" type="Float"/>
+			<field name="fMoveRangeMax" type="Float"/>
+			<field name="fMinTargetDistance" type="Float"/>
+			<field name="fDefaultDelayMin" type="Float"/>
+			<field name="fDefaultDelayMax" type="Float"/>
+			<field name="fDelayIfHijackedTargetMin" type="Float"/>
+			<field name="fDelayIfHijackedTargetMax" type="Float"/>
+			<field name="fLastMoveDirProbabilityModifier" type="Float"/>
+			<field name="fTooLowHeight" type="Float"/>
+			<field name="fTooLowUpProbabilityModifier" type="Float"/>
+			<object name="curveHeightDiffUpProbabilityModifierCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveHeightDiffDownProbabilityModifierCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="DroneStandbyStateSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fActivationDelayMin" type="Float"/>
+			<field name="fActivationDelayMax" type="Float"/>
+			<field name="sndStandbyStartSound" type="BinHex"/>
+			<field name="sndStandbyStopSound" type="BinHex"/>
+			<field name="sndtpStandbyStartSoundType" type="BinHex"/>
+			<field name="sndtpStandbyStopSoundType" type="BinHex"/>
+		</object>
+		<object name="DroneWanderStateSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fLandOnDockProbability" type="Float"/>
+			<field name="selLandingDockSize" type="Enum"/>
+			<field name="fLandingDockMaxDistance" type="Float"/>
+			<field name="fLandingDockIgnoreProbability" type="Float"/>
+			<object name="SwitchedAllegiance">
+				<field name="fMoveZOffset" type="Float"/>
+				<field name="fMoveSpeed" type="Float"/>
+				<field name="fMoveSpeedFar" type="Float"/>
+				<field name="fMoveLookAtMaxDistance" type="Float"/>
+				<field name="fMoveLookAtSpeedModifier" type="Float"/>
+				<field name="fMoveToPointAbandonTime" type="Float"/>
+				<field name="fPointVisibilityCheckMaxDistance" type="Float"/>
+				<field name="fOriginInspectionNearTolerance" type="Float"/>
+				<field name="fOriginInspectionTotalTime" type="Float"/>
+				<field name="fOriginInspectionRotationTime" type="Float"/>
+				<field name="fOriginInspectionRotationAngleDeg" type="Float"/>
+				<field name="fOriginInspectionRotationSpeedModifier" type="Float"/>
+				<field name="bOriginInspectionRotationLookLeftRight" type="Boolean"/>
+				<field name="fIdleLookAtTime" type="Float"/>
+				<field name="fIdleLookAtAngleDeg" type="Float"/>
+				<field name="fIdleLookAtSpeedModifier" type="Float"/>
+			</object>
+		</object>
+		<object name="DroneLandStateSettings">
+			<inherit name="SharedParameters"/>
+			<object name="MoveSubState">
+				<field name="fMoveNearTolerance" type="Float"/>
+				<field name="fMoveZOffset" type="Float"/>
+				<object name="curveMoveSpeedCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="PositioningSubState">
+				<field name="fPositioningSpeed" type="Float"/>
+				<field name="fPositioningTimeMin" type="Float"/>
+				<field name="fPositioningTimeMax" type="Float"/>
+			</object>
+			<object name="MoveDownSubState">
+				<field name="fMoveDownSpeed" type="Float"/>
+			</object>
+			<object name="LandSubState">
+				<field name="fLandSpeed" type="Float"/>
+				<field name="fLandTime" type="Float"/>
+			</object>
+			<object name="LandedSubState">
+				<field name="fReturnToStandbyTimeMin" type="Float"/>
+				<field name="fReturnToStandbyTimeMax" type="Float"/>
+			</object>
+		</object>
+		<object name="DroneWatchStateSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fReachOriginSpeed" type="Float"/>
+			<field name="fLookForwardTimeMin" type="Float"/>
+			<field name="fLookForwardTimeMax" type="Float"/>
+			<field name="fLookForwardSpeedModifier" type="Float"/>
+			<field name="fLookAroundCountMin" type="Int32"/>
+			<field name="fLookAroundCountMax" type="Int32"/>
+			<field name="fLookAroundAngleDegMin" type="Float"/>
+			<field name="fLookAroundAngleDegMax" type="Float"/>
+			<field name="fLookAroundTimeMin" type="Float"/>
+			<field name="fLookAroundTimeMax" type="Float"/>
+			<field name="fLookAroundClearanceDistance" type="Float"/>
+			<field name="fLookAroundSpeedModifier" type="Float"/>
+		</object>
+		<object name="DroneHuntStateSettings">
+			<inherit name="SharedParameters"/>
+			<object name="OnFootTarget">
+				<field name="fMoveZOffset" type="Float"/>
+				<field name="fMoveSpeed" type="Float"/>
+				<field name="fMoveSpeedFar" type="Float"/>
+				<field name="fMoveLookAtMaxDistance" type="Float"/>
+				<field name="fMoveLookAtSpeedModifier" type="Float"/>
+				<field name="fMoveToPointAbandonTime" type="Float"/>
+				<field name="fPointVisibilityCheckMaxDistance" type="Float"/>
+				<field name="fOriginInspectionNearTolerance" type="Float"/>
+				<field name="fOriginInspectionTotalTime" type="Float"/>
+				<field name="fOriginInspectionRotationTime" type="Float"/>
+				<field name="fOriginInspectionRotationAngleDeg" type="Float"/>
+				<field name="fOriginInspectionRotationSpeedModifier" type="Float"/>
+				<field name="bOriginInspectionRotationLookLeftRight" type="Boolean"/>
+				<field name="fIdleLookAtTime" type="Float"/>
+				<field name="fIdleLookAtAngleDeg" type="Float"/>
+				<field name="fIdleLookAtSpeedModifier" type="Float"/>
+			</object>
+			<object name="ConvergeToPosition">
+				<field name="fConvergeSpeed" type="Float"/>
+				<field name="fMaxDistanceToConvergeOnHunt" type="Float"/>
+				<field name="fConvergePositionHeightOffsetOnHunt" type="Float"/>
+			</object>
+		</object>
+		<object name="DroneDisableStateSettings">
+			<inherit name="SharedParameters"/>
+			<field name="bVulnerableOnlyWhenDisable" type="Boolean"/>
+			<field name="bUseParticle" type="Boolean"/>
+		</object>
+		<object name="DroneAlertStateSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fGetUpAndWaitTime" type="Float"/>
+			<field name="fGetUpSpeed" type="Float"/>
+			<field name="fMoveNearTolerance" type="Float"/>
+			<field name="fMoveZOffset" type="Float"/>
+			<field name="fMoveSpeed" type="Float"/>
+			<field name="fMoveAbandonTime" type="Float"/>
+			<field name="fAscendHeight" type="Float"/>
+			<field name="fAscendSpeed" type="Float"/>
+			<field name="fAscendAbandonTime" type="Float"/>
+			<field name="fLookAroundRotationSpeed" type="Float"/>
+			<field name="fLookAroundTime" type="Float"/>
+			<field name="fNoInvestigationWaitTimeMin" type="Float"/>
+			<field name="fNoInvestigationWaitTimeMax" type="Float"/>
+		</object>
+		<object name="DroneDetectionStateSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fMinGaugeRatio" type="Float"/>
+			<field name="fAbandonTimeMin" type="Float"/>
+			<field name="fAbandonTimeMax" type="Float"/>
+		</object>
+		<object name="DroneStayStateSettings">
+			<inherit name="SharedParameters"/>
+			<object name="LookAround">
+				<field name="fTotalTimeMin" type="Float"/>
+				<field name="fTotalTimeMax" type="Float"/>
+				<field name="fMoveTimeMin" type="Float"/>
+				<field name="fMoveTimeMax" type="Float"/>
+				<field name="fMoveSpeed" type="Float"/>
+				<field name="fLookAtSpeedModifier" type="Float"/>
+				<field name="fMoveAngleMinDeg" type="Float"/>
+				<field name="fMoveAngleMaxDeg" type="Float"/>
+				<field name="fMoveDistanceMin" type="Float"/>
+				<field name="fMoveDistanceMax" type="Float"/>
+				<field name="fClearanceDistance" type="Float"/>
+			</object>
+			<object name="Wait">
+				<field name="fTimeMin" type="Float"/>
+				<field name="fTimeMax" type="Float"/>
+			</object>
+		</object>
+		<object name="DroneFollowStateSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fTotalTimeMin" type="Float"/>
+			<field name="fTotalTimeMax" type="Float"/>
+			<field name="fFollowHorizontalOffset" type="Float"/>
+			<field name="fFollowVerticalOffset" type="Float"/>
+			<field name="fFollowDistanceCheckDelay" type="Float"/>
+			<object name="curveFollowSpeedBonusCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="ConcludeSettings">
+				<object name="ConditionalStrategies"/>
+				<object name="WeightedStrategies">
+					<object name="WeightedStrategy">
+						<field name="text_fileStrategyCategory" type="String"/>
+						<field name="fileStrategyCategory" type="BinHex"/>
+						<field name="fWeight" type="Float"/>
+						<object name="BlackboardInitializers"/>
+					</object>
+				</object>
+				<object name="BlackboardInitializers"/>
+			</object>
+		</object>
+		<object name="DroneApproachStateSettings">
+			<inherit name="SharedParameters"/>
+			<field name="fApproachMaxDistanceFromStart" type="Float"/>
+			<field name="fApproachMaxDistanceToTarget" type="Float"/>
+			<field name="fApproachMoveSpeed" type="Float"/>
+			<field name="fApproachAbandonTime" type="Float"/>
+			<field name="fWaitTimeMin" type="Float"/>
+			<field name="fWaitTimeMax" type="Float"/>
+		</object>
+		<object name="DroneHackEscalationStateSettings">
+			<inherit name="SharedParameters"/>
+			<object name="TargetTypeSettings">
+				<object name="HijackedRC">
+					<field name="bCanAlertIfNoGuard" type="Boolean"/>
+					<field name="bCanConcludeInCombat" type="Boolean"/>
+					<field name="fWaitForAlertGuardsTimeMin" type="Float"/>
+					<field name="fWaitForAlertGuardsTimeMax" type="Float"/>
+					<field name="fWaitForCombatWarningNoAlertTimeMin" type="Float"/>
+					<field name="fWaitForCombatWarningNoAlertTimeMax" type="Float"/>
+					<field name="fWaitForCombatWarningAfterAlertTimeMin" type="Float"/>
+					<field name="fWaitForCombatWarningAfterAlertTimeMax" type="Float"/>
+					<field name="fWaitForCombatTimeMin" type="Float"/>
+					<field name="fWaitForCombatTimeMax" type="Float"/>
+					<field name="fWaitForCombatTimeNoGuardMin" type="Float"/>
+					<field name="fWaitForCombatTimeNoGuardMax" type="Float"/>
+					<field name="fWaitForNoCombatConclusionTimeMin" type="Float"/>
+					<field name="fWaitForNoCombatConclusionTimeMax" type="Float"/>
+					<field name="fAbandonTimeMin" type="Float"/>
+					<field name="fAbandonTimeMax" type="Float"/>
+					<field name="fFollowSpeed" type="Float"/>
+					<field name="fFollowVerticalOffset" type="Float"/>
+					<field name="fFollowRange" type="Float"/>
+					<field name="fGoToLKPSpeed" type="Float"/>
+					<field name="fGoToLKPVerticalOffset" type="Float"/>
+					<field name="fGoToLKPNearDistance" type="Float"/>
+					<object name="AlertGuardsBark">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="text_rulesmithconstValue" type="String"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+					<object name="CombatWarningBark">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="text_rulesmithconstValue" type="String"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+				</object>
+				<object name="DeactivatedRC">
+					<field name="bCanAlertIfNoGuard" type="Boolean"/>
+					<field name="bCanConcludeInCombat" type="Boolean"/>
+					<field name="fWaitForAlertGuardsTimeMin" type="Float"/>
+					<field name="fWaitForAlertGuardsTimeMax" type="Float"/>
+					<field name="fWaitForCombatWarningNoAlertTimeMin" type="Float"/>
+					<field name="fWaitForCombatWarningNoAlertTimeMax" type="Float"/>
+					<field name="fWaitForCombatWarningAfterAlertTimeMin" type="Float"/>
+					<field name="fWaitForCombatWarningAfterAlertTimeMax" type="Float"/>
+					<field name="fWaitForCombatTimeMin" type="Float"/>
+					<field name="fWaitForCombatTimeMax" type="Float"/>
+					<field name="fWaitForCombatTimeNoGuardMin" type="Float"/>
+					<field name="fWaitForCombatTimeNoGuardMax" type="Float"/>
+					<field name="fWaitForNoCombatConclusionTimeMin" type="Float"/>
+					<field name="fWaitForNoCombatConclusionTimeMax" type="Float"/>
+					<field name="fAbandonTimeMin" type="Float"/>
+					<field name="fAbandonTimeMax" type="Float"/>
+					<field name="fFollowSpeed" type="Float"/>
+					<field name="fFollowVerticalOffset" type="Float"/>
+					<field name="fFollowRange" type="Float"/>
+					<field name="fGoToLKPSpeed" type="Float"/>
+					<field name="fGoToLKPVerticalOffset" type="Float"/>
+					<field name="fGoToLKPNearDistance" type="Float"/>
+					<object name="AlertGuardsBark">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="text_rulesmithconstValue" type="String"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+					<object name="CombatWarningBark">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="DroneMalfunctionStateSettings">
+			<inherit name="SharedParameters"/>
+			<field name="uiMalfunctionCountInVolley" type="UInt32"/>
+			<field name="vec2MalfunctionRange" type="BinHex"/>
+			<field name="fMalfunctionInitialFireDelay" type="Float"/>
+			<field name="fMalfunctionChanceToTargetEnemies" type="Float"/>
+			<field name="fMalfunctionMinDistBetweenShots" type="Float"/>
+			<field name="bSendSearchStim" type="Boolean"/>
+			<field name="bSendWasMalfunctioningIncident" type="Boolean"/>
+		</object>
+		<object name="DroneThreatenedEventSettings">
+			<inherit name="SharedParameters"/>
+			<object name="AimedByGun">
+				<field name="fCooldownMin" type="Float"/>
+				<field name="fCooldownMax" type="Float"/>
+				<field name="fDelayMin" type="Float"/>
+				<field name="fDelayMax" type="Float"/>
+				<field name="fEventWindow" type="Float"/>
+			</object>
+			<object name="BulletMiss">
+				<field name="fCooldownMin" type="Float"/>
+				<field name="fCooldownMax" type="Float"/>
+			</object>
+		</object>
+		<object name="DroneThreatenedStrafeSettings">
+			<object name="BulletMiss">
+				<inherit name="SharedParameters"/>
+				<field name="bIsEnabled" type="Boolean"/>
+				<field name="fMoveDistance" type="Float"/>
+				<field name="fMoveSpeed" type="Float"/>
+				<field name="fDuration" type="Float"/>
+				<field name="fAngleMin" type="Float"/>
+				<field name="fAngleMax" type="Float"/>
+				<object name="curveAllowedAngleCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="AimedByGun">
+				<inherit name="SharedParameters"/>
+				<field name="bIsEnabled" type="Boolean"/>
+				<field name="fMoveDistance" type="Float"/>
+				<field name="fMoveSpeed" type="Float"/>
+				<field name="fDuration" type="Float"/>
+				<field name="fAngleMin" type="Float"/>
+				<field name="fAngleMax" type="Float"/>
+				<object name="curveAllowedAngleCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="LockOn">
+				<inherit name="SharedParameters"/>
+				<field name="bIsEnabled" type="Boolean"/>
+				<field name="fMoveDistance" type="Float"/>
+				<field name="fMoveSpeed" type="Float"/>
+				<field name="fDuration" type="Float"/>
+				<field name="fAngleMin" type="Float"/>
+				<field name="fAngleMax" type="Float"/>
+				<object name="curveAllowedAngleCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="DroneCommandsGlobalSettings">
+		<object name="CommandsInfos">
+			<object name="commandInfo">
+				<field name="selCommandType" type="Enum"/>
+				<field name="fTriggerFactor" type="Float"/>
+				<field name="fCoolDown" type="Float"/>
+				<field name="fMaxDistance" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="FollowerDroneSettings">
+		<object name="FollowerDroneTypes">
+			<object name="aispawningtypeArchetype">
+				<field name="aispawningtypeArchetype" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,10 @@
+<class name="CVehicleSlipRatioTrack">
+    <object name="CVehicleSlipRatioTrack">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId" type="BinHex"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field hash="22958F3A" type="BinHex"/>
+        <field name="disMuted" type="BinHex"/>
+		<inherit name="CVehicleSlipRatioClip"/>
+    </object>
+</class>

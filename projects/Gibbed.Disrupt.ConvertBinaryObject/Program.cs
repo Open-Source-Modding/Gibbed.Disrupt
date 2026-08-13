@@ -24,6 +24,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Xml.Linq;
 using System.Xml.XPath;
 using Gibbed.Disrupt.FileFormats;
 using Gibbed.Disrupt.FileFormats.Hashing;
@@ -123,19 +124,65 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                 return;
             }
 
+            var handInputPath = extras[0];
+            var handInputName = Path.GetFileNameWithoutExtension(handInputPath);
+            var isHandling = handInputName.IndexOf("handling", StringComparison.OrdinalIgnoreCase) >= 0;
+
+            if (isHandling == true)
+            {
+                var handOutputPath = extras.Count > 1 ? extras[1] : Path.ChangeExtension(handInputPath, ".xml");
+
+                if (mode == Mode.Export)
+                {
+                    if (verbose == true)
+                        Console.WriteLine("Reading handling...");
+
+                    var handling = new HandlingFile();
+                    using (var input = File.OpenRead(handInputPath))
+                    {
+                        handling.Deserialize(input);
+                    }
+
+                    if (verbose == true)
+                        Console.WriteLine("Writing XML...");
+
+                    var doc = handling.ToXml();
+                    doc.Save(handOutputPath);
+                }
+                else
+                {
+                    if (verbose == true)
+                        Console.WriteLine("Reading handling XML...");
+
+                    var doc = XDocument.Load(handInputPath);
+                    var handling = HandlingFile.FromXml(doc);
+
+                    handOutputPath = extras.Count > 1 ? extras[1] : Path.ChangeExtension(handInputPath, ".handling.bin");
+
+                    if (verbose == true)
+                        Console.WriteLine("Writing handling...");
+
+                    using (var output = File.Create(handOutputPath))
+                    {
+                        handling.Serialize(output);
+                    }
+                }
+
+                Console.WriteLine("Done.");
+                return;
+            }
+
             if (verbose == true)
             {
                 Console.WriteLine("Loading project...");
             }
 
-            var manager = ProjectData.Manager.Load();
-            if (manager.ActiveProject == null)
+            var project = ProjectHelpers.LoadProject();
+            if (project == null)
             {
                 Console.WriteLine("Warning: no active project loaded.");
                 return;
             }
-
-            var project = manager.ActiveProject;
 
             if (verbose == true)
             {
@@ -187,8 +234,7 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                 }
                 else
                 {
-                    outputPath = Path.ChangeExtension(inputPath, null);
-                    outputPath += "_converted.fcb";
+                    outputPath = Path.ChangeExtension(inputPath, ".fcb");
                 }
 
                 var basePath = Path.ChangeExtension(inputPath, null);
@@ -263,10 +309,8 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                 }
                 else
                 {
-                    outputPath = Path.ChangeExtension(inputPath, null);
-                    outputPath += "_converted";
-                    basePath = outputPath;
-                    outputPath += ".xml";
+                    outputPath = Path.ChangeExtension(inputPath, ".xml");
+                    basePath = Path.ChangeExtension(inputPath, null);
                 }
 
                 if (string.IsNullOrEmpty(baseName) == true)
@@ -297,7 +341,15 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                 var bof = new BinaryObjectFile();
                 using (var input = File.OpenRead(inputPath))
                 {
-                    bof.Deserialize(input);
+                    try
+                    {
+                        bof.Deserialize(input);
+                    }
+                    catch (FormatException ex)
+                    {
+                        Console.WriteLine("Warning: {0}", ex.Message);
+                        return;
+                    }
                 }
 
                 if (verbose == true)

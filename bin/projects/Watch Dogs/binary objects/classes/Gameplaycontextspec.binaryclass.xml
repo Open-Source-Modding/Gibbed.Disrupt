@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="GameplaycontextspecParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_gctxGameplayContextType" type="String"/>
+	<field name="gctxGameplayContextType" type="BinHex"/>
+	<object name="GameplayContext">
+		<field name="iPriority" type="Int32"/>
+		<field name="fCiviliansDensity" type="Float"/>
+		<field name="fTrafficDensity" type="Float"/>
+		<field name="fParkedCarsDensity" type="Float"/>
+		<object name="GameElements">
+			<field name="bOpenShops" type="Boolean"/>
+			<field name="bEnableActivities" type="Boolean"/>
+			<field name="bActiveEventManager" type="Boolean"/>
+			<field name="selEnableFelony" type="Enum"/>
+			<field name="bEnableMissionDirector" type="Boolean"/>
+			<field name="bAllowFastTravel" type="Boolean"/>
+			<field name="bEnableHideOut" type="Boolean"/>
+			<field name="bEnableStats" type="Boolean"/>
+			<field name="bEnableReputation" type="Boolean"/>
+			<field name="bEnableHotSpots" type="Boolean"/>
+			<field name="bMapCtxDetectorStealth" type="Boolean"/>
+		</object>
+		<object name="HUD">
+			<field name="bShowMinimap" type="Boolean"/>
+			<field name="bShowBattery" type="Boolean"/>
+			<field name="bShowSecondaryItem" type="Boolean"/>
+		</object>
+		<object name="curveCiviliansDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTrafficDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveParkedCarsDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDaytimeCiviliansCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDaytimeVehiclesCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDaytimeParkedCarsCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveCivilinsRainCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

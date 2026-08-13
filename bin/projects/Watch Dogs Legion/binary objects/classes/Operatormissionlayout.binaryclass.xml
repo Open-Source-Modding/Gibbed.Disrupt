@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OperatormissionlayoutParameters">
+	<inherit name="SharedParameters"/>
+	<field name="MissionLayerName" type="String"/>
+	<field name="entTargetMarkerEntity" type="BinHex"/>
+	<field name="entNextTargetMarkerEntity" type="BinHex"/>
+	<field name="text_archBonusGateTimeMarker" type="String"/>
+	<field name="archBonusGateTimeMarker" type="BinHex"/>
+	<field name="text_archBonusGateCashMarker" type="String"/>
+	<field name="archBonusGateCashMarker" type="BinHex"/>
+	<field name="entChopperUserTarget" type="BinHex"/>
+	<field name="entChopperActualTarget" type="BinHex"/>
+	<field name="text_archBonusGateMarker" type="String"/>
+	<field name="archBonusGateMarker" type="BinHex"/>
+</class>

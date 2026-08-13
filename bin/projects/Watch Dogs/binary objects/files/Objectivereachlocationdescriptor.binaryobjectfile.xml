@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Objectivereachlocationdescriptor">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="ObjectivereachlocationdescriptorParameters"/>
+		</object>
+	</object>
+</file>

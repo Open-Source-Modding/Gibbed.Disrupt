@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Powerglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="accessidRequiredIdForCarUnlockPower" type="BinHex"/>
+	<field name="sndOperatorHackingSound" type="BinHex"/>
+	<object name="PoweredObjectHighLights">
+		<field name="fHighlightSpeed" type="Float"/>
+		<field name="colorAvailabilityHighlightColor" type="VectorColor"/>
+		<field name="fAvailabilityHighlightDuration" type="Float"/>
+		<field name="colorActivatedHighlightColor" type="VectorColor"/>
+		<field name="fActivatedHighlightDuration" type="Float"/>
+		<object name="curveAvailabilityHighlightCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveActivatedHighlightCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

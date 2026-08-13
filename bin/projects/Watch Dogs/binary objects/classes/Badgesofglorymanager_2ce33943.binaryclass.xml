@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Badgesofglorymanager_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="disNextBadgeID" type="BinHex"/>
+	<object name="Badges">
+		<object name="BadgeInfo">
+			<field name="disId" type="BinHex"/>
+			<field name="text_filePrimaryIconTexture" type="String"/>
+			<field name="filePrimaryIconTexture" type="BinHex"/>
+			<field name="disPrimaryIconTextureString" type="String"/>
+			<field name="sDebugName" type="String"/>
+			<field name="sDebugDescripition" type="String"/>
+			<field name="sDebugCompletionMessage" type="String"/>
+			<field name="iUiTargetValue" type="Int32"/>
+			<field name="bShowProgress" type="Boolean"/>
+			<field name="bShowNotificationInPDA" type="Boolean"/>
+			<field name="bNextGenOnly" type="Boolean"/>
+			<field name="iXpRewardValue" type="BinHex" />
+			<object name="locstridLocalisedName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridLocalisedDescripition">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridCompletionMessage">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="ActionType">
+				<field name="text_nwbgactionBadgeOfGloryActionType" type="String"/>
+				<field name="nwbgactionBadgeOfGloryActionType" type="BinHex"/>
+				<object name="Values">
+					<field name="bUseValueOverTimeTracking" type="Boolean"/>
+					<field name="bServerRun" type="Boolean"/>
+					<object name="Stats">
+						<object name="Stat">
+							<field name="selStatID" type="Enum"/>
+							<object name="Data">
+								<object name="Data">
+									<field name="DataContext" type="BinHex"/>
+									<field name="selDataID" type="Enum"/>
+									<field name="iTargetValue" type="Int32"/>
+									<field name="iUIMinimumValue" type="Int32"/>
+									<field name="iUIUpdateRate" type="Int32"/>
+									<field name="bAlwaysUpdateNextValue" type="Boolean"/>
+									<field name="entTargetLocation" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object name="Conditions">
+						<object name="Condition">
+							<field name="text_nwbgactionBadgeOfGloryConditionType" type="String"/>
+							<field name="nwbgactionBadgeOfGloryConditionType" type="BinHex"/>
+							<object name="Values">
+								<field name="selResetType" type="Enum"/>
+								<field name="fTargetPercentage" type="Float"/>
+								<field name="iCheckinsPerLocation" type="Int32"/>
+								<field name="bNeedMaxFelony" type="Boolean"/>
+								<field name="bDefineSpotList" type="Boolean"/>
+								<field name="iTargetSpotsToComplete" type="Int32"/>
+								<field name="iTargetCheckinsToComplete" type="Int32"/>
+								<field name="fTimeLimit" type="Float"/>
+								<field name="bInBlackout" type="Boolean"/>
+								<field name="selTimeOfDay" type="Enum"/>
+								<field name="bIsRaining" type="Boolean"/>
+								<field name="iDay" type="Int32"/>
+								<field name="iMonth" type="Int32"/>
+								<field name="iDays" type="Int32"/>
+								<field name="iHours" type="Int32"/>
+								<field name="iMins" type="Int32"/>
+								<field name="iSecs" type="Int32"/>
+								<field name="bOnMainMission" type="Boolean"/>
+								<field name="bHasObjective" type="Boolean"/>
+								<object name="MissionIds">
+								  <object name="Mission">
+								    <field name="missionlistId" type="BinHex" />
+								  </object>
+								</object>
+								<object name="MissionTypes">
+								  <object name="Type">
+								    <field name="text_typeMissionPropertiesType" type="String"/>
+								    <field name="typeMissionPropertiesType" type="BinHex"/>
+								  </object>
+								</object>
+								<object name="Spots">
+									<object name="SpotData">
+										<field name="iTargetCount" type="Int32"/>
+										<field name="entSpotEntity" type="BinHex"/>
+										<field name="disSpotID" type="BinHex"/>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object name="Params">
+						<object name="ValueOverTimeData">
+							<field name="selStatID" type="Enum"/>
+							<field name="selDataID" type="Enum"/>
+							<field name="iTargetValue" type="Int32"/>
+							<field name="iMaxTimeDays" type="Int32"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="locstridBadgeEarnedMessage">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RoadintersectiondefParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bLegacy" type="Boolean"/>
+    <object name="FilletProp">
+      <field name="uiNumberOfSplines" type="UInt32"/>
+      <object name="PointChainLeft">
+        <object name="Points">
+          <object name="Point">
+            <field name="disPointName" type="String"/>
+            <field name="fDistanceFromIntersection" type="Float"/>
+            <field name="fPointTangent" type="Float"/>
+            <field hash="CB3CB242" type="BinHex"/>
+            <field name="bUsePrioritySplineElements" type="Boolean"/>
+            <object name="MaterialOverride">
+              <object name="MaterialSlots">
+                <object name="Material">
+                  <field name="text_disSlotName" type="String"/>
+                  <field name="disSlotName" type="BinHex"/>
+                  <field name="text_matMaterial" type="String"/>
+                  <field name="matMaterial" type="BinHex"/>
+                  <field name="text_hidOriginalMaterial" type="String"/>
+                  <field name="hidOriginalMaterial" type="BinHex"/>
+                  <field name="hidUserData" type="BinHex"/>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object name="PointChainRight">
+        <object name="Points">
+          <object name="Point">
+            <field name="disPointName" type="String"/>
+            <field name="fDistanceFromIntersection" type="Float"/>
+            <field name="fPointTangent" type="Float"/>
+            <field hash="CB3CB242" type="BinHex"/>
+            <field name="bUsePrioritySplineElements" type="Boolean"/>
+            <object name="MaterialOverride">
+              <object name="MaterialSlots">
+                <object name="Material">
+                  <field name="text_disSlotName" type="String"/>
+                  <field name="disSlotName" type="BinHex"/>
+                  <field name="text_matMaterial" type="String"/>
+                  <field name="matMaterial" type="BinHex"/>
+                  <field name="text_hidOriginalMaterial" type="String"/>
+                  <field name="hidOriginalMaterial" type="BinHex"/>
+                  <field name="hidUserData" type="BinHex"/>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+    <object name="CrossProp">
+      <field name="disName" type="BinHex"/>
+      <object name="Crosswalks">
+	      <object name="Crosswalk">
+	        <field name="selRoad" type="Enum"/>
+	        <object name="LoftElements">
+			  <object name="LoftElement">
+			    <field name="splineloftLoftElement" type="BinHex"/>
+			  </object>
+			</object>
+	      </object>
+	  </object>
+    </object>
+    <object name="SpawnProp">
+      <field name="disName" type="BinHex"/>
+      <object name="SpawnInfos">
+	    <object name="SpawnInfo">
+          <field name="selRoad" type="Enum"/>
+          <field name="selSpawnLocation" type="Enum"/>
+          <field name="fFilletPosT" type="Float"/>
+          <field name="vectorPositionOffset" type="Vector3"/>
+          <field name="angvecAngleOffset" type="Vector3"/>
+          <field name="bStayVertical" type="Boolean"/>
+          <field name="text_archArchetypeToSpawn" type="String"/>
+          <field name="archArchetypeToSpawn" type="BinHex"/>
+          <field name="text_prefabPrefabToSpawn" type="String"/>
+          <field name="prefabPrefabToSpawn" type="BinHex"/>
+        </object>
+	  </object>
+    </object>
+    <object name="LogicProp">
+      <field name="selType" type="Enum"/>
+      <field name="uiNumberOfSplines" type="UInt32"/>
+      <field name="bAutomatic" type="Boolean"/>
+      <field name="fSidewalkExtraDistance" type="Float"/>
+      <field name="fParkingExtraDistance" type="Float"/>
+      <field name="bHasMainRoadPriority" type="Boolean"/>
+      <field name="bForceUseExtraDistance" type="Boolean"/>
+      <object name="MainIn">
+        <field name="disName" type="BinHex"/>
+        <field name="fDistance" type="Float"/>
+        <field name="fRotation" type="Float"/>
+      </object>
+      <object name="MainOut">
+        <field name="disName" type="BinHex"/>
+        <field name="fDistance" type="Float"/>
+        <field name="fRotation" type="Float"/>
+      </object>
+      <object name="Lefts">
+        <object name="Left">
+          <field name="disName" type="BinHex"/>
+          <field name="fDistance" type="Float"/>
+          <field name="fRotation" type="Float"/>
+        </object>
+      </object>
+      <object name="Rights">
+        <object name="Right">
+          <field name="disName" type="BinHex"/>
+          <field name="fDistance" type="Float"/>
+          <field name="fRotation" type="Float"/>
+        </object>
+      </object>
+    </object>
+</class>

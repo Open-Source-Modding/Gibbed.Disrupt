@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivehuntedsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="selWinCondition" type="Enum"/>
+	<field name="bFailOnPlayerDeath" type="Boolean"/>
+	<field name="fFirstWaveSpawnDelay" type="Float"/>
+	<field name="bHideNeutralizeObjectiveCounters" type="Boolean"/>
+	<field name="bHideNeutralizeObjectiveMarkers" type="Boolean"/>
+	<field name="fBlockingSuccessDuration" type="Float"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="TimerOverrideSettings">
+		<field name="fLifeTime" type="Float"/>
+		<field name="selTimerDisplayPosition" type="Enum"/>
+		<field name="fPulseWhenRemainingTime" type="Float"/>
+		<object name="locstridTimerHeaderLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridTimerExpiredWarningLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPauseWarningLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="RemainingTimeWarnings"/>
+	</object>
+	<object name="locstridDoubleObjectiveDisplayKillObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDoubleObjectiveDisplayEscapeObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="ReinforcementOverrideSettings">
+		<field name="reinforcementconfigReinforcementConfig" type="BinHex"/>
+		<field name="selAffiliation" type="Enum"/>
+		<field name="bUseLocationProperties" type="Boolean"/>
+		<field name="bUseReinforcementZone" type="Boolean"/>
+		<field name="bDisableReinforcementCalling" type="Boolean"/>
+		<field name="bUseReinforcementSearchTarget" type="Boolean"/>
+		<field name="bDisableFelony" type="Boolean"/>
+		<field name="bForceCombatOnAllPlayers" type="Boolean"/>
+		<field name="fForceCombatDuration" type="Float"/>
+		<field name="bForceCombatDurationInfinite" type="Boolean"/>
+		<field name="bForceLKP" type="Boolean"/>
+		<field name="fForceLKPRadius" type="Float"/>
+		<field name="bForceInfiniteReinforcementsForbidden" type="Boolean"/>
+		<field name="bKeepTargertingOnOperativeChange" type="Boolean"/>
+		<field name="bDuplicateReinforcementForEachPlayer" type="Boolean"/>
+		<field name="bForceInfiniteSearch" type="Boolean"/>
+		<field name="bForceTargetingOnParticipatingPlayers" type="Boolean"/>
+		<field name="bShouldUseFeedback" type="Boolean"/>
+		<object name="ReinforcementSearchTarget">
+			<field name="TargetSceneID" type="BinHex"/>
+			<field name="TargetRole" type="BinHex"/>
+		</object>
+		<object name="locstridWarningReinforcementsCalledHeader">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWarningReinforcementsCalledMessage">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="locstridOperativeNeutralizedFailLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

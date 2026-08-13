@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Downloadgameplayglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fUiLimitRadius" type="Float"/>
+	<field name="fSmallRadius" type="Float"/>
+	<field name="fMediumRadius" type="Float"/>
+	<field name="fLargeRadius" type="Float"/>
+	<field name="fHumanRadius" type="Float"/>
+	<field name="fVehicleRadius" type="Float"/>
+	<field name="fDroneRadius" type="Float"/>
+	<object name="locstridDownloadDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDownloadPausedDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDownloadMissingPlayerWithLocationTagString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEraseDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridErasePausedDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridUploadDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridUploadPausedDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSinglePlayerOutOfRangeDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

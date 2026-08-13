@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectstaticdataParameters">
+	<object hash="D3B52F60">
+		<field name="hidShapePoints" type="BinHex"/>
+		<field name="hidTessellatedIndexes" type="BinHex"/>
+		<field hash="68DE5E34" type="BinHex"/>
+	</object>
+	<object hash="2D46B28B">
+		<field name="hidShapePoints" type="BinHex"/>
+		<field name="hidTessellatedIndexes" type="BinHex"/>
+		<field hash="188ACA82" type="BinHex"/>
+	</object>
+	<object hash="7F8A8BFF">
+		<field name="text_objstatdataStaticDataType" type="BinHex"/>
+		<field name="objstatdataStaticDataType" type="BinHex"/>
+		<field name="hidMatrix" type="BinHex"/>
+		<object hash="F6AA51F4">
+			<object hash="AE0494A4">
+				<field hash="7EDBBB95" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="CGPSPathHelperShapeData">
+		<field name="hidShapePoints" type="BinHex"/>
+		<field name="hidTessellatedIndexes" type="BinHex"/>
+		<field name="iLinkedPointIndex" type="BinHex"/>
+		<field name="vectorShapeLinkedLocation" type="BinHex"/>
+	</object>
+	<object name="CMapIconData">
+		<field name="text_objstatdataStaticDataType" type="BinHex"/>
+		<field name="objstatdataStaticDataType" type="BinHex"/>
+		<field name="sIdentifierString" type="BinHex"/>
+		<field hash="34306B62" type="BinHex"/>
+		<field name="mapicondescDBEntry" type="BinHex"/>
+		<field hash="823F2AE2" type="BinHex"/>
+		<field name="vectorPosition" type="BinHex"/>
+		<field name="fAngle" type="BinHex"/>
+		<field name="accessidRequiredId" type="BinHex"/>
+		<field hash="C287BDDD" type="BinHex"/>
+		<field name="bIsInDynamicWlu" type="BinHex"/>
+		<field hash="5E7063BA" type="BinHex"/>
+		<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+		<field hash="4DA95069" type="BinHex"/>
+		<field hash="DEF0BAC7" type="BinHex"/>
+		<field hash="E0E18172" type="BinHex"/>
+		<field hash="C7D50DE0" type="BinHex"/>
+		<object hash="C4F88A32">
+			<field name="bEntityIsCLO" type="BinHex"/>
+			<field name="entEntity" type="BinHex"/>
+			<field name="EntityCLO" type="BinHex"/>
+		</object>
+	</object>
+	<object name="CEditorObjectStaticData">
+		<field name="text_objstatdataStaticDataType" type="BinHex"/>
+		<field name="objstatdataStaticDataType" type="BinHex"/>
+	</object>
+	<object hash="32527B45">
+		<field name="text_objstatdataStaticDataType" type="BinHex"/>
+		<field name="objstatdataStaticDataType" type="BinHex"/>
+		<field name="vectorPosition" type="BinHex"/>
+		<field name="vectorRotation" type="BinHex"/>
+		<field hash="D2370CB3" type="BinHex"/>
+		<field hash="5DDDC2B4" type="BinHex"/>
+		<field hash="328DBEB0" type="BinHex"/>
+		<object hash="DD549A0A">
+			<field name="selTag" type="BinHex"/>
+			<object name="locstridLocationName">
+				<field name="LocalizationId" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object hash="CEE33784">
+		<field name="text_objstatdataStaticDataType" type="BinHex"/>
+		<field name="objstatdataStaticDataType" type="BinHex"/>
+		<field name="vectorPosition" type="BinHex"/>
+		<field name="angvecRotation" type="BinHex"/>
+		<field hash="087112AE" type="BinHex"/>
+		<field name="bDrawDebug" type="BinHex"/>
+		<object hash="E79678CC">
+			<field name="vectorBoxSize" type="BinHex"/>
+			<field hash="62B441DF" type="BinHex"/>
+			<field name="fMinVisibilityPercentage" type="BinHex"/>
+			<field hash="A40A6D79" type="BinHex"/>
+			<field hash="996A44C9" type="BinHex"/>
+			<field hash="DECA3E19" type="BinHex"/>
+			<object hash="44518770">
+				<field hash="5A87150B" type="BinHex"/>
+				<field name="bIsValid" type="BinHex"/>
+				<field hash="0F6EF60D" type="BinHex"/>
+			</object>
+			<object hash="E12E0D97">
+				<field hash="5A87150B" type="BinHex"/>
+				<field name="bIsValid" type="BinHex"/>
+				<field hash="0F6EF60D" type="BinHex"/>
+			</object>
+			<object hash="711A140A">
+				<field hash="5A87150B" type="BinHex"/>
+				<field name="bIsValid" type="BinHex"/>
+				<field hash="0F6EF60D" type="BinHex"/>
+			</object>
+			<object hash="B296AA56">
+				<field hash="5A87150B" type="BinHex"/>
+				<field name="bIsValid" type="BinHex"/>
+				<field hash="0F6EF60D" type="BinHex"/>
+			</object>
+			<object hash="E871240D">
+				<field hash="5A87150B" type="BinHex"/>
+				<field name="bIsValid" type="BinHex"/>
+				<field hash="0F6EF60D" type="BinHex"/>
+			</object>
+			<object hash="F0D5FF28">
+				<field hash="5A87150B" type="BinHex"/>
+				<field name="bIsValid" type="BinHex"/>
+				<field hash="0F6EF60D" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object hash="88B7DF6A">
+		<field name="text_objstatdataStaticDataType" type="BinHex"/>
+		<field name="objstatdataStaticDataType" type="BinHex"/>
+		<field hash="3F52D6B8" type="BinHex"/>
+		<field hash="41442607" type="BinHex"/>
+		<object hash="7379DFBB">
+			<field name="text_objstatdataStaticDataType" type="BinHex"/>
+			<field name="objstatdataStaticDataType" type="BinHex"/>
+			<field name="hidMatrix" type="BinHex"/>
+			<field hash="D66C6E35" type="BinHex"/>
+			<field name="dynamicobjectiveDynamicObjective" type="BinHex"/>
+		</object>
+		<object name="StaticRoles">
+			<object name="Entity">
+				<field hash="6AE163EA" type="BinHex"/>
+				<field hash="4E404CD5" type="BinHex"/>
+				<field name="entEntityId" type="BinHex"/>
+			</object>
+		</object>
+		<object hash="B333A1F4" />
+	</object>
+	<object name="CSecurityCameraObjectStaticData">
+		<field name="hidEntityId" type="BinHex"/>
+		<field name="hidMatrix" type="BinHex"/>
+	</object>
+	<object name="CDistrictShapeData">
+		<field name="hidShapePoints" type="BinHex"/>
+		<field name="hidTessellatedIndexes" type="BinHex"/>
+		<field name="districtDistrict" type="BinHex"/>
+	</object>
+	<object name="CGPSPathHelperPointData">
+		<field name="text_objstatdataStaticDataType" type="BinHex"/>
+		<field name="objstatdataStaticDataType" type="BinHex"/>
+		<field name="iIndex" type="BinHex"/>
+	</object>
+	<object hash="CE2FE297">
+		<field name="text_objstatdataStaticDataType" type="BinHex"/>
+		<field name="objstatdataStaticDataType" type="BinHex"/>
+		<field hash="C9D34D61" type="BinHex"/>
+		<field name="vectorPosition" type="BinHex"/>
+		<field name="bIsAvailableForE3" type="BinHex"/>
+		<field hash="0492E3EC" type="BinHex"/>
+		<object hash="A2E22F2B">
+			<field name="text_selType" type="BinHex"/>
+			<field name="selType" type="BinHex"/>
+			<object name="Object">
+				<field name="entEntity" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

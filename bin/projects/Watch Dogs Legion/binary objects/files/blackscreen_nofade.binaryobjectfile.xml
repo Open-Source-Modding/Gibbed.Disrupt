@@ -1,0 +1,5 @@
+<file name="blackscreen_nofade" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

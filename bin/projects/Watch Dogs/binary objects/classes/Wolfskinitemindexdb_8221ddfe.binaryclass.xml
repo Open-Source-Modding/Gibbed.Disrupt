@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Wolfskinitemindexdb_8221ddfeParameters">
+	<inherit name="SharedParameters"/>
+	<object name="IndexedItems">
+		<object name="Item">
+			<field name="libraryName" type="String"/>
+			<field name="itemHandle" type="BinHex"/>
+			<field name="text_slot" type="String"/>
+			<field name="slot" type="BinHex"/>
+		</object>
+	</object>
+</class>

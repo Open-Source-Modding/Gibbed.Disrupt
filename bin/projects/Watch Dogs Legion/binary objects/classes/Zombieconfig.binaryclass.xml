@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ZombieconfigParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="selZombieArchetype" type="BinHex"/>
+	<object name="DetectionRadius">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="DetectionFov">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="CloseDetectionRadius">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="SprintDetectionRadius">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="GrabWarmupRange">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="GrabWarmupTime">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="GrabRange">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="GrabCancelRange">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="GrabStruggleDuration">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="LethalGrabStruggleDuration">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="GrabGlobalCooldown">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="GrabGlobalCooldownVariation">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="DisractTime">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="IgnoreTargetTimeOnDisract">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="WanderMinWalkTime">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="WanderMaxWalkTime">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="ScreamerStimRadius">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

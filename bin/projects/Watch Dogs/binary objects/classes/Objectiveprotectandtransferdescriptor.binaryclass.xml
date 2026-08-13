@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectiveprotectandtransferdescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="yinteractgameplaydescriptorStartingInteractDescriptor" type="BinHex"/>
+	<field name="yinteractgameplaydescriptorEndingInteractDescriptor" type="BinHex"/>
+	<field name="fCarrierRadius" type="Float"/>
+	<field name="fVirusLifetime" type="Float"/>
+	<field name="fVirusLifeDeltaDrink" type="Float"/>
+	<field name="fVirusDrinkStep" type="Float"/>
+	<object name="locstridObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDescriptionLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridVirusHealthBarHeader">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridCarrierObjectiveText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEscortingPlayersObjectiveText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

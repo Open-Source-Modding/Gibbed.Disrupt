@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Vehiclecombatconfigmanager_38ffef86Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="vehiclecombatconfigNoFelony" type="BinHex"/>
+	<field name="vehiclecombatconfigFelonyLvl1" type="BinHex"/>
+	<field name="vehiclecombatconfigFelonyLvl2" type="BinHex"/>
+	<field name="vehiclecombatconfigFelonyLvl3" type="BinHex"/>
+	<field name="vehiclecombatconfigFelonyLvl4" type="BinHex"/>
+	<field name="vehiclecombatconfigFelonyLvl5" type="BinHex"/>
+</class>

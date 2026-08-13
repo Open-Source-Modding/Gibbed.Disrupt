@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dggroupbehaviorglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fCooldownValue" type="Float"/>
+	<field name="fDelayToStartAfterReceivingTrigger" type="Float"/>
+	<field name="fStartDelay" type="Float"/>
+</class>

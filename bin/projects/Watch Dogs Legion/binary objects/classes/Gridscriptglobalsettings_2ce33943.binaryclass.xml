@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Gridscriptglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="gridscriptsequenceTowerUnlockSequence" type="BinHex"/>
+	<field name="mapicondescDefaultGridScriptMapIcon" type="BinHex"/>
+	<field name="sndUnlockSound" type="BinHex"/>
+</class>

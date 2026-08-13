@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Engagementstaterules_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fRedZoneMeleeTime" type="Float"/>
+	<object name="EngagementStateIncidentRules">
+		<object name="Incident">
+			<field name="selIncident" type="Enum"/>
+			<object name="EngagementStateRule">
+				<field name="selEngagementState" type="Enum"/>
+				<field name="bShareable" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+</class>

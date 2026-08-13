@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DrinkingchallengeprogressionelementParameters">
+	<inherit name="SharedParameters"/>
+	<object name="GameplayParameters">
+		<field name="selDrunkStatePlayer" type="Enum"/>
+		<field name="selDrunkStateOpponent" type="Enum"/>
+		<field name="selGameMode" type="Enum"/>
+		<object name="CollectMode">
+			<field name="vec2ReticleStartPosition" type="Vector2"/>
+			<field name="fReticleRadius" type="Float"/>
+			<field name="fMaxVisionEffectViewportOffset" type="Float"/>
+			<field name="fMaxVisionEffectInebriation" type="Float"/>
+			<object name="ButtonIcons">
+			    <inherit name="SButtonIconSettingsParameters"/>
+			</object>
+		</object>
+		<object name="LineupMode">
+			<field name="fTimeRequiredInReticle" type="Float"/>
+			<field name="fFailTime" type="Float"/>
+			<field name="fMaxBlur" type="Float"/>
+			<field name="selTriggerType" type="Enum"/>
+			<field name="bTargetsLinked" type="Boolean"/>
+			<object name="Targets0">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="selType" type="Enum"/>
+				<field name="fRadius" type="Float"/>
+				<field name="fRadiusMax" type="Float"/>
+				<field name="fRadiusMaxBlurRadius" type="Float"/>
+				<object name="Reticle0">
+					<field name="bEnabled" type="Boolean"/>
+					<field name="selType" type="Enum"/>
+					<field name="selInputType" type="Enum"/>
+				</object>
+				<object name="Reticle1">
+					<field name="bEnabled" type="Boolean"/>
+					<field name="selType" type="Enum"/>
+					<field name="selInputType" type="Enum"/>
+				</object>
+				<object name="Movement">
+					<field name="selMovementMode" type="Enum"/>
+					<field name="vec2CenterPosition" type="Vector2"/>
+					<field name="fRadius" type="Float"/>
+					<field name="vec2StartPosition" type="Vector2"/>
+					<field name="vec2EndPosition" type="Vector2"/>
+					<field name="fSpeedMax" type="Float"/>
+					<field name="fForceMax" type="Float"/>
+					<field name="fForceSpeedMax" type="Float"/>
+					<field name="vec2StartHeading" type="Vector2"/>
+					<field name="vec2MinPosition" type="Vector2"/>
+					<field name="vec2MaxPosition" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+					<field name="fDistanceAlong" type="Float"/>
+					<field name="iDirection" type="Int32"/>
+					<field name="angAngle" type="Float"/>
+					<field name="vec2Position" type="Vector2"/>
+				</object>
+			</object>
+			<object name="Targets1">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="selType" type="Enum"/>
+				<field name="fRadius" type="Float"/>
+				<field name="fRadiusMax" type="Float"/>
+				<field name="fRadiusMaxBlurRadius" type="Float"/>
+				<object name="Reticle0">
+					<field name="bEnabled" type="Boolean"/>
+					<field name="selType" type="Enum"/>
+					<field name="selInputType" type="Enum"/>
+				</object>
+				<object name="Reticle1">
+					<field name="bEnabled" type="Boolean"/>
+					<field name="selType" type="Enum"/>
+					<field name="selInputType" type="Enum"/>
+				</object>
+				<object name="Movement">
+					<field name="selMovementMode" type="Enum"/>
+					<field name="vec2CenterPosition" type="Vector2"/>
+					<field name="fRadius" type="Float"/>
+					<field name="vec2StartPosition" type="Vector2"/>
+					<field name="vec2EndPosition" type="Vector2"/>
+					<field name="fSpeedMax" type="Float"/>
+					<field name="fForceMax" type="Float"/>
+					<field name="fForceSpeedMax" type="Float"/>
+					<field name="vec2StartHeading" type="Vector2"/>
+					<field name="vec2MinPosition" type="Vector2"/>
+					<field name="vec2MaxPosition" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+					<field name="fDistanceAlong" type="Float"/>
+					<field name="iDirection" type="Int32"/>
+					<field name="angAngle" type="Float"/>
+					<field name="vec2Position" type="Vector2"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

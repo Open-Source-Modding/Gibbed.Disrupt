@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TravelrecordarchetypeParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TravelRecordGenerator">
+		<field name="fWeight" type="Float"/>
+		<object name="TravelRecordType">
+			<object name="TravelRecordType">
+				<object name="locsectionidTravelRecordType"/>
+			</object>
+		</object>
+		<object name="TravelRecordGenerator">
+			<field name="fWeight" type="Float"/>
+			<object name="TravelRecordType">
+				<object name="locsectionidTravelRecordType"/>
+				<object name="TravelRecordType">
+					<object name="locsectionidTravelRecordType"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WebsearcharchetypeParameters">
+	<inherit name="SharedParameters"/>
+	<object name="WebSearchGenerator">
+		<field name="fWeight" type="Float"/>
+		<object name="WebSearchType">
+			<object name="WebSearchType">
+				<object name="locsectionidCriminalRecordType"/>
+			</object>
+		</object>
+		<object name="WebSearchGenerator">
+			<field name="fWeight" type="Float"/>
+			<object name="WebSearchType">
+				<object name="locsectionidCriminalRecordType"/>
+				<object name="WebSearchType">
+					<object name="locsectionidCriminalRecordType"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

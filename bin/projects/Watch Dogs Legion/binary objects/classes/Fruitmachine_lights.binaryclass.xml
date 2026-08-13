@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Fruitmachine_lightsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiSlotId" type="UInt32"/>
+	<field name="fruitmachinetypesMachineType" type="BinHex"/>
+	<field name="uiGroupId" type="UInt32"/>
+	<field name="bIsGroupMaster" type="Boolean"/>
+	<object name="Group">
+		<field name="selLightsGroupType" type="Enum"/>
+		<object name="FruitMachineLightDb">
+			<object name="Lights">
+				<field name="fruitmachinelightsLight" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

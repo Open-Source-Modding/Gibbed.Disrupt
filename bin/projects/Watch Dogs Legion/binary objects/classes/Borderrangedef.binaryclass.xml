@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BorderrangedefParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bLegacy" type="Boolean"/>
+	<field name="bStrictLaneWidth" type="Boolean"/>
+	<field name="civdensityCivilianDensity" type="BinHex"/>
+	<object name="LoftProp">
+		<field name="disName" type="BinHex"/>
+		<object name="LoftElements">
+			<object name="LoftElement">
+				<field name="splineloftLoftElement" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="SpawnProp">
+		<field name="disName" type="BinHex"/>
+		<object name="SpawnInfos">
+			<object name="SpawnInfo">
+				<field name="fStartOffsetDist" type="Float"/>
+				<field name="fEndOffsetDist" type="Float"/>
+				<field name="fInBetweenDist" type="Float"/>
+				<field name="fInBetweenDistError" type="Float"/>
+				<field name="vectorPositionOffset" type="Vector3"/>
+				<field name="selAlign" type="Enum"/>
+				<field name="vectorPositionOffsetError" type="Vector3"/>
+				<field name="angvecAngleOffset" type="Vector3"/>
+				<field name="angvecAngleOffsetError" type="Vector3"/>
+				<field name="bStayVertical" type="Boolean"/>
+				<field name="sRandomSeed" type="BinHex"/>
+				<field name="text_archArchetypeToSpawn" type="String"/>
+				<field name="archArchetypeToSpawn" type="BinHex"/>
+				<field name="text_prefabPrefabToSpawn" type="String"/>
+				<field name="prefabPrefabToSpawn" type="BinHex"/>
+				<field name="selIntersectionSpawnRule" type="Enum"/>
+				<field name="bCullAsCorner" type="Boolean"/>
+				<field name="bSpawnOnFillet" type="Boolean"/>
+				<field name="bExcludeFromSacredZone" type="Boolean"/>
+				<field name="bAdjustToCurvedRoadPosition" type="Boolean"/>
+				<field name="bPreserveSpacingOnXOffset" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+	<object name="SidewalkDef">
+		<field name="hidSingleObject" type="BinHex"/>
+		<field name="hidName" type="BinHex"/>
+		<field name="hidKey" type="BinHex"/>
+		<field name="fSidewalkWidth" type="Float"/>
+		<field name="fSidewalkOffsetBegin" type="Float"/>
+		<field name="bSingleSidewalk" type="Boolean"/>
+		<field hash="3D43C2AF" type="BinHex"/>
+	</object>
+</class>

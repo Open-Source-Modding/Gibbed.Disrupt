@@ -1,0 +1,5 @@
+<file name="a02_m08a_sc030_ig_scaredrabbitcall" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

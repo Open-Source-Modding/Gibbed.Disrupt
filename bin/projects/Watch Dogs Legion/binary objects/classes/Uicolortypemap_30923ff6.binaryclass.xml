@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uicolortypemap_30923ff6Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uicolorpalettesettingsWhite" type="BinHex"/>
+	<field name="uicolorpalettesettingsBlack" type="BinHex"/>
+	<field name="uicolorpalettesettingsReward" type="BinHex"/>
+	<field name="uicolorpalettesettingsOnline" type="BinHex"/>
+	<field name="uicolorpalettesettingsDanger" type="BinHex"/>
+	<field name="uicolorpalettesettingsRestricted" type="BinHex"/>
+	<field name="uicolorpalettesettingsOpportunity" type="BinHex"/>
+	<field name="uicolorpalettesettingsRemoteControl" type="BinHex"/>
+	<field name="uicolorpalettesettingsSecurity" type="BinHex"/>
+	<field name="uicolorpalettesettingsLightTheme" type="BinHex"/>
+	<field name="uicolorpalettesettingsDarkTheme" type="BinHex"/>
+	<field name="uicolorpalettesettingsAlly" type="BinHex"/>
+	<field name="uicolorpalettesettingsObjective" type="BinHex"/>
+	<field name="uicolorpalettesettingsObjectiveFailed" type="BinHex"/>
+	<field name="uicolorpalettesettingsGlassTheme" type="BinHex"/>
+	<field name="uicolorpalettesettingsOnlineGroup" type="BinHex"/>
+</class>

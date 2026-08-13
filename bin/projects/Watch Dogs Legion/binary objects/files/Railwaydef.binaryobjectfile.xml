@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Railwaydef">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="RailwaydefParameters"/>
+		</object>
+	</object>
+</file>

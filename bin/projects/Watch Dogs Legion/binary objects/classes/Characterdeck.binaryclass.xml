@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CharacterdeckParameters">
+	<inherit name="SharedParameters"/>
+	<field name="itemsOnlineRecruitmentKey" type="BinHex"/>
+	<field name="uiOnlineRecruitmentCost" type="UInt32"/>
+	<field name="bAreExtraProgressionElementsAllowed" type="Boolean"/>
+	<object name="Cards">
+		<object name="Card">
+			<field name="charactercardCard" type="BinHex"/>
+		</object>
+	</object>
+</class>

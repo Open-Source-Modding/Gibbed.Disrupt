@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="racingconfigstreet_b1120c08">
+	<object name="obj">
+		<inherit name="Racingconfigstreet_b1120c08Parameters"/>
+	</object>
+</file>

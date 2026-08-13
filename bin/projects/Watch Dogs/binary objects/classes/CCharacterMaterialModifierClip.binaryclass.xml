@@ -1,0 +1,20 @@
+<class name="CCharacterMaterialModifierClip">
+    <object name="CCharacterMaterialModifierClip">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field name="timeStartTime" type="Float"/>
+      <field name="timeDuration" type="Float"/>
+      <field name="timeEndTime" type="Float"/>
+      <field name="hidResizable" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+      <field name="sAnimationTrackCollectionResource" type="BinHex"/>
+      <field name="bResizable" type="BinHex"/>
+      <field name="hidAnimationTrackCollectionDuration" type="BinHex"/>
+      <field name="nEyeReflectionAtlasIndex" type="BinHex"/>
+      <field name="fEyeReflectionIntensity" type="Float"/>
+      <object name="AnimationTrackCollection">
+        <object name="Tracks" />
+      </object>
+    </object>
+</class>

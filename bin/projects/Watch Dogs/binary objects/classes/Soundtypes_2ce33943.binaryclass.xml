@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Soundtypes_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="hidNextTypeId" type="BinHex"/>
+	<object name="SoundTypes">
+		<object name="SoundType">
+			<field name="nID" type="Enum"/>
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+		</object>
+	</object>
+</class>

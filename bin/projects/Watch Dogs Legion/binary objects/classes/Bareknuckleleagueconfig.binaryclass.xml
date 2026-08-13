@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BareknuckleleagueconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Fights">
+		<object name="Fight">
+			<field name="bareknucklefightFight" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NpcreactiondetectionsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selReactionType" type="Enum"/>
+	<field name="bUseNPCFov" type="Boolean"/>
+	<field name="fDistance" type="Float"/>
+</class>

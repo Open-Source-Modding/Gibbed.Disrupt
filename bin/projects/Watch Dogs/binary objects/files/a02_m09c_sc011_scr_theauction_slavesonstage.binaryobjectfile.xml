@@ -1,0 +1,5 @@
+<file name="a02_m09c_sc011_scr_theauction_slavesonstage" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

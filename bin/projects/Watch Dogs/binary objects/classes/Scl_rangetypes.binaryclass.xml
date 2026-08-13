@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_rangetypesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selRange" type="Enum"/>
+	<field name="bCanPatrol" type="Boolean"/>
+	<object name="Range">
+		<field name="sclenemytypesRange" type="BinHex"/>
+		<object name="Range">
+			<field name="sclenemytypesRange" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AgerangeParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiAgeMin" type="Int64"/>
+	<field name="uiAgeMax" type="Int64"/>
+</class>

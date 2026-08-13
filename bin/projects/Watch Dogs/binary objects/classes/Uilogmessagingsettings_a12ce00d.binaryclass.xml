@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uilogmessagingsettings_a12ce00dParameters">
+	<inherit name="SharedParameters"/>
+	<field name="MessageDuration" type="BinHex"/>
+</class>

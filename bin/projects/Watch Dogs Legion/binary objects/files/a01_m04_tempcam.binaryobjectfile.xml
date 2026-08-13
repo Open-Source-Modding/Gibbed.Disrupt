@@ -1,0 +1,5 @@
+<file name="a01_m04_tempcam" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

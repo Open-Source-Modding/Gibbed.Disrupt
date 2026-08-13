@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DigitaltrippickupsettingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archPickup" type="String"/>
+	<field name="archPickup" type="BinHex"/>
+	<field name="text_archPickupCone" type="String"/>
+	<field name="archPickupCone" type="BinHex"/>
+	<field name="text_matMaterialResource" type="String"/>
+	<field name="matMaterialResource" type="BinHex"/>
+	<field name="psParticlesResource" type="BinHex"/>
+</class>

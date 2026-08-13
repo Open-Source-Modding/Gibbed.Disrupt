@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Pgtglobalsettings_4bba60faParameters">
+	<inherit name="SharedParameters"/>
+	<field name="reinforcementconfigDefaultReinforcementConfig" type="BinHex"/>
+	<object name="InitialDroneStateConfigs">
+		<field name="aispawningtypeDroneArchetype" type="BinHex"/>
+		<field name="selInitialState" type="Enum"/>
+		<object name="InitialDroneStateConfigs">
+			<field name="aispawningtypeDroneArchetype" type="BinHex"/>
+			<field name="selInitialState" type="Enum"/>
+		</object>
+	</object>
+</class>

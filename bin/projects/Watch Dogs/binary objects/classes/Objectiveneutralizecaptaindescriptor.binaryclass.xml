@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectiveneutralizecaptaindescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="selHumanNeutralizationCondition" type="Enum"/>
+	<field name="bNoCivilianVictim" type="Boolean"/>
+	<field name="bUseOnlineNotifications" type="Boolean"/>
+	<object name="locstridObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDescriptionLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="TargetNeutralizedOnlineNotification">
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="TargetNeutralizedCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

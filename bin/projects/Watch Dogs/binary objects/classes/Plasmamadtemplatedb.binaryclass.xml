@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlasmamadtemplatedbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileAnimationPath" type="String"/>
+	<field name="fileAnimationPath" type="BinHex"/>
+	<field name="plasmalookatLookatSettings" type="BinHex"/>
+	<field name="text_selLayerBlendSettingsID" type="String"/>
+	<field name="selLayerBlendSettingsID" type="Enum"/>
+	<field name="text_selCloseUpLayerBlendSettingsID" type="String"/>
+	<field name="selCloseUpLayerBlendSettingsID" type="Enum"/>
+	<field name="bEnableFootIK" type="Boolean"/>
+	<object name="PlasmaResources">
+		<object name="Resource">
+			<field name="text_filePlasmaResource" type="String"/>
+			<field name="filePlasmaResource" type="BinHex"/>
+			<field name="selSpeakerSlot" type="Enum"/>
+			<field name="selSpeakerSex" type="Enum"/>
+			<field name="selSpeakerArchetype" type="Enum"/>
+			<field name="selUseAnchor" type="Enum"/>
+		</object>
+	</object>
+	<object name="BaseIdleStartTimes">
+		<object name="BaseIdleStartTime">
+			<field name="fStartFrame" type="Int32"/>
+			<field name="fEndFrame" type="Int32"/>
+		</object>
+	</object>
+	<object name="IncludedTemplates">
+		<object name="plasmatemplateTemplate">
+			<field name="plasmatemplateTemplate" type="BinHex"/>
+		</object>
+	</object>
+</class>

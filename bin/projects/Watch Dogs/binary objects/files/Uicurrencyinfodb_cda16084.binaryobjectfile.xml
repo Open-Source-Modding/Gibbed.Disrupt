@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Uicurrencyinfodb_cda16084">
+	<object name="obj">
+		<inherit name="Uicurrencyinfodb_cda16084Parameters"/>
+	</object>
+</file>

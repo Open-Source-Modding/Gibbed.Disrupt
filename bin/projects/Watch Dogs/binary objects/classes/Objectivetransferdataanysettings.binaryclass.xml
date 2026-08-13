@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivetransferdataanysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="selTransferType" type="Enum"/>
+	<field name="fRemoteHackTransferDuration" type="Float"/>
+	<field name="fPhysicalInteractTransferDuration" type="Float"/>
+	<field name="bEnteringVehicleUnitStartTransfer" type="Boolean"/>
+	<field name="bDownloadStartTriggersVehicleTargetFlee" type="Boolean"/>
+	<field name="bOnlyLastDownloadStartTriggersVehicleTargetFlee" type="Boolean"/>
+	<field name="vehiclebhvsetupVehicleFleeBhvConfig" type="BinHex"/>
+	<field name="downloadgameplaydescriptorDownloadGameplaySettings" type="BinHex"/>
+	<field name="iNeededCountOfTransferData" type="Int32"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="TransferSettings">
+		<field name="fTransferRadius" type="Float"/>
+		<field name="bUseOverrideRadius" type="Boolean"/>
+		<field name="bAdaptCountOfRequiredPlayersToCountOfSessionPeers" type="Boolean"/>
+		<field name="bStartDownloadForAllPlayers" type="Boolean"/>
+		<field name="bShouldDisplayMissingPlayerLocation" type="Boolean"/>
+		<field name="selTransferRadiusShape" type="Enum"/>
+		<field name="fCylinderShapeZOffsetTop" type="Float"/>
+		<field name="fCylinderShapeZOffsetBottom" type="Float"/>
+		<field name="fPauseWarningDuration" type="Float"/>
+		<field name="bActivateMultiplayerBoost" type="Boolean"/>
+		<field name="fBoostCoefByPlayer" type="Float"/>
+		<field name="bSendAttractStimOnDownloadStart" type="Boolean"/>
+		<field name="fAttractStimRadius" type="Float"/>
+		<object name="MissingPlayerLocationIds"/>
+		<object name="locstridPauseWarningLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="ProgressBarTextOverride">
+			<object name="locstridTextOnProgressBar">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridTextOnProgressBarOnOutOfRange">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="locstridActionTargetText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="TriggerEventsOnFollowingRatiosReached">
+			<object name="Ratio">
+				<field name="Ratio" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="locstridHackingWheelHackTextLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="TargetsTypesAllowed">
+		<object name="ValidType">
+			<field name="selTargetType" type="Enum"/>
+		</object>
+	</object>
+	<object name="AffiliationFlags">
+		<object name="ValidAffiliationFlag">
+			<field name="selFlag" type="Enum"/>
+		</object>
+	</object>
+	<object name="VehicleTypeFlags"/>
+	<object name="DroneTypeFlags"/>
+	<object name="NPCDescriptionDescriptors"/>
+	<object name="VehicleDescriptionDescriptors"/>
+	<object name="DroneDescriptionDescriptors"/>
+</class>

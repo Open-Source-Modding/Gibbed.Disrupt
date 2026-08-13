@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmoduleatomssettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<object name="Vars">
+			<object name="Variable">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+				<field name="vector2Range" type="Vector2"/>
+			</object>
+		</object>
+		<object name="Atoms">
+			<object name="Atom">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+				<field name="text_progressionatomvariableVariable" type="String"/>
+				<field name="progressionatomvariableVariable" type="BinHex"/>
+				<field name="Value" type="BinHex"/>
+				<object name="IsValid">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+				<object name="locstridUIDisplay">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dronehuntsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="CoversGroups">
+		<field name="vectorGroupSize" type="Vector3"/>
+		<field name="iNoCoverGroupsExtend" type="Int32"/>
+	</object>
+	<object name="PointSelection">
+		<object name="curveDistanceXYWeightFactorCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDistanceZWeightFactorCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveAngleDiffWeightFactorCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

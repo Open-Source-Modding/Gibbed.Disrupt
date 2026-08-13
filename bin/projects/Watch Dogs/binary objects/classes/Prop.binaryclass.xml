@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PropParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archArchetype" type="String"/>
+	<field name="archArchetype" type="BinHex"/>
+	<field name="tagPropTag" type="BinHex"/>
+	<field name="selDisposeType" type="Enum"/>
+	<field name="selPropSlot" type="Enum"/>
+	<field name="wolfskinitemdbWolfskinItem" type="BinHex"/>
+	<field name="selDefaultActivityType" type="Enum"/>
+	<field name="bUseIncludeTags" type="Boolean"/>
+	<field name="bUseExcludeTags" type="Boolean"/>
+	<field name="fLinkedPropSpawnChance" type="Float"/>
+	<field name="bRestrictByDistrict" type="Boolean"/>
+	<object name="curveSpawnProbability">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="PropGroup">
+		<field name="selGroup" type="Enum"/>
+	</object>
+	<object name="ModelPart">
+		<field name="hidVersion" type="BinHex"/>
+		<field name="uniqueidnocopyUniqueID" type="BinHex"/>
+		<field name="graphickitpartPart" type="BinHex"/>
+		<field name="selPoseDefinitionId" type="Enum"/>
+		<field name="selPoseDefinitionPathID" type="Enum"/>
+		<field name="facialposedefinitionExtraFacialPoseDefinition" type="BinHex"/>
+		<field hash="7E23AAAE" type="String"/>
+		<field name="selVisualModelOverride" type="Enum"/>
+		<object name="BoneAnchor">
+			<field hash="3BA7D966" type="String"/>
+			<field name="selBoneName" type="Enum"/>
+			<field name="vectorTranslation" type="Vector3"/>
+			<field name="angvecRotation" type="BinHex"/>
+			<field name="vectorNonUniformScale" type="Vector3"/>
+		</object>
+	</object>
+	<object name="Weather">
+		<field name="MinRainIntensity" type="BinHex"/>
+		<field name="MaxRainIntensity" type="BinHex"/>
+	</object>
+	<object name="LinkedProps">
+		<object name="propPropDBKey">
+			<field name="propPropDBKey" type="BinHex"/>
+		</object>
+	</object>
+</class>

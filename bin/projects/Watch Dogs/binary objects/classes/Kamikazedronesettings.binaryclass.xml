@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="KamikazedronesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fDefaultfollowSpeed" type="Float"/>
+	<field name="fSprintfollowSpeed" type="Float"/>
+	<field name="fFollowHeight" type="Float"/>
+	<field name="fBlindFollowHeight" type="Float"/>
+	<field name="fFollowSpeedSelfDestruct" type="Float"/>
+	<field name="fSelfDestructTriggerRange" type="Float"/>
+	<field name="fSelfDestructBuildupDuration" type="Float"/>
+	<field name="fExplosiveNearbyStimTriggerRange" type="Float"/>
+	<field name="fInitialHoverDuration" type="Float"/>
+	<field name="fPreSelfDestructSoundTriggerRange" type="Float"/>
+	<field name="fLocalPlayerInRange" type="Float"/>
+	<field name="bShowExplosionIcon" type="Boolean"/>
+	<field name="bHasMaxKamikazeDuration" type="Boolean"/>
+	<field name="fMaxKamikazeDuration" type="Float"/>
+</class>

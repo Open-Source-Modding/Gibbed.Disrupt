@@ -1,0 +1,5 @@
+<file name="07_startpillpostfx_alone" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

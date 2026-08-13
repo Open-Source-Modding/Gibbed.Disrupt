@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Inputcontrollercharacterwheelsettings_f0a5635cParameters">
+	<inherit name="SharedParameters"/>
+	<object name="GadgetHUDSounds">
+		<field name="uisoundNoMoreGadgetsAvailableSound" type="BinHex"/>
+		<field name="uisoundGadgetSwapSound" type="BinHex"/>
+	</object>
+	<object name="CharacterWheelSounds">
+		<field name="uisoundNothingHappensSound" type="BinHex"/>
+		<field name="uisoundTriggerAbilityActivatedSound" type="BinHex"/>
+		<field name="uisoundToggleAbilityOnSound" type="BinHex"/>
+		<field name="uisoundToggleAbilityOffSound" type="BinHex"/>
+		<field name="uisoundWeaponSelectedSound" type="BinHex"/>
+		<field name="uisoundMeleeSelectedSound" type="BinHex"/>
+		<field name="uisoundGadgetSelectedSound" type="BinHex"/>
+		<field name="uisoundShortcutSuccessfulActivationSound" type="BinHex"/>
+		<field name="uisoundShortcutFailedActivationSound" type="BinHex"/>
+	</object>
+</class>

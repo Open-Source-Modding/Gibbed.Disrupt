@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Soundglobalsettings_7a8d0305Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uisoundCinematicSkipSound" type="BinHex"/>
+	<field name="uisoundCinematicPauseSound" type="BinHex"/>
+	<field name="uisoundCinematicResumeSound" type="BinHex"/>
+	<object name="sndvarLastGunShotOrExplosionTimeRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

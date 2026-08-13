@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UielementeffectsdbobjectParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_uielementeffectparamsEffectParametersType" type="String"/>
+	<field name="uielementeffectparamsEffectParametersType" type="BinHex"/>
+	<object name="EffectParamters">
+		<field name="fMovementDuration" type="Float"/>
+		<field name="fAlphaDuration" type="Float"/>
+		<field name="MaxOpacity" type="BinHex"/>
+	</object>
+</class>

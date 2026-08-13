@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Stumblcloeventsdata_c3278f95Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bTriggerCLODataGeneration" type="Boolean"/>
+	<field name="bTriggerCLODataClean" type="Boolean"/>
+	<object name="CLOEvents">
+		<object name="CLOEvent">
+			<field name="text_fileCloBehaviorStrategy" type="String"/>
+			<field name="fileCloBehaviorStrategy" type="BinHex"/>
+			<field name="pdcfgPhotoTargetConfig" type="BinHex"/>
+			<object name="CLOPosDatas">
+				<object name="CLOPosData">
+					<field name="CloId" type="BinHex"/>
+					<field name="vectorCloPos" type="Vector3"/>
+					<field name="bMarkedForDelete" type="Boolean"/>
+					<field name="bCanBeUsed" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

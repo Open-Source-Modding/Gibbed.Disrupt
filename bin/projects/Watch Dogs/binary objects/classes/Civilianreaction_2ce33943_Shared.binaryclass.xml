@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Civilianreaction_2ce33943_SharedParameters">
+	<field name="iGoodReputationReactionProba" type="Int32"/>
+	<field name="bUseEmitterAsInstigator" type="Boolean"/>
+	<field name="bAlwaysHandle" type="Boolean"/>
+	<object name="RecurrenceSettings">
+		<field name="bIsRecurrent" type="Boolean"/>
+		<field name="fResetSettingsDelay" type="Float"/>
+	</object>
+	<object name="FacialAnimation">
+	    <field name="text_fileCuriosityFacialAnim" type="String"/>
+		<field name="fileCuriosityFacialAnim" type="BinHex"/>
+		<field name="text_fileAnxietyFacialAnim" type="String"/>
+		<field name="fileAnxietyFacialAnim" type="BinHex"/>
+		<field name="text_filePanicFacialAnim" type="String"/>
+		<field name="filePanicFacialAnim" type="BinHex"/>
+		<field name="text_fileBarkCuriosityFacialAnim" type="String"/>
+		<field name="fileBarkCuriosityFacialAnim" type="BinHex"/>
+		<field name="text_fileBarkAnxietyFacialAnim" type="String"/>
+		<field name="fileBarkAnxietyFacialAnim" type="BinHex"/>
+		<field name="text_fileBarkPanicFacialAnim" type="String"/>
+		<field name="fileBarkPanicFacialAnim" type="BinHex"/>
+	</object>
+	<object name="OnLeaderQuitSettings">
+		<field name="bSendOnleaderQuitStim" type="Boolean"/>
+		<field name="bSynchronizeReactionLatency" type="Boolean"/>
+		<field name="fMaxExtraLatency" type="Float"/>
+	</object>
+	<object name="Barks">
+	    <field name="text_sCuriosityBark" type="String"/>
+		<field name="sCuriosityBark" type="BinHex"/>
+		<field name="text_sAnxietyBark" type="String"/>
+		<field name="sAnxietyBark" type="BinHex"/>
+		<field name="text_sPanicBark" type="String"/>
+		<field name="sPanicBark" type="BinHex"/>
+	</object>
+	<object name="Interruptions">
+		<field name="bCuriosity" type="Boolean"/>
+		<field name="bAnxiety" type="Boolean"/>
+		<field name="bPanic" type="Boolean"/>
+	</object>
+</class>

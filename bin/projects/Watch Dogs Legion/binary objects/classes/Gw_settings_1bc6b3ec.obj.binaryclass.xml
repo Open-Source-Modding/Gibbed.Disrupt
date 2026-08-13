@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Gw_settings_1bc6b3ec.objParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Factions">
+		<field name="iFactionReputationIncrement" type="Int32"/>
+		<field name="text_sIntroductionMissionID" type="String"/>
+		<field name="sIntroductionMissionID" type="BinHex"/>
+		<object name="GlobalReputationIncrease">
+			<field name="hidSingleObject" type="Boolean"/>
+			<field name="hidName" type="BinHex"/>
+			<field name="hidKey" type="BinHex"/>
+			<field name="iReputationAwarded" type="Int32"/>
+			<field name="bTrackReputation" type="Boolean"/>
+			<field name="fCoolDown" type="Float"/>
+			<field name="reputationeffectsReputationEffectDependency" type="BinHex"/>
+			<object name="locstridItemReputationDescriptionId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="BudgetSets">
+			<object name="BudgetSet">
+				<field name="iMissionCountBeforeStart" type="Int32"/>
+				<field name="iMissionCountBeforeEnd" type="Int32"/>
+				<field name="iDifficultyBudgetLowerBound" type="Int32"/>
+				<field name="iDifficultyBudgetUpperBound" type="Int32"/>
+			</object>
+		</object>
+		<object name="CashRewardThresholds">
+			<object name="CashRewardThreshold">
+				<field name="iBudgetUpperThreshold" type="Int32"/>
+				<field name="iCashRewardAmount" type="Int32"/>
+			</object>
+		</object>
+		<object name="GangTagRewards">
+			<object name="GangTagReward">
+				<field name="iNbOfGangTagPointsRequired" type="Int32"/>
+				<field name="itemsClothItem" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Perks">
+		<field name="itemsChicagoClubWeapon" type="BinHex"/>
+		<field name="itemsSystemKeyItem" type="BinHex"/>
+	</object>
+	<object name="TokenRewards">
+		<field name="itemsCoopTokenReward" type="BinHex"/>
+		<field name="itemsDailyTokenReward" type="BinHex"/>
+		<field name="itemlistsIntroTokenRewards" type="BinHex"/>
+		<object name="FactionRewards">
+			<field name="itemsChicagoTokenReward" type="BinHex"/>
+			<field name="itemsFixersTokenReward" type="BinHex"/>
+			<field name="itemsMilitiaTokenReward" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Portalmissionconfig_0646c7ccParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sndPotentialTargetFoundSound" type="BinHex"/>
+	<field name="sndAcceptPortalPropositionSound" type="BinHex"/>
+	<object name="TailingConfig">
+		<field name="missionlistTailingMission" type="BinHex"/>
+	</object>
+	<object name="HackingConfig">
+		<field name="missionlistHackingMission" type="BinHex"/>
+	</object>
+	<object name="PropositionConfig">
+		<field name="randomeventsPortalPropositionRandomEvent" type="BinHex"/>
+		<field name="accessidMultiplayerUnlockAccessId" type="BinHex"/>
+		<field name="accessidInvasionUnlockAccessId" type="BinHex"/>
+		<field name="accessidRaceUnlockAccessId" type="BinHex"/>
+	</object>
+	<object name="GridConfig">
+		<field name="mapicondescHackingGridIconDescription" type="BinHex"/>
+		<field name="mapicondescTailingGridIconDescription" type="BinHex"/>
+		<field name="mapicondescRaceGridIconDescription" type="BinHex"/>
+		<field name="gridmenuhubMenuHub" type="BinHex"/>
+		<field name="gridmenuhubMenuHubCG" type="BinHex"/>
+		<field name="mapicondescDecryptionGridIconDescription" type="BinHex"/>
+		<field name="mapicondescFreeroamingGridIconDescription" type="BinHex"/>
+		<object name="DLC1">
+			<field name="gridmenuhubMenuHub" type="BinHex"/>
+			<field name="gridmenuhubMenuHubCG" type="BinHex"/>
+		</object>
+		<object name="TransitionSurvivalGuides">
+			<object name="HackingSurvivalGuides">
+				<field name="itemsIntroRules" type="BinHex"/>
+				<field name="itemsIntroRulesDlc" type="BinHex"/>
+				<object name="Tips">
+					<object name="Tip">
+						<field name="itemsTip" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="TailingSurvivalGuides">
+				<field name="itemsIntroRules" type="BinHex"/>
+				<field name="itemsIntroRulesDlc" type="BinHex"/>
+				<object name="Tips">
+					<object name="Tip">
+						<field name="itemsTip" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="RaceSurvivalGuides">
+				<field name="itemsIntroRules" type="BinHex"/>
+				<field name="itemsIntroRulesDlc" type="BinHex"/>
+				<object name="Tips">
+					<object name="Tip">
+						<field name="itemsTip" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="DecryptionSurvivalGuides">
+				<field name="itemsIntroRules" type="BinHex"/>
+				<field name="itemsIntroRulesDlc" type="BinHex"/>
+				<object name="Tips">
+					<object name="Tip">
+						<field name="itemsTip" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="CompanionRaceSurvivalGuides">
+				<field name="itemsIntroRules" type="BinHex"/>
+				<field name="itemsIntroRulesDlc" type="BinHex"/>
+				<object name="Tips">
+					<object name="Tip">
+						<field name="itemsTip" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="CompanionFreeRideSurvivalGuides">
+				<field name="itemsIntroRules" type="BinHex"/>
+				<field name="itemsIntroRulesDlc" type="BinHex"/>
+				<object name="Tips">
+					<object name="Tip">
+						<field name="itemsTip" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="FreeRoamingSurvivalGuides">
+				<field name="itemsIntroRules" type="BinHex"/>
+				<field name="itemsIntroRulesDlc" type="BinHex"/>
+				<object name="Tips">
+					<object name="Tip">
+						<field name="itemsTip" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="DLCCoopSurvivalGuides">
+				<field name="itemsIntroRules" type="BinHex"/>
+				<field name="itemsIntroRulesDlc" type="BinHex"/>
+				<object name="Tips">
+					<object name="Tip">
+						<field name="itemsTip" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

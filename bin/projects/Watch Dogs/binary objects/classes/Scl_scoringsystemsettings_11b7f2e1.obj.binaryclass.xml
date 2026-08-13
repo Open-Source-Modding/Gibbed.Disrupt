@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_scoringsystemsettings_11b7f2e1.objParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fNpcKilledCoeff" type="Float"/>
+	<field name="fNpcTakedownCoeff" type="Float"/>
+	<field name="fDamageTakenCoeff" type="Float"/>
+	<field name="fSecondaryObjectiveScore" type="Float"/>
+	<field name="uScoreModifier" type="Int64"/>
+	<object name="TimeCoeffs">
+		<field name="fTimeCoeffA" type="Float"/>
+		<field name="fTimeCoeffB" type="Float"/>
+		<field name="fTimeCoeffC" type="Float"/>
+	</object>
+</class>

@@ -1,0 +1,5 @@
+<file name="a02_m05_sc020_ig_settingupthehq_props" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DedsecnarrativeParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsProductionReady" type="Boolean"/>
+	<field name="bAllowedInMultiplayer" type="Boolean"/>
+	<field name="selTrigger" type="Enum"/>
+	<field name="fTriggerCooldownDuration" type="Float"/>
+	<field name="selRepeatMode" type="Enum"/>
+	<field name="selPlayMode" type="Enum"/>
+	<field name="fPlayerAttention_RequestDuration" type="Float"/>
+	<field name="fPlayerAttention_AttentionDuration" type="Float"/>
+	<field name="phonecommunicationsettingsPhoneCommEntry" type="BinHex"/>
+	<field name="sBarkName" type="BinHex"/>
+	<field name="fBarkDelay" type="Float"/>
+	<object name="EnabledRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

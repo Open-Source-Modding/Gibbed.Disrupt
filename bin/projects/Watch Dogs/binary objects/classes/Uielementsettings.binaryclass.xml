@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UielementsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fileUIResourceFile" type="BinHex"/>
+	<field name="text_uihudmodeelementclassidElementClass" type="String"/>
+	<field name="uihudmodeelementclassidElementClass" type="BinHex"/>
+	<field name="text_uihudmodelogicclassidLogicClass" type="String"/>
+	<field name="uihudmodelogicclassidLogicClass" type="BinHex"/>
+	<field name="sMainContainerName" type="String"/>
+	<field name="selCanvasSelection" type="Enum"/>
+	<field name="selInterfaceLayerType" type="Enum"/>
+	<field name="selLoadingStrategy" type="Enum"/>
+	<field name="selMovieSetupType" type="Enum"/>
+	<object name="GameModes">
+		<object name="selGameModes">
+			<field name="selGameModes" type="Enum"/>
+		</object>
+	</object>
+	<object name="MainContainerDpsName">
+		<field name="sContainerDpsName" type="String"/>
+	</object>
+	<object name="UIElementDescriptor">
+		<field name="fTimerPulsingThreshold" type="Float"/>
+		<field name="uisoundNeutralMessageSound" type="BinHex"/>
+		<field name="uisoundCriticalMessageSound" type="BinHex"/>
+		<field name="uisoundTimerTickSound" type="BinHex"/>
+		<field name="uisoundTimerUrgentTickSound" type="BinHex"/>
+		<field name="texturedbobjectContactsMenuMask" type="BinHex"/>
+		<field name="uisoundOnMessageSent" type="BinHex"/>
+		<field name="uisoundOnMessageReceived" type="BinHex"/>
+		<field name="colorTextColorPlayerName1" type="VectorColor"/>
+		<field name="colorTextColorPlayerName2" type="VectorColor"/>
+		<field name="fPinHistoryForTimeSpan" type="Float"/>
+		<field name="uisoundOnStart" type="BinHex"/>
+		<field name="uisoundOnEnd" type="BinHex"/>
+		<field name="uisoundOnHold" type="BinHex"/>
+		<field name="fPercentageDepletedPerSecond" type="Float"/>
+		<field name="fHealthDepletedPerSecond" type="Float"/>
+		<field name="fMinimumSavingDisplayTime" type="Float"/>
+		<field name="uisoundOnReward" type="BinHex"/>
+		<field name="fLeftCooldownBarStartAngle" type="Float"/>
+		<field name="fLeftCooldownBarStopAngle" type="Float"/>
+		<field name="fRightCooldownBarStartAngle" type="Float"/>
+		<field name="fRightCooldownBarStopAngle" type="Float"/>
+		<field name="uMaxRocketsCount" type="BinHex"/>
+		<field name="uMaxGrenadesCount" type="BinHex"/>
+		<field name="fRadialDiameter" type="Float"/>
+		<field name="uisoundOnFill" type="BinHex"/>
+		<field name="uisoundOnFinished" type="BinHex"/>
+		<field name="uisoundOnAccessKeyDownloaded" type="BinHex"/>
+		<field name="uisoundOnHardLockEnter" type="BinHex"/>
+		<field name="uisoundOnHardLockExit" type="BinHex"/>
+		<field name="uisoundOnSaveToCTOS" type="BinHex"/>
+		<field name="uisoundOnSaveToCTOSFinished" type="BinHex"/>
+		<field name="texturedbobjectExplosive" type="BinHex"/>
+		<field name="texturedbobjectMovable" type="BinHex"/>
+		<field name="texturedbobjectRemoteControlled" type="BinHex"/>
+		<field name="texturedbobjectSecurity" type="BinHex"/>
+		<field name="texturedbobjectHackable" type="BinHex"/>
+		<field name="texturedbobjectElectric" type="BinHex"/>
+		<field name="texturedbobjectAccessPoint" type="BinHex"/>
+		<field name="texturedbobjectVRPuzzleLoader" type="BinHex"/>
+		<field name="texturedbobjectVRPuzzleNode" type="BinHex"/>
+		<field name="texturedbobjectUnlockVRPuzzleNode" type="BinHex"/>
+		<field name="texturedbobjectReward" type="BinHex"/>
+		<field name="texturedbobjectMoveable" type="BinHex"/>
+		<field name="texturedbobjectHijackable" type="BinHex"/>
+		<field name="texturedbobjectNonLethalExplosive" type="BinHex"/>
+		<field name="texturedbobjectAccessKey" type="BinHex"/>
+		<field name="texturedbobjectDroneSpawn" type="BinHex"/>
+		<field name="texturedbobjectAttractable" type="BinHex"/>
+		<field name="texturedbobjectSecuritySystem" type="BinHex"/>
+		<field name="texturedbobjectLocked" type="BinHex"/>
+		<field name="texturedbobjectPhysicalInteract" type="BinHex"/>
+		<field name="texturedbobjectSpiderInteract" type="BinHex"/>
+		<field name="texturedbobjectDefenseSystem" type="BinHex"/>
+		<field name="texturedbobjectCryptoOpportunity" type="BinHex"/>
+		<field name="texturedbobjectGenericHackable" type="BinHex"/>
+		<field name="texturedbobjectPressurePlate" type="BinHex"/>
+		<field name="texturedbobjectVentDoctor" type="BinHex"/>
+		<field name="texturedbobjectInvalid" type="BinHex"/>
+		<field name="texturedbobjectScanner" type="BinHex"/>
+		<field name="texturedbobjectNews" type="BinHex"/>
+		<field name="texturedbobjectPersonal" type="BinHex"/>
+		<field name="texturedbobjectDelivery" type="BinHex"/>
+		<field name="texturedbobjectConstruction" type="BinHex"/>
+		<field name="texturedbobjectTurret" type="BinHex"/>
+		<field name="texturedbobjectChase" type="BinHex"/>
+		<field name="texturedbobjectRiot" type="BinHex"/>
+		<field name="texturedbobjectCt" type="BinHex"/>
+		<field name="texturedbobjectScriptedWorldActivity" type="BinHex"/>
+		<field name="texturedbobjectRaidBoss" type="BinHex"/>
+		<field name="texturedbobjectNano" type="BinHex"/>
+		<field name="texturedbobjectRaidWipe" type="BinHex"/>
+		<field name="texturedbobjectRaidRepair" type="BinHex"/>
+		<field name="texturedbobjectCompanion" type="BinHex"/>
+		<field name="texturedbobjectKamikaze" type="BinHex"/>
+		<field name="texturedbobjectRaidGorgon" type="BinHex"/>
+		<field name="texturedbobjectChaseKingMaker" type="BinHex"/>
+		<field name="texturedbobjectNone" type="BinHex"/>
+		<field name="texturedbobjectCar" type="BinHex"/>
+		<field name="texturedbobjectBike" type="BinHex"/>
+		<field name="texturedbobjectTrain" type="BinHex"/>
+		<field name="texturedbobjectBoat" type="BinHex"/>
+		<field name="texturedbobjectRailVehicle" type="BinHex"/>
+		<field name="texturedbobjectRemoteControl" type="BinHex"/>
+		<field name="texturedbobjectHELICOPTER" type="BinHex"/>
+		<field name="texturedbobjectFlyingDrone" type="BinHex"/>
+		<field name="texturedbobjectVehicleIcon" type="BinHex"/>
+		<field name="texturedbobjectDroneIcon" type="BinHex"/>
+		<field name="texturedbobjectSpiderBotIcon" type="BinHex"/>
+		<field name="sScrambleCharacters" type="BinHex"/>
+		<field name="fCharactersRevealedPerSecond" type="Float"/>
+		<field name="fAlphaAtStart" type="Float"/>
+		<field name="fAlphaAtEnd" type="Float"/>
+		<field name="fAlphaFadeInTime" type="Float"/>
+		<field name="uScrambleTextLength" type="BinHex"/>
+		<field name="uisoundOpenInjured" type="BinHex"/>
+		<field name="uisoundCloseInjured" type="BinHex"/>
+		<field name="uisoundOpenCritical" type="BinHex"/>
+		<field name="uisoundCloseCritical" type="BinHex"/>
+		<field name="uisoundTimerTick" type="BinHex"/>
+		<field name="fCategoryHeaderPadding" type="Float"/>
+		<field name="fCategoryOptionRightPadding" type="Float"/>
+		<field name="fToggleOptionArrowPadding" type="Float"/>
+		<field name="fMenuBackgroundRightPadding" type="Float"/>
+		<field name="vec2TakePictureButtonPadding" type="BinHex"/>
+		<field name="fNotificationDuration" type="Float"/>
+		<field name="uisoundOnTextChanged" type="BinHex"/>
+		<field name="uisoundOnFail" type="BinHex"/>
+		<field name="uisoundOnSuccess" type="BinHex"/>
+		<field name="uisoundOnIncrement" type="BinHex"/>
+		<field name="uisoundOnMinute" type="BinHex"/>
+		<field name="uisoundOnLastSeconds" type="BinHex"/>
+		<field name="uisoundOnObjectiveAppear" type="BinHex"/>
+		<field name="uisoundOnObjectiveDisappear" type="BinHex"/>
+		<field name="uisoundOnTrackStart" type="BinHex"/>
+		<field name="uisoundOnTrackEnd" type="BinHex"/>
+		<field name="uisoundAffinityFillSound" type="BinHex"/>
+		<field name="uLastSecondsTimeTreshold" type="BinHex"/>
+		<field name="uMinutesTimeTreshold" type="BinHex"/>
+		<field name="nNotificationPadding" type="Enum"/>
+		<field name="nObjectivesPadding" type="Enum"/>
+		<field name="iObjectivesOrLinePaddingBefore" type="Int32"/>
+		<field name="iObjectivesOrLinePaddingAfter" type="Int32"/>
+		<field name="uisoundOpen" type="BinHex"/>
+		<field name="uisoundClose" type="BinHex"/>
+		<field name="uisoundOnPushSound" type="BinHex"/>
+		<field name="uisoundOnExpireSound" type="BinHex"/>
+		<field name="uisoundOnOnlineNotificationPushSound" type="BinHex"/>
+		<field name="fDefaultDuration" type="Float"/>
+		<field name="uisoundOnPushDefaultSound" type="BinHex"/>
+		<field name="uisoundOnExpireDefaultSound" type="BinHex"/>
+		<field name="uisoundOnPushCriticalSound" type="BinHex"/>
+		<field name="uisoundOnExpireCriticalSound" type="BinHex"/>
+		<field name="uisoundOnPushMatchmakingSound" type="BinHex"/>
+		<field name="uisoundOnExpireMatchmakingSound" type="BinHex"/>
+		<field name="uisoundOnShow" type="BinHex"/>
+		<field name="uisoundOnEnterRestrictedAreaSound" type="BinHex"/>
+		<field name="uisoundOnAccessGrantedSound" type="BinHex"/>
+		<field name="uisoundOnAccessLostSound" type="BinHex"/>
+		<field name="fLocationNameFadeDuration" type="Float"/>
+		<field name="fLocationStatusDisplayDuration" type="Float"/>
+		<field name="fLocationStatusFadeDuration" type="Float"/>
+		<field name="fLocationNameTextLineHeight" type="Float"/>
+		<field name="fLocationNameTextLineMaxHeight" type="Float"/>
+		<field name="fLowAmmoInClipThresholdPercentage" type="Float"/>
+		<field name="uicolorpalettesettingsLowAmmoInClipColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsLowReserveAmmoColor" type="BinHex"/>
+		<field name="fItemSelectionHolsteredFadeTime" type="Float"/>
+		<field name="fItemSelectionSwapFadeTime" type="Float"/>
+		<field name="fileUIResourceFile" type="BinHex"/>
+		<field name="sMainContainerName" type="String"/>
+		<field name="sContainerDpsName" type="String"/>
+		<field name="uicolorpalettesettingsDefaultAreaOfInterestColor" type="BinHex"/>
+		<field name="uicolorpalettesettingsHighlightAreaOfInterestColor" type="BinHex"/>
+		<field name="fHealthBarDeltaDelayTweenTime" type="Float"/>
+		<field name="fHealthBarDeltaTweenTime" type="Float"/>
+		<field name="fDamageMarkerDisplayTime" type="Float"/>
+		<field name="uisoundOnHealthLost" type="BinHex"/>
+		<field name="fIconTextOffsetX" type="Vector2"/>
+		<field name="fShadowDecreaseRate" type="Float"/>
+		<field name="fBotnetPerCycle" type="Int32"/>
+		<field name="uicolorpalettesettingsQuickHackIconColour" type="BinHex"/>
+		<field name="uicolorpalettesettingsHackUnavailableIconColour" type="BinHex"/>
+		<field name="uisoundHackFailedSound" type="BinHex"/>
+		<field name="uisoundOnFelonyIncrease" type="BinHex"/>
+		<field name="uisoundOnFelonyDecrease" type="BinHex"/>
+		<field name="fStatusDisplayDuration" type="Float"/>
+		<field name="bShowRoundText" type="Boolean"/>
+		<field name="sndSecondSound" type="BinHex"/>
+		<field name="sndFinishedSound" type="BinHex"/>
+		<field name="sndtpSecondSoundType" type="BinHex"/>
+		<field name="sndtpFinishedSoundType" type="BinHex"/>
+		<field name="fYButtonSpacing" type="Vector2"/>
+		<field name="fXButtonSpacing" type="Vector2"/>
+		<field name="fEdgeSpacing" type="Vector2"/>
+		<field name="iOffsetFromTheEdge" type="Int32"/>
+		<field name="fTimeInSecondsBeforeCollapse" type="Float"/>
+		<field name="texturedbobjectHackerAbilityTexture" type="BinHex"/>
+		<field name="texturedbobjectInfiltratorAbilityTexture" type="BinHex"/>
+		<field name="texturedbobjectAssaultAbilityTexture" type="BinHex"/>
+		<field name="texturedbobjectRecallAllTexture" type="BinHex"/>
+		<field name="uicolorpalettesettingsActiveTint" type="BinHex"/>
+		<field name="uicolorpalettesettingsOnCooldownTint" type="BinHex"/>
+		<field name="uicolorpalettesettingsInactiveTint" type="BinHex"/>
+		<field name="fActiveAlpha" type="Float"/>
+		<field name="fOnCooldownAlpha" type="Float"/>
+		<field name="fInactiveAlpha" type="Float"/>
+		<field name="uisoundCooldownFinishedSound" type="BinHex"/>
+		<field name="uisoundActionRejectedSound" type="BinHex"/>
+		<field name="texturedbobjectMeleeIcon" type="BinHex"/>
+		<field name="uisoundOpenSound" type="BinHex"/>
+		<field name="uisoundCloseSound" type="BinHex"/>
+		<field name="uisoundNavigateSound" type="BinHex"/>
+		<field name="uisoundSelectSound" type="BinHex"/>
+		<field name="fBasicCelebrationDuration" type="Float"/>
+		<field name="fBasicCelebrationShortcutDelayTime" type="Float"/>
+		<field name="fResistanceLevelUpCelebrationDuration" type="Float"/>
+		<field name="fChapterCelebrationDuration" type="Float"/>
+		<field name="fOpLineCelebrationDuration" type="Float"/>
+		<field name="fRaidUnlockCelebrationDuration" type="Float"/>
+		<field name="fRaidCompleteCelebrationDuration" type="Float"/>
+		<field name="fSpiderBattleCelebrationDuration" type="Float"/>
+		<field name="fRankUpCelebrationDuration" type="Float"/>
+		<field name="fRecruitmentCelebrationDuration" type="Float"/>
+		<field name="fTitleScrambleEffectDelay" type="Float"/>
+		<field name="fSubtitleScrambleEffectDelay" type="Float"/>
+		<field name="fFightCardDisplayTimer" type="Float"/>
+		<field name="fDisplayTotalDuration" type="Float"/>
+		<field name="fProgressionDuration" type="Float"/>
+		<field name="uisoundPlaySound" type="BinHex"/>
+		<field name="text_sndDialogSound" type="String"/>
+		<field name="sndDialogSound" type="BinHex"/>
+		<object name="ElementEffectDbObjs">
+			<object name="UIElementEffectsDbObject">
+				<field name="uielementeffectsdbobject" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridHintMessageLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridHintMessagePCLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridHintMessageYetiLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridUpperHintMessageLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridUpperHintMessagePCLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridHintMessageTutorialTipsLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="CaretSpecificInfo">
+			<field name="texturedbobjectCaret" type="BinHex"/>
+		</object>
+		<object name="EmojiNumberToUiTagsGroup">
+			<field name="uitagUiTagFallback" type="BinHex"/>
+			<object name="EmojiNumberToUiTags">
+				<field name="uiEmoticonUnicodeSymbol" type="UInt32"/>
+				<field name="uitagUiTag" type="BinHex"/>
+				<object name="EmojiNumberToUiTags">
+					<field name="uiEmoticonUnicodeSymbol" type="UInt32"/>
+					<field name="uitagUiTag" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PredefinedMessagesGroup">
+			<object name="OasisID"/>
+		</object>
+		<object name="TexturesGroup">
+			<field name="texturedbobjectLayoutEmoji" type="BinHex"/>
+			<field name="texturedbobjectLayoutEnglishDefault" type="BinHex"/>
+			<field name="texturedbobjectLayoutEnglishCapital" type="BinHex"/>
+			<field name="texturedbobjectLayoutEnglishSpecial_1" type="BinHex"/>
+			<field name="texturedbobjectLayoutEnglishSpecial_2" type="BinHex"/>
+			<field name="texturedbobjectLayoutEmojiConsoleSpecific" type="BinHex"/>
+		</object>
+		<object name="locstridInstallationComplete">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridInstallationFailed">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridInstallationInProgressPartial">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridInstallationInProgressGlobal">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSwapButtonText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSpeedTitleText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSpeedText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLocationTitleText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLoadTitleText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLoadOnText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLoadOffText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPackagesDeliveredText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPackagesPendingText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDpadIconLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPrimaryIconLocId_Keyboard">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSecondaryIconLocId_Keyboard">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="sndvarBarFillRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="locstridDistanceLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPercentageLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSaveContact">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRecruitContact">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSaveContactAndOpenCTOS">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSavingInProgress">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSavingHoldInProgress">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOnlinePlayerInfo">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOperativeHeader">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridTeamAtCapacity">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRecruitsAtCapacity">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridAge">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOccupation">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridVehicleTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDroneTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridTeamTraitLabel">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridUniqueTraitLabel">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridTrainingAvailable">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridTrainingInsufficientFunds">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridAccessPoint">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMoveable">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridHijackable">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridExplosive">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridNonLethalExplosive">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridAccessKey">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDroneSpawn">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridAttractable">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSecuritySystem">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLocked">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPhysicalInteract">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSpiderInteract">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDefenseSystem">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCryptoOpportunity">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridGenericHackable">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPressurePlate">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridVentDoctor">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLeftControlReminder">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRightControlReminder">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridGiveUpControlReminder">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPremiumInfo">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="sndvarBarRemainingTimeRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="locstridToggleOnText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridToggleOffText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOpenPictureText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOpenGalleryText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="RcDrone">
+			<field name="vec2TakePictureButtonOffset" type="BinHex"/>
+			<field name="vec2ThumbnailPictureOffset" type="BinHex"/>
+		</object>
+		<object name="locstridPremiumLockedDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPremiumLockedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPremiumLockedControlReminder">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDeadTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDedsecEliminatedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRandomDeathTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDeadControlReminder">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDeadsecEliminatedControlReminder">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridInjuredTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridInjuredControlReminder">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCapturedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCapturedControlReminder">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridExoticRespawnTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridExoticRespawnControlReminder">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescriptionKilled">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescriptionSuicide">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescriptionMishap">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescriptionInjured">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescriptionPremiumOutOfAction">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescriptionCaptured">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOrText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridObjectiveNotificationPromptText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="NotificationStatusTexts">
+			<object name="NotificationTypeText">
+				<field name="selNotificationType" type="Enum"/>
+				<object name="locstridLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+		<object name="locstridControlText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="Pooling"/>
+		<object name="locstridDiscoveredStatusLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridExposedStatusLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCompletedStatusLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRestrictedStatusLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridAccessStatusLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridAccessDescriptionLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridReloadIconLocId_onFoot">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridReloadIconLocId_driving">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDpadIconLocId_onFoot">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDpadIconLocId_driving">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSwapCooldownLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridQuickHackButtonLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCooldownTimerLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridEmotesTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="Rage">
+			<field name="texturedbobjectIcon" type="BinHex"/>
+		</object>
+		<object name="Heal">
+			<field name="texturedbobjectIcon" type="BinHex"/>
+		</object>
+		<object name="ForceShield">
+			<field name="texturedbobjectIcon" type="BinHex"/>
+		</object>
+		<object name="ARCloak">
+			<field name="texturedbobjectIcon" type="BinHex"/>
+		</object>
+		<object name="RankPlacesIds">
+			<field name="LocalizationId" type="UInt64"/>
+			<object name="RankPlacesIds">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="locstridShowControlsId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="uiDefaultColorSettings">
+			<field name="selTextColorType" type="Enum"/>
+			<field name="selBackgroundColorType" type="Enum"/>
+		</object>
+		<object name="contextualColorSettings">
+			<object name="ContextualColorSettings">
+				<object name="ColorSettings">
+					<field name="selTextColorType" type="Enum"/>
+					<field name="selBackgroundColorType" type="Enum"/>
+				</object>
+			</object>
+		</object>
+		<object name="locstridPlayerIdLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridScoreLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridUploadingProgressLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridEmptyLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridControlsLocId_onFoot">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridControlsLocId_driving">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridControlsLocId_recallAllOnFoot">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridControlsLocId_recallAllDriving">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridControlsLocId_nextGadget">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridControlsLocId_nextGadgetDriving">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWeaponsLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridGadgetsLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridAbilitiesLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPassiveAbilityItemTypeLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridTriggerAbilityItemTypeLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridGadgetItemTypeLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridFirearmTypeLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMeleeItemTypeLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridReleaseToEquipLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridReleaseToTriggerLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridReleaseToToggleLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPressToEquipLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPressToTriggerLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPressToToggleLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridReleaseToEquipDrivingLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridReleaseToTriggerDrivingLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridReleaseToToggleDrivingLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPressToEquipDrivingLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPressToTriggerDrivingLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPressToToggleDrivingLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridEquippedStatusLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridUnavailableStatusLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOnCooldownStatusLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCooldownTimeLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCooldownTimeSecondsLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridAmmoLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridToggleAbilityOnLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridToggleAbilityOffLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMeleeNameLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridMeleeDescriptionLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOpenPhotoModeShortcutLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOpenCameraShortcutLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOpenGalleryShortcutLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridOpenGalleryToggleModeShortcutLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridChallengeCompleteBoroughStateLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="AudioHooks">
+			<object name="PerkCelebration">
+				<field name="uisoundIntro" type="BinHex"/>
+				<field name="uisoundShowPerks" type="BinHex"/>
+				<field name="uisoundOutro" type="BinHex"/>
+			</object>
+			<object name="ChallengeCompleteCelebration">
+				<field name="uisoundIntro" type="BinHex"/>
+				<field name="uisoundOutro" type="BinHex"/>
+			</object>
+			<object name="BoroughMissionStartCelebration">
+				<field name="uisoundIntro" type="BinHex"/>
+				<field name="uisoundOutro" type="BinHex"/>
+			</object>
+			<object name="BoroughMissionCompleteCelebration">
+				<field name="uisoundIntro" type="BinHex"/>
+				<field name="uisoundOutro" type="BinHex"/>
+			</object>
+			<object name="TextCelebration">
+				<object name="NeutralEffect">
+					<field name="uisoundIntro" type="BinHex"/>
+					<field name="uisoundOutro" type="BinHex"/>
+				</object>
+				<object name="NegativeEffect">
+					<field name="uisoundIntro" type="BinHex"/>
+					<field name="uisoundOutro" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ChapterCelebration">
+				<object name="Started">
+					<field name="uisoundIntro" type="BinHex"/>
+					<field name="uisoundOutro" type="BinHex"/>
+				</object>
+				<object name="Complete">
+					<field name="uisoundIntro" type="BinHex"/>
+					<field name="uisoundOutro" type="BinHex"/>
+				</object>
+			</object>
+			<object name="RaidCompleteCelebration">
+				<field name="uisoundIntro" type="BinHex"/>
+				<field name="uisoundOutro" type="BinHex"/>
+			</object>
+			<object name="RankUpCelebration">
+				<field name="uisoundIntro" type="BinHex"/>
+				<field name="uisoundOutro" type="BinHex"/>
+			</object>
+			<object name="RecruitmentCelebration">
+				<field name="uisoundIntro" type="BinHex"/>
+				<field name="uisoundOutro" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridTitleTournament">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridExibition">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridFightWithNumber">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridChallengeHeader">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridChallengeInstance">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridChallengeTimer">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridChallengeReward">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridTitleText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPercentageText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="IsAvailableForPlatform">
+		<field name="bOrbis" type="Boolean"/>
+		<field name="bDurango" type="Boolean"/>
+		<field name="bWin64" type="Boolean"/>
+		<field name="bYeti" type="Boolean"/>
+		<field name="bProspero" type="Boolean"/>
+		<field name="bScarlett" type="Boolean"/>
+	</object>
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MusicinterludeParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sndInterludeEvent" type="String"/>
+	<field name="sndInterludeEvent" type="BinHex"/>
+	<field name="sndtpInterludeEventType" type="BinHex"/>
+	<field name="bIsGated" type="Boolean"/>
+	<object name="UnlockRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="LockRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="UnsupportedEvents"/>
+</class>

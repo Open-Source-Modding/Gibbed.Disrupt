@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EditorobjectsocketcollectionParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="editorobjectsocketcategoryCategory" type="BinHex"/>
+	<object name="CollectionItemNodes">
+		<object name="CollectionItemNode">
+			<field name="text_fileProxyObject" type="String"/>
+			<field name="fileProxyObject" type="BinHex"/>
+			<field name="vectorPosition" type="Vector3"/>
+			<field name="angvecRotation" type="Vector3"/>
+			<field name="sOverrideName" type="String"/>
+			<field name="socketitemidUniqueID" type="BinHex"/>
+			<object name="SubCollectionItemNodes">
+				<object name="CollectionItemNode">
+					<field name="text_fileProxyObject" type="String"/>
+					<field name="fileProxyObject" type="BinHex"/>
+					<field name="vectorPosition" type="Vector3"/>
+					<field name="angvecRotation" type="Vector3"/>
+					<field name="sOverrideName" type="String"/>
+					<field name="socketitemidUniqueID" type="BinHex"/>
+					<object name="SubCollectionItemNodes">
+						<object name="CollectionItemNode">
+							<field name="text_fileProxyObject" type="String"/>
+							<field name="fileProxyObject" type="BinHex"/>
+							<field name="vectorPosition" type="Vector3"/>
+							<field name="angvecRotation" type="Vector3"/>
+							<field name="sOverrideName" type="String"/>
+							<field name="socketitemidUniqueID" type="BinHex"/>
+							<object name="SubCollectionItemNodes">
+								<object name="CollectionItemNode">
+									<field name="text_fileProxyObject" type="String"/>
+									<field name="fileProxyObject" type="BinHex"/>
+									<field name="vectorPosition" type="Vector3"/>
+									<field name="angvecRotation" type="Vector3"/>
+									<field name="sOverrideName" type="String"/>
+									<field name="socketitemidUniqueID" type="BinHex"/>
+									<object name="SubCollectionItemNodes">
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

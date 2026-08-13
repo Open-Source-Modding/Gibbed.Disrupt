@@ -1,0 +1,28 @@
+<class name="CMovementTrack">
+    <object name="CMovementTrack">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field hash="22958F3A" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+      <object hash="549CBF80">
+        <field name="Name" type="String"/>
+        <field name="Master" type="BinHex"/>
+        <field name="UseCustomAnimation" type="BinHex"/>
+        <object name="Keys">
+          <object name="Key">
+            <field name="TimePrecise" type="BinHex"/>
+            <field name="Value" type="BinHex"/>
+            <object name="TangentIn">
+              <field name="Time" type="BinHex"/>
+              <field name="Value" type="BinHex"/>
+            </object>
+            <object name="TangentOut">
+              <field name="Time" type="BinHex"/>
+              <field name="Value" type="BinHex"/>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+</class>

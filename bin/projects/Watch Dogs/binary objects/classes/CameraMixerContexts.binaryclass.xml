@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CameraMixerContextsParameters">
+	<object name="MixerContexts">
+		<object name="Context">
+			<field name="cameracontextContextParameters" type="BinHex"/>
+			<field name="fContextValue" type="Float"/>
+			<field name="vec2ValueCurve" type="Vector2"/>
+		</object>
+	</object>
+</class>

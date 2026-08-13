@@ -1,0 +1,5 @@
+<file name="a01_f01_sc015_pre_carflashback" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

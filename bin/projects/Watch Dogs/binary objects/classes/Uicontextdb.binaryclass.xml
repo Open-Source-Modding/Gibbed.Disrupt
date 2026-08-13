@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UicontextdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_uicontexttypeUIContextType" type="String"/>
+	<field name="uicontexttypeUIContextType" type="BinHex"/>
+	<field name="text_uicontexttypeBaseUIContextType" type="String"/>
+	<field name="uicontexttypeBaseUIContextType" type="BinHex"/>
+	<object name="UIElementsWithLayout">
+		<object name="UIElementWithLayout">
+			<field name="uielementsettingsUIElementSetting" type="BinHex"/>
+			<field name="uilayoutdbobjectLayoutSetting" type="BinHex"/>
+			<field name="uitweensettingTweenSetting" type="BinHex"/>
+		</object>
+	</object>
+</class>

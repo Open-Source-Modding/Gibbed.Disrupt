@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AihackescalationconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selEscalationSeverity" type="Enum"/>
+	<field name="fCallTime" type="Float"/>
+	<field name="fShutdownTime" type="Float"/>
+	<field name="fMinConnectRadius" type="Float"/>
+	<field name="fMaxConnectRadius" type="Float"/>
+	<field name="text_sHackEscalationGroupID" type="String"/>
+	<field name="sHackEscalationGroupID" type="BinHex"/>
+	<field name="uiShutdownEscalationHackNumber" type="UInt32"/>
+	<field name="uiDestroyEscalationHackNumber" type="UInt32"/>
+	<field name="uiSearchEscalationHackNumber" type="UInt32"/>
+	<field name="uiEnableEscalationHackNumber" type="UInt32"/>
+	<field name="colorConnectionLineColor" type="VectorColor"/>
+</class>

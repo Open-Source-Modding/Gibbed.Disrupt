@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_patrolparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fProportionOfPatrol" type="Float"/>
+	<field name="uiMinPatrolPoints" type="Int64"/>
+	<field name="uiMaxPatrolPoints" type="Int64"/>
+	<field name="fMinDistanceBetweenPatrolPoints" type="Float"/>
+	<field name="fMaxDistanceBetweenPatrolPoints" type="Float"/>
+	<field name="fMinProportionOfPatrolStops" type="Float"/>
+	<field name="fMinStopDelay" type="Float"/>
+	<field name="fMaxStopDelay" type="Float"/>
+</class>

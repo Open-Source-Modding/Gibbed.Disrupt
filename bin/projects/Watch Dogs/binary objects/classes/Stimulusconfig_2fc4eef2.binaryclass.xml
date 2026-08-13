@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Stimulusconfig_2fc4eef2Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="StimulusList">
+		<object name="Stimulus">
+			<field name="selPersistentStimulusType" type="Enum"/>
+			<object name="NotImplentedYet">
+				<field name="bHasLifeTime" type="Boolean"/>
+				<field name="fLifeTime" type="Float"/>
+				<object name="LifeTimeModifier">
+					<field name="fFallingSnow" type="Float"/>
+					<field name="fRain" type="Float"/>
+				</object>
+				<object name="RadiusModifier">
+					<field name="fNightTime" type="Float"/>
+					<field name="fBlizzard" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

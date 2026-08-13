@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Alieninvasionresources_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archAlienInvasionResource" type="String"/>
+	<field name="archAlienInvasionResource" type="BinHex"/>
+	<field name="text_archParticleFx" type="String"/>
+	<field name="archParticleFx" type="BinHex"/>
+	<object name="VfxInformation">
+		<field name="text_fileTextureCameraNoise" type="String"/>
+		<field name="fileTextureCameraNoise" type="BinHex"/>
+		<field name="text_fileTextureColorRemap" type="String"/>
+		<field name="fileTextureColorRemap" type="BinHex"/>
+		<field name="text_fileTextureHitOverlay" type="String"/>
+		<field name="fileTextureHitOverlay" type="BinHex"/>
+	</object>
+	<object name="AlienParticleFx">
+		<field name="text_psBabyHitParticle" type="String"/>
+		<field name="psBabyHitParticle" type="BinHex"/>
+		<field name="text_psAdultHitParticle" type="String"/>
+		<field name="psAdultHitParticle" type="BinHex"/>
+		<field name="text_psQueenHitParticle" type="String"/>
+		<field name="psQueenHitParticle" type="BinHex"/>
+		<field name="text_psPodHitParticle" type="String"/>
+		<field name="psPodHitParticle" type="BinHex"/>
+		<field name="text_psHunterBabyHitParticle" type="String"/>
+		<field name="psHunterBabyHitParticle" type="BinHex"/>
+		<field name="text_psHunterAdultHitParticle" type="String"/>
+		<field name="psHunterAdultHitParticle" type="BinHex"/>
+		<field name="text_psBabyKilledParticle" type="String"/>
+		<field name="psBabyKilledParticle" type="BinHex"/>
+		<field name="text_psAdultKilledParticle" type="String"/>
+		<field name="psAdultKilledParticle" type="BinHex"/>
+		<field name="text_psQueenKilledParticle" type="String"/>
+		<field name="psQueenKilledParticle" type="BinHex"/>
+		<field name="text_psPodKilledParticle" type="String"/>
+		<field name="psPodKilledParticle" type="BinHex"/>
+		<field name="text_psHunterBabyKilledParticle" type="String"/>
+		<field name="psHunterBabyKilledParticle" type="BinHex"/>
+		<field name="text_psHunterAdultKilledParticle" type="String"/>
+		<field name="psHunterAdultKilledParticle" type="BinHex"/>
+		<field name="text_psSuicideHitParticle" type="String"/>
+		<field name="psSuicideHitParticle" type="BinHex"/>
+		<field name="text_psEvolveParticle" type="String"/>
+		<field name="psEvolveParticle" type="BinHex"/>
+		<field name="text_psPodLanding" type="String"/>
+		<field name="psPodLanding" type="BinHex"/>
+		<field name="text_psPodOpenBurst" type="String"/>
+		<field name="psPodOpenBurst" type="BinHex"/>
+		<field name="text_psHunterBulletExplosion" type="String"/>
+		<field name="psHunterBulletExplosion" type="BinHex"/>
+		<field name="text_psHunterBulletTrail" type="String"/>
+		<field name="psHunterBulletTrail" type="BinHex"/>
+	</object>
+	<object name="Wormhole">
+		<field name="text_archWormholeArchtype" type="String"/>
+		<field name="archWormholeArchtype" type="BinHex"/>
+		<field name="text_psWormholeOpenParticle" type="String"/>
+		<field name="psWormholeOpenParticle" type="BinHex"/>
+		<field name="text_psWormholeParticle" type="String"/>
+		<field name="psWormholeParticle" type="BinHex"/>
+		<field name="text_psWormholeCloseParticle" type="String"/>
+		<field name="psWormholeCloseParticle" type="BinHex"/>
+	</object>
+	<object name="Aliens">
+		<field name="text_archBabyAlienArchetype" type="String"/>
+		<field name="archBabyAlienArchetype" type="BinHex"/>
+		<field name="text_archAdultAlienArchetype" type="String"/>
+		<field name="archAdultAlienArchetype" type="BinHex"/>
+		<field name="text_archQueenAlienArchetype" type="String"/>
+		<field name="archQueenAlienArchetype" type="BinHex"/>
+		<field name="text_archPodAlienArchetype" type="String"/>
+		<field name="archPodAlienArchetype" type="BinHex"/>
+		<field name="text_archPodStemArchetype" type="String"/>
+		<field name="archPodStemArchetype" type="BinHex"/>
+		<field name="text_archHunterBabyAlienArchetype" type="String"/>
+		<field name="archHunterBabyAlienArchetype" type="BinHex"/>
+		<field name="text_archHunterAdultAlienArchetype" type="String"/>
+		<field name="archHunterAdultAlienArchetype" type="BinHex"/>
+		<field name="text_archHunterBulletArchetype" type="String"/>
+		<field name="archHunterBulletArchetype" type="BinHex"/>
+	</object>
+	<object name="WeaponArchetypes">
+		<field name="text_archShotgunArchetype" type="String"/>
+		<field name="archShotgunArchetype" type="BinHex"/>
+		<field name="text_archAssualtRifleArchetype" type="String"/>
+		<field name="archAssualtRifleArchetype" type="BinHex"/>
+		<field name="text_archSingleShotRifleArchetype" type="String"/>
+		<field name="archSingleShotRifleArchetype" type="BinHex"/>
+		<field name="text_archUziArchetype" type="String"/>
+		<field name="archUziArchetype" type="BinHex"/>
+	</object>
+	<object name="Sounds">
+		<field name="sndInvasionGameOver" type="BinHex"/>
+		<field name="sndOutOfBounds" type="BinHex"/>
+		<field name="sndLoseALife" type="BinHex"/>
+		<field name="sndPreWaveCountdown" type="BinHex"/>
+		<field name="sndTimeTickTock" type="BinHex"/>
+		<field name="sndWaveComplete" type="BinHex"/>
+		<field name="sndWaveStart" type="BinHex"/>
+		<field name="sndPickUpCountdown" type="BinHex"/>
+		<field name="sndPickUpCountdownEnd" type="BinHex"/>
+		<field name="sndPickUpCollection" type="BinHex"/>
+		<field name="sndPickUpSpawn" type="BinHex"/>
+		<field name="sndOpenWormhole" type="BinHex"/>
+		<field name="sndCloseWormhole" type="BinHex"/>
+		<field name="sndInvasion_In" type="BinHex"/>
+		<field name="sndInvasion_Out" type="BinHex"/>
+		<field name="sndWaveMusic" type="BinHex"/>
+		<field name="sndKillScore" type="BinHex"/>
+		<field name="sndBabyHit" type="BinHex"/>
+		<field name="sndAdultHit" type="BinHex"/>
+		<field name="sndQueenHit" type="BinHex"/>
+		<field name="sndPodHit" type="BinHex"/>
+		<field name="sndHunterBabyHit" type="BinHex"/>
+		<field name="sndHunterAdultHit" type="BinHex"/>
+		<field name="sndPodExplode" type="BinHex"/>
+		<field name="sndPodKilled" type="BinHex"/>
+		<field name="sndHealthPickupCollected" type="BinHex"/>
+		<field name="sndBombPickupCollected" type="BinHex"/>
+		<field name="sndTimePickupCollected" type="BinHex"/>
+		<field name="sndBulletImpactSound" type="BinHex"/>
+		<field name="sndBulletFiredSound" type="BinHex"/>
+		<field name="sndNotifyQueenSpawned" type="BinHex"/>
+		<field name="sndNotifyHunterLockedOn" type="BinHex"/>
+		<field name="sndMenuStartGame" type="BinHex"/>
+	</object>
+	<object name="AlienAnimations">
+		<field name="fileAlienMove" type="String"/>
+	</object>
+	<object name="Pickups">
+		<field name="text_archShotGunModel" type="String"/>
+		<field name="archShotGunModel" type="BinHex"/>
+		<field name="text_archAssaultRifleModel" type="String"/>
+		<field name="archAssaultRifleModel" type="BinHex"/>
+		<field name="text_archSingleShotRifleModel" type="String"/>
+		<field name="archSingleShotRifleModel" type="BinHex"/>
+		<field name="text_archUziModel" type="String"/>
+		<field name="archUziModel" type="BinHex"/>
+		<field name="text_archExtraLifeModel" type="String"/>
+		<field name="archExtraLifeModel" type="BinHex"/>
+		<field name="text_archExtraTimeModel" type="String"/>
+		<field name="archExtraTimeModel" type="BinHex"/>
+		<field name="text_archDamageBombModel" type="String"/>
+		<field name="archDamageBombModel" type="BinHex"/>
+		<field name="text_psShotGunActiveParticleFx" type="String"/>
+		<field name="psShotGunActiveParticleFx" type="BinHex"/>
+		<field name="text_psAssaultRifleActiveParticleFx" type="String"/>
+		<field name="psAssaultRifleActiveParticleFx" type="BinHex"/>
+		<field name="text_psSingleShotRifleActiveParticleFx" type="String"/>
+		<field name="psSingleShotRifleActiveParticleFx" type="BinHex"/>
+		<field name="text_psUziActiveParticleFx" type="String"/>
+		<field name="psUziActiveParticleFx" type="BinHex"/>
+		<field name="text_psExtraLifeActiveParticleFx" type="String"/>
+		<field name="psExtraLifeActiveParticleFx" type="BinHex"/>
+		<field name="text_psExtraTimeActiveParticleFx" type="String"/>
+		<field name="psExtraTimeActiveParticleFx" type="BinHex"/>
+		<field name="text_psDamageBombActiveParticleFx" type="String"/>
+		<field name="psDamageBombActiveParticleFx" type="BinHex"/>
+		<field name="text_psShotGunFallingParticleFx" type="String"/>
+		<field name="psShotGunFallingParticleFx" type="BinHex"/>
+		<field name="text_psAssaultRifleFallingParticleFx" type="String"/>
+		<field name="psAssaultRifleFallingParticleFx" type="BinHex"/>
+		<field name="text_psSingleShotRifleFallingParticleFx" type="String"/>
+		<field name="psSingleShotRifleFallingParticleFx" type="BinHex"/>
+		<field name="text_psUziFallingParticleFx" type="String"/>
+		<field name="psUziFallingParticleFx" type="BinHex"/>
+		<field name="text_psExtraLifeFallingParticleFx" type="String"/>
+		<field name="psExtraLifeFallingParticleFx" type="BinHex"/>
+		<field name="text_psExtraTimeFallingParticleFx" type="String"/>
+		<field name="psExtraTimeFallingParticleFx" type="BinHex"/>
+		<field name="text_psDamageBombFallingParticleFx" type="String"/>
+		<field name="psDamageBombFallingParticleFx" type="BinHex"/>
+		<field name="text_psDamageBombExplosionParticleFx" type="String"/>
+		<field name="psDamageBombExplosionParticleFx" type="BinHex"/>
+		<field name="psPickUpCloseParticle" type="BinHex"/>
+	</object>
+	<object name="UI">
+		<field name="fileFireResource" type="String"/>
+	</object>
+</class>

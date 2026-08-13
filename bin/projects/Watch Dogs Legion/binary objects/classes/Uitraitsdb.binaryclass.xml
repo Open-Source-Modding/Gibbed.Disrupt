@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UitraitsdbParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="texturedbobjectIconTexture" type="BinHex"/>
+	<field name="texturedbobjectTraitImage" type="BinHex"/>
+	<field name="selRow" type="BinHex"/>
+	<field name="selColumn" type="BinHex"/>
+	<field name="selTraitCategory" type="BinHex"/>
+	<field name="selNumberOfColumns" type="BinHex"/>
+	<field name="selNumberOfRows" type="BinHex"/>
+	<field name="progressionteamtraitTeamTraitId" type="BinHex"/>
+	<object name="locstridName">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridDescription">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+	<object name="locstridTraitHint">
+		<field name="LocalizationId" type="BinHex"/>
+	</object>
+</class>

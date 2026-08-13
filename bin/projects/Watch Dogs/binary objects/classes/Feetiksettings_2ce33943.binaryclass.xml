@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Feetiksettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="EffectorWeightDamp" type="BinHex"/>
+	<field name="HipsHeightAdjustDamp" type="BinHex"/>
+	<field name="HipsPitchAdjustDamp" type="BinHex"/>
+	<field name="RootSpringOvershoot" type="BinHex"/>
+	<field name="RootSpringDefaultStiffnessUp" type="BinHex"/>
+	<field name="RootSpringDefaultStiffnessDown" type="BinHex"/>
+	<field name="FootOffGroundThreshold" type="BinHex"/>
+	<field name="PlaneNormalDamp" type="BinHex"/>
+	<field name="PlaneTransDamp" type="BinHex"/>
+	<field name="ExtraLegLengthForHipsAdjust" type="BinHex"/>
+	<field name="ExtraLegLengthForClamp" type="BinHex"/>
+	<field name="HipsPitchLeanMultiplier" type="BinHex"/>
+	<field name="HipsPitchMax" type="BinHex"/>
+	<field name="HipsPitchMin" type="BinHex"/>
+	<field name="HipsPitchLeanVelStart" type="BinHex"/>
+	<field name="HipsPitchLeanVelEnd" type="BinHex"/>
+	<field name="FootPitchLimit" type="BinHex"/>
+	<field name="FootRollLimit" type="BinHex"/>
+	<field name="ActivationDamping" type="BinHex"/>
+	<field name="SocketDamping" type="BinHex"/>
+	<field name="SocketUnlockDistanceFwd" type="BinHex"/>
+	<field name="SocketUnlockDistanceSide" type="BinHex"/>
+	<field name="SocketUnlockHeight" type="BinHex"/>
+	<field name="SocketUnlockAngle" type="BinHex"/>
+	<field name="SocketUnlockVelVertical" type="BinHex"/>
+	<field name="SocketLockToeVel2D" type="BinHex"/>
+	<field name="SocketLockMinVel2D" type="BinHex"/>
+	<field name="SocketLockMaxWeight" type="BinHex"/>
+	<field name="FootHeightBlendingBegins" type="BinHex"/>
+	<field name="FootHeightBlendingEnds" type="BinHex"/>
+	<field name="MaleToeBoneToTip" type="BinHex"/>
+	<field name="MaleToeBoneToHeel" type="BinHex"/>
+	<field name="FemaleToeBoneToTip" type="BinHex"/>
+	<field name="FemaleToeBoneToHeel" type="BinHex"/>
+	<field name="FemaleHighHeelToeBoneToTip" type="BinHex"/>
+	<field name="FemaleHighHeelToeBoneToHeel" type="BinHex"/>
+	<field name="FootRadius" type="BinHex"/>
+	<field name="StairCapsulePathDistance" type="BinHex"/>
+	<field name="StairCapsulePathHeight" type="BinHex"/>
+	<field name="HysteresisStairLockDistance" type="BinHex"/>
+	<field name="HysteresisRaycastDistance" type="BinHex"/>
+	<field name="HysteresisRaycastCosineAngle" type="BinHex"/>
+	<field name="MaxFootHeightDifference" type="BinHex"/>
+	<field name="MaxStanceForMaxHeightDiff" type="BinHex"/>
+	<field name="MaxStanceForAnyHeightDiff" type="BinHex"/>
+	<field name="MinFootHeightForLegModification" type="BinHex"/>
+	<field name="MaxFootHeightForLegModification" type="BinHex"/>
+	<field name="MinRaycastHeight" type="BinHex"/>
+	<field name="MinRaycastDepth" type="BinHex"/>
+	<field name="MaxRaycastHeightRadius" type="BinHex"/>
+	<field name="SlopeAngleLimitForCoverInDegrees" type="BinHex"/>
+	<field name="SlopeAngleHysteresisForCoverInDegrees" type="BinHex"/>
+	<object name="FramesPerRaycast">
+		<field name="Normal" type="BinHex"/>
+		<field name="HighEnd" type="BinHex"/>
+	</object>
+	<object name="MinActivationDistance">
+		<field name="Normal" type="BinHex"/>
+		<field name="HighEnd" type="BinHex"/>
+	</object>
+</class>

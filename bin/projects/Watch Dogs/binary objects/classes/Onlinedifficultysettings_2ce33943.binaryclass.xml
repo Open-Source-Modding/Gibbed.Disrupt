@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Onlinedifficultysettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<object name="onlinedifficulties">
+			<field name="onlinedifficulties" type="BinHex"/>
+		</object>
+	</object>
+</class>

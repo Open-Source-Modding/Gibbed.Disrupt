@@ -1,0 +1,29 @@
+<class name="COverlayTrack">
+    <object name="COverlayTrack">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field hash="22958F3A"/>
+        <field name="disMuted"/>
+		<inherit name="CTranslucencyClip"/>
+		<inherit name="CSlomoClip"/>
+		<inherit name="CShadowQualityClip"/>
+		<inherit name="CShadowBiasOverrideCGClip"/>
+		<inherit name="CEnvironmentSSAOClip"/>
+		<inherit name="CEnvironmentWeatherClip"/>
+		<inherit name="CNoisePostFxClip"/>
+		<inherit name="CColorGradingPostFxClip"/>
+		<inherit name="CDeformPostFxClip"/>
+		<inherit name="CSoundClip"/>
+		<inherit name="CEnvironmentSettingsClip"/>
+		<inherit name="CBlurPostFxClip"/>
+		<inherit name="CRGBSepPostFxClip"/>
+		<inherit name="CCinemaHideHudClip"/>
+		<inherit name="CAdrenalinePostFxClip"/>
+		<inherit name="CEnvironmentExposureClip"/>
+		<inherit name="CTimeOfDayClip"/>
+		<inherit name="CActionMapClip"/>
+        <inherit name="CGenericPostFxClip"/>
+		<inherit name="CCinematicDepthOfFieldPostFxClip"/>
+    </object>
+</class>

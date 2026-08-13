@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BareknucklemodifierconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="FightRoundData">
+		<field name="selGamePhase" type="Enum"/>
+		<field name="bDontCountRoundInUI" type="Boolean"/>
+		<field name="bCanKillOpponents" type="Boolean"/>
+		<object name="locstridGameScoreLocID">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="Modifiers">
+			<field name="bMustSpawnFighters" type="Boolean"/>
+			<field name="bMustKeepPlayerDown" type="Boolean"/>
+			<field name="fDelayBetweenFightersAddition" type="Float"/>
+			<field name="bActivateCinematicSequence" type="Boolean"/>
+			<field name="bIsSeamless" type="Boolean"/>
+			<field name="fDelayTimeCinematic" type="Float"/>
+			<field name="bActivateAddOpponents" type="Boolean"/>
+			<field name="bMustIgnoreStunCount" type="Boolean"/>
+			<field name="bMustStartMeleeState" type="Boolean"/>
+			<field name="iNumberOfFighters" type="Int32"/>
+			<field name="fDelayTimeMultipleOpponents" type="Float"/>
+			<field name="bIsSurvival" type="Boolean"/>
+			<field name="bIsResist" type="Boolean"/>
+			<field name="iMaxNumberOfFighters" type="Int32"/>
+			<field name="fDelayTimeSurvival" type="Float"/>
+			<field name="bActivateTimeLimit" type="Boolean"/>
+			<field name="bUseLastRoundTimer" type="Boolean"/>
+			<field name="fTimeToWin" type="Float"/>
+			<field name="bActivateDrunkEffect" type="Boolean"/>
+			<field name="bDisableDrunkEffect" type="Boolean"/>
+			<field name="fDelayTimeDrunkEffect" type="Float"/>
+			<field name="bActivateWeapons" type="Boolean"/>
+			<field name="bDisableWeapons" type="Boolean"/>
+			<field name="itemsWeapon" type="BinHex"/>
+			<field name="fDelayTimeToWeapons" type="Float"/>
+			<field name="bActivateDrones" type="Boolean"/>
+			<field name="bCanShootNotInView" type="Boolean"/>
+			<field name="fDelayTimeDrones" type="Float"/>
+			<field name="fCycleTimeDrones" type="Float"/>
+			<field name="bActivateProjectile" type="Boolean"/>
+			<field name="fDelayTimeProjectiles" type="Float"/>
+			<field name="fCycleTimeProjectiles" type="Float"/>
+			<field name="wolfskinitemdbMaskMale" type="BinHex"/>
+			<field name="wolfskinitemdbMaskFemale" type="BinHex"/>
+			<object name="MadCinematic">
+				<field name="fileFile" type="BinHex"/>
+				<field name="SceneTemplate" type="BinHex"/>
+				<field name="iDialogTemplate" type="Int32"/>
+			</object>
+			<object name="DrunkEffects">
+				<object name="DrunkEffectConfig">
+						<field name="drunkeffectconfigDrunkEffect" type="BinHex"/>
+					</object>
+			</object>
+		</object>
+		<object name="TransitionToNextRoundValidation">
+			<field name="bMustKillAllToWin" type="Boolean"/>
+			<field name="iHowManyStunsMustThePlayerDo" type="Int32"/>
+			<field name="iNumberOfOpponentsRemaining" type="Int32"/>
+			<field name="iHowManyStunsMustThePlayerDoLocal" type="Int32"/>
+			<field name="iHowManyDeathsMustThePlayerDoLocal" type="Int32"/>
+			<field name="iHowManyStunsMustTheOpponentsDo" type="Int32"/>
+			<field name="iHowManyStunsMustTheOpponentsDoLocal" type="Int32"/>
+			<field name="bMustStunAllPlayersToLose" type="Boolean"/>
+			<field name="bIsGameLostIfPlayerLoses" type="Boolean"/>
+			<field name="bUsePlayerDeathFlow" type="Boolean"/>
+		</object>
+		<object name="FightRoundData">
+			<field name="selGamePhase" type="Enum"/>
+			<field name="bDontCountRoundInUI" type="Boolean"/>
+			<field name="bCanKillOpponents" type="Boolean"/>
+			<object name="locstridGameScoreLocID">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="Modifiers">
+				<field name="bMustSpawnFighters" type="Boolean"/>
+				<field name="bMustKeepPlayerDown" type="Boolean"/>
+				<field name="fDelayBetweenFightersAddition" type="Float"/>
+				<field name="bActivateCinematicSequence" type="Boolean"/>
+				<field name="bIsSeamless" type="Boolean"/>
+				<field name="fDelayTimeCinematic" type="Float"/>
+				<field name="bActivateAddOpponents" type="Boolean"/>
+				<field name="bMustIgnoreStunCount" type="Boolean"/>
+				<field name="bMustStartMeleeState" type="Boolean"/>
+				<field name="iNumberOfFighters" type="Int32"/>
+				<field name="fDelayTimeMultipleOpponents" type="Float"/>
+				<field name="bIsSurvival" type="Boolean"/>
+				<field name="bIsResist" type="Boolean"/>
+				<field name="iMaxNumberOfFighters" type="Int32"/>
+				<field name="fDelayTimeSurvival" type="Float"/>
+				<field name="bActivateTimeLimit" type="Boolean"/>
+				<field name="bUseLastRoundTimer" type="Boolean"/>
+				<field name="fTimeToWin" type="Float"/>
+				<field name="bActivateDrunkEffect" type="Boolean"/>
+				<field name="bDisableDrunkEffect" type="Boolean"/>
+				<field name="fDelayTimeDrunkEffect" type="Float"/>
+				<field name="bActivateWeapons" type="Boolean"/>
+				<field name="bDisableWeapons" type="Boolean"/>
+				<field name="itemsWeapon" type="BinHex"/>
+				<field name="fDelayTimeToWeapons" type="Float"/>
+				<field name="bActivateDrones" type="Boolean"/>
+				<field name="bCanShootNotInView" type="Boolean"/>
+				<field name="fDelayTimeDrones" type="Float"/>
+				<field name="fCycleTimeDrones" type="Float"/>
+				<field name="bActivateProjectile" type="Boolean"/>
+				<field name="fDelayTimeProjectiles" type="Float"/>
+				<field name="fCycleTimeProjectiles" type="Float"/>
+				<field name="wolfskinitemdbMaskMale" type="BinHex"/>
+				<field name="wolfskinitemdbMaskFemale" type="BinHex"/>
+				<object name="MadCinematic">
+					<field name="fileFile" type="BinHex"/>
+					<field name="SceneTemplate" type="BinHex"/>
+					<field name="iDialogTemplate" type="Int32"/>
+				</object>
+				<object name="DrunkEffects">
+					<object name="DrunkEffectConfig">
+						<field name="drunkeffectconfigDrunkEffect" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="TransitionToNextRoundValidation">
+				<field name="bMustKillAllToWin" type="Boolean"/>
+				<field name="iHowManyStunsMustThePlayerDo" type="Int32"/>
+				<field name="iNumberOfOpponentsRemaining" type="Int32"/>
+				<field name="iHowManyStunsMustThePlayerDoLocal" type="Int32"/>
+				<field name="iHowManyDeathsMustThePlayerDoLocal" type="Int32"/>
+				<field name="iHowManyStunsMustTheOpponentsDo" type="Int32"/>
+				<field name="iHowManyStunsMustTheOpponentsDoLocal" type="Int32"/>
+				<field name="bMustStunAllPlayersToLose" type="Boolean"/>
+				<field name="bIsGameLostIfPlayerLoses" type="Boolean"/>
+				<field name="bUsePlayerDeathFlow" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+	<object name="FightModifierIntroData">
+		<object name="FightModifierIntro">
+			<field name="bIsPriority" type="Boolean"/>
+			<object name="ActionValidation">
+				<field name="bPlayerStunned" type="Boolean"/>
+				<field name="bNPCStunned" type="Boolean"/>
+				<field name="iRoundIndex" type="Int32"/>
+			</object>
+			<object name="ActionsToHappen">
+				<object name="Action">
+					<field name="bActivateCinematics" type="Boolean"/>
+					<field name="bIsSeamless" type="Boolean"/>
+					<field name="wolfskinitemdbMaskMaleCinematic" type="BinHex"/>
+					<field name="wolfskinitemdbMaskFemaleCinematic" type="BinHex"/>
+					<field name="bActivateWeapons" type="Boolean"/>
+					<field name="itemsWeapon" type="BinHex"/>
+					<field name="bActivateProjectile" type="Boolean"/>
+					<field name="fCycleTimeProjectiles" type="Float"/>
+					<field name="wolfskinitemdbMaskMale" type="BinHex"/>
+					<field name="wolfskinitemdbMaskFemale" type="BinHex"/>
+					<field name="bActivateHealth" type="Boolean"/>
+					<field name="fHealth" type="Float"/>
+					<field name="bActivateAddOpponents" type="Boolean"/>
+					<field name="bMustIgnoreStunCount" type="Boolean"/>
+					<field name="bMustStartMeleeState" type="Boolean"/>
+					<field name="iNumberOfFighters" type="Int32"/>
+					<object name="MadCinematic">
+						<field name="text_fileFile" type="String"/>
+						<field name="fileFile" type="BinHex"/>
+						<field name="SceneTemplate" type="BinHex"/>
+						<field name="iDialogTemplate" type="Int32"/>
+					</object>
+					<object name="BarkVector">
+						<object name="BarkElement">
+							<field name="bPlayOnAnnouncer" type="Boolean"/>
+							<field name="bPlayOnLocalPlayer" type="Boolean"/>
+							<field name="bIs2D" type="Boolean"/>
+							<field name="selTarget" type="Enum"/>
+							<field name="text_Bark" type="String"/>
+							<field name="Bark" type="BinHex"/>
+							<object name="MinMaxInterval">
+								<field name="fMin" type="Float"/>
+								<field name="fMax" type="Float"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

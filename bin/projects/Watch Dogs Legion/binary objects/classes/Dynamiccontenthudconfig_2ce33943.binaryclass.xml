@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dynamiccontenthudconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Sounds">
+		<field name="sndBollardsAnticipation" type="BinHex"/>
+		<field name="sndHackGeneric" type="BinHex"/>
+		<field name="sndHelicopterHack" type="BinHex"/>
+		<field name="sndPlayerFound" type="BinHex"/>
+		<field name="sndPlayerSearch" type="BinHex"/>
+		<field name="sndTextMedia" type="BinHex"/>
+		<field name="sndNotificationReward" type="BinHex"/>
+	</object>
+</class>

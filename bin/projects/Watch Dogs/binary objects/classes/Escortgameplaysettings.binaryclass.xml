@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EscortgameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bUseEscapeArea" type="Boolean"/>
+	<field name="fEscapeAreaRadius" type="Float"/>
+	<field name="bUseLocationEscapeArea" type="Boolean"/>
+	<field name="bDisplayDestinationArea" type="Boolean"/>
+	<field name="fDestinationAreaDisplayRadius" type="Float"/>
+	<field name="buddyaisettingsBuddyAISettings" type="BinHex"/>
+	<field name="bShouldLeaveInWanderUponDelivery" type="Boolean"/>
+	<field name="bShouldLeaveInFleeUponDelivery" type="Boolean"/>
+	<field name="bUsePGTArenaAsFleeThreat" type="Boolean"/>
+	<field name="bIsGoingToBeTalker" type="Boolean"/>
+	<field name="fleebehaviordescriptorBuddyFleeBhvDescriptor" type="BinHex"/>
+	<field name="sBuddyDeliverBarkTriggerName" type="BinHex"/>
+	<field name="locategameplaydescriptorBuddyLocateDescriptor" type="BinHex"/>
+	<field name="bIsTimed" type="Boolean"/>
+	<field name="fTimeToDeliver" type="Float"/>
+</class>

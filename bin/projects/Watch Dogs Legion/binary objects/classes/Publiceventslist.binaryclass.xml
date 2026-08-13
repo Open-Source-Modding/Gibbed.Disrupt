@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PubliceventslistParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Chance">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="Cooldown">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="Deactivation">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="PublicEventsList">
+		<object name="publiceventopsPublicEventOpDbObject">
+			<field name="publiceventopsPublicEventOpDbObject" type="BinHex"/>
+		</object>
+	</object>
+</class>

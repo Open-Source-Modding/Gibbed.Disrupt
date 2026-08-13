@@ -1,0 +1,56 @@
+<class name="CSimpleOmniLightClip">
+    <object name="CSimpleOmniLightClip">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId" type="BinHex"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field name="timeStartTime" type="Float"/>
+        <field name="timeDuration" type="Float"/>
+        <field name="timeEndTime" type="Float"/>
+        <field name="hidResizable" type="BinHex"/>
+        <field name="disMuted" type="BinHex"/>
+        <field name="sAnimationTrackCollectionResource" type="BinHex"/>
+        <field name="bResizable" type="Boolean"/>
+        <field name="hidAnimationTrackCollectionDuration" type="BinHex"/>
+        <field name="Position" type="Vector3"/>
+        <field name="Angles" type="Vector3"/>
+        <object name="AnimationTrackCollection">
+        <object name="Tracks">
+		    <object name="Track">
+                <object name="Track">
+                  <field name="text_hid_DTCTH_ClassName" type="String"/>
+                  <field name="hid_DTCTH_ClassName" type="BinHex"/>
+                  <field name="Name" type="String"/>
+                  <field name="Master" type="BinHex"/>
+                  <field name="UseCustomAnimation" type="BinHex"/>
+                  <field name="Owner" type="BinHex"/>
+                  <object name="Keys">
+                    <object name="Key">
+                      <field name="TimePrecise" type="BinHex"/>
+                      <field name="Value" type="BinHex"/>
+                      <object name="TangentIn">
+                        <field name="Time" type="BinHex"/>
+                        <field name="Value" type="BinHex"/>
+                      </object>
+                      <object name="TangentOut">
+                        <field name="Time" type="BinHex"/>
+                        <field name="Value" type="BinHex"/>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+            </object>
+		</object>
+      </object>
+        <object name="Binding">
+          <field name="bBindToEntity" type="Boolean"/>
+          <field name="hidHasTrackIdParam" type="BinHex"/>
+          <field name="hidHasBoneNameParam" type="BinHex"/>
+          <field name="hidHasRemoveOffsetParam" type="BinHex"/>
+		  <field name="TrackId" type="BinHex"/>
+		  <field name="text_sBoneName" type="String"/>
+          <field name="sBoneName" type="BinHex"/>
+        </object>
+		<inherit name="CDynamicLightComponent"/>
+        <inherit name="CLightEffectComponent"/>
+      </object>
+</class>

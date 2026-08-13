@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="StreetartgraffiticonfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fileThumbnailPath" type="BinHex"/>
+	<field name="fileLockedThumbnailPath" type="BinHex"/>
+	<field name="text_archFinalDecalArchetype" type="String"/>
+	<field name="archFinalDecalArchetype" type="BinHex"/>
+	<field name="text_archSelectedProjectionArchetype" type="String"/>
+	<field name="archSelectedProjectionArchetype" type="BinHex"/>
+	<field name="text_archLockedProjectionArchetype" type="String"/>
+	<field name="archLockedProjectionArchetype" type="BinHex"/>
+</class>

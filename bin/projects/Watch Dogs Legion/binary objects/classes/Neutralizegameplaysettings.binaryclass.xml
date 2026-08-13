@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NeutralizegameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bUseUnspecificTargets" type="Boolean"/>
+	<field name="selHumanNeutralizationCondition" type="Enum"/>
+	<field name="selAuthorizedDestructionCauses" type="Enum"/>
+	<field name="bNoCivilianVictim" type="Boolean"/>
+	<field name="iNumberOfNonSpecificTargetNeutralizationNeeded" type="Int32"/>
+	<field name="bAreHumanTargets" type="Boolean"/>
+	<field name="bUseOnlineNotifications" type="Boolean"/>
+	<field name="selNeutralizeHealthBarDisplayMode" type="Enum"/>
+	<object name="AffiliationFlags">
+		<object name="ValidAffiliationFlag">
+			<field name="selFlag" type="Enum"/>
+		</object>
+	</object>
+	<object name="NPCDescriptions"/>
+	<object name="VehicleDescriptions"/>
+	<object name="DroneDescriptions"/>
+	<object name="TargetNeutralizedOnlineNotification">
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="TargetNeutralizedCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="locstridHealthBarHeader">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

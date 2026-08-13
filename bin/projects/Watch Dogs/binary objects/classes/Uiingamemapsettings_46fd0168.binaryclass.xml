@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uiingamemapsettings_46fd0168Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uWorldmapTextureSizeWidth" type="UInt32"/>
+	<field name="uWorldmapTextureSizeHeight" type="UInt32"/>
+	<field name="uMinimapTextureSizeWidth" type="UInt32"/>
+	<field name="uMinimapTextureSizeHeight" type="UInt32"/>
+	<field name="texturedbobjectMinimapOverlayTexture" type="BinHex"/>
+	<field name="fMinimapFrameTextureScaleX" type="Float"/>
+	<field name="fMinimapFrameTextureScaleY" type="Float"/>
+	<field name="texturedbobjectMinimapFrameTexture" type="BinHex"/>
+	<field name="fMapAlphaFactorForCharacterHead" type="Float"/>
+	<field name="fDefaultFadeSpeed" type="Float"/>
+	<field name="fWeaponWheelFadeSpeed" type="Float"/>
+	<field name="fUndergroundMeshAlphaModifier" type="Float"/>
+	<field name="bEnableKeyLocationProjectionEffect" type="Boolean"/>
+	<field name="fGPSHeightOffsetOnMap" type="Float"/>
+	<field name="fKeyLocationProjectionBottomOffset" type="Float"/>
+	<field name="fKeyLocationProjectionTopOffset" type="Float"/>
+	<field name="fKeyLocationProjectionZScaleOnMinimap" type="Float"/>
+	<field name="fOnlineActivityMatchmakingAnimationScale" type="Float"/>
+	<field name="fMinimapMeshZScale" type="Float"/>
+	<field name="fFlashTime" type="Float"/>
+	<field name="uTotalFlashCount" type="UInt32"/>
+	<field name="fMissionTrackedScaleMultiplier" type="Float"/>
+	<field name="fOperativePortraitScaleMultiplier" type="Float"/>
+	<field name="colorDefaultFlashColor" type="VectorColor"/>
+	<field name="colorCoopFlashColor" type="VectorColor"/>
+	<field name="colorMissionTrackedIconColor" type="VectorColor"/>
+	<field name="colorMissionTrackedSinglePlayerColor" type="VectorColor"/>
+	<field name="colorMissionTrackedMultiPlayerColor" type="VectorColor"/>
+	<field name="colorMinimapOverlayAccessColor" type="VectorColor"/>
+	<field name="colorMinimapOverlayWarningColor" type="VectorColor"/>
+	<field name="colorMinimapOverlayDangerColor" type="VectorColor"/>
+	<field name="uicolorpalettesettingsColorRCAggressive" type="BinHex"/>
+	<field name="uicolorpalettesettingsColorRCPassive" type="BinHex"/>
+	<field name="uicolorpalettesettingsColorRCHijacked" type="BinHex"/>
+	<field name="uicolorpalettesettingsColorRCPostHijack" type="BinHex"/>
+	<field name="uicolorpalettesettingsColorRCDormant" type="BinHex"/>
+	<field name="mapicondescCameraMapIconDescription" type="BinHex"/>
+	<field name="mapicondescControlledCameraMapIconDescription" type="BinHex"/>
+	<field name="mapicondescHighlightedCameraMapIconDescription" type="BinHex"/>
+	<field name="mapicondescLocalPlayerMapIconDescription" type="BinHex"/>
+	<field name="mapicondescNeutralPlayerMapIconDescription" type="BinHex"/>
+	<field name="mapicondescEnemyPlayerMapIconDescription" type="BinHex"/>
+	<field name="mapicondescInGroupPlayerMapIconDescription" type="BinHex"/>
+	<field name="mapicondescCoopPlayerMapIconDescription" type="BinHex"/>
+	<field name="mapicondescDeadPlayerMapIconDescription" type="BinHex"/>
+	<field name="mapicondescLocalPlayerMiniMapIconDescription" type="BinHex"/>
+	<field name="mapicondescNeutralPlayerMiniMapIconDescription" type="BinHex"/>
+	<field name="mapicondescEnemyPlayerMiniMapIconDescription" type="BinHex"/>
+	<field name="mapicondescInGroupPlayerMiniMapIconDescription" type="BinHex"/>
+	<field name="mapicondescCoopPlayerMiniMapIconDescription" type="BinHex"/>
+	<field name="mapicondescDeadPlayerMiniMapIconDescription" type="BinHex"/>
+	<field name="mapicondescOperativeMapIconDescription" type="BinHex"/>
+	<field name="mapicondescOperativeFocusMapIconDescription" type="BinHex"/>
+	<field name="mapicondescHumanContactMapIconDescription" type="BinHex"/>
+	<field name="mapicondescTrackedHumanContactMapIconDescription" type="BinHex"/>
+	<field name="mapicondescHumanContactScheduleMapIconDescription" type="BinHex"/>
+	<field name="mapicondescIntelMapIconDescription" type="BinHex"/>
+	<field name="mapicondescLosIntelMapIconDescription" type="BinHex"/>
+	<field name="mapicondescPersonalWaypointMapIconDescription" type="BinHex"/>
+	<field name="mapicondescFastTravelSafeHouse" type="BinHex"/>
+	<field name="mapicondescFastTravelSafeHouseWithNewMission" type="BinHex"/>
+	<field name="mapicondescFastTravel" type="BinHex"/>
+	<field name="fMinHeightDiffForAboveBelowFeedback" type="Float"/>
+	<field name="fAboveBelowAlphaFactor" type="Float"/>
+	<field name="fClampArrowEllipsePercentage" type="Float"/>
+	<field name="mapicondescObjectiveStart" type="BinHex"/>
+	<field name="mapicondescObjectiveObjective" type="BinHex"/>
+	<field name="mapicondescObjectiveLair" type="BinHex"/>
+	<field name="mapicondescObjectiveConvoy" type="BinHex"/>
+	<field name="mapicondescObjectiveDriving" type="BinHex"/>
+	<field name="mapicondescOnlineObjective" type="BinHex"/>
+	<field name="mapicondescDedSecHackTheHackerEvent" type="BinHex"/>
+	<field name="mapicondescDedSecConvoyEvent" type="BinHex"/>
+	<field name="mapicondescDedSecHuntEvent" type="BinHex"/>
+	<field name="mapicondescDedSecPersecutionEvent" type="BinHex"/>
+	<field name="mapicondescDedSecVirusEvent" type="BinHex"/>
+	<field name="mapicondescObjectiveFlashBack" type="BinHex"/>
+	<field name="mapicondescObjectiveObjectiveGlitched" type="BinHex"/>
+	<field name="mapicondescObjectiveExplosion" type="BinHex"/>
+	<field name="mapicondescObjectiveRescue" type="BinHex"/>
+	<field name="mapicondescObjectiveScriptedEvent" type="BinHex"/>
+	<field name="mapicondescObjectiveRacing" type="BinHex"/>
+	<field name="mapicondescObjectivePortal" type="BinHex"/>
+	<field name="mapicondescObjectiveType_A" type="BinHex"/>
+	<field name="mapicondescObjectiveType_B" type="BinHex"/>
+	<field name="mapicondescObjectiveType_C" type="BinHex"/>
+	<field name="mapicondescObjectiveType_D" type="BinHex"/>
+	<field name="mapicondescObjectiveType_E" type="BinHex"/>
+	<field name="mapicondescObjectiveType_F" type="BinHex"/>
+	<field name="mapicondescObjectiveType_G" type="BinHex"/>
+	<field name="mapicondescObjectiveType_H" type="BinHex"/>
+	<field name="mapicondescObjectiveType_I" type="BinHex"/>
+	<field name="mapicondescObjectiveType_J" type="BinHex"/>
+	<field name="mapicondescObjectiveType_K" type="BinHex"/>
+	<field name="mapicondescObjectiveType_L" type="BinHex"/>
+	<field name="mapicondescObjectiveOpNodeEntry" type="BinHex"/>
+	<field name="mapicondescObjectiveOpNodeActive" type="BinHex"/>
+	<field name="mapicondescObjectiveOpNodeActiveSelected" type="BinHex"/>
+	<field name="mapicondescObjectiveTracked" type="BinHex"/>
+	<field name="mapicondescObjectiveUntracked" type="BinHex"/>
+	<field name="mapicondescObjectivePublicEvent" type="BinHex"/>
+	<field name="mapicondescObjectiveDynamicEventInactive" type="BinHex"/>
+	<field name="mapicondescObjectiveDynamicEventActive" type="BinHex"/>
+	<field name="mapicondescObjectiveQuickOp" type="BinHex"/>
+	<field name="mapicondescObjectiveLocked" type="BinHex"/>
+	<field name="mapicondescInvasionSwapMarker" type="BinHex"/>
+	<field name="mapicondescCLOEventIcon" type="BinHex"/>
+	<field name="mapicondescLabelIconBorough" type="BinHex"/>
+	<field name="mapicondescLabelIconDistrict" type="BinHex"/>
+	<field name="mapicondescLabelIconLandmark" type="BinHex"/>
+	<field name="mapicondescLabelIconMisc" type="BinHex"/>
+	<field name="text_fileDefaultShapeZoneTexture" type="String"/>
+	<field name="fileDefaultShapeZoneTexture" type="BinHex"/>
+	<field name="text_fileDefaultCircularZoneTexture" type="String"/>
+	<field name="fileDefaultCircularZoneTexture" type="BinHex"/>
+	<field name="text_fileMapPathPlayerTexture" type="String"/>
+	<field name="fileMapPathPlayerTexture" type="BinHex"/>
+	<field name="text_fileMapPathMissionTexture" type="String"/>
+	<field name="fileMapPathMissionTexture" type="BinHex"/>
+	<field name="text_fileMapPathRaceTexture" type="String"/>
+	<field name="fileMapPathRaceTexture" type="BinHex"/>
+	<field name="text_fileMapPathCoopTexture" type="String"/>
+	<field name="fileMapPathCoopTexture" type="BinHex"/>
+	<field name="text_fileMapAlphaMaskTexture" type="String"/>
+	<field name="fileMapAlphaMaskTexture" type="BinHex"/>
+	<field name="uizonesettingsFelonyScanZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsFelonyScanZoneFXSettings" type="BinHex"/>
+	<field name="uizonesettingsFelonyScanZoneSettingsJammed" type="BinHex"/>
+	<field name="uizonesettingsFelonyScanZoneFXSettingsJammed" type="BinHex"/>
+	<field name="uizonesettingsFelonySearchZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsHideInCarZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsHideInCarUnsafeZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsPlayerSearchZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsHintZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsRCWarningZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsRCOutsideZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsEscapeZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsMPHintZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsMPInitDownloadZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsMPDownloadZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsMPEscapeZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsScoutXTargetZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsDigitalSearchZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsRegroupZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsDynamicEventInactiveZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsDynamicEventActiveZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsScavengerHuntUploadZone" type="BinHex"/>
+	<field name="uizonesettingsQuickOpSpawnZone" type="BinHex"/>
+	<field name="uizonesettingsMissionZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsPlayerOutsideMissionZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsAIAgentRestrictedZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsAIAgentForbiddenZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsAIAgentForbiddenZoneWithAccessSettings" type="BinHex"/>
+	<field name="uizonesettingsAIAgentForbiddenFreeRoamZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsAIAgentForbiddenEmptyZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsKeyLocationDefaultZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsKeyLocationTrackedOpZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsKeyLocationSearchZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsKeyLocationFilteredZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsKeyLocationHighlightedZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsKeyLocationEscapeZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsKeyLocationRegroupZoneSettings" type="BinHex"/>
+	<field name="uizonesettingsKeyLocationBorderZoneSettings" type="BinHex"/>
+	<object name="MapEffectSettings">
+		<field name="fNearSSAOIntensity" type="Float"/>
+		<field name="fFarSSAOIntensity" type="Float"/>
+		<field name="vectorLightDirection" type="Vector3"/>
+		<object name="FogOfWar">
+			<field name="bDoShadowMapping" type="Boolean"/>
+			<field name="bDoVolumetricFog" type="Boolean"/>
+			<field name="bDoDarkeningEffect" type="Boolean"/>
+			<field name="fShadowMaxDarkness" type="Float"/>
+			<field name="fFogOpacity" type="Float"/>
+			<field name="fFogHeight" type="Float"/>
+			<field name="fFogSpeed" type="Float"/>
+			<field name="fFogFeatherDistance" type="Float"/>
+			<field name="fFogDensityMultiplier" type="Float"/>
+			<field name="fFogScatteringMultiplier" type="Float"/>
+			<field name="fFogAbsorptionMultiplier" type="Float"/>
+		</object>
+	</object>
+	<object name="GroundMaterialNames">
+		<object name="GroundMaterialName">
+			<field name="fileGroundMaterialName" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridFullNameTemplate">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="PlayerWorldMapAnim">
+		<field name="bIsUsed" type="Boolean"/>
+		<field name="bIsLooping" type="Boolean"/>
+		<field name="bIsOneWay" type="Boolean"/>
+		<field name="fStartAlpha" type="Float"/>
+		<field name="fEndAlpha" type="Float"/>
+		<field name="fAlphaAnimDelay" type="Float"/>
+		<field name="fAlphaAnimDelayBetweenLoop" type="Float"/>
+		<field name="bIsDelayedBothWays" type="Boolean"/>
+		<field name="fAlphaDuration" type="Float"/>
+	</object>
+	<object name="IconRevealAnim">
+		<field name="bIsUsed" type="Boolean"/>
+		<field name="bIsLooping" type="Boolean"/>
+		<field name="bIsAlphaOnly" type="Boolean"/>
+		<field name="colorColor" type="VectorColor"/>
+		<field name="fAlpha" type="Float"/>
+		<object name="curveColorCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveScaleCurve">
+			<field name="hidNumKnots" type="BinHex"/>
+			<object name="Knots"/>
+		</object>
+	</object>
+	<object name="IconBackgroundTopRevealAnim">
+		<field name="bIsUsed" type="Boolean"/>
+		<field name="bIsLooping" type="Boolean"/>
+		<field name="bIsAlphaOnly" type="Boolean"/>
+		<field name="colorColor" type="VectorColor"/>
+		<field name="fAlpha" type="Float"/>
+		<object name="curveColorCurve">
+			<field name="hidNumKnots" type="BinHex"/>
+			<object name="Knots"/>
+		</object>
+		<object name="curveScaleCurve">
+			<field name="hidNumKnots" type="BinHex"/>
+			<object name="Knots"/>
+		</object>
+	</object>
+	<object name="IconBackgroundBottomRevealAnim">
+		<field name="bIsUsed" type="Boolean"/>
+		<field name="bIsLooping" type="Boolean"/>
+		<field name="bIsAlphaOnly" type="Boolean"/>
+		<field name="colorColor" type="VectorColor"/>
+		<field name="fAlpha" type="Float"/>
+		<object name="curveColorCurve">
+			<field name="hidNumKnots" type="BinHex"/>
+			<object name="Knots"/>
+		</object>
+		<object name="curveScaleCurve">
+			<field name="hidNumKnots" type="BinHex"/>
+			<object name="Knots"/>
+		</object>
+	</object>
+	<object name="SchedulingView">
+		<field name="mapicondescSchedule" type="BinHex"/>
+		<field name="mapicondescAssociateSchedule" type="BinHex"/>
+		<field name="mapicondescInvestigation" type="BinHex"/>
+	</object>
+	<object name="KeyLocationUndiscoveredMapIcons">
+		<field name="mapicondescEasy" type="BinHex"/>
+		<field name="mapicondescDifficult" type="BinHex"/>
+		<field name="mapicondescVeryDifficult" type="BinHex"/>
+	</object>
+	<object name="KeyLocationDiscoveredMapIcons">
+		<field name="mapicondescEasy" type="BinHex"/>
+		<field name="mapicondescDifficult" type="BinHex"/>
+		<field name="mapicondescVeryDifficult" type="BinHex"/>
+	</object>
+	<object name="KeyLocationCompletedMapIcons">
+		<field name="mapicondescEasy" type="BinHex"/>
+		<field name="mapicondescDifficult" type="BinHex"/>
+		<field name="mapicondescVeryDifficult" type="BinHex"/>
+	</object>
+	<object name="IconAboveFireUiBlobTexture">
+		<field name="text_fileIconTexture" type="String"/>
+		<field name="fileIconTexture" type="BinHex"/>
+	</object>
+	<object name="IconBelowFireUiBlobTexture">
+		<field name="text_fileIconTexture" type="String"/>
+		<field name="fileIconTexture" type="BinHex"/>
+	</object>
+	<object name="ClampArrowFireUiBlobTexture">
+		<field name="text_fileIconTexture" type="String"/>
+		<field name="fileIconTexture" type="BinHex"/>
+	</object>
+	<object name="Checkpoints">
+		<field name="uicolorpalettesettingsColorCheckpointInactive" type="BinHex"/>
+		<field name="uicolorpalettesettingsColorCheckpointWarning" type="BinHex"/>
+		<field name="uicolorpalettesettingsColorCheckpointAggressive" type="BinHex"/>
+		<field name="fCheckpointAlpha" type="Float"/>
+		<field name="fMediumCheckpointSizeThreshold" type="Float"/>
+		<field name="fLargeCheckpointSizeThreshold" type="Float"/>
+		<field name="text_fileSmallCheckpointTexture" type="String"/>
+		<field name="fileSmallCheckpointTexture" type="BinHex"/>
+		<field name="text_fileMediumCheckpointTexture" type="String"/>
+		<field name="fileMediumCheckpointTexture" type="BinHex"/>
+		<field name="text_fileLargeCheckpointTexture" type="String"/>
+		<field name="fileLargeCheckpointTexture" type="BinHex"/>
+		<field name="fCheckpointGroundOffset" type="Float"/>
+	</object>
+	<object name="Borough">
+		<field name="fFontSize" type="Float"/>
+	</object>
+	<object name="District">
+		<field name="fFontSize" type="Float"/>
+	</object>
+	<object name="Landmark">
+		<field name="fFontSize" type="Float"/>
+	</object>
+	<object name="Misc">
+		<field name="fFontSize" type="Float"/>
+	</object>
+	<object name="DetectionSettings">
+		<field name="mapicondescCameraDetectionIcon" type="BinHex"/>
+		<field name="mapicondescCivilianDenunciationDetectionIcon" type="BinHex"/>
+		<field name="mapicondescMediaBroadcastDetectionIcon" type="BinHex"/>
+		<field name="mapicondescDisruptedDetectionIcon" type="BinHex"/>
+		<field name="mapicondescBlumeAgentDenunciationDetectionIcon" type="BinHex"/>
+		<field name="mapicondescAIDetectionHighDetectionIcon" type="BinHex"/>
+		<field name="mapicondescAIDetectionLowDetectionIcon" type="BinHex"/>
+		<field name="mapicondescAIShutdownActionDetectionIcon" type="BinHex"/>
+		<field name="mapicondescCivilianNPCDenunciationDetectionIcon" type="BinHex"/>
+		<object name="CameraDetectionFireUiBlobTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="CivilianDenunciationDetectionFireUiBlobTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="MediaBroadcastDetectionFireUiBlobTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="DisruptedDetectionFireUiBlobTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="BlumeAgentDenunciationDetectionFireUiBlobTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="AIDetectionHighDetectionFireUiBlobTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="AIDetectionLowDetectionFireUiBlobTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="CivilianNPCDenunciationDetectionFireUiBlobTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+	</object>
+	<object name="PowerSettings">
+		<field name="mapicondescArmedByPlayerIcon" type="BinHex"/>
+		<field name="mapicondescArmedByHostileIcon" type="BinHex"/>
+		<field name="mapicondescArmedByAllyIcon" type="BinHex"/>
+	</object>
+	<object name="MassHackPulseSettings">
+		<object name="Setting">
+			<field name="uizonesettingsSetting" type="BinHex"/>
+		</object>
+	</object>
+	<object name="QuickOpSpawnZoneSettings">
+		<object name="Setting">
+			<field name="uizonesettingsSetting" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Ops">
+		<field name="colorTrackedOpColor" type="VectorColor"/>
+		<field name="fTrackedOpColorAlpha" type="Float"/>
+		<field name="colorUntrackedOpColor" type="VectorColor"/>
+		<field name="fUntrackedOpColorAlpha" type="Float"/>
+	</object>
+</class>

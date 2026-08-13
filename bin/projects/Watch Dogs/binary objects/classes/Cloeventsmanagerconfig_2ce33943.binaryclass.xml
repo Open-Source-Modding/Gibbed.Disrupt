@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cloeventsmanagerconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="AddedToMinimapSFX">
+		<field name="text_sndSoundId" type="String"/>
+		<field name="sndSoundId" type="BinHex"/>
+		<field name="sndtpSoundType" type="BinHex"/>
+	</object>
+	<object name="PlayerProximityCheckConfigForMemoryAssignment">
+		<field name="selRoleToCheck" type="Enum"/>
+		<field name="fRadius" type="Float"/>
+		<field name="fIgnoreLOSInnerRadius" type="Float"/>
+		<field name="fMaxDeltaZ" type="Float"/>
+		<field name="bCheckPlayerLOS" type="Boolean"/>
+		<field name="bIgnoreCamera" type="Boolean"/>
+		<field name="bCheckRCProximity" type="Boolean"/>
+		<field name="fMinScreenDrawPercent" type="Float"/>
+		<field name="fMinCharacterVisibilityPercent" type="Float"/>
+	</object>
+</class>

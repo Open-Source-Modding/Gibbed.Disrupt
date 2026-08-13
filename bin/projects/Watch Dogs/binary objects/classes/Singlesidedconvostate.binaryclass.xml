@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SinglesidedconvostateParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_State" type="String"/>
+	<field name="State" type="BinHex"/>
+</class>

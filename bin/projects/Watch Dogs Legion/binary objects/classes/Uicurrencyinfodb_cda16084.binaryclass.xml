@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uicurrencyinfodb_cda16084Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="iCurrencyMediumQuantityThreshold" type="Int32"/>
+	<field name="iCurrencyLargeQuantityThreshold" type="Int32"/>
+	<object name="DSICurrency">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="ETOCurrency">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="WDCreditsCurrency">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="DSICurrency3D">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="ETOCurrency3DSmallQuantity">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="ETOCurrency3DMediumQuantity">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="ETOCurrency3DLargeQuantity">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="WDCreditsCurrency3DSmallQuantity">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="WDCreditsCurrency3DMediumQuantity">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="WDCreditsCurrency3DLargeQuantity">
+		<field name="texturedbobjectSmallImage" type="BinHex"/>
+		<field name="texturedbobjectBigImage" type="BinHex"/>
+		<object name="locstridName">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

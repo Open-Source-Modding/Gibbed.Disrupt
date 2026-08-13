@@ -96,7 +96,7 @@ namespace Gibbed.Disrupt.ConvertXml
                 string inputPath = extras[0];
                 string outputPath = extras.Count > 1
                     ? extras[1]
-                    : Path.ChangeExtension(Path.ChangeExtension(inputPath, null) + "_converted", ".rml");
+                    : Path.ChangeExtension(inputPath, ".rml");
 
                 var rez = new XmlResourceFile();
                 using (var input = File.OpenRead(inputPath))
@@ -122,7 +122,7 @@ namespace Gibbed.Disrupt.ConvertXml
                 string inputPath = extras[0];
                 string outputPath = extras.Count > 1
                     ? extras[1]
-                    : Path.ChangeExtension(Path.ChangeExtension(inputPath, null) + "_converted", ".xml");
+                    : Path.ChangeExtension(inputPath, ".xml");
 
                 var rez = new XmlResourceFile();
                 using (var input = File.OpenRead(inputPath))

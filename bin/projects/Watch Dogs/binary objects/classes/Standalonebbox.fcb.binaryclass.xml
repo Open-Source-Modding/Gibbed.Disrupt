@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Standalonebbox.fcbParameters">
+	<field name="text_PathId" type="String"/>
+	<field name="PathId" type="BinHex"/>
+	<object hash="63B6CDC1">
+		<field name="PathId" type="String"/>
+		<field name="Sas" type="Boolean"/>
+		<field name="HighMemoryArea" type="Boolean"/>
+		<field name="LowMemoryArea" type="Boolean"/>
+		<field name="BBoxMin" type="Vector3"/>
+		<field name="BBoxMax" type="Vector3"/>
+	</object>
+</class>

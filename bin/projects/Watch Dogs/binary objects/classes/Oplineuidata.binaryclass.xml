@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OplineuidataParameters">
+	<inherit name="SharedParameters"/>
+	<field name="texturedbobjectUIImage" type="BinHex"/>
+	<object name="locstridNameLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDescriptionLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

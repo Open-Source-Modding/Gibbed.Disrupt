@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpslistParameters">
+	<inherit name="SharedParameters"/>
+	<field name="brickflowBrickFlowConfig" type="BinHex"/>
+	<field name="uiopdbUIContent" type="BinHex"/>
+	<field name="oplineconfigOpLine" type="BinHex"/>
+	<field name="opchapterOpChapter" type="BinHex"/>
+	<field name="oplineuidataOpLineUIDataOnOpCompletion" type="BinHex"/>
+	<field name="uimissionappvillainviewdataUIMissionsAppVillainViewDataOnOpCompletion" type="BinHex"/>
+	<field name="bShouldPlayOpCompletionDedSecNarrative" type="Boolean"/>
+	<field name="sTrackingName" type="String"/>
+	<field name="districtBorough" type="BinHex"/>
+	<field name="sPS5ObjectID" type="BinHex"/>
+	<object name="RewardsSettings">
+		<object name="CryptoCurrency">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="TechPointCurrency">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ExoticRewards">
+			<field name="rulesmithidRuleId" type="BinHex"/>
+		</object>
+		<object name="Items">
+			<object name="Items">
+				<object name="Item">
+					<field name="itemsItem" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="Entities">
+			<object name="Entities"/>
+		</object>
+	</object>
+	<object name="EndOpTrigger">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="Unlocking">
+		<object name="PrerequisiteOps">
+			<object name="Op">
+				<field name="opslistPrerequisiteOp" type="BinHex"/>
+			</object>
+		</object>
+		<object name="SpecialUnlockRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridMissionsAppSubCategoryOverride">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

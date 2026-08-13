@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dg scenesParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Template">
+		<field name="text_DefaultTargetRoleID" type="String"/>
+		<field name="DefaultTargetRoleID" type="BinHex"/>
+		<object name="Actors">
+			<object name="Actor">
+				<field name="text_RoleID" type="String"/>
+				<field name="RoleID" type="BinHex"/>
+				<field hash="6D1E1959" type="String"/>
+				<field name="selType" type="Enum"/>
+				<object name="Object">
+					<field hash="6CD78C8B" type="String"/>
+					<field name="selSubtype" type="Enum"/>
+					<field name="vehicleentityconfigOverrideConfig" type="BinHex"/>
+					<field name="selPlasmaRole" type="Enum"/>
+					<field name="selAffiliationType" type="Enum"/>
+					<field name="humanconfigOverrideConfig" type="BinHex"/>
+					<field name="droneconfigOverrideConfig" type="BinHex"/>
+					<field name="aispawningtypeArchetype" type="BinHex"/>
+					<field name="vehiclesbankVehicleBank" type="BinHex"/>
+					<field name="castedcharactersCastedCharacter" type="BinHex"/>
+					<field name="censusattendancedefinitionAttendanceDef" type="BinHex"/>
+					<object name="tagcategoryselectionblackboardFeatureTags">
+						<object name="TagCategorySelectionArray">
+							<object name="TagCategorySelection">
+								<field name="text_hid_DTCTH_ClassName" type="String"/>
+								<field name="hid_DTCTH_ClassName" type="BinHex"/>
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<object name="Tags">
+									<object name="Tag">
+										<field name="tagTag" type="BinHex"/>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object name="TagDescriptorUI">
+							<field name="text_hid_DTCTH_ClassName" type="String"/>
+							<field name="hid_DTCTH_ClassName" type="BinHex"/>
+							<object name="TagCategorySelectionDescriptors">
+								<object name="TagCategorySelectionDescriptor">
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="bMultiSelect" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+					<field name="archOverrideArchetype" type="BinHex"/>
+					<field name="dgsceneingredientIngredient" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="StaticRoles">
+			<object name="OptionalReplace">
+				<object name="Roles">
+					<object name="seldgsceneroleRoleId">
+					<field name="text_seldgsceneroleRoleId" type="String"/>
+					<field name="seldgsceneroleRoleId" type="BinHex"/>
+				</object>
+				</object>
+			</object>
+			<object name="MandatoryAdd">
+				<object name="Roles">
+					<object name="seldgsceneroleRoleId">
+					<field name="text_seldgsceneroleRoleId" type="String"/>
+					<field name="seldgsceneroleRoleId" type="BinHex"/>
+				</object>
+				</object>
+			</object>
+			<object name="OptionalAdd">
+				<object name="Roles">
+					<object name="seldgsceneroleRoleId">
+					<field name="text_seldgsceneroleRoleId" type="String"/>
+					<field name="seldgsceneroleRoleId" type="BinHex"/>
+				</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="NarrativeVariations">
+		<object name="NarrativeVariationsList">
+			<object name="Variation">
+				<field name="text_FriendlyName" type="String"/>
+				<field name="FriendlyName" type="BinHex"/>
+				<field name="dgnarrativeNarrativeConfig" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="AnchorSettings">
+		<object name="Anchors">
+			<object name="Anchor">
+				<field name="text_seldgsceneroleLinkedActor" type="String"/>
+				<field name="seldgsceneroleLinkedActor" type="BinHex"/>
+				<field name="bUseInAllVariations" type="Boolean"/>
+				<object name="Data">
+					<field name="selType" type="Enum"/>
+					<field name="text_sSubType" type="String"/>
+					<field name="sSubType" type="BinHex"/>
+				</object>
+				<object name="UseInNarrativeVariations">
+					<object name="seldgscenenarrativevariationVariationName">
+						<field name="text_seldgscenenarrativevariationVariationName" type="String"/>
+						<field name="seldgscenenarrativevariationVariationName" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Stages">
+		<object name="Stage">
+			<field name="dgstageStage" type="BinHex"/>
+			<object name="Roles">
+				<object name="seldgsceneroleRoleId">
+					<field name="text_seldgsceneroleRoleId" type="String"/>
+					<field name="seldgsceneroleRoleId" type="BinHex"/>
+				</object>
+				<object name="Role">
+					<field name="text_SceneRoleID" type="String"/>
+					<field name="SceneRoleID" type="BinHex"/>
+					<field name="text_dgstagerolelinkStageRoleID" type="String"/>
+					<field name="dgstagerolelinkStageRoleID" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Callbackupsettings_9ca243baParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaximumDistance" type="Float"/>
+	<field name="fInitialDelay" type="Float"/>
+	<object name="CountdownTime">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

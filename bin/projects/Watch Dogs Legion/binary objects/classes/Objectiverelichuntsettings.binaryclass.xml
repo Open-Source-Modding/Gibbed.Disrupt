@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectiverelichuntsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="bUseSpecificRole" type="Boolean"/>
+	<field name="TargetSceneID" type="BinHex"/>
+	<field name="TargetRole" type="BinHex"/>
+	<field name="bIsTimed" type="Boolean"/>
+	<field name="timergameplaydescriptorEntityToRelicHuntTimerDescriptor" type="BinHex"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRelicName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DriverfloatingmiscsounddbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="JumpAndLanding">
+		<field name="fMinSpeedInKmhForJumpLaunchSound" type="Float"/>
+		<field name="fMinAirTimeForLongLandSound" type="Float"/>
+		<field name="text_sndJumpLaunch" type="String"/>
+		<field name="sndJumpLaunch" type="BinHex"/>
+		<field name="sndtpJumpLaunch" type="BinHex"/>
+		<field name="text_sndLandGood" type="String"/>
+		<field name="sndLandGood" type="BinHex"/>
+		<field name="sndtpLandGood" type="BinHex"/>
+		<field name="text_sndLandBad" type="String"/>
+		<field name="sndLandBad" type="BinHex"/>
+		<field name="sndtpLandBad" type="BinHex"/>
+		<field name="text_sndLandSmall" type="String"/>
+		<field name="sndLandSmall" type="BinHex"/>
+		<field name="sndtpLandSmall" type="BinHex"/>
+		<field name="text_sndEngineOverheat" type="String"/>
+		<field name="sndEngineOverheat" type="BinHex"/>
+		<field name="sndtpEngineOverheat" type="BinHex"/>
+		<field name="sndEngineOverheatStop" type="BinHex"/>
+		<field name="sndtpEngineOverheatStop" type="BinHex"/>
+		<field name="text_sndLockWheel" type="String"/>
+		<field name="sndLockWheel" type="BinHex"/>
+		<field name="sndtpLockWheel" type="BinHex"/>
+		<field name="text_sndLockBrakes" type="String"/>
+		<field name="sndLockBrakes" type="BinHex"/>
+		<field name="sndtpLockBrakes" type="BinHex"/>
+		<field name="sndLockBrakesStop" type="BinHex"/>
+		<field name="sndtpLockBrakesStop" type="BinHex"/>
+		<field name="text_sndReverseOverheat" type="String"/>
+		<field name="sndReverseOverheat" type="BinHex"/>
+		<field name="sndtpReverseOverheat" type="BinHex"/>
+		<field name="sndReverseOverheatStop" type="BinHex"/>
+		<field name="sndtpReverseOverheatStop" type="BinHex"/>
+	</object>
+</class>

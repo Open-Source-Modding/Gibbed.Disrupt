@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlasmamadcriteriadbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="PMSValues">
+		<object name="plasmapmsPMSComparator">
+			<field name="plasmapmsPMSComparator" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Archetypes">
+		<object name="selArchetype">
+			<field name="selArchetype" type="Enum"/>
+		</object>
+	</object>
+	<object name="Sex">
+		<object name="selSex">
+			<field name="selSex" type="Enum"/>
+		</object>
+	</object>
+</class>

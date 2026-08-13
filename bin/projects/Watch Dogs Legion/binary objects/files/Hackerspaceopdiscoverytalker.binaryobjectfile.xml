@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Hackerspaceopdiscoverytalker">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="HackerspaceopdiscoverytalkerParameters"/>
+		</object>
+	</object>
+</file>

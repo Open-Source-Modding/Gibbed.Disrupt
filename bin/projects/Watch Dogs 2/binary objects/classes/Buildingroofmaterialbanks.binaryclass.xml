@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BuildingroofmaterialbanksParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<object name="MaterialBanks">
+		<object name="MaterialBank">
+			<field name="BankName" type="String"/>
+			<field name="uniqueguididBankId" type="BinHex"/>
+			<field name="logmatLogicMaterialV2" type="BinHex"/>
+			<field name="text_matMaterial" type="String"/>
+			<field name="matMaterial" type="BinHex"/>
+		</object>
+	</object>
+</class>

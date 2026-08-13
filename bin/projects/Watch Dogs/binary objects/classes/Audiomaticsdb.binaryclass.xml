@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AudiomaticsdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="AudioMaticsThemes">
+		<object name="audiomaticsthemedbAudioMaticsThemeDb">
+			<field name="audiomaticsthemedbAudioMaticsThemeDb" type="BinHex"/>
+		</object>
+	</object>
+</class>

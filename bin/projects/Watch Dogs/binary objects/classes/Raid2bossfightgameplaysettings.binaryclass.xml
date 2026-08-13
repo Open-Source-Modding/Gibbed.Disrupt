@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Raid2bossfightgameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="BossFightData">
+		<field name="fDamageZonePeriod" type="Float"/>
+		<field name="fLobbyCinematicBossVisibilityDuration" type="Float"/>
+		<field name="fPostDeathCinematicDuration" type="Float"/>
+		<field name="fBatteryFlashActivationTime" type="Float"/>
+		<field name="selPressurePlatePuzzleOrder" type="Enum"/>
+		<object name="Reinforcements">
+			<field name="fReinforcementStartDelay" type="Float"/>
+			<object name="Reinforcements">
+				<object name="ReinforcementData">
+					<field name="reinforcementgameplaydescriptorHuman" type="BinHex"/>
+					<field name="reinforcementgameplaydescriptorDrone" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PressurePlatePuzzle">
+			<object name="PressurePlatePuzzles">
+				<object name="PressurePlatePuzzlesData">
+					<field name="objectivepressureplatepuzzleDescriptor" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="GodRays">
+			<object name="GodRays">
+				<object name="GodRaysData">
+					<field name="laserwallgameplaydescriptorDescriptor" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="Boss">
+			<object name="WeakpointsId">
+				<object name="WeakpointsId">
+					<field name="entWeakpointId" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="HealthThresholdLinks">
+			<object name="HealthThresholdLinks">
+				<object name="HealthThresholdLinkData">
+					<field name="fHealthTreshold" type="Float"/>
+					<field name="iGodRaysIndex" type="Int32"/>
+					<field name="entDoorId" type="BinHex"/>
+					<field name="entDamageZoneCenterId" type="BinHex"/>
+					<field name="text_psParticle" type="String"/>
+					<field name="psParticle" type="BinHex"/>
+					<field name="text_sndStartSound" type="String"/>
+					<field name="sndStartSound" type="BinHex"/>
+					<field name="text_sndStopSound" type="String"/>
+					<field name="sndStopSound" type="BinHex"/>
+					<field name="sndtpStartSoundType" type="BinHex"/>
+					<field name="sndtpStopSoundType" type="BinHex"/>
+					<object name="WeakpointsIds">
+						<object name="WeakpointsIdsData">
+							<field name="entWeakpointId" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="DamageZoneStim">
+			<field name="text_hidEventName" type="String"/>
+			<field name="hidEventName" type="BinHex"/>
+			<field name="hidTargetEntityId" type="BinHex"/>
+			<field name="sDetail" type="BinHex"/>
+			<field name="selType" type="Enum"/>
+			<field name="bShowCone" type="Boolean"/>
+			<object name="RadiusSettings">
+				<field name="fRadius" type="Float"/>
+			</object>
+			<object name="AltitudeSliceSettings">
+				<field name="fMaxAlt" type="Float"/>
+				<field name="fMinAlt" type="Float"/>
+			</object>
+			<object name="LevelSettings">
+				<field name="fLevel" type="Float"/>
+				<field name="bFalloff" type="Boolean"/>
+				<field name="fFalloffMinLevel" type="Float"/>
+			</object>
+			<object name="EntityRestrictions">
+				<field name="bRestrictToEntities" type="Boolean"/>
+				<field name="bRestrictToPlayers" type="Boolean"/>
+				<field name="bRestrictToNpcs" type="Boolean"/>
+				<field name="bRestrictToCivilians" type="Boolean"/>
+				<field name="bRestrictToVehicles" type="Boolean"/>
+				<field name="bRestrictToCiviliansDriver" type="Boolean"/>
+				<field name="bRestrictToAnimal" type="Boolean"/>
+				<field name="bRestrictToSimpleAnimal" type="Boolean"/>
+				<field name="bRestrictToRobot" type="Boolean"/>
+				<field name="bRestrictToActivatedDrone" type="Boolean"/>
+				<field name="bRestrictToStandbyDrone" type="Boolean"/>
+				<field name="bRestrictToTurret" type="Boolean"/>
+			</object>
+		</object>
+		<object name="Batteries">
+			<object name="BatteriesData">
+				<field name="entBatteryId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="curveBatteryFlashCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="PostDeath">
+			<object name="EntitiesToHide">
+				<object name="EntitiesData">
+					<field name="entEntityData" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="StateDuration">
+			<field name="fBooting" type="Float"/>
+			<field name="fGodRays" type="Float"/>
+			<field name="fBreak" type="Float"/>
+			<field name="fWipe" type="Float"/>
+		</object>
+		<object name="SFX">
+			<field name="BossIntroBark" type="BinHex"/>
+			<field name="text_sndWipeCharge" type="String"/>
+			<field name="sndWipeCharge" type="BinHex"/>
+			<field name="text_sndWipeChargeStop" type="String"/>
+			<field name="sndWipeChargeStop" type="BinHex"/>
+			<field name="text_sndWipeAttack" type="String"/>
+			<field name="sndWipeAttack" type="BinHex"/>
+			<field name="text_sndBatteryStartCharging" type="String"/>
+			<field name="sndBatteryStartCharging" type="BinHex"/>
+			<field name="text_sndBatteryStopCharging" type="String"/>
+			<field name="sndBatteryStopCharging" type="BinHex"/>
+			<field name="text_sndBatteryCharged" type="String"/>
+			<field name="sndBatteryCharged" type="BinHex"/>
+			<field name="text_sndSuperMindjack" type="String"/>
+			<field name="sndSuperMindjack" type="BinHex"/>
+			<field name="sndtpWipeChargeType" type="BinHex"/>
+			<field name="sndtpWipeChargeStopType" type="BinHex"/>
+			<field name="sndtpWipeAttackType" type="BinHex"/>
+			<field name="sndtpBatteryStartChargingType" type="BinHex"/>
+			<field name="sndtpBatteryStopChargingType" type="BinHex"/>
+			<field name="sndtpBatteryChargedType" type="BinHex"/>
+			<field name="sndtpSuperMindjackType" type="BinHex"/>
+			<object name="StepTransitionBarks">
+				<object name="StepTransitionBarksData">
+					<field name="text_Bark" type="String"/>
+					<field name="Bark" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="VFX">
+			<field name="text_psWipeCharge" type="String"/>
+			<field name="psWipeCharge" type="BinHex"/>
+			<field name="text_psWipeAttack" type="String"/>
+			<field name="psWipeAttack" type="BinHex"/>
+			<field name="text_psIntroCinematic" type="String"/>
+			<field name="psIntroCinematic" type="BinHex"/>
+			<field name="WipeDamagePostFX" type="BinHex"/>
+			<field name="text_psBatteryChargfe" type="String"/>
+			<field name="psBatteryChargfe" type="BinHex"/>
+			<field name="vectorVFXLinkOffset" type="Vector3"/>
+			<object name="LinksBattery">
+				<object name="LinkBatteryData">
+					<field name="text_psLinkBattery" type="String"/>
+					<field name="psLinkBattery" type="BinHex"/>
+				</object>
+			</object>
+			<object name="LinksHologram">
+				<object name="LinkHologramData">
+					<field name="text_psLinkHologram" type="String"/>
+					<field name="psLinkHologram" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="UIMessages">
+			<field name="fWarningDuration" type="Float"/>
+			<object name="locstridWeakspotOpening">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridwarningAttemptsLeftHeader">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridwarningAttemptsLeftHeaderSingular">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridwarningAttemptsSuccesful">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridwarningTimeHasRunOut">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

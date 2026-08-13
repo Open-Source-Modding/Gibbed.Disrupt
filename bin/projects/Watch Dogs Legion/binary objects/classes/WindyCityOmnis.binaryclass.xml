@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WindyCityOmnisParameters">
+	<object name="Entity">
+		<field name="hidName" type="String"/>
+		<field name="disEntityId" type="BinHex"/>
+		<field name="text_hidEntityClass" type="String"/>
+		<field name="hidEntityClass" type="BinHex"/>
+		<field name="hidResourceCount" type="BinHex"/>
+		<field name="hidPos" type="Vector3"/>
+		<field name="hidAngles" type="Vector3"/>
+		<field name="hidPos_precise" type="Vector3"/>
+		<field name="hidConstEntity" type="BinHex"/>
+		<field name="wlucatLoadingUnitCategory" type="BinHex"/>
+		<field name="bPoolable" type="Boolean"/>
+		<field name="bEnableLocalProperties" type="Boolean"/>
+		<field name="bPoolClearOnUnused" type="Boolean"/>
+		<object name="hidGroupIds"/>
+		<object name="hidBBox">
+			<field name="vectorBBoxMin" type="Vector3"/>
+			<field name="vectorBBoxMax" type="Vector3"/>
+		</object>
+		<object name="Components">
+			<object name="CLightEffectComponent">
+				<field name="hidHasAliasName" type="BinHex"/>
+				<field name="bEnable" type="Boolean"/>
+				<field name="lighteffectprefabPrefabLightEffect" type="BinHex"/>
+				<field name="text_fileTexture" type="String"/>
+				<field name="fileTexture" type="BinHex"/>
+				<field name="selType" type="Enum"/>
+				<field name="hidType" type="BinHex"/>
+				<field name="fSizeX" type="Float"/>
+				<field name="fSizeY" type="Float"/>
+				<field name="fScaleToCamera" type="Float"/>
+				<field name="bSmoothDepth" type="Boolean"/>
+				<field name="fVisibilitySize" type="Float"/>
+				<field name="fVisibilityBlendRate" type="Float"/>
+				<field name="bHighPrecisionVisibilityTest" type="Boolean"/>
+				<field name="fScaleNoise" type="Float"/>
+				<field name="fFadeAngle" type="Float"/>
+				<field name="clrColor" type="VectorColor"/>
+				<field name="fIntensity" type="Float"/>
+				<field name="iNumFlareElements" type="Int32"/>
+				<field name="uiTextureSliceCount" type="Int64"/>
+				<field name="ScreenFadeOutRadius" type="Float"/>
+				<field name="ScreenFadeOutIntensity" type="Float"/>
+				<field name="bDirectional" type="Boolean"/>
+				<field name="bUseLightColour" type="Boolean"/>
+				<field name="bUseLightDistanceFade" type="Boolean"/>
+				<field name="bUseLightIntensity" type="Boolean"/>
+				<field name="bAffectedByTimeOfDay" type="Boolean"/>
+				<field name="uiLightIntensityCurveIndex" type="Int64"/>
+				<field name="bSmoothTimeOfDayFade" type="Boolean"/>
+				<field name="fMinTimeOfDayFadeIntensity" type="Float"/>
+				<field name="bNeedsElectricPower" type="Boolean"/>
+				<field name="bHasElectricBackup" type="Boolean"/>
+				<object name="OffsetToCamera">
+					<field name="fMinOffset" type="Float"/>
+					<field name="fMaxOffset" type="Float"/>
+					<field name="fMinDistance" type="Float"/>
+					<field name="fMaxDistance" type="Float"/>
+				</object>
+				<object name="Rain">
+					<field name="bRainLightEnabled" type="Boolean"/>
+					<field name="bRainFogCone" type="Boolean"/>
+					<field name="bRainUseQuadraticAttenuation" type="Boolean"/>
+					<field name="angRainFalloffAngle" type="Float"/>
+					<field name="fRainOffset" type="Float"/>
+					<field name="fRainFalloffDistance" type="Float"/>
+					<field name="fRainLightIntensity" type="Float"/>
+					<field name="fSpotLightFogIntensity" type="Float"/>
+					<field name="fBeamHighlightSeparationIntensity" type="Float"/>
+					<field name="fBeamHighlightSeparationThreshold" type="Float"/>
+					<field name="fBeamHighlightSeparationFalloff" type="Float"/>
+					<field name="angRainVerticalRotation" type="Float"/>
+				</object>
+				<object name="FlareElements">
+					<object name="FlareElement">
+						<field name="fScale" type="Float"/>
+						<field name="fScaleMin" type="Float"/>
+						<field name="fScaleMinThreshold" type="Float"/>
+						<field name="fOffset" type="Float"/>
+						<field name="iTextureSliceIndex" type="Int32"/>
+						<field name="vectorColor" type="Vector3"/>
+						<field name="fRotationXAmount" type="Float"/>
+						<field name="fRotationYAmount" type="Float"/>
+						<field name="fFadeAngle" type="Float"/>
+					</object>
+				</object>
+			</object>
+			<object name="CEventComponent">
+				<field name="hidHasAliasName" type="BinHex"/>
+				<object name="hidLinks"/>
+				<object name="hidBatchedLinks"/>
+			</object>
+		</object>
+	</object>
+</class>

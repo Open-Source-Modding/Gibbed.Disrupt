@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WeapontriggereffectsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bHaveManualPulling" type="Boolean"/>
+	<field name="iPullingPosition" type="Int32"/>
+	<field name="iFirePosition" type="Int32"/>
+	<field name="iTriggerStrength" type="Int32"/>
+	<field name="iVibrationAmplitude" type="Int32"/>
+	<field name="iVibrationFrequency" type="Int32"/>
+</class>

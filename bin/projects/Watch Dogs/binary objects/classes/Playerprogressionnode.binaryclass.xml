@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlayerprogressionnodeParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Level">
+		<field name="uiNodeLevel" type="Int64"/>
+	</object>
+	<object name="Descriptor">
+		<field name="text_progressionbasicdescriptoridProgressionDescriptorId" type="String"/>
+		<field name="progressionbasicdescriptoridProgressionDescriptorId" type="BinHex"/>
+		<object name="ProgressionDescriptor">
+			<field name="sNodeTextureName" type="BinHex"/>
+			<field name="fSectionPercentage" type="Float"/>
+			<field name="collectableitemsCollectableitems" type="BinHex"/>
+			<field name="itemsItem" type="BinHex"/>
+			<field name="perkdescsinglePerkSingle" type="BinHex"/>
+			<field name="perkdescmultiPerkMulti" type="BinHex"/>
+			<object name="ProgressionNodeRequirements">
+				<object name="ProgressionNodeRequirements">
+					<field name="progressionnoderequirementProgressionNodeRequirement" type="BinHex"/>
+				</object>
+			</object>
+			<object name="DisplayRequirements">
+				<object name="DisplayRequirements">
+					<field name="progressionnoderequirementDisplayRequirement" type="BinHex"/>
+				</object>
+			</object>
+			<object name="NodeCurrency">
+				<field name="selCurrencyType" type="Enum"/>
+				<field name="uCurrencyAmount" type="Int64"/>
+			</object>
+			<object name="NodeDisplay">
+				<field name="colorNodeColor" type="VectorColor"/>
+				<field name="sNodeMovieClipName" type="String"/>
+				<field name="sNodeVideoName" type="String"/>
+				<field name="sNodeTextureName" type="String"/>
+			</object>
+			<object name="locstridName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridLongDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="ChildNodes">
+		<object name="ChildNodes">
+			<object name="playerprogressionnodeChildNode">
+				<field name="playerprogressionnodeChildNode" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Width">
+		<field name="uiNodeWidth" type="Int64"/>
+	</object>
+</class>

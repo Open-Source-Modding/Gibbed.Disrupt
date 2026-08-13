@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BareknuckleinteractfightsconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="IndividualFightsVector">
+		<object name="IndividualFights">
+			<field name="bareknucklefightFight" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ExtraFightsVector">
+		<object name="ExtraFights">
+			<field name="bareknucklefightFight" type="BinHex"/>
+		</object>
+	</object>
+</class>

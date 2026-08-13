@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dgsceneglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archDefaultZone" type="String"/>
+	<field name="archDefaultZone" type="BinHex"/>
+	<field name="text_archDefaultDebugAnnotationText" type="String"/>
+	<field name="archDefaultDebugAnnotationText" type="BinHex"/>
+	<object name="VehicleAdapterDefinition">
+		<object name="DGSceneVehicleBankAdapterCollection">
+			<object name="Adapter">
+				<object name="MatchingPlayerCounts">
+					<object name="uiPlayerCount">
+						<field name="uiPlayerCount" type="UInt32"/>
+					</object>
+				</object>
+				<object name="VehicleBankCollection">
+					<object name="vehiclesbankVehicleBank">
+						<field name="vehiclesbankVehicleBank" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

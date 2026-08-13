@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Aimodifiermanagerconfig_74498242">
+	<object name="obj">
+		<inherit name="Aimodifiermanagerconfig_74498242Parameters"/>
+	</object>
+</file>

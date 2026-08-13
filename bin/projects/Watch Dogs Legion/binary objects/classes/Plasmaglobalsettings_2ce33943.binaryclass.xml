@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Plasmaglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiMinRequestLenFrames" type="UInt32"/>
+	<field name="iTalkRequestOffsetFrames" type="Int32"/>
+	<field name="fUninterruptibleCostFactor" type="Float"/>
+	<field name="fSeenCostFactor" type="Float"/>
+	<field name="fFilterCutoffCost" type="Float"/>
+	<field name="fScoreCutoffCost" type="Float"/>
+	<field name="uiMaximumSelectionResults" type="UInt32"/>
+	<field name="fFocusMatchCostFactor" type="Float"/>
+	<field name="fEmotionMatchCostFactor" type="Float"/>
+	<field name="fEmotionFallbackCostFactor" type="Float"/>
+	<field name="fEmotionNeutralCostFactor" type="Float"/>
+	<field name="fIntensityMatchCostFactor" type="Float"/>
+	<field name="fIntensityHighToLowCostFactor" type="Float"/>
+	<field name="fIntensityNeutralCostFactor" type="Float"/>
+	<field name="fGestureSeenCostFactor" type="Float"/>
+	<field name="fGestureFilterCutoffCost" type="Float"/>
+	<field name="uiGestureMinGapFrames" type="UInt32"/>
+	<field name="uiblendFrames" type="BinHex"/>
+	<field name="uiCameraCutLayerblendFrames" type="UInt32"/>
+	<field name="uiStartFramesWithNoBlend" type="UInt32"/>
+	<field name="bUseVelocityBlend" type="Boolean"/>
+	<field name="fVelocityBlendMaxDist" type="Float"/>
+	<field name="fVelocityBlendAvgFactor" type="Float"/>
+	<field name="fVelocityBlendMinTimeFactor" type="Float"/>
+	<field name="uiLookatStartupFrames" type="UInt32"/>
+	<field name="text_sndSetYTalkerStateEvent" type="String"/>
+	<field name="sndSetYTalkerStateEvent" type="BinHex"/>
+	<field name="sndtpSetYTalkerStateEventType" type="BinHex"/>
+	<field name="text_sndRemoveYTalkerStateEvent" type="String"/>
+	<field name="sndRemoveYTalkerStateEvent" type="BinHex"/>
+	<field name="sndtpRemoveYTalkerStateEventType" type="BinHex"/>
+</class>

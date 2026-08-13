@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Loottruckasinstigatedhuntervsseamlesstargetmatchingsessionconfig_6be6859fParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="BinHex"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="BinHex"/>
+	<field name="text_hidName" type="BinHex"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="fWeight" type="BinHex"/>
+	<field name="fScoreOffset" type="BinHex"/>
+	<object name="MergingLogicStrategiesConfig">
+		<field name="disNomadObjectId" type="BinHex"/>
+		<field name="hidSingleObject" type="BinHex"/>
+		<field name="hidKey" type="BinHex"/>
+		<field name="hidValidationFailed" type="BinHex"/>
+		<field name="hidName" type="BinHex"/>
+		<object name="CandidateMergeLogicConfig">
+			<field name="disNomadObjectId" type="BinHex"/>
+			<field name="hidSingleObject" type="BinHex"/>
+			<field name="hidKey" type="BinHex"/>
+			<field name="hidValidationFailed" type="BinHex"/>
+			<field name="hidName" type="BinHex"/>
+			<field name="fSeamlessStrategyTime" type="BinHex"/>
+			<field name="fLowImpactStrategyTime" type="BinHex"/>
+			<field name="fHighImpactStrategyTime" type="BinHex"/>
+		</object>
+		<object name="ParticipantMergeLogicConfig">
+			<field name="disNomadObjectId" type="BinHex"/>
+			<field name="hidSingleObject" type="BinHex"/>
+			<field name="hidKey" type="BinHex"/>
+			<field name="hidValidationFailed" type="BinHex"/>
+			<field name="hidName" type="BinHex"/>
+			<field name="fSeamlessStrategyTime" type="BinHex"/>
+			<field name="fLowImpactStrategyTime" type="BinHex"/>
+			<field name="fHighImpactStrategyTime" type="BinHex"/>
+		</object>
+	</object>
+	<object name="AvailabilityConfig">
+		<field name="disNomadObjectId" type="BinHex"/>
+		<field name="hidSingleObject" type="BinHex"/>
+		<field name="hidKey" type="BinHex"/>
+		<field name="hidValidationFailed" type="BinHex"/>
+		<field name="hidName" type="BinHex"/>
+		<field name="fWeight" type="BinHex"/>
+		<field name="fScoreOffset" type="BinHex"/>
+		<field name="selOnlineActivityType" type="BinHex"/>
+		<field name="selAttractedToType" type="BinHex"/>
+		<field name="selLocomotionType" type="BinHex"/>
+		<field name="selAttractedToLocomotionType" type="BinHex"/>
+	</object>
+</class>

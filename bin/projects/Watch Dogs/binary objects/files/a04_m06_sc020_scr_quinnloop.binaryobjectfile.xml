@@ -1,0 +1,5 @@
+<file name="a04_m06_sc020_scr_quinnloop" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

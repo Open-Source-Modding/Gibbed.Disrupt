@@ -1,0 +1,13 @@
+<class name="CSecondaryMotionColliderClip">
+    <object name="CSecondaryMotionColliderClip">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field name="timeStartTime" type="Float"/>
+      <field name="timeDuration" type="Float"/>
+      <field name="timeEndTime" type="Float"/>
+      <field name="hidResizable" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+      <field name="ColliderTrackObjectId" type="BinHex"/>
+    </object>
+</class>

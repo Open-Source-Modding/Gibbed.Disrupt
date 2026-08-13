@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivepressureplatepuzzlesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="PressurePlatePuzzleData">
+		<field name="fPuzzleCompletionTime" type="Float"/>
+		<field name="fNextPlateDelay" type="Float"/>
+		<field name="fActivationFailureFeedbackDuration" type="Float"/>
+		<field name="fDelayedStartEventDuration" type="Float"/>
+		<field name="bNeedToStayOnPreviousPlate" type="Boolean"/>
+		<field name="fWarningDuration" type="Float"/>
+		<field name="text_sndStartSound" type="String"/>
+		<field name="sndStartSound" type="BinHex"/>
+		<field name="sndtpStartSoundType" type="BinHex"/>
+		<field name="fMaxWarningProximity" type="Float"/>
+		<object name="StartWarning">
+			<object name="locstridWarningContent">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="SuccessWarning">
+			<object name="locstridWarningContent">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="ResetWarning">
+			<object name="locstridWarningContent">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="FailureWarning">
+			<object name="locstridWarningContent">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="locstridNewPodActiveLogId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPodExpiredLogId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="Sequences">
+			<field name="bUseDesignedSequences" type="Boolean"/>
+			<object name="PressurePlates">
+				<object name="PressurePlateEntityId">
+					<field name="entPressurePlateEntityId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="DesignedSequences">
+				<object name="Sequence">
+					<object name="Sequence">
+						<object name="PlateIndex">
+							<field name="entPlateEntityId" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

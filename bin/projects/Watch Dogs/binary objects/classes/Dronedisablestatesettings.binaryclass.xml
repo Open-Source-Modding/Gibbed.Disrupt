@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronedisablestatesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bVulnerableOnlyWhenDisable" type="Boolean"/>
+	<field name="bUseParticle" type="Boolean"/>
+</class>

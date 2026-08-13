@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Raidmanagersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="selRaidStatus" type="Enum"/>
+	<field name="selDirectActionStatus" type="Enum"/>
+	<field name="fRaidStartCountdownTimer" type="Float"/>
+	<field name="fRaidEndTimer" type="Float"/>
+	<field name="fDirectActionEndTimer" type="Float"/>
+	<field name="fRaidWaitForHostPositionTimer" type="Float"/>
+	<field name="fRaidCompelteReturnToSandboxTimer" type="Float"/>
+	<object name="IsAvailableRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="IsDirectActionAvailableRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="RaidActivityList">
+		<object name="raidactivitysettingsRaidActivitySettings">
+			<field name="raidactivitysettingsRaidActivitySettings" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridRaidEndLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdPlayerDeath">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdPlayerStun">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdPlayerOoB">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdObjectiveOoB">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdDeathByGorgonDrone">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdDeathByLaserWall">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdDeathByWipeCriticalHealth">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdDeathByWipeRoomFailed">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdDeathByWipeDroneCountReach">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdDeathBySuperMindjack">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFailLocIdMindjackVisionLost">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridReturnToSandboxCountdownLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridReturnToSandboxHintLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDifficultyLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridWaitingForPlayerLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="RaidLobbySettings">
+		<field name="shopparamspresetWardrobeShopParamsPreset" type="BinHex"/>
+		<field name="loadoutparamspresetLoadoutParamsPreset" type="BinHex"/>
+		<field name="lobbyparamspresetLobbyParamsPreset" type="BinHex"/>
+		<field name="lobbyoutroparamspresetLobbyOutroParamsPreset" type="BinHex"/>
+	</object>
+</class>

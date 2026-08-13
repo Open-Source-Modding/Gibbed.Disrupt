@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Plasmamadblendsettingsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PlasmaBlendSettings">
+		<object name="BlendSettings">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+			<field name="selLayerMode" type="Enum"/>
+			<field name="fCameraWeightShift" type="Float"/>
+			<field name="fPelvis" type="Float"/>
+			<field name="fLowerBack" type="Float"/>
+			<field name="fMiddleBack" type="Float"/>
+			<field name="fUpperBack" type="Float"/>
+			<field name="fLeftUpperArm" type="Float"/>
+			<field name="fLeftForeArm" type="Float"/>
+			<field name="fLeftHand" type="Float"/>
+			<field name="fRUpperArm" type="Float"/>
+			<field name="fRightForeArm" type="Float"/>
+			<field name="fRightHand" type="Float"/>
+			<field name="fNeck" type="Float"/>
+			<field name="fHead" type="Float"/>
+			<field name="fLeftThigh" type="Float"/>
+			<field name="fLeftCalf" type="Float"/>
+			<field name="fLeftFoot" type="Float"/>
+			<field name="fLeftToe" type="Float"/>
+			<field name="fRightThigh" type="Float"/>
+			<field name="fRightCalf" type="Float"/>
+			<field name="fRightFoot" type="Float"/>
+			<field name="fRightToe" type="Float"/>
+			<object name="Overrides">
+				<object name="Override">
+					<object name="OverridePMS">
+						<field name="selCompareType" type="Enum"/>
+						<object name="PmsValue">
+							<field name="text_pmsPMSName" type="String"/>
+							<field name="pmsPMSName" type="BinHex"/>
+							<field name="selEnumValue" type="Enum"/>
+						</object>
+					</object>
+					<object name="OverrideJoints">
+						<object name="override">
+							<field name="selOverrideJoint" type="Enum"/>
+							<field name="value" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

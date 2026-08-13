@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UinavigationbehavioursParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_uinavigationbehaviourtypeidBehaviourType" type="String"/>
+	<field name="uinavigationbehaviourtypeidBehaviourType" type="BinHex"/>
+	<object name="BehaviourProperties">
+		<field name="uMaxItemWidth" type="BinHex"/>
+		<field name="uMinItemWidth" type="BinHex"/>
+		<field name="uiBehaviourWindowSizeX" type="UInt32"/>
+		<field name="uiBehaviourWindowSizeY" type="UInt32"/>
+		<field name="uiBehaviourOriginPositionX" type="UInt32"/>
+		<field name="uiBehaviourOriginPositionY" type="UInt32"/>
+		<field name="bUseWrapping" type="Boolean"/>
+	</object>
+</class>

@@ -1,0 +1,5 @@
+<file name="start_opening_subtitles" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

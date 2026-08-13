@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FacialposedefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_filePoseDefinitionFileName" type="String"/>
+	<field name="filePoseDefinitionFileName" type="BinHex"/>
+	<field name="fileBindposeDefinitionFileName" type="BinHex"/>
+	<field name="fileFacebuilderDefinitionFileName" type="BinHex"/>
+	<field name="posewrinklemasksetPoseWrinkleMaskSet" type="BinHex"/>
+	<field name="poseblendshapessetPoseBlendShapesSet" type="BinHex"/>
+</class>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclesafedrivingconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fSpeedLimitRatio" type="Float"/>
+	<field name="fThrottleModifier" type="Float"/>
+	<field name="fBrakeModifier" type="Float"/>
+	<field name="fLaneSwitchUrgency" type="Float"/>
+	<field name="fLaneSwitchIntersectionDist" type="Float"/>
+	<field name="fLaneSwitchTravelDist" type="Float"/>
+</class>

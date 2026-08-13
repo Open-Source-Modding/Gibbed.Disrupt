@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmoduleuisettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<field name="texturedbobjectDataDriveAudioTexture" type="BinHex"/>
+		<field name="texturedbobjectDataDriveVideoTexture" type="BinHex"/>
+		<field name="texturedbobjectDataDriveTextTexture" type="BinHex"/>
+		<field name="texturedbobjectDataDriveImageTexture" type="BinHex"/>
+		<field name="texturedbobjectTechPointTexture" type="BinHex"/>
+		<object name="locstridDSITokensGainedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridWDCreditsGainedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSeasonPassAcquiredTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSeasonPassAcquiredDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardCryptoGainedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardCryptoConsumedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardCryptoGainedDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardDataDriveAudioAcquiredTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardDataDriveVideoAcquiredTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardDataDriveTextAcquiredTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardDataDriveImageAcquiredTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardRaidModeUnlockedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardRaidModeUnlockedSubtitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardAdditionalTeamSlotTitleLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardAdditionalTeamSlotGainedDescriptionLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRewardTechPointAcquiredTitleLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="isRaidsUnlockeByProgression">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="isOnlineOnboardingForceCompleted">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

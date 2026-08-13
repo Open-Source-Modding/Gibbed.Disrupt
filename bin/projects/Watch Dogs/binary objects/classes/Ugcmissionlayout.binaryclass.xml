@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UgcmissionlayoutParameters">
+	<inherit name="SharedParameters"/>
+	<field name="MissionLayerName" type="String"/>
+	<field name="entTargetMarkerEntity" type="BinHex"/>
+	<field name="entAreaMarkerEntity" type="BinHex"/>
+</class>

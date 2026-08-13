@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UitobiicleanuiconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uitweensettingTobiiCleanUITweenSetting" type="BinHex"/>
+	<field name="bUseCustomBoundingBox" type="Boolean"/>
+	<object name="BoundingBox">
+		<field name="vectorBBoxMin" type="Vector3"/>
+		<field name="vectorBBoxMax" type="Vector3"/>
+	</object>
+	<object name="UIElements">
+		<object name="UIElementSettingsUIElementSetting">
+			<field name="uielementsettingsUIElementSetting" type="BinHex"/>
+		</object>
+	</object>
+</class>

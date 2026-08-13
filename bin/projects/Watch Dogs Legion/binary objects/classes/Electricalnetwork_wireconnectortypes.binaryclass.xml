@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Electricalnetwork_wireconnectortypesParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="LegacyTypeId" type="BinHex"/>
+	<field name="text_fileModel" type="BinHex"/>
+	<field name="clrColor" type="VectorColor"/>
+	<field name="fileModel" type="BinHex"/>
+</class>

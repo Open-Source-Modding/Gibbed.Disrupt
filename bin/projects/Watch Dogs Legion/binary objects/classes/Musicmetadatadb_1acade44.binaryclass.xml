@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Musicmetadatadb_1acade44Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="MusicMetadata">
+		<object name="MetadataEntry">
+			<field name="text_Metadata" type="String"/>
+			<field name="Metadata" type="BinHex"/>
+			<object name="locstridAlbum">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridArtist">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridTrack">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

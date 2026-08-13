@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Watersplines.fcbParameters">
+	<object name="Splines">
+		<object name="Element">
+			<object name="Element">
+				<field name="SettingIndex" type="BinHex"/>
+				<object name="Spline">
+					<object name="CSplineKnot">
+						<field name="Point" type="Vector3"/>
+						<field name="Tangentin" type="Vector3"/>
+						<field name="Tangentout" type="Vector3"/>
+						<field name="Width" type="Float"/>
+						<field name="Length" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="FlowSettings">
+		<object name="Flow">
+			<field name="WaterColor" type="Vector3"/>
+			<field name="FlowSpeed" type="Float"/>
+			<field name="TangentFlowSpeed" type="Float"/>
+			<field name="text_fileFlowTexture" type="String"/>
+			<field name="fileFlowTexture" type="BinHex"/>
+			<field name="fFlowTextureSize" type="Float"/>
+			<field name="fFlowDisplacementScale" type="Float"/>
+			<field name="fAttenuation" type="Float"/>
+			<field name="fWaveIntensity" type="Float"/>
+			<field name="fWaveIntensityStormy" type="Float"/>
+			<field name="fFoamIntensity" type="Float"/>
+			<field name="fDebrisIntensity" type="Float"/>
+			<field name="UsedInWaterMask" type="Boolean"/>
+		</object>
+	</object>
+</class>

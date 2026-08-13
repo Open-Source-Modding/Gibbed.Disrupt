@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Drunkparameters_235c28b4Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="selInteractionReaction" type="Enum"/>
+	<field name="fInteractionReactionLevel" type="Float"/>
+	<field name="fDartsProximityDistance" type="Float"/>
+	<field name="fDartsNotificationTime" type="Float"/>
+	<field name="fDrunkLevelPerDrink" type="Float"/>
+	<field name="fDrunkLevelMinLimit" type="Float"/>
+	<field name="fDrunkLevelTotalLimit" type="Float"/>
+	<field name="fDrunkLevelFilterSpeed" type="Float"/>
+	<field name="fHalvingPeriod" type="Float"/>
+	<field name="fSpikeRatio" type="Float"/>
+	<field name="fSpikeHalvingPeriod" type="Float"/>
+	<field name="fSpikeSpeedFactor" type="Float"/>
+	<field name="fSpikeMinimumTimeInterval" type="Float"/>
+	<field name="fSpikeMaximumTimeInterval" type="Float"/>
+	<field name="fMinimumLevelForSpikesToHappen" type="Float"/>
+	<field name="iNumberOfDrinksToPassOut" type="Int32"/>
+	<field name="fHungoverUnavailableTime" type="Float"/>
+	<field name="fDrunkStateLow" type="Float"/>
+	<field name="fDrunkStateMedium" type="Float"/>
+	<field name="fDrunkStateHigh" type="Float"/>
+	<field name="fDrunkStimSendInterval" type="Float"/>
+	<field name="stimsDrunkStateLowStim" type="BinHex"/>
+	<field name="stimsDrunkStateMediumStim" type="BinHex"/>
+	<field name="stimsDrunkStateHighStim" type="BinHex"/>
+	<field name="vectorDrunkEffectsTintOuterMin" type="Vector3"/>
+	<field name="vectorDrunkEffectsTintOuterMax" type="Vector3"/>
+	<field name="fDrunkEffectsBlurDrunknessMax" type="Float"/>
+	<field name="fDrunkEffectsBlurDefocusRateMax" type="Float"/>
+	<field name="fDrunkEffectsBlurCenterSpotSizeMax" type="Float"/>
+	<field name="fDrunkEffectsBlurRadialFalloffMax" type="Float"/>
+	<field name="fDrunkEffectsBlurFactorMax" type="Float"/>
+	<field name="fRandomAdjustmentAmount" type="Float"/>
+	<field name="fDrunkEffectsFadeInOutTime" type="Float"/>
+	<field name="text_sndSoundStartEvent" type="String"/>
+	<field name="sndSoundStartEvent" type="BinHex"/>
+	<field name="text_sndSoundEndEvent" type="String"/>
+	<field name="sndSoundEndEvent" type="BinHex"/>
+	<field name="sndtpSoundStartEventType" type="BinHex"/>
+	<field name="sndtpSoundEndEventType" type="BinHex"/>
+	<field name="bIsFOVAffected" type="Boolean"/>
+	<field name="fCameraJumpFactorForSpike" type="Float"/>
+	<field name="fCameraJumpSpeedForSpike" type="Float"/>
+	<field name="fCameraJumpDelayForSpike" type="Float"/>
+	<field name="fMinimumAnimationTimerInterval" type="Float"/>
+	<field name="fMaximumAnimationTimerInterval" type="Float"/>
+	<field name="fMinimumTimeBetweenAnimations" type="Float"/>
+	<field name="fHungoverFallTimer" type="Float"/>
+	<field name="fYInteractLockTimeWhenFallingDown" type="Float"/>
+	<field name="bAllowSafeCut" type="Boolean"/>
+	<field name="selAnimationReaction" type="Enum"/>
+	<field name="text_fileHungoverShortAnimation" type="String"/>
+	<field name="fileHungoverShortAnimation" type="BinHex"/>
+	<field name="text_fileHungoverAnimation" type="String"/>
+	<field name="fileHungoverAnimation" type="BinHex"/>
+	<field name="text_fileHungoverAnimationLoop" type="String"/>
+	<field name="fileHungoverAnimationLoop" type="BinHex"/>
+	<field name="fAttentionRequestTime" type="Float"/>
+	<field name="fDrunkLevelToBeginBarking" type="Float"/>
+	<field name="text_NewDrunkLevelBarkId" type="String"/>
+	<field name="NewDrunkLevelBarkId" type="BinHex"/>
+	<field name="fBagleyDartsPhoneCommCooldown" type="Float"/>
+	<field name="phonecommunicationsettingsBagleyDarts" type="BinHex"/>
+	<field name="phonecommunicationsettingsBagleyRandom" type="BinHex"/>
+	<object name="DeniedTags"/>
+	<object name="AllowedTags"/>
+	<object name="locstridNotificationLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="DrunkLevelDecreaseSpeed">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="locstridMaleAppHungoverLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFemaleAppHungoverLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridOperativeRecoveredLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="Effects">
+		<object name="drunkeffectconfigEffect">
+			<field name="drunkeffectconfigEffect" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ColorIntensityPoints"/>
+	<object name="sndvarSoundRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="AllowOperativePassOut">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="CarStateAnimationList"/>
+	<object name="WalkStateAnimationList">
+		<object name="Animation">
+			<field name="text_fileAnimationPath" type="String"/>
+			<field name="fileAnimationPath" type="BinHex"/>
+			<field name="bIsUsingSpikeTimer" type="Boolean"/>
+			<field name="fDrunkLevelLimitUpper" type="Float"/>
+			<field name="fDrunkLevelLimitLower" type="Float"/>
+			<field name="fProbabilityWeight" type="Float"/>
+			<field name="fCameraJumpFactorForAnimation" type="Float"/>
+			<field name="fCameraJumpSpeedForAnimation" type="Float"/>
+			<field name="fCameraJumpDelayForAnimation" type="Float"/>
+		</object>
+	</object>
+</class>

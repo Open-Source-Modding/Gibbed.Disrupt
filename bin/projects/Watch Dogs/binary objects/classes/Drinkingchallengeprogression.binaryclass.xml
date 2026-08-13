@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DrinkingchallengeprogressionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="colorLeftMainColor" type="VectorColor"/>
+	<field name="colorLeftLightColor" type="VectorColor"/>
+	<field name="colorLeftDarkColor" type="VectorColor"/>
+	<field name="colorRightMainColor" type="VectorColor"/>
+	<field name="colorRightLightColor" type="VectorColor"/>
+	<field name="colorRightDarkColor" type="VectorColor"/>
+	<field name="colorMysteryMainColor" type="VectorColor"/>
+	<field name="colorMysteryLightColor" type="VectorColor"/>
+	<field name="colorMysteryDarkColor" type="VectorColor"/>
+	<field name="colorDizzyLeftMainColor" type="VectorColor"/>
+	<field name="colorDizzyLeftLightColor" type="VectorColor"/>
+	<field name="colorDizzyLeftDarkColor" type="VectorColor"/>
+	<field name="colorDizzyRightMainColor" type="VectorColor"/>
+	<field name="colorDizzyRightLightColor" type="VectorColor"/>
+	<field name="colorDizzyRightDarkColor" type="VectorColor"/>
+	<field name="vec2ScreenMin" type="Vector2"/>
+	<field name="vec2ScreenMax" type="Vector2"/>
+	<object name="Levels">
+		<object name="drinkingchallengeprogressionlevelElement">
+			<field name="drinkingchallengeprogressionlevelElement" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VisionEffectFail">
+		<field name="fFadeOutTime" type="Float"/>
+		<field name="fBlurFactor" type="Float"/>
+		<field name="fMaxBlendTarget" type="Float"/>
+		<field name="fMaxInebriation" type="Float"/>
+		<field name="fViewportOffset" type="Float"/>
+	</object>
+	<object name="VisionEffectWon">
+		<field name="fFadeOutTime" type="Float"/>
+		<field name="fBlurFactor" type="Float"/>
+		<field name="fMaxBlendTarget" type="Float"/>
+		<field name="fMaxInebriation" type="Float"/>
+		<field name="fViewportOffset" type="Float"/>
+	</object>
+	<object name="VisionEffectQuit">
+		<field name="fFadeOutMaxTime" type="BinHex"/>
+		<field name="fBlurFactor" type="Float"/>
+		<field name="fMaxBlendTarget" type="Float"/>
+		<field name="fMaxInebriation" type="Float"/>
+		<field name="fViewportOffset" type="Float"/>
+	</object>
+	<object name="FailLocations">
+		<object name="SFailLocationSetting">
+			<field name="selType" type="Enum"/>
+			<field name="vectorPosition" type="Vector3"/>
+			<field name="vectorHeading" type="Vector3"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,5 @@
+<file name="a01_m10_sc090_scr_laundryguards_aidenincoverr" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

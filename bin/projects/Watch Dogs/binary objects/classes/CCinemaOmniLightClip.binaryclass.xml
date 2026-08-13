@@ -1,0 +1,61 @@
+<class name="CCinemaOmniLightClip">
+    <object name="CCinemaOmniLightClip">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId" type="BinHex"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field name="timeStartTime" type="Float"/>
+        <field name="timeDuration" type="Float"/>
+        <field name="timeEndTime" type="Float"/>
+        <field name="hidResizable" type="BinHex"/>
+        <field name="disMuted" type="BinHex"/>
+        <field name="sAnimationTrackCollectionResource" type="BinHex"/>
+        <field name="bResizable" type="Boolean"/>
+        <field name="hidAnimationTrackCollectionDuration" type="BinHex"/>
+        <object name="AnimationTrackCollection">
+          <object name="Tracks">
+            <object name="Track">
+              <object name="Track">
+                <field name="text_hid_DTCTH_ClassName" type="String"/>
+                <field name="hid_DTCTH_ClassName" type="BinHex"/>
+                <field name="Name" type="String"/>
+                <field name="Master" type="BinHex"/>
+                <field name="UseCustomAnimation" type="BinHex"/>
+                <object name="Keys">
+                  <object name="Key">
+                    <field name="TimePrecise" type="BinHex"/>
+                    <field name="Value" type="BinHex"/>
+                    <object name="TangentIn">
+                      <field name="Time" type="BinHex"/>
+                      <field name="Value" type="BinHex"/>
+                    </object>
+                    <object name="TangentOut">
+                      <field name="Time" type="BinHex"/>
+                      <field name="Value" type="BinHex"/>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        <object name="Light">
+          <field name="bApplyRotation" type="BinHex"/>
+          <field name="bSpecular" type="BinHex"/>
+          <field name="bHalfLambert" type="BinHex"/>
+          <field name="bHasElectricBackup" type="BinHex"/>
+          <field name="text_sBoneId" type="BinHex"/>
+          <field name="sBoneId" type="BinHex"/>
+          <field name="bAffectedByTimeOfDay" type="BinHex"/>
+          <field name="vectorPositionOffset" type="BinHex"/>
+          <field name="bQuadraticAttenuation" type="BinHex"/>
+          <field name="bNeedsElectricPower" type="BinHex"/>
+          <field name="bAffectsGeometry" type="BinHex"/>
+          <field name="bAffectsParticles" type="BinHex"/>
+        </object>
+        <object name="OmniLight">
+          <field name="bCastShadow" type="BinHex"/>
+          <field name="bHighQualityShadowFiltering" type="BinHex"/>
+          <field name="fShadowFadeRange" type="BinHex"/>
+        </object>
+    </object>
+</class>

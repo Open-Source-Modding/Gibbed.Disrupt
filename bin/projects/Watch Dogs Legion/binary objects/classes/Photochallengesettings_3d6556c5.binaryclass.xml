@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Photochallengesettings_3d6556c5Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bResetTrackingData" type="Boolean"/>
+	<field name="bClearTrackingData" type="Boolean"/>
+	<field name="pdcfgPhotoTargetConfig" type="BinHex"/>
+	<object name="PhotoTargetsToValidate">
+		<object name="pdcfgPhotoTarget">
+			<field name="pdcfgPhotoTarget" type="BinHex"/>
+		</object>
+	</object>
+	<object name="TrackingData">
+		<field name="selDataLinkType" type="Enum"/>
+		<field name="sDataTrackElement" type="String"/>
+		<field name="selTagType" type="Enum"/>
+		<field name="selPrevTagType" type="Enum"/>
+		<field name="pdmodifModifier" type="BinHex"/>
+		<field name="bAddVisibilityRule" type="Boolean"/>
+		<field name="fVisibilityPercentage" type="Float"/>
+		<object name="tagcategoryselectionblackboardTags">
+			<object name="TagCategorySelectionArray"/>
+			<object name="TagDescriptorUI">
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+			</object>
+		</object>
+		<object name="RuleConfig">
+			<field name="pdruleRuleConfig" type="BinHex"/>
+			<field name="iNumberOfEntitiesToValidate" type="Int32"/>
+		</object>
+		<object name="TrackingData">
+			<field name="selDataLinkType" type="Enum"/>
+			<field name="sDataTrackElement" type="String"/>
+			<field name="selTagType" type="Enum"/>
+			<field name="selPrevTagType" type="Enum"/>
+			<field name="pdmodifModifier" type="BinHex"/>
+			<object name="tagcategoryselectionblackboardTags">
+				<object name="TagCategorySelectionArray"/>
+				<object name="TagDescriptorUI">
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				</object>
+			</object>
+			<object name="RuleConfig">
+				<field name="pdruleRuleConfig" type="BinHex"/>
+				<field name="iNumberOfEntitiesToValidate" type="Int32"/>
+			</object>
+		</object>
+	</object>
+</class>

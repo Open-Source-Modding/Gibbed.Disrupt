@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Madcameraglobalparams_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fFocusPointSmoothingSpeed" type="Float"/>
+	<field name="fFramingAdjustmentSmoothingSpeed" type="Float"/>
+	<field name="fReferenceAxisSmoothingTime" type="Float"/>
+	<field name="fAnimationCutThreshold" type="Float"/>
+	<field name="fAnimationHideThreshold" type="Float"/>
+	<field name="fMinShotLength" type="Float"/>
+	<field name="fMaxShotLength" type="Float"/>
+	<field name="fDifferentFov" type="Float"/>
+	<field name="fDifferentAngle" type="Float"/>
+	<field name="plasmaparamsFailsafeCamera" type="BinHex"/>
+	<field name="plasmabucketDefaultBucket" type="BinHex"/>
+	<field name="plasmabucketHideBucket" type="BinHex"/>
+	<field name="bDofEnabled" type="Boolean"/>
+	<field name="fDofFstop" type="Float"/>
+	<field name="fDofNearPlanePercentage" type="Float"/>
+	<field name="fDofFarPlanePercentage" type="Float"/>
+	<field name="bTalkersCameraBlendInEnabled" type="Boolean"/>
+	<field name="fTalkersCameraBlendInSpeed" type="Float"/>
+	<field name="bTalkersCameraBlendOutEnabled" type="Boolean"/>
+	<field name="fTalkersCameraBlendOutSpeed" type="Float"/>
+	<field name="fFadeInLength" type="Float"/>
+	<field name="fFadeOutLength" type="Float"/>
+	<field name="fMinBlackScreenLength" type="Float"/>
+	<field name="fSkipButtonDuration" type="Float"/>
+	<field name="fFadeOutDelay" type="Float"/>
+	<field name="fHeadLookatTransitionDuration" type="Float"/>
+	<field name="fCollisionRadius" type="Float"/>
+	<field name="fCollisionBlendOutTime" type="Float"/>
+	<object name="sndvarFadeToBlackRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicletransmissionsounddbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Clutch">
+		<field name="sndClutchIn" type="BinHex"/>
+		<field name="sndClutchOut" type="BinHex"/>
+		<field name="text_sndClutchInHandbrake" type="String"/>
+		<field name="sndClutchInHandbrake" type="BinHex"/>
+		<field name="text_sndClutchOutHandbrake" type="String"/>
+		<field name="sndClutchOutHandbrake" type="BinHex"/>
+		<field name="text_sndClutchSlipping" type="String"/>
+		<field name="sndClutchSlipping" type="BinHex"/>
+		<field name="sndtpClutchInType" type="BinHex"/>
+		<field name="sndtpClutchOutType" type="BinHex"/>
+		<field name="sndtpClutchInHandbrakeType" type="BinHex"/>
+		<field name="sndtpClutchOutHandbrakeType" type="BinHex"/>
+		<field name="sndtpClutchSlippingType" type="BinHex"/>
+		<object name="ClutchLockUp">
+			<field name="bUseClutchLockUpFluctuation" type="Boolean"/>
+			<field name="fRpmAmplitude" type="Float"/>
+			<field name="fTime" type="Float"/>
+			<field name="fFrequency" type="Float"/>
+		</object>
+	</object>
+	<object name="FakeRevLimiter">
+		<field name="bUseFakeRevLimiter" type="Boolean"/>
+		<field name="fAmplitude" type="Float"/>
+		<field name="fPeriod" type="Float"/>
+		<field name="fMaxSpeed" type="Float"/>
+		<object name="curveLimiterShape">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="FakeTopGear">
+		<field name="bUseFakeTopGear" type="Boolean"/>
+		<field name="fRealRpmMinFactor" type="Float"/>
+		<object name="FakeGears">
+			<object name="FakeGear">
+				<field name="fRealRpmMinFactor" type="Float"/>
+				<field name="fRealRpmMaxFactor" type="Float"/>
+				<field name="fRealRpmDownShiftFactor" type="Float"/>
+				<field name="fStartRpmFactor" type="Float"/>
+				<field name="fEndRpmFactor" type="Float"/>
+				<field name="fActiveRpmRate" type="Float"/>
+				<field name="fGearChangeRpmRate" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="Gear">
+		<field name="sndGearShift" type="BinHex"/>
+		<field name="sndNpcGearShiftUp" type="BinHex"/>
+		<field name="sndNpcGearShiftDown" type="BinHex"/>
+		<field name="sndtpGearShiftType" type="BinHex"/>
+		<field name="sndtpNpcGearShiftUpType" type="BinHex"/>
+		<field name="sndtpNpcGearShiftDownType" type="BinHex"/>
+		<object name="NpcGears">
+			<object name="m_npcSoundGears">
+				<field name="fDownshiftRPMFactor" type="Float"/>
+				<field name="fUpshiftRPMFactor" type="Float"/>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AudiomaticsthemedbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iWeight" type="Int32"/>
+	<object name="AudioMaticsSounds">
+		<object name="AudioMaticsSound">
+			<field name="text_sndSoundId" type="String"/>
+			<field name="sndSoundId" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+	</object>
+</class>

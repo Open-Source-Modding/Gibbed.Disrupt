@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Interacttounlockgameplayglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="mapicondescEntityToUseToUnlockLockIcon" type="BinHex"/>
+	<field name="mapicondescEntityToUseToUnlockUnlockIcon" type="BinHex"/>
+	<field name="mapicondescLockedEntityLockIcon" type="BinHex"/>
+	<field name="mapicondescLockedEntityUnlockIcon" type="BinHex"/>
+	<field name="fLockLinkDurationAfterFocusStop" type="Float"/>
+</class>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TurretidlemovementsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMinYaw" type="Float"/>
+	<field name="fMaxYaw" type="Float"/>
+	<field name="fMinPitch" type="Float"/>
+	<field name="fMaxPitch" type="Float"/>
+	<field name="fYawMovementMin" type="Float"/>
+	<field name="fYawMovementMax" type="Float"/>
+	<field name="fPitchMovementMin" type="Float"/>
+	<field name="fPitchMovementMax" type="Float"/>
+	<field name="fMovementIntervalMin" type="Float"/>
+	<field name="fMovementIntervalMax" type="Float"/>
+	<field name="selInitialRotationDir" type="Enum"/>
+</class>

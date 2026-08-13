@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DroneaudiosettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="DroneAudioStateSettings">
+		<object name="AudioSettings">
+			<field name="text_selAiState" type="String"/>
+			<field name="selAiState" type="Enum"/>
+			<field name="OnUpdateBarkDelayMinimum" type="BinHex"/>
+			<field name="OnUpdateBarkDelayMaximum" type="BinHex"/>
+			<field name="text_sndOnEntrySound" type="String"/>
+			<field name="sndOnEntrySound" type="BinHex"/>
+			<field name="text_sndOnExitSound" type="String"/>
+			<field name="sndOnExitSound" type="BinHex"/>
+			<field name="sndtpOnEntrySoundType" type="BinHex"/>
+			<field name="sndtpOnExitSoundType" type="BinHex"/>
+			<object name="OnEntryBark">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="text_rulesmithconstValue" type="String"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="OnExitBark">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="OnUpdateBark">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="text_rulesmithconstValue" type="String"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="DroneAudioFromAIStateSettings">
+				<object name="AudioFromAIStateSettings">
+					<field name="text_selLastAIState" type="String"/>
+					<field name="selLastAIState" type="Enum"/>
+					<field name="sndOnEntrySound" type="BinHex"/>
+					<field name="sndtpOnEntrySoundType" type="BinHex"/>
+					<object name="OnEntryBark">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="text_rulesmithconstValue" type="String"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

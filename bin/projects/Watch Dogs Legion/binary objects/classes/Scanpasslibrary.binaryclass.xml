@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ScanpasslibraryParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fInsideScanSpeedFactor" type="Float"/>
+	<field name="fFollowEntityLowSpeed" type="Float"/>
+	<field name="fFollowEntityHighSpeed" type="Float"/>
+	<object name="ScanPassLibrary">
+		<object name="ScanPass">
+			<field name="scanpassparametersScanPassConfig" type="BinHex"/>
+		</object>
+	</object>
+</class>

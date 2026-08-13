@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Onlineonboardingsettingsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="IsEnabled" type="BinHex"/>
+	<object name="OnlineOnboardingList">
+		<object name="onlineonboardingstepOnlineOnboardingStepDb">
+			<field name="onlineonboardingstepOnlineOnboardingStepDb" type="BinHex"/>
+		</object>
+	</object>
+	<object name="OnlineOnboardingHintList">
+		<object name="onlineonboardinghintOnlineOnboardingHintDb">
+			<field name="onlineonboardinghintOnlineOnboardingHintDb" type="BinHex"/>
+		</object>
+	</object>
+	<object name="IntroductionCinematic">
+		<field name="UseBink" type="BinHex"/>
+		<field name="videosIntroVideoBink" type="BinHex"/>
+		<field name="entIntroSequenceCenterSceneEntityId" type="BinHex"/>
+		<field name="text_fileIntroSequenceResourcePath" type="String"/>
+		<field name="fileIntroSequenceResourcePath" type="BinHex"/>
+		<field name="sLayerName" type="String"/>
+		<field name="text_sndMuteExternalSounds" type="String"/>
+		<field name="sndMuteExternalSounds" type="BinHex"/>
+		<field name="text_sndUnmuteExternalSounds" type="String"/>
+		<field name="sndUnmuteExternalSounds" type="BinHex"/>
+		<field name="sndtpMuteExternalSoundsType" type="BinHex"/>
+		<field name="sndtpUnmuteExternalSoundsType" type="BinHex"/>
+		<field name="text_sndPlayMusic" type="String"/>
+		<field name="sndPlayMusic" type="BinHex"/>
+		<field name="text_sndStopMusic" type="String"/>
+		<field name="sndStopMusic" type="BinHex"/>
+		<field name="text_sndSkipMusic" type="String"/>
+		<field name="sndSkipMusic" type="BinHex"/>
+		<field name="sndtpPlayMusicSoundsType" type="BinHex"/>
+		<field name="sndtpStopMusicSoundsType" type="BinHex"/>
+		<field name="sndtpSkipMusicSoundsType" type="BinHex"/>
+	</object>
+	<object name="ExitHackerspacePosition">
+		<field name="entEntityToTeleport" type="BinHex"/>
+	</object>
+</class>

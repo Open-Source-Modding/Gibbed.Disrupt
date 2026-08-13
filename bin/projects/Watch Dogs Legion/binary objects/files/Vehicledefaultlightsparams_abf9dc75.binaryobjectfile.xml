@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Vehicledefaultlightsparams_abf9dc75">
+	<object name="obj">
+		<inherit name="Vehicledefaultlightsparams_abf9dc75Parameters"/>
+	</object>
+</file>

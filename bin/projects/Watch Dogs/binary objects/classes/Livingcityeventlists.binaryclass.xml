@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LivingcityeventlistsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="LivingCityEventLists">
+    <object name="LivingCityEventList">
+      <field name="text_archCivilianArchetype" type="String"/>
+      <field name="archCivilianArchetype" type="BinHex"/>
+    </object>
+  </object>
+</class>

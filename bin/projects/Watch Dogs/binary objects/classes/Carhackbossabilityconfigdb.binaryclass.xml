@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CarhackbossabilityconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selPlayerPickingStrategy" type="Enum"/>
+	<field name="selCarPickingStrategy" type="Enum"/>
+	<field name="selHackStrategy" type="Enum"/>
+	<field name="fRightTurnMinAngle" type="Float"/>
+	<field name="fRightTurnMaxAngle" type="Float"/>
+	<field name="fLeftTurnMinAngle" type="Float"/>
+	<field name="fLeftTurnMaxAngle" type="Float"/>
+	<field name="fPickingRadius" type="Float"/>
+	<field name="bPauseOncallForReinforcements" type="Boolean"/>
+	<field name="vectorColor" type="Vector3"/>
+	<field name="fDurationOfIconAboveHackedVehicle" type="Float"/>
+	<field name="fDurationOfLinkBetweenBossAndHackedVehicle" type="Float"/>
+	<field name="fDurationOfHacking" type="Float"/>
+	<field name="fDurationOfPostHackDelay" type="Float"/>
+	<field name="fMaxDistanceToHideCarHackIcon" type="Float"/>
+	<field name="fMinDistanceToHideCarHackIcon" type="Float"/>
+</class>

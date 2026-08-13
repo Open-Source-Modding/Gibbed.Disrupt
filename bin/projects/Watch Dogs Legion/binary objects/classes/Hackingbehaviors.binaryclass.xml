@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackingbehaviorsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="HackingBehavior">
+		<field hash="6D1E1959" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<field name="selQuickHackCategory" type="Enum"/>
+			<object name="BehaviorCategorys">
+				<object name="Category">
+					<object name="BehaviorCategory">
+						<field name="selButtonMapping" type="Enum"/>
+						<field name="selCategory" type="Enum"/>
+						<field name="uiUnlockLevel" type="UInt32"/>
+						<field name="selOverridenIconCategory" type="Enum"/>
+						<field name="bHackEscalationEnabled" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+			<object name="Sounds">
+				<field name="text_sndHackingDisplayCategorySelectedSoundId" type="String"/>
+				<field name="sndHackingDisplayCategorySelectedSoundId" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

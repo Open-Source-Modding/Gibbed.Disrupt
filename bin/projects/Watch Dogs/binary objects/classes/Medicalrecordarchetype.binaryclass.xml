@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MedicalrecordarchetypeParameters">
+	<inherit name="SharedParameters"/>
+	<object name="MedicalRecordGenerator">
+		<field name="fWeight" type="Float"/>
+		<object name="MedicalRecordType">
+			<object name="locsectionidMedicalRecordType"/>
+			<object name="MedicalRecordType">
+				<object name="locsectionidMedicalRecordType"/>
+			</object>
+		</object>
+		<object name="MedicalRecordGenerator">
+			<field name="fWeight" type="Float"/>
+			<object name="MedicalRecordType">
+				<object name="locsectionidMedicalRecordType"/>
+				<object name="MedicalRecordType">
+					<object name="locsectionidMedicalRecordType"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

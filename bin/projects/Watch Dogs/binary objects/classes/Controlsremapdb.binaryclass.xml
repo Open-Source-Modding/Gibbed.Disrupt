@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ControlsremapdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selInputType" type="Enum"/>
+	<object name="Common">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="RcCommon"/>
+	<object name="Hacking">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="OnFoot">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Driving">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Drone">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Turret">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="SecurityCamera">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Crane">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="VentDoctor">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Kick-Up">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Menu">
+		<object name="Control">
+			<field name="strDebugText" type="String"/>
+			<field name="text_csKeyId" type="String"/>
+			<field name="csKeyId" type="BinHex"/>
+			<field name="strCsKeyText" type="String"/>
+			<field name="selGroupId" type="Enum"/>
+			<field name="bIsPlatformWindowsOnly" type="Boolean"/>
+			<object name="locstridTitleText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridParagraphText">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

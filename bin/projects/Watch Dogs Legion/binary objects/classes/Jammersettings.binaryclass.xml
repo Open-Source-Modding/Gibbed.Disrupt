@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="JammersettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fRadius" type="Float"/>
+	<field name="sndGlitchSoundId" type="BinHex"/>
+	<field name="bIsAffectingOnlyPlayers" type="Boolean"/>
+	<field name="bIsOneUse" type="Boolean"/>
+	<field name="mapicondescJamIcon" type="BinHex"/>
+	<field name="fOneUseEffectTime" type="Float"/>
+</class>

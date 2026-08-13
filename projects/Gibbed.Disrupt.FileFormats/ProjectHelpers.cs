@@ -23,6 +23,8 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
+using System.Reflection;
 
 namespace Gibbed.Disrupt.FileFormats
 {
@@ -33,12 +35,46 @@ namespace Gibbed.Disrupt.FileFormats
             return s.Replace(@"/", @"\");
         }
 
-        public static void LoadListsFileNames<T>(
-            this ProjectData.Manager manager,
-            Func<string, T> hasher,
-            out ProjectData.HashList<T> hashList)
+        public static ProjectData.Project LoadProject(string projectName = null)
         {
-            hashList = manager.LoadLists("*.filelist", hasher, Modifier);
+            var basePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            basePath = basePath != null ? Path.Combine(basePath, "projects") : "projects";
+
+            if (!Directory.Exists(basePath))
+            {
+                return null;
+            }
+
+            if (!string.IsNullOrEmpty(projectName))
+            {
+                var projectBase = Path.Combine(basePath, projectName.Trim());
+                foreach (var ext in new[] { ".json", ".xml" })
+                {
+                    var projectPath = projectBase + ext;
+                    if (File.Exists(projectPath))
+                    {
+                        return ProjectData.Project.Load(projectPath);
+                    }
+                }
+                return null;
+            }
+
+            var currentPath = Path.Combine(basePath, "current.txt");
+            if (File.Exists(currentPath))
+            {
+                var name = File.ReadAllText(currentPath).Trim();
+                var projectBase = Path.Combine(basePath, name);
+                foreach (var ext in new[] { ".json", ".xml" })
+                {
+                    var projectPath = projectBase + ext;
+                    if (File.Exists(projectPath))
+                    {
+                        return ProjectData.Project.Load(projectPath);
+                    }
+                }
+            }
+
+            return null;
         }
 
         public static void LoadListsFileNames<T>(

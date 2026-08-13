@@ -1,0 +1,5 @@
+<file name="cam_01b" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

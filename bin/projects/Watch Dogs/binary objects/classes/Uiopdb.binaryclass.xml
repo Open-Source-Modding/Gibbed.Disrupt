@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UiopdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="mapicondescTrackedIcon" type="BinHex"/>
+	<field name="mapicondescUntrackedIcon" type="BinHex"/>
+	<field name="texturedbobjectIconTexture" type="BinHex"/>
+	<object name="locstridLoadingBrief">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

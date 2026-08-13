@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FullscreentutorialdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="locstridTutorialLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="TutorialItems">
+		<object name="TutorialItem">
+			<field name="itemsTutorialItem" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UitagdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sTagName" type="String"/>
+	<object name="TagDescriptor">
+		<field name="text_uitagdescriptoridTagType" type="String"/>
+		<field name="uitagdescriptoridTagType" type="BinHex"/>
+		<object name="Properties">
+			<field name="uitagimagesettingImage" type="BinHex"/>
+			<field name="uitagfontsettingFont" type="BinHex"/>
+			<field name="uitagcolorsettingColor" type="BinHex"/>
+			<field name="actionmap" type="String"/>
+			<field name="signal" type="String"/>
+			<field name="pcSignal" type="String"/>
+			<field name="bIsAnimatedUiTag" type="Boolean"/>
+			<field name="bSmallSet" type="Boolean"/>
+			<field name="pcKeyLimit" type="BinHex"/>
+		</object>
+	</object>
+</class>

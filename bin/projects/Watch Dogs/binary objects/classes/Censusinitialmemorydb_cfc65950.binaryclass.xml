@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Censusinitialmemorydb_cfc65950Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PositiveInitialMemories">
+		<object name="MemoryPair">
+			<field name="censusactormemorydefinitionMemory" type="BinHex"/>
+			<field name="fApplicationChance" type="Float"/>
+			<field name="bCanBeAppliedToPositive" type="Boolean"/>
+			<field name="bCanBeAppliedToNegative" type="Boolean"/>
+			<object name="UnlockRule">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="IncludeFilter">
+				<object name="tagcategoryselectionblackboardProfile">
+					<object name="TagCategorySelectionArray"/>
+					<object name="TagDescriptorUI">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<object name="TagCategorySelectionDescriptors">
+							<object name="TagCategorySelectionDescriptor">
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="bMultiSelect" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ExcludeFilter">
+				<object name="tagcategoryselectionblackboardProfile">
+					<object name="TagCategorySelectionArray"/>
+					<object name="TagDescriptorUI">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<object name="TagCategorySelectionDescriptors">
+							<object name="TagCategorySelectionDescriptor">
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="bMultiSelect" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="NegativeInitialMemories">
+		<object name="MemoryPair">
+			<field name="censusactormemorydefinitionMemory" type="BinHex"/>
+			<field name="fApplicationChance" type="Float"/>
+			<field name="bCanBeAppliedToPositive" type="Boolean"/>
+			<field name="bCanBeAppliedToNegative" type="Boolean"/>
+			<object name="UnlockRule">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="IncludeFilter">
+				<object name="tagcategoryselectionblackboardProfile">
+					<object name="TagCategorySelectionArray"/>
+					<object name="TagDescriptorUI">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<object name="TagCategorySelectionDescriptors">
+							<object name="TagCategorySelectionDescriptor">
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="bMultiSelect" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ExcludeFilter">
+				<object name="tagcategoryselectionblackboardProfile">
+					<object name="TagCategorySelectionArray"/>
+					<object name="TagDescriptorUI">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<object name="TagCategorySelectionDescriptors">
+							<object name="TagCategorySelectionDescriptor">
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="bMultiSelect" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="GameplayConditionalMemories">
+		<object name="MemoryPair">
+			<field name="censusactormemorydefinitionMemory" type="BinHex"/>
+			<field name="fApplicationChance" type="Float"/>
+			<field name="bCanBeAppliedToPositive" type="Boolean"/>
+			<field name="bCanBeAppliedToNegative" type="Boolean"/>
+			<object name="UnlockRule">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="IncludeFilter">
+				<object name="tagcategoryselectionblackboardProfile">
+					<object name="TagCategorySelectionArray"/>
+					<object name="TagDescriptorUI">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<object name="TagCategorySelectionDescriptors">
+							<object name="TagCategorySelectionDescriptor">
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="bMultiSelect" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ExcludeFilter">
+				<object name="tagcategoryselectionblackboardProfile">
+					<object name="TagCategorySelectionArray"/>
+					<object name="TagDescriptorUI">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<object name="TagCategorySelectionDescriptors">
+							<object name="TagCategorySelectionDescriptor">
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="bMultiSelect" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,46 @@
+<class name="CShadowQualityClip">
+    <object name="CShadowQualityClip">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field name="timeStartTime" type="Float"/>
+      <field name="timeDuration" type="Float"/>
+      <field name="timeEndTime" type="Float"/>
+      <field name="hidResizable" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+      <field name="sAnimationTrackCollectionResource" type="BinHex"/>
+      <field name="bResizable" type="Boolean"/>
+      <field name="hidAnimationTrackCollectionDuration" type="BinHex"/>
+      <field name="FSMShadowQuality" type="Float"/>
+      <field name="FSMShadowRange" type="Float"/>
+      <field name="FSMDepthBias" type="Float"/>
+      <field name="FSMSlopeScaleDepthBias" type="Float"/>
+      <object name="AnimationTrackCollection">
+        <object name="Tracks">
+          <object name="Track">
+            <object name="Track">
+              <field name="text_hid_DTCTH_ClassName" type="String"/>
+              <field name="hid_DTCTH_ClassName" type="BinHex"/>
+              <field name="Name" type="String"/>
+              <field name="Master" type="BinHex"/>
+              <field name="UseCustomAnimation" type="BinHex"/>
+              <object name="Keys">
+                <object name="Key">
+                  <field name="TimePrecise" type="Float"/>
+                  <field name="Value" type="Float"/>
+                  <object name="TangentIn">
+                    <field name="Time" type="Float"/>
+                    <field name="Value" type="Float"/>
+                  </object>
+                  <object name="TangentOut">
+                    <field name="Time" type="Float"/>
+                    <field name="Value" type="Float"/>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+</class>

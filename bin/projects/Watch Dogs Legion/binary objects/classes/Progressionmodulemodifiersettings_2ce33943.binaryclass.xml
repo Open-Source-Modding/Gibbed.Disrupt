@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Progressionmodulemodifiersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Variables">
+		<object name="Variable">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+		</object>
+	</object>
+	<object name="TraitVariables">
+		<object name="TraitVariable">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ConfigVariables">
+		<object name="ConfigVariable">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Modifiers">
+		<object name="Modifier">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+			<object name="IsValid">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="Variables">
+				<object name="Variable">
+					<field name="text_progressionmodvariablesVariable" type="String"/>
+					<field name="progressionmodvariablesVariable" type="BinHex"/>
+					<field name="Value" type="BinHex"/>
+					<field name="progressionmodexportvariablesMultiplier" type="BinHex"/>
+				</object>
+			</object>
+			<object name="locstridUIDescriptionPersonal">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUIDescriptionTeam">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUIIndicationMessage">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

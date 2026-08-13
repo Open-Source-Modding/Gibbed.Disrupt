@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WolfskincollectionParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Items">
+		<object name="wolfskinitemdbItem">
+			<field name="wolfskinitemdbItem" type="BinHex"/>
+		</object>
+	</object>
+</class>

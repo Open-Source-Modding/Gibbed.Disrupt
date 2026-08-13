@@ -1,0 +1,20 @@
+<class name="CFacialClip">
+    <object name="CFacialClip">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId" type="BinHex"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field name="timeStartTime" type="Float"/>
+        <field name="timeDuration" type="Float"/>
+        <field name="timeEndTime" type="Float"/>
+        <field name="hidResizable" type="BinHex"/>
+        <field name="disMuted" type="BinHex"/>
+        <field name="text_fileFacialAnimation" type="String"/>
+        <field name="fileFacialAnimation" type="BinHex"/>
+        <field name="sndSoundId" type="BinHex"/>
+        <field name="timeAnimStartTime" type="Float"/>
+        <field name="timeAnimStopTime" type="Float"/>
+        <field name="timeBlendTime" type="Float"/>
+        <field name="bAllowFacialEvents" type="Boolean"/>
+        <field name="hidFacialAnimDuration" type="BinHex"/>
+    </object>
+</class>

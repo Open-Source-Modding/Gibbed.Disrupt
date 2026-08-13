@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackerspaceopdiscoverytalkerParameters">
+	<inherit name="SharedParameters"/>
+	<field name="CLO" type="BinHex"/>
+	<field name="fMinimumDiscoveryInterval" type="Float"/>
+	<field name="iMaximumSimultaneousOps" type="Int32"/>
+	<object name="ActivationRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

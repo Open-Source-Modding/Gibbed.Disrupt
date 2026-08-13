@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Operativesafemonitorglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bShouldMonitorPlayerIsInForbiddenZone" type="Boolean"/>
+	<field name="bShouldMonitorPlayerIsInConflict" type="Boolean"/>
+	<field name="bShouldMonitorPlayerIsInChased" type="Boolean"/>
+	<field name="bShouldMonitorSafeTimerCheck" type="Boolean"/>
+	<field name="fSafeTimerDuration" type="Float"/>
+	<field name="bFAAShouldMonitorPlayerIsInForbiddenZone" type="Boolean"/>
+	<field name="bFAAShouldMonitorPlayerIsInConflict" type="Boolean"/>
+	<field name="bFAAShouldMonitorPlayerIsInChased" type="Boolean"/>
+	<object name="locstridLeaveForbiddenZoneObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEscapePursuersObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridWaitForEveryoneSafeObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLeaveForbiddenZoneFaaSpObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLeaveForbiddenZoneFaaMpObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEscapePursuersFaaSpObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridEscapePursuersFaaMpObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridWaitForEveryoneSafeFaaSpObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridWaitForEveryoneSafeFaaMpObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ItemvarietyParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnable" type="Boolean"/>
+	<field name="sFrameLabel" type="BinHex"/>
+	<field name="texturedbobjectVarietyIcon" type="BinHex"/>
+	<field name="bIsAShopVariety" type="Boolean"/>
+	<field name="selShopVarietyType" type="Enum"/>
+	<field name="uVarietyPriority" type="BinHex"/>
+	<object name="locstridItemVarietyNameId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridItemVarietyDescriptionId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

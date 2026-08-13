@@ -1,0 +1,5 @@
+<file name="a02_m08b_sc020_cin" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

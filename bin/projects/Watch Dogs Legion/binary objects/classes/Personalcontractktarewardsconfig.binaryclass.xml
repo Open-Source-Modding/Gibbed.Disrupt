@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PersonalcontractktarewardsconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="SuccessConditions">
+		<object name="KillThemAll">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="OptionalConditions">
+		<object name="HeadshotsOnly">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="MeleeTakedownOnly">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="NoGuns">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="NoTools">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Multikill">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="FastWorker">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="NoWitnesses">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="NoCops">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="NoGetaways">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="NoAlarm">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="SoClose">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="TagThemAll">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="SpeedBump">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="WithoutColateral">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="PistolOnly">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="ShotgunOnly">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Cameraman">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="ExplosivesOnly">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="RoadRage">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Bulletproof">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Accuracy">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="AggressiveDriver">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Stunner">
+			<field name="iXp" type="BinHex"/>
+			<field name="iMoney" type="Int32"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

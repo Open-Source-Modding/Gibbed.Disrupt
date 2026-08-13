@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpgendronedescriptiondefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Affiliations">
+		<object name="Affiliation">
+			<field name="selAffiliation" type="Enum"/>
+		</object>
+	</object>
+	<object name="DroneFlags">
+		<object name="DroneFlag">
+			<field name="selDroneFlag" type="Enum"/>
+		</object>
+	</object>
+</class>

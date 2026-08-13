@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Partyactivitiessettings_2ce33943Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="texturedbobjectPartyMissionModuleTexture" type="BinHex"/>
+	<field name="dexeventLootTruck" type="BinHex"/>
+	<field name="fActivityPropositionRetryDuration" type="BinHex"/>
+	<field name="fLootTruckLaunchTime" type="BinHex"/>
+	<field name="iTutorialDisplayMaxCount" type="BinHex"/>
+	<field name="fBountyHunterTeleportMinDistance" type="BinHex"/>
+	<field name="itemsTutorial" type="BinHex"/>
+	<field name="dexeventBounty" type="BinHex"/>
+	<field name="fRoleSelectionMaxDuration" type="BinHex"/>
+	<field name="dexeventVirus" type="BinHex"/>
+	<field name="bBountyHunterTeleportForceVehicle" type="BinHex"/>
+	<field name="dexeventShowDown" type="BinHex"/>
+	<field name="dexeventRobot" type="BinHex"/>
+	<field name="fProtectorDistanceFromTargetToTriggerATeleport" type="BinHex"/>
+	<field name="fAllRolesSelectedDisplayDuration" type="BinHex"/>
+	<field name="fAvoidOtherPlayerDistance" type="BinHex"/>
+	<field name="fActivityPropositionDelayAfterActivity" type="BinHex"/>
+	<field name="fActivityPropositionDelayOnNewPlayerJoined" type="BinHex"/>
+	<field name="dexeventInvasion" type="BinHex"/>
+	<field name="fActivityPropositionDuration" type="BinHex"/>
+	<field name="fBountyHunterTeleportMaxDistance" type="BinHex"/>
+</class>

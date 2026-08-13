@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpgendronedefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Archetypes">
+		<object name="aispawningtypeArchetype">
+			<field name="aispawningtypeArchetype" type="BinHex"/>
+		</object>
+	</object>
+</class>

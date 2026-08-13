@@ -1,0 +1,5 @@
+<file name="a04_f01_sc020_ig_nikkirescue_nikkiloop_postgun" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

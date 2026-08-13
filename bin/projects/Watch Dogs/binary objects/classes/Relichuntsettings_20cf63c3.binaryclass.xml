@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Relichuntsettings_20cf63c3Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fRotationSpeed" type="Float"/>
+	<field name="bEnableOperativeBarks" type="Boolean"/>
+	<field name="text_FirstRelicPieceFoundBarkId" type="String"/>
+	<field name="FirstRelicPieceFoundBarkId" type="BinHex"/>
+	<field name="text_LastRelicPieceFoundBarkId" type="String"/>
+	<field name="LastRelicPieceFoundBarkId" type="BinHex"/>
+	<field name="text_RelicPieceFoundBarkId" type="String"/>
+	<field name="RelicPieceFoundBarkId" type="BinHex"/>
+	<object name="OnPieceCollected">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="Relics">
+		<object name="relicitemRelic">
+			<field name="relicitemRelic" type="BinHex"/>
+		</object>
+	</object>
+</class>

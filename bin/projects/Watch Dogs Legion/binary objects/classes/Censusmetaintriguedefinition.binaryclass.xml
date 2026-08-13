@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CensusmetaintriguedefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="nGroupID" type="Enum"/>
+	<field name="bReadyForProduction" type="Boolean"/>
+	<field name="bRequiresScheduledAppointment" type="Boolean"/>
+	<field name="selForcedAssociateStatus" type="Enum"/>
+	<object name="Prerequisites">
+		<field name="selRequiredActorStatus" type="Enum"/>
+		<field name="bApplicableIfActorArrested" type="Boolean"/>
+		<field name="bApplicableIfActorInjured" type="Boolean"/>
+		<field name="bApplicableIfActorHasNormalStatus" type="Boolean"/>
+		<field name="bApplicableIfActorIsPendingDeportation" type="Boolean"/>
+		<object name="RequiredCensusFilter">
+			<object name="tagcategoryselectionblackboardProfile">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+						<object name="Tags"/>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ExcludedCensusFilter">
+			<object name="tagcategoryselectionblackboardProfile">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+						<object name="Tags"/>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="ContractSelection">
+		<object name="ContractSettings">
+			<field name="censuscontractdefinitionRequiredContract" type="BinHex"/>
+			<field name="bRelationCompatibleWithRoleA" type="Boolean"/>
+			<field name="bRelationCompatibleWithRoleB" type="Boolean"/>
+		</object>
+	</object>
+	<object name="Resolutions">
+		<object name="Resolution">
+			<field name="censusintriguedefinitionIntrigue" type="BinHex"/>
+			<field name="bHiddenResolution" type="Boolean"/>
+			<field name="bImportantResolution" type="Boolean"/>
+			<field name="phonecommunicationsettingsProximityWaitTeamSpeak" type="BinHex"/>
+			<field name="phonecommunicationsettingsProximityLocatedTeamSpeak" type="BinHex"/>
+			<field name="phonecommunicationsettingsLocationEntryTeamSpeak" type="BinHex"/>
+			<object name="OnSuccess">
+				<field name="censusactormemorydefinitionMemoryToApply" type="BinHex"/>
+				<field name="censusactormemorydefinitionIntrigueTargetMemoryToApply" type="BinHex"/>
+				<field name="phonecommunicationsettingsWrapupTeamSpeak" type="BinHex"/>
+				<field name="censusmetaintrigueresolutionbucketNextBeatBucket" type="BinHex"/>
+			</object>
+			<object name="OnFail">
+				<field name="censusactormemorydefinitionMemoryToApply" type="BinHex"/>
+				<field name="censusactormemorydefinitionIntrigueTargetMemoryToApply" type="BinHex"/>
+				<field name="phonecommunicationsettingsWrapupTeamSpeak" type="BinHex"/>
+				<field name="censusmetaintrigueresolutionbucketNextBeatBucket" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclegroupParameters">
+	<inherit name="SharedParameters"/>
+	<object name="GroupVehicles">
+		<object name="Flags">
+			<field name="bNone" type="Boolean"/>
+			<field name="bBike" type="Boolean"/>
+			<field name="bTruck" type="Boolean"/>
+			<field name="bBus" type="Boolean"/>
+			<field name="bPolice" type="Boolean"/>
+			<field name="bFire" type="Boolean"/>
+			<field name="bAmbulance" type="Boolean"/>
+			<field name="bTaxi" type="Boolean"/>
+		</object>
+	</object>
+</class>

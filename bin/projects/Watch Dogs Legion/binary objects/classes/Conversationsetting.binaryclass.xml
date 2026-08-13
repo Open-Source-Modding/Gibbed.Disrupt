@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ConversationsettingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsPlasmaConversation" type="Boolean"/>
+	<field name="selInterruptPriority" type="Enum"/>
+	<field name="lookatsettingDefaultLookAt" type="BinHex"/>
+	<field name="selConversationName" type="Enum"/>
+	<field name="bDisableDefaultLayeredAnimations" type="Boolean"/>
+	<object name="PlasmaConversationSettings">
+		<field name="text_SceneTemplate" type="String"/>
+		<field name="SceneTemplate" type="BinHex"/>
+		<field name="plasmaDialogTemplateId" type="BinHex"/>
+		<field name="bGenerateCameraCuts" type="Boolean"/>
+		<field name="bAllowCameraFlip" type="Boolean"/>
+		<field name="bHoldBlackScreenOnExit" type="Boolean"/>
+	</object>
+	<object name="AnimatedConversationLines"/>
+	<object name="ResumingAnimatedLines"/>
+</class>

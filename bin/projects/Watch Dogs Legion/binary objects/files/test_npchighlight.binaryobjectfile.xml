@@ -1,0 +1,5 @@
+<file name="test_npchighlight" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

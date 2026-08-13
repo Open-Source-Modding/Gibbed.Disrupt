@@ -1,0 +1,5 @@
+<file name="listening_post_assault" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

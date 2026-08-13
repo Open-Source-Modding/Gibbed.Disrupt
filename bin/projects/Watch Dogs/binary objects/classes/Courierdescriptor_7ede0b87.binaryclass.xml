@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Courierdescriptor_7ede0b87Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bShouldShowGPSPath" type="Boolean"/>
+	<field name="iMaxNumberMissions" type="Int32"/>
+	<field name="fRedistributionAmount" type="Float"/>
+	<field name="fRecommendedMissionMinimumDistanceToDropOff" type="Float"/>
+	<field name="iMinMissionExpirationTime" type="Int32"/>
+	<field name="iMaxMissionExpirationTime" type="Int32"/>
+	<field name="iMaxIntrigueMissionRetries" type="Int32"/>
+	<field name="iMaxRecommendedMissionBuildRetries" type="Int32"/>
+	<field name="fNearlyExpiredDuration" type="Float"/>
+	<field name="fRetryGenerationTimeout" type="Float"/>
+	<field name="fReplaceFinishedTimeout" type="Float"/>
+	<field name="fDisplayMissionResolutionTime" type="Float"/>
+	<field name="iReputationMaxStrikes" type="Int32"/>
+	<field name="fPackageHealthNotificationThreshold" type="Float"/>
+	<field name="fPackageHealthNotificationDuration" type="Float"/>
+	<field name="text_sndMissionStart" type="String"/>
+	<field name="sndMissionStart" type="BinHex"/>
+	<field name="sndtpMissionStartType" type="BinHex"/>
+	<field name="text_sndMisssionCompleted" type="String"/>
+	<field name="sndMisssionCompleted" type="BinHex"/>
+	<field name="sndtpMisssionCompletedType" type="BinHex"/>
+	<field name="text_sndMissionFailed" type="String"/>
+	<field name="sndMissionFailed" type="BinHex"/>
+	<field name="sndtpMissionFailedType" type="BinHex"/>
+	<field name="text_sndTimerCountdown" type="String"/>
+	<field name="sndTimerCountdown" type="BinHex"/>
+	<field name="sndtpTimerCountdownType" type="BinHex"/>
+	<field name="text_sndTimerFastCountdown" type="String"/>
+	<field name="sndTimerFastCountdown" type="BinHex"/>
+	<field name="sndtpTimerFastCountdownType" type="BinHex"/>
+	<field name="text_sndTimerOver" type="String"/>
+	<field name="sndTimerOver" type="BinHex"/>
+	<field name="sndtpTimerOverType" type="BinHex"/>
+	<field name="fPkgDmgPlayerThrownOffVehicle" type="Float"/>
+	<field name="fPackageMaxDamageLvl1" type="Float"/>
+	<field name="fPackageMaxDamageLvl2" type="Float"/>
+	<field name="fPackageMaxDamageLvl3" type="Float"/>
+	<field name="text_PackageDamagedBarkId" type="String"/>
+	<field name="PackageDamagedBarkId" type="BinHex"/>
+	<field name="fPackageHealthThresholdForDamageBark" type="Float"/>
+	<field name="fPackageDamagedBarkCooldown" type="Float"/>
+	<field name="text_TimerExpiringdBarkId" type="String"/>
+	<field name="TimerExpiringdBarkId" type="BinHex"/>
+	<field name="fNearlyExpiredBarkTime" type="Float"/>
+	<field name="text_DeliveryFailedBarkId" type="String"/>
+	<field name="DeliveryFailedBarkId" type="BinHex"/>
+	<field name="text_PackageDeliveredBarkId" type="String"/>
+	<field name="PackageDeliveredBarkId" type="BinHex"/>
+	<field name="fAttentionRequestTime" type="Float"/>
+	<field name="phonecommunicationsettingsFirstIntro" type="BinHex"/>
+	<field name="phonecommunicationsettingsIllegalDeliveryIntro" type="BinHex"/>
+	<field name="phonecommunicationsettingsIllegalPickup" type="BinHex"/>
+	<field name="bE3LocationRestrictionEnable" type="Boolean"/>
+	<object name="MissionTypes">
+		<object name="MissionType">
+			<field name="couriermissionconfigMissionType" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RecommendedMissionTypes">
+		<object name="MissionType">
+			<field name="couriermissionconfigMissionType" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridOrderCompletedMessageLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridOrderCanceledTimedOutMessageLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridMissionObjectiveTitleLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridIntrigueMissionObjectiveTitleLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridJobAbandonedLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridCompleteMissionInteractorLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridTimeObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridFragileObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridWaypointObjectiveLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridMapObjectiveTitleLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridMapObjectiveDescriptionLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="RankReachedTrigger">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="CryptoGetter">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="ReputationGainGetter">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="ReputationLossGetter">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="MissionOnlineLevelGetter">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="locstridPackageHealthNotificationTitleLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPackageHealthNotificationSubTextLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="ProgressionRanks">
+		<object name="Rank">
+			<field name="text_RankId" type="String"/>
+			<field name="RankId" type="BinHex"/>
+			<field name="fRankMax" type="Float"/>
+		</object>
+	</object>
+	<object name="ProgressionDefaultRank">
+		<field name="text_RankId" type="String"/>
+		<field name="RankId" type="BinHex"/>
+		<field name="fRankMax" type="Float"/>
+	</object>
+	<object name="TutorialItems">
+		<object name="TutorialItem">
+			<field name="itemsTutorialItem" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridTutorialLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

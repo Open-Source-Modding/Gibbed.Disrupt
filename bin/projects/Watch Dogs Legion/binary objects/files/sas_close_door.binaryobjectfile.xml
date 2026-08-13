@@ -1,0 +1,5 @@
+<file name="sas_close_door" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CensusintriguedefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selIntrigueType" type="Enum"/>
+	<field name="selResolutionModifierForTarget" type="Enum"/>
+	<field name="selResolutionModifierForOwner" type="Enum"/>
+	<field name="censusdeepprofilericondefinitionDeepProfilerIcon" type="BinHex"/>
+	<object name="SpecificData">
+		<field hash="6D1E1959" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<field name="selWorldActivityType" type="Enum"/>
+			<field name="censuscontractdefinitionContractDefinition" type="BinHex"/>
+			<field name="selWinCondition" type="Enum"/>
+			<field name="bCanFail" type="Boolean"/>
+			<field name="bActivityAgainstTarget" type="Boolean"/>
+			<field name="bShouldTargetRival" type="Boolean"/>
+			<field name="bNormal" type="Boolean"/>
+			<field name="bDead" type="Boolean"/>
+			<field name="bInjured" type="Boolean"/>
+			<field name="bArrested" type="Boolean"/>
+			<field name="bPendingDeportation" type="Boolean"/>
+			<field name="objectivetransferdatafreeroamTransferDataObjectiveDescriptor" type="BinHex"/>
+			<field name="objectivemainswitchMainSwitchObjectiveDescriptor" type="BinHex"/>
+			<field hash="A40E0325" type="String"/>
+			<field name="selMissionType" type="Enum"/>
+			<field name="tagStartLocationTag" type="BinHex"/>
+			<field name="tagEndLocationTag" type="BinHex"/>
+			<field name="selObjectiveAreaType" type="Enum"/>
+			<field name="bForceToOwnerLocationForNonNormalStatus" type="Boolean"/>
+			<field name="bForceActorStatusOnSuccess" type="Boolean"/>
+			<field name="selForcedOnSuccessActorStatus" type="Enum"/>
+			<field name="objectivedestroyObjectiveDestroyDescriptor" type="BinHex"/>
+			<field name="objectivetransferdataStageBasedTransferDataObjectiveDescriptor" type="BinHex"/>
+			<object name="Scenes">
+				<field name="dgsceneScene" type="BinHex"/>
+				<object name="Scenes">
+					<field name="dgsceneScene" type="BinHex"/>
+				</object>
+			</object>
+			<object name="tagcategoryselectionblackboardLocationRequiredTags">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<object name="Tags"/>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="tagcategoryselectionblackboardLocationDisallowedTags">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<object name="Tags"/>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="locstridMarkerText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRelationMarkerText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

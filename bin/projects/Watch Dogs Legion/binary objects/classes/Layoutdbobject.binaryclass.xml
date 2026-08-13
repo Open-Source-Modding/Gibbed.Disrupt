@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LayoutdbobjectParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TileDbObjects">
+		<object name="TileDbObject">
+			<field name="tiledbobjectTileDbObject" type="BinHex"/>
+		</object>
+	</object>
+</class>

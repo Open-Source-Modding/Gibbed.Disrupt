@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronewatchstatesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fReachOriginSpeed" type="Float"/>
+	<field name="fLookForwardTimeMin" type="Float"/>
+	<field name="fLookForwardTimeMax" type="Float"/>
+	<field name="fLookForwardSpeedModifier" type="Float"/>
+	<field name="fLookAroundCountMin" type="Int32"/>
+	<field name="fLookAroundCountMax" type="Int32"/>
+	<field name="fLookAroundAngleDegMin" type="Float"/>
+	<field name="fLookAroundAngleDegMax" type="Float"/>
+	<field name="fLookAroundTimeMin" type="Float"/>
+	<field name="fLookAroundTimeMax" type="Float"/>
+	<field name="fLookAroundClearanceDistance" type="Float"/>
+	<field name="fLookAroundSpeedModifier" type="Float"/>
+</class>

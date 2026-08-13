@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BreakableeffectsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="psParticle" type="BinHex"/>
+	<field name="sndSound" type="BinHex"/>
+	<field name="sndtpSoundType" type="BinHex"/>
+	<field name="sndGroupSound" type="BinHex"/>
+	<field name="sndLoopSoundEnd" type="BinHex"/>
+	<field name="bUseVelocityRTPC" type="Boolean"/>
+	<field name="bGenerateReactionStim" type="Boolean"/>
+</class>

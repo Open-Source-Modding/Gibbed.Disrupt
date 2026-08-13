@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AvatarbodypartParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsAvailable" type="Boolean"/>
+	<field name="selGender" type="Enum"/>
+	<field name="selEthnicity" type="Enum"/>
+	<field name="selType" type="Enum"/>
+	<field name="selCategory" type="Enum"/>
+	<field name="selHandsType" type="Enum"/>
+	<field name="DisplayName" type="String"/>
+	<object name="GraphicKitPart">
+		<field name="hidVersion" type="BinHex"/>
+		<field name="graphickitpartPart" type="BinHex"/>
+		<field name="selPoseDefinitionId" type="BinHex"/>
+		<field name="selMaterialOverridesId" type="BinHex"/>
+		<object name="BoneAnchor">
+			<field name="text_BoneName" type="String"/>
+			<field name="BoneName" type="BinHex"/>
+			<field name="vectorTranslation" type="Vector3"/>
+			<field name="angvecRotation" type="Vector3"/>
+			<field name="vectorNonUniformScale" type="Vector3"/>
+		</object>
+	</object>
+	<object name="ExtraGraphicKitParts">
+		<object name="GraphicKitPart">
+			<field name="hidVersion" type="BinHex"/>
+			<field name="graphickitpartPart" type="BinHex"/>
+			<field name="selPoseDefinitionId" type="BinHex"/>
+			<field name="selMaterialOverridesId" type="BinHex"/>
+			<object name="BoneAnchor">
+				<field name="text_BoneName" type="String"/>
+				<field name="BoneName" type="BinHex"/>
+				<field name="vectorTranslation" type="Vector3"/>
+				<field name="angvecRotation" type="Vector3"/>
+				<field name="vectorNonUniformScale" type="Vector3"/>
+			</object>
+		</object>
+	</object>
+</class>

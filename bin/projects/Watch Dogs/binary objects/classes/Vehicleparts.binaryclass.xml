@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclepartsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bBulletHitAffectVehicleTotalDamage" type="Boolean"/>
+	<field name="fBulletHitVehicleDamageRatio" type="Float"/>
+	<field name="bBreakFromDeform" type="Boolean"/>
+	<field name="bDisableEffectsOnExplosion" type="Boolean"/>
+	<field name="bCanHang" type="Boolean"/>
+	<field name="bCanDetach" type="Boolean"/>
+	<field name="bCanDestroy" type="Boolean"/>
+	<field name="bDestroyIfParentDetaches" type="Boolean"/>
+	<field name="bIsChangingSoundOcclusion" type="Boolean"/>
+	<field name="bPartIsDamagable" type="Boolean"/>
+	<field name="selGameplayType" type="Enum"/>
+	<field name="vehiclepartsdamageDamageParams" type="BinHex"/>
+	<field name="logmatDefaultEffectMaterial" type="BinHex"/>
+	<field name="sRotatingReferencePart" type="BinHex"/>
+	<object name="PoppedParams">
+		<field name="sndPoppedSound" type="BinHex"/>
+		<field name="sndtpPoppedSoundType" type="BinHex"/>
+		<field name="psPoppedParticle" type="BinHex"/>
+		<field name="bPoppedParticleUseVelocity" type="Boolean"/>
+		<field name="sPoppedParticleBoneName" type="BinHex"/>
+	</object>
+	<object name="WobbleParams">
+		<field name="sndWobbleSound" type="BinHex"/>
+		<field name="sndtpWobbleSoundType" type="BinHex"/>
+		<field name="psWobbleParticle" type="BinHex"/>
+		<field name="bWobbleParticleUseVelocity" type="Boolean"/>
+		<field name="sWobbleParticleBoneName" type="BinHex"/>
+		<field name="sndWobbleVelocitySound" type="BinHex"/>
+		<field name="sndtpWobbleVelocitySoundType" type="BinHex"/>
+		<field name="fWobbleVelocitySoundThreshold" type="Float"/>
+		<field name="text_sndWobbleVelocitySignChangeSound" type="String"/>
+		<field name="sndWobbleVelocitySignChangeSound" type="BinHex"/>
+		<field name="sndtpWobbleVelocitySignChangeSoundType" type="BinHex"/>
+		<field name="fWobbleVelocitySoundCooldown" type="Float"/>
+	</object>
+	<object name="DetachParams">
+		<field name="text_sndDetachSound" type="String"/>
+		<field name="sndDetachSound" type="BinHex"/>
+		<field name="sndtpDetachSoundType" type="BinHex"/>
+		<field name="text_psDetachParticle" type="String"/>
+		<field name="psDetachParticle" type="BinHex"/>
+		<field name="bDetachParticleUseVelocity" type="Boolean"/>
+		<field name="text_sDetachParticleBoneName" type="String"/>
+		<field name="sDetachParticleBoneName" type="BinHex"/>
+		<field name="fFloatingScale" type="Float"/>
+		<field name="fWaterFriction" type="Float"/>
+		<field name="fPushAwaySpeedOnDetach" type="Float"/>
+	</object>
+	<object name="TextureStateChanges">
+		<object name="TextureStateChange">
+			<field name="text_psParticle" type="String"/>
+			<field name="psParticle" type="BinHex"/>
+			<field name="text_sndSound" type="String"/>
+			<field name="sndSound" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+			<field name="fHealthPercentageThreshold" type="Float"/>
+			<field name="bParticleUseVelocity" type="Boolean"/>
+			<field name="sParticleBoneName" type="BinHex"/>
+			<field name="bBreakAssociatedLight" type="Boolean"/>
+		</object>
+	</object>
+	<object name="TextureStateSwitchParams">
+		<field name="nTextureStateIndexForRemovingCollision" type="Enum"/>
+	</object>
+	<object name="DamageParams">
+		<field name="fCollisionExtraRadius" type="Float"/>
+		<field name="bAlwaysBreakFromDebrisCollision" type="Boolean"/>
+		<field name="fMaximumHealth" type="Float"/>
+		<field name="fCollisionDamageScale" type="Float"/>
+		<field name="fBulletDamageScale" type="Float"/>
+		<field name="fExplosionDamageScale" type="Float"/>
+		<field name="fRandomDamageScaleAmplitude" type="Float"/>
+	</object>
+	<object name="PhysicsParams">
+		<field name="fMass" type="Float"/>
+		<field name="fInertiaScale" type="Float"/>
+		<field name="vectorCenterOfMassOffset" type="Vector3"/>
+	</object>
+	<object name="VehicleSelfExplosion">
+		<field name="fNoStateChangeChance" type="Float"/>
+		<field name="fNoHangingChance" type="Float"/>
+		<field name="fMinImpulse" type="Float"/>
+		<field name="fMaxImpulse" type="Float"/>
+		<field name="bDetachOnEngineBurn" type="Boolean"/>
+	</object>
+	<object name="AnimationPartParams">
+		<field name="text_sndAnimationSound" type="String"/>
+		<field name="sndAnimationSound" type="BinHex"/>
+		<field name="sndtpAnimationSoundType" type="BinHex"/>
+		<field name="text_sndAnimationChangeDirectionSound" type="String"/>
+		<field name="sndAnimationChangeDirectionSound" type="BinHex"/>
+	</object>
+	<object name="CollisionMaterials">
+		<object name="RollMaterialsRange">
+			<field name="fActivationThreshold" type="Float"/>
+			<field name="fImpactMagnitudeRangeMin" type="Float"/>
+			<field name="fImpactMagnitudeRangeMax" type="Float"/>
+			<object name="ImpactMaterials">
+				<object name="ImpactMaterial">
+					<field name="matimpImpactMaterial" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="HitMaterialsRange">
+			<field name="fActivationThreshold" type="Float"/>
+			<field name="fImpactMagnitudeRangeMin" type="Float"/>
+			<field name="fImpactMagnitudeRangeMax" type="Float"/>
+			<object name="ImpactMaterials">
+				<object name="ImpactMaterial">
+					<field name="matimpImpactMaterial" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="GlanceMaterialsRange">
+			<field name="fActivationThreshold" type="Float"/>
+			<field name="fImpactMagnitudeRangeMin" type="Float"/>
+			<field name="fImpactMagnitudeRangeMax" type="Float"/>
+			<object name="ImpactMaterials">
+				<object name="ImpactMaterial">
+					<field name="matimpImpactMaterial" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="OtherMaterialsRange">
+			<field name="fActivationThreshold" type="Float"/>
+			<field name="fImpactMagnitudeRangeMin" type="Float"/>
+			<field name="fImpactMagnitudeRangeMax" type="Float"/>
+			<object name="ImpactMaterials">
+				<object name="ImpactMaterial">
+					<field name="matimpImpactMaterial" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

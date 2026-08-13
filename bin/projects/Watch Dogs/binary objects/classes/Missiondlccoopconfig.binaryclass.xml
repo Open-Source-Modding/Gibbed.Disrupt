@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MissiondlccoopconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bUseAI" type="Boolean"/>
+	<field name="fDistanceToTeleportPlayerWhenContractStart" type="Float"/>
+	<field name="fRespawnMinDistance" type="Float"/>
+	<field name="fRespawnMaxDistance" type="Float"/>
+	<field name="fRespawnInvincibleTime" type="Float"/>
+	<field name="mapicondescDLCGPSIconDBEntry" type="BinHex"/>
+	<field name="fInitialTeleportWaitingTime" type="Float"/>
+	<object name="Respawn">
+		<field name="bUseCustomNearDeathSpotStrategy" type="Boolean"/>
+		<object name="CustomRespawnPriorities"/>
+	</object>
+	<object name="Team">
+		<field name="bHasTeam" type="Boolean"/>
+		<object name="Teams">
+			<field name="bOneTeamByPlayer" type="Boolean"/>
+			<field name="bAreTeamsLethal" type="Boolean"/>
+			<object name="TeamConfigs">
+				<object name="teamconfigTeamConfig">
+					<field name="teamconfigTeamConfig" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Visibility">
+		<field name="bIsStealthMission" type="Boolean"/>
+		<field name="bIsEnemyVisible" type="Boolean"/>
+	</object>
+	<object name="Audio">
+		<field name="sndContractCountdownSoundId" type="BinHex"/>
+		<field name="iContractCountdownSoundThresholdTime" type="Int32"/>
+	</object>
+	<object name="Texture">
+		<field name="text_fileVoteTexture" type="String"/>
+		<field name="fileVoteTexture" type="BinHex"/>
+		<field name="disVoteTextureString" type="String"/>
+	</object>
+	<object name="RespawnTimes">
+		<object name="RespawnTime">
+			<field name="fRespawnTime" type="Float"/>
+		</object>
+	</object>
+</class>

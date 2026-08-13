@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OplineconfigsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="oplineuidataInitialUIData" type="BinHex"/>
+	<field name="selOpLineEnumId" type="Enum"/>
+	<field name="selDataDriveCategory" type="Enum"/>
+	<object name="locstridMissionsAppSubCategoryName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="OpLineCompleteUI">
+		<object name="locstridCelebrationTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCelebrationSubtitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

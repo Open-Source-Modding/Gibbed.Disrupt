@@ -1,0 +1,5 @@
+<file name="dream_effect_memories_white_loop" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

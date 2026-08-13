@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CivilianincidentdetectionsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selIncidentType" type="Enum"/>
+	<field name="bIsAThreat" type="Boolean"/>
+	<field name="fThreatLevelMin" type="Float"/>
+	<field name="fThreatLevelMax" type="Float"/>
+	<field name="fMaxThreatLevelToApply" type="Float"/>
+	<field name="selIgnoreIncidentIfThreatLevelAbove" type="Enum"/>
+	<field name="fMaxLatency" type="Float"/>
+	<field name="fMotivation" type="Float"/>
+	<field name="bLoopReactionForever" type="Boolean"/>
+	<field name="bIgnoreIncidentWhenHacked" type="Boolean"/>
+	<object name="curveDistanceFactor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="OcclusionCheck">
+		<field name="iVisionAngle" type="Int32"/>
+		<field name="bCheckVisibility" type="Boolean"/>
+		<field name="bCheckAudio" type="Boolean"/>
+		<field name="fIgnoreDistanceForInterior" type="Float"/>
+		<field name="fIgnoreAltitudeForTunnel" type="Float"/>
+	</object>
+</class>

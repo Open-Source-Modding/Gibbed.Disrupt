@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclecombatconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="dMaxRamSlots" type="BinHex"/>
+	<field name="fRamSlotMaxTime" type="Float"/>
+	<field name="fRamSlotCooldown" type="Float"/>
+	<field name="bShouldControlRamSpeed" type="Boolean"/>
+	<field name="fRamSpeedScalar" type="Float"/>
+</class>

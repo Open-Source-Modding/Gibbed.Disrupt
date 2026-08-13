@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dedeliverygameplayglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="mapicondescMainTargetIcon" type="BinHex"/>
+	<field name="mapicondescMainTargetWarningIcon" type="BinHex"/>
+	<field name="mapicondescSecondaryTargetIcon" type="BinHex"/>
+	<field name="mapicondescSecondaryTargetWarningIcon" type="BinHex"/>
+	<field name="fIconDisplayDistance" type="Float"/>
+</class>

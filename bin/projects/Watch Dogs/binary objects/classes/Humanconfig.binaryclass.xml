@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HumanconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="peopleinfoPeopleSpawnInfo" type="BinHex"/>
+	<object name="PGTConfig">
+		<field name="bIsLongRange" type="Boolean"/>
+	</object>
+	<object name="Properties">
+		<field name="bIsBuddyAI" type="Boolean"/>
+		<field name="buddyaisettingsBuddyAISettings" type="BinHex"/>
+		<field name="bIsPlayerAlly" type="Boolean"/>
+		<field name="bCanBeKilledByPlayer" type="Boolean"/>
+		<field name="selMindSet" type="Enum"/>
+		<field name="bIsFactionAffiliate" type="Boolean"/>
+		<field name="bForceRespawnAfterCheckpoint" type="Boolean"/>
+		<field name="stimtableStimEffectTable" type="BinHex"/>
+		<field name="navigationconfigNavigationConfig" type="BinHex"/>
+		<field name="fleebehaviordescriptorFleeConfig" type="BinHex"/>
+		<field name="rewardconfigRewardConfig" type="BinHex"/>
+		<field name="personalityPersonalityConfig" type="BinHex"/>
+		<field name="hackablenpcgameplayconfigHackableGameplayConfig" type="BinHex"/>
+		<field name="accuracyconfigAccuracyConfig" type="BinHex"/>
+		<field name="hackingdefinitionHackingDefinition" type="BinHex"/>
+		<field name="detectionlevelsettingsDetectionLevelSettings" type="BinHex"/>
+		<field name="meleeconfigMeleeConfig" type="BinHex"/>
+		<field name="hitreactionconfigHitReactionConfig" type="BinHex"/>
+		<field name="newdetectionconfigNewDetectionConfig" type="BinHex"/>
+		<field name="dronetargetsperceptionsettingsDroneTargetsPerceptionSettings" type="BinHex"/>
+		<object name="AIAgentConfig">
+			<field name="selSubcategory" type="Enum"/>
+			<field name="selDecorator" type="Enum"/>
+			<field name="bMeleeOnly" type="Boolean"/>
+			<field name="bIsElite" type="Boolean"/>
+			<field name="bIsBoss" type="Boolean"/>
+			<field name="bIsUnique" type="Boolean"/>
+			<field name="bIsOCO" type="Boolean"/>
+			<field name="bShowHackReminder" type="Boolean"/>
+			<field name="text_sBossID" type="String"/>
+			<field name="sBossID" type="BinHex"/>
+			<object name="TagInfo">
+				<field name="selTagIndicatorCategory" type="Enum"/>
+				<field name="selTagIndicatorDefense" type="Enum"/>
+				<field name="selTagIndicatorBehavior" type="Enum"/>
+			</object>
+		</object>
+		<object name="Inventory">
+			<field name="itemlistWeaponSelectorList" type="BinHex"/>
+			<field name="bSpawnWithEquippable" type="Boolean"/>
+			<field name="selInitWeaponType" type="Enum"/>
+			<field name="selInitProjectileType" type="Enum"/>
+			<object name="InventoryLoadoutItemLists">
+				<field name="itemlistNormal" type="BinHex"/>
+			</object>
+		</object>
+		<object name="HealthConfig">
+			<field name="fHealth" type="Float"/>
+			<field name="bImmuneToGasGrenade" type="Boolean"/>
+			<field name="bImmuneToDartDamageFromShield" type="Boolean"/>
+			<field name="bImmuneToMeleeDisorient" type="Boolean"/>
+			<field name="locdmgconfigDamageLocationConfig" type="BinHex"/>
+			<field name="bOverrideVehicleDamageConfig" type="Boolean"/>
+			<field name="fVehicleDamageMultiplier" type="Float"/>
+			<field name="fHeavyVehicleDamageMultiplier" type="Float"/>
+			<object name="curveNonPlayerExplosionDamageMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="ProgressionBaseConfig">
+			<field name="archprogconfigArchetypeProgressionConfig" type="BinHex"/>
+		</object>
+	</object>
+	<object name="DialogSettings">
+		<field name="text_tmplDialogActor" type="String"/>
+		<field name="tmplDialogActor" type="BinHex"/>
+		<field name="dialactorlistDialogActorList" type="BinHex"/>
+	</object>
+</class>

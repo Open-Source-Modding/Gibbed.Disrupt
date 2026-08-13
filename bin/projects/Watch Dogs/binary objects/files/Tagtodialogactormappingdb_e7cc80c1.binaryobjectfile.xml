@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Tagtodialogactormappingdb_e7cc80c1">
+	<object name="obj">
+		<inherit name="Tagtodialogactormappingdb_e7cc80c1Parameters"/>
+	</object>
+</file>

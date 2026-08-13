@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DownloadgameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fBaseDownLoadDuration" type="Float"/>
+	<field name="fPauseWarningDuration" type="Float"/>
+	<field name="bHideObjectiveMarkersAndWireLinks" type="Boolean"/>
+	<field name="bShouldDisplayMissingPlayerLocation" type="Boolean"/>
+	<field name="bShouldTestPlayersDistance" type="Boolean"/>
+	<field name="selTransferRadiusShape" type="Enum"/>
+	<field name="fTransferRadius" type="Float"/>
+	<field name="bUseOverrideRadius" type="Boolean"/>
+	<field name="bActivateMultiplayerBoostCoef" type="Boolean"/>
+	<field name="fAllPlayersInRangeCoef" type="Float"/>
+	<field name="bCanRCsProgressHackDownloads" type="Boolean"/>
+	<field name="bCanRCsProgressPhysicalDownloads" type="Boolean"/>
+	<field name="bExcludeCamerasFromAllowedRcEntities" type="Boolean"/>
+	<field name="bAdaptCounOfRequiredPlayersToCountOfSessionPeers" type="Boolean"/>
+	<field name="bStartDownloadForAllPlayers" type="Boolean"/>
+	<field name="fCylinderShapeZOffsetTop" type="Float"/>
+	<field name="fCylinderShapeZOffsetBottom" type="Float"/>
+	<field name="selProgressBarType" type="Enum"/>
+	<field name="fMinProgress" type="Float"/>
+	<field name="fMaxProgress" type="Float"/>
+	<field name="bIsProgressBarInverted" type="Boolean"/>
+	<field name="fDownloadResetDuration" type="Float"/>
+	<field name="fDownloadBlockedDuration" type="Float"/>
+	<field name="fDownloadBlockedStartRatio" type="Float"/>
+	<field name="fDownloadProgressRatio1" type="Float"/>
+	<field name="fDownloadProgressRatio2" type="Float"/>
+	<field name="bSendAttractStimOnDownloadStart" type="Boolean"/>
+	<field name="fAttractStimRadius" type="Float"/>
+	<object name="locstridDownloadDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDownloadBoostedDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPausedDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridManuallyPausedDisplayString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPauseWarningLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDownloadResetWarningString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridDownloadBlockedString">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="MissingPlayerLocationIds"/>
+	<object name="IgnoreDistanceRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="CanTargetProgressPhysicalDownloadRule">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+</class>

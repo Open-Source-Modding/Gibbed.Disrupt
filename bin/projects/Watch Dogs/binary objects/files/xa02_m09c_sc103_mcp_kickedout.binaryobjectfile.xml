@@ -1,0 +1,5 @@
+<file name="xa02_m09c_sc103_mcp_kickedout" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

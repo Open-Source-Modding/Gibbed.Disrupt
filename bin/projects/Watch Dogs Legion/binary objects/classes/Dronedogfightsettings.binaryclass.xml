@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronedogfightsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMoveSpeed" type="Float"/>
+	<field name="fSideMoveAngleMin" type="Float"/>
+	<field name="fSideMoveAngleMax" type="Float"/>
+	<field name="fVerticalMoveAngleMin" type="Float"/>
+	<field name="fVerticalMoveAngleMax" type="Float"/>
+	<field name="fMoveRangeMin" type="Float"/>
+	<field name="fMoveRangeMax" type="Float"/>
+	<field name="fMinTargetDistance" type="Float"/>
+	<field name="fDefaultDelayMin" type="Float"/>
+	<field name="fDefaultDelayMax" type="Float"/>
+	<field name="fDelayIfHijackedTargetMin" type="Float"/>
+	<field name="fDelayIfHijackedTargetMax" type="Float"/>
+	<field name="fLastMoveDirProbabilityModifier" type="Float"/>
+	<field name="fTooLowHeight" type="Float"/>
+	<field name="fTooLowUpProbabilityModifier" type="Float"/>
+	<object name="curveHeightDiffUpProbabilityModifierCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveHeightDiffDownProbabilityModifierCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

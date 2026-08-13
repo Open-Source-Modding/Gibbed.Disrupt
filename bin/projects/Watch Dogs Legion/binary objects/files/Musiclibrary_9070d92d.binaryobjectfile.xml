@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Musiclibrary_9070d92d">
+	<object name="obj">
+		<inherit name="MusiclibraryParameters"/>
+	</object>
+</file>

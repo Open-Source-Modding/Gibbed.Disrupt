@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dynamiceventssettingsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnabled" type="Boolean"/>
+	<field name="itemsTutorialTip" type="BinHex"/>
+	<object name="Timeouts">
+		<inherit name="SharedParameters"/>
+		<field name="fSpawnTimeout" type="Float"/>
+		<field name="fActivateTimeout" type="Float"/>
+		<field name="fExpirationTimeout" type="Float"/>
+	</object>
+	<object name="AreaConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fBeforeStartedRadius" type="Float"/>
+		<field name="fStartedRadius" type="Float"/>
+		<field name="fLeaveRadius" type="Float"/>
+	</object>
+	<object name="DynamicEventsSettings">
+		<object name="DynamicEventSettings">
+			<inherit name="SharedParameters"/>
+			<field name="bOverrideAreaConfig" type="Boolean"/>
+			<object name="Variations">
+				<object name="Variation">
+					<inherit name="SharedParameters"/>
+					<field name="opslistOpConfig" type="BinHex"/>
+					<field name="bIsFreeRoam" type="Boolean"/>
+					<field name="bOverrideAreaConfig" type="Boolean"/>
+					<object name="LocationCustomizations"/>
+					<object name="NarrativeEvents"/>
+				</object>
+			</object>
+			<object name="LocationCustomizations"/>
+			<object name="NarrativeEvents">
+				<object name="NarrativeEvent">
+					<inherit name="SharedParameters"/>
+					<field name="selType" type="Enum"/>
+					<object name="PhoneComm">
+						<inherit name="SharedParameters"/>
+						<field name="bUseUniquePhoneCommOnFirstPlay" type="Boolean"/>
+						<field name="phonecommunicationsettingsUniquePhoneCommOnFirstPlay" type="BinHex"/>
+						<object name="PhoneComms">
+							<object name="PhoneComm">
+								<field name="phonecommunicationsettingsPhoneComm" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="LocationCustomizations">
+		<object name="LocationCustomization">
+			<inherit name="SharedParameters"/>
+			<field name="bOverrideFreeRoamAreaConfig" type="Boolean"/>
+			<field name="bOverrideLayersToLoad" type="Boolean"/>
+			<object name="tagcategoryselectionblackboardNamedLocation">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="NarrativeEvents"/>
+</class>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UtilityconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="UtilityAgentStateConfigs">
+		<object name="StateConfigs">
+			<field name="text_selAiState" type="String"/>
+			<field name="selAiState" type="Enum"/>
+			<field name="utilitybehaviourBehaviour" type="BinHex"/>
+		</object>
+	</object>
+</class>

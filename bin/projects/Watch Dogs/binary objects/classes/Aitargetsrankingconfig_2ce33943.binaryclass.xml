@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Aitargetsrankingconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fTargetVerticalSeperationWeight" type="Float"/>
+	<field name="fCurrentTargetWeight" type="Float"/>
+	<field name="fTargetVisibleWeight" type="Float"/>
+	<field name="fTargetPlayerWeight" type="Float"/>
+	<field name="fTargetSpiderWeight" type="Float"/>
+	<field name="fTargetRCWeight" type="Float"/>
+	<field name="fTargetForcedPositionWeight" type="Float"/>
+	<field name="fTargetVisiblePositionWeight" type="Float"/>
+	<field name="fTargetPredictedPositionWeight" type="Float"/>
+	<field name="fTargetNearbyPositionWeight" type="Float"/>
+	<field name="fTargetAttackingWeight" type="Float"/>
+	<field name="fTargetAttackingHoldTime" type="Float"/>
+	<object name="curveDistanceWeightCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

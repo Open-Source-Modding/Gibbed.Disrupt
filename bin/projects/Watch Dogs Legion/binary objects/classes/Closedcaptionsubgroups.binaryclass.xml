@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ClosedcaptionsubgroupsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fCooldown" type="Float"/>
+	<field name="uPriority" type="BinHex"/>
+	<field name="fMaxRadius" type="Float"/>
+	<field name="fMinRadius" type="Float"/>
+	<field name="closedcaptiongroupGroup" type="BinHex"/>
+	<field name="bShowDirection" type="Boolean"/>
+	<field name="bShowIfInView" type="Boolean"/>
+	<field name="fDurationThreshold" type="Float"/>
+	<field name="fRandomSkipDivisor" type="Float"/>
+	<object name="ClosedCaptioningStates">
+		<field name="bShowDuringExploration" type="Boolean"/>
+		<field name="bShowDuringDroneControlling" type="Boolean"/>
+		<field name="bShowInCar" type="Boolean"/>
+		<field name="bShowDuringSearch" type="Boolean"/>
+		<field name="bShowDuringCombat" type="Boolean"/>
+		<field name="bShowDuringForbiddenZone" type="Boolean"/>
+		<field name="bShowDuringActiveCombat" type="Boolean"/>
+		<field name="bShowDuringCinematic" type="Boolean"/>
+	</object>
+</class>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Clocreationsettings_robot">
+	<object name="lib">
+		<object hash="72DE4948">
+			<inherit name="Clocreationsettings_robotParameters"/>
+		</object>
+	</object>
+</file>

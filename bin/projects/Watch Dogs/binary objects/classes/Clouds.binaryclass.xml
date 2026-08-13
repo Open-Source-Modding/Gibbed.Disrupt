@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CloudsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="vectorSunPositionBias" type="Vector3"/>
+	<field name="fCrossFadeStart" type="Float"/>
+	<field name="fCrossFadeEnd" type="Float"/>
+	<object name="PlaneShape">
+		<field name="bEnabled" type="Boolean"/>
+		<field name="fSubsurfacePower" type="Float"/>
+		<field name="fVerticalScale" type="Float"/>
+		<field name="fVerticalOffset" type="Float"/>
+		<object name="curveIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="LowerLayer">
+			<field name="text_fileLowerCloudLayer" type="String"/>
+			<field name="fileLowerCloudLayer" type="BinHex"/>
+			<field name="text_fileNormalTexture" type="String"/>
+			<field name="fileNormalTexture" type="BinHex"/>
+			<field name="vector2LowerLayerTiling" type="Vector2"/>
+			<field name="fLowerLayerSpeed" type="Float"/>
+		</object>
+		<object name="UpperLayer">
+			<field name="text_fileUpperCloudLayer" type="String"/>
+			<field name="fileUpperCloudLayer" type="BinHex"/>
+			<field name="text_fileNormalTexture" type="String"/>
+			<field name="fileNormalTexture" type="BinHex"/>
+			<field name="vector2UpperLayerTiling" type="Vector2"/>
+			<field name="fUpperLayerSpeed" type="Float"/>
+		</object>
+    </object>
+	<object name="RingShape">
+		<field name="bEnabled" type="Boolean"/>
+		<field name="fSubsurfacePower" type="Float"/>
+		<field name="fVerticalScale" type="Float"/>
+		<field name="fVerticalOffset" type="Float"/>
+		<object name="curveIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="LowerLayer">
+			<field name="text_fileLowerCloudLayer" type="String"/>
+			<field name="fileLowerCloudLayer" type="BinHex"/>
+			<field name="text_fileNormalTexture" type="String"/>
+			<field name="fileNormalTexture" type="BinHex"/>
+			<field name="vector2LowerLayerTiling" type="Vector2"/>
+			<field name="fLowerLayerSpeed" type="Float"/>
+		</object>
+		<object name="UpperLayer">
+			<field name="text_fileUpperCloudLayer" type="String"/>
+			<field name="fileUpperCloudLayer" type="BinHex"/>
+			<field name="text_fileNormalTexture" type="String"/>
+			<field name="fileNormalTexture" type="BinHex"/>
+			<field name="vector2UpperLayerTiling" type="Vector2"/>
+			<field name="fUpperLayerSpeed" type="Float"/>
+		</object>
+    </object>
+	<object name="TimeOfDaySteps">
+		<object name="Step">
+			<field name="iHour" type="Int32"/>
+			<object name="PlaneShape">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fSubsurfacePower" type="Float"/>
+				<field name="fVerticalScale" type="Float"/>
+				<field name="fVerticalOffset" type="Float"/>
+				<object name="LowerLayer">
+					<field name="text_fileAlbedo" type="String"/>
+					<field name="fileAlbedo" type="BinHex"/>
+					<field name="fileNormal" type="BinHex"/>
+					<field name="vector2Tiling" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+				</object>
+				<object name="UpperLayer">
+					<field name="text_fileAlbedo" type="String"/>
+					<field name="fileAlbedo" type="BinHex"/>
+					<field name="fileNormal" type="BinHex"/>
+					<field name="vector2Tiling" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+				</object>
+			</object>
+			<object name="RingShape">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fSubsurfacePower" type="Float"/>
+				<field name="fVerticalScale" type="Float"/>
+				<field name="fVerticalOffset" type="Float"/>
+				<object name="LowerLayer">
+					<field name="text_fileAlbedo" type="String"/>
+					<field name="fileAlbedo" type="BinHex"/>
+					<field name="fileNormal" type="BinHex"/>
+					<field name="vector2Tiling" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+				</object>
+				<object name="UpperLayer">
+					<field name="text_fileAlbedo" type="String"/>
+					<field name="fileAlbedo" type="BinHex"/>
+					<field name="fileNormal" type="BinHex"/>
+					<field name="vector2Tiling" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="curvePlaneShapeIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRingShapeIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradSubsurfaceLowerLayerColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradSubsurfaceUpperLayerColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradAmbientColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradSubsurfaceBorderColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

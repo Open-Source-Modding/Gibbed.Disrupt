@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dlcloadingscreentipsconfig_48749083.objParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Tips">
+		<object name="Tip">
+			<object name="locstridTip">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="NextGenOnlyTips"/>
+</class>

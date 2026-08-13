@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackingdefinitionsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selQuickHackSlot" type="Enum"/>
+	<object name="Slots">
+		<object name="HackSlot">
+			<field name="selSlotID" type="Enum"/>
+			<object name="CategoriesPrioritized">
+				<object name="HackCategory">
+					<field name="selCategory" type="Enum"/>
+					<field name="selOverridenIconCategory" type="Enum"/>
+					<field name="fCooldownTime" type="Float"/>
+					<field name="bAlwaysAvailable" type="Boolean"/>
+					<object name="locstridOverrideLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+					<object name="AvailabilityRule">
+						<field name="rulesmithidRule" type="BinHex"/>
+						<field name="rulesmithconstValue" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

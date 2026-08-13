@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackednpcresponsesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_hackresponsedataItemType" type="String"/>
+	<field name="hackresponsedataItemType" type="BinHex"/>
+	<object name="Settings">
+		<field name="text_sndPlaySoundOnEntity" type="String"/>
+		<field name="sndPlaySoundOnEntity" type="BinHex"/>
+		<field name="sndtpPlaySoundType" type="BinHex"/>
+		<field name="selReactionType" type="Enum"/>
+		<field name="bUseKneeBonesInsteadOfFeet" type="Boolean"/>
+		<field name="fBoneDisplacementTolerance" type="Float"/>
+		<field name="selType" type="Enum"/>
+		<field name="itemsItem" type="BinHex"/>
+		<field name="selEmotion" type="Enum"/>
+		<field name="text_archARCameraArchetype" type="String"/>
+		<field name="archARCameraArchetype" type="BinHex"/>
+	</object>
+</class>

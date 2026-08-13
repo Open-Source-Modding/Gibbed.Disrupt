@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Tagtodialogactormappingdb_e7cc80c1Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="TagDialogActorPairs">
+		<object name="TagDialogActorPair">
+			<object name="tagcategoryselectionCensusTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+			<object name="NPCDialogActor">
+				<field name="text_tmplDialogActor" type="String"/>
+				<field name="tmplDialogActor" type="BinHex"/>
+			</object>
+			<object name="PlayerDialogActor">
+				<field name="text_tmplDialogActor" type="String"/>
+				<field name="tmplDialogActor" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

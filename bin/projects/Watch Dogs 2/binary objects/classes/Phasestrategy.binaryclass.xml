@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhasestrategyParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<object name="PhaseStrategy">
+		<field name="selType" type="BinHex"/>
+		<field name="text_selType" type="BinHex"/>
+		<object name="Object">
+			<field name="fDamagePhaseTime" type="BinHex"/>
+			<field name="sndActivationSound" type="BinHex"/>
+			<field hash="369288A2" type="BinHex"/>
+			<field name="psValidHitFx" type="BinHex"/>
+			<field hash="4E9248A0" type="BinHex"/>
+			<field name="ActivationBark" type="BinHex"/>
+			<field name="fDamageToTake" type="BinHex"/>
+			<field hash="66ACED36" type="BinHex"/>
+			<field name="bDamageResetsOutOfPhase" type="BinHex"/>
+			<field hash="9BAD6B78" type="BinHex"/>
+			<field hash="9E9D3733" type="BinHex"/>
+			<field name="text_sndActivationSound" type="BinHex"/>
+			<field name="sndDeActivationSound" type="BinHex"/>
+			<field name="psInvalidHitFx" type="BinHex"/>
+			<field hash="BA98DDC1" type="BinHex"/>
+			<field name="DeActivationBark" type="BinHex"/>
+			<field name="bCanMoveWhileInPhase" type="BinHex"/>
+			<field name="sndOnValidHitDamageSound" type="BinHex"/>
+		</object>
+	</object>
+	<object name="PhaseStrategyDecorators">
+		<object name="PhaseStrategyDecorator">
+			<field name="phasestrategydecoratorStrategyDecoratorType" type="BinHex"/>
+		</object>
+	</object>
+</class>

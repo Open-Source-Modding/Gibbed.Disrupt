@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PdadownloadfeedbackapplicationParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sName" type="String"/>
+	<field name="sName" type="BinHex"/>
+	<object name="curveHighSpeedCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveLowSpeedCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveSpeedCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

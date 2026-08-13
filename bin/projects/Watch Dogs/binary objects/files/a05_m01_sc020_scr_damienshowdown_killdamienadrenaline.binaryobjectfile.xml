@@ -1,0 +1,5 @@
+<file name="a05_m01_sc020_scr_damienshowdown_killdamienadrenaline" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

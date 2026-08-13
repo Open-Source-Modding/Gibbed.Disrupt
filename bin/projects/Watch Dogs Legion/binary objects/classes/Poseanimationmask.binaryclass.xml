@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PoseanimationmaskParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selMaskType" type="Enum"/>
+	<object name="Poses">
+		<object name="Pose">
+			<field name="text_Pose" type="String"/>
+			<field name="Pose" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Sliders">
+		<object name="Slider">
+			<field name="text_Slider" type="String"/>
+			<field name="Slider" type="BinHex"/>
+		</object>
+	</object>
+	<object name="AdditiveSliders">
+		<object name="Slider">
+			<field name="text_Slider" type="String"/>
+			<field name="Slider" type="BinHex"/>
+		</object>
+	</object>
+</class>

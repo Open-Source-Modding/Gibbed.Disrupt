@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivedestroyanysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<field name="iNeededCountOfDestroyedTargets" type="Int32"/>
+	<field name="bNoCivilianVictim" type="Boolean"/>
+	<field name="selAuthorizedDestructionCauses" type="Enum"/>
+	<field name="selDroneTypeFlag" type="Enum"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="TargetsTypesAllowed">
+		<object name="Type">
+			<field name="selTargetType" type="Enum"/>
+		</object>
+	</object>
+	<object name="VehicleTypeFlags"/>
+	<object name="AffiliationFlags">
+		<object name="ValidAffiliationFlag">
+			<field name="selFlag" type="Enum"/>
+		</object>
+	</object>
+	<object name="TargetDestroyedOnlineNotification">
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="TargetDestroyedCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="VehicleDescriptionDescriptors"/>
+	<object name="DroneDescriptionDescriptors"/>
+</class>

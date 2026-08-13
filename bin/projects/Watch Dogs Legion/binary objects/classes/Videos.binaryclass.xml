@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VideosParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bSkipPackaging" type="Boolean"/>
+	<object name="BroadcastData">
+		<field name="fileBink" type="BinHex"/>
+		<field name="fileBink4K" type="BinHex"/>
+		<field name="bUsePerFrameLightData" type="Boolean"/>
+		<field name="fSubtitleDisplayTime" type="Float"/>
+		<field name="bIsBinkStreamed" type="Boolean"/>
+		<field name="bIsBinkInGameOnly" type="Boolean"/>
+		<field name="bNoSignalBlockedDuringBroadcast" type="Boolean"/>
+		<field name="bSendSpecialBroadcastStim" type="Boolean"/>
+		<object name="Sounds">
+			<object name="Sound">
+				<field name="text_sndSoundId" type="String"/>
+				<field name="sndSoundId" type="BinHex"/>
+				<field name="sndtpSoundIdType" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridDefaultLocalizationID">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="IsEnabled">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

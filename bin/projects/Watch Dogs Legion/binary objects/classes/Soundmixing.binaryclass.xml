@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SoundmixingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bAbsolute" type="Boolean"/>
+	<field name="uiProprity" type="UInt32"/>
+	<field name="sndStart" type="BinHex"/>
+	<field name="sndtpStartType" type="BinHex"/>
+	<field name="sndStop" type="BinHex"/>
+	<field name="sndtpStopType" type="BinHex"/>
+	<field name="sndReverb" type="BinHex"/>
+	<field name="sndtpReverbType" type="BinHex"/>
+	<field name="fDuration" type="Float"/>
+	<field name="fTransitionIn" type="Float"/>
+	<field name="fTransitionOut" type="Float"/>
+	<field name="bSavable" type="Boolean"/>
+	<field name="bUseGameTimer" type="Boolean"/>
+</class>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_phonecallsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selRingTone" type="Enum"/>
+	<field name="PhoneCaller" type="String"/>
+	<field name="fStartDelay" type="Float"/>
+	<object name="locstridHeaderText">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLineText">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="SoundIDList">
+		<object name="Dialog">
+			<field name="sndSoundID" type="BinHex"/>
+		</object>
+	</object>
+</class>

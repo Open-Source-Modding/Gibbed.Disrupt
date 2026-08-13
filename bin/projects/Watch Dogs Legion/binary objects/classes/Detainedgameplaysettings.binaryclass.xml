@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DetainedgameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bPrisonerIsPlayerAlly" type="Boolean"/>
+	<field name="selPrisonerReactionOnRelease" type="Enum"/>
+	<field name="fleebehaviordescriptorPrisonerReleaseFleeBhvDescriptor" type="BinHex"/>
+	<field name="bUsePGTArenaAsDefaultFleeThreat" type="Boolean"/>
+</class>

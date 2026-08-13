@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmodulecollectiblessettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<object name="InitTrigger">
+			<field name="rulesmithidRuleId" type="BinHex"/>
+		</object>
+		<object name="CollectibleDescriptors">
+			<object name="Descriptor">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+				<field name="discoverysettingsDiscoverySettings" type="BinHex"/>
+				<field name="bCanBeCollected" type="Boolean"/>
+				<field name="selAreaType" type="Enum"/>
+			</object>
+		</object>
+	</object>
+</class>

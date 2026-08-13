@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Censusconfiguration_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="itemsNewOperativeTutorial" type="BinHex"/>
+	<field name="itemsIntelTutorial" type="BinHex"/>
+	<field name="IntelDuration" type="BinHex"/>
+	<object name="LeverageAndIntrigueConfiguration">
+		<field name="censusmetaintrigueresolutionbucketInitialIntrigueAndLeverageBucket" type="BinHex"/>
+		<field name="censusmetaintrigueresolutionbucketOnFailureBucket" type="BinHex"/>
+		<field name="censusmetaintrigueresolutionbucketInPrisonBucket" type="BinHex"/>
+		<field name="censusmetaintrigueresolutionbucketPlayerCausedInPrisonBucket" type="BinHex"/>
+		<field name="censusmetaintrigueresolutionbucketInHospitalBucket" type="BinHex"/>
+		<field name="censusmetaintrigueresolutionbucketPlayerCausedInHospitalBucket" type="BinHex"/>
+		<field name="censusmetaintrigueresolutionbucketPendingDeportationBucket" type="BinHex"/>
+		<field name="censusmetaintrigueresolutionbucketPlayerCausedPendingDeportationBucket" type="BinHex"/>
+		<field name="censusmetaintrigueresolutionbucketUpreWithFelonyBucket" type="BinHex"/>
+		<field name="censusactormemorydefinitionMemoryToApplyOnLeverageFailure" type="BinHex"/>
+		<field name="fPhoneCommunicationDelay" type="Float"/>
+		<field name="fPostPhoneCommunicationDelay" type="Float"/>
+		<field name="fRecruitmentTalkerCooldown" type="Float"/>
+		<field name="fRecruitmentTalkerObjectiveDisableDistance" type="Float"/>
+		<field name="phonecommunicationsettingsContactRecruitableWithoutLeverageTS" type="BinHex"/>
+		<field name="phonecommunicationsettingsPositiveAffinityIntrigueCompletionTS" type="BinHex"/>
+		<field name="phonecommunicationsettingsNegativeAffinityIntrigueCompletionTS" type="BinHex"/>
+		<field name="phonecommunicationsettingsIntrigueToBarkerLeverageTS" type="BinHex"/>
+		<object name="LeverageOpCompatibilityData">
+			<object name="CompatibilityData">
+				<field name="opslistOp" type="BinHex"/>
+				<field name="conversationinteractionKickoffConversationInteractionSettings" type="BinHex"/>
+				<field name="phonecommunicationsettingsKickoffBark" type="BinHex"/>
+				<field name="bRequiresScheduledAppointment" type="Boolean"/>
+				<field name="bCanBeRandomlyAssigned" type="Boolean"/>
+			</object>
+		</object>
+		<object name="HvcLeverageData">
+			<field name="tagHVCOccupation" type="BinHex"/>
+			<field name="tagOccupationGroup" type="BinHex"/>
+			<object name="LeverageWhiteList">
+				<object name="Leverages">
+					<field name="opslistLeverage" type="BinHex"/>
+				</object>
+			</object>
+			<object name="LeverageBlackList">
+				<object name="Leverages">
+					<field name="opslistLeverage" type="BinHex"/>
+				</object>
+			</object>
+			<object name="HvcLeverageData">
+				<field name="tagHVCOccupation" type="BinHex"/>
+				<field name="tagOccupationGroup" type="BinHex"/>
+				<object name="LeverageWhiteList">
+					<object name="Leverages">
+						<field name="opslistLeverage" type="BinHex"/>
+					</object>
+				</object>
+				<object name="LeverageBlackList">
+					<object name="Leverages">
+						<field name="opslistLeverage" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ImmediatelyRecruitableBarks">
+			<object name="phonecommunicationsettingsRecruitmentBark">
+				<field name="phonecommunicationsettingsRecruitmentBark" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridLeverageOpStartedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLeverageOpCompletedTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLeverageOpSubTitle">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="DeepProfilerUnlocked">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="SchedulingConfig">
+		<field name="vehiclebhvsetupTravelByVehicleBhvSetup" type="BinHex"/>
+		<field name="censuscontractdefinitionContractDefinitionForActorInjury" type="BinHex"/>
+		<field name="censusattendancedefinitionAttendanceDefinitionForActorInjury" type="BinHex"/>
+		<field name="censuscontractdefinitionContractDefinitionForActorArrest" type="BinHex"/>
+		<field name="censusattendancedefinitionAttendanceDefinitionForActorArrest" type="BinHex"/>
+		<field name="censuscontractdefinitionContractDefinitionForActorPendingDeportation" type="BinHex"/>
+		<field name="censusattendancedefinitionAttendanceDefinitionForActorPendingDeportation" type="BinHex"/>
+		<object name="DelayTimerConfigForWalkers">
+			<field name="fMinTime" type="Float"/>
+			<field name="fMaxTime" type="Float"/>
+		</object>
+		<object name="DelayTimerConfigForCLOUsers">
+			<field name="fMinTime" type="Float"/>
+			<field name="fMaxTime" type="Float"/>
+		</object>
+		<object name="FakeScheduleStrings">
+			<object name="locstridOnABoat">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridInADgScene">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridInACloEvent">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridInAHackerspace">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridInAConversation">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridInAnHMA">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridInAIgnoreScheduleZone">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIopActive">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="IsFleeing">
+				<object name="locstridNoTarget">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetNoTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetHasTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="IsCowering">
+				<object name="locstridNoTarget">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetNoTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetHasTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="IsInCombat">
+				<object name="locstridNoTarget">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetNoTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetHasTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="IsInSearch">
+				<object name="locstridNoTarget">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetNoTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetHasTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="IsInGoodSamaritan">
+				<object name="locstridNoTarget">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetNoTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetHasTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="IsPlayingDartsWithPlayer">
+				<object name="locstridNoTarget">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetNoTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridHasTargetHasTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="locstridWalkingMyDog">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridAssignedToForbiddenZone">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsOpenWorldPolice">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsOpenWorldClanKelleyIntimidator">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsInBuddyAI">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsReinforcement_Authorities">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsReinforcement_Criminals">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsActiveOperative">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="ScheduleProfileCardTemplateStrings">
+			<object name="CurrentlyHappening">
+				<object name="AvailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="AvailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+			</object>
+			<object name="CurrentlyTravellingTo">
+				<object name="AvailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="AvailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+			</object>
+			<object name="CurrentlyTravellingToDelayed">
+				<object name="AvailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="AvailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+			</object>
+			<object name="CurrentlyTravellingToArrivedEarly">
+				<object name="AvailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="AvailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+			</object>
+			<object name="HappeningInTheFuture">
+				<object name="AvailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="AvailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_HasDistrict_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="NoAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_AllDay">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="UnavailableAssociate_NoLocation_HasEndTime">
+					<object name="locstridLocId">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ScheduleMapCardTemplateStrings">
+			<object name="locstridAvailableAssociate_NoTitle_NoLocation">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridAvailableAssociate_HasTitle_NoLocation">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridNoAssociate_HasLocation">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridNoAssociate_HasDistrict">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridNoAssociate_NoLocation">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUnavailableAssociate_NoTitle_NoLocation">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUnavailableAssociate_HasTitle_NoLocation">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUnscheduledKnownAssociate_NoTitle_NormalStatus">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUnscheduledKnownAssociate_HasTitle_NormalStatus">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUnscheduledKnownAssociate_NoTitle_NonNormalStatus">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUnscheduledKnownAssociate_HasTitle_NonNormalStatus">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="UIConfig">
+		<object name="ActorStatuses">
+			<object name="Normal">
+				<object name="locstridStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridTeamAppStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithoutRelation">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="Dead">
+				<object name="locstridStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridTeamAppStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithoutRelation">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="Injured">
+				<object name="locstridStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridTeamAppStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithoutRelation">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="Arrested">
+				<object name="locstridStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridTeamAppStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithoutRelation">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="PendingDeportation">
+				<object name="locstridStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridTeamAppStatusLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_NonOperative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_NoStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithRelation_Operative_WithStatus">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridNoScheduleDescription_WithoutRelation">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+		<object name="HudPopupData">
+			<object name="locstridRecruitAvailableHeader">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridAntagonistHeader">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridSupportIncreasedHeader">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOnNemesisNeutralizedRewardLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="TimeData">
+			<object name="locstridAllDayTimeRangeLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridPartialDayTimeRangeLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridConciseTimeLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUppercaseAMLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUppercasePMLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridLowercaseAMLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridLowercasePMLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="RelationshipData">
+			<object name="locstridRelationDescription_NonOperative_NormalStatus">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridRelationDescription_Operative_NormalStatus">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridRelationDescription_NonOperative_NonNormalStatus">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridRelationDescription_Operative_NonNormalStatus">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="NameData">
+			<object name="locstridFullNameLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridFullNameSurnamePotentiallyCutOffLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridRelationFullNameRoleLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOperativeTitleLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridExDedSecTitleLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridNemesisTitleLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="HighlightData">
+			<object name="locstridIsOperativeLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsLocalContactLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsNemesisLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsExDedSecsLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsDeadLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsInResentmentLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridRelationRoleLocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsRelation_NoTitle_Top_Possessive_LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsRelation_NoTitle_Top_NotPossessive_LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsRelation_HasTitle_Top_Possessive_LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsRelation_HasTitle_Top_NotPossessive_LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsRelation_NoTitle_Bottom_Possessive_LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsRelation_NoTitle_Bottom_NotPossessive_LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsRelation_HasTitle_Bottom_Possessive_LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridIsRelation_HasTitle_Bottom_NotPossessive_LocId">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="RecruitmentData">
+			<object name="locstridDeepProfilerLocked">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridDeepProfilerUnlocked">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="OnlineRecruitmentCompletedCelebration">
+				<object name="locstridBigCelebrationTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridBigCelebrationText">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridRewardNotificationTitle">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridRewardNotifiationText">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+		<object name="locstridTeamAppUnavailableLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="PredefinedFilters">
+		<object name="Filter">
+			<field name="text_sName" type="String"/>
+			<field name="sName" type="BinHex"/>
+			<object name="Filter">
+				<object name="tagcategoryselectionblackboardProfile">
+					<object name="TagCategorySelectionArray"/>
+					<object name="TagDescriptorUI">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<object name="TagCategorySelectionDescriptors">
+							<object name="TagCategorySelectionDescriptor">
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="bMultiSelect" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="DeferredActorStatusChangeConfiguration">
+		<object name="CapturedByPolice">
+			<field name="fMinimumWaitTime" type="Float"/>
+			<field name="fMaximumWaitTime" type="Float"/>
+		</object>
+		<object name="ReleaseFromPoliceStation">
+			<field name="fMinimumWaitTime" type="Float"/>
+			<field name="fMaximumWaitTime" type="Float"/>
+		</object>
+		<object name="ReleaseFromHospital">
+			<field name="fMinimumWaitTime" type="Float"/>
+			<field name="fMaximumWaitTime" type="Float"/>
+		</object>
+		<object name="CaptureBySIRS">
+			<field name="fMinimumWaitTime" type="Float"/>
+			<field name="fMaximumWaitTime" type="Float"/>
+		</object>
+		<object name="ReleaseFromSIRS">
+			<field name="fMinimumWaitTime" type="Float"/>
+			<field name="fMaximumWaitTime" type="Float"/>
+		</object>
+		<object name="ActorScheduleFillIn">
+			<field name="fMinimumWaitTime" type="Float"/>
+			<field name="fMaximumWaitTime" type="Float"/>
+		</object>
+	</object>
+	<object name="UpresProbabilities">
+		<field name="fChanceOfBeingDead" type="Float"/>
+		<field name="fChanceOfBeingInjured" type="Float"/>
+		<field name="fChanceOfBeingArrested" type="Float"/>
+		<field name="fChanceOfBeingDeported" type="Float"/>
+		<field name="fChanceToHave1Relationship" type="Float"/>
+		<field name="fChanceToHave2Relationships" type="Float"/>
+		<field name="fChanceToHave3Relationships" type="Float"/>
+		<field name="fChanceOfScheduledInArea" type="Float"/>
+		<field name="iMaxNumRelationshipContractsPerActor" type="Int32"/>
+		<field name="iMaxNumPersonalContractsPerActor" type="Int32"/>
+		<field name="uiMaxNumNemeses" type="UInt32"/>
+		<object name="CryptoRewardAmountOnNemesisNeutralization">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="NameOverrides">
+		<object name="NameOverrides">
+			<object name="Override">
+				<field name="tagNameOverrideTag" type="BinHex"/>
+				<field name="text_sCensusProfileFieldNameOverride" type="String"/>
+				<field name="sCensusProfileFieldNameOverride" type="BinHex"/>
+				<field name="text_sCensusProfileFieldSurnameOverride" type="String"/>
+				<field name="sCensusProfileFieldSurnameOverride" type="BinHex"/>
+				<field name="uiNameCensusFieldId" type="UInt32"/>
+				<field name="uiSurnameCensusFieldId" type="UInt32"/>
+			</object>
+		</object>
+	</object>
+	<object name="InitialPredefinedActorDescriptors">
+		<object name="censuspredefinedactordescriptorPredefinedActorDescriptor">
+			<field name="censuspredefinedactordescriptorPredefinedActorDescriptor" type="BinHex"/>
+		</object>
+	</object>
+	<object name="OperativeRetirementMemories">
+		<field name="censusactormemorydefinitionOperativeDeathMemory" type="BinHex"/>
+		<field name="censusactormemorydefinitionPositiveOperativeRetirementMemory" type="BinHex"/>
+		<field name="censusactormemorydefinitionNegativeOperativeRetirementMemory" type="BinHex"/>
+	</object>
+	<object name="AuthoredNames">
+		<object name="AuthoredFieldValueDefinition">
+			<field name="uiFieldID" type="UInt32"/>
+			<field name="sFieldValue" type="String"/>
+			<object name="locstridLocalizationID">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="AuthoredSurnames">
+		<object name="AuthoredFieldValueDefinition">
+			<field name="uiFieldID" type="UInt32"/>
+			<field name="sFieldValue" type="BinHex"/>
+			<object name="locstridLocalizationID">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

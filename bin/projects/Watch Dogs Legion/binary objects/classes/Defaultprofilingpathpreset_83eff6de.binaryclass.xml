@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Defaultprofilingpathpreset_83eff6deParameters">
+	<inherit name="SharedParameters"/>
+	<field name="profilingpathpresetCustomPreset" type="BinHex"/>
+	<field name="profilingpathpresetCustomPresetVR" type="BinHex"/>
+</class>

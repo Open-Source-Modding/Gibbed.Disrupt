@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NethackingconfigsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_matHighlightMaterial" type="String"/>
+	<field name="matHighlightMaterial" type="BinHex"/>
+	<field name="fOverlayHighlightStartDelay" type="Float"/>
+	<field name="fOverlayHighlightDuration" type="Float"/>
+	<field name="selFocusOutlineColor" type="Enum"/>
+	<field name="fFocusOutlineIntensity" type="Float"/>
+	<field name="selFocusOutlineVisibility" type="Enum"/>
+	<field name="bTransparency" type="Boolean"/>
+	<field name="bDepthPass" type="Boolean"/>
+	<field name="fOutlineStartDelay" type="Float"/>
+	<field name="fOutlineDuration" type="Float"/>
+	<field name="bPingFeedbackEnabled" type="Boolean"/>
+	<field name="fPingOutlineFadeInFactor" type="Float"/>
+	<field name="fPingOutlineFadeOutFactor" type="Float"/>
+	<field name="colorLineStartColor" type="VectorColor"/>
+	<field name="colorLineEndColor" type="VectorColor"/>
+	<field name="text_sLineStartBone" type="String"/>
+	<field name="sLineStartBone" type="BinHex"/>
+	<field name="vectorLineStartOffset" type="Vector3"/>
+	<field name="fLineStartDelay" type="Float"/>
+	<field name="fLineDuration" type="Float"/>
+	<field name="vector2LineScale" type="Vector2"/>
+	<field name="fParticlesStartDelay" type="Float"/>
+	<field name="fParticlesDuration" type="Float"/>
+	<field name="sndOnPingedSound" type="BinHex"/>
+	<field name="sndtpOnPingedSoundType" type="BinHex"/>
+	<field name="fPingFeedbackMaxDistance" type="Float"/>
+	<field name="fPingFeedbackMaxOccludedDistance" type="Float"/>
+	<field name="bProfilableOccludable" type="Boolean"/>
+	<object name="ParticleEffects">
+		<object name="ParticleEffect">
+			<field name="text_psParticleEffect" type="String"/>
+			<field name="psParticleEffect" type="BinHex"/>
+			<field name="fRange" type="Float"/>
+		</object>
+	</object>
+</class>

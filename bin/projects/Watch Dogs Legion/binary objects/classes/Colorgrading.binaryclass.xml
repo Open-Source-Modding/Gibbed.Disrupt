@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ColorgradingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fColorRemapRed" type="Float"/>
+	<field name="bColorRemapRedOverride" type="Boolean"/>
+	<field name="fColorRemapGreen" type="Float"/>
+	<field name="bColorRemapGreenOverride" type="Boolean"/>
+	<field name="fCcolorRemapBlue" type="Float"/>
+	<field name="bCcolorRemapBlueOverride" type="Boolean"/>
+	<field name="fContrast" type="Float"/>
+	<field name="bContrastOverride" type="Boolean"/>
+	<field name="fSaturation" type="Float"/>
+	<field name="bSaturationOverride" type="Boolean"/>
+</class>

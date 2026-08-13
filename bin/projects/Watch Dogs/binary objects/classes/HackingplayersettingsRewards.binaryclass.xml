@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackingplayersettingsRewardsParameters">
+    <field name="selEndType" type="Enum"/>
+    <field name="text_sBarkSoundId" type="String"/>
+    <field name="sBarkSoundId" type="BinHex"/>
+    <field name="selRewardType" type="Enum"/>
+    <field name="itemlistsExtraReward" type="BinHex"/>
+    <object name="locstridEndMessage">
+      <field name="LocalizationId" type="Int64"/>
+    </object>
+    <object name="locstridEndMessagePart2">
+      <field name="LocalizationId" type="Int64"/>
+    </object>
+    <object name="SPReward">
+      <field name="itemlistsRewardItemList" type="BinHex"/>
+    </object>
+    <object name="MPReward">
+      <field name="iXPReward" type="Int32"/>
+      <field name="iMoneyReward" type="Int32"/>
+      <field name="fPlayerNotorietyContributionFactor" type="Float"/>
+      <field name="uiMissionNotorietyContribution" type="UInt32"/>
+      <field name="bIsWinner" type="Boolean"/>
+    </object>
+</class>

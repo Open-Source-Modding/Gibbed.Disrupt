@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Plasmaanimationgesturelistdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="TalkingActions">
+		<object name="Actions">
+			<field name="Actions" type="String"/>
+		</object>
+	</object>
+	<object name="ListeningActions">
+		<object name="Actions">
+			<field name="Actions" type="String"/>
+		</object>
+	</object>
+</class>

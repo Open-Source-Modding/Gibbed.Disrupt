@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DetectionlevelsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Intuition">
+		<field name="IntuitionHeight" type="BinHex"/>
+		<field name="TargetRCDroneIntuitionHeight" type="BinHex"/>
+		<field name="TargetRCIntuitionRadius" type="BinHex"/>
+		<field name="TargetRCDroneIntuitionRadius" type="BinHex"/>
+	</object>
+	<object name="Detection">
+		<field name="DetectionTimeToReachTopMax" type="BinHex"/>
+		<field name="LOSReacquisitionCoolDown" type="BinHex"/>
+		<field name="LOSReacquisitionMaxTime" type="BinHex"/>
+	</object>
+	<object name="Modifiers">
+		<object name="Actions">
+			<field name="TargetIsShootingTimeToReachMaxModifier" type="BinHex"/>
+		</object>
+		<object name="Blackout">
+			<field name="TargetInBlackoutTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetInBlackoutBackupTimeToReachMaxModifier" type="BinHex"/>
+		</object>
+		<object name="Identity">
+			<field name="TargetIsFlyingDroneTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsRCToyCarTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsLargeRCTimeToReachMaxModifier" type="BinHex"/>
+		</object>
+		<object name="InVehicle">
+			<field name="TargetInRunningVehicleTimeToReachMaxModifier" type="BinHex"/>
+		</object>
+		<object name="LockDown">
+			<field name="LockDownTimeToReachMaxModifier" type="BinHex"/>
+		</object>
+		<object name="OffScreen">
+			<field name="AIAgentOffScreenTimeToReachMaxModifier" type="BinHex"/>
+		</object>
+		<object name="Stims">
+			<field name="AIAgentHasHeardGunShotTimeoutModifier" type="BinHex"/>
+			<field name="AIAgentHasHeardGunShotTimeToReachMaxModifier" type="BinHex"/>
+		</object>
+		<object name="Curves">
+			<field name="bUseTargetDistanceAndFOVRatioCurve" type="Boolean"/>
+			<object name="curveDetectionTimeModifierByTargetDistanceAndFOVRatioCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveDetectionTimeModifierByTargetDistanceCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+	</object>
+	<object name="DeadBodies">
+		<field name="DeadBodiesDetectionRadius" type="BinHex"/>
+	</object>
+	<object name="ExplodedEntities">
+		<field name="ExplodedEntitiesDetectionRadius" type="BinHex"/>
+	</object>
+	<object name="Distracted">
+		<field name="DistractedDetectionRadius" type="BinHex"/>
+	</object>
+	<object name="LastKnownPosition">
+		<field name="TargetIsSprintingAutomaticLKPUpdateRadius" type="BinHex"/>
+	</object>
+	<object name="RuleSmith">
+		<object name="IntuitionRadius">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="IntuitionDetectionTime">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="GaugeTimeToReachMaxModifier">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="GaugeResetDelay">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="PlayerAccess">
+		<object name="DetectionTimeMultiplierAware">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="DetectionTimeMultiplierUnaware">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="DetectionTimeMultiplierSuspiciousAction">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="DetectionDistanceAware">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="DetectionDistanceUnaware">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="DetectionDistanceSuspiciousAction">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

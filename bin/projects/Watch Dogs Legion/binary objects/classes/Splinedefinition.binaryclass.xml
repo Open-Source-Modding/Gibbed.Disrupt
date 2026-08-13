@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SplinedefinitionParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="bLegacy" type="Boolean"/>
+	<field name="bUseVisual" type="Boolean"/>
+	<field name="bUseLogic" type="Boolean"/>
+	<field name="minimaproadtypeMinimapRoadType" type="BinHex"/>
+	<object name="LoftProp">
+		<field name="disName" type="BinHex"/>
+		<object name="LoftElements">
+			<object name="LoftElement">
+				<field name="splineloftLoftElement" type="BinHex"/>
+				<field name="selAlign" type="BinHex"/>
+				<field name="vectorOffset" type="BinHex"/>
+				<field name="bMirrorShape" type="Boolean"/>
+				<field name="fStartDist" type="Float"/>
+				<field name="fEndDist" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="SpawnProp">
+		<field name="disName" type="BinHex"/>
+		<object name="SpawnInfos">
+			<object name="SpawnInfo">
+				<field name="bSpawnAtRangeExtremity" type="Boolean"/>
+				<field name="selSpawnAtRangeExtremityType" type="BinHex"/>
+				<field name="fSpawnAtRangeExtremityDistance" type="Float"/>
+				<field name="bSpawnAtRangeExtremitySnapToFilletPoint" type="Boolean"/>
+				<field name="fStartOffsetDist" type="Float"/>
+				<field name="selStartReference" type="BinHex"/>
+				<field name="fEndOffsetDist" type="Float"/>
+				<field name="fInBetweenDist" type="Float"/>
+				<field name="fInBetweenDistError" type="Float"/>
+				<field name="vectorPositionOffset" type="Vector3"/>
+				<field name="selAlign" type="BinHex"/>
+				<field name="vectorPositionOffsetError" type="Vector3"/>
+				<field name="angvecAngleOffset" type="Vector3"/>
+				<field name="angvecAngleOffsetError" type="Vector3"/>
+				<field name="angMaxSplineSlopeAngle" type="BinHex"/>
+				<field name="bStayVertical" type="Boolean"/>
+				<field name="sRandomSeed" type="BinHex"/>
+				<field name="archArchetypeToSpawn" type="BinHex"/>
+				<field name="prefabPrefabToSpawn" type="BinHex"/>
+				<field name="fileProxyObject" type="BinHex"/>
+				<field name="selIntersectionSpawnRule" type="BinHex"/>
+				<field name="bCullAsCorner" type="Boolean"/>
+				<field name="bSpawnOnFillet" type="Boolean"/>
+				<field name="bExcludeFromSacredZone" type="Boolean"/>
+				<field name="bAdjustToCurvedRoadPosition" type="Boolean"/>
+				<field name="bPreserveSpacingOnXOffset" type="Boolean"/>
+				<field name="bUseProjectedLength" type="Boolean"/>
+				<field name="bIsKilledByMorphBox" type="Boolean"/>
+				<field name="text_fileProxyObject" type="BinHex"/>
+				<field name="text_archArchetypeToSpawn" type="BinHex"/>
+				<object name="EntityOverrideBehavior">
+					<field name="bAllowOverride" type="Boolean"/>
+					<field name="folder" type="BinHex"/>
+					<field name="fSearchRadius" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="LogicProp">
+		<field name="selLogicType" type="BinHex"/>
+		<field name="trafficvehiclerestrictionsVehicleRestrictions" type="BinHex"/>
+		<field name="bRestrictCrossingLanes" type="Boolean"/>
+		<field name="iLaneCountOngoing" type="BinHex"/>
+		<field name="iLaneCountOncoming" type="BinHex"/>
+		<field name="bOneWay" type="Boolean"/>
+		<field name="fLaneWidth" type="Float"/>
+		<field name="fOffsetFromCenter" type="Float"/>
+		<field name="fSidewalkOffsetFromLogicOngoing" type="Float"/>
+		<field name="fSidewalkOffsetFromLogicOncoming" type="Float"/>
+		<field name="bStrictLaneDirection" type="Boolean"/>
+		<field name="bStrictLaneWidth" type="Boolean"/>
+		<field name="selMedianType" type="BinHex"/>
+		<field name="patselectTrafficDensity" type="BinHex"/>
+		<object name="LanesAffectedByVehicleRestrictions">
+			<field name="bLane0" type="Boolean"/>
+			<field name="bLane1" type="Boolean"/>
+			<field name="bLane2" type="Boolean"/>
+			<field name="bLane3" type="Boolean"/>
+			<field name="bLane4" type="Boolean"/>
+			<field name="bLane5" type="Boolean"/>
+		</object>
+		<object name="TrafficDef">
+			<field name="disNomadObjectId" type="BinHex"/>
+			<field name="hidSingleObject" type="Boolean"/>
+			<field name="hidKey" type="BinHex"/>
+			<field name="hidValidationFailed" type="Boolean"/>
+			<field name="hidName" type="BinHex"/>
+			<field name="bLegacy" type="Boolean"/>
+			<field name="bClosedToTraffic" type="Boolean"/>
+			<field name="bClosedToFlyingDrones" type="Boolean"/>
+			<field name="bForbidGPS" type="Boolean"/>
+			<field name="bAllowFelonySpawn" type="Boolean"/>
+			<field name="bIsAlley" type="Boolean"/>
+			<field name="bIsFleeOpportunity" type="Boolean"/>
+			<field name="bUseFelonyVolume" type="Boolean"/>
+			<field name="bNoCivStim" type="Boolean"/>
+			<field name="bNoPlayerSpawn" type="Boolean"/>
+			<field name="selSpeedLimit" type="BinHex"/>
+		</object>
+		<object name="DronesTrafficDef">
+			<field name="disNomadObjectId" type="BinHex"/>
+			<field name="hidSingleObject" type="Boolean"/>
+			<field name="hidKey" type="BinHex"/>
+			<field name="hidValidationFailed" type="Boolean"/>
+			<field name="hidName" type="BinHex"/>
+			<field name="bClosedToFlyingDrones" type="Boolean"/>
+			<field name="selHighwayPosition" type="BinHex"/>
+			<field name="selHighwaySize" type="BinHex"/>
+		</object>
+		<object name="ParkingDef">
+			<field name="selLaneConfig" type="BinHex"/>
+			<field name="fParkingLaneWidth" type="Float"/>
+			<field name="parkeddensityParkedCarsDensity" type="BinHex"/>
+		</object>
+		<object name="WalkwayDef">
+			<field name="selLaneConfig" type="BinHex"/>
+			<field name="fLaneWidth" type="Float"/>
+			<field name="civdensityCivilianDensity" type="BinHex"/>
+			<field name="fLaneOffsetBegin" type="Float"/>
+			<field name="fBorderWidth" type="Float"/>
+		</object>
+		<object name="WaterTrafficDef">
+			<field name="disNomadObjectId" type="BinHex"/>
+			<field name="hidSingleObject" type="Boolean"/>
+			<field name="hidKey" type="BinHex"/>
+			<field name="hidValidationFailed" type="Boolean"/>
+			<field name="hidName" type="BinHex"/>
+			<field name="selSpeedLimit" type="BinHex"/>
+		</object>
+	</object>
+</class>

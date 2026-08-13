@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Streetartsettings_7825ec38">
+	<object name="obj">
+		<inherit name="Streetartsettings_7825ec38Parameters"/>
+	</object>
+</file>

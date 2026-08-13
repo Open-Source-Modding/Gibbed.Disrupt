@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="InteractivetalkergameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="conversationinteractionConversationSettings" type="BinHex"/>
+	<field name="fleebehaviordescriptorInteractiveTalkerFleeDescriptor" type="BinHex"/>
+	<object name="ConversationSettings"/>
+</class>

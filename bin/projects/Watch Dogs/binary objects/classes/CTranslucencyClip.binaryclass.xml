@@ -1,0 +1,18 @@
+<class name="CTranslucencyClip">
+    <object name="CTranslucencyClip">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field name="timeStartTime" type="Float"/>
+      <field name="timeDuration" type="Float"/>
+      <field name="timeEndTime" type="Float"/>
+      <field name="hidResizable" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+      <field name="sAnimationTrackCollectionResource" type="BinHex"/>
+      <field name="bResizable" type="Boolean"/>
+      <field name="hidAnimationTrackCollectionDuration" type="BinHex"/>
+      <object name="AnimationTrackCollection">
+        <object name="Tracks" />
+      </object>
+    </object>
+</class>

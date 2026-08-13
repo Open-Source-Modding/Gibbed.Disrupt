@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TagtopmsmappingdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="tagcategoryselectionCensusTag">
+		<field name="text_UITagCategorySelectionClassID" type="String"/>
+		<field name="UITagCategorySelectionClassID" type="BinHex"/>
+		<field name="tagcategoryUITagCategory" type="BinHex"/>
+		<field name="tagcategoryTagCategory" type="BinHex"/>
+		<field name="tagTag" type="BinHex"/>
+	</object>
+	<object name="ArchetypeStylePmsValues">
+		<field name="uiMappingPriority" type="UInt32"/>
+		<field name="selIdle" type="Enum"/>
+		<field name="selNav" type="Enum"/>
+		<field name="selMelee" type="Enum"/>
+		<field name="selTakedown" type="Enum"/>
+		<field name="selCover" type="Enum"/>
+		<field name="selCrouch" type="Enum"/>
+		<field name="selShooting" type="Enum"/>
+		<field name="selParkour" type="Enum"/>
+		<field name="selVehicle" type="Enum"/>
+		<field name="selEmote" type="Enum"/>
+		<field name="selSelfie" type="Enum"/>
+		<field name="selStores" type="Enum"/>
+		<field name="selInteracts" type="Enum"/>
+		<field name="selOpSwaps" type="Enum"/>
+	</object>
+</class>

@@ -1,0 +1,5 @@
+<file name="xa01m01_sc502_cin_crafting" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Gamefinalesettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="AreNonGameFinaleOpsLocked">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="GameFinaleOpsList">
+		<object name="opslistOpConfigDbObject">
+			<field name="opslistOpConfigDbObject" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridOpAbandonPromptMessage">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

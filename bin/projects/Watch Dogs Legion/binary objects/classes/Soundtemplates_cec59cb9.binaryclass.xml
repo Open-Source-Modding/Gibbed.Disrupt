@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Soundtemplates_cec59cb9Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ExternalSourceTemplates">
+		<object name="ExternalSourceTemplate">
+			<field name="text_name" type="String"/>
+			<field name="name" type="BinHex"/>
+			<field name="text_sndExternalSource" type="String"/>
+			<field name="sndExternalSource" type="BinHex"/>
+			<field name="useFacial" type="BinHex"/>
+			<field name="is2D" type="BinHex"/>
+		</object>
+	</object>
+</class>

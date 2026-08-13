@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DrunkeffectconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fDoubleVisionFactor" type="Float"/>
+	<field name="fDoubleVisionRollTimeMin" type="Float"/>
+	<field name="fDoubleVisionRollTimeMax" type="Float"/>
+	<field name="fEyeDistanceFactor" type="Float"/>
+	<field name="fEyeDeviationFactor" type="Float"/>
+	<field name="vectorColourControl" type="Vector3"/>
+	<field name="vectorTintInner" type="Vector3"/>
+	<field name="vectorTintOuter" type="Vector3"/>
+	<field name="vectorSaturationInner" type="Vector3"/>
+	<field name="vectorSaturationOuter" type="Vector3"/>
+	<field name="vectorContrastInner" type="Vector3"/>
+	<field name="vectorContrastOuter" type="Vector3"/>
+	<field name="fDistortionSpeed" type="Float"/>
+	<field name="fDistortionStrength" type="Float"/>
+	<field name="fBlurDrunkness" type="Float"/>
+	<field name="fBlurDefocusRate" type="Float"/>
+	<field name="fBlurCentreSpotSize" type="Float"/>
+	<field name="fBlurRadialFalloff" type="Float"/>
+	<field name="fBlurFactor" type="Float"/>
+	<field name="fSoundEffectStrength" type="Float"/>
+	<field name="vectorShakeTranslationAmplitude" type="Vector3"/>
+	<field name="vectorShakeTranslationSpeed" type="Vector3"/>
+	<field name="vectorShakeRotationAmplitude" type="Vector3"/>
+	<field name="vectorShakeRotationSpeed" type="Vector3"/>
+	<field name="uDrinkCountToStartTintOuterAnim" type="BinHex"/>
+	<field name="fTintOuterAnimaitionTime" type="Float"/>
+	<field name="vectorTintOuterAnimaitionMin" type="Vector3"/>
+	<field name="vectorTintOuterAnimaitionMax" type="Vector3"/>
+	<field name="bUseRandomAdjustmentFactor" type="Boolean"/>
+	<field name="fFOVFactor" type="Float"/>
+	<field name="fTranInTimeScaleFactor" type="Float"/>
+	<field name="selTranOutBehavior" type="Enum"/>
+	<field name="fTranOutTimeScaleFactor" type="Float"/>
+	<field name="fHalvingPeriod" type="Float"/>
+	<object name="curveTintOuterAnimationCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

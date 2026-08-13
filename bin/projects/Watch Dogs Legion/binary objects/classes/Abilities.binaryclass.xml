@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AbilitiesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selProductionState" type="Enum"/>
+	<field name="text_characterabilitylogicmoduleLogicModule" type="String"/>
+	<field name="characterabilitylogicmoduleLogicModule" type="BinHex"/>
+	<field name="text_characterabilityparametersParameters" type="String"/>
+	<field name="characterabilityparametersParameters" type="BinHex"/>
+	<object name="Parameters">
+		<field name="selTriggerType" type="Enum"/>
+		<field name="bEnableAutoEquip" type="Boolean"/>
+		<field name="text_archARCloak" type="String"/>
+		<field name="archARCloak" type="BinHex"/>
+		<field name="text_archWeapon" type="String"/>
+		<field name="archWeapon" type="BinHex"/>
+		<field name="uiCharges" type="UInt32"/>
+		<field name="BoneName" type="BinHex"/>
+		<field name="fDuration" type="Float"/>
+		<field name="fMuzzleLongitudinalOffset" type="Float"/>
+		<field name="fMuzzleVerticalOffset" type="Float"/>
+		<field name="fLockOnTime" type="Float"/>
+		<field name="fLockOnRangeMin" type="Float"/>
+		<field name="fLockOnRangeMax" type="Float"/>
+		<field name="fMaxFireAngle" type="Float"/>
+		<field name="fInvincibilityDuration" type="Float"/>
+		<field name="fAbilityActiveDuration" type="Float"/>
+		<field name="scriptedhackareadbHackArea" type="BinHex"/>
+		<field name="curvelibShockwaveDamageFalloff" type="BinHex"/>
+		<field name="text_sndPropagationSound" type="String"/>
+		<field name="sndPropagationSound" type="BinHex"/>
+		<field name="sndtpPropagationSoundType" type="BinHex"/>
+		<field name="fAnimationLength" type="Float"/>
+		<field name="fEffectDelay" type="Float"/>
+		<field name="text_psPlayerVFX" type="String"/>
+		<field name="psPlayerVFX" type="BinHex"/>
+		<field name="text_PlayerVFXBone" type="String"/>
+		<field name="PlayerVFXBone" type="BinHex"/>
+		<field name="text_psEnemyVFX" type="String"/>
+		<field name="psEnemyVFX" type="BinHex"/>
+		<field name="text_EnemyVFXBone" type="String"/>
+		<field name="EnemyVFXBone" type="BinHex"/>
+		<field name="selLinkColor" type="Enum"/>
+		<field name="fConnectionWidth" type="Float"/>
+		<field name="fConnectionDuration" type="Float"/>
+		<field name="fConnectionFillSpeed" type="Float"/>
+		<field name="fConnectionCatchUpDelay" type="Float"/>
+		<field name="fConnectionCatchUpSpeed" type="Float"/>
+		<field name="fConnectionFlowSpeed" type="Float"/>
+		<field name="text_sndBetrayTargetingStartedSound" type="String"/>
+		<field name="sndBetrayTargetingStartedSound" type="BinHex"/>
+		<field name="sndtpBetrayTargetingStartedSoundType" type="BinHex"/>
+		<field name="text_sndBetrayTargetingCancelledSound" type="String"/>
+		<field name="sndBetrayTargetingCancelledSound" type="BinHex"/>
+		<field name="sndtpBetrayTargetingCancelledSoundType" type="BinHex"/>
+		<field name="text_sndBetrayTargetAquiredSound" type="String"/>
+		<field name="sndBetrayTargetAquiredSound" type="BinHex"/>
+		<field name="sndtpBetrayTargetAquiredSoundType" type="BinHex"/>
+		<field name="text_sndBetrayLaunchSound" type="String"/>
+		<field name="sndBetrayLaunchSound" type="BinHex"/>
+		<field name="sndtpBetrayLaunchSoundType" type="BinHex"/>
+		<field name="text_psImpactVFX" type="String"/>
+		<field name="psImpactVFX" type="BinHex"/>
+		<field name="text_psEffectLoopVFX" type="String"/>
+		<field name="psEffectLoopVFX" type="BinHex"/>
+		<field name="text_VFXBoneName" type="String"/>
+		<field name="VFXBoneName" type="BinHex"/>
+		<field name="vectorVFXLocalOffset" type="Vector3"/>
+		<field name="fDrunkLevel" type="Float"/>
+		<field name="iNumDrinksIncrement" type="Int32"/>
+		<field name="fShockDamageReductionMultiplier" type="Float"/>
+		<field name="text_sndRegenGrenadeUseFailSound" type="String"/>
+		<field name="sndRegenGrenadeUseFailSound" type="BinHex"/>
+		<field name="sndtpRegenGrenadeUseFailSoundType" type="BinHex"/>
+		<field name="fMaxDropDistanceBeforeDespawn" type="Float"/>
+		<field name="fDelayBeforeDestroySpiderAfterShield" type="Float"/>
+		<field name="fCustomShieldDurationDelay" type="Float"/>
+		<field name="selAnimationType" type="Enum"/>
+		<field name="bEnableAimingBeam" type="Boolean"/>
+		<field name="bRecallAllEnabled" type="Boolean"/>
+		<field name="text_archOpenedCapsuleArchetype" type="String"/>
+		<field name="archOpenedCapsuleArchetype" type="BinHex"/>
+		<field name="text_psOpenCapsuleParticles" type="String"/>
+		<field name="psOpenCapsuleParticles" type="BinHex"/>
+		<field name="fOpenedCapsuleOffsetZ" type="Float"/>
+		<field name="fDroneLifetime" type="Float"/>
+		<field name="droneconfigDroneConfig" type="BinHex"/>
+		<field name="bOwnsCalledDrone" type="Boolean"/>
+		<field name="fMaxRangeToRecall" type="Float"/>
+		<field name="bNeedsVolumetricNav" type="Boolean"/>
+		<field name="bNeedsDroneHighway" type="Boolean"/>
+		<field name="bUsesLocalSpawnPosOverride" type="Boolean"/>
+		<field name="vecLocalSpawnPosOverride" type="BinHex"/>
+		<field name="nMaxTargetsCount" type="Enum"/>
+		<field name="fSwarmHitDamage" type="Float"/>
+		<field name="fSwarmedTargetDuration" type="Float"/>
+		<field name="fSwarmedTargetDamagePerSecond" type="Float"/>
+		<field name="text_archArchetype" type="String"/>
+		<field name="archArchetype" type="BinHex"/>
+		<field name="text_sndSpiderProjectileUseFailSound" type="String"/>
+		<field name="sndSpiderProjectileUseFailSound" type="BinHex"/>
+		<field name="sndtpSpiderProjectileUseFailSoundType" type="BinHex"/>
+		<field name="fEscapeTimerMultiplier" type="Float"/>
+		<field name="selEscapeTimerMultiplier" type="Enum"/>
+		<field name="iDonationAmount" type="Int32"/>
+		<field name="uiDonationAmount" type="UInt32"/>
+		<field name="text_progressionplayeractionHintTriggerAction" type="String"/>
+		<field name="progressionplayeractionHintTriggerAction" type="BinHex"/>
+		<object name="Cooldown">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="LayeredAnimation">
+			<field name="bPlayLayeredAnimationOnUse" type="Boolean"/>
+			<field name="animationboundvalueAbilityAnimationBoundValue" type="BinHex"/>
+		</object>
+		<object name="EmoteAnimation">
+			<field name="bPlayEmoteOnUse" type="Boolean"/>
+			<field name="emoteEmote" type="BinHex"/>
+		</object>
+		<object name="UsageRules">
+			<field name="bCanUseWhileInVehicle" type="Boolean"/>
+			<field name="bCanUseWhileOnBoat" type="Boolean"/>
+			<field name="bCanUseWhileOnDrone" type="Boolean"/>
+			<field name="bCanUseWhileInWater" type="Boolean"/>
+			<field name="bCanUseWhileInParkour" type="Boolean"/>
+		</object>
+		<object name="Multipliers">
+			<object name="Multiplier">
+				<field name="iNumActions" type="Int32"/>
+				<field name="fMultiplier" type="Float"/>
+				<field name="iMinViewers" type="Int32"/>
+				<field name="iMaxViewers" type="Int32"/>
+				<field name="fResetTimer" type="Float"/>
+			</object>
+		</object>
+		<object name="ActionPayouts">
+			<object name="ActionPayout">
+				<field name="text_progressionplayeractionAction" type="String"/>
+				<field name="progressionplayeractionAction" type="BinHex"/>
+				<field name="iNumCrypto" type="Int32"/>
+			</object>
+		</object>
+		<object name="MinCrypto">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="MaxCrypto">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="TriggerProbability">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="RulesmithRuleTriggerSiphonCrypto">
+			<field name="rulesmithidRuleId" type="BinHex"/>
+		</object>
+		<object name="ReductionPercent">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="AbilityList">
+			<object name="Ability">
+				<field name="characterabilityAbility" type="BinHex"/>
+			</object>
+		</object>
+		<object name="FistFX">
+			<field name="text_FistVFXBone" type="String"/>
+			<field name="FistVFXBone" type="BinHex"/>
+			<field name="text_DirectionalBone" type="String"/>
+			<field name="DirectionalBone" type="BinHex"/>
+			<object name="RampUp">
+				<field name="text_psRampUpParticles" type="String"/>
+				<field name="psRampUpParticles" type="BinHex"/>
+				<field name="text_sndRampUpSound" type="String"/>
+				<field name="sndRampUpSound" type="BinHex"/>
+				<field name="sndtpRampUpSoundType" type="BinHex"/>
+				<field name="fRampUpFxDelay" type="Float"/>
+				<field name="fRampUpFxDuration" type="Float"/>
+				<field name="bRampUpInterruptOnHit" type="Boolean"/>
+			</object>
+			<object name="Hit">
+				<field name="text_psHitParticles" type="String"/>
+				<field name="psHitParticles" type="BinHex"/>
+				<field name="text_sndHitSound" type="String"/>
+				<field name="sndHitSound" type="BinHex"/>
+				<field name="sndtpHitSoundType" type="BinHex"/>
+			</object>
+		</object>
+		<object name="ImplosionFX">
+			<field name="text_psImplosionParticles" type="String"/>
+			<field name="psImplosionParticles" type="BinHex"/>
+			<field name="text_sndImplosionSound" type="String"/>
+			<field name="sndImplosionSound" type="BinHex"/>
+			<field name="sndtpImplosionSoundType" type="BinHex"/>
+		</object>
+		<object name="ShockwaveFX">
+			<field name="text_psShockwaveParticles" type="String"/>
+			<field name="psShockwaveParticles" type="BinHex"/>
+			<field name="text_sndShockwaveSound" type="String"/>
+			<field name="sndShockwaveSound" type="BinHex"/>
+			<field name="sndtpShockwaveSoundType" type="BinHex"/>
+		</object>
+		<object name="ShockwaveRadius">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShockwaveSpreadDuration">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShockwaveStrength">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShockwaveDamage">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShockwaveDisorientDuration">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShockwaveDisorientRadius">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="TriggerShockwave">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShockwaveCausesDisorient">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="MaxAffectedEntities">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="PropagationRadius">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="PropagationTime">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="DelayDuration">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="HackEffect">
+			<field name="scriptedhackeffectdbHackEffect" type="BinHex"/>
+			<field name="fOverrideProbability" type="Float"/>
+		</object>
+		<object name="HackEffectToughness">
+			<field name="scriptedhackeffectdbHackEffect" type="BinHex"/>
+			<field name="fOverrideProbability" type="Float"/>
+		</object>
+		<object name="HackEffectMultiplayer">
+			<field name="scriptedhackeffectdbHackEffect" type="BinHex"/>
+			<field name="fOverrideProbability" type="Float"/>
+		</object>
+		<object name="MaxTargets">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="HasToughnessUpgrade">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="MaxSpiderBots">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="DestroyedSpiderCooldownTime">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="AutoConnectToSpiderProjectile">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ReturnSpiderCooldownTime">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="RepairSpiderTime">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanUseSpiderThrowTakedownRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanUseManualARCloak">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ARCloakDuration">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ARCloakCooldown">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanRecall">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="HasFlash">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="SpawnFollowersHumanConfigs">
+			<field name="humanconfigHumanConfig" type="BinHex"/>
+			<object name="SpawnFollowersHumanConfigs">
+				<field name="humanconfigHumanConfig" type="BinHex"/>
+			</object>
+		</object>
+		<object name="MaskHologram">
+			<field name="text_sFullMaksHologramMaterialName" type="String"/>
+			<field name="sFullMaksHologramMaterialName" type="BinHex"/>
+			<field name="text_sShortMaksHologramMaterialName" type="String"/>
+			<field name="sShortMaksHologramMaterialName" type="BinHex"/>
+			<field name="text_sColorParameterName" type="String"/>
+			<field name="sColorParameterName" type="BinHex"/>
+			<field name="text_sIntensityParameterName" type="String"/>
+			<field name="sIntensityParameterName" type="BinHex"/>
+			<field name="colorMaksHologramCriticalHealthColor" type="VectorColor"/>
+			<field name="fCriticalHealthThresholdRatio" type="Float"/>
+			<field name="dynamiclightprefabDynamicLightPrefab" type="BinHex"/>
+			<field name="vectorHologramLightSourceOffset" type="Vector3"/>
+			<field name="text_sHologramLightSourceAttachedBoneId" type="String"/>
+			<field name="sHologramLightSourceAttachedBoneId" type="BinHex"/>
+			<object name="curveIntensityIncreaseOverTime">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveColorRatioOverTime">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="Sounds">
+				<field name="text_sndActivateSound" type="String"/>
+				<field name="sndActivateSound" type="BinHex"/>
+				<field name="sndtpActivateSoundType" type="BinHex"/>
+				<field name="text_sndDeactivateSound" type="String"/>
+				<field name="sndDeactivateSound" type="BinHex"/>
+				<field name="sndtpDeactivateSoundType" type="BinHex"/>
+			</object>
+		</object>
+		<object name="MaxRegenGrenadesCount">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="DestroyCooldownTime">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="RecallCooldownTime">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="AimingBeam">
+			<field name="text_AimingBeamOriginBoneName" type="String"/>
+			<field name="AimingBeamOriginBoneName" type="BinHex"/>
+			<field name="fAimingBeamOpacity" type="Float"/>
+			<field name="text_archAimingBeamArchetype" type="String"/>
+			<field name="archAimingBeamArchetype" type="BinHex"/>
+			<field name="text_archAimingBeamDotArchetype" type="String"/>
+			<field name="archAimingBeamDotArchetype" type="BinHex"/>
+			<field name="text_sAimingBeamMaterialName" type="String"/>
+			<field name="sAimingBeamMaterialName" type="BinHex"/>
+			<field name="colorAimingBeamColor" type="VectorColor"/>
+			<field name="fAimingBeamScale" type="Float"/>
+			<field name="fAimingDotScaleHoming" type="Float"/>
+			<field name="colorAimingBeamWarningColor" type="VectorColor"/>
+			<field name="fAimingBeamWarningLength" type="Float"/>
+		</object>
+		<object name="CanFastChargeUp">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanRevive">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ShieldStart">
+			<field name="text_sndSoundPtr" type="String"/>
+			<field name="sndSoundPtr" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+		<object name="ShieldIdle">
+			<field name="text_sndSoundPtr" type="String"/>
+			<field name="sndSoundPtr" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+		<object name="ShieldHit">
+			<field name="text_sndSoundPtr" type="String"/>
+			<field name="sndSoundPtr" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+		<object name="ShieldEnd">
+			<field name="text_sndSoundPtr" type="String"/>
+			<field name="sndSoundPtr" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+		<object name="Revive">
+			<field name="sndSoundPtr" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+		<object name="Drone">
+			<field name="text_archArchetype" type="String"/>
+			<field name="archArchetype" type="BinHex"/>
+		</object>
+		<object name="CanJamWeapon">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanBetrayDrones">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanShootRockets">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanLockon">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="LockonParams">
+			<field name="fLockonTime" type="Float"/>
+			<field name="fRangeMin" type="Float"/>
+			<field name="fRangeMax" type="Float"/>
+			<field name="fMaxLockonAngleRad" type="Float"/>
+			<field name="bCanTargetNPCs" type="Boolean"/>
+			<field name="bCanTargetDrones" type="Boolean"/>
+			<field name="bCanTargetVehicles" type="Boolean"/>
+			<field name="bCanTargetPlayers" type="Boolean"/>
+			<field name="text_sndLockingOnBegin" type="String"/>
+			<field name="sndLockingOnBegin" type="BinHex"/>
+			<field name="text_sndLockingOnComplete" type="String"/>
+			<field name="sndLockingOnComplete" type="BinHex"/>
+			<field name="text_sndLockingOnCancel" type="String"/>
+			<field name="sndLockingOnCancel" type="BinHex"/>
+			<field name="sndtpLockingOnBeginType" type="BinHex"/>
+			<field name="sndtpLockingOnCompleteType" type="BinHex"/>
+			<field name="sndtpLockingOnCancelType" type="BinHex"/>
+		</object>
+		<object name="ShockExplosion">
+			<field name="fShockExplosionDamage" type="Float"/>
+			<field name="text_psShockExplosionParticles" type="String"/>
+			<field name="psShockExplosionParticles" type="BinHex"/>
+			<field name="bIsInstantKillForShockExplosionEnabled" type="Boolean"/>
+		</object>
+		<object name="Animation">
+			<field name="fActivateAnimationDelay" type="Float"/>
+		</object>
+		<object name="SwarmSounds">
+			<field name="sndActivateSound" type="BinHex"/>
+			<field name="sndtpActivateSoundType" type="BinHex"/>
+			<field name="text_sndTravelSound" type="String"/>
+			<field name="sndTravelSound" type="BinHex"/>
+			<field name="sndtpTravelSoundType" type="BinHex"/>
+			<field name="fTravelSoundFadeTime" type="Float"/>
+			<field name="text_sndImpactSound" type="String"/>
+			<field name="sndImpactSound" type="BinHex"/>
+			<field name="sndtpImpactSoundType" type="BinHex"/>
+			<field name="text_sndAttackLoopSound" type="String"/>
+			<field name="sndAttackLoopSound" type="BinHex"/>
+			<field name="sndtpAttackLoopSoundType" type="BinHex"/>
+			<field name="fAttackLoopFadeTime" type="Float"/>
+			<field name="text_sndIdleSound" type="String"/>
+			<field name="sndIdleSound" type="BinHex"/>
+			<field name="sndtpIdleSoundType" type="BinHex"/>
+			<field name="fIdleSoundFadeTime" type="Float"/>
+			<field name="text_sndDeactivateSound" type="String"/>
+			<field name="sndDeactivateSound" type="BinHex"/>
+			<field name="sndtpDeactivateSoundType" type="BinHex"/>
+			<field name="text_sndAttackDeactivateSound" type="String"/>
+			<field name="sndAttackDeactivateSound" type="BinHex"/>
+			<field name="sndtpAttackDeactivateSoundType" type="BinHex"/>
+			<field name="text_sndShockExplosionSound" type="String"/>
+			<field name="sndShockExplosionSound" type="BinHex"/>
+			<field name="sndtpShockExplosionSoundType" type="BinHex"/>
+			<field name="text_sndTargetSelectedSound" type="String"/>
+			<field name="sndTargetSelectedSound" type="BinHex"/>
+			<field name="sndtpTargetSelectedSoundType" type="BinHex"/>
+			<field name="text_sndTargetDeselectedSound" type="String"/>
+			<field name="sndTargetDeselectedSound" type="BinHex"/>
+			<field name="sndtpTargetDeselectedSoundType" type="BinHex"/>
+		</object>
+		<object name="CooldownTime">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CooldownDelay">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="RechargeTime">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanUseFlashbang">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="FlashbangRadius">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="StimsFlashbangStims">
+			<object name="GeneratedStims">
+				<object name="Stim">
+					<field name="stims" type="BinHex"/>
+					<field name="vectorLocalTranslationOffset" type="Vector3"/>
+					<field name="vectorWorldTranslationOffset" type="Vector3"/>
+					<field name="bIsPersistent" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="CanUseAllSeeing">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="AllSeeingRadius">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="EnemyProximityRadius">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="LowUseTimeScale">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="LowUseSpeedThreshold">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="tagcategoryselectionblackboardLocationTags">
+			<object name="TagCategorySelectionArray">
+				<object name="TagCategorySelection">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<object name="Tags"/>
+					<field name="tagTag" type="BinHex"/>
+				</object>
+			</object>
+			<object name="TagDescriptorUI">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<object name="TagCategorySelectionDescriptors">
+					<object name="TagCategorySelectionDescriptor">
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="bMultiSelect" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="UI">
+			<field name="texturedbobjectAccessIcon" type="BinHex"/>
+			<object name="locstridAccessName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

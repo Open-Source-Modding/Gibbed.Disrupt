@@ -1,0 +1,5 @@
+<file name="camerapostfx" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

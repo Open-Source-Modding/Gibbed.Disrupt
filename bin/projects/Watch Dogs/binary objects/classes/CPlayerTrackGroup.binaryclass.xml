@@ -1,0 +1,56 @@
+<class name="CPlayerTrackGroup">
+    <object name="CPlayerTrackGroup">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field hash="22958F3A"/>
+        <field name="disMuted"/>
+        <field name="bReleaseEntityFromCinema" type="Boolean"/>
+        <field name="Position" type="Vector3"/>
+        <field name="Angles" type="Vector3"/>
+        <field name="text_hidArchetypeName" type="String"/>
+        <field name="hidArchetypeName"/>
+        <object name="PropertiesContext">
+            <field name="selPhysics" type="Enum"/>
+            <field name="selMotionBlur" type="Enum"/>
+            <field name="selGodMode" type="Enum"/>
+            <field name="selForceDisplacement" type="Enum"/>
+            <field name="selWeaponType" type="Enum"/>
+            <field name="selIsIndoors" type="Enum"/>
+            <field name="selIsInsideTrain" type="Enum"/>
+            <field name="selPlayerMaskState" type="Enum"/>
+        </object>
+        <object name="PropertiesOutputContext">
+            <field name="selPhysics_" type="Enum"/>
+            <field name="selMotionBlur_" type="Enum"/>
+            <field name="selBinding_" type="Enum"/>
+            <field name="selGodMode_" type="Enum"/>
+            <field name="selForceDisplacement_" type="Enum"/>
+            <field name="selWeaponType_" type="Enum"/>
+            <field name="selIsIndoors_" type="Enum"/>
+            <field name="selIsInsideTrain_" type="Enum"/>
+            <field name="selPlayerState" type="Enum"/>
+			<field name="VehicleTrackObjectId" type="BinHex"/>
+        </object>
+        <object name="PrepareZone">
+            <field name="selVolumeType" type="Enum"/>
+            <field name="bDisableBlackout" type="Boolean"/>
+        </object>
+        <object name="Tracks">
+		    <inherit name="CSequenceTrackGroup"/>
+		    <inherit name="CCameraTrackGroup"/>
+		    <inherit name="CGenericContextTrack"/>
+		    <inherit name="CMovementTrack"/>
+		    <inherit name="CLightTrack"/>
+		    <inherit name="CFacialAnimationSequenceTrack"/>
+            <inherit name="CEventSequenceTrack"/>
+            <inherit name="CAnimationSequenceTrack"/>
+			<inherit name="CGraphicModifierSequenceTrack"/>
+			<inherit name="CDialogSequenceTrack"/>
+			<inherit name="CSoundSequenceTrack"/>
+			<inherit name="CSimpleAnimationSequenceTrack"/>
+            <inherit name="CLightSequenceTrack"/>
+			<inherit name="CParticleSequenceTrack"/>
+        </object>
+    </object>
+</class>

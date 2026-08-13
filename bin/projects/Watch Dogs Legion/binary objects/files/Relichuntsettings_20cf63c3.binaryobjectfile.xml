@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Relichuntsettings_20cf63c3">
+	<object name="obj">
+		<inherit name="Relichuntsettings_20cf63c3Parameters"/>
+	</object>
+</file>

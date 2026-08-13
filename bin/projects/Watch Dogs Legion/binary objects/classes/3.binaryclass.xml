@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="3saveParameters">
+	<object name="NexusPrimaryGameDataDLC">
+		<object name="ChessProgression">
+			<object name="AllSavedAwards">
+				<object name="SavedAward">
+					<field name="selPuzzleAward" type="Enum"/>
+					<object name="sPuzzleId">
+						<field name="ResourceId" type="BinHex"/>
+						<field name="iIndex" type="Int32"/>
+					</object>
+				</object>
+			</object>
+			<object name="AllSavedBoards">
+				<object name="SavedBoard">
+					<object name="sPuzzleId">
+						<field name="ResourceId" type="BinHex"/>
+						<field name="iIndex" type="Int32"/>
+					</object>
+					<object name="sBoardState">
+						<field name="selPlayerColour" type="Enum"/>
+						<field name="selDifficulty" type="Enum"/>
+						<field name="fPlayerTime" type="Float"/>
+						<field name="fOpponentTime" type="Float"/>
+						<field name="sFenString" type="String"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ActionTrackingManagerMPSaveData">
+			<object name="ActionTrackers"/>
+		</object>
+		<object name="CSpiderSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="BinHex"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="TotalScore" type="Int64"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+		</object>
+		<object name="CPeopleSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="BinHex"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="RespawnLocation" type="Vector3"/>
+			<field name="DifficultyIndex" type="Int32"/>
+			<field name="PlayerScore" type="BinHex"/>
+			<field name="ZoneToReach" type="BinHex"/>
+			<field name="KilledCyborgs" type="Int32"/>
+			<field name="IntroPlayed" type="Boolean"/>
+			<field name="TotalPlayedTime" type="Float"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+			<object name="ClearedZone"/>
+		</object>
+		<object name="PillsManagerSaveData">
+			<field name="m_timeSinceLastPillLaunch" type="BinHex"/>
+			<field name="m_pillsDealerRequestedByUnlock" type="BinHex"/>
+		</object>
+		<object name="MissionsState">
+			<field name="CurrentMission" type="BinHex"/>
+			<field name="LastMainMission" type="BinHex"/>
+			<field name="Checkpoint" type="BinHex"/>
+			<object name="ProposedMissions">
+				<object name="Mission">
+					<field hash="FFFFFFFF" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ActiveReplayableMissions"/>
+		</object>
+		<object name="CBouncingSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="Boolean"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="CurrentTrackIndex" type="BinHex"/>
+			<field name="LastTrackIndexPlayed" type="BinHex"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+			<object name="TrackHiscore">
+				<object name="TrackHiscore">
+					<field name="TrackHiscore" type="BinHex"/>
+				</object>
+			</object>
+			<object name="TrackRanking">
+				<object name="TrackRanking">
+					<field name="TrackRanking" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerCollectiblesCampaign">
+			<object name="CollectibleLists">
+				<object name="CollectibleList">
+					<field name="CollectibleDBObject" type="BinHex"/>
+					<object name="CollectibleItems">
+						<object name="CollectibleItem">
+							<field name="iRepeatedEntryId" type="Int32"/>
+							<field name="itemsItemDBObject" type="BinHex"/>
+							<field name="iAmountLeft" type="Int32"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ActionTrackingManagerSPSaveData">
+			<object name="ActionTrackers">
+				<object name="ActionTracker">
+					<field name="ActionTrackerId" type="BinHex"/>
+					<field name="ActionCount" type="Int32"/>
+					<field name="ActionExecuteCount" type="Int32"/>
+					<field name="ActionLastLocation" type="Vector3"/>
+					<field name="ActionLastGameTime" type="Float"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerProgression">
+			<field name="Money" type="Int64"/>
+			<field name="SkillPoint" type="Int32"/>
+			<field name="TechPoint" type="Int32"/>
+			<field name="XP" type="BinHex"/>
+			<field name="PillsAlone" type="BinHex"/>
+			<field name="PillsMadness" type="BinHex"/>
+			<field name="PillsSpider" type="BinHex"/>
+			<field name="PillsBouncing" type="BinHex"/>
+			<field name="PillsPeople" type="BinHex"/>
+			<field name="TotalMoney" type="Int64"/>
+			<field name="TotalSkillPoint" type="Int32"/>
+			<field name="TotalTechPoint" type="Int32"/>
+			<field name="TotalXP" type="Int64"/>
+			<field name="TotalPillsAlone" type="BinHex"/>
+			<field name="TotalPillsMadness" type="BinHex"/>
+			<field name="TotalPillsSpider" type="BinHex"/>
+			<field name="TotalPillsBouncing" type="BinHex"/>
+			<field name="TotalPillsPeople" type="BinHex"/>
+			<field name="Reputation" type="UInt16"/>
+			<field name="bDefaultCurrencyAlreadyGiven" type="Boolean"/>
+			<field name="NumCompletedHackingDefenses" type="Int32"/>
+			<field name="NumSuccessfulHackingDefenses" type="Int32"/>
+			<field name="PlayerNotoriety" type="Int64"/>
+			<object name="ProgressionNodeRequirementStates">
+				<object name="ProgressionNodeRequirementStates">
+					<object name="ProgressionNodeRequirementStates">
+						<field name="uProgressionNodeRequirementKey" type="BinHex"/>
+						<field name="selState" type="Enum"/>
+					</object>
+				</object>
+			</object>
+			<object name="FelonyStageKeys">
+				<object name="FelonyStageKeys">
+					<object name="FelonyStageKeys">
+						<object name="FelonyKeys">
+							<object name="Key">
+								<field name="Key" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ProgressionCookings"/>
+			<object name="IllegalApsUnlocked"/>
+			<object name="IllegalApsBought"/>
+			<object name="PerksUnlocked">
+				<object name="PerkUnlocked">
+					<field name="PerkUnlocked" type="BinHex"/>
+				</object>
+			</object>
+			<object name="RetaliationTargets">
+				<object name="RetaliationTargets">
+					<object hash="FFFFFFFF">
+						<field name="LowWord" type="BinHex"/>
+						<field name="HighWord" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="PerksBought">
+				<object name="PerkBought">
+					<field name="PerkBought" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ItemsUnlocked">
+				<object name="ItemUnlocked">
+					<field name="ItemUnlocked" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ItemBought">
+				<object name="ItemBought">
+					<field name="ItemBought" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerAccessIds">
+			<object name="PlayerAccessIds">
+				<object name="AccessId">
+					<field name="StringId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="PlayerDisabledAccessIds">
+				<object name="DisabledAccessId">
+					<field name="StringId" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="ShownOnceEntity">
+			<object name="ShownEntity">
+				<object name="ShownEntity">
+					<field hash="FFFFFFFF" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="GoldRushProgressionSaveSingle">
+			<object name="Data">
+				<field name="bIsfirstTime" type="Boolean"/>
+				<object name="PlayerRecords">
+					<field name="iTrackId" type="Int32"/>
+					<field name="fRecord" type="Float"/>
+					<field name="bDiscovered" type="Boolean"/>
+					<field name="bPlayed" type="Boolean"/>
+					<object name="PlayerRecords">
+						<field name="iTrackId" type="Int32"/>
+						<field name="fRecord" type="Float"/>
+						<field name="bDiscovered" type="Boolean"/>
+						<field name="bPlayed" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="CMadnessSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="BinHex"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="AccumulatedScore" type="Int64"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+		</object>
+		<object name="AlienInvasionCollectionSinglePlayer">
+			<field name="RewardProgression" type="BinHex"/>
+			<field name="uiHighScore" type="Int64"/>
+			<field name="isfirstTime" type="Boolean"/>
+			<object name="SavePlayerProgression">
+				<field name="uiPlayerHealth" type="Int64"/>
+				<field name="uiPlayerScore" type="Int64"/>
+				<field name="uiCurrentStandardWave" type="Int64"/>
+				<field name="iTotalWavesPlayer" type="Int32"/>
+			</object>
+			<object name="PickupProgression">
+				<field name="iUnlockedPickups" type="Int32"/>
+			</object>
+		</object>
+		<object name="DistrictsState">
+			<object name="Districts">
+				<object name="District">
+					<field name="iDistrictId" type="Int32"/>
+					<field name="iHackingProgressionLevel" type="Int32"/>
+				</object>
+			</object>
+		</object>
+		<object name="InteractiveObjects">
+			<field name="DrivingCameraIndex" type="BinHex"/>
+			<object name="InteractiveObjectList">
+				<field hash="FFFFFFFF" type="BinHex"/>
+				<object name="InteractiveObjectList">
+					<field hash="FFFFFFFF" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerMissionProgression">
+			<object name="Missions">
+				<object name="SavedTag">
+					<field name="StringId" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="VigilanteEvents">
+			<field name="iInnerThoughtBarksRemaining" type="Int32"/>
+			<field name="iInnerThoughtEventsRemaining" type="Int32"/>
+		</object>
+		<object name="StrikingEventManagerSaveData">
+			<field name="CoolDownTimer" type="BinHex"/>
+			<field name="Valid" type="Boolean"/>
+			<field name="TotalShopVisited" type="Int32"/>
+			<object name="Groups">
+				<object name="Groups">
+					<field name="CoolDownTimer" type="BinHex"/>
+					<field name="GroupId" type="BinHex"/>
+					<object name="StrikingEvents">
+						<object name="StrikingEvents">
+							<field name="CoolDownTimer" type="BinHex"/>
+							<field name="SeenOccurence" type="Int16"/>
+							<field name="SettingsKey" type="BinHex"/>
+							<field name="UserData" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerInventory">
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="CurrentCloth" type="BinHex"/>
+			<object name="Items">
+				<object name="SavedItem">
+					<field name="Item" type="BinHex"/>
+					<field name="StringId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="WeaponsState">
+				<object name="WeaponState">
+					<field name="iWeaponID" type="BinHex"/>
+					<field name="iBulletsInClip" type="Int32"/>
+				</object>
+			</object>
+			<object name="ItemsInWheelNormalLoadOut">
+				<object name="Items">
+					<field name="ItemId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ItemsInWheelMissionLoadOut">
+				<object name="Items">
+					<field name="ItemId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ItemsInCategoriesMissionLoadOut">
+				<object name="ItemsIdInCategories">
+					<field name="ItemsId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="PickupEntities">
+				<object name="PickupEntity">
+					<field name="PickupEntity" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="GangWarManagerSaveData">
+			<field name="IsStarted" type="Boolean"/>
+			<field name="MissionSucceededCount" type="Int32"/>
+			<field name="NonDailyGangTagPoints" type="Int32"/>
+			<object name="FactionMissionCounts">
+				<field name="FactionMissionCount" type="BinHex"/>
+				<object name="FactionMissionCounts">
+					<field name="FactionMissionCount" type="BinHex"/>
+				</object>
+			</object>
+			<object name="FactionReputation">
+				<object name="FactionReputation">
+					<field name="FactionReputation" type="BinHex"/>
+				</object>
+			</object>
+			<object name="MissionHistory">
+				<object name="MissionHistory">
+					<field name="Mission" type="BinHex"/>
+				</object>
+			</object>
+			<object name="CurrentMissions">
+                <object name="CurrentMissions">
+                    <field name="MissionId" type="BinHex"/>
+                    <field name="Faction" type="BinHex"/>
+                    <field name="Seed" type="BinHex"/>
+                    <field name="Budget" type="BinHex"/>
+                    <field name="ContractId" type="BinHex"/>
+                    <object name="Objectives">
+                        <object name="Objectives">
+                            <field name="Objective" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="BriefingNarrarion">
+				<object name="BriefingNarrarion">
+					<field name="ID" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="CSurviveSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="BinHex"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="PlayIntro" type="Boolean"/>
+			<field name="RespawnPos" type="Vector3"/>
+			<field name="StealthTakedown" type="BinHex"/>
+			<field name="FightTakedown" type="BinHex"/>
+			<field name="CrateTotal" type="Int32"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+			<object name="FreeDisctrict"/>
+			<object name="OpenCrates"/>
+		</object>
+		<object name="RandomEventsListState">
+			<object name="SpawnedEventParams">
+				<object name="Param">
+					<field name="EventDbKey" type="BinHex"/>
+					<field name="PlayedCount" type="Int16"/>
+					<field name="PlayedVariations" type="BinHex"/>
+				</object>
+			</object>
+			<object name="EventStatsParams">
+				<object name="Param">
+					<field name="EventType" type="BinHex"/>
+					<field name="TriggeredCount" type="Int16"/>
+					<field name="NotTriggeredCount" type="Int16"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerLastSavedPosition">
+			<field name="PlayerLastHideoutSavedPosition" type="Vector3"/>
+		</object>
+		<object name="EnvironmentEventsManager">
+			<field name="Version" type="BinHex"/>
+			<field name="AutomaticWeather" type="BinHex"/>
+			<field name="CurrentSetting" type="BinHex"/>
+			<field name="TransitionTime" type="Float"/>
+			<field name="TransitionDuration" type="Float"/>
+			<field name="Rain" type="Float"/>
+			<field name="Wetness" type="Float"/>
+			<field name="Puddle" type="Float"/>
+			<field name="CurrentEnvironmentSettings" type="BinHex"/>
+			<object name="UnfinishedEvents"/>
+		</object>
+		<object name="DrinkingChallengeProgression">
+			<object name="Progression">
+				<object name="Progression">
+					<field name="drinkingchallengeprogressionProgression" type="BinHex"/>
+					<field name="iLevel" type="Int32"/>
+				</object>
+			</object>
+			<object name="PlayerFailures">
+			    <object name="PlayerFailures">
+			        <field name="drinkingchallengeprogressionProgression" type="BinHex"/>
+			        <object name="RoundFailures">
+			            <object name="RoundFailure">
+			                <object name="RoundFailure">
+			                    <field name="iLevel" type="Int32"/>
+			                    <field name="iRound" type="Int32"/>
+			                    <field name="iFailCount" type="Int32"/>
+			                </object>
+			            </object>
+			        </object>
+			    </object>
+			</object>
+		</object>
+		<object name="SpawnedRandomEvents">
+			<object name="SpawnedEventParams">
+				<object name="Param">
+					<field name="EventDbKey" type="BinHex"/>
+					<field name="secondDbKey" type="BinHex"/>
+					<field name="VariationId" type="BinHex"/>
+					<field name="Location" type="Vector3"/>
+					<field name="ExpiringTime" type="Float"/>
+					<field name="bWasShownOnce" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="HackingAIUsedProfiles">
+			<object name="HackingAIUsedProfilesList">
+				<object name="HackingAIUsedProfilesList">
+					<field hash="FFFFFFFF" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="ShellGameProgression">
+			<field name="uiLevel" type="BinHex"/>
+		</object>
+		<object name="DailySaveData">
+			<field name="DailyGangTagPoints" type="Int32"/>
+			<field name="HasUploadedScore" type="Boolean"/>
+			<object name="Leaderboards">
+				<object name="Leaderboards">
+					<field name="Faction" type="Int16"/>
+					<field name="Tag" type="Int16"/>
+					<object name="Entries">
+						<object name="Entries">
+							<field name="Score" type="Int32"/>
+							<field name="Name" type="String"/>
+							<field name="Local" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ContractIds">
+				<field name="ContractId" type="BinHex"/>
+				<object name="ContractIds">
+					<field name="ContractId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="PlayerRankings">
+				<object name="PlayerRankings">
+					<field name="ContractId" type="BinHex"/>
+					<field name="Ranking" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="CarsOnDemand">
+			<object name="Cars">
+				<object name="Car">
+					<field name="nItemId" type="BinHex"/>
+					<field name="selState" type="Enum"/>
+				</object>
+			</object>
+		</object>
+		<object name="HubsState">
+			<object name="HubsData">
+				<object name="HubData">
+					<field name="EntityId" type="BinHex"/>
+					<field name="bEnable" type="Boolean"/>
+					<field name="bUnlocked" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="MusicDBSaveState">
+			<object name="DBSongs">
+				<object name="DBSong">
+					<field name="SongID" type="BinHex"/>
+					<field name="selSongState" type="Enum"/>
+					<field name="uiOrderIndex" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="SpawnedCollectibleEvents">
+			<object name="SpawnedEventParams"/>
+		</object>
+		<object name="MediaSystem">
+			<field name="iNbShopVisitsWithoutBroadcast" type="Int32"/>
+			<field name="iReputationRankUsedForRandomization" type="Int32"/>
+			<object name="ShopBroadcastRandomizedIntervals"/>
+		</object>
+		<object name="PlayerCollectibles">
+			<object name="BankAccounts">
+				<object name="Items">
+					<object name="Item">
+						<field name="itemsItemDBObject" type="BinHex"/>
+						<field name="iAmount" type="Int32"/>
+					</object>
+				</object>
+			</object>
+			<object name="DataBasesFound">
+				<object name="Items"/>
+			</object>
+			<object name="MiscellaneousItems">
+				<object name="Items"/>
+			</object>
+			<object name="CollectibleLists">
+				<object name="CollectibleList">
+					<field name="CollectibleDBObject" type="BinHex"/>
+					<object name="CollectibleItems">
+						<object name="CollectibleItem">
+							<field name="iRepeatedEntryId" type="Int32"/>
+							<field name="itemsItemDBObject" type="BinHex"/>
+							<field name="iAmountLeft" type="Int32"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="CollectibleEntities">
+				<object name="CollectibleEntity">
+					<field name="CollectibleEntity" type="BinHex"/>
+				</object>
+			</object>
+			<object name="EntityPersistenRewards"/>
+		</object>
+	</object>
+	<object name="NexusSecondaryGameDataDLC">
+		<object name="ChessProgression">
+			<object name="AllSavedAwards">
+				<object name="SavedAward">
+					<field name="selPuzzleAward" type="Enum"/>
+					<object name="sPuzzleId">
+						<field name="ResourceId" type="BinHex"/>
+						<field name="iIndex" type="Int32"/>
+					</object>
+				</object>
+			</object>
+			<object name="AllSavedBoards">
+				<object name="SavedBoard">
+					<object name="sPuzzleId">
+						<field name="ResourceId" type="BinHex"/>
+						<field name="iIndex" type="Int32"/>
+					</object>
+					<object name="sBoardState">
+						<field name="selPlayerColour" type="Enum"/>
+						<field name="selDifficulty" type="Enum"/>
+						<field name="fPlayerTime" type="Float"/>
+						<field name="fOpponentTime" type="Float"/>
+						<field name="sFenString" type="String"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ActionTrackingManagerMPSaveData">
+			<object name="ActionTrackers"/>
+		</object>
+		<object name="CSpiderSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="BinHex"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="TotalScore" type="Int64"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+		</object>
+		<object name="CPeopleSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="BinHex"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="RespawnLocation" type="Vector3"/>
+			<field name="DifficultyIndex" type="Int32"/>
+			<field name="PlayerScore" type="BinHex"/>
+			<field name="ZoneToReach" type="BinHex"/>
+			<field name="KilledCyborgs" type="Int32"/>
+			<field name="IntroPlayed" type="Boolean"/>
+			<field name="TotalPlayedTime" type="Float"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+			<object name="ClearedZone"/>
+		</object>
+		<object name="PillsManagerSaveData">
+			<field name="m_timeSinceLastPillLaunch" type="BinHex"/>
+			<field name="m_pillsDealerRequestedByUnlock" type="BinHex"/>
+		</object>
+		<object name="MissionsState">
+			<field name="CurrentMission" type="BinHex"/>
+			<field name="LastMainMission" type="BinHex"/>
+			<field name="Checkpoint" type="BinHex"/>
+			<object name="ProposedMissions">
+				<object name="Mission">
+					<field hash="FFFFFFFF" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ActiveReplayableMissions"/>
+		</object>
+		<object name="CBouncingSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="Boolean"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="CurrentTrackIndex" type="BinHex"/>
+			<field name="LastTrackIndexPlayed" type="BinHex"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+			<object name="TrackHiscore">
+				<object name="TrackHiscore">
+					<field name="TrackHiscore" type="BinHex"/>
+				</object>
+			</object>
+			<object name="TrackRanking">
+				<object name="TrackRanking">
+					<field name="TrackRanking" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerCollectiblesCampaign">
+			<object name="CollectibleLists">
+				<object name="CollectibleList">
+					<field name="CollectibleDBObject" type="BinHex"/>
+					<object name="CollectibleItems">
+						<object name="CollectibleItem">
+							<field name="iRepeatedEntryId" type="Int32"/>
+							<field name="itemsItemDBObject" type="BinHex"/>
+							<field name="iAmountLeft" type="Int32"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ActionTrackingManagerSPSaveData">
+			<object name="ActionTrackers">
+				<object name="ActionTracker">
+					<field name="ActionTrackerId" type="BinHex"/>
+					<field name="ActionCount" type="Int32"/>
+					<field name="ActionExecuteCount" type="Int32"/>
+					<field name="ActionLastLocation" type="Vector3"/>
+					<field name="ActionLastGameTime" type="Float"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerProgression">
+			<field name="Money" type="Int64"/>
+			<field name="SkillPoint" type="Int32"/>
+			<field name="TechPoint" type="Int32"/>
+			<field name="XP" type="BinHex"/>
+			<field name="PillsAlone" type="BinHex"/>
+			<field name="PillsMadness" type="BinHex"/>
+			<field name="PillsSpider" type="BinHex"/>
+			<field name="PillsBouncing" type="BinHex"/>
+			<field name="PillsPeople" type="BinHex"/>
+			<field name="TotalMoney" type="Int64"/>
+			<field name="TotalSkillPoint" type="Int32"/>
+			<field name="TotalTechPoint" type="Int32"/>
+			<field name="TotalXP" type="Int64"/>
+			<field name="TotalPillsAlone" type="BinHex"/>
+			<field name="TotalPillsMadness" type="BinHex"/>
+			<field name="TotalPillsSpider" type="BinHex"/>
+			<field name="TotalPillsBouncing" type="BinHex"/>
+			<field name="TotalPillsPeople" type="BinHex"/>
+			<field name="Reputation" type="UInt16"/>
+			<field name="bDefaultCurrencyAlreadyGiven" type="Boolean"/>
+			<field name="NumCompletedHackingDefenses" type="Int32"/>
+			<field name="NumSuccessfulHackingDefenses" type="Int32"/>
+			<field name="PlayerNotoriety" type="Int64"/>
+			<object name="ProgressionNodeRequirementStates">
+				<object name="ProgressionNodeRequirementStates">
+					<object name="ProgressionNodeRequirementStates">
+						<field name="uProgressionNodeRequirementKey" type="BinHex"/>
+						<field name="selState" type="Enum"/>
+					</object>
+				</object>
+			</object>
+			<object name="FelonyStageKeys">
+				<object name="FelonyStageKeys">
+					<object name="FelonyStageKeys">
+						<object name="FelonyKeys">
+							<object name="Key">
+								<field name="Key" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ProgressionCookings"/>
+			<object name="IllegalApsUnlocked"/>
+			<object name="IllegalApsBought"/>
+			<object name="PerksUnlocked">
+				<object name="PerkUnlocked">
+					<field name="PerkUnlocked" type="BinHex"/>
+				</object>
+			</object>
+			<object name="RetaliationTargets">
+				<object name="RetaliationTargets">
+					<object hash="FFFFFFFF">
+						<field name="LowWord" type="BinHex"/>
+						<field name="HighWord" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="PerksBought">
+				<object name="PerkBought">
+					<field name="PerkBought" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ItemsUnlocked">
+				<object name="ItemUnlocked">
+					<field name="ItemUnlocked" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ItemBought">
+				<object name="ItemBought">
+					<field name="ItemBought" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerAccessIds">
+			<object name="PlayerAccessIds">
+				<object name="AccessId">
+					<field name="StringId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="PlayerDisabledAccessIds">
+				<object name="DisabledAccessId">
+					<field name="StringId" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="ShownOnceEntity">
+			<object name="ShownEntity">
+				<object name="ShownEntity">
+					<field hash="FFFFFFFF" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="GoldRushProgressionSaveSingle">
+			<object name="Data">
+				<field name="bIsfirstTime" type="Boolean"/>
+				<object name="PlayerRecords">
+					<field name="iTrackId" type="Int32"/>
+					<field name="fRecord" type="Float"/>
+					<field name="bDiscovered" type="Boolean"/>
+					<field name="bPlayed" type="Boolean"/>
+					<object name="PlayerRecords">
+						<field name="iTrackId" type="Int32"/>
+						<field name="fRecord" type="Float"/>
+						<field name="bDiscovered" type="Boolean"/>
+						<field name="bPlayed" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="CMadnessSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="BinHex"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="AccumulatedScore" type="Int64"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+		</object>
+		<object name="AlienInvasionCollectionSinglePlayer">
+			<field name="RewardProgression" type="BinHex"/>
+			<field name="uiHighScore" type="Int64"/>
+			<field name="isfirstTime" type="Boolean"/>
+			<object name="SavePlayerProgression">
+				<field name="uiPlayerHealth" type="Int64"/>
+				<field name="uiPlayerScore" type="Int64"/>
+				<field name="uiCurrentStandardWave" type="Int64"/>
+				<field name="iTotalWavesPlayer" type="Int32"/>
+			</object>
+			<object name="PickupProgression">
+				<field name="iUnlockedPickups" type="Int32"/>
+			</object>
+		</object>
+		<object name="DistrictsState">
+			<object name="Districts">
+				<object name="District">
+					<field name="iDistrictId" type="Int32"/>
+					<field name="iHackingProgressionLevel" type="Int32"/>
+				</object>
+			</object>
+		</object>
+		<object name="InteractiveObjects">
+			<field name="DrivingCameraIndex" type="BinHex"/>
+			<object name="InteractiveObjectList">
+				<field hash="FFFFFFFF" type="BinHex"/>
+				<object name="InteractiveObjectList">
+					<field hash="FFFFFFFF" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerMissionProgression">
+			<object name="Missions">
+				<object name="SavedTag">
+					<field name="StringId" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="VigilanteEvents">
+			<field name="iInnerThoughtBarksRemaining" type="Int32"/>
+			<field name="iInnerThoughtEventsRemaining" type="Int32"/>
+		</object>
+		<object name="StrikingEventManagerSaveData">
+			<field name="CoolDownTimer" type="BinHex"/>
+			<field name="Valid" type="Boolean"/>
+			<field name="TotalShopVisited" type="Int32"/>
+			<object name="Groups">
+				<object name="Groups">
+					<field name="CoolDownTimer" type="BinHex"/>
+					<field name="GroupId" type="BinHex"/>
+					<object name="StrikingEvents">
+						<object name="StrikingEvents">
+							<field name="CoolDownTimer" type="BinHex"/>
+							<field name="SeenOccurence" type="Int16"/>
+							<field name="SettingsKey" type="BinHex"/>
+							<field name="UserData" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerInventory">
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="CurrentCloth" type="BinHex"/>
+			<object name="Items">
+				<object name="SavedItem">
+					<field name="Item" type="BinHex"/>
+					<field name="StringId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="WeaponsState">
+				<object name="WeaponState">
+					<field name="iWeaponID" type="BinHex"/>
+					<field name="iBulletsInClip" type="Int32"/>
+				</object>
+			</object>
+			<object name="ItemsInWheelNormalLoadOut">
+				<object name="Items">
+					<field name="ItemId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ItemsInWheelMissionLoadOut">
+				<object name="Items">
+					<field name="ItemId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="ItemsInCategoriesMissionLoadOut">
+				<object name="ItemsIdInCategories">
+					<field name="ItemsId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="PickupEntities">
+				<object name="PickupEntity">
+					<field name="PickupEntity" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="GangWarManagerSaveData">
+			<field name="IsStarted" type="Boolean"/>
+			<field name="MissionSucceededCount" type="Int32"/>
+			<field name="NonDailyGangTagPoints" type="Int32"/>
+			<object name="FactionMissionCounts">
+				<field name="FactionMissionCount" type="BinHex"/>
+				<object name="FactionMissionCounts">
+					<field name="FactionMissionCount" type="BinHex"/>
+				</object>
+			</object>
+			<object name="FactionReputation">
+				<object name="FactionReputation">
+					<field name="FactionReputation" type="BinHex"/>
+				</object>
+			</object>
+			<object name="MissionHistory">
+				<object name="MissionHistory">
+					<field name="Mission" type="BinHex"/>
+				</object>
+			</object>
+			<object name="CurrentMissions">
+                <object name="CurrentMissions">
+                    <field name="MissionId" type="BinHex"/>
+                    <field name="Faction" type="BinHex"/>
+                    <field name="Seed" type="BinHex"/>
+                    <field name="Budget" type="BinHex"/>
+                    <field name="ContractId" type="BinHex"/>
+                    <object name="Objectives">
+                        <object name="Objectives">
+                            <field name="Objective" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="BriefingNarrarion">
+				<object name="BriefingNarrarion">
+					<field name="ID" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="CSurviveSaveData">
+			<field name="NewSaveGame" type="Boolean"/>
+			<field name="AlreadyReleased" type="Boolean"/>
+			<field name="AlreadyInstalled" type="Boolean"/>
+			<field name="CurrentEntry" type="BinHex"/>
+			<field name="InventorySaved" type="BinHex"/>
+			<field name="DesiredItemId" type="BinHex"/>
+			<field name="RunId" type="BinHex"/>
+			<field name="TotalPlayTime" type="Float"/>
+			<field name="TimeLastPerkPurchased" type="Float"/>
+			<field name="PlayIntro" type="Boolean"/>
+			<field name="RespawnPos" type="Vector3"/>
+			<field name="StealthTakedown" type="BinHex"/>
+			<field name="FightTakedown" type="BinHex"/>
+			<field name="CrateTotal" type="Int32"/>
+			<object name="ScoreEntrySave">
+                <object name="ScoreEntrySave">
+                    <object name="SScoreEntryStats">
+                        <object name="SScoreEntryStats">
+                            <field name="SScoreEntryStats" type="BinHex"/>
+                        </object>
+                    </object>
+                    <object name="SScoreEntryRecords">
+                        <object name="SScoreEntryRecords">
+                            <field name="SScoreEntryRecords" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+			</object>
+			<object name="SavedItems">
+                <object name="SavedItems">
+                    <field name="ItemId" type="BinHex"/>
+                    <field name="ItemCount" type="BinHex"/>
+                </object>
+			</object>
+			<object name="FreeDisctrict"/>
+			<object name="OpenCrates"/>
+		</object>
+		<object name="RandomEventsListState">
+			<object name="SpawnedEventParams">
+				<object name="Param">
+					<field name="EventDbKey" type="BinHex"/>
+					<field name="PlayedCount" type="Int16"/>
+					<field name="PlayedVariations" type="BinHex"/>
+				</object>
+			</object>
+			<object name="EventStatsParams">
+				<object name="Param">
+					<field name="EventType" type="BinHex"/>
+					<field name="TriggeredCount" type="Int16"/>
+					<field name="NotTriggeredCount" type="Int16"/>
+				</object>
+			</object>
+		</object>
+		<object name="PlayerLastSavedPosition">
+			<field name="PlayerLastHideoutSavedPosition" type="Vector3"/>
+		</object>
+		<object name="EnvironmentEventsManager">
+			<field name="Version" type="BinHex"/>
+			<field name="AutomaticWeather" type="BinHex"/>
+			<field name="CurrentSetting" type="BinHex"/>
+			<field name="TransitionTime" type="Float"/>
+			<field name="TransitionDuration" type="Float"/>
+			<field name="Rain" type="Float"/>
+			<field name="Wetness" type="Float"/>
+			<field name="Puddle" type="Float"/>
+			<field name="CurrentEnvironmentSettings" type="BinHex"/>
+			<object name="UnfinishedEvents"/>
+		</object>
+		<object name="DrinkingChallengeProgression">
+			<object name="Progression">
+				<object name="Progression">
+					<field name="drinkingchallengeprogressionProgression" type="BinHex"/>
+					<field name="iLevel" type="Int32"/>
+				</object>
+			</object>
+			<object name="PlayerFailures">
+			    <object name="PlayerFailures">
+			        <field name="drinkingchallengeprogressionProgression" type="BinHex"/>
+			        <object name="RoundFailures">
+			            <object name="RoundFailure">
+			                <object name="RoundFailure">
+			                    <field name="iLevel" type="Int32"/>
+			                    <field name="iRound" type="Int32"/>
+			                    <field name="iFailCount" type="Int32"/>
+			                </object>
+			            </object>
+			        </object>
+			    </object>
+			</object>
+		</object>
+		<object name="SpawnedRandomEvents">
+			<object name="SpawnedEventParams">
+				<object name="Param">
+					<field name="EventDbKey" type="BinHex"/>
+					<field name="secondDbKey" type="BinHex"/>
+					<field name="VariationId" type="BinHex"/>
+					<field name="Location" type="Vector3"/>
+					<field name="ExpiringTime" type="Float"/>
+					<field name="bWasShownOnce" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="HackingAIUsedProfiles">
+			<object name="HackingAIUsedProfilesList">
+				<object name="HackingAIUsedProfilesList">
+					<field hash="FFFFFFFF" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="ShellGameProgression">
+			<field name="uiLevel" type="BinHex"/>
+		</object>
+		<object name="DailySaveData">
+			<field name="DailyGangTagPoints" type="Int32"/>
+			<field name="HasUploadedScore" type="Boolean"/>
+			<object name="Leaderboards">
+				<object name="Leaderboards">
+					<field name="Faction" type="Int16"/>
+					<field name="Tag" type="Int16"/>
+					<object name="Entries">
+						<object name="Entries">
+							<field name="Score" type="Int32"/>
+							<field name="Name" type="String"/>
+							<field name="Local" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ContractIds">
+				<field name="ContractId" type="BinHex"/>
+				<object name="ContractIds">
+					<field name="ContractId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="PlayerRankings">
+				<object name="PlayerRankings">
+					<field name="ContractId" type="BinHex"/>
+					<field name="Ranking" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="CarsOnDemand">
+			<object name="Cars">
+				<object name="Car">
+					<field name="nItemId" type="BinHex"/>
+					<field name="selState" type="Enum"/>
+				</object>
+			</object>
+		</object>
+		<object name="HubsState">
+			<object name="HubsData">
+				<object name="HubData">
+					<field name="EntityId" type="BinHex"/>
+					<field name="bEnable" type="Boolean"/>
+					<field name="bUnlocked" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="MusicDBSaveState">
+			<object name="DBSongs">
+				<object name="DBSong">
+					<field name="SongID" type="BinHex"/>
+					<field name="selSongState" type="Enum"/>
+					<field name="uiOrderIndex" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="SpawnedCollectibleEvents">
+			<object name="SpawnedEventParams"/>
+		</object>
+		<object name="MediaSystem">
+			<field name="iNbShopVisitsWithoutBroadcast" type="Int32"/>
+			<field name="iReputationRankUsedForRandomization" type="Int32"/>
+			<object name="ShopBroadcastRandomizedIntervals"/>
+		</object>
+		<object name="PlayerCollectibles">
+			<object name="BankAccounts">
+				<object name="Items">
+					<object name="Item">
+						<field name="itemsItemDBObject" type="BinHex"/>
+						<field name="iAmount" type="Int32"/>
+					</object>
+				</object>
+			</object>
+			<object name="DataBasesFound">
+				<object name="Items"/>
+			</object>
+			<object name="MiscellaneousItems">
+				<object name="Items"/>
+			</object>
+			<object name="CollectibleLists">
+				<object name="CollectibleList">
+					<field name="CollectibleDBObject" type="BinHex"/>
+					<object name="CollectibleItems">
+						<object name="CollectibleItem">
+							<field name="iRepeatedEntryId" type="Int32"/>
+							<field name="itemsItemDBObject" type="BinHex"/>
+							<field name="iAmountLeft" type="Int32"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="CollectibleEntities">
+				<object name="CollectibleEntity">
+					<field name="CollectibleEntity" type="BinHex"/>
+				</object>
+			</object>
+			<object name="EntityPersistenRewards"/>
+		</object>
+	</object>
+	<object name="UserDataDLC">
+		<object name="NWOfflineUniqueVisitData">
+			<object name="UnquieOfflineVisits"/>
+		</object>
+		<object name="NWBadgeValueOverTime">
+			<object name="NexuswallaTrackingBadge"/>
+		</object>
+		<object name="TrackingSystem">
+			<object name="TrackingSystem">
+				<object name="Stat">
+					<field name="StatId" type="BinHex"/>
+					<object name="StatContexts">
+						<object name="Context">
+							<field name="ContextId" type="BinHex"/>
+							<field name="Value" type="BinHex"/>
+							<field name="HasUnsentDelta" type="Boolean"/>
+							<field name="UnsentDelta" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="PDABadgeNotifications">
+			<field name="HomeTile_CarOnDemand" type="BinHex"/>
+			<field name="HomeTile_Contracts" type="BinHex"/>
+			<field name="HomeTile_Tutorials" type="BinHex"/>
+			<field name="HomeTile_Pills" type="BinHex"/>
+			<field name="HomeTile_CashRun" type="BinHex"/>
+			<field name="HomeTile_Challenges" type="BinHex"/>
+			<field name="HomeTile_MusicPlayer" type="BinHex"/>
+			<field name="HomeTile_AudioLogs" type="BinHex"/>
+			<object name="CarOnDemand">
+				<object name="CarOnDemand">
+					<field hash="FFFFFFFF" type="Boolean"/>
+					<field name="CarId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="Contracts">
+				<object name="Contract">
+					<field hash="FFFFFFFF" type="Boolean"/>
+					<field name="ContractId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="Tutorials">
+				<object name="Tutorial">
+					<field hash="FFFFFFFF" type="Boolean"/>
+					<field name="TutorialId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="Pills">
+				<object name="Pill">
+					<field hash="FFFFFFFF" type="Boolean"/>
+					<field name="PillId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="CashRun"/>
+			<object name="Challenges"/>
+			<object name="MusicPlayer">
+				<object name="Song">
+					<field hash="FFFFFFFF" type="Boolean"/>
+					<field name="SongId" type="BinHex"/>
+				</object>
+			</object>
+			<object name="AudioLogs">
+				<object name="AudioLog">
+					<field hash="FFFFFFFF" type="Boolean"/>
+					<field name="AudioLogId" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="NWServiceOnlineReset">
+			<field name="bOnlineSaveResetRequired" type="Boolean"/>
+		</object>
+		<object name="GameplayContentUnlockServiceSaveData">
+			<object name="UlcUnlocksCodes">
+				<object name="UlcUnlocksCode">
+					<field name="UlcUnlocksCode" type="BinHex"/>
+				</object>
+			</object>
+			<object name="UplayUnlocks">
+				<object name="UplayUnlock">
+					<field name="UplayUnlock" type="BinHex"/>
+				</object>
+			</object>
+			<object name="GamerProfileUnlocks">
+				<object name="GamerProfileUnlock">
+					<field name="GamerProfileUnlock" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="GameInviteServiceSaveGameData">
+			<field name="bIsMultiplayerUnlockedForInvites" type="Boolean"/>
+		</object>
+		<object name="MusicDBSaveStateMultiplayer">
+			<object name="DBSongs">
+				<object name="DBSong">
+					<field name="SongID" type="BinHex"/>
+					<field name="selSongState" type="Enum"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

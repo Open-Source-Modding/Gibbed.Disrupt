@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Audiomaticssettingsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="iInnerRadius" type="Int32"/>
+	<field name="iOuterRadius" type="Int32"/>
+	<field name="iTriggeringDelayMin" type="Int32"/>
+	<field name="iTriggeringDelayMax" type="Int32"/>
+	<field name="fStopSoundFadeOut" type="Float"/>
+	<field name="fMaximumPlayerSpeedKmh" type="Float"/>
+	<field name="fCooldownBeforeReplay" type="Float"/>
+</class>

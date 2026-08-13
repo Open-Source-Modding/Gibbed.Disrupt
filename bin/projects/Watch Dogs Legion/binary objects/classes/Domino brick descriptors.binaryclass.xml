@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Domino brick descriptorsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileDominoBoxResource" type="String"/>
+	<field name="fileDominoBoxResource" type="BinHex"/>
+	<field name="text_hidDominoBoxResourceDebug" type="String"/>
+	<field name="hidDominoBoxResourceDebug" type="BinHex"/>
+</class>

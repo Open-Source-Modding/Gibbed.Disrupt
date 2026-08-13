@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Aimodifiermanagerconfig_74498242Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Weights">
+		<field name="fGrunt" type="Float"/>
+		<field name="fOverwatch" type="Float"/>
+		<field name="fRusher" type="Float"/>
+		<field name="fGrenadier" type="Float"/>
+		<field name="fAlreadyAssigned" type="Float"/>
+		<field name="fAlreadyInside" type="Float"/>
+		<object name="curveCaptain">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDistance">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

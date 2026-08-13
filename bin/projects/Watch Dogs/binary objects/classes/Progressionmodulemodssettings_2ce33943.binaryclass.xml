@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Progressionmodulemodssettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Categories">
+		<object name="Category">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+			<field name="SlotsNumber" type="BinHex"/>
+			<field name="texturedbobjectIconTexture" type="BinHex"/>
+			<object name="locstridUIName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUIEmptySlot">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridUISlot">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Sets">
+		<object name="Set">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+			<field name="text_operativeclasswithemptyClass" type="String"/>
+			<field name="operativeclasswithemptyClass" type="BinHex"/>
+			<field name="texturedbobjectIconTexture" type="BinHex"/>
+			<object name="locstridUIName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="Mods">
+		<object name="Mod">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+			<field name="text_progressionmodsetsSet" type="String"/>
+			<field name="progressionmodsetsSet" type="BinHex"/>
+			<field name="text_progressionmodcategoriesCategory" type="String"/>
+			<field name="progressionmodcategoriesCategory" type="BinHex"/>
+			<field name="Tier" type="BinHex"/>
+			<field name="Quality" type="BinHex"/>
+			<field name="DisassemblePrice" type="BinHex"/>
+			<field name="AssemblePrice" type="BinHex"/>
+			<field name="texturedbobjectIconTexture" type="BinHex"/>
+			<object name="Modifiers">
+				<object name="Modifier">
+					<field name="text_progressionmodmodifiersModifier" type="String"/>
+					<field name="progressionmodmodifiersModifier" type="BinHex"/>
+					<field name="IsTeam" type="BinHex"/>
+					<field name="IsCoop" type="BinHex"/>
+					<object name="Overrides">
+						<object name="Override">
+							<field name="text_progressionmodoverrideVariable" type="String"/>
+							<field name="progressionmodoverrideVariable" type="BinHex"/>
+							<field name="Value" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="locstridUIName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="SetBonuses">
+		<object name="SetBonus">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+			<field name="text_progressionmodsetsSet" type="String"/>
+			<field name="progressionmodsetsSet" type="BinHex"/>
+			<field name="NumberRequired" type="BinHex"/>
+			<field name="text_PerkRequired" type="String"/>
+			<field name="PerkRequired" type="BinHex"/>
+			<field name="videosBinkVideoTutorial" type="BinHex"/>
+			<object name="Modifiers">
+				<object name="Modifier">
+					<field name="text_progressionmodmodifiersModifier" type="String"/>
+					<field name="progressionmodmodifiersModifier" type="BinHex"/>
+					<field name="IsTeam" type="BinHex"/>
+					<field name="IsCoop" type="BinHex"/>
+					<object name="Overrides">
+						<object name="Override">
+							<field name="text_progressionmodoverrideVariable" type="String"/>
+							<field name="progressionmodoverrideVariable" type="BinHex"/>
+							<field name="Value" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NewdetectionconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fDistractedVisionRadius" type="Float"/>
+	<field name="fARCloakedVisionRadius" type="Float"/>
+	<field name="fARShroudBodyRadius" type="Float"/>
+	<object name="FOVConfig">
+		<object name="FOVFrustumConfigs">
+			<object name="FOVFrustumConfig">
+				<field name="sDebugName" type="String"/>
+				<field name="colorDebugColor" type="VectorColor"/>
+				<field name="bPlayer" type="Boolean"/>
+				<field name="bHuman" type="Boolean"/>
+				<field name="bSmallDrone" type="Boolean"/>
+				<field name="bLargeDrone" type="Boolean"/>
+				<field name="bAnimal" type="Boolean"/>
+				<field name="bVehicle" type="Boolean"/>
+				<field name="bRCSpider" type="Boolean"/>
+				<field name="bDeadBody" type="Boolean"/>
+				<field name="fRange" type="Float"/>
+				<field name="fNearWidth" type="Float"/>
+				<field name="fNearHeight" type="Float"/>
+				<field name="fFarWidth" type="Float"/>
+				<field name="fFarHeight" type="Float"/>
+				<field name="selAttachedBone" type="Enum"/>
+				<field name="fAttachedBonePitch" type="Float"/>
+				<field name="fAttachedBoneYaw" type="Float"/>
+				<field name="fAttachedBoneVerticalOffset" type="Float"/>
+				<object name="curveDetectionTimeModifierFromDistance">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="FOVConflictConfig">
+		<object name="FOVFrustumConfigs">
+			<object name="FOVFrustumConfig">
+				<field name="sDebugName" type="String"/>
+				<field name="colorDebugColor" type="VectorColor"/>
+				<field name="bPlayer" type="Boolean"/>
+				<field name="bHuman" type="Boolean"/>
+				<field name="bSmallDrone" type="Boolean"/>
+				<field name="bLargeDrone" type="Boolean"/>
+				<field name="bAnimal" type="Boolean"/>
+				<field name="bVehicle" type="Boolean"/>
+				<field name="bRCSpider" type="Boolean"/>
+				<field name="bDeadBody" type="Boolean"/>
+				<field name="fRange" type="Float"/>
+				<field name="fNearWidth" type="Float"/>
+				<field name="fNearHeight" type="Float"/>
+				<field name="fFarWidth" type="Float"/>
+				<field name="fFarHeight" type="Float"/>
+				<field name="selAttachedBone" type="Enum"/>
+				<field name="fAttachedBonePitch" type="Float"/>
+				<field name="fAttachedBoneYaw" type="Float"/>
+				<field name="fAttachedBoneVerticalOffset" type="Float"/>
+				<object name="curveDetectionTimeModifierFromDistance">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="FOVAlertSearchConfig">
+		<object name="FOVFrustumConfigs">
+			<object name="FOVFrustumConfig">
+				<field name="sDebugName" type="String"/>
+				<field name="colorDebugColor" type="VectorColor"/>
+				<field name="bPlayer" type="Boolean"/>
+				<field name="bHuman" type="Boolean"/>
+				<field name="bSmallDrone" type="Boolean"/>
+				<field name="bLargeDrone" type="Boolean"/>
+				<field name="bAnimal" type="Boolean"/>
+				<field name="bVehicle" type="Boolean"/>
+				<field name="bRCSpider" type="Boolean"/>
+				<field name="bDeadBody" type="Boolean"/>
+				<field name="fRange" type="Float"/>
+				<field name="fNearWidth" type="Float"/>
+				<field name="fNearHeight" type="Float"/>
+				<field name="fFarWidth" type="Float"/>
+				<field name="fFarHeight" type="Float"/>
+				<field name="selAttachedBone" type="Enum"/>
+				<field name="fAttachedBonePitch" type="Float"/>
+				<field name="fAttachedBoneYaw" type="Float"/>
+				<field name="fAttachedBoneVerticalOffset" type="Float"/>
+				<object name="curveDetectionTimeModifierFromDistance">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="FOVVehicleConfig">
+		<object name="FOVFrustumConfigs">
+			<object name="FOVFrustumConfig">
+				<field name="sDebugName" type="String"/>
+				<field name="colorDebugColor" type="VectorColor"/>
+				<field name="bPlayer" type="Boolean"/>
+				<field name="bHuman" type="Boolean"/>
+				<field name="bSmallDrone" type="Boolean"/>
+				<field name="bLargeDrone" type="Boolean"/>
+				<field name="bAnimal" type="Boolean"/>
+				<field name="bVehicle" type="Boolean"/>
+				<field name="bRCSpider" type="Boolean"/>
+				<field name="bDeadBody" type="Boolean"/>
+				<field name="fRange" type="Float"/>
+				<field name="fNearWidth" type="Float"/>
+				<field name="fNearHeight" type="Float"/>
+				<field name="fFarWidth" type="Float"/>
+				<field name="fFarHeight" type="Float"/>
+				<field name="selAttachedBone" type="Enum"/>
+				<field name="fAttachedBonePitch" type="Float"/>
+				<field name="fAttachedBoneYaw" type="Float"/>
+				<field name="fAttachedBoneVerticalOffset" type="Float"/>
+				<object name="curveDetectionTimeModifierFromDistance">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

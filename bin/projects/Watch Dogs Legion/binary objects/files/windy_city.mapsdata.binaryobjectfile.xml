@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="windy_city.mapsdata">
+	<object name="mapsdata">
+		<inherit name="WindyCityMapsDataParameters"/>
+	</object>
+</file>

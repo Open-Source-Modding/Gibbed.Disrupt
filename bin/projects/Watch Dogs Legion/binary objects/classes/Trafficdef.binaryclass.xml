@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TrafficdefParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bLegacy" type="Boolean"/>
+	<field name="bClosedToTraffic" type="Boolean"/>
+	<field name="bIsFleeOpportunity" type="Boolean"/>
+	<field name="bIsAlley" type="Boolean"/>
+	<field name="bIsInterior" type="Boolean"/>
+	<field name="bAllowFelonySpawn" type="Boolean"/>
+	<field name="bUseFelonyVolume" type="Boolean"/>
+	<field name="bAllowGPS" type="Boolean"/>
+	<field name="bNoCivStim" type="Boolean"/>
+	<field name="bNoPlayerSpawn" type="Boolean"/>
+	<field name="selSpeedLimit" type="Enum"/>
+	<field name="patselectPatternSelector" type="BinHex"/>
+</class>

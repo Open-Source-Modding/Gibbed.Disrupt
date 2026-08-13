@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Livingcitysettingsext_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fOppressedStateNPCDoorSpawnScale" type="Float"/>
+	<field name="fOppressedStateCivilianDensityScale" type="Float"/>
+	<field name="fOppressedStateTrafficDensityScale" type="Float"/>
+</class>

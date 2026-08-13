@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ReputationincidentsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iReputationAwarded" type="Int32"/>
+	<field name="bTrackReputation" type="Boolean"/>
+	<field name="fCoolDown" type="Float"/>
+	<field name="reputationeffectsReputationEffectDependency" type="BinHex"/>
+	<object name="locstridItemReputationDescriptionId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

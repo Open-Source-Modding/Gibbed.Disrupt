@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BossconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bosseffectsconfigEffects" type="BinHex"/>
+	<object name="Phases">
+		<field name="fHPRatioLowThreshold" type="Float"/>
+		<object name="Phases">
+			<field name="fHPRatioLowThreshold" type="Float"/>
+		</object>
+	</object>
+	<object name="Abilities">
+		<object name="Ability">
+			<field name="selAbilityType" type="Enum"/>
+			<object name="Progression">
+				<object name="Item">
+					<field name="bossabilityconfigAbilityConfig" type="BinHex"/>
+					<object name="PhaseRange">
+						<field name="fMin" type="Int32"/>
+						<field name="fMax" type="Int32"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

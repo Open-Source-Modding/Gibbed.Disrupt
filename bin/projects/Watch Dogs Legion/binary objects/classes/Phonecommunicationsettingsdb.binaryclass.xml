@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhonecommunicationsettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fStartDelay" type="Float"/>
+	<object name="PhoneCommunicationSettingsData">
+		<field hash="6D1E1959" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<field name="bForceMajorNarrativeElement" type="Boolean"/>
+			<field name="bBypassNarrativeQueue" type="Boolean"/>
+			<field name="fUIStartUpDelay" type="Float"/>
+			<field name="bPlayCommunicationIntro" type="Boolean"/>
+			<field name="selRepeatBehavior" type="Enum"/>
+			<field name="texturedbobjectImageSource" type="BinHex"/>
+			<field name="videosVideo" type="BinHex"/>
+			<field name="conversationsettingConversation" type="BinHex"/>
+			<field name="bUseEarBudsActivate" type="Boolean"/>
+			<field name="text_fileCinematicSequence" type="String"/>
+			<field name="fileCinematicSequence" type="BinHex"/>
+			<field name="plasmaPlasmaDialogTemplateId" type="BinHex"/>
+			<field name="bShowTeamSpeakUI" type="Boolean"/>
+			<field name="phonecommunicationteamspeaksoundsdbTeamSpeakSoundsPreset" type="BinHex"/>
+			<object name="DataDrive">
+				<field name="selDataDriveBehavior" type="Enum"/>
+				<field name="selDataDriveCategoryOverride" type="Enum"/>
+				<object name="locstridName">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridDescription">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridTranscript">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="AudioEventsAndTypes">
+				<object name="Events">
+					<field name="text_sndSoundId" type="String"/>
+					<field name="sndSoundId" type="BinHex"/>
+					<field name="sndtpSoundType" type="BinHex"/>
+				</object>
+			</object>
+			<object name="locstridSpeaker0NameOverride">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridSpeaker1NameOverride">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridChannelHeader">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Citylocationlocksglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="nDomino" type="Enum"/>
+	<field name="nDelivery" type="Enum"/>
+	<field name="nMainSwitch" type="Enum"/>
+	<field name="nReachLocation" type="Enum"/>
+	<field name="nCaptainLocation" type="Enum"/>
+</class>

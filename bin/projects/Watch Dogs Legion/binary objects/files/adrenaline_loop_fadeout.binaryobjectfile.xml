@@ -1,0 +1,5 @@
+<file name="adrenaline_loop_fadeout" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

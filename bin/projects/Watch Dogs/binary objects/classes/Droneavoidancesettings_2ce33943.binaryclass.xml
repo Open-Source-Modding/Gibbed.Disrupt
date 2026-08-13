@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Droneavoidancesettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DynamicAvoidancePriority">
+		<object name="TypeAvoidancePriority">
+			<field name="Invalid" type="BinHex"/>
+			<field name="Scanner" type="BinHex"/>
+			<field name="News" type="BinHex"/>
+			<field name="Personal" type="BinHex"/>
+			<field name="Delivery" type="BinHex"/>
+			<field name="Construction" type="BinHex"/>
+			<field name="Turret" type="BinHex"/>
+			<field name="Chase" type="BinHex"/>
+			<field name="Riot" type="BinHex"/>
+			<field hash="CDE5BB1C" type="BinHex"/>
+			<field name="ScriptedWorldActivity" type="BinHex"/>
+			<field name="RaidBoss" type="BinHex"/>
+		</object>
+		<object name="SpecificStatePriority">
+			<field name="ChaseOnFootTarget" type="BinHex"/>
+			<field name="ChaseInVehicleTarget" type="BinHex"/>
+			<field name="ChaseFlyingTarget" type="BinHex"/>
+			<field name="CombatBallistic" type="BinHex"/>
+			<field name="CombatCheckLKP" type="BinHex"/>
+		</object>
+	</object>
+</class>

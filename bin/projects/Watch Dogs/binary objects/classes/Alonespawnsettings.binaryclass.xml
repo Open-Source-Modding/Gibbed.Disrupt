@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AlonespawnsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fSpawningRadius" type="Float"/>
+	<field name="fUnspawningRadius" type="Float"/>
+	<field name="uiSpawningBudget" type="Int64"/>
+	<field name="fMinSpawnInfluence" type="Float"/>
+	<field name="fMaxSpawnInfluence" type="Float"/>
+	<object name="Archetypes">
+		<field name="text_archArchetype" type="String"/>
+		<field name="archArchetype" type="BinHex"/>
+		<field name="uiProportion" type="Int64"/>
+		<object name="Archetypes">
+			<field name="text_archArchetype" type="String"/>
+			<field name="archArchetype" type="BinHex"/>
+			<field name="uiProportion" type="Int64"/>
+		</object>
+	</object>
+</class>

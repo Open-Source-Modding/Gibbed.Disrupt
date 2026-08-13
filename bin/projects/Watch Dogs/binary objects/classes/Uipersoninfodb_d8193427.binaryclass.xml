@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uipersoninfodb_d8193427Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PersonElementInfos">
+		<object name="PersonElementInfo">
+			<field name="text_progressionelementElementId" type="String"/>
+			<field name="progressionelementElementId" type="BinHex"/>
+			<field name="texturedbobjectIconTexture" type="BinHex"/>
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOverrideDescription">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="OperativeStateInfos">
+		<object name="StateInfos">
+			<object name="StateInfo">
+				<field name="text_operativestateState" type="String"/>
+				<field name="operativestateState" type="BinHex"/>
+				<object name="locstridStateLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridStateEntryHUDLogLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridStateExitHUDLogLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+		<object name="locstridDefaultStateLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="AffinityLevelInfo">
+		<object name="locstridResent">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridNegative">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridNeutral">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridPositive">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridRecruitable">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

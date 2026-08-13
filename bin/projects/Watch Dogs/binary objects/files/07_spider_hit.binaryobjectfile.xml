@@ -1,0 +1,5 @@
+<file name="07_spider_hit" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

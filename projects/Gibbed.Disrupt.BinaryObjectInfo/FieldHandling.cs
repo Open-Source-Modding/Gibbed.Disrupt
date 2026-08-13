@@ -56,9 +56,11 @@ namespace Gibbed.Disrupt.BinaryObjectInfo
                 [FieldType.UInt32] = new FieldHandlers.UInts.UInt32Handler(),
                 [FieldType.UInt64] = new FieldHandlers.UInts.UInt64Handler(),
                 [FieldType.Float] = new FieldHandlers.FloatHandler(),
+                [FieldType.Vector] = new FieldHandlers.VectorHandler(),
                 [FieldType.Vector2] = new FieldHandlers.Vector2Handler(),
                 [FieldType.Vector3] = new FieldHandlers.Vector3Handler(),
                 [FieldType.Vector4] = new FieldHandlers.Vector4Handler(),
+                [FieldType.VectorColor] = new FieldHandlers.VectorColorHandler(),
                 [FieldType.Quaternion] = new FieldHandlers.Vector4Handler(),
                 [FieldType.String] = new FieldHandlers.StringHandler(),
                 [FieldType.Enum] = new FieldHandlers.EnumHandler(),
@@ -84,6 +86,11 @@ namespace Gibbed.Disrupt.BinaryObjectInfo
         {
             if (def != null && def.Type != type)
             {
+                if (def.Type == FieldType.BinHex && _Handlers.TryGetValue(type, out var fixedHandler) == true && fixedHandler is IValueHandler fixedSerializer)
+                {
+                    return fixedSerializer.Import(null, FieldType.Invalid, text);
+                }
+
                 throw new ArgumentException("type mismatch", nameof(def));
             }
 
@@ -106,6 +113,11 @@ namespace Gibbed.Disrupt.BinaryObjectInfo
 
             if (def != null && def.Type != type)
             {
+                if (def.Type == FieldType.BinHex && _Handlers.TryGetValue(type, out var fixedHandler) == true)
+                {
+                    return fixedHandler.Import(null, arrayType, nav);
+                }
+
                 throw new ArgumentException("type mismatch", nameof(def));
             }
 

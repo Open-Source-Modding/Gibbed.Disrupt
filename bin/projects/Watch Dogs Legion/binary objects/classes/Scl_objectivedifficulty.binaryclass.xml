@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scl_objectivedifficultyParameters">
+	<inherit name="SharedParameters"/>
+</class>

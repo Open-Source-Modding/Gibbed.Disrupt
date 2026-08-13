@@ -1,0 +1,67 @@
+<class name="CCameraLensClip">
+    <object name="CCameraLensClip">
+        <field name="sName" type="String"/>
+        <field name="disUniqueId" type="BinHex"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field name="timeStartTime" type="Float"/>
+        <field name="timeDuration" type="Float"/>
+        <field name="timeEndTime" type="Float"/>
+        <field name="hidResizable" type="BinHex"/>
+        <field name="disMuted" type="BinHex"/>
+        <field name="sAnimationTrackCollectionResource" type="BinHex"/>
+        <field name="bResizable" type="BinHex"/>
+        <field name="hidAnimationTrackCollectionDuration" type="BinHex"/>
+        <object name="AnimationTrackCollection">
+          <object name="Tracks">
+            <object name="Track">
+              <object name="Track">
+                <field name="text_hid_DTCTH_ClassName" type="String"/>
+                <field name="hid_DTCTH_ClassName" type="BinHex"/>
+                <field name="Name" type="String"/>
+                <field name="Master" type="String"/>
+                <field name="UseCustomAnimation" type="Boolean"/>
+                <field name="Owner" type="BinHex"/>
+                <object name="Keys">
+                  <object name="Key">
+                    <field name="TimePrecise" type="Float"/>
+                    <field name="Value" type="Float"/>
+                    <object name="TangentIn">
+                      <field name="Time" type="Float"/>
+                      <field name="Value" type="Float"/>
+                    </object>
+                    <object name="TangentOut">
+                      <field name="Time" type="Float"/>
+                      <field name="Value" type="Float"/>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        <object name="View">
+          <field name="disFOV" type="BinHex"/>
+          <field name="bOverrideClipPlanes" type="Boolean"/>
+          <field name="fClipPlaneNear" type="Float"/>
+          <field name="fClipPlaneFar" type="Float"/>
+        </object>
+        <object name="DepthOfField">
+          <field name="fFocusDistance" type="Float"/>
+          <field name="selFStop" type="Enum"/>
+        </object>
+        <object name="Advanced">
+          <field name="disHorizontalBackplate" type="BinHex"/>
+          <field name="disCircleOfConfusion" type="BinHex"/>
+          <field name="disHyperFocalDistance" type="BinHex"/>
+          <field name="disFocusNearLimit" type="BinHex"/>
+          <field name="disFocusFarLimit" type="BinHex"/>
+          <field name="disFocalLength" type="BinHex"/>
+        </object>
+        <object name="Unrealistic">
+          <field name="bNearDOFEnabled" type="Boolean"/>
+          <field name="bFarDOFEnabled" type="Boolean"/>
+          <field name="fBokehBoostIntensity" type="Float"/>
+          <field name="fBokehBoostThreshold" type="Float"/>
+        </object>
+      </object>
+</class>

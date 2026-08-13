@@ -1,0 +1,62 @@
+<class name="CSetLightClip">
+    <object name="CSetLightClip">
+      <field name="sName" type="String"/>
+      <field name="disUniqueId" type="BinHex"/>
+      <field name="bEnabled" type="Boolean"/>
+      <field name="timeStartTime" type="Float"/>
+      <field name="timeDuration" type="Float"/>
+      <field name="timeEndTime" type="Float"/>
+      <field name="hidResizable" type="BinHex"/>
+      <field name="disMuted" type="BinHex"/>
+      <field name="sAnimationTrackCollectionResource" type="BinHex"/>
+      <field name="bResizable" type="Boolean"/>
+      <field name="hidAnimationTrackCollectionDuration" type="BinHex"/>
+      <field name="CenterPosition" type="Vector3"/>
+      <field name="CenterAngles" type="Vector3"/>
+      <object name="AnimationTrackCollection">
+        <object name="Tracks">
+		    <object name="Track">
+                <object name="Track">
+                  <field name="text_hid_DTCTH_ClassName" type="String"/>
+                  <field name="hid_DTCTH_ClassName" type="BinHex"/>
+                  <field name="Name" type="String"/>
+                  <field name="Master" type="String"/>
+                  <field name="UseCustomAnimation" type="BinHex"/>
+                  <field name="Owner" type="BinHex"/>
+                  <object name="Keys">
+                    <object name="Key">
+                      <field name="TimePrecise" type="BinHex"/>
+                      <field name="Value" type="BinHex"/>
+                      <object name="TangentIn">
+                        <field name="Time" type="BinHex"/>
+                        <field name="Value" type="BinHex"/>
+                      </object>
+                      <object name="TangentOut">
+                        <field name="Time" type="BinHex"/>
+                        <field name="Value" type="BinHex"/>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+            </object>
+		</object>
+      </object>
+      <object name="Lights">
+        <object name="Light">
+          <object name="Light">
+            <field name="text_hid_DTCTH_ClassName" type="String"/>
+            <field name="hid_DTCTH_ClassName" type="BinHex"/>
+            <field name="sName" type="String"/>
+            <field name="disUniqueId" type="BinHex"/>
+            <field name="selType" type="Enum"/>
+            <field name="Azimuth" type="BinHex"/>
+            <field name="Elevation" type="BinHex"/>
+            <field name="Distance" type="BinHex"/>
+            <field name="AnglesFollowCenter" type="BinHex"/>
+          </object>
+		  <inherit name="CDynamicLightComponent"/>
+		  <inherit name="CLightEffectComponent"/>
+		</object>
+      </object>
+    </object>
+</class>

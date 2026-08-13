@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronebankParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_GroupName" type="String"/>
+	<field name="GroupName" type="BinHex"/>
+	<object name="Bank">
+		<object name="Entry">
+			<field name="text_archDroneArchetype" type="String"/>
+			<field name="archDroneArchetype" type="BinHex"/>
+			<field name="droneconfigDroneConfig" type="BinHex"/>
+			<field name="entcontSpawningContext" type="BinHex"/>
+			<field name="uiCoefficient" type="UInt32"/>
+		</object>
+	</object>
+</class>

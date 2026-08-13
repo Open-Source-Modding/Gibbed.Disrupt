@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DigitaltripgameplayoverridesdescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bDisableInvicibilityWindow" type="Boolean"/>
+	<field name="bDisableStunnedHud" type="Boolean"/>
+	<field name="bGameModeOverride" type="Boolean"/>
+	<field name="bBlockSelfGetUp" type="Boolean"/>
+	<field name="bInConflictOverride" type="Boolean"/>
+	<field name="bInstantStunOnHealthDepleted" type="Boolean"/>
+	<field name="bReviveOnlyOnTeammates" type="Boolean"/>
+	<field name="fReviveTimeOverride" type="Float"/>
+	<field name="fBleedingOutTimeOverride" type="Float"/>
+	<field name="bExplodeOnEnemyPlayers" type="Boolean"/>
+	<field name="bEnemiesARCloakInvisibility" type="Boolean"/>
+	<field name="bDisableSpiderBotARCloak" type="Boolean"/>
+	<field name="bEnemiesTargetedBySpiderTurret" type="Boolean"/>
+	<field name="fMaximumSpiderTurretRange" type="Float"/>
+	<field name="bDisableBulletSkipPlayerLogic" type="Boolean"/>
+	<field name="fVehicleDamageMultiplier" type="Float"/>
+	<field name="bOpSwapPermittedInForbiddenZone" type="Boolean"/>
+	<field name="bOpSwapFroceScheduledSpawn" type="Boolean"/>
+	<field name="bOnlineMenuOnly" type="Boolean"/>
+	<field name="bWorldMapMenuOnly" type="Boolean"/>
+	<field name="bDrunkEffectDisabled" type="Boolean"/>
+	<field name="bRandomDeath" type="Boolean"/>
+	<field name="bDisableRingOfSteel" type="Boolean"/>
+	<field name="bDisableFelonyAndEngagementSharing" type="Boolean"/>
+	<field name="iFelonyMaxLevel" type="Int32"/>
+	<field name="fFelonyDuration" type="Float"/>
+	<field name="reinforcementconfigReinforcement" type="BinHex"/>
+	<field name="bDisableInteractions" type="Boolean"/>
+	<field name="bDisableHack" type="Boolean"/>
+	<field name="bEnemyPlayerVehicleHackingEnabled" type="Boolean"/>
+	<field name="bEnemyPlayerHackingEnabled" type="Boolean"/>
+	<field name="fCarHackDuration" type="Float"/>
+	<field name="bForceHackReminderWhileAiming" type="Boolean"/>
+	<field name="bDisableEnticerVehicleCLOs" type="Boolean"/>
+	<field name="bEnableAimAssistOnEnemyPlayer" type="Boolean"/>
+	<field name="bEnableAimAssistParamsOverride" type="Boolean"/>
+	<field name="bDisableWaypointSharing" type="Boolean"/>
+	<field name="bPlayerProfilingEnabled" type="Boolean"/>
+	<field name="bInputProfilerDisabled" type="Boolean"/>
+	<field name="bPlayerProfilerCardDisabled" type="Boolean"/>
+	<field name="bQuickHackCardDisabled" type="Boolean"/>
+	<field name="bCanConnectWhileStunned" type="Boolean"/>
+	<field name="bMeleeOverrides" type="Boolean"/>
+	<field name="fTakedownAngle" type="Float"/>
+	<field name="fTakedownMaxDistance" type="Float"/>
+	<field name="bDisableInventoryItemLock" type="Boolean"/>
+	<field name="bDisableSpecialMinimapTriggers" type="Boolean"/>
+	<object name="DefaultDamageOverride">
+		<field name="fBodyshotDamageMultiplier" type="Float"/>
+		<field name="fHeadshotDamageMultiplier" type="Float"/>
+		<field name="bUseDefaultModifier" type="Boolean"/>
+	</object>
+	<object name="SpecificWeaponsDamageOverrides"/>
+	<object name="WeaponTypesDamageOverrides"/>
+	<object name="StimTypesDamageOverrides">
+		<object name="StimTypeOverride">
+			<field hash="6DB6F40C" type="String"/>
+			<field name="selDamageType" type="Enum"/>
+			<field name="fBodyshotDamageMultiplier" type="Float"/>
+			<field name="fHeadshotDamageMultiplier" type="Float"/>
+		</object>
+	</object>
+	<object name="InstigatorTypesDamageOverrides">
+		<object name="InstigatorTypeOverride">
+			<field name="selInstigatorType" type="Enum"/>
+			<field name="fBodyshotDamageMultiplier" type="Float"/>
+			<field name="fHeadshotDamageMultiplier" type="Float"/>
+		</object>
+	</object>
+	<object name="AgentSubcategoryDamageOverrides">
+		<object name="AgentSubcategoryOverride">
+			<field name="selAgentSubcategory" type="Enum"/>
+			<field name="fBodyshotDamageMultiplier" type="Float"/>
+			<field name="fHeadshotDamageMultiplier" type="Float"/>
+		</object>
+	</object>
+	<object name="InteractionExceptions"/>
+	<object name="HackingExceptions">
+		<object name="HackType">
+			<field name="selInteractionType" type="Enum"/>
+		</object>
+	</object>
+	<object name="AssistanceInputParameters">
+		<field name="fSteadyPushingHighDecPerc" type="Float"/>
+		<field name="fSteadyPushingHighIncPerc" type="Float"/>
+		<field name="fSteadyPushingMediumDecPerc" type="Float"/>
+		<field name="fSteadyPushingMediumIncPerc" type="Float"/>
+		<field name="fSteadyPushingNoneDecPerc" type="Float"/>
+		<field name="fSteadyPushingNoneIncPerc" type="Float"/>
+		<field name="fMovingPushingHighDecPerc" type="Float"/>
+		<field name="fMovingPushingHighIncPerc" type="Float"/>
+		<field name="fMovingPushingMediumDecPerc" type="Float"/>
+		<field name="fMovingPushingMediumIncPerc" type="Float"/>
+		<field name="fMovingPushingNoneDecPerc" type="Float"/>
+		<field name="fMovingPushingNoneIncPerc" type="Float"/>
+		<field name="fPushingPercMinimalMultiplier" type="Float"/>
+		<field name="fPushingPercStrongMultiplier" type="Float"/>
+		<field name="fAssistanceDistanceThreshold" type="Float"/>
+		<field name="vec2AssistanceAutoLockRange" type="Vector2"/>
+		<field name="fAssistanceAutoLockRangeMinimalMultiplier" type="Float"/>
+		<field name="fAssistanceAutoLockRangeStrongMultiplier" type="Float"/>
+		<field name="fAssistanceAutoLockDistanceThreshold" type="Float"/>
+		<field name="fAssistanceAutoLockDistanceThresholdMinimalMultiplier" type="Float"/>
+		<field name="fAssistanceAutoLockDistanceThresholdStrongMultiplier" type="Float"/>
+		<field name="fAssistanceAutoLockHeadshotRange" type="Float"/>
+		<field name="fAssistanceAutoLockDuration" type="Float"/>
+		<field name="fAssistanceConeThreshold" type="Float"/>
+		<field name="vec2AssistanceCushionInnerRange" type="Vector2"/>
+		<field name="vec2AssistanceCushionOuterRange" type="Vector2"/>
+		<field name="fAssistanceCushionRangeMinimalMultiplier" type="Float"/>
+		<field name="fAssistanceCushionRangeStrongMultiplier" type="Float"/>
+		<field name="vec2AssistanceMagnetInnerRange" type="Vector2"/>
+		<field name="vec2AssistanceMagnetOuterRange" type="Vector2"/>
+		<field name="fAssistanceMagnetRangeMinimalMultiplier" type="Float"/>
+		<field name="fAssistanceMagnetRangeStrongMultiplier" type="Float"/>
+		<field name="vec2AssistanceMagnetRangeInputCurve" type="BinHex"/>
+		<field name="fAssistanceMagnetRangeInputScaleUpSpeed" type="Float"/>
+		<field name="fAssistanceMagnetRangeInputScaleDownSpeed" type="Float"/>
+		<field name="fInVehicleMagnetMultiplier" type="Float"/>
+	</object>
+	<object name="AimLockOnParameters">
+		<field name="vector2LockCurve" type="Vector2"/>
+		<field name="fBlendInTime" type="Float"/>
+		<field name="fBlendOutTime" type="Float"/>
+		<field name="fTimeToLive" type="Float"/>
+		<field name="fKillOnNoLOSDuration" type="Float"/>
+		<field name="fSensitivityThreshold" type="Float"/>
+		<field name="fPrecisionThreshold" type="Float"/>
+		<field name="fStickNavTimerDirectionChanged" type="Float"/>
+		<field name="fStickNavTimerDirectionSame" type="Float"/>
+		<field name="fChoseAnotherBoneTime" type="Float"/>
+	</object>
+	<object name="ZLockParameters">
+		<field name="fInitialStrength" type="Float"/>
+		<field name="fInitialDuration" type="Float"/>
+		<field name="fInitialRampDownDuration" type="Float"/>
+		<field name="fStrength" type="Float"/>
+		<field name="fDistanceDeadzoneRampMin" type="Float"/>
+		<field name="fDistanceDeadzoneRampMax" type="Float"/>
+		<field name="vec2AssistanceFactorCurve" type="BinHex"/>
+	</object>
+</class>

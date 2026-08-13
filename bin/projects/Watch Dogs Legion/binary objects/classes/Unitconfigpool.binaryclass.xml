@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UnitconfigpoolParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="bValid" type="Boolean"/>
+	<field name="selUnitType" type="BinHex"/>
+	<object name="HumanConfigList">
+		<object name="humanconfigHumanConfig">
+			<field name="humanconfigHumanConfig" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VehicleConfigList">
+	</object>
+	<object name="AnimalConfigList">
+	</object>
+	<object name="RobotConfigList">
+	</object>
+	<object name="DroneConfigList">
+	</object>
+</class>

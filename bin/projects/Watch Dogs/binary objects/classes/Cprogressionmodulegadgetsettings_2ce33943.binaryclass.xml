@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmodulegadgetsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<field name="scenetotexturestudioobjectDetailsViewStudioObject" type="BinHex"/>
+		<object name="Gadgets">
+			<object name="Gadget">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+				<field name="bDisplayInApp" type="Boolean"/>
+				<field name="bOnlineOnly" type="Boolean"/>
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+				<field name="text_MaterialSlotId" type="String"/>
+				<field name="MaterialSlotId" type="BinHex"/>
+				<field name="texturedbobjectThumbnailIcon" type="BinHex"/>
+				<field name="texturedbobjectModelTexture2D" type="BinHex"/>
+				<object name="Atoms">
+					<object name="Atom">
+						<field name="text_progressionatomAtomId" type="String"/>
+						<field name="progressionatomAtomId" type="BinHex"/>
+					</object>
+				</object>
+				<object name="Items">
+					<object name="Item">
+						<field name="itemsItem" type="BinHex"/>
+					</object>
+				</object>
+				<object name="IsUnlocked">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+				<object name="locstridNameLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+				<object name="locstridDescriptionLocId">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

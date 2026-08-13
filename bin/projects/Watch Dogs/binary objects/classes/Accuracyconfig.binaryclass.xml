@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AccuracyconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMeterSize" type="Float"/>
+	<field name="fAtCoverDecreaseSpeed" type="Float"/>
+	<field name="fVerticalHiddenAngle" type="Float"/>
+	<field name="fHorizontalHiddenAngle" type="Float"/>
+	<object name="Shield">
+		<field name="fSize" type="Float"/>
+		<field name="fRechargeSpeed" type="Float"/>
+		<field name="fActivationThreshold" type="Float"/>
+		<field name="fRechargeThreshold" type="Float"/>
+		<field name="fPointBlankDistance" type="Float"/>
+	</object>
+	<object name="ShootingTickets">
+		<field name="iAmountOfShootingTickets" type="Int32"/>
+		<field name="vec2ShootingSequenceLength" type="Vector2"/>
+		<field name="vec2ShootingSequenceDelayLength" type="Vector2"/>
+	</object>
+	<object name="AIAccuracy">
+		<object name="AITargetFactors">
+			<field name="fBaseHitThreshold" type="Float"/>
+			<field name="fMovingTowardMultiplier" type="Float"/>
+			<field name="fMovingAwayMultiplier" type="Float"/>
+			<field name="fCrouchingMultiplier" type="Float"/>
+			<field name="fInCoverMultiplier" type="Float"/>
+			<field name="fDodgingAndRollingMultiplier" type="Float"/>
+			<field name="fSpeedMultiplierWalk" type="Float"/>
+			<field name="fSpeedMultiplierJog" type="Float"/>
+			<field name="fSpeedMultiplierSprint" type="Float"/>
+			<field name="fOutOfFOVFactor" type="Float"/>
+			<object name="curveDistanceMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveContinuousShootingMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="PlayerTargetFactors">
+			<field name="fBaseHitThreshold" type="Float"/>
+			<field name="fMovingTowardMultiplier" type="Float"/>
+			<field name="fMovingAwayMultiplier" type="Float"/>
+			<field name="fCrouchingMultiplier" type="Float"/>
+			<field name="fInCoverMultiplier" type="Float"/>
+			<field name="fDodgingAndRollingMultiplier" type="Float"/>
+			<field name="fSpeedMultiplierWalk" type="Float"/>
+			<field name="fSpeedMultiplierJog" type="Float"/>
+			<field name="fSpeedMultiplierSprint" type="Float"/>
+			<field name="fOutOfFOVFactor" type="Float"/>
+			<object name="curveDistanceMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveContinuousShootingMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="RCTargetFactors">
+			<field name="fBaseHitThreshold" type="Float"/>
+			<field name="fMovingTowardMultiplier" type="Float"/>
+			<field name="fMovingAwayMultiplier" type="Float"/>
+			<field name="fCrouchingMultiplier" type="Float"/>
+			<field name="fInCoverMultiplier" type="Float"/>
+			<field name="fDodgingAndRollingMultiplier" type="Float"/>
+			<field name="fSpeedMultiplierWalk" type="Float"/>
+			<field name="fSpeedMultiplierJog" type="Float"/>
+			<field name="fSpeedMultiplierSprint" type="Float"/>
+			<field name="fOutOfFOVFactor" type="Float"/>
+			<object name="curveDistanceMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveContinuousShootingMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="DroneTargetFactors">
+			<field name="fBaseHitThreshold" type="Float"/>
+			<field name="fMovingTowardMultiplier" type="Float"/>
+			<field name="fMovingAwayMultiplier" type="Float"/>
+			<field name="fCrouchingMultiplier" type="Float"/>
+			<field name="fInCoverMultiplier" type="Float"/>
+			<field name="fDodgingAndRollingMultiplier" type="Float"/>
+			<field name="fSpeedMultiplierWalk" type="Float"/>
+			<field name="fSpeedMultiplierJog" type="Float"/>
+			<field name="fSpeedMultiplierSprint" type="Float"/>
+			<field name="fOutOfFOVFactor" type="Float"/>
+			<object name="curveDistanceMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveContinuousShootingMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="ChaseDroneTargetFactors">
+			<field name="fBaseHitThreshold" type="Float"/>
+			<field name="fMovingTowardMultiplier" type="Float"/>
+			<field name="fMovingAwayMultiplier" type="Float"/>
+			<field name="fCrouchingMultiplier" type="Float"/>
+			<field name="fInCoverMultiplier" type="Float"/>
+			<field name="fDodgingAndRollingMultiplier" type="Float"/>
+			<field name="fSpeedMultiplierWalk" type="Float"/>
+			<field name="fSpeedMultiplierJog" type="Float"/>
+			<field name="fSpeedMultiplierSprint" type="Float"/>
+			<field name="fOutOfFOVFactor" type="Float"/>
+			<object name="curveDistanceMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveContinuousShootingMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="RushingTargetFactors">
+			<field name="fBaseHitThreshold" type="Float"/>
+			<field name="fMovingTowardMultiplier" type="Float"/>
+			<field name="fMovingAwayMultiplier" type="Float"/>
+			<field name="fCrouchingMultiplier" type="Float"/>
+			<field name="fInCoverMultiplier" type="Float"/>
+			<field name="fDodgingAndRollingMultiplier" type="Float"/>
+			<field name="fSpeedMultiplierWalk" type="Float"/>
+			<field name="fSpeedMultiplierJog" type="Float"/>
+			<field name="fSpeedMultiplierSprint" type="Float"/>
+			<field name="fOutOfFOVFactor" type="Float"/>
+			<object name="curveDistanceMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveContinuousShootingMultiplier">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+	</object>
+</class>

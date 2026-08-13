@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Bagleyhackeddata_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="HackedStates">
+		<field name="bEnabledInForbiddenZone" type="Boolean"/>
+		<field name="bEnabledInCinematics" type="Boolean"/>
+		<field name="bEnabledInFelony" type="Boolean"/>
+		<field name="bEnabledWhenNarrativeIsPlaying" type="Boolean"/>
+		<field name="bEnabledInHMA" type="Boolean"/>
+		<field name="bEnabledWhenDoingActivities" type="Boolean"/>
+		<object name="IsActivated">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="HackAreas">
+			<object name="HackArea">
+				<field name="scriptedhackareadbHackArea" type="BinHex"/>
+			</object>
+		</object>
+		<object name="curveHackAreaIndexPerSecondCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="HackedStates">
+			<field name="bEnabledInForbiddenZone" type="Boolean"/>
+			<field name="bEnabledInCinematics" type="Boolean"/>
+			<field name="bEnabledInFelony" type="Boolean"/>
+			<field name="bEnabledWhenNarrativeIsPlaying" type="Boolean"/>
+			<field name="bEnabledInHMA" type="Boolean"/>
+			<field name="bEnabledWhenDoingActivities" type="Boolean"/>
+			<object name="IsActivated">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="HackAreas">
+				<object name="HackArea">
+					<field name="scriptedhackareadbHackArea" type="BinHex"/>
+				</object>
+			</object>
+			<object name="curveHackAreaIndexPerSecondCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+	</object>
+</class>

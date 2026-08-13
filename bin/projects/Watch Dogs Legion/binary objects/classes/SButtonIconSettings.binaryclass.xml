@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SButtonIconSettingsParameters">
+	<object name="SButtonIconSettings">
+		<field name="fTime" type="Float"/>
+		<field name="bAlwaysUpdateMovement" type="Boolean"/>
+		<object name="IconType">
+			<field name="selBehaviour" type="Enum"/>
+			<field name="fCyclingTime" type="Float"/>
+			<object name="Cycling1">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Cycling2">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Cycling3">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Cycling4">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Cycling5">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Cycling6">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Cycling7">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Cycling8">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="IconType">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Combo1">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Combo2">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Combo3">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Combo4">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Combo5">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Combo6">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Combo7">
+				<field name="selType" type="Enum"/>
+			</object>
+			<object name="Combo8">
+				<field name="selType" type="Enum"/>
+			</object>
+		</object>
+		<object name="Movement">
+			<field name="selMovementMode" type="Enum"/>
+			<field name="vec2StartPosition" type="Vector2"/>
+			<field name="vec2EndPosition" type="Vector2"/>
+			<field name="fSpeedMax" type="Float"/>
+			<field name="fForceMax" type="Float"/>
+			<field name="fForceSpeedMax" type="Float"/>
+			<field name="vec2CenterPosition" type="Vector2"/>
+			<field name="fRadius" type="Float"/>
+			<field name="fSpeed" type="Float"/>
+			<field name="fDistanceAlong" type="Float"/>
+			<field name="iDirection" type="Int32"/>
+			<field name="angAngle" type="Float"/>
+			<field name="vec2Position" type="Vector2"/>
+		</object>
+		<object name="ChildIcons">
+			<inherit name="SButtonIconSettingsParameters"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RoadrangedefParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bLegacy" type="Boolean"/>
+    <field name="bUseVisual" type="Boolean"/>
+    <field name="bUseLogic" type="Boolean"/>
+	<object name="LoftProp">
+      <field name="disName" type="BinHex"/>
+      <object name="LoftElements">
+        <object name="LoftElement">
+          <field name="splineloftLoftElement" type="BinHex"/>
+        </object>
+      </object>
+    </object>
+    <object name="SpawnProp">
+      <field name="disName" type="BinHex"/>
+      <object name="SpawnInfos">
+	    <object name="SpawnInfo">
+		  <field name="fStartOffsetDist" type="Float"/>
+          <field name="fEndOffsetDist" type="Float"/>
+          <field name="fInBetweenDist" type="Float"/>
+          <field name="fInBetweenDistError" type="Float"/>
+          <field name="vectorPositionOffset" type="Vector3"/>
+          <field name="selAlign" type="Enum"/>
+          <field name="vectorPositionOffsetError" type="Vector3"/>
+          <field name="angvecAngleOffset" type="Vector3"/>
+          <field name="angvecAngleOffsetError" type="Vector3"/>
+          <field name="bStayVertical" type="Boolean"/>
+          <field name="sRandomSeed" type="BinHex"/>
+          <field name="text_archArchetypeToSpawn" type="String"/>
+          <field name="archArchetypeToSpawn" type="BinHex"/>
+          <field name="text_prefabPrefabToSpawn" type="String"/>
+          <field name="prefabPrefabToSpawn" type="BinHex"/>
+          <field name="selIntersectionSpawnRule" type="Enum"/>
+          <field name="bCullAsCorner" type="Boolean"/>
+          <field name="bSpawnOnFillet" type="Boolean"/>
+          <field name="bExcludeFromSacredZone" type="Boolean"/>
+          <field name="bAdjustToCurvedRoadPosition" type="Boolean"/>
+		</object>
+	  </object>
+    </object>
+    <object name="LogicProp">
+        <field hash="76D8B8EC" type="BinHex"/>
+        <field name="bOneWay" type="Boolean"/>
+        <field name="fLaneWidth" type="Float"/>
+        <field name="bStrictLaneDirection" type="Boolean"/>
+        <field name="bStrictLaneWidth" type="Boolean"/>
+        <field name="selMedianType" type="Enum"/>
+        <field name="fOffsetFromCenter" type="Float"/>
+        <field hash="83C6F274" type="BinHex"/>
+        <field hash="56AAF4F1" type="BinHex"/>
+        <field name="fParkingLaneWidth" type="Float"/>
+        <field name="parkeddensityParkedCarsDensity" type="BinHex"/>
+        <object name="WaterDef">
+            <field name="hidSingleObject" type="BinHex"/>
+            <field name="hidName" type="BinHex"/>
+            <field name="hidKey" type="BinHex"/>
+            <field name="bIsWater" type="Boolean"/>
+            <field name="fileFlowTexture" type="BinHex"/>
+            <field name="colorWaterColor" type="VectorColor"/>
+            <field name="fFlowSpeed" type="Float"/>
+            <field name="fTangentFlowSpeed" type="Float"/>
+            <field name="fFlowTextureSize" type="Float"/>
+            <field name="fDisplacementScale" type="Float"/>
+            <field name="fAttenuation" type="Float"/>
+            <field name="fWaveIntensity" type="Float"/>
+            <field name="fWaveIntensityStormy" type="Float"/>
+            <field name="fFoamIntensity" type="Float"/>
+            <field name="fDebrisIntensity" type="Float"/>
+            <field name="bUsedInWaterMask" type="Boolean"/>
+        </object>
+        <object name="TrafficDef">
+            <field name="hidSingleObject" type="BinHex"/>
+            <field name="hidName" type="BinHex"/>
+            <field name="hidKey" type="BinHex"/>
+            <field name="bLegacy" type="Boolean"/>
+            <field name="bClosedToTraffic" type="Boolean"/>
+            <field name="bIsFleeOpportunity" type="Boolean"/>
+            <field name="bIsAlley" type="Boolean"/>
+            <field name="bIsInterior" type="Boolean"/>
+            <field name="bAllowFelonySpawn" type="Boolean"/>
+            <field name="bUseFelonyVolume" type="Boolean"/>
+            <field name="bAllowGPS" type="Boolean"/>
+            <field name="bNoCivStim" type="Boolean"/>
+            <field name="bNoPlayerSpawn" type="Boolean"/>
+            <field name="selSpeedLimit" type="Enum"/>
+            <field name="patselectPatternSelector" type="BinHex"/>
+        </object>
+        <object name="RailwayDef">
+            <field name="hidSingleObject" type="BinHex"/>
+            <field name="hidName" type="BinHex"/>
+            <field name="hidKey" type="BinHex"/>
+            <field hash="F0C70B59" type="BinHex"/>
+            <field name="selRailwayLineId" type="Enum"/>
+        </object>
+        <object name="SidewalkDef">
+            <field name="hidSingleObject" type="BinHex"/>
+            <field name="hidName" type="BinHex"/>
+            <field name="hidKey" type="BinHex"/>
+            <field name="fSidewalkWidth" type="Float"/>
+            <field name="fSidewalkOffsetBegin" type="Float"/>
+            <field name="bSingleSidewalk" type="Boolean"/>
+            <field hash="3D43C2AF" type="BinHex"/>
+        </object>
+    </object>
+</class>

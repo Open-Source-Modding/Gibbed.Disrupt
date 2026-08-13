@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Menuconfig_87efe661Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uimenuInGameMenu" type="BinHex"/>
+	<field name="text_sndInGameMenuEnterSound" type="String"/>
+	<field name="sndInGameMenuEnterSound" type="BinHex"/>
+	<field name="text_sndInGameMenuExitSound" type="String"/>
+	<field name="sndInGameMenuExitSound" type="BinHex"/>
+	<field name="sndtpInGameMenuEnterSoundType" type="BinHex"/>
+	<field name="sndtpInGameMenuExitSoundType" type="BinHex"/>
+	<field name="uimenupageCalibrationMenuPage" type="BinHex"/>
+	<field name="uimenupageCreditsMenuPage" type="BinHex"/>
+	<field name="uimenupageEpilepsyWarningMenuPage" type="BinHex"/>
+	<field name="uimenupageLoadGameSaveMenuPage" type="BinHex"/>
+	<field name="uimenupageMainMenuPage" type="BinHex"/>
+	<field name="uimenupageCampaignMenuPage" type="BinHex"/>
+	<field name="uimenupageNewGameSaveMenuPage" type="BinHex"/>
+	<field name="uimenupageCloudSavesUploadMenuPage" type="BinHex"/>
+	<field name="uimenupageCloudSavesDownloadMenuPage" type="BinHex"/>
+	<field name="uimenupagePauseMenuPage" type="BinHex"/>
+	<field name="uimenupagePremiumShopCategoriesMenuPage" type="BinHex"/>
+	<field name="uimenupagePremiumShopItemsMenuPage" type="BinHex"/>
+	<field name="uimenupagePremiumShopCurrencyMenuPage" type="BinHex"/>
+	<field name="uimenupageStartMenuPage" type="BinHex"/>
+	<field name="uimenupageUbisoftPresentsMenuPage" type="BinHex"/>
+	<field name="uimenupageDificultyMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsAudioLanguageMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsControlShemeMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsControlsMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsDisplayMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsScreenEdgesMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsGameplayMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsGraphicMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsHUDMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsMenuPagePcSpecific" type="BinHex"/>
+	<field name="uimenupageSettingsMenuPageYetiSpecific" type="BinHex"/>
+	<field name="uimenupageSettingsOnFootShemeMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsOnVehicleMenuPage" type="BinHex"/>
+	<field name="uimenupageSettingsOnlineMenuPage" type="BinHex"/>
+	<field name="uimenupageWelcomeSettingsMenuPage" type="BinHex"/>
+	<field name="uimenupagePlayOnlineSettingsMenuPage" type="BinHex"/>
+	<field name="uimenupageAlarmClockPage" type="BinHex"/>
+	<field name="uimenupageARSocialPage" type="BinHex"/>
+	<field name="uimenupageARProfileActionsPage" type="BinHex"/>
+	<field name="uimenupageOnlineLandingPage" type="BinHex"/>
+	<field name="uimenupageARMultiplayerProfilePageLocalPlayer" type="BinHex"/>
+	<field name="uimenupageARMultiplayerProfilePageConnectedPlayer" type="BinHex"/>
+	<field name="uimenupageARMultiplayerChallengesPage" type="BinHex"/>
+	<field name="uimenupageARMultiplayerDSISelectorPage" type="BinHex"/>
+	<field name="uimenupageARMultiplayerRaidSelectorPage" type="BinHex"/>
+	<field name="uimenupageARMultiplayerRaidSettingsPage" type="BinHex"/>
+	<field name="uimenupageARMultiplayerDirectActionSelectorPage" type="BinHex"/>
+	<field name="uimenupageARMultiplayerDirectActionSettingsPage" type="BinHex"/>
+	<field name="uimenupageARMultiplayerDigitalTripSelectorPage" type="BinHex"/>
+	<field name="uimenupageARMultiplayerDigitalTripSettingsPage" type="BinHex"/>
+	<field name="uimenupageCarOnDemandVehicleSelect" type="BinHex"/>
+	<field name="uimenupageWeaponOnDemandPage" type="BinHex"/>
+	<field name="uimenupageClothingItemsPage" type="BinHex"/>
+	<field name="uimenupageClothingSubCategoriesPage" type="BinHex"/>
+	<field name="uimenupageClothingPremiumPage" type="BinHex"/>
+	<field name="uimenupageCourierAppPage" type="BinHex"/>
+	<field name="uimenupageDataDriveAppPage" type="BinHex"/>
+	<field name="uimenupageDataDriveContentPage" type="BinHex"/>
+	<field name="uimenupageDebugAppItemSelectorPage" type="BinHex"/>
+	<field name="uimenupageDebugAppMessagePage" type="BinHex"/>
+	<field name="uimenupageDirectorCutPage" type="BinHex"/>
+	<field name="uimenupageGalleryAppPage" type="BinHex"/>
+	<field name="uimenupageFullscreenGalleryAppPage" type="BinHex"/>
+	<field name="uimenupageLeaderBoardPage" type="BinHex"/>
+	<field name="uimenupageOperativeContactListPage" type="BinHex"/>
+	<field name="uimenupageOperativeContactPage" type="BinHex"/>
+	<field name="uimenupageClassSelectPage" type="BinHex"/>
+	<field name="uimenupageOperativesAppPage" type="BinHex"/>
+	<field name="uimenupageOpsAppPage" type="BinHex"/>
+	<field name="uimenupagePostMissionAppPage" type="BinHex"/>
+	<field name="uimenupageRelicsPage" type="BinHex"/>
+	<field name="uimenupageNewsAppPage" type="BinHex"/>
+	<field name="uimenupageBareKnuckle" type="BinHex"/>
+	<field name="uimenupageBareKnuckleEndScreen" type="BinHex"/>
+	<field name="uimenupageDarts" type="BinHex"/>
+	<field name="uimenupageKickUp" type="BinHex"/>
+	<field name="uimenupageSkillsTreePage" type="BinHex"/>
+	<field name="uimenupageSongSneakPage" type="BinHex"/>
+	<field name="uimenupageStreetArtGalleryPage" type="BinHex"/>
+	<field name="uimenupageTeamAppMainPage" type="BinHex"/>
+	<field name="uimenupageTeamAppGamestartOperativeSelectionPage" type="BinHex"/>
+	<field name="uimenupageTeamAppOperativeDetailsPage" type="BinHex"/>
+	<field name="uimenupageTeamAppOperativeDetailsPageV3" type="BinHex"/>
+	<field name="uimenupageTeamAppOperativeLoadoutPage" type="BinHex"/>
+	<field name="uimenupageTeamAppRCCustomizationPage" type="BinHex"/>
+	<field name="uimenupageTeamAppGadgetCustomizationPage" type="BinHex"/>
+	<field name="uimenupageModsPage" type="BinHex"/>
+	<field name="uimenupageTutorialsListPage" type="BinHex"/>
+	<field name="uimenupageTutorialsCategoriesPage" type="BinHex"/>
+	<field name="uimenupageWardrobeItemsPage" type="BinHex"/>
+	<field name="uimenupageWardrobeCategoriesPage" type="BinHex"/>
+	<field name="uimenupageWardrobeVarietiesPage" type="BinHex"/>
+	<field name="uimenupageWeaponItemsPage" type="BinHex"/>
+	<field name="uimenupageWorldMapPage" type="BinHex"/>
+	<field name="uimenupageBenchmarkReportPage" type="BinHex"/>
+	<field name="uimenupageGamepadRemappingPage" type="BinHex"/>
+	<field name="uimenupageOnlineVendorAppPage" type="BinHex"/>
+	<field name="uimenupageFullscreenTutorialPage" type="BinHex"/>
+	<field name="uimenupageMenuFullscreenTutorialPage" type="BinHex"/>
+	<field name="uimenupageMPSelectGameSavePage" type="BinHex"/>
+	<field name="uimenupageRewardTrackPage" type="BinHex"/>
+	<field name="uimenupageCloudSavesPage" type="BinHex"/>
+	<field name="uimenupageEndCreditsMenuPage" type="BinHex"/>
+	<field name="uimenupageUpgradesPage" type="BinHex"/>
+	<field name="uimenupageMainSwitchHomePage" type="BinHex"/>
+	<field name="uimenupageRaidFailScreenPage" type="BinHex"/>
+	<field name="uimenupageRaidLobbyPage" type="BinHex"/>
+	<field name="uimenupageDigitalTripsLobbyPage" type="BinHex"/>
+	<field name="uimenupageDigitalTripResultsPage" type="BinHex"/>
+	<field name="uimenupageDigitalTripLoadoutPage" type="BinHex"/>
+	<field name="uimenupageDeepProfileViewPage" type="BinHex"/>
+	<field name="texturedbobjectDefaultSmartphoneBackground" type="BinHex"/>
+	<field name="uisoundSmartphoneBackSound" type="BinHex"/>
+	<field name="uisoundSmartphoneNavigationSound" type="BinHex"/>
+	<field name="uisoundSmartphoneSelectSound" type="BinHex"/>
+	<field name="uisoundSmartphoneInvalidActionSound" type="BinHex"/>
+	<field name="uisoundChangeBagsSound" type="BinHex"/>
+	<field name="uisoundChangeGadgetsSound" type="BinHex"/>
+	<field name="uisoundChangeGlassesSound" type="BinHex"/>
+	<field name="uisoundChangeHatsSound" type="BinHex"/>
+	<field name="uisoundChangeMasksSound" type="BinHex"/>
+	<field name="uisoundChangePantsSound" type="BinHex"/>
+	<field name="uisoundChangeShirtsSound" type="BinHex"/>
+	<field name="uisoundChangeJacketsSound" type="BinHex"/>
+	<field name="uisoundChangeShoesSound" type="BinHex"/>
+	<field name="uisoundChangeHandsSound" type="BinHex"/>
+	<field name="uisoundChangeOutfitsSound" type="BinHex"/>
+	<field name="uisoundChangeFabricColorSound" type="BinHex"/>
+	<field name="uisoundChangeEarsSound" type="BinHex"/>
+	<field name="uisoundSwitchToLeftTabSound" type="BinHex"/>
+	<field name="uisoundSwitchToRightTabSound" type="BinHex"/>
+	<field name="uisoundPremiumShopHoldStartedSound" type="BinHex"/>
+	<field name="uisoundPremiumShopHoldSuccededSound" type="BinHex"/>
+	<field name="uisoundPremiumShopHoldStoppedSound" type="BinHex"/>
+	<field name="fStickNavRepeatTime" type="Float"/>
+	<field name="fStickNavDelay" type="Float"/>
+	<field name="fOnFocusTileDistance3D" type="Float"/>
+	<field name="uitweensettingOnFocusTileTweenSetting" type="BinHex"/>
+	<field name="uitweensettingOnScrollTileTweenSetting" type="BinHex"/>
+	<object name="MenuSelections">
+		<object name="MenuSelectionItem">
+			<object name="MenuSelection">
+				<field name="text_menuselectionname" type="String"/>
+				<field name="menuselectionname" type="BinHex"/>
+				<field name="uimenupageCalibrationMenuPage" type="BinHex"/>
+				<field name="uimenupageNvidiaLogoMenuPage" type="BinHex"/>
+				<field name="uimenupageEpilepsyWarningMenuPage" type="BinHex"/>
+				<field name="uimenupageSaveNotificationPage" type="BinHex"/>
+				<field name="uimenupageStartMenuPage" type="BinHex"/>
+				<field name="uimenupagePauseMenuPage" type="BinHex"/>
+				<field name="uimenupageUbisoftPresentsMenuPage" type="BinHex"/>
+				<field name="uimenupageMainMenuPage" type="BinHex"/>
+				<field name="uimenupageShopMenuPage" type="BinHex"/>
+				<field name="uimenupageCreditsMenuPage" type="BinHex"/>
+				<field name="uimenupageIdleMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsControlsMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsControlSchemeMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsOnFootSchemeMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsOnVehicleMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsGameplayMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsOnlineMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsAudioLanguageMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsHUDMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsDisplayMenuPage" type="BinHex"/>
+				<field name="uimenupageSettingsGraphicMenuPage" type="BinHex"/>
+				<field name="uimenupageWelcomeSettingsMenuPage" type="BinHex"/>
+				<field name="uimenupagePlayOnlineSettingsMenuPage" type="BinHex"/>
+				<field name="uimenupageVisualMatchmakingMenuPage" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="MediaPlayerpages"/>
+	<object name="DataDriveAppCategoryPages">
+		<object name="DataDriveAppCategoryPage">
+			<field name="uimenupageDataDriveAppCategoryPages" type="BinHex"/>
+		</object>
+	</object>
+	<object name="MainAndPauseMenuSounds">
+		<field name="uisoundBackSound" type="BinHex"/>
+		<field name="uisoundNavigateSound" type="BinHex"/>
+		<field name="uisoundSelectSound" type="BinHex"/>
+		<field name="uisoundSelectUnavailableSound" type="BinHex"/>
+	</object>
+	<object name="WorldMap">
+		<field name="fCameraDefaultAreaOfInterestZoomDistance" type="Float"/>
+		<field name="fCameraDefaultFOV" type="Float"/>
+		<field name="fCameraDefaultPitchInclineRatio" type="Float"/>
+		<field name="fCameraDefaultTransitionFactor" type="Float"/>
+		<field name="fCameraDefaultZoomDistance" type="Float"/>
+		<field name="fCameraMinZoomDistance" type="Float"/>
+		<field name="fCameraMaxZoomDistance" type="Float"/>
+		<field name="fCameraMovementStickMinimumThreshold" type="Float"/>
+		<field name="fCameraMovementStickMaximumThreshold" type="Float"/>
+		<field name="fCameraMovementSpeed" type="Float"/>
+		<field name="fCameraMovementThreshold" type="Float"/>
+		<field name="fCameraMinYawInDegrees" type="Float"/>
+		<field name="fCameraMaxYawInDegrees" type="Float"/>
+		<field name="fCameraYawResetSpeed" type="Float"/>
+		<field name="fCameraPitchInDegreesAtFullZoomIn" type="Float"/>
+		<field name="fCameraPitchInDegreesAtFullZoomOut" type="Float"/>
+		<field name="selCameraPitchTweenType" type="Enum"/>
+		<field name="fCursorSnapRangeWhenFocused" type="Float"/>
+		<field name="fCursorSnapRangeWhenUnfocused" type="Float"/>
+		<field name="fCursorSnapToMarkerSpeedFactor" type="Float"/>
+		<field name="fCameraZoomRatioMidZoomIn" type="Float"/>
+		<field name="fCameraZoomRatioMidZoomOut" type="Float"/>
+		<field name="fCameraZoomRatioFullZoomOut" type="Float"/>
+		<field name="fCameraZoomSpeed" type="Float"/>
+		<field name="sndMapEnterSound" type="BinHex"/>
+		<field name="sndMapExitSound" type="BinHex"/>
+		<field name="text_sndMapPlaceWaypointSound" type="String"/>
+		<field name="sndMapPlaceWaypointSound" type="BinHex"/>
+		<field name="text_sndMapRemoveWaypointSound" type="String"/>
+		<field name="sndMapRemoveWaypointSound" type="BinHex"/>
+		<field name="text_sndMapTrackMissionSound" type="String"/>
+		<field name="sndMapTrackMissionSound" type="BinHex"/>
+		<field name="text_sndMapZoomInEnterSound" type="String"/>
+		<field name="sndMapZoomInEnterSound" type="BinHex"/>
+		<field name="text_sndMapZoomInExitSound" type="String"/>
+		<field name="sndMapZoomInExitSound" type="BinHex"/>
+		<field name="text_sndMapZoomOutEnterSound" type="String"/>
+		<field name="sndMapZoomOutEnterSound" type="BinHex"/>
+		<field name="text_sndMapZoomOutExitSound" type="String"/>
+		<field name="sndMapZoomOutExitSound" type="BinHex"/>
+		<field name="text_sndMapCameraMovementStartSound" type="String"/>
+		<field name="sndMapCameraMovementStartSound" type="BinHex"/>
+		<field name="text_sndMapCameraMovementStopSound" type="String"/>
+		<field name="sndMapCameraMovementStopSound" type="BinHex"/>
+		<field name="sndtpMapEnterSoundType" type="BinHex"/>
+		<field name="sndtpMapExitSoundType" type="BinHex"/>
+		<field name="sndtpMapPlaceWaypointSoundType" type="BinHex"/>
+		<field name="sndtpMapRemoveWaypointSoundType" type="BinHex"/>
+		<field name="sndtpMapTrackMissionSoundType" type="BinHex"/>
+		<field name="sndtpMapZoomInEnterSoundType" type="BinHex"/>
+		<field name="sndtpMapZoomInExitSoundType" type="BinHex"/>
+		<field name="sndtpMapZoomOutEnterSoundType" type="BinHex"/>
+		<field name="sndtpMapZoomOutExitSoundType" type="BinHex"/>
+		<field name="sndtpMapCameraMovementStartSoundType" type="BinHex"/>
+		<field name="sndtpMapCameraMovementStopSoundType" type="BinHex"/>
+	</object>
+	<object name="TeamSpeak">
+		<field name="uisoundTeamSpeakStartSkip" type="BinHex"/>
+		<field name="uisoundTeamSpeakCancelSkip" type="BinHex"/>
+	</object>
+	<object name="ProgressBar">
+		<field name="uibarsndprofileDefaultProgressBarSoundProfile" type="BinHex"/>
+	</object>
+	<object name="IngamePDAExtract">
+		<field name="uisoundPDAExtractSound" type="BinHex"/>
+		<field name="videosPDAExtractVideoBinkFile" type="BinHex"/>
+	</object>
+	<object name="CarOnDemand">
+		<field name="uisoundCarOnDemandOrderConfirmationSound" type="BinHex"/>
+	</object>
+	<object name="RightScrollBars">
+		<field name="fRightScrollSpeed" type="Vector2"/>
+	</object>
+</class>

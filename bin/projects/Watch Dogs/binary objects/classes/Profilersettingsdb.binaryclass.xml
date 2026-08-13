@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ProfilersettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+		<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+		<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+		<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+		<field name="vectorProfilerSoftLockIconOffset" type="Vector3"/>
+		<field name="bIsProfilerSticky" type="Boolean"/>
+		<field name="bProfilerApplyTargetOffsetToBonePos" type="Boolean"/>
+		<field name="vectorProfilerScoringQuadSizeModifier" type="Vector3"/>
+		<field name="vectorProfilerScoringQuadCenterOffset" type="Vector3"/>
+		<field name="vectorProfilerScoringQuadSizeModifierVehicle" type="Vector3"/>
+		<field name="vectorProfilerScoringQuadCenterOffsetVehicle" type="Vector3"/>
+		<field name="bProfilerHighSpeedTargetable" type="Boolean"/>
+		<field name="bProfilerTargetOnlyInHighSpeed" type="Boolean"/>
+		<field name="fProfilerAdditionalTargetScore" type="Float"/>
+		<field name="fProfilerAdditionalTargetScoreVehicle" type="Float"/>
+		<field name="selProfileColorTypeOverride" type="Enum"/>
+		<field name="selIngredientProfilerCategory" type="Enum"/>
+		<object name="locsectionidProfile">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="IconLocations"/>
+		<object name="TargetingBoneNames"/>
+	</object>
+</class>

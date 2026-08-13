@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BareknucklechallengeconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Challenges">
+		<object name="Challenge">
+			<field name="sChallengeName" type="String"/>
+			<field name="fDelayIncrementValue" type="Float"/>
+			<field name="bMustCompleteChallengeOnEndFight" type="Boolean"/>
+			<object name="Rule">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="FailRule">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="DesiredValueRule">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="RewardValueRule">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="DesiredTimeValue">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="locstridChallengeLocID">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+</class>

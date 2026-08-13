@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Gamemessageboxdbobject_80d1bc2cParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sndConfirmNegativeSound" type="String"/>
+	<field name="sndConfirmNegativeSound" type="BinHex"/>
+	<field name="text_sndConfirmPositiveSound" type="String"/>
+	<field name="sndConfirmPositiveSound" type="BinHex"/>
+	<field name="text_sndNavigationSound" type="String"/>
+	<field name="sndNavigationSound" type="BinHex"/>
+	<field name="text_sndHoldStartSound" type="String"/>
+	<field name="sndHoldStartSound" type="BinHex"/>
+	<field name="text_sndHoldFinishSound" type="String"/>
+	<field name="sndHoldFinishSound" type="BinHex"/>
+	<field name="text_sndHoldCancelSound" type="String"/>
+	<field name="sndHoldCancelSound" type="BinHex"/>
+	<field name="text_sndDisplaySound" type="String"/>
+	<field name="sndDisplaySound" type="BinHex"/>
+	<field name="sndtpConfirmNegativeSoundType" type="BinHex"/>
+	<field name="sndtpConfirmPositiveSoundType" type="BinHex"/>
+	<field name="sndtpNavigationSoundType" type="BinHex"/>
+	<field name="sndtpHoldStartSoundType" type="BinHex"/>
+	<field name="sndtpHoldFinishSoundType" type="BinHex"/>
+	<field name="sndtpHoldCancelSoundType" type="BinHex"/>
+	<field name="sndtpDisplaySoundType" type="BinHex"/>
+</class>

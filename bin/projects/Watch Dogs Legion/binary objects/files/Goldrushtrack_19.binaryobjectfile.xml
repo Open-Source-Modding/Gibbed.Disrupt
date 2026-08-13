@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Goldrushtrack_19">
+	<object hash="B040E0BD">
+		<inherit name="GoldrushtrackParameters"/>
+	</object>
+</file>

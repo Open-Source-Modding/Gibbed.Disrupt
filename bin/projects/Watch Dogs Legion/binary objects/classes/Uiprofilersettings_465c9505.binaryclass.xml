@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uiprofilersettings_465c9505Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uisoundHoldStarted" type="BinHex"/>
+	<field name="uisoundHoldFinished" type="BinHex"/>
+	<field name="uisoundHoldCancelled" type="BinHex"/>
+</class>

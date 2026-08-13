@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmodulechallengessettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<field name="text_progressioncollectablecategoryCaptainKillCollectibleId" type="String"/>
+		<field name="progressioncollectablecategoryCaptainKillCollectibleId" type="BinHex"/>
+	</object>
+</class>

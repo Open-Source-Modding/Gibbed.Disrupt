@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WolfskinprecomputedskelblacklistParameters">
+	<inherit name="SharedParameters"/>
+	<field name="Description" type="BinHex"/>
+	<object name="SlotTags">
+		<object name="SlotSpec">
+			<field name="text_SlotName" type="String"/>
+			<field name="SlotName" type="BinHex"/>
+			<object name="Tags">
+				<object name="IncludeTags">
+					<object name="Tag">
+						<object name="tagcategoryselectionTag">
+							<field name="text_UITagCategorySelectionClassID" type="String"/>
+							<field name="UITagCategorySelectionClassID" type="BinHex"/>
+							<field name="tagcategoryUITagCategory" type="BinHex"/>
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="tagTag" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+				<object name="ExcludeTags">
+					<object name="Tag">
+						<object name="tagcategoryselectionTag">
+							<field name="text_UITagCategorySelectionClassID" type="String"/>
+							<field name="UITagCategorySelectionClassID" type="BinHex"/>
+							<field name="tagcategoryUITagCategory" type="BinHex"/>
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="tagTag" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+				<object name="TagConstraintsAny"/>
+			</object>
+		</object>
+	</object>
+</class>

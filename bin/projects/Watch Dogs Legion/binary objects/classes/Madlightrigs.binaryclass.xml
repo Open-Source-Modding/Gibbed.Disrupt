@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MadlightrigsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Lights">
+		<field name="vec3Offset" type="BinHex"/>
+		<field name="vec3Target" type="BinHex"/>
+		<field name="fIntensityMultiplier" type="Float"/>
+		<field name="dynamiclightprefabSettings" type="BinHex"/>
+		<object name="Lights">
+			<field name="vec3Offset" type="BinHex"/>
+			<field name="vec3Target" type="BinHex"/>
+			<field name="fIntensityMultiplier" type="Float"/>
+			<field name="dynamiclightprefabSettings" type="BinHex"/>
+		</object>
+	</object>
+</class>

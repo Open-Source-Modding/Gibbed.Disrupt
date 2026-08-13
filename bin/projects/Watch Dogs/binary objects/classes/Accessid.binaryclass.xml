@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AccessidParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sAccessId" type="String"/>
+	<field name="sAccessId" type="BinHex"/>
+	<field name="bIsNotPowerCollectedIfLocked" type="Boolean"/>
+</class>

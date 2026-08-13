@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Scl_objectivedifficulty">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="Scl_objectivedifficultyParameters"/>
+		</object>
+	</object>
+</file>

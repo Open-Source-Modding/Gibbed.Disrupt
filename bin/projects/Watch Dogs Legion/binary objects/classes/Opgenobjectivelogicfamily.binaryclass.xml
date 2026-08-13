@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpgenobjectivelogicfamilyParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selObjectiveAreaType" type="Enum"/>
+	<object name="ObjectiveLogicsSettings">
+		<object name="ObjectiveLogic">
+			<field name="dgobjectivelogicObjectiveLogicDb" type="BinHex"/>
+			<field name="selOpGenIntensity" type="Enum"/>
+			<field name="bObjectiveTextMergeable" type="Boolean"/>
+			<field name="bObjectiveTextMergeableAcrossBeats" type="Boolean"/>
+			<field name="bActivateGetToSafety" type="Boolean"/>
+			<field name="selType" type="Enum"/>
+			<field name="nLocationCount" type="Enum"/>
+			<field name="nParkingLocationCount" type="Enum"/>
+			<field name="nHumanCount" type="Enum"/>
+			<field name="nHumanDescriptionCount" type="Enum"/>
+			<field name="nDroneDescriptionCount" type="Enum"/>
+			<field name="nVehicleDescriptionCount" type="Enum"/>
+			<field name="nLocationDescriptionCount" type="Enum"/>
+			<object name="locstridFriendlyName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="Settings">
+				<field name="text_BrickContainerID" type="String"/>
+				<field name="BrickContainerID" type="BinHex"/>
+				<field name="text_BrickID" type="String"/>
+				<field name="BrickID" type="BinHex"/>
+				<object name="Settings">
+					<field name="text_BrickContainerID" type="String"/>
+					<field name="BrickContainerID" type="BinHex"/>
+					<field name="text_BrickID" type="String"/>
+					<field name="BrickID" type="BinHex"/>
+					<object name="Settings">
+						<field name="text_BrickContainerID" type="String"/>
+						<field name="BrickContainerID" type="BinHex"/>
+						<field name="text_BrickID" type="String"/>
+						<field name="BrickID" type="BinHex"/>
+						<field hash="6D1E1959" type="String"/>
+						<field name="selType" type="Enum"/>
+						<object name="Object">
+							<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+							<field name="fReachLocationActivityRange" type="Float"/>
+							<field name="fRequiredPlayersPercentage" type="Float"/>
+							<field name="selHumanNeutralizationCondition" type="Enum"/>
+							<field name="bNoCivilianVictim" type="Boolean"/>
+							<field name="bUseOnlineNotifications" type="Boolean"/>
+							<object name="locstridObjectiveLocId">
+								<field name="LocalizationId" type="UInt64"/>
+							</object>
+							<object name="locstridDescriptionLocId">
+								<field name="LocalizationId" type="UInt64"/>
+							</object>
+							<object name="locstridSoloObjectiveLocIdFallback">
+								<field name="LocalizationId" type="UInt64"/>
+							</object>
+							<object name="locstridSoloDescriptionLocIdFallback">
+								<field name="LocalizationId" type="UInt64"/>
+							</object>
+							<object name="ModularObjectiveOverrideSettings">
+								<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+								<object name="locstridShortLocId">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+								<object name="locstridLongLocId">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+								<object name="locstridSoloObjectiveLocIdFallback">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+								<object name="locstridSoloDescriptionLocIdFallback">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+							</object>
+							<object name="ObjectiveNeutralizeAnyOverrideSettings">
+								<field name="iNeededCountOfNeutralizedTargets" type="Int32"/>
+								<field name="selHumanNeutralizationCondition" type="Enum"/>
+								<field name="bNoCivilianVictim" type="Boolean"/>
+								<object name="AffiliationFlags"/>
+								<object name="TargetNeutralizedOnlineNotification">
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+								<object name="TargetNeutralizedCriticalMessage">
+									<field name="bIsActivated" type="Boolean"/>
+									<field name="bIsCriticalWarning" type="Boolean"/>
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="locstridBackUpText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+							</object>
+							<object name="ObjectiveDestroyAnyOverrideSettings">
+								<field name="iNeededCountOfDestroyedTargets" type="Int32"/>
+								<field name="bNoCivilianVictim" type="Boolean"/>
+								<field name="selAuthorizedDestructionCauses" type="Enum"/>
+								<field name="selDroneTypeFlag" type="Enum"/>
+								<object name="TargetsTypesAllowed">
+									<object name="Type">
+										<field name="selTargetType" type="Enum"/>
+									</object>
+								</object>
+								<object name="VehicleTypeFlags"/>
+								<object name="AffiliationFlags"/>
+								<object name="TargetDestroyedOnlineNotification">
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+								<object name="TargetDestroyedCriticalMessage">
+									<field name="bIsActivated" type="Boolean"/>
+									<field name="bIsCriticalWarning" type="Boolean"/>
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="locstridBackUpText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+							</object>
+							<object name="ObjectiveDestroyOverrideSettings">
+								<field name="bNoCivilianVictim" type="Boolean"/>
+								<field name="bForceTargetVehicleExplosionOnDestruction" type="Boolean"/>
+								<field name="selAuthorizedDestructionCauses" type="Enum"/>
+								<field name="selVehicleHealthBarDisplayMode" type="Enum"/>
+								<object name="Target">
+									<field name="TargetSceneID" type="BinHex"/>
+									<field name="text_TargetRole" type="String"/>
+									<field name="TargetRole" type="BinHex"/>
+								</object>
+								<object name="TargetDestroyedOnlineNotification">
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+								<object name="TargetDestroyedCriticalMessage">
+									<field name="bIsActivated" type="Boolean"/>
+									<field name="bIsCriticalWarning" type="Boolean"/>
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="locstridBackUpText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+								<object name="locstridVehicleHealthBarHeader">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+							</object>
+							<object name="DeliveryParkingSpotSettings">
+								<object name="LocationSettings">
+									<field name="LocationID" type="BinHex"/>
+								</object>
+								<object name="locidParkingSpotMarkerText">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+							</object>
+							<object name="AlternativeDeliveryParkingSpotSettings"/>
+							<object name="locidMultipleDeliveryDestinationObjectiveDescriptionTextOverride">
+								<field name="LocalizationId" type="UInt64"/>
+							</object>
+							<object name="ObjectiveDeliveryOverrideSettings">
+								<field name="bMustEscapePursuers" type="Boolean"/>
+								<field name="bUseEscapeArea" type="Boolean"/>
+								<field name="fEscapeAreaRadius" type="Float"/>
+								<field name="bDisplayDestinationArea" type="Boolean"/>
+								<field name="fDestinationAreaDisplayRadius" type="Float"/>
+								<field name="fClosingOnDestinationTriggerDistance" type="Float"/>
+								<field name="bDeactivateDestinationUIOnEscapePursuersPhase" type="Boolean"/>
+								<field name="bNeedsToGetOutOfVehicleToComplete" type="Boolean"/>
+								<field name="bActivateGetBackInVehicleWhenPursuedCountdownTimer" type="Boolean"/>
+								<field name="selFailedOnDamageState" type="Enum"/>
+								<field name="bDeliverSpecificVehicles" type="Boolean"/>
+								<field name="bForceTargetVehicleExplosionOnDestruction" type="Boolean"/>
+								<field name="selTargetPriorityType" type="Enum"/>
+								<field name="iNbToDeliver" type="Int32"/>
+								<field name="selVehicleTypeFlags" type="Enum"/>
+								<field name="locategameplaydescriptorDestinationLocateDescriptor" type="BinHex"/>
+								<field name="locategameplaydescriptorVehicleLocateDescriptor" type="BinHex"/>
+								<field name="bIsTimed" type="Boolean"/>
+								<field name="fTimeToDeliver" type="Float"/>
+								<field name="bStartTimerOnVehicleEnteredInsteadOfDeliveryStart" type="Boolean"/>
+								<field name="selVehicleHealthBarDisplayMode" type="Enum"/>
+								<field name="bDisableAmbientFelonyOnTargetAcquired" type="Boolean"/>
+								<object name="DestinationAnySettings">
+									<field name="LocationDescriptionID" type="BinHex"/>
+								</object>
+								<object name="Target">
+									<field name="TargetSceneID" type="BinHex"/>
+									<field name="text_TargetRole" type="String"/>
+									<field name="TargetRole" type="BinHex"/>
+								</object>
+								<object name="locstridVehicleHealthBarHeader">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+								<object name="VehicleStolenOnlineNotification">
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+								<object name="VehicleStolenCriticalMessage">
+									<field name="bIsActivated" type="Boolean"/>
+									<field name="bIsCriticalWarning" type="Boolean"/>
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="locstridBackUpText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+								<object name="DeliveredCriticalMessage">
+									<field name="bIsActivated" type="Boolean"/>
+									<field name="bIsCriticalWarning" type="Boolean"/>
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="locstridBackUpText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+							</object>
+							<object name="ObjectiveDeliveryAnyVehicleDescriptions">
+								<object name="VehicleDescription">
+									<field name="VehicleDescriptionID" type="BinHex"/>
+								</object>
+							</object>
+							<object name="ObjectivePhotographOverrideSettings">
+								<field name="pdcfgPhotoTarget" type="BinHex"/>
+								<field name="bUseSpecificRole" type="Boolean"/>
+								<field name="bDisplayTargetNameInObjective" type="Boolean"/>
+								<field name="bFailOnTargetNeutralized" type="Boolean"/>
+								<field name="bTakeMultiplePhotos" type="Boolean"/>
+								<field name="iPhotosToTake" type="Int32"/>
+								<field name="bCloseCameraOnCompletion" type="Boolean"/>
+								<field name="bIsTimed" type="Boolean"/>
+								<field name="timergameplaydescriptorEntityToPhotographTimerDescriptor" type="BinHex"/>
+								<object name="Target">
+									<field name="TargetSceneID" type="BinHex"/>
+									<field name="text_TargetRole" type="String"/>
+									<field name="TargetRole" type="BinHex"/>
+								</object>
+							</object>
+							<object name="ObjectiveFreeOverrideSettings">
+								<object name="Target">
+									<field name="TargetSceneID" type="BinHex"/>
+									<field name="text_TargetRole" type="String"/>
+									<field name="TargetRole" type="BinHex"/>
+								</object>
+								<object name="ObjectiveFreedOnlineNotification">
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+							</object>
+							<object name="ObjectiveTransferDataOverrideSettings">
+								<field name="selTransferType" type="Enum"/>
+								<field name="fRemoteHackTransferDuration" type="Float"/>
+								<field name="fPhysicalInteractTransferDuration" type="Float"/>
+								<field name="bEnteringVehicleUnitStartTransfer" type="Boolean"/>
+								<field name="bDisableVehicleUsageAfterTransfer" type="Boolean"/>
+								<field name="bTriggerFailOnHumanTargetDeath" type="Boolean"/>
+								<field name="downloadgameplaydescriptorDownloadGameplaySettings" type="BinHex"/>
+								<object name="Target">
+									<field name="TargetSceneID" type="BinHex"/>
+									<field name="text_TargetRole" type="String"/>
+									<field name="TargetRole" type="BinHex"/>
+								</object>
+								<object name="Targets"/>
+								<object name="TransferSettings">
+									<field name="fTransferRadius" type="Float"/>
+									<field name="bUseOverrideRadius" type="Boolean"/>
+									<field name="bAdaptCountOfRequiredPlayersToCountOfSessionPeers" type="Boolean"/>
+									<field name="bStartDownloadForAllPlayers" type="Boolean"/>
+									<field name="bShouldDisplayMissingPlayerLocation" type="Boolean"/>
+									<field name="selTransferRadiusShape" type="Enum"/>
+									<field name="fCylinderShapeZOffsetTop" type="Float"/>
+									<field name="fCylinderShapeZOffsetBottom" type="Float"/>
+									<field name="fPauseWarningDuration" type="Float"/>
+									<field name="bActivateMultiplayerBoost" type="Boolean"/>
+									<field name="fBoostCoefByPlayer" type="Float"/>
+									<field name="bSendAttractStimOnDownloadStart" type="Boolean"/>
+									<field name="fAttractStimRadius" type="Float"/>
+									<object name="MissingPlayerLocationIds"/>
+									<object name="locstridPauseWarningLocId">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="ProgressBarTextOverride">
+										<object name="locstridTextOnProgressBar">
+											<field name="LocalizationId" type="UInt64"/>
+										</object>
+										<object name="locstridTextOnProgressBarOnOutOfRange">
+											<field name="LocalizationId" type="UInt64"/>
+										</object>
+									</object>
+									<object name="locstridActionTargetText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="TriggerEventsOnFollowingRatiosReached">
+										<object name="Ratio">
+											<field name="Ratio" type="BinHex"/>
+										</object>
+									</object>
+								</object>
+								<object name="locstridCounterSubObjectiveLocId">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+								<object name="locstridCounterCompletedSubObjectiveLocId">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+								<object name="locstridHackingWheelHackTextLocId">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+								<object name="DownloadStartedOnlineNotification">
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+								<object name="DownloadStartedCriticalMessage">
+									<field name="bIsActivated" type="Boolean"/>
+									<field name="bIsCriticalWarning" type="Boolean"/>
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="locstridBackUpText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+								<object name="WaitingForOtherUnitHackCriticalMessage">
+									<field name="bIsActivated" type="Boolean"/>
+									<field name="bIsCriticalWarning" type="Boolean"/>
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="locstridBackUpText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+							</object>
+							<object name="ObjectiveTransferDataAnyOverrideSettings">
+								<field name="selTransferType" type="Enum"/>
+								<field name="fRemoteHackTransferDuration" type="Float"/>
+								<field name="fPhysicalInteractTransferDuration" type="Float"/>
+								<field name="bEnteringVehicleUnitStartTransfer" type="Boolean"/>
+								<field name="bDownloadStartTriggersVehicleTargetFlee" type="Boolean"/>
+								<field name="bOnlyLastDownloadStartTriggersVehicleTargetFlee" type="Boolean"/>
+								<field name="vehiclebhvsetupVehicleFleeBhvConfig" type="BinHex"/>
+								<field name="downloadgameplaydescriptorDownloadGameplaySettings" type="BinHex"/>
+								<field name="iNeededCountOfTransferData" type="Int32"/>
+								<object name="TransferSettings">
+									<field name="fTransferRadius" type="Float"/>
+									<field name="bUseOverrideRadius" type="Boolean"/>
+									<field name="bAdaptCountOfRequiredPlayersToCountOfSessionPeers" type="Boolean"/>
+									<field name="bStartDownloadForAllPlayers" type="Boolean"/>
+									<field name="bShouldDisplayMissingPlayerLocation" type="Boolean"/>
+									<field name="selTransferRadiusShape" type="Enum"/>
+									<field name="fCylinderShapeZOffsetTop" type="Float"/>
+									<field name="fCylinderShapeZOffsetBottom" type="Float"/>
+									<field name="fPauseWarningDuration" type="Float"/>
+									<field name="bActivateMultiplayerBoost" type="Boolean"/>
+									<field name="fBoostCoefByPlayer" type="Float"/>
+									<field name="bSendAttractStimOnDownloadStart" type="Boolean"/>
+									<field name="fAttractStimRadius" type="Float"/>
+									<object name="MissingPlayerLocationIds"/>
+									<object name="locstridPauseWarningLocId">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="ProgressBarTextOverride">
+										<object name="locstridTextOnProgressBar">
+											<field name="LocalizationId" type="UInt64"/>
+										</object>
+										<object name="locstridTextOnProgressBarOnOutOfRange">
+											<field name="LocalizationId" type="UInt64"/>
+										</object>
+									</object>
+									<object name="locstridActionTargetText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="TriggerEventsOnFollowingRatiosReached">
+										<object name="Ratio">
+											<field name="Ratio" type="BinHex"/>
+										</object>
+									</object>
+								</object>
+								<object name="locstridHackingWheelHackTextLocId">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+								<object name="TargetsTypesAllowed">
+									<object name="Type">
+										<field name="selTargetType" type="Enum"/>
+									</object>
+								</object>
+								<object name="AffiliationFlags"/>
+								<object name="VehicleTypeFlags"/>
+								<object name="DroneTypeFlags"/>
+							</object>
+							<object name="NPCDescriptions">
+								<object name="NPCDescription">
+									<field name="NPCDescriptionID" type="BinHex"/>
+								</object>
+							</object>
+							<object name="VehicleDescriptions">
+								<object name="VehicleDescription">
+									<field name="VehicleDescriptionID" type="BinHex"/>
+								</object>
+							</object>
+							<object name="DroneDescriptions">
+								<object name="DroneDescription">
+									<field name="DroneDescriptionID" type="BinHex"/>
+								</object>
+							</object>
+							<object name="ObjectiveMainSwitchOverrideSettings">
+								<field name="sMainSwitchEntryPlaceholder" type="BinHex"/>
+								<object name="locstridMainSwitchEntry">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+							</object>
+							<object name="LocationSettings">
+								<field name="LocationID" type="BinHex"/>
+							</object>
+							<object name="ReachLocationActivities">
+								<object name="ReachLocationActivity">
+									<field name="text_progressioncollectablecategoryActivityId" type="String"/>
+									<field name="progressioncollectablecategoryActivityId" type="BinHex"/>
+								</object>
+							</object>
+							<object name="TargetNeutralizedOnlineNotification">
+								<field name="fDuration" type="Float"/>
+								<object name="locstridSubText">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+							</object>
+							<object name="TargetNeutralizedCriticalMessage">
+								<field name="bIsActivated" type="Boolean"/>
+								<field name="bIsCriticalWarning" type="Boolean"/>
+								<field name="fDuration" type="Float"/>
+								<object name="locstridSubText">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+								<object name="locstridBackUpText">
+									<field name="LocalizationId" type="UInt64"/>
+								</object>
+							</object>
+							<object name="ObjectiveReachOverrideSettings">
+								<field name="fRangeFromTargetToValidateReach" type="Float"/>
+								<field name="bMustBeOnSameFloor" type="Boolean"/>
+								<field name="bTargetMustBeInLineOfSight" type="Boolean"/>
+								<field name="bTempPartyReach" type="Boolean"/>
+								<field name="bScaleTargetGraphicWithRadius" type="Boolean"/>
+								<field name="bPlayerMustInteractWithTargetToCompleteReach" type="Boolean"/>
+								<field name="bPlayerMustLocateTargetToCompleteReach" type="Boolean"/>
+								<field name="bMustEscape" type="Boolean"/>
+								<field name="yinteractgameplaydescriptorInteractDescriptor" type="BinHex"/>
+								<object name="Target">
+									<field name="TargetSceneID" type="BinHex"/>
+									<field name="text_TargetRole" type="String"/>
+									<field name="TargetRole" type="BinHex"/>
+								</object>
+								<object name="WaitingForOtherPartyReachCriticalMessage">
+									<field name="bIsActivated" type="Boolean"/>
+									<field name="bIsCriticalWarning" type="Boolean"/>
+									<field name="fDuration" type="Float"/>
+									<object name="locstridSubText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+									<object name="locstridBackUpText">
+										<field name="LocalizationId" type="UInt64"/>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectiveTargetSceneIndexBridgeCollection">
+				<object name="SceneIndexBridgeCollection">
+					<object name="SceneIndexBridge">
+						<field name="text_SceneID" type="String"/>
+						<field name="SceneID" type="BinHex"/>
+						<field name="uiIndex" type="UInt32"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

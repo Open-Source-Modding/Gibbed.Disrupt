@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Shellgame_difficultiesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiBet" type="UInt32"/>
+	<object name="ShellGameVariations">
+		<object name="ShellGameVariation">
+			<field name="shellgamevariationShellGameVariation" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,5 @@
+<file name="xa01m01_sc500_cin_coverloopnoprop" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

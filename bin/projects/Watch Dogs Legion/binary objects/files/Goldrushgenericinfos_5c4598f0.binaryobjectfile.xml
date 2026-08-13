@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Goldrushgenericinfos_5c4598f0">
+	<object name="obj">
+		<inherit name="GoldrushgenericinfosParameters"/>
+	</object>
+</file>

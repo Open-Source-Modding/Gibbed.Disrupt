@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Puppethackconfig_ccecf4a3Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PuppetHack">
+		<field name="fLinkWidth" type="Float"/>
+		<field name="colorPuppetLinkColor" type="VectorColor"/>
+		<field name="colorTargetLinkColor" type="VectorColor"/>
+		<field name="fPuppetHackRange" type="Float"/>
+		<field name="fPuppetHackWeakRange" type="Float"/>
+	</object>
+	<object name="TargetSelectionMode">
+		<field name="MaxTargetIconOnScreen" type="BinHex"/>
+		<field name="bUsePuppetAsSearchOrigin" type="Boolean"/>
+		<field name="fTargetSearchRange" type="Float"/>
+		<field name="text_PuppetModePostFXName" type="String"/>
+		<field name="PuppetModePostFXName" type="BinHex"/>
+		<field name="fPathPreviewRepathThreshold" type="Float"/>
+	</object>
+	<object name="AISettings">
+		<field name="fSMSDuration" type="Float"/>
+		<field name="fAIDistractedGiveUpDelay" type="Float"/>
+		<object name="HackSuccessOdds">
+			<field name="fHackSuccessOdds" type="Float"/>
+			<object name="HackSuccessOdds">
+				<field name="fHackSuccessOdds" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="PuppetContexts">
+		<object name="Context">
+			<field name="sDescription" type="String"/>
+			<field name="selPuppetAffiliation" type="Enum"/>
+			<field name="selPuppetAIMindSet" type="Enum"/>
+			<field name="selPuppetArchetypeNavStyle" type="Enum"/>
+			<field name="selTargetType" type="Enum"/>
+			<field name="selHumanTargetAffiliation" type="Enum"/>
+			<field name="selHumanTargetAIMindSet" type="Enum"/>
+			<field name="selHumanTargetArchetypeNavStyle" type="Enum"/>
+			<object name="InteractionTypeA">
+				<field name="selInteractionType" type="Enum"/>
+				<field name="sTextMessage" type="BinHex"/>
+				<field name="sInteractionMenuDebugText" type="String"/>
+				<object name="OasisTextMessages">
+					<object name="OasisTextMessage">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="OasisInteractionMenuOasisText">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="InteractionTypeX">
+				<field name="selInteractionType" type="Enum"/>
+				<field name="sTextMessage" type="BinHex"/>
+				<field name="sInteractionMenuDebugText" type="String"/>
+				<object name="OasisTextMessages">
+					<object name="OasisTextMessage">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="OasisInteractionMenuOasisText">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+			<object name="InteractionTypeY">
+				<field name="selInteractionType" type="Enum"/>
+				<field name="sTextMessage" type="BinHex"/>
+				<field name="sInteractionMenuDebugText" type="String"/>
+				<object name="OasisTextMessages">
+					<object name="OasisTextMessage">
+						<field name="LocalizationId" type="UInt64"/>
+					</object>
+				</object>
+				<object name="OasisInteractionMenuOasisText">
+					<field name="LocalizationId" type="UInt64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Sounds">
+		<field name="text_sndTargetHighlightedSound" type="String"/>
+		<field name="sndTargetHighlightedSound" type="BinHex"/>
+		<field name="text_sndHackActivatedSound" type="String"/>
+		<field name="sndHackActivatedSound" type="BinHex"/>
+		<field name="text_sndHackCanceledSound" type="String"/>
+		<field name="sndHackCanceledSound" type="BinHex"/>
+	</object>
+</class>

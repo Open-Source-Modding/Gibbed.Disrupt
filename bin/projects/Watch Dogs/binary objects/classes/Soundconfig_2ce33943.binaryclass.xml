@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Soundconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fObjectSpeedMultiplier" type="Float"/>
+	<object name="CoreData">
+		<field name="sndtpUbiLogoSoundType" type="BinHex"/>
+		<object name="sndvarBusVolumeRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarObjectVolumeRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarObjectPercentVolumeRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarOcclusionRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarMusicVolumeRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarDialogueVolumeRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarVoiceChatVolumeRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarCommunicationNotificationsVolumeRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarObjectVelocityRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarSFXVolumeRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarOcclusionZoneReverbLevelRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarStereoDownmixRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarListenerToCameraRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="sndswtpEntityMovement">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlEntityMovementForward">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlEntityMovementBackward">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="Multiplayer">
+			<field name="text_sndMicrophoneInputEvent" type="String"/>
+			<field name="sndMicrophoneInputEvent" type="BinHex"/>
+			<field name="sndtpMicrophoneInputSoundType" type="BinHex"/>
+		</object>
+		<object name="DTest">
+			<field name="text_sndTestSound" type="String"/>
+			<field name="sndTestSound" type="BinHex"/>
+			<field name="sndtpTestSoundType" type="BinHex"/>
+		</object>
+	</object>
+	<object name="DareStudio">
+		<field name="sProjectName" type="BinHex"/>
+	</object>
+	<object name="DirectoryInfo">
+		<field name="sScript" type="String"/>
+		<field name="sBinary" type="String"/>
+		<field name="sProjectName" type="BinHex"/>
+	</object>
+	<object name="OcclusionInfo">
+		<field name="fTransitionTime" type="Float"/>
+		<field name="fMultiplier_PC" type="Float"/>
+		<field name="fMultiplier_Durango" type="Float"/>
+		<field name="fMultiplier_Orbis" type="Float"/>
+	</object>
+	<object name="Contextualisation">
+		<object name="MaxPlayableSoundPoints">
+			<field name="Normal" type="BinHex"/>
+			<field name="HighEnd" type="BinHex"/>
+		</object>
+	</object>
+	<object name="GlobalLimiter">
+		<field name="LimiterMaxSpeed" type="BinHex"/>
+		<field name="LimiterMinSoundDuration" type="BinHex"/>
+	</object>
+	<object name="SoundCategoryLimiter">
+		<object name="SoundLimiterSettings">
+			<object name="SoundLimiterSetting">
+				<field name="sndtpSoundCategory" type="BinHex"/>
+				<field name="bCanLimit2DSounds" type="Boolean"/>
+				<field name="SoundLimit" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

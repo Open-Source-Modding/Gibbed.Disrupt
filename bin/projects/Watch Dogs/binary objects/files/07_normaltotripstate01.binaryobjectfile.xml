@@ -1,0 +1,5 @@
+<file name="07_normaltotripstate01" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

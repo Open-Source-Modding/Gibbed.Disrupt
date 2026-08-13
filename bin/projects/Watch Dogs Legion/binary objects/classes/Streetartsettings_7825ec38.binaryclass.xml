@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Streetartsettings_7825ec38Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fShowFinalPaintTimerLength" type="Float"/>
+	<field name="fReturnToPlayerTimerLength" type="Float"/>
+	<field name="fAnimatedCameraTimerLength" type="Float"/>
+	<field name="fMinPlayerMovementToSkip" type="Float"/>
+	<field name="fSkipFadeDuration" type="Float"/>
+	<field name="fSkipMinDuration" type="Float"/>
+	<field name="text_archFinalDecalArchetype" type="String"/>
+	<field name="archFinalDecalArchetype" type="BinHex"/>
+	<field name="text_archSelectedProjectionArchetype" type="String"/>
+	<field name="archSelectedProjectionArchetype" type="BinHex"/>
+	<field name="fStimsTimerLengthMin" type="Float"/>
+	<field name="fStimsTimerLengthMax" type="Float"/>
+	<field name="sndCameraTravel" type="BinHex"/>
+	<field name="text_sndCameraStart" type="String"/>
+	<field name="sndCameraStart" type="BinHex"/>
+	<field name="sndCameraStop" type="BinHex"/>
+	<field name="H M=Tk" type="String"/>
+	<field name="sndGraffitySequenceStart" type="BinHex"/>
+	<field name="text_sndGraffitySequenceStop" type="String"/>
+	<field name="sndGraffitySequenceStop" type="BinHex"/>
+	<field name="text_sndPageClosed" type="String"/>
+	<field name="sndPageClosed" type="BinHex"/>
+	<field name="text_sndPageOpened" type="String"/>
+	<field name="sndPageOpened" type="BinHex"/>
+	<field name="sndtpCameraTravelType" type="BinHex"/>
+	<field name="sndtpCameraStartType" type="BinHex"/>
+	<field name="sndtpCameraStopType" type="BinHex"/>
+	<field name="sndtpGraffitySequenceStartType" type="BinHex"/>
+	<field name="sndtpGraffitySequenceStopType" type="BinHex"/>
+	<field name="sndtpPageClosedType" type="BinHex"/>
+	<field name="sndtpPageOpenedType" type="BinHex"/>
+	<field name="fChallengeCelebrationModuleDisplayDuration" type="Float"/>
+	<field name="fLocationCelebrationModuleDisplayDuration" type="Float"/>
+	<field name="text_LocationReachedBarkId" type="String"/>
+	<field name="LocationReachedBarkId" type="BinHex"/>
+	<field name="fLocationReachedBarkCooldown" type="Float"/>
+	<field name="text_ArtworkUnlockedBarkId" type="String"/>
+	<field name="ArtworkUnlockedBarkId" type="BinHex"/>
+	<field name="text_InteractingBarkId" type="String"/>
+	<field name="InteractingBarkId" type="BinHex"/>
+	<object name="LockedGraffitis">
+		<object name="streetartgraffiticonfigGraffiti">
+			<field name="streetartgraffiticonfigGraffiti" type="BinHex"/>
+		</object>
+	</object>
+	<object name="UnlockedGraffitis">
+		<object name="streetartgraffiticonfigGraffiti">
+			<field name="streetartgraffiticonfigGraffiti" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridChallangeCelebrationModuleTitle">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridChallangeCelebrationModuleText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLocationCelebrationModuleTitle">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLocationCelebrationModuleText">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSkipOverviewLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="ChallengeCompletedTrigger">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="LocationCompletedTrigger">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="LocationCompletedCryptoGetter">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="Challenges">
+		<object name="Challenge">
+			<field name="iCryptoRequiredToComplete" type="Int32"/>
+			<field name="iNumGraffitiToUnlock" type="Int32"/>
+		</object>
+	</object>
+</class>

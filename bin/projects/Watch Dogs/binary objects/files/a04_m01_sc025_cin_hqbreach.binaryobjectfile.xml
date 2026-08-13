@@ -1,0 +1,5 @@
+<file name="a04_m01_sc025_cin_hqbreach" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

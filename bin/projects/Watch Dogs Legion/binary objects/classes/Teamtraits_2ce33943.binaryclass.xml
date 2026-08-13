@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Teamtraits_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="FelonyTraitData">
+		<field name="fEffectDurationMin" type="Float"/>
+		<field name="fEffectDurationMax" type="Float"/>
+		<field name="fRampUpTimeMin" type="Float"/>
+		<field name="fRampUpTimeMax" type="Float"/>
+		<field name="fCoolDown" type="Float"/>
+		<field name="InitialTeamSpeak" type="BinHex"/>
+		<field name="EndingTeamSpeak" type="BinHex"/>
+		<field name="bOnlyInRedZone" type="Boolean"/>
+		<field name="text_progressionteamtraitOperativeTeamTraitId" type="String"/>
+		<field name="progressionteamtraitOperativeTeamTraitId" type="BinHex"/>
+		<field name="nMinWantedLvlToActivate" type="Enum"/>
+		<object name="IsAvailable">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanBeActivated">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CarParams">
+			<field name="fMaxSpeedHeadingScore" type="Float"/>
+			<field name="fSpeedForMaxHeadingScore" type="Float"/>
+			<field name="fHeadingTowardsScore" type="Float"/>
+			<field name="fMinDistanceScore" type="Float"/>
+			<field name="fMaxDistanceScore" type="Float"/>
+			<field name="fMinDistanceSq" type="Float"/>
+			<field name="fMaxDistanceSq" type="Float"/>
+			<field name="fMinCarDefense" type="Float"/>
+			<field name="fMaxCarDefense" type="Float"/>
+			<field name="fVisbilityScore" type="Float"/>
+			<field name="fInvisbilityScore" type="Float"/>
+			<field name="fHighRelativeSpeedScore" type="Float"/>
+			<field name="fSpeedForHighRelativeScore" type="Float"/>
+			<field name="fBackAppraochCloseDistance" type="Float"/>
+			<field name="fBackAppraochCloseScore" type="Float"/>
+			<field name="fMinDistanceForBackDirectionHackSq" type="Float"/>
+		</object>
+		<object name="DroneParams">
+			<field name="fMinDroneDefense" type="Float"/>
+			<field name="fMaxDroneDefense" type="Float"/>
+			<field name="fMinDroneDistanceScore" type="Float"/>
+			<field name="fMaxDroneDistanceScore" type="Float"/>
+			<field name="fMinDroneDistanceSq" type="Float"/>
+			<field name="fMaxDroneDistanceSq" type="Float"/>
+			<field name="fDroneChargeScore" type="Float"/>
+			<field name="fDroneInFrustrumScore" type="Float"/>
+		</object>
+		<object name="ROSParams">
+			<field name="fROSDisableMinDistance" type="Float"/>
+			<field name="fROSDisableMaxDistance" type="Float"/>
+			<field name="fROSDisableSpeedForDistance" type="Float"/>
+		</object>
+	</object>
+	<object name="DroneBetrayData">
+		<field name="fEffectDurationMin" type="Float"/>
+		<field name="fEffectDurationMax" type="Float"/>
+		<field name="fRampUpTimeMin" type="Float"/>
+		<field name="fRampUpTimeMax" type="Float"/>
+		<field name="fCoolDown" type="Float"/>
+		<field name="InitialTeamSpeak" type="BinHex"/>
+		<field name="EndingTeamSpeak" type="BinHex"/>
+		<field name="bOnlyInRedZone" type="Boolean"/>
+		<field name="text_progressionteamtraitOperativeTeamTraitId" type="String"/>
+		<field name="progressionteamtraitOperativeTeamTraitId" type="BinHex"/>
+		<object name="IsAvailable">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanBeActivated">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="DiscoveryHelpData">
+		<field name="fEffectDurationMin" type="Float"/>
+		<field name="fEffectDurationMax" type="Float"/>
+		<field name="fRampUpTimeMin" type="Float"/>
+		<field name="fRampUpTimeMax" type="Float"/>
+		<field name="fCoolDown" type="Float"/>
+		<field name="InitialTeamSpeak" type="BinHex"/>
+		<field name="EndingTeamSpeak" type="BinHex"/>
+		<field name="bOnlyInRedZone" type="Boolean"/>
+		<field name="text_progressionteamtraitOperativeTeamTraitId" type="String"/>
+		<field name="progressionteamtraitOperativeTeamTraitId" type="BinHex"/>
+		<field name="fMinTimeForEnemyTag" type="Float"/>
+		<field name="fMaxTimeForEnemyTag" type="Float"/>
+		<field name="fMinTimeForDiscovery" type="Float"/>
+		<field name="fMaxTimeForDiscovery" type="Float"/>
+		<field name="TaggedAITeamSpeak" type="BinHex"/>
+		<field name="DiscoveryTeamSpeak" type="BinHex"/>
+		<object name="IsAvailable">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanBeActivated">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="ProgressionCategories">
+			<field name="text_progressioncollectablecategoryCollectibleCategory" type="String"/>
+			<field name="progressioncollectablecategoryCollectibleCategory" type="BinHex"/>
+			<field name="DiscoveryTeamSpeak" type="BinHex"/>
+			<object name="ProgressionCategories">
+				<field name="text_progressioncollectablecategoryCollectibleCategory" type="String"/>
+				<field name="progressioncollectablecategoryCollectibleCategory" type="BinHex"/>
+				<field name="DiscoveryTeamSpeak" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="GunLockData">
+		<field name="fEffectDurationMin" type="Float"/>
+		<field name="fEffectDurationMax" type="Float"/>
+		<field name="fRampUpTimeMin" type="Float"/>
+		<field name="fRampUpTimeMax" type="Float"/>
+		<field name="fCoolDown" type="Float"/>
+		<field name="InitialTeamSpeak" type="BinHex"/>
+		<field name="EndingTeamSpeak" type="BinHex"/>
+		<field name="bOnlyInRedZone" type="Boolean"/>
+		<field name="text_progressionteamtraitOperativeTeamTraitId" type="String"/>
+		<field name="progressionteamtraitOperativeTeamTraitId" type="BinHex"/>
+		<field name="iMinHostileAIsToActivate" type="Int32"/>
+		<field name="iMinGunLockCount" type="Int32"/>
+		<field name="iMaxGunLockCount" type="Int32"/>
+		<object name="IsAvailable">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="CanBeActivated">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

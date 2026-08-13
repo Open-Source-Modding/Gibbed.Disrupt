@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronethreatenedeventsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="AimedByGun">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+		<field name="fDelayMin" type="Float"/>
+		<field name="fDelayMax" type="Float"/>
+		<field name="fEventWindow" type="Float"/>
+	</object>
+	<object name="BulletMiss">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+	</object>
+</class>

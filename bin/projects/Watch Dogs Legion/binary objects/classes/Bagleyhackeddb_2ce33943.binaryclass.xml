@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Bagleyhackeddb_2ce33943Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<object name="HackAreas">
+		<object name="HackArea">
+			<field name="scriptedhackareadbHackArea" type="BinHex"/>
+		</object>
+	</object>
+	<object name="curveHackAreaIndexPerSecondCurve">
+		<field name="hidNumKnots" type="BinHex"/>
+		<field name="hidAllowedTypes" type="BinHex"/>
+		<object name="Knots">
+			<object name="Knot">
+				<field name="Value" type="BinHex"/>
+				<field name="Info" type="BinHex"/>
+				<field name="Type" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

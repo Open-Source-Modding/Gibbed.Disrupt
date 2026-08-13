@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="2">
+	<object name="NexusSaveGame">
+		<inherit name="2saveParameters"/>
+	</object>
+</file>

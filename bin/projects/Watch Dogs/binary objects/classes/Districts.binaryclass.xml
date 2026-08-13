@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DistrictsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="DistrictNameId" type="BinHex"/>
+	<field name="texturedbobjectKeyLocationPanelImage" type="BinHex"/>
+	<field name="texturedbobjectBoroughPanelImage" type="BinHex"/>
+	<field name="texturedbobjectBoroughPanelMissionUnlock" type="BinHex"/>
+	<field name="texturedbobjectBoroughHudPanelImage" type="BinHex"/>
+	<field name="selPriority" type="Enum"/>
+	<field name="bIsHackerspace" type="Boolean"/>
+	<field name="selInitialDiscoveryState" type="Enum"/>
+	<field name="bShowLabelOnMap" type="Boolean"/>
+	<field name="bShouldDisplayOnMap" type="Boolean"/>
+	<field name="selDisplayNameBehavior" type="Enum"/>
+	<field name="entDistrictNameMapIconEntity" type="BinHex"/>
+	<field name="selPoliceAffiliation" type="Enum"/>
+	<field name="selWorldMoodZone" type="Enum"/>
+	<object name="locstridDistrictName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="LivingCityComposition">
+		<object name="VehicleCompositions">
+			<object name="VehicleComposition">
+				<field name="entcontContext" type="BinHex"/>
+				<field name="vehiclecompositionVehicles" type="BinHex"/>
+			</object>
+		</object>
+		<object name="HumanBanks">
+			<object name="HumansBank">
+				<field name="entcontContext" type="BinHex"/>
+				<field name="civbankHumansBank" type="BinHex"/>
+			</object>
+		</object>
+		<object name="DroneBanks">
+			<field name="entcontContext" type="BinHex"/>
+			<field name="dronebankDronesBank" type="BinHex"/>
+			<object name="RestrictionsRule">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="DroneBanks">
+				<field name="entcontContext" type="BinHex"/>
+				<field name="dronebankDronesBank" type="BinHex"/>
+				<object name="RestrictionsRule">
+					<field name="rulesmithidRule" type="BinHex"/>
+					<field name="rulesmithconstValue" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Environment">
+		<field name="fileDayReflectionTexture" type="BinHex"/>
+		<field name="fileNightReflectionTexture" type="BinHex"/>
+	</object>
+	<object name="HDRColorGrading">
+		<field name="bUseTimeOfDayForColorGradingHDR" type="Boolean"/>
+		<field name="fInnerSpatialRadius" type="Float"/>
+		<field name="fOuterSpatialRadius" type="Float"/>
+		<object name="curveTimeOfDayProgression">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="HDRColorGradingLUTTextures">
+			<object name="HDRColorGradingTexture">
+				<field name="fileHDRColorGradingTexture" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Completion">
+		<object name="Trigger">
+			<field name="rulesmithidRuleId" type="BinHex"/>
+		</object>
+	</object>
+</class>

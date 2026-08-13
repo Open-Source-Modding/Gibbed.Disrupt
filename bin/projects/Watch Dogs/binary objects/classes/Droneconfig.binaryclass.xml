@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DroneconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="PGTConfig">
+		<field name="bIsLongRange" type="Boolean"/>
+	</object>
+	<object name="Properties">
+		<field name="bIsBuddyAI" type="Boolean"/>
+		<field name="buddyaisettingsBuddyAISettings" type="BinHex"/>
+		<field name="bIsPlayerAlly" type="Boolean"/>
+		<field name="bCanBeKilledByPlayer" type="Boolean"/>
+		<field name="selMindSet" type="Enum"/>
+		<field name="bIsFactionAffiliate" type="Boolean"/>
+		<field name="bForceRespawnAfterCheckpoint" type="Boolean"/>
+		<field name="stimtableStimEffectTable" type="BinHex"/>
+		<field name="navigationconfigNavigationConfig" type="BinHex"/>
+		<field name="fleebehaviordescriptorFleeConfig" type="BinHex"/>
+		<field name="rewardconfigRewardConfig" type="BinHex"/>
+		<field name="selDroneType" type="Enum"/>
+		<field name="text_archDroneArchetype" type="String"/>
+		<field name="archDroneArchetype" type="BinHex"/>
+		<field name="fInitialHealth" type="Float"/>
+		<field name="fScanSelectDistance" type="Float"/>
+		<field name="fScanSelectRadius" type="Float"/>
+		<field name="fScanApproachDistance" type="Float"/>
+		<field name="fStoppingPredictionTime" type="Float"/>
+		<field name="fScanPassiveRadius" type="Float"/>
+		<field name="bLoadResourceOnDemand" type="Boolean"/>
+		<field name="vecTagOffset" type="BinHex"/>
+		<field name="dronenavigationparametersNavigationParameters" type="BinHex"/>
+		<field name="accuracyconfigAccuracyConfig" type="BinHex"/>
+		<field name="hackingprofileHackingDefinition" type="BinHex"/>
+		<field name="selAffiliation" type="Enum"/>
+		<field name="detectionlevelsettingsDetectionLevelSettings" type="BinHex"/>
+		<field name="newdetectionconfigNewDetectionConfig" type="BinHex"/>
+		<field name="bOverrideProfilerSettings" type="Boolean"/>
+		<field name="dronethreatenedeventsettingsDroneThreatenedEventSettings" type="BinHex"/>
+		<field name="combatdronesettingsCombatDroneSettings" type="BinHex"/>
+		<field name="raidwipedronesettingsRaidWipeDroneSettings" type="BinHex"/>
+		<field name="raidbossblumedronesettingsRaidBossBlumeDroneSettings" type="BinHex"/>
+		<field name="turretsettingsTurretSettings" type="BinHex"/>
+		<field name="newsdronesettingsNewsDroneSettings" type="BinHex"/>
+		<field name="dronechasesettingsChaseDroneSettings" type="BinHex"/>
+		<field name="dronedogfightsettingsDroneDogfightSettings" type="BinHex"/>
+		<field name="kamikazedronesettingsKamikazeDroneSettings" type="BinHex"/>
+		<field name="constructiondronesettingsConstructionDroneSettings" type="BinHex"/>
+		<field name="companiondronesettingsCompanionDroneSettings" type="BinHex"/>
+		<field name="dronestandbystatesettingsDroneStandbyStateSettings" type="BinHex"/>
+		<field name="dronewanderstatesettingsDroneWanderStateSettings" type="BinHex"/>
+		<field name="dronelandstatesettingsDroneLandStateSettings" type="BinHex"/>
+		<field name="dronewatchstatesettingsDroneWatchStateSettings" type="BinHex"/>
+		<field name="dronehuntstatesettingsDroneHuntStateSettings" type="BinHex"/>
+		<field name="dronedisablestatesettingsDroneDisableStateSettings" type="BinHex"/>
+		<field name="dronealertstatesettingsDroneAlertStateSettings" type="BinHex"/>
+		<field name="dronedetectionstatesettingsDroneDetectionStateSettings" type="BinHex"/>
+		<field name="dronestaystatesettingsDroneStayStateSettings" type="BinHex"/>
+		<field name="dronefollowstatesettingsDroneFollowStateSettings" type="BinHex"/>
+		<field name="droneapproachstatesettingsDroneApproachStateSettings" type="BinHex"/>
+		<field name="dronehackescalationstatesettingsDroneHackEscalationStateSettings" type="BinHex"/>
+		<field name="dronemalfunctionsettingsDroneMalfunctionStateSettings" type="BinHex"/>
+		<field name="rcmaterialconfigRcMaterialConfig" type="BinHex"/>
+		<field name="droneaudiosettingsDroneAudioSettings" type="BinHex"/>
+		<field name="dronetargetsperceptionsettingsDroneTargetsPerceptionSettings" type="BinHex"/>
+		<object name="AIAgentConfig">
+			<field name="selSubcategory" type="Enum"/>
+			<field name="selDecorator" type="Enum"/>
+			<field name="bMeleeOnly" type="Boolean"/>
+			<field name="bIsElite" type="Boolean"/>
+			<field name="bIsBoss" type="Boolean"/>
+			<field name="bIsUnique" type="Boolean"/>
+			<field name="bIsOCO" type="Boolean"/>
+			<field name="bShowHackReminder" type="Boolean"/>
+			<field name="text_sBossID" type="String"/>
+			<field name="sBossID" type="BinHex"/>
+			<object name="TagInfo">
+				<field name="selTagIndicatorCategory" type="Enum"/>
+				<field name="selTagIndicatorDefense" type="Enum"/>
+				<field name="selTagIndicatorBehavior" type="Enum"/>
+			</object>
+		</object>
+		<object name="ProximitySettings">
+			<field name="fProximityIncidentMaxDistanceXY" type="Float"/>
+			<field name="fProximityIncidentMaxDistanceZ" type="Float"/>
+			<field name="fProximityTooCloseIncidentMaxDistanceXY" type="Float"/>
+			<field name="fProximityTooCloseIncidentMaxDistanceZ" type="Float"/>
+		</object>
+		<object name="SpawnSettings">
+			<field name="fSpawnSpacing" type="Float"/>
+			<field name="fSpawnHeight" type="Float"/>
+			<field name="fPGTSpawnHeight" type="Float"/>
+			<field name="fMinSpawnDistanceFromPlayer" type="Float"/>
+			<field name="fMaxSpawnDistanceFromPlayer" type="Float"/>
+			<field name="fMinSpawnDistanceFromPlayerInFOV" type="Float"/>
+			<field name="fUnspawnDistance" type="Float"/>
+		</object>
+		<object name="DroneHighwaySettings">
+			<field name="fWanderSpeed" type="Float"/>
+			<field name="fWanderHeight" type="Float"/>
+		</object>
+		<object name="DroneShutdownSettings">
+			<field name="fShutdownMoveToHeight" type="Float"/>
+			<field name="fShutdownMoveToHeightSpeed" type="Float"/>
+		</object>
+		<object name="PatrolSettings">
+			<field name="fPatrolSpeed" type="Float"/>
+		</object>
+		<object name="CLODefaultSettings">
+			<field name="fDefaultCLOGoToSpeed" type="Float"/>
+		</object>
+		<object name="ArrestSettings">
+			<field name="fDistance" type="Float"/>
+			<field name="fHeight" type="Float"/>
+			<field name="fApproachSpeed" type="Float"/>
+			<field name="fApproachSpeedDistance" type="Float"/>
+			<field name="fDelayBeforeRestrain" type="Float"/>
+		</object>
+		<object name="FallbackToShutdownSettings">
+			<field name="text_sndFallbackToShutdownStartSound" type="String"/>
+			<field name="sndFallbackToShutdownStartSound" type="BinHex"/>
+			<field name="text_sndFallbackToShutdownStopSound" type="String"/>
+			<field name="sndFallbackToShutdownStopSound" type="BinHex"/>
+			<field name="sndtpFallbackToShutdownStartSoundType" type="BinHex"/>
+			<field name="sndtpFallbackToShutdownStopSoundType" type="BinHex"/>
+		</object>
+		<object name="DroneThreatenedStrafeSettings">
+			<field name="dronestrafesettingsBulletMiss" type="BinHex"/>
+			<field name="dronestrafesettingsAimedByGun" type="BinHex"/>
+			<field name="dronestrafesettingsLockOn" type="BinHex"/>
+		</object>
+		<object name="GenericCombatDroneSettings">
+			<field name="fCombatDefaultDestinationMaxRandomBonus" type="Float"/>
+		</object>
+	</object>
+</class>

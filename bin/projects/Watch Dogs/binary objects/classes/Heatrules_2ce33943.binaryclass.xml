@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Heatrules_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fOverBaseIncreaseDelay" type="Float"/>
+	<object name="HeatRules">
+		<object name="MeleeKill">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="MeleeKillCivilian">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="LTLKill">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="LTLKillCivilian">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="LethalKill">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="LethalKillCivilian">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="VehicleKill">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="VehicleKillCivilian">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="RingOfSteelIngredientBulletHit">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="RingOfSteelDroneBulletHit">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="RingOfSteelTurretBulletHit">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="RingOfSteelCrossing">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="RingOfSteelCrossingWeaponDrawn">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="RingOfSteelClimbing">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+		<object name="RingOfSteelStayingInsideZone">
+			<field name="uiBaseHeatLevel" type="UInt32"/>
+			<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+			<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+		</object>
+	</object>
+	<object name="HeatIncidents">
+		<object name="Incident">
+			<field name="selIncident" type="Enum"/>
+			<object name="HeatRule">
+				<field name="uiBaseHeatLevel" type="UInt32"/>
+				<field name="fHeatLevel0IncreasePercentage" type="Float"/>
+				<field name="fHeatLevel1IncreasePercentage" type="Float"/>
+				<field name="fHeatLevel2IncreasePercentage" type="Float"/>
+				<field name="fHeatLevel3IncreasePercentage" type="Float"/>
+				<field name="fHeatLevel4IncreasePercentage" type="Float"/>
+			</object>
+		</object>
+	</object>
+</class>

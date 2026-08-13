@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Roadsplineanchorspawndef">
+	<object name="lib">
+		<object hash="72DE4948">
+			<inherit name="RoadsplineanchorspawndefParameters"/>
+		</object>
+	</object>
+</file>

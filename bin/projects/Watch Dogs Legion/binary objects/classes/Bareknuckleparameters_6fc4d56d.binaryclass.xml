@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Bareknuckleparameters_6fc4d56dParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iDistanceRecruitAvalability" type="Int32"/>
+	<field name="bareknucklefightFightIntrigueMale" type="BinHex"/>
+	<field name="bareknucklefightFightIntrigueFemale" type="BinHex"/>
+	<field name="bareknucklechallengesChallenges" type="BinHex"/>
+	<field name="iMaxNumberOfChallenges" type="Int32"/>
+	<field name="fChallengeChanceRatio" type="Float"/>
+	<field name="humanconfigDebugFemale" type="BinHex"/>
+	<field name="humanconfigDebugMale" type="BinHex"/>
+	<field name="tagcategoryTagCategoryFirst" type="BinHex"/>
+	<field name="tagcategoryTagCategorySecond" type="BinHex"/>
+	<field name="tagcategoryTagCategoryThird" type="BinHex"/>
+	<field name="censusactormemorydefinitionMemoryToApplyOnWin" type="BinHex"/>
+	<field name="censusactormemorydefinitionMemoryToApplyOnFighterWin" type="BinHex"/>
+	<field name="censusactormemorydefinitionMemoryToApplyOnFighterLose" type="BinHex"/>
+	<field name="censusactormemorydefinitionMemoryToApplyOnCrowdOPCompleted" type="BinHex"/>
+	<field name="text_IntercomBarkAvailable" type="String"/>
+	<field name="IntercomBarkAvailable" type="BinHex"/>
+	<field name="text_IntercomBarkUnavailableFights" type="String"/>
+	<field name="IntercomBarkUnavailableFights" type="BinHex"/>
+	<field name="text_IntercomBarkUnavailableMelee" type="String"/>
+	<field name="IntercomBarkUnavailableMelee" type="BinHex"/>
+	<field name="ArenaFinishedBark" type="BinHex"/>
+	<field name="text_LeagueFinishedBark" type="String"/>
+	<field name="LeagueFinishedBark" type="BinHex"/>
+	<field name="text_sndEnterSound" type="String"/>
+	<field name="sndEnterSound" type="BinHex"/>
+	<field name="sndtpEnterSoundType" type="BinHex"/>
+	<field name="text_sndExitSound" type="String"/>
+	<field name="sndExitSound" type="BinHex"/>
+	<field name="sndtpExitSoundType" type="BinHex"/>
+	<field name="text_sndSkipSound" type="String"/>
+	<field name="sndSkipSound" type="BinHex"/>
+	<field name="sndtpSkipSoundType" type="BinHex"/>
+	<field name="bLmaInteriorEnabled" type="Boolean"/>
+	<field name="iCrowdAnimateMaxRandom" type="Int32"/>
+	<field name="fFirstTimeEnterIntroTimerValue" type="Float"/>
+	<field name="fFirstTimeEnterIntroExitTimerValue" type="Float"/>
+	<object name="LeagueElementsVector">
+		<object name="LeagueElement">
+			<field name="sMapName" type="String"/>
+			<object name="Leagues">
+				<object name="League">
+					<field name="bareknuckleleagueconfigLeague" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="ReactionsToLoad">
+		<object name="bareknucklereactionReaction">
+			<field name="bareknucklereactionReaction" type="BinHex"/>
+		</object>
+	</object>
+	<object name="IntroMadCinematic">
+		<field name="text_fileFile" type="String"/>
+		<field name="fileFile" type="BinHex"/>
+		<field name="SceneTemplate" type="BinHex"/>
+		<field name="iDialogTemplate" type="Int32"/>
+	</object>
+	<object name="locstridOpponentOccupationLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridArenaCompletedLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridArenaSubtitleCompletedLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridArenaFailedLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridArenaSubtitleFailedLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridArenaAbandonLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridArenaSubtitleAbandonLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPlayerWon">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPlayerLose">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridPlayerWonFullHealth">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="CompletedTrigger">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="CompleteFightCryptoGetter">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="CharacterAbilities">
+		<object name="Ability">
+			<field name="itemsAbility" type="BinHex"/>
+		</object>
+	</object>
+</class>

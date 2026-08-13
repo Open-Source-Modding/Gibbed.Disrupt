@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Taggingglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxDistance" type="Float"/>
+	<field name="fMaxDistanceForFullBadge" type="Float"/>
+	<field name="fReticleTaggingDuration" type="Float"/>
+	<field name="selTagOutlineColor" type="Enum"/>
+	<field name="selTagOutlineColorCombat" type="Enum"/>
+	<object name="TagSounds">
+		<field name="text_sndOnGenericTagAddedSound" type="String"/>
+		<field name="sndOnGenericTagAddedSound" type="BinHex"/>
+		<field name="text_sndOnEnemyTagAddedSound" type="String"/>
+		<field name="sndOnEnemyTagAddedSound" type="BinHex"/>
+		<field name="text_sndOnPoliceTagAddedSound" type="String"/>
+		<field name="sndOnPoliceTagAddedSound" type="BinHex"/>
+		<field name="sndtpOnGenericTagAddedSoundType" type="BinHex"/>
+		<field name="sndtpOnEnemyTagAddedSoundType" type="BinHex"/>
+		<field name="sndtpOnPoliceTagAddedSoundType" type="BinHex"/>
+	</object>
+	<object name="AutoTagSpecialEffects">
+		<field name="text_sndSound" type="String"/>
+		<field name="sndSound" type="BinHex"/>
+		<field name="sndtpSoundType" type="BinHex"/>
+		<field name="text_psParticleSystem" type="String"/>
+		<field name="psParticleSystem" type="BinHex"/>
+		<field name="vectorParticleSystemRelativeLocation" type="Vector3"/>
+	</object>
+</class>

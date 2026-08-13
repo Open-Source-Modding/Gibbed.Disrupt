@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UiclassupgradesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iUpgradeIndex" type="Int32"/>
+	<field name="texturedbobjectIconTexture" type="BinHex"/>
+	<field name="texturedbobjectUpgradeImage" type="BinHex"/>
+	<field name="videosBinkVideoResource" type="BinHex"/>
+	<field name="bIsSinglePlayerOnly" type="Boolean"/>
+	<field name="bIsOnlineUpgrade" type="Boolean"/>
+	<field name="bIsGadgetUpgrade" type="Boolean"/>
+	<field name="selCategory" type="Enum"/>
+	<object name="locstridTitle">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="UpgradeDescriptions">
+		<object name="UpgradeDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="IsAvailableExotic">
+		<field name="rulesmithidRule" type="BinHex"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="locstridExoticLockReason">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

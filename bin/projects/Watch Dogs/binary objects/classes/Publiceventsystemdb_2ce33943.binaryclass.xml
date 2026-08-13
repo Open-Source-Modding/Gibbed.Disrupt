@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Publiceventsystemdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnabled" type="Boolean"/>
+	<field name="publiceventsettingsSP" type="BinHex"/>
+	<field name="publiceventsettingsMP" type="BinHex"/>
+</class>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronereinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsDigitalFelonySpawner" type="Boolean"/>
+	<object name="DigitalFelonyDroneSpawn">
+		<object name="DroneSpawnInfos">
+			<field name="fSpawnDelay" type="Float"/>
+			<field name="fMinSpawnDistance" type="Float"/>
+			<field name="fMaxSpawnDistance" type="Float"/>
+			<field name="fUsefulDistance" type="Float"/>
+			<field name="fUnspawnDistance" type="Float"/>
+			<field name="uiSpawnBiasFront" type="UInt32"/>
+			<field name="uiSpawnBiasBack" type="UInt32"/>
+			<field name="fTakedownRespawnDelay" type="Float"/>
+			<field name="fEscapeRespawnDelay" type="Float"/>
+		</object>
+	</object>
+</class>

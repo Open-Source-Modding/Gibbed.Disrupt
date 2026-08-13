@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Propcloselectorids_0d78f764Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="CLOSelectorIDs">
+		<object name="SelectorID">
+			<field name="SelectorID" type="String"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NpcdoorspawningprofilesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxSpawnsPerMinute" type="Float"/>
+	<field name="fMaxSpawnsPerMinuteOppressed" type="Float"/>
+	<object name="SpawnWeights">
+		<field name="uiOccupationSpawnWeight" type="UInt32"/>
+		<field name="uiLeisureSpawnWeight" type="UInt32"/>
+		<field name="uiRestSpawnWeight" type="UInt32"/>
+	</object>
+	<object name="curveSpawnInterval">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

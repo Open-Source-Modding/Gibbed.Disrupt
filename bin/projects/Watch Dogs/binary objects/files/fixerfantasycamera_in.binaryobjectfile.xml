@@ -1,0 +1,5 @@
+<file name="fixerfantasycamera_in" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

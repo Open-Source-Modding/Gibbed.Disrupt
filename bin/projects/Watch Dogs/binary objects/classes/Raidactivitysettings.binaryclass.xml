@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RaidactivitysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnabled" type="Boolean"/>
+	<field name="selType" type="Enum"/>
+	<field name="RaidRecommendedLevel" type="BinHex"/>
+	<field name="texturedbobjectRaidMainImage" type="BinHex"/>
+	<field name="texturedbobjectRaidDisplayImage" type="BinHex"/>
+	<field name="texturedbobjectRaidAdvertisingImage" type="BinHex"/>
+	<field name="lobbyparamspresetLoobbyParamsPresetOverride" type="BinHex"/>
+	<object name="RaidSteps">
+		<object name="raidstepsettingsStepSettings">
+			<field name="raidstepsettingsStepSettings" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridRaidName">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRaidDescription">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRaidShortDescription">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

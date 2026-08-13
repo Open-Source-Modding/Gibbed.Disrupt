@@ -26,8 +26,6 @@ using Gibbed.Disrupt.FileFormats.Big;
 using Gibbed.IO;
 using ICSharpCode.SharpZipLib.Zip.Compression;
 using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
-using LZO = MiniLZO.LZO;
-using LZOErrorCode = MiniLZO.ErrorCode;
 
 namespace Gibbed.Disrupt.Packing
 {
@@ -44,7 +42,7 @@ namespace Gibbed.Disrupt.Packing
             }
             else if (compressionScheme == CompressionScheme.LZO1x)
             {
-                DecompressLZO(entry, input, output);
+                throw new PlatformNotSupportedException("LZO decompression is not supported on this platform.");
             }
             else if (compressionScheme == CompressionScheme.Zlib)
             {
@@ -62,37 +60,6 @@ namespace Gibbed.Disrupt.Packing
             {
                 throw new NotImplementedException("unimplemented compression scheme");
             }
-        }
-
-        private static void DecompressLZO(IEntry entry, Stream input, Stream output)
-        {
-            var compressedBytes = new byte[entry.CompressedSize];
-            if (input.Read(compressedBytes, 0, compressedBytes.Length) != compressedBytes.Length)
-            {
-                throw new EndOfStreamException("could not read all compressed bytes");
-            }
-
-            var uncompressedBytes = new byte[entry.UncompressedSize];
-            int actualUncompressedLength = uncompressedBytes.Length;
-
-            var result = LZO.Decompress(
-                compressedBytes,
-                0,
-                compressedBytes.Length,
-                uncompressedBytes,
-                0,
-                ref actualUncompressedLength);
-            if (result != LZOErrorCode.Success)
-            {
-                throw new InvalidOperationException($"LZO decompression failure ({result})");
-            }
-
-            if (actualUncompressedLength != uncompressedBytes.Length)
-            {
-                throw new InvalidOperationException("LZO decompression failure (uncompressed size mismatch)");
-            }
-
-            output.Write(uncompressedBytes, 0, uncompressedBytes.Length);
         }
 
         private static void DecompressZlib(IEntry entry, Stream input, Stream output)
@@ -210,45 +177,71 @@ namespace Gibbed.Disrupt.Packing
             var remaining = uncompressedSize;
             while (remaining > 0)
             {
-                using (var context = new XCompression.DecompressionContext(windowSize, chunkSize))
+                var compressedChunkSize = input.ReadValueS32(Endian.Big);
+                if (compressedChunkSize < 0 ||
+                    compressedChunkSize > largestCompressedChunkSize)
                 {
-                    var compressedChunkSize = input.ReadValueS32(Endian.Big);
-                    if (compressedChunkSize < 0 ||
-                        compressedChunkSize > largestCompressedChunkSize)
-                    {
-                        throw new InvalidOperationException("compressed size mismatch");
-                    }
-
-                    if (input.Read(compressedBytes, 0, compressedChunkSize) != compressedChunkSize)
-                    {
-                        throw new EndOfStreamException("could not read all compressed bytes");
-                    }
-
-                    var uncompressedChunkSize = (int)Math.Min(largestUncompressedChunkSize, remaining);
-                    var actualUncompressedChunkSize = uncompressedChunkSize;
-                    var actualCompressedChunkSize = compressedChunkSize;
-
-                    var result = context.Decompress(
-                        compressedBytes,
-                        0,
-                        ref actualCompressedChunkSize,
-                        uncompressedBytes,
-                        0,
-                        ref actualUncompressedChunkSize);
-                    if (result != XCompression.ErrorCode.None)
-                    {
-                        throw new InvalidOperationException($"XCompression decompression failure ({result})");
-                    }
-
-                    if (actualUncompressedChunkSize != uncompressedChunkSize)
-                    {
-                        throw new InvalidOperationException("XCompression decompression failure (uncompressed size mismatch)");
-                    }
-
-                    output.Write(uncompressedBytes, 0, actualUncompressedChunkSize);
-
-                    remaining -= actualUncompressedChunkSize;
+                    throw new InvalidOperationException("compressed size mismatch");
                 }
+
+                if (input.Read(compressedBytes, 0, compressedChunkSize) != compressedChunkSize)
+                {
+                    throw new EndOfStreamException("could not read all compressed bytes");
+                }
+
+                var uncompressedChunkSize = (int)Math.Min(largestUncompressedChunkSize, remaining);
+                var actualUncompressedChunkSize = uncompressedChunkSize;
+                var actualCompressedChunkSize = compressedChunkSize;
+
+                bool ok = false;
+
+                try
+                {
+                    using (var context = new XCompression.DecompressionContext(windowSize, chunkSize))
+                    {
+                        var result = context.Decompress(
+                            compressedBytes,
+                            0,
+                            ref actualCompressedChunkSize,
+                            uncompressedBytes,
+                            0,
+                            ref actualUncompressedChunkSize);
+                        if (result == XCompression.ErrorCode.None)
+                        {
+                            ok = true;
+                        }
+                    }
+                }
+                catch
+                {
+                }
+
+                if (ok == false)
+                {
+                    using (var context = new XCompression.ManagedDecompressionContext(windowSize, chunkSize))
+                    {
+                        var result = context.Decompress(
+                            compressedBytes,
+                            0,
+                            ref actualCompressedChunkSize,
+                            uncompressedBytes,
+                            0,
+                            ref actualUncompressedChunkSize);
+                        if (result != XCompression.ErrorCode.None)
+                        {
+                            throw new InvalidOperationException($"XCompression decompression failure ({result})");
+                        }
+                    }
+                }
+
+                if (actualUncompressedChunkSize != uncompressedChunkSize)
+                {
+                    throw new InvalidOperationException("XCompression decompression failure (uncompressed size mismatch)");
+                }
+
+                output.Write(uncompressedBytes, 0, actualUncompressedChunkSize);
+
+                remaining -= actualUncompressedChunkSize;
             }
         }
 

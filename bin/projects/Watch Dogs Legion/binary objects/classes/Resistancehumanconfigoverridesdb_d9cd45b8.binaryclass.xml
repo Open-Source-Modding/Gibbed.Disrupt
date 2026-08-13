@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Resistancehumanconfigoverridesdb_d9cd45b8Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<object name="MaxCaptains">
+		<field name="rulesmithidRule" type="Boolean"/>
+		<field name="rulesmithconstValue" type="BinHex"/>
+	</object>
+	<object name="ResistanceHumanConfigOverrideSettings">
+		<object name="OverrideSettings">
+			<field name="humanconfigBaseHumanConfig" type="BinHex"/>
+			<field name="OptionalLocationID" type="BinHex"/>
+			<object name="ResistanceOverrides">
+				<object name="ResistanceOverride">
+					<field name="humanconfigResistanceHumanConfig" type="BinHex"/>
+					<field name="ChanceOfSpawning" type="BinHex"/>
+					<field name="Archetype" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

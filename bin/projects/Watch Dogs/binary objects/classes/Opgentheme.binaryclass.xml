@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpgenthemeParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sTrackingName" type="String"/>
+	<object name="DedsecInternationals">
+		<object name="selDSI">
+			<field name="selDSI" type="Enum"/>
+		</object>
+	</object>
+	<object name="Chapters">
+		<object name="Chapter">
+			<field name="opgenchapterregroupRegroups" type="BinHex"/>
+			<object name="Plots">
+				<object name="opgenplotPlot">
+					<field name="opgenplotPlot" type="BinHex"/>
+				</object>
+			</object>
+			<object name="PreviousPlotsSettings"/>
+			<object name="tagcategoryselectionblackboardPreferedComplexityTags">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<object name="Tags">
+							<object name="Tag">
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="opgenprofilesdefinitionsProfilesDefinitions">
+		<object name="LocationsDefinitions">
+			<field name="selMode" type="Enum"/>
+			<object name="LocationDefinitions">
+				<object name="opgenlocationdefinitionLocationDefinition">
+					<field name="opgenlocationdefinitionLocationDefinition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="DeliveryLocationsDefinitions">
+			<field name="selMode" type="Enum"/>
+			<object name="LocationDefinitions">
+				<object name="opgenlocationdefinitionLocationDefinition">
+					<field name="opgenlocationdefinitionLocationDefinition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="HumanAlliesDefinitions">
+			<field name="selMode" type="Enum"/>
+			<object name="HumanDefinitions">
+				<object name="opgenhumandefinitionHumanDefinition">
+					<field name="opgenhumandefinitionHumanDefinition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="HumanEnnemiesDefinitions">
+			<field name="selMode" type="Enum"/>
+			<object name="HumanDefinitions">
+				<object name="opgenhumandefinitionHumanDefinition">
+					<field name="opgenhumandefinitionHumanDefinition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="VehiclesDefinitions">
+			<field name="selMode" type="Enum"/>
+			<object name="VehicleDefinitions">
+				<object name="opgenvehicledefinitionVehicleDefinition">
+					<field name="opgenvehicledefinitionVehicleDefinition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="DronesDefinitions">
+			<field name="selMode" type="Enum"/>
+			<object name="DroneDefinitions">
+				<object name="opgendronedefinitionDroneDefinition">
+					<field name="opgendronedefinitionDroneDefinition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="AnyTargetDefinitions">
+			<field name="selMode" type="Enum"/>
+			<object name="AnyTargetDefinitions">
+				<field name="selMode" type="Enum"/>
+				<object name="opgenanytargetdefinitionAnyTargetDefinition">
+					<field name="opgenanytargetdefinitionAnyTargetDefinition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

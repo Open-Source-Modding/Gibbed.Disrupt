@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Locationmusicglobalsettingsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sndGlobalQuickStop" type="String"/>
+	<field name="sndGlobalQuickStop" type="BinHex"/>
+	<field name="sndtpGlobalQuickStopType" type="BinHex"/>
+	<field name="fNoMoreInConflictWithAiTimeoutDuration" type="Float"/>
+	<field name="fEndMusicMinimumSafetyDuration" type="Float"/>
+	<field name="fVolumeExtrudeFadeDistance" type="Float"/>
+	<field name="bIsManagerEnabled" type="Boolean"/>
+	<field name="selEnterTriggerVolumeType" type="Enum"/>
+	<object name="MusicEntries">
+		<object name="MusicEntry">
+			<object name="tagcategoryselectionblackboardTags">
+				<object name="TagCategorySelectionArray">
+					<object name="TagCategorySelection">
+						<field name="text_hid_DTCTH_ClassName" type="String"/>
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<object name="Tags"/>
+					</object>
+				</object>
+				<object name="TagDescriptorUI">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<object name="TagCategorySelectionDescriptors">
+						<object name="TagCategorySelectionDescriptor">
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="bMultiSelect" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="LocationMusicSoundIds">
+				<object name="LocationMusicSoundId">
+					<field name="text_sndEndEvent" type="String"/>
+					<field name="sndEndEvent" type="BinHex"/>
+					<field name="sndtpEndEventType" type="BinHex"/>
+					<object name="sndpairPlayStopEvents">
+						<field name="text_dissndStart" type="String"/>
+						<field name="dissndStart" type="BinHex"/>
+						<field name="text_dissndStop" type="String"/>
+						<field name="dissndStop" type="BinHex"/>
+						<field name="sndtpStartType" type="BinHex"/>
+						<field name="sndtpStopType" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="sndvarFadingRTPCVarId">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

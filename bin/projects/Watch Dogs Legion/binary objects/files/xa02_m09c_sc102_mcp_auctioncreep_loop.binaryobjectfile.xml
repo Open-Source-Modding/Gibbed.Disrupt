@@ -1,0 +1,5 @@
+<file name="xa02_m09c_sc102_mcp_auctioncreep_loop" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

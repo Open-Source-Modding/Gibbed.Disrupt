@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CensusattendancedefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selType" type="Enum"/>
+	<field name="selActivityType" type="Enum"/>
+	<field name="tagUniform" type="BinHex"/>
+	<field name="bCanMatchVisibleActivities" type="Boolean"/>
+	<field name="bCanMatchNPCDoorActivities" type="Boolean"/>
+	<field name="bCanBeAssignedToOperatives" type="Boolean"/>
+	<field name="bCanMatchLocationsWithPGTs" type="Boolean"/>
+	<field name="bHasDifferentRoleUIData" type="Boolean"/>
+	<field name="censusdeepprofilericondefinitionDeepProfilerIcon" type="BinHex"/>
+	<object name="UIDataRoleA">
+		<field name="bIsAllowedToReferenceAssociate" type="Boolean"/>
+		<object name="locstridCurrentlyHappening">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCurrentlyTravellingTo">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridHappeningInTheFuture">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="UIDataRoleB">
+		<field name="bIsAllowedToReferenceAssociate" type="Boolean"/>
+		<object name="locstridCurrentlyHappening">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridCurrentlyTravellingTo">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridHappeningInTheFuture">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="tagcategoryselectionblackboardLocation">
+		<object name="TagCategorySelectionArray">
+			<object name="TagCategorySelection">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<object name="Tags">
+					<object name="Tag">
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+		<object name="TagDescriptorUI">
+			<field name="text_hid_DTCTH_ClassName" type="String"/>
+			<field name="hid_DTCTH_ClassName" type="BinHex"/>
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="tagcategoryselectionblackboardActivity">
+		<object name="TagCategorySelectionArray">
+			<object name="TagCategorySelection">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<object name="Tags">
+					<object name="Tag">
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+		<object name="TagDescriptorUI">
+			<field name="text_hid_DTCTH_ClassName" type="String"/>
+			<field name="hid_DTCTH_ClassName" type="BinHex"/>
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Hinttriggermanager_0623d02e">
+	<object name="obj">
+		<inherit name="Hinttriggermanager_0623d02eParameters"/>
+	</object>
+</file>

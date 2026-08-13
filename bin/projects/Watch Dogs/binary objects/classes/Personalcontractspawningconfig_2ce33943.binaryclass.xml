@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Personalcontractspawningconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="NPCs">
+		<object name="NPC">
+			<field name="text_sName" type="String"/>
+			<field name="sName" type="BinHex"/>
+			<field name="selType" type="Enum"/>
+			<field name="text_archArchetype" type="String"/>
+			<field name="archArchetype" type="BinHex"/>
+			<field name="fleeonfootconfigFleeOnFootConfig" type="BinHex"/>
+			<field name="vehiclebhvsetupVehicleBhv" type="BinHex"/>
+			<field name="npcoverrideconfigOverrideConfig" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Vehicles">
+		<object name="Vehicle">
+			<field name="text_sName" type="String"/>
+			<field name="sName" type="BinHex"/>
+			<field name="text_archArchetype" type="String"/>
+			<field name="archArchetype" type="BinHex"/>
+		</object>
+	</object>
+</class>

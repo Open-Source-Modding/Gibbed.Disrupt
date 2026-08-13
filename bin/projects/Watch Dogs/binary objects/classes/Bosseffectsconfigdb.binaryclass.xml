@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BosseffectsconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsUsingOnDisableBark" type="Boolean"/>
+	<object name="Effects">
+		<field name="bIsUsingPhaseEnterBark" type="Boolean"/>
+		<field name="bIsUsingPhaseLights" type="Boolean"/>
+		<object name="Lights">
+			<object name="Light">
+				<field name="iLightSlot" type="Int32"/>
+				<object name="LightParams">
+					<field name="fIntensityMultiplier" type="Float"/>
+					<field name="bOverrideColor" type="Boolean"/>
+					<field name="vectorColor" type="Vector3"/>
+					<field name="bOverrideFlashing" type="Boolean"/>
+					<field name="bEnableFlashing" type="Boolean"/>
+					<field name="bHasLightRadiusOverride" type="Boolean"/>
+					<field name="fLightRadiusLength" type="Float"/>
+					<field name="bHasBeamLengthOverride" type="Boolean"/>
+					<field name="fBeamLength" type="Float"/>
+					<field name="bDisableLightEffects" type="Boolean"/>
+					<object name="curveFlashingIntensityCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Effects">
+			<field name="bIsUsingPhaseEnterBark" type="Boolean"/>
+			<field name="bIsUsingPhaseLights" type="Boolean"/>
+			<object name="Lights">
+				<object name="Light">
+					<field name="iLightSlot" type="Int32"/>
+					<object name="LightParams">
+						<field name="fIntensityMultiplier" type="Float"/>
+						<field name="bOverrideColor" type="Boolean"/>
+						<field name="vectorColor" type="Vector3"/>
+						<field name="bOverrideFlashing" type="Boolean"/>
+						<field name="bEnableFlashing" type="Boolean"/>
+						<field name="bHasLightRadiusOverride" type="Boolean"/>
+						<field name="fLightRadiusLength" type="Float"/>
+						<field name="bHasBeamLengthOverride" type="Boolean"/>
+						<field name="fBeamLength" type="Float"/>
+						<field name="bDisableLightEffects" type="Boolean"/>
+						<object name="curveFlashingIntensityCurve">
+							<inherit name="KnotsParameters"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="CustomLights">
+		<object name="CustomLights">
+			<field name="text_LightId" type="String"/>
+			<field name="LightId" type="BinHex"/>
+			<object name="CustomLightsList">
+				<field name="iLightSlot" type="Int32"/>
+				<object name="LightParams">
+					<field name="fIntensityMultiplier" type="Float"/>
+					<field name="bOverrideColor" type="Boolean"/>
+					<field name="vectorColor" type="Vector3"/>
+					<field name="bOverrideFlashing" type="Boolean"/>
+					<field name="bEnableFlashing" type="Boolean"/>
+					<field name="bHasLightRadiusOverride" type="Boolean"/>
+					<field name="fLightRadiusLength" type="Float"/>
+					<field name="bHasBeamLengthOverride" type="Boolean"/>
+					<field name="fBeamLength" type="Float"/>
+					<field name="bDisableLightEffects" type="Boolean"/>
+					<object name="curveFlashingIntensityCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+				</object>
+				<object name="CustomLightsList">
+					<field name="iLightSlot" type="Int32"/>
+					<object name="LightParams">
+						<field name="fIntensityMultiplier" type="Float"/>
+						<field name="bOverrideColor" type="Boolean"/>
+						<field name="vectorColor" type="Vector3"/>
+						<field name="bOverrideFlashing" type="Boolean"/>
+						<field name="bEnableFlashing" type="Boolean"/>
+						<field name="bHasLightRadiusOverride" type="Boolean"/>
+						<field name="fLightRadiusLength" type="Float"/>
+						<field name="bHasBeamLengthOverride" type="Boolean"/>
+						<field name="fBeamLength" type="Float"/>
+						<field name="bDisableLightEffects" type="Boolean"/>
+						<object name="curveFlashingIntensityCurve">
+							<inherit name="KnotsParameters"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

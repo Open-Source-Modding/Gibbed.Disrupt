@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MapicondescriptionAnimationsParameters">
+	<field name="text_sAnimId" type="String"/>
+	<field name="sAnimId" type="BinHex"/>
+	<field name="TextureAnim" type="BinHex"/>
+	<field name="bIsLooping" type="Boolean"/>
+	<field name="selDispensorType" type="Enum"/>
+	<field name="uiTextureCount" type="UInt32"/>
+	<field name="fIconSwapDelay" type="Float"/>
+	<field name="bUsePrimaryIcon" type="Boolean"/>
+	<field name="bIsOneWay" type="Boolean"/>
+	<field name="bIsTimeLooping" type="Boolean"/>
+	<field name="uiTranInTextureCount" type="BinHex"/>
+	<object name="IconTexturesList">
+		<object name="IconTexture">
+			<object name="IconTexture">
+				<field name="text_fileIconTexture" type="String"/>
+				<field name="fileIconTexture" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Color">
+		<field name="colorStartColor" type="VectorColor"/>
+		<field name="fStartAlpha" type="Float"/>
+		<field name="colorEndColor" type="VectorColor"/>
+		<field name="fEndAlpha" type="Float"/>
+		<field name="fColorAnimDelay" type="Float"/>
+		<field name="fColorDuration" type="Float"/>
+	</object>
+	<object name="Scale">
+		<field name="vec2StartScale" type="Vector2"/>
+		<field name="vec2EndScale" type="Vector2"/>
+		<field name="fScaleAnimDelay" type="Float"/>
+		<field name="fScaleAnimDuration" type="Float"/>
+	</object>
+	<object name="TexturesList">
+		<object name="fileTexture">
+			<field name="text_fileTexture" type="String"/>
+			<field name="fileTexture" type="BinHex"/>
+		</object>
+    </object>
+    <object name="TranInTexturesList">
+		<object name="fileTexture">
+			<field name="text_fileTexture" type="String"/>
+			<field name="fileTexture" type="BinHex"/>
+		</object>
+    </object>
+</class>

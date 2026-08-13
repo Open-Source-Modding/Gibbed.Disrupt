@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectivefreesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="locategameplaydescriptorTargetsLocateDescriptor" type="BinHex"/>
+	<object name="locstridShortLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridLongLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloObjectiveLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloDescriptionLocIdFallback">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="Target">
+		<field name="text_TargetSceneID" type="String"/>
+		<field name="TargetSceneID" type="BinHex"/>
+		<field name="text_TargetRole" type="String"/>
+		<field name="TargetRole" type="BinHex"/>
+	</object>
+	<object name="ObjectiveFreedOnlineNotification">
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="locstridTargetKilledFailLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

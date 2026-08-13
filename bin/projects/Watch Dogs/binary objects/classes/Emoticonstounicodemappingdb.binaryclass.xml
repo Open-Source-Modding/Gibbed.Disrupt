@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EmoticonstounicodemappingdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="texturedbobjectEmojiTexturePathFallBack" type="BinHex"/>
+	<object name="EmoticonsToUnicodeMappingDB">
+		<object name="EmoticonToUnicodeMapping">
+			<field name="sEmoticon" type="BinHex"/>
+			<field name="uiEmoticonUnicodeSymbol" type="UInt32"/>
+			<field name="texturedbobjectEmojiTexturePath" type="BinHex"/>
+		</object>
+	</object>
+</class>

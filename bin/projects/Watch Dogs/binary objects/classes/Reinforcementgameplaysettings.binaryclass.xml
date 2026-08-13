@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ReinforcementgameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="reinforcementconfigReinforcementConfig" type="BinHex"/>
+	<field name="selAffiliation" type="Enum"/>
+	<field name="bLocationBased" type="Boolean"/>
+	<field name="selSpawnBudget" type="Enum"/>
+	<field name="bUseReinforcementZone" type="Boolean"/>
+	<field name="bDisableReinforcementCalling" type="Boolean"/>
+	<field name="bUseReinforcementSearchTarget" type="Boolean"/>
+	<field name="bDisableFelony" type="Boolean"/>
+	<field name="bForceCombatOnAllPlayers" type="Boolean"/>
+	<field name="fForceCombatDuration" type="Float"/>
+	<field name="bForceCombatDurationInfinite" type="Boolean"/>
+	<field name="bForceLKP" type="Boolean"/>
+	<field name="fForceLKPRadius" type="Float"/>
+	<field name="bForceInfiniteReinforcementsForbidden" type="Boolean"/>
+	<field name="bReinforceOnAllPlayers" type="Boolean"/>
+	<field name="bUpdateTargetOnOperativeChange" type="Boolean"/>
+	<field name="bForceInfiniteSearch" type="Boolean"/>
+	<field name="bForceTargetingOnParticipatingPlayers" type="Boolean"/>
+	<field name="bUseReinforcementFeedback" type="Boolean"/>
+	<field name="sDispatchCallID" type="BinHex"/>
+	<field name="sDispatch2ndCallID" type="BinHex"/>
+	<field name="sDispatch3rdCallID" type="BinHex"/>
+	<object name="locstridWarningHeaderLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridWarningMessageLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

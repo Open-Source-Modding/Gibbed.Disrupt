@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DatatransfergameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bCanBeDestroyed" type="Boolean"/>
+	<field name="bIsHackable" type="Boolean"/>
+	<field name="fRemoteHackTransferDuration" type="Float"/>
+	<field name="bIsInteractionUsable" type="Boolean"/>
+	<field name="fPhysicalInteractTransferDuration" type="Float"/>
+	<field name="downloadgameplaydescriptorDownloadGameplaySettings" type="BinHex"/>
+	<field name="bEnteringVehicleUnitStartTransfer" type="Boolean"/>
+	<field name="bDisableVehicleUsageAfterTransfer" type="Boolean"/>
+	<field name="bDownloadStartTriggersVehicleTargetFlee" type="Boolean"/>
+	<field name="bOnlyLastDownloadStartTriggersVehicleTargetFlee" type="Boolean"/>
+	<field name="vehiclebhvsetupVehicleFleeBhvConfig" type="BinHex"/>
+	<field name="bUseOnlineNotifications" type="Boolean"/>
+	<field name="bSendStimOnDataTransferStartedToTarget" type="Boolean"/>
+	<object name="locstridHackingWheelHackTextLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="TargetsTypesAllowed"/>
+	<object name="AffiliationFlags"/>
+	<object name="VehicleTypeFlags"/>
+	<object name="DroneTypeFlags"/>
+	<object name="NPCDescriptions"/>
+	<object name="VehicleDescriptions"/>
+	<object name="DroneDescriptions"/>
+	<object name="DownloadStartedOnlineNotification">
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="DownloadStartedCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="WaitingForOtherUnitHackCriticalMessage">
+		<field name="bIsActivated" type="Boolean"/>
+		<field name="bIsCriticalWarning" type="Boolean"/>
+		<field name="fDuration" type="Float"/>
+		<object name="locstridSubText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridBackUpText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+</class>

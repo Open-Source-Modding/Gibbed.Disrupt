@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Onlinegameplayrules_fc43f4a2">
+	<object name="obj">
+		<inherit name="Onlinegameplayrules_fc43f4a2Parameters"/>
+	</object>
+</file>

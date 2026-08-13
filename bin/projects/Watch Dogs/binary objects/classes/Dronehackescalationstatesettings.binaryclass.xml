@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronehackescalationstatesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TargetTypeSettings">
+		<object name="HijackedRC">
+			<field name="bCanAlertIfNoGuard" type="Boolean"/>
+			<field name="bCanConcludeInCombat" type="Boolean"/>
+			<field name="fWaitForAlertGuardsTimeMin" type="Float"/>
+			<field name="fWaitForAlertGuardsTimeMax" type="Float"/>
+			<field name="fWaitForCombatWarningNoAlertTimeMin" type="Float"/>
+			<field name="fWaitForCombatWarningNoAlertTimeMax" type="Float"/>
+			<field name="fWaitForCombatWarningAfterAlertTimeMin" type="Float"/>
+			<field name="fWaitForCombatWarningAfterAlertTimeMax" type="Float"/>
+			<field name="fWaitForCombatTimeMin" type="Float"/>
+			<field name="fWaitForCombatTimeMax" type="Float"/>
+			<field name="fWaitForCombatTimeNoGuardMin" type="Float"/>
+			<field name="fWaitForCombatTimeNoGuardMax" type="Float"/>
+			<field name="fWaitForNoCombatConclusionTimeMin" type="Float"/>
+			<field name="fWaitForNoCombatConclusionTimeMax" type="Float"/>
+			<field name="fAbandonTimeMin" type="Float"/>
+			<field name="fAbandonTimeMax" type="Float"/>
+			<field name="fFollowSpeed" type="Float"/>
+			<field name="fFollowVerticalOffset" type="Float"/>
+			<field name="fFollowRange" type="Float"/>
+			<field name="fGoToLKPSpeed" type="Float"/>
+			<field name="fGoToLKPVerticalOffset" type="Float"/>
+			<field name="fGoToLKPNearDistance" type="Float"/>
+			<object name="AlertGuardsBark">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="CombatWarningBark">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+		</object>
+		<object name="DeactivatedRC">
+			<field name="bCanAlertIfNoGuard" type="Boolean"/>
+			<field name="bCanConcludeInCombat" type="Boolean"/>
+			<field name="fWaitForAlertGuardsTimeMin" type="Float"/>
+			<field name="fWaitForAlertGuardsTimeMax" type="Float"/>
+			<field name="fWaitForCombatWarningNoAlertTimeMin" type="Float"/>
+			<field name="fWaitForCombatWarningNoAlertTimeMax" type="Float"/>
+			<field name="fWaitForCombatWarningAfterAlertTimeMin" type="Float"/>
+			<field name="fWaitForCombatWarningAfterAlertTimeMax" type="Float"/>
+			<field name="fWaitForCombatTimeMin" type="Float"/>
+			<field name="fWaitForCombatTimeMax" type="Float"/>
+			<field name="fWaitForCombatTimeNoGuardMin" type="Float"/>
+			<field name="fWaitForCombatTimeNoGuardMax" type="Float"/>
+			<field name="fWaitForNoCombatConclusionTimeMin" type="Float"/>
+			<field name="fWaitForNoCombatConclusionTimeMax" type="Float"/>
+			<field name="fAbandonTimeMin" type="Float"/>
+			<field name="fAbandonTimeMax" type="Float"/>
+			<field name="fFollowSpeed" type="Float"/>
+			<field name="fFollowVerticalOffset" type="Float"/>
+			<field name="fFollowRange" type="Float"/>
+			<field name="fGoToLKPSpeed" type="Float"/>
+			<field name="fGoToLKPVerticalOffset" type="Float"/>
+			<field name="fGoToLKPNearDistance" type="Float"/>
+			<object name="AlertGuardsBark">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+			<object name="CombatWarningBark">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

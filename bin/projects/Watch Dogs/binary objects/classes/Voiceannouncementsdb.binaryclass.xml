@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VoiceannouncementsdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sndPreAnnouncementSound" type="BinHex"/>
+	<field name="sndtpPreAnnouncementSoundType" type="BinHex"/>
+	<field name="bRandomizeSequence" type="Boolean"/>
+	<field name="bLoopSequence" type="Boolean"/>
+	<field name="fMinimumDelayBetweenAnnouncements" type="Float"/>
+	<field name="fMaximumDelayBetweenAnnouncements" type="Float"/>
+	<object name="VoiceAnnouncementsAndTypes">
+		<object name="VoiceAnnouncement">
+			<field name="text_sndSoundId" type="String"/>
+			<field name="sndSoundId" type="BinHex"/>
+			<field name="sndtpSoundType" type="BinHex"/>
+		</object>
+	</object>
+	<object name="OppressedBoroughData">
+		<field name="text_sndOppressedPreAnnouvementSound" type="String"/>
+		<field name="sndOppressedPreAnnouvementSound" type="BinHex"/>
+		<field name="sndtpOppressedPreAnnouvementSoundType" type="BinHex"/>
+		<field name="bOppressedRandomizeSequence" type="Boolean"/>
+		<field name="bOppressedLoop" type="Boolean"/>
+		<field name="fOppressedMinimumDelayBetweenAnnouncements" type="Float"/>
+		<field name="fOppressedMaximumDelayBetweenAnnouncements" type="Float"/>
+		<object name="oppressedVoiceAnnouncementsAndTypes">
+			<object name="VoiceAnnouncement">
+				<field name="text_sndSoundId" type="String"/>
+				<field name="sndSoundId" type="BinHex"/>
+				<field name="sndtpSoundType" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

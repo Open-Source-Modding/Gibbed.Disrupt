@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CensusactormemorydefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsCodeDependent" type="Boolean"/>
+	<field name="selMemoryType" type="Enum"/>
+	<field name="selAffinityChange" type="Enum"/>
+	<field name="selSeverityLevel" type="Enum"/>
+	<field name="selReactionCategory" type="Enum"/>
+	<field name="bIsIndirectMemory" type="Boolean"/>
+	<field name="bCanPropagateToPositiveRelations" type="Boolean"/>
+	<field name="bCanPropagateToRivalRelations" type="Boolean"/>
+	<field name="selUiDisplayOverride" type="Enum"/>
+	<field name="bCanBeAppliedInOnline" type="Boolean"/>
+	<field name="bIsBatchApplied" type="Boolean"/>
+	<object name="AppliedTrigger">
+		<field name="rulesmithidRuleId" type="BinHex"/>
+	</object>
+	<object name="locstridUITemplateForPersonalMemory">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridUITemplateForPersonalMemoryAboutOperative">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="MemoryOverrides">
+		<field name="censusactormemorydefinitionMemoryToOverride" type="BinHex"/>
+		<field name="bMustBePropagatedViaRival" type="Boolean"/>
+		<field name="bMustBePropagatedFromIntrigueTarget" type="Boolean"/>
+		<field name="bRequiresSameParticipants" type="Boolean"/>
+	</object>
+</class>

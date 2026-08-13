@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Extendedprofiler_08537703Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="iEntriesToAssignOnUprez" type="Int32"/>
+	<object name="ExtendedProfilerLibrary">
+		<object name="Category">
+			<field name="sCategoryName" type="String"/>
+			<object name="ProfilerEntries">
+				<object name="Entry">
+					<field name="sDebugString" type="String"/>
+					<object name="Prerequisites">
+						<object name="CensusFilter">
+							<object name="tagcategoryselectionblackboardProfile">
+								<object name="TagCategorySelectionArray">
+									<object name="TagCategorySelection">
+										<field name="text_hid_DTCTH_ClassName" type="String"/>
+										<field name="hid_DTCTH_ClassName" type="BinHex"/>
+										<field name="text_UITagCategorySelectionClassID" type="String"/>
+										<field name="UITagCategorySelectionClassID" type="BinHex"/>
+										<field name="tagcategoryUITagCategory" type="BinHex"/>
+										<field name="tagcategoryTagCategory" type="BinHex"/>
+										<object name="Tags"/>
+									</object>
+								</object>
+								<object name="TagDescriptorUI">
+									<field name="text_hid_DTCTH_ClassName" type="String"/>
+									<field name="hid_DTCTH_ClassName" type="BinHex"/>
+									<object name="TagCategorySelectionDescriptors">
+										<object name="TagCategorySelectionDescriptor">
+											<field name="tagcategoryTagCategory" type="BinHex"/>
+											<field name="bMultiSelect" type="Boolean"/>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object name="RequiredContracts"/>
+						<object name="ExcludedContracts"/>
+						<object name="RequiredAttendances"/>
+						<object name="ExcludedAttendances"/>
+						<object name="RequiredMetaIntrigues"/>
+						<object name="ExcludedMetaIntrigues"/>
+						<object name="RequiredStatuses"/>
+						<object name="ExcludedStatuses"/>
+					</object>
+					<object name="ProfilerTextOptions">
+						<object name="TextOption">
+							<object name="locstridTextOption">
+								<field name="LocalizationId" type="UInt64"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

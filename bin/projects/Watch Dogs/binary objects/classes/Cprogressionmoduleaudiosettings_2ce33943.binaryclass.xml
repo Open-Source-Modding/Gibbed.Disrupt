@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cprogressionmoduleaudiosettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Settings">
+		<object name="Switches">
+			<object name="Switch">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+				<object name="sndswtpType">
+					<field name="SoundId" type="BinHex"/>
+					<field name="SoundGuid" type="String"/>
+				</object>
+				<object name="sndswvlValue">
+					<field name="SoundId" type="BinHex"/>
+					<field name="SoundGuid" type="String"/>
+				</object>
+			</object>
+		</object>
+		<object name="Rtpcs"/>
+		<object name="States">
+			<object name="State">
+				<field name="text_Name" type="String"/>
+				<field name="Name" type="BinHex"/>
+				<object name="sndstgrGroup">
+					<field name="SoundId" type="BinHex"/>
+					<field name="SoundGuid" type="String"/>
+				</object>
+				<object name="sndstvlValue">
+					<field name="SoundId" type="BinHex"/>
+					<field name="SoundGuid" type="String"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

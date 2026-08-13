@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MissionlistParameters">
+	<inherit name="SharedParameters"/>
+	<object name="MissionDescriptor">
+		<object name="CorePropertiesCategory">
+			<object name="MissionProperties">
+				<field name="text_coreMissionPropertiesType" type="String"/>
+				<field name="coreMissionPropertiesType" type="BinHex"/>
+				<object name="Values">
+					<field name="fileMissionActivationDominoScript" type="String"/>
+					<field name="fileMissionDeactivationDominoScript" type="String"/>
+					<field name="bIsSideQuest" type="Boolean"/>
+					<field name="bIsAvailableWithFelony" type="Boolean"/>
+					<field name="itemlistsRewardForCheat" type="BinHex"/>
+					<field name="bIsAvailableDuringInvasion" type="Boolean"/>
+					<field name="uiMissionAct" type="UInt32" />
+					<field name="bIsAvailableDuringPills" type="Boolean"/>
+					<field name="bIsAvailableDuringCompanionSearch" type="Boolean"/>
+					<object name="HubsUnlockedAtTheEndOfThisMission">
+						<object name="HubEntity">
+							<field name="entHubEntity" type="BinHex"/>
+						</object>
+					</object>
+					<field name="bAutoJoin" type="Boolean"/>
+					<object name="locstridMissionJoinedMessageId"/>
+					<field name="sWorldName" type="String"/>
+					<field name="fileMissionDominoScript" type="String"/>
+					<field name="bAutoStart" type="Boolean"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bSupportsDirector" type="Boolean"/>
+					<object name="locstridMissionName">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="MiscPropertiesCategory">
+			<object name="MissionProperties">
+				<field name="text_coreMissionPropertiesType" type="String"/>
+				<field name="coreMissionPropertiesType" type="BinHex"/>
+				<field name="text_miscMissionPropertiesType" type="String"/>
+				<field name="miscMissionPropertiesType" type="BinHex"/>
+				<object name="Values">
+					<object name="MissionCriteria">
+						<object name="MissionCriteriaGroup">
+							<object name="MissionCriteria">
+								<field name="text_criteriaMissionCriteriaType" type="String"/>
+								<field name="criteriaMissionCriteriaType" type="BinHex"/>
+								<object name="CriteriaParameters">
+									<field name="missionlistMissionID" type="BinHex"/>
+									<field name="accessidRequiredId" type="BinHex"/>
+									<object name="BranchMissionFinished">
+										<object name="Mission">
+											<field name="missionlistMissionID" type="BinHex"/>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+					<field name="fileMissionActivationDominoScript" type="BinHex"/>
+					<field name="fileMissionDeactivationDominoScript" type="BinHex"/>
+					<field name="bIsSideQuest" type="Boolean"/>
+					<field name="bIsAvailableWithFelony" type="Boolean"/>
+					<field name="itemlistsRewardForCheat" type="BinHex"/>
+					<field name="bIsAvailableDuringInvasion" type="Boolean"/>
+					<field name="bIsAvailableDuringPills" type="Boolean"/>
+					<field name="bIsAvailableDuringCompanionSearch" type="Boolean"/>
+					<object name="HubsUnlockedAtTheEndOfThisMission"/>
+					<field name="bAutoJoin" type="Boolean"/>
+					<object name="locstridMissionJoinedMessageId"/>
+					<field name="sWorldName" type="String"/>
+					<field name="fileMissionDominoScript" type="String"/>
+					<field name="bAutoStart" type="Boolean"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bSupportsDirector" type="Boolean"/>
+					<object name="locstridMissionName">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+					<field name="selMissionType" type="Enum"/>
+					<object name="Checkpoints">
+						<object name="Checkpoint">
+							<field name="bDefaultCheckpoint" type="Boolean"/>
+							<field name="sCheckpointName" type="String"/>
+							<field name="entStartSpawnPointId" type="BinHex"/>
+							<field name="bPlayGoReloadable" type="BinHex"/>
+							<field name="bWaitHighResResources" type="BinHex"/>
+						</object>
+					</object>
+					<field name="fDenunciatorProbabilityFactor" type="Float"/>
+					<field name="text_trackingcontextTrackingContext" type="String"/>
+					<field name="trackingcontextTrackingContext" type="BinHex"/>
+					<field name="bIsMobAmbush" type="Boolean"/>
+					<field name="gpctxspecGameplayContext" type="BinHex"/>
+					<field name="gpctxspecGameplayContext_CurrentGen" type="BinHex"/>
+					<field name="entQuitSpawnPointId" type="BinHex"/>
+					<field name="itemlistsRewardList" type="BinHex"/>
+					<field name="accessidRequiredAccessId" type="BinHex"/>
+					<field name="accessidCompletedAccessId" type="BinHex"/>
+					<field name="accessidUlcAccessId" type="BinHex"/>
+					<object name="locstridRelatedConversation">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+					<object name="locstridJournalNarrativeDescription">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+					<object name="locstridJournalObjectiveDescription">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+					<field name="bCanPlayerPropose" type="Boolean"/>
+					<field name="fCancelCountdownTime" type="Float"/>
+					<field name="fStartCountdownTime" type="Float"/>
+					<field name="iMinPlayers" type="Int64"/>
+					<field name="iMaxPlayers" type="Int64"/>
+					<field name="sndProposalSound" type="BinHex"/>
+					<field name="sndProposalCancelSound" type="BinHex"/>
+					<field name="iMaxNumberInstancePerSession" type="Int64"/>
+					<field name="fileDominoActivationScript" type="String"/>
+					<object name="UnlockingRules">
+						<field name="selRulesOperator" type="Enum"/>
+						<object name="UnlockingRules">
+							<object name="UnlockingRule">
+								<field name="text_tunlockingruleRuleType" type="String"/>
+								<field name="tunlockingruleRuleType" type="BinHex"/>
+								<object name="RuleParameters">
+									<field name="missionlistMissionRequired" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+					</object>
+					<field name="ContractPosition" type="BinHex"/>
+					<field name="selContractType" type="Enum"/>
+					<field name="entStartSpawnPointId" type="BinHex"/>
+					<field name="text_archStartSpawnPointType" type="String"/>
+					<field name="archStartSpawnPointType" type="BinHex"/>
+					<field name="bTryToTeleportOnJoined" type="Boolean"/>
+					<field name="sMissionObjectiveIcon" type="String"/>
+					<field name="bUsePhoneCall" type="Boolean"/>
+					<field name="sndMessageSound" type="BinHex"/>
+					<field name="sndMissionWinSound" type="BinHex"/>
+					<field name="sndMissionLoseSound" type="BinHex"/>
+					<field name="sndMissionCancelSound" type="BinHex"/>
+					<object name="locstridMissionObjectiveId">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+					<object name="locstridMissionObjectiveShortId">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+					<object name="locstridMissionOptionalInfoId">
+						<field name="LocalizationId" type="Int64"/>
+					</object>
+					<object name="JoinPhoneCall">
+						<field name="sndPhoneCallSound" type="BinHex"/>
+						<object name="locstridHeaderText">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+						<object name="locstridLineText">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+						<object name="sCaller">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+					</object>
+					<object name="SuccessPhoneCall">
+						<field name="sndPhoneCallSound" type="BinHex"/>
+						<object name="locstridHeaderText">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+						<object name="locstridLineText">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+						<object name="sCaller">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+					</object>
+					<object name="FailurePhoneCall">
+						<field name="sndPhoneCallSound" type="BinHex"/>
+						<object name="locstridHeaderText">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+						<object name="locstridLineText">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+						<object name="sCaller">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+					</object>
+					<field name="uiMoneyOnSuccess" type="Int64"/>
+					<field name="uiMoneyOnFailure" type="Int64"/>
+					<field name="uiCharacterLevelPointsOnSuccess" type="Int64"/>
+					<field name="uiCharacterLevelPointsOnFailure" type="Int64"/>
+					<object name="MissionOutcomeRewardSettings">
+					<object name="MissionOutcomeReward">
+					    <field name="selOutcomeType" type="Enum"/>
+					    <field name="fPlayerNotorietyContributionFactor" type="Float"/>
+					    <field name="uiMissionNotorietyContribution" type="UInt32"/>
+					    <field name="bIsWinner" type="Boolean"/>
+					</object>
+					</object>
+					<object name="MissionTags">
+						<object name="MissionTag">
+							<field name="text_selTag" type="String"/>
+							<field name="selTag" type="BinHex"/>
+						</object>
+					</object>
+					<object name="PortalFlowData">
+						<field name="text_MPPortalMission" type="String"/>
+						<field name="MPPortalMission" type="BinHex"/>
+						<field name="bIsInvasionFlow" type="Boolean"/>
+						<object name="FromSPtoMP">
+							<field name="text_SPTransOutPortalMission" type="String"/>
+							<field name="SPTransOutPortalMission" type="BinHex"/>
+							<field name="text_MPTransInPortalMission" type="String"/>
+							<field name="MPTransInPortalMission" type="BinHex"/>
+						</object>
+						<object name="FromMPtoSP">
+							<field name="text_MPTransOutPortalMission" type="String"/>
+							<field name="MPTransOutPortalMission" type="BinHex"/>
+							<field name="text_SPTransInPortalMission" type="String"/>
+							<field name="SPTransInPortalMission" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="TypePropertiesCategory">
+			<field name="text_typeMissionPropertiesType" type="String"/>
+			<field name="typeMissionPropertiesType" type="BinHex"/>
+			<object name="Values">
+				<field name="fileMissionActivationDominoScript" type="BinHex"/>
+				<field name="fileMissionDeactivationDominoScript" type="BinHex"/>
+				<field name="bIsSideQuest" type="Boolean"/>
+				<field name="bIsAvailableWithFelony" type="Boolean"/>
+				<field name="itemlistsRewardForCheat" type="BinHex"/>
+				<field name="bIsAvailableDuringInvasion" type="Boolean"/>
+				<field name="bIsAvailableDuringPills" type="Boolean"/>
+				<field name="bIsAvailableDuringCompanionSearch" type="Boolean"/>
+				<object name="HubsUnlockedAtTheEndOfThisMission"/>
+				<field name="bAutoJoin" type="Boolean"/>
+				<object name="locstridMissionJoinedMessageId"/>
+				<field name="sWorldName" type="String"/>
+				<field name="fileMissionDominoScript" type="String"/>
+				<field name="bAutoStart" type="Boolean"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bSupportsDirector" type="Boolean"/>
+				<object name="locstridMissionName">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+				<field name="selMissionContactType" type="Enum"/>
+				<field name="bShowInPDA" type="Boolean"/>
+				<field name="fileListingsImage" type="String"/>
+				<field name="fileDescriptionImage" type="String"/>
+				<object name="locstridMissionInfo">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+				<object name="Rewards">
+					<field name="selMissionTimerType" type="Enum"/>
+					<object name="Bronze">
+						<field name="iRewardTime" type="Int64"/>
+						<field name="itemlistsRewardItem" type="BinHex"/>
+					</object>
+					<object name="Silver">
+						<field name="iRewardTime" type="Int64"/>
+						<field name="itemlistsRewardItem" type="BinHex"/>
+					</object>
+					<object name="Gold">
+						<field name="iRewardTime" type="Int64"/>
+						<field name="itemlistsRewardItem" type="BinHex"/>
+					</object>
+				</object>
+				<field name="personalcontractassassinationmissionconfigConfig" type="BinHex"/>
+				<field name="personalcontractassassinationmissionlayoutLayout" type="BinHex"/>
+				<field name="decryptioncombatconfigConfig" type="BinHex"/>
+				<field name="decryptioncombatlayoutLayout" type="BinHex"/>
+				<field name="portalhordeconfigConfig" type="BinHex"/>
+				<field name="portalhordelayoutLayout" type="BinHex"/>
+				<field name="gridraceconfigConfig" type="BinHex"/>
+				<field name="gridracelayoutLayout" type="BinHex"/>
+				<field name="webtvtconfigConfig" type="BinHex"/>
+				<field name="webtvtlayoutLayout" type="BinHex"/>
+				<field name="portalhackingconfigConfig" type="BinHex"/>
+				<field name="genericlayoutLayout" type="BinHex"/>
+				<field name="prototypeconfigConfig" type="BinHex"/>
+				<field name="prototypelayoutLayout" type="BinHex"/>
+				<field name="operatorconfigConfig" type="BinHex"/>
+				<field name="operatorlayoutLayout" type="BinHex"/>
+				<field name="iDetectionRadiusSquared" type="Int32"/>
+				<field name="selChallengeType" type="BinHex"/>
+				<object name="Stats">
+					<object name="Stat">
+						<field name="selStatID" type="BinHex"/>
+						<object name="Data">
+							<object name="Data">
+								<field name="DataContext" type="BinHex"/>
+								<field name="selDataID" type="BinHex"/>
+								<field name="iTargetValue" type="Int64"/>
+								<field name="iUIMinimumValue" type="Int64"/>
+								<field name="iUIUpdateRate" type="Int64"/>
+								<field name="bAlwaysUpdateNextValue" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<field name="sclconfigConfig" type="BinHex"/>
+				<field name="scllayoutLayout" type="BinHex"/>
+				<field name="sclmissionparamsMissionParameters" type="BinHex"/>
+				<field name="bIsInGangsWarCycling" type="Boolean"/>
+				<field name="missiondlccoopconfigConfig" type="BinHex"/>
+				<field name="missiondlccooplayoutLayout" type="BinHex"/>
+				<field name="genericconfigConfig" type="BinHex"/>
+				<field name="chicagowaveconfigConfig" type="BinHex"/>
+				<field name="chicagowavelayoutLayout" type="BinHex"/>
+				<field name="selMissionTriggerType" type="Enum"/>
+				<field name="selMissionType" type="Enum"/>
+				<field name="selUnlockType" type="Enum"/>
+				<field name="selLocationType" type="Enum"/>
+				<field name="selGoonType" type="Enum"/>
+				<field name="selDistanceType" type="Enum"/>
+				<field name="hackctosboxesconfigConfig" type="BinHex"/>
+				<field name="hackctosboxeslayoutLayout" type="BinHex"/>
+				<field name="selPortalContractType" type="Enum"/>
+				<field name="ugcconfigConfig" type="BinHex"/>
+				<field name="ugclayoutLayout" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

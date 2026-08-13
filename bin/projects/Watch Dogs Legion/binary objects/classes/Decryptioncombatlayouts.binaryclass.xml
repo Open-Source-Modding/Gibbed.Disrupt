@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DecryptioncombatlayoutsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="MissionLayerName" type="String"/>
+	<field name="vectorZoneCentrePoint" type="Vector3"/>
+	<field name="entPackageSpawnPointEntity" type="BinHex"/>
+</class>

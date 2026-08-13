@@ -1,0 +1,5 @@
+<file name="xa01m01_sc50_scr_dispatchconversation" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

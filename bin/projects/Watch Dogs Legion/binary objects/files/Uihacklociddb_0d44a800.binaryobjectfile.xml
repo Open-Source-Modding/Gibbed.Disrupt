@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Uihacklociddb_0d44a800">
+	<object name="obj">
+		<inherit name="Uihacklociddb_0d44a800Parameters"/>
+	</object>
+</file>

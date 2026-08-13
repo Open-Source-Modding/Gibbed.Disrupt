@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Opsglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="OpTypeBehaviors">
+		<object name="LeverageOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="OpLineOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="StandAloneOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="FAAOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="PublicEventOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="RaidOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="X404Ops">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="RevengeOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="OnlineBreadcrumbingOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="DynamicEventsOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="OnlineCoopOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="OnlineQuickOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="OnlineStoryOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="BoroughUprisingOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+		<object name="BoroughUprisingActivityOps">
+			<field name="selProductionStatus" type="Enum"/>
+			<field name="bIsAllowedInSinglePlayer" type="Boolean"/>
+			<field name="bIsRepeatable" type="Boolean"/>
+			<field name="bBypassesOpDiscovery" type="Boolean"/>
+			<field name="bShowOpUpdatedNotification" type="Boolean"/>
+			<field name="bIsClientExclusive" type="Boolean"/>
+			<field name="bSuspendedUntilFirstTrack" type="Boolean"/>
+			<field name="selUIOpType" type="Enum"/>
+			<field name="uMaxNrOpsOfThisType" type="BinHex"/>
+			<field name="uMaxNrOpsInstanceOfThisType" type="BinHex"/>
+			<object name="locstridMissionsAppSubCategoryName">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="locstridOpStartCelebrationTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+		</object>
+	</object>
+	<object name="NearbyOps">
+		<field name="fNearbyOpCheckingDistance" type="Float"/>
+		<field name="fNearbyOpUntrackTimeoutDuration" type="Float"/>
+		<field name="fNearbyOpInRangeTimerDuration" type="Float"/>
+		<field name="fNearbyOpSameObjectiveTimeoutDuration" type="Float"/>
+	</object>
+	<object name="LeverageOpsConfiguration">
+		<field name="censusactormemorydefinitionDebugRecruitingMemoryDef" type="BinHex"/>
+	</object>
+	<object name="X404OpsConfiguration">
+		<object name="locstridX404MainSwitchEntryText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="RequiredX404MainSwitchTags">
+			<object name="Tag">
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+		<object name="DisallowedX404MainSwitchTags"/>
+	</object>
+	<object name="RevengeOpsConfiguration">
+		<field name="fRevengeOpGlobalCooldownDuration" type="Float"/>
+		<field name="fRevengeOpPerOpCooldownDuration" type="Float"/>
+		<field name="fRevengeOpErrorCooldownDuration" type="Float"/>
+		<field name="uMinNrAvailableOperatives" type="BinHex"/>
+		<field name="uNrOperativesPerMaxRunningRevengeOp" type="BinHex"/>
+		<object name="locstridFallbackMemoryDescriptionText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="OpContracts">
+		<field name="censuscontractdefinitionDefaultOpContractDef" type="BinHex"/>
+	</object>
+	<object name="DGSceneAttendances">
+		<field name="censuscontractdefinitionDefaultDGSceneContractDef" type="BinHex"/>
+		<field name="censusattendancedefinitionDefaultDGSceneAttendanceDef" type="BinHex"/>
+	</object>
+	<object name="OpUI">
+		<field name="fFreeroamObjectiveRange" type="Float"/>
+		<field name="fVerticalTagIconOffset" type="Float"/>
+		<field name="fInitialObjectiveDelay" type="Float"/>
+		<field name="fObjectiveHighlightAreaXMin" type="Float"/>
+		<field name="fObjectiveHighlightAreaXMax" type="Float"/>
+		<field name="fObjectiveHighlightAreaYMin" type="Float"/>
+		<field name="fObjectiveHighlightAreaYMax" type="Float"/>
+		<field name="uimissionappvillainviewdataDefaultMissionsAppVillainViewData" type="BinHex"/>
+		<object name="ShouldAnotherOpBeTrackedWhenOpEnds">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="PlayerAttention">
+		<field name="fNearTrackedOpObjectiveDistance" type="Float"/>
+	</object>
+	<object name="GameCompleted">
+		<object name="IsGameCompletedRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object name="FlatlinedOp">
+		<field name="opglobaldynamicactorFlatlinedGlobalDynamicActor" type="BinHex"/>
+	</object>
+	<object name="MissionSoftQuit">
+		<field name="missionsoftquitmanagerparametersMissionSoftQuitManagerDefaultData" type="BinHex"/>
+	</object>
+	<object name="IOP">
+		<field name="fIOPBinkLength" type="Float"/>
+	</object>
+	<object name="OperativeSwapTalkerSceneConversation">
+		<field name="conversationinteractionConversationSettings" type="BinHex"/>
+	</object>
+	<object name="History">
+		<field name="nMaxLOPLocationHistorySize" type="Enum"/>
+		<field name="nMaxOpLineOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxFAALocationHistorySize" type="Enum"/>
+		<field name="nMaxPublicEventOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxRaidOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxX404OpLocationHistorySize" type="Enum"/>
+		<field name="nMaxStandAloneOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxRevengeOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxOnlineBreadcrumbingOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxDynamicEventOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxOnlineCoopOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxOnlineQuickOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxOnlineStoryOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxBoroughUprisingOpLocationHistorySize" type="Enum"/>
+		<field name="nMaxBoroughUprisingActivityOpLocationHistorySize" type="Enum"/>
+	</object>
+</class>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Plasmamadstagedb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DefaultStage">
+		<field name="text_Name" type="String"/>
+		<field name="Name" type="BinHex"/>
+		<field name="plasmabucketDefaultCameraBucket" type="BinHex"/>
+		<object name="StageSlots">
+			<object name="slot">
+				<field name="selSlot" type="Enum"/>
+				<object name="Templates">
+					<object name="templates">
+						<field name="plasmacriteriaCriteria" type="BinHex"/>
+						<object name="Templates">
+							<object name="plasmatemplateTemplate">
+								<field name="plasmatemplateTemplate" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Stages">
+		<object name="Stage">
+			<field name="text_Name" type="String"/>
+			<field name="Name" type="BinHex"/>
+			<field name="plasmabucketDefaultCameraBucket" type="BinHex"/>
+			<object name="StageSlots">
+				<object name="slot">
+					<field name="selSlot" type="Enum"/>
+					<object name="Templates">
+						<object name="templates">
+							<field name="plasmacriteriaCriteria" type="BinHex"/>
+							<object name="Templates">
+								<object name="plasmatemplateTemplate">
+									<field name="plasmatemplateTemplate" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

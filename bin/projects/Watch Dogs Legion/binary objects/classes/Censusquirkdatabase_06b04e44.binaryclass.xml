@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Censusquirkdatabase_06b04e44Parameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<object name="ForcedQuirks">
+		<object name="CensusQuirkData">
+			<field name="progressionquirkQuirkName" type="BinHex"/>
+			<field name="uiAssignmentWeighting" type="BinHex"/>
+			<object name="IncludeFilters">
+				<object name="IncludeFilter">
+					<object name="tagcategoryselectionblackboardProfile">
+						<object name="TagCategorySelectionArray">
+							<object name="TagCategorySelection">
+								<field name="hid_DTCTH_ClassName" type="BinHex"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<object name="Tags">
+								</object>
+							</object>
+						</object>
+						<object name="TagDescriptorUI">
+							<field name="hid_DTCTH_ClassName" type="BinHex"/>
+							<object name="TagCategorySelectionDescriptors">
+								<object name="TagCategorySelectionDescriptor">
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="bMultiSelect" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ExcludeFilter">
+				<object name="tagcategoryselectionblackboardProfile">
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Quirks">
+		<object name="CensusQuirkData">
+			<field name="progressionquirkQuirkName" type="BinHex"/>
+			<field name="uiAssignmentWeighting" type="BinHex"/>
+			<object name="IncludeFilters">
+			</object>
+			<object name="ExcludeFilter">
+				<object name="tagcategoryselectionblackboardProfile">
+					<object name="TagCategorySelectionArray">
+						<object name="TagCategorySelection">
+							<field name="hid_DTCTH_ClassName" type="BinHex"/>
+							<field name="UITagCategorySelectionClassID" type="BinHex"/>
+							<field name="tagcategoryUITagCategory" type="BinHex"/>
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<object name="Tags">
+							</object>
+						</object>
+					</object>
+					<object name="TagDescriptorUI">
+						<field name="hid_DTCTH_ClassName" type="BinHex"/>
+						<object name="TagCategorySelectionDescriptors">
+							<object name="TagCategorySelectionDescriptor">
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="bMultiSelect" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

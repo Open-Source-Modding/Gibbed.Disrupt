@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RoadintersectiondefParameters">
+	<field name="disNomadObjectId" type="BinHex"/>
+	<field name="hidSingleObject" type="Boolean"/>
+	<field name="hidKey" type="BinHex"/>
+	<field name="hidValidationFailed" type="Boolean"/>
+	<field name="text_hidName" type="String"/>
+	<field name="hidName" type="BinHex"/>
+	<field name="bLegacy" type="Boolean"/>
+	<object name="FilletProp">
+		<field name="uiNumberOfSplines" type="BinHex"/>
+		<object name="PointChainLeft">
+			<object name="Points">
+				<object name="Point">
+					<field name="disPointName" type="String"/>
+					<field name="fDistanceFromIntersection" type="Float"/>
+					<field name="fPointTangent" type="Float"/>
+					<field name="fCrosswalkAnchor2" type="Float"/>
+					<field name="bUsePrioritySplineElements" type="Boolean"/>
+					<field name="bLowerSidewalk2" type="Boolean"/>
+					<object name="MaterialOverride">
+						<object name="MaterialSlots">
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="PointChainRight">
+			<object name="Points">
+				<object name="Point">
+					<field name="disPointName" type="String"/>
+					<field name="fDistanceFromIntersection" type="Float"/>
+					<field name="fPointTangent" type="Float"/>
+					<field name="fCrosswalkAnchor2" type="Float"/>
+					<field name="bUsePrioritySplineElements" type="Boolean"/>
+					<field name="bLowerSidewalk2" type="Boolean"/>
+					<object name="MaterialOverride">
+						<object name="MaterialSlots">
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="CrossProp">
+		<object name="Crosswalks">
+			<object name="Crosswalk">
+				<field name="selRoad" type="BinHex"/>
+				<field name="bStayOrthogonalToRoad" type="Boolean"/>
+				<field name="bExtendExtremity2" type="Boolean"/>
+				<field name="fExtendExtremityDistance" type="Float"/>
+				<object name="LoftInfos">
+					<object name="LoftInfo">
+						<field name="splineloftLoftElement" type="BinHex"/>
+						<field name="vectorPositionOffset" type="BinHex"/>
+						<field name="selStartAlign" type="BinHex"/>
+						<field name="selEndAlign" type="BinHex"/>
+						<field name="fStartDist" type="Float"/>
+						<field name="fEndDist" type="Float"/>
+					</object>
+				</object>
+				<object name="Deformation">
+					<field name="bEnableLowerSidewalkForIntersectionCrosswalk" type="Boolean"/>
+					<object name="LowerSidewalkInfoForIntersectionCrosswalk">
+						<field name="fInnerFalloff" type="Float"/>
+						<field name="fInnerMorphDist" type="Float"/>
+						<field name="fInnerInfluenceRadius2" type="Float"/>
+						<field name="fWidth" type="Float"/>
+						<field name="fBorderFalloffDist" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="SpawnProp">
+		<object name="SpawnInfos">
+			<object name="SpawnInfo">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="selRoad" type="BinHex"/>
+				<field name="selSpawnLocation" type="BinHex"/>
+				<field name="vectorPositionOffset" type="Vector3"/>
+				<field name="angvecAngleOffset" type="Vector3"/>
+				<field name="bUseCrosswalkOrientation2" type="Boolean"/>
+				<field name="bStayVertical" type="Boolean"/>
+				<field name="archArchetypeToSpawn" type="BinHex"/>
+				<field name="prefabPrefabToSpawn" type="String"/>
+				<field name="text_fileProxyObject" type="String"/>
+				<field name="fileProxyObject" type="BinHex"/>
+				<field name="bSpawnOnClosed" type="Boolean"/>
+				<field name="fFilletPosT" type="Float"/>
+				<field name="bUseFilletOrientation" type="Boolean"/>
+				<field name="text_archArchetypeToSpawn" type="String"/>
+				<field name="selLogicType" type="BinHex"/>
+				<field name="fStartOffsetDist" type="Float"/>
+				<field name="fEndOffsetDist" type="Float"/>
+				<field name="fInBetweenDist" type="Float"/>
+				<field name="sRandomSeed" type="BinHex"/>
+				<field name="bSpawnExtremity" type="Boolean"/>
+				<object name="EntityOverrideBehavior">
+					<field name="bAllowOverride" type="Boolean"/>
+					<field name="folder" type="BinHex"/>
+					<field name="fSearchRadius" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="LogicProp">
+		<field name="selType" type="BinHex"/>
+		<field name="uiNumberOfSplines" type="BinHex"/>
+		<field name="bAutomatic" type="Boolean"/>
+		<field name="fCrosswalkExtraDistance" type="Float"/>
+		<field name="fParkingExtraDistance" type="Float"/>
+		<field name="fVehicleStopExtraDistance" type="Float"/>
+		<field name="bForceUseExtraDistance" type="Boolean"/>
+		<field name="bEnableParkingAtTJunctions" type="Boolean"/>
+		<field name="fTJunctionParallelAngleLimitDegrees" type="Float"/>
+		<field name="fTJunctionPerpendicularAngleLimitDegrees" type="Float"/>
+		<field name="bUseDifferentCycleForOppositeLanes" type="Boolean"/>
+		<field name="bEnableCrosswalkSnapping" type="Boolean"/>
+		<field name="bHasMainRoadPriority" type="Boolean"/>
+		<object name="ForbiddenLanes">
+		</object>
+		<object name="AdditionalLanes">
+		</object>
+		<object name="MainIn">
+			<field name="disName" type="String"/>
+			<field name="fDistance" type="Float"/>
+			<field name="fRotation" type="Float"/>
+		</object>
+		<object name="MainOut">
+			<field name="disName" type="String"/>
+			<field name="fDistance" type="Float"/>
+			<field name="fRotation" type="Float"/>
+		</object>
+		<object name="Lefts">
+			<object name="Left">
+				<field name="disName" type="String"/>
+				<field name="fDistance" type="Float"/>
+				<field name="fRotation" type="Float"/>
+			</object>
+		</object>
+		<object name="Rights">
+			<object name="Right">
+				<field name="disName" type="String"/>
+				<field name="fDistance" type="Float"/>
+				<field name="fRotation" type="Float"/>
+			</object>
+		</object>
+	</object>
+</class>

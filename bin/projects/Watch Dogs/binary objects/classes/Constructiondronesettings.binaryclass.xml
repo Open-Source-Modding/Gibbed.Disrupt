@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ConstructiondronesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMinHealthRatioToOperate" type="Float"/>
+	<object name="PickUpAndDropState">
+		<field name="fMoveToPickableNearTolerance" type="Float"/>
+		<field name="fMoveToDropPointNearTolerance" type="Float"/>
+		<field name="fMoveOverPickableOffset" type="Float"/>
+		<field name="fMoveDownSpeed" type="Float"/>
+		<field name="fAttachDetachDuration" type="Float"/>
+		<field name="fRoadAvoidanceElevation" type="Float"/>
+		<field name="fDefaultAvoidanceElevation" type="Float"/>
+		<field name="fWaitAfterAttachDetachDuration" type="Float"/>
+		<field name="fWaitForNewSubStateMinDuration" type="Float"/>
+		<field name="fWaitForNewSubStateMaxDuration" type="Float"/>
+		<field name="fPickableMoveToleranceIfFar" type="Float"/>
+		<field name="fPickableMoveToleranceIfNear" type="Float"/>
+		<object name="curveMoveToPickableSpeedCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveMoveToDropPointSpeedCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

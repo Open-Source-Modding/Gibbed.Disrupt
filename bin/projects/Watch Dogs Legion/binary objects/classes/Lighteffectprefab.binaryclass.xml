@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LighteffectprefabParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileTexture" type="String"/>
+	<field name="fileTexture" type="BinHex"/>
+	<field name="selType" type="Enum"/>
+	<field name="hidType" type="BinHex"/>
+	<field name="fSizeX" type="Float"/>
+	<field name="fSizeY" type="Float"/>
+	<field name="selSizeType" type="Enum"/>
+	<field name="bSmoothDepth" type="Boolean"/>
+	<field name="fVisibilitySize" type="Float"/>
+	<field name="fVisibilityBlendRate" type="Float"/>
+	<field name="bHighPrecisionVisibilityTest" type="Boolean"/>
+	<field name="fScaleNoise" type="Float"/>
+	<field name="fFadeAngle" type="Float"/>
+	<field name="fFadeAngleCurveExponent" type="Float"/>
+	<field name="fLookAtFadeAngle" type="Float"/>
+	<field name="fLookAtFadeAngleCurveExponent" type="Float"/>
+	<field name="clrColor" type="VectorColor"/>
+	<field name="fIntensity" type="Float"/>
+	<field name="fRelativeIntensity" type="Float"/>
+	<field name="fFadeDistance" type="Float"/>
+	<field name="uiTextureSliceCount" type="UInt32"/>
+	<field name="iNumFlareElements" type="Int32"/>
+	<field name="bDirectional" type="Boolean"/>
+	<field name="bUseLightColour" type="Boolean"/>
+	<field name="bUseLightDistanceFade" type="Boolean"/>
+	<field name="bUseLightIntensity" type="Boolean"/>
+	<field name="bAffectedByTimeOfDay" type="Boolean"/>
+	<field name="uiLightIntensityCurveIndex" type="UInt32"/>
+	<field name="bSmoothTimeOfDayFade" type="Boolean"/>
+	<field name="fMinTimeOfDayFadeIntensity" type="Float"/>
+	<field name="bNeedsElectricPower" type="Boolean"/>
+	<field name="bHasElectricBackup" type="Boolean"/>
+	<object name="curveSizeScaleCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="OffsetToCamera">
+		<field name="fMinOffset" type="Float"/>
+		<field name="fMaxOffset" type="Float"/>
+		<field name="fMinDistance" type="Float"/>
+		<field name="fMaxDistance" type="Float"/>
+	</object>
+	<object name="Rain">
+		<field name="bRainLightEnabled" type="Boolean"/>
+		<field name="bRainFogCone" type="Boolean"/>
+		<field name="bRainUseQuadraticAttenuation" type="Boolean"/>
+		<field name="angRainFalloffAngle" type="Float"/>
+		<field name="fRainOffset" type="Float"/>
+		<field name="fRainFalloffDistance" type="Float"/>
+		<field name="fRainLightIntensity" type="Float"/>
+		<field name="fSpotLightFogIntensity" type="Float"/>
+		<field name="fBeamHighlightSeparationIntensity" type="Float"/>
+		<field name="fBeamHighlightSeparationThreshold" type="Float"/>
+		<field name="fBeamHighlightSeparationFalloff" type="Float"/>
+		<field name="angRainVerticalRotation" type="Float"/>
+	</object>
+	<object name="curveIntensityCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="FlareElements">
+		<object name="FlareElement">
+			<field name="vector2Scale" type="Vector2"/>
+			<field name="fScaleMin" type="Float"/>
+			<field name="fScaleMinThreshold" type="Float"/>
+			<field name="fOffset" type="Float"/>
+			<field name="iTextureSliceIndex" type="Int32"/>
+			<field name="vectorColor" type="Vector3"/>
+			<field name="fRotationXAmount" type="Float"/>
+			<field name="fRotationYAmount" type="Float"/>
+			<field name="fFadeAngle" type="Float"/>
+			<field name="fLookAtFadeAngle" type="Float"/>
+		</object>
+	</object>
+</class>

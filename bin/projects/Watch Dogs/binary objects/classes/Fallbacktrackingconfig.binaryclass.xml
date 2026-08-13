@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FallbacktrackingconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxFallbackRatio" type="Float"/>
+	<object hash="EEC96444">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="99CE54D2">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="00C70568">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="77C035FE">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="E9A4A05D">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="9EA390CB">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="07AAC171">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="70ADF1E7">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="E012EC76">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="9715DCE0">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="9C9FA28D">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+	<object hash="EB98921B">
+		<field name="fMinTrueTime" type="Float"/>
+		<field name="fMaxTrueTime" type="Float"/>
+		<field name="fMinFalseTime" type="Float"/>
+		<field name="fMaxFalseTime" type="Float"/>
+		<object name="ShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="OnAdoptShouldFallback">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

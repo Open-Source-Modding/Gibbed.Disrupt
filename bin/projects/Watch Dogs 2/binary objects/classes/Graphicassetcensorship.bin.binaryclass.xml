@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Graphicassetcensorship.binParameters">
+	<object name="AssetSwapArray">
+		<object name="AssetSwap">
+			<field name="text_SrcAsset" type="BinHex"/>
+			<field name="SrcAsset" type="BinHex"/>
+			<field name="text_DstAsset" type="BinHex"/>
+			<field name="DstAsset" type="BinHex"/>
+			<field name="bInPreload" type="BinHex"/>
+		</object>
+	</object>
+</class>

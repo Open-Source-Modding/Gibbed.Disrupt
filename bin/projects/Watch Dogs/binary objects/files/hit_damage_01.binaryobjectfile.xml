@@ -1,0 +1,5 @@
+<file name="hit_damage_01" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

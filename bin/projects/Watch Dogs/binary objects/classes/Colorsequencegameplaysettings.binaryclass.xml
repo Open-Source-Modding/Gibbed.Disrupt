@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ColorsequencegameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ColorSequenceData">
+		<field name="fDisplayColorTime" type="Float"/>
+		<field name="iSequenceLength" type="Int32"/>
+		<field name="fCompleteSequenceInputMaxDelay" type="Float"/>
+		<field name="fSequenceInputMaxDelay" type="Float"/>
+		<field name="fRestartSequenceDisplayDelay" type="Float"/>
+		<field name="fDroneForceExitDelay" type="Float"/>
+		<field name="fGameplayCompletedDelay" type="Float"/>
+		<field name="entResetEntityID" type="BinHex"/>
+		<field name="entSequenceDisplayEntityId" type="BinHex"/>
+		<field name="fWarningDuration" type="Float"/>
+		<field name="entObjectiveMarkerEntity" type="BinHex"/>
+		<object name="SequenceColors">
+			<object name="Color">
+				<field name="colorColor" type="VectorColor"/>
+			</object>
+		</object>
+		<object name="SequenceEntitieIDs"/>
+		<object name="LockedEntitieIDs"/>
+		<object name="locstridSequenceSuccessLogTitleLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSequenceSuccessLogMessageLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSequenceSuccessDisplay1LocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSequenceSuccessDisplay2LocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSequenceBadInputTitleLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridSequenceBadInputMsgLocId">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="ObjectiveMarkerHighlightEntities">
+			<object name="EntityId">
+				<field name="entEntityID" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

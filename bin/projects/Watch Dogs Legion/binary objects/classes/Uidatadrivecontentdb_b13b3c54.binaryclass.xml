@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uidatadrivecontentdb_b13b3c54Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DataDriveObjectsMap">
+		<object name="DataDriveObjectData">
+			<field name="itemsItemDbObject" type="BinHex"/>
+			<field name="selFileType" type="Enum"/>
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="UInt64"/>
+			</object>
+			<object name="DataFileItemsData">
+				<object name="DataFileItemData">
+					<field name="text_uidatafilesitemContentType" type="String"/>
+					<field name="uidatafilesitemContentType" type="BinHex"/>
+					<object name="ItemContentProperties">
+						<object name="locstridTextContent">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

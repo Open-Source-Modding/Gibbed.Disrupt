@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DedeliverygameplaysettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fAuthorizedRadius" type="Float"/>
+	<field name="fExplosionCountdownTimer" type="Float"/>
+	<field name="fParkingSpotRadius" type="Float"/>
+	<field name="bExplodeVehicleOnFail" type="Boolean"/>
+	<field name="bDisplayArea" type="Boolean"/>
+	<object name="locstridExplosionCountdownWarning">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

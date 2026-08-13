@@ -1,0 +1,5 @@
+<file name="xa01m01_sc025_scr_dealing_with_maurice2" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LivingcityconversationlistParameters">
+	<inherit name="SharedParameters"/>
+	<object name="AnimTemplates">
+		<object name="AnimTemplate">
+			<field name="lcanimtemplAnimTemplate" type="BinHex"/>
+		</object>
+	</object>
+</class>

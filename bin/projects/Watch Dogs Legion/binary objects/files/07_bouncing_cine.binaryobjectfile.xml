@@ -1,0 +1,5 @@
+<file name="07_bouncing_cine" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

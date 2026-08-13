@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Madaudioglobalparams_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="selCinematicDialogPriority" type="Enum"/>
+	<field name="selCinematicDialogType" type="Enum"/>
+	<field name="bCinematicDialogSuperseded" type="Boolean"/>
+	<field name="selTalkerDialogPriority" type="Enum"/>
+	<field name="selTalkerDialogType" type="Enum"/>
+	<field name="bTalkerDialogSuperseded" type="Boolean"/>
+</class>

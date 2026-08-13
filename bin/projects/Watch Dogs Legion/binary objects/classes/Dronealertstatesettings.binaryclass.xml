@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DronealertstatesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fGetUpAndWaitTime" type="Float"/>
+	<field name="fGetUpSpeed" type="Float"/>
+	<field name="fMoveNearTolerance" type="Float"/>
+	<field name="fMoveZOffset" type="Float"/>
+	<field name="fMoveSpeed" type="Float"/>
+	<field name="fMoveAbandonTime" type="Float"/>
+	<field name="fAscendHeight" type="Float"/>
+	<field name="fAscendSpeed" type="Float"/>
+	<field name="fAscendAbandonTime" type="Float"/>
+	<field name="fLookAroundRotationSpeed" type="Float"/>
+	<field name="fLookAroundTime" type="Float"/>
+	<field name="fNoInvestigationWaitTimeMin" type="Float"/>
+	<field name="fNoInvestigationWaitTimeMax" type="Float"/>
+</class>

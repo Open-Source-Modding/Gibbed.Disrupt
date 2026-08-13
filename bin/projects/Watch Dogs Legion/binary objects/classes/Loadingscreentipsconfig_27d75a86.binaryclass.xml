@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Loadingscreentipsconfig_27d75a86Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Tips">
+		<object name="Tip">
+			<object name="locstridTip">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="NextGenOnlyTips">
+		<object name="Tip">
+			<object name="locstridTip">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

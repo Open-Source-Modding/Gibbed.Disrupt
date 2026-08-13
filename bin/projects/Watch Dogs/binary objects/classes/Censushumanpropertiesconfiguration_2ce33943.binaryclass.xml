@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Censushumanpropertiesconfiguration_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="AgeRanges">
+		<object name="Young">
+			<field name="sValue" type="String"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+		<object name="Adult">
+			<field name="sValue" type="String"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+		<object name="MiddleAge">
+			<field name="sValue" type="String"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+		<object name="Old">
+			<field name="sValue" type="BinHex"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+	</object>
+	<object name="IncomeRanges">
+		<object name="None">
+			<field name="sValue" type="String"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+		<object name="Poor">
+			<field name="sValue" type="String"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+		<object name="Low">
+			<field name="sValue" type="BinHex"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+		<object name="Medium">
+			<field name="sValue" type="String"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+		<object name="High">
+			<field name="sValue" type="String"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+		<object name="Rich">
+			<field name="sValue" type="String"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+		<object name="Executive">
+			<field name="sValue" type="String"/>
+			<field name="sMin" type="BinHex"/>
+			<field name="sMax" type="BinHex"/>
+		</object>
+	</object>
+	<object name="StatsAndPerks">
+		<object name="GlobalConfig">
+			<field name="uiMinPointsPerStat" type="UInt32"/>
+			<field name="uiMaxPointsPerStat" type="UInt32"/>
+			<object name="PerkRefinementEnabled">
+				<field name="rulesmithidRule" type="BinHex"/>
+				<field name="rulesmithconstValue" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Common">
+			<field name="uiTotalStatPoints" type="UInt32"/>
+			<field name="uiStatPointsSpecialism" type="UInt32"/>
+			<field name="uiStatPointsMastery" type="UInt32"/>
+			<field name="uiNumPerkSlots" type="UInt32"/>
+		</object>
+		<object name="Uncommon">
+			<field name="uiTotalStatPoints" type="UInt32"/>
+			<field name="uiStatPointsSpecialism" type="UInt32"/>
+			<field name="uiStatPointsMastery" type="UInt32"/>
+			<field name="uiNumPerkSlots" type="UInt32"/>
+		</object>
+		<object name="Rare">
+			<field name="uiTotalStatPoints" type="UInt32"/>
+			<field name="uiStatPointsSpecialism" type="UInt32"/>
+			<field name="uiStatPointsMastery" type="UInt32"/>
+			<field name="uiNumPerkSlots" type="UInt32"/>
+		</object>
+		<object name="Epic">
+			<field name="uiTotalStatPoints" type="UInt32"/>
+			<field name="uiStatPointsSpecialism" type="UInt32"/>
+			<field name="uiStatPointsMastery" type="UInt32"/>
+			<field name="uiNumPerkSlots" type="UInt32"/>
+		</object>
+		<object name="Legendary">
+			<field name="uiTotalStatPoints" type="UInt32"/>
+			<field name="uiStatPointsSpecialism" type="UInt32"/>
+			<field name="uiStatPointsMastery" type="UInt32"/>
+			<field name="uiNumPerkSlots" type="UInt32"/>
+		</object>
+	</object>
+	<object name="ForcedProgressionElements">
+		<object name="ForcedProgressionElements">
+			<field name="text_progressionelementProgressionElement" type="String"/>
+			<field name="progressionelementProgressionElement" type="BinHex"/>
+			<object name="Filter">
+				<object name="InclusionFilter">
+					<object name="tagcategoryselectionblackboardProfile">
+						<object name="TagCategorySelectionArray">
+							<object name="TagCategorySelection">
+								<field name="text_hid_DTCTH_ClassName" type="String"/>
+								<field name="hid_DTCTH_ClassName" type="BinHex"/>
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="tagTag" type="BinHex"/>
+								<object name="Tags"/>
+							</object>
+						</object>
+						<object name="TagDescriptorUI">
+							<field name="text_hid_DTCTH_ClassName" type="String"/>
+							<field name="hid_DTCTH_ClassName" type="BinHex"/>
+							<object name="TagCategorySelectionDescriptors">
+								<object name="TagCategorySelectionDescriptor">
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="bMultiSelect" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="ExclusionFilter">
+					<object name="tagcategoryselectionblackboardProfile">
+						<object name="TagCategorySelectionArray"/>
+						<object name="TagDescriptorUI">
+							<field name="text_hid_DTCTH_ClassName" type="String"/>
+							<field name="hid_DTCTH_ClassName" type="BinHex"/>
+							<object name="TagCategorySelectionDescriptors">
+								<object name="TagCategorySelectionDescriptor">
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="bMultiSelect" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

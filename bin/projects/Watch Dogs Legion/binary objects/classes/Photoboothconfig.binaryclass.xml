@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhotoboothconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fCameraMovementModifier" type="Float"/>
+	<field name="fCameraMovementRadius" type="Float"/>
+	<field name="fCameraTransitionDuration" type="Float"/>
+	<field name="angCameraMinimumYawAngle" type="BinHex"/>
+	<field name="angCameraMaximumYawAngle" type="BinHex"/>
+	<field name="vectorCameraOBBSize" type="Vector3"/>
+	<field name="fDomeFollowMovementFactor" type="Float"/>
+	<field name="iMaxAvailableSeats" type="Int32"/>
+	<field name="text_archOperativeArchetype" type="String"/>
+	<field name="archOperativeArchetype" type="BinHex"/>
+	<field name="bUseHighlightOnOperative" type="Boolean"/>
+	<field name="text_sndEnter" type="String"/>
+	<field name="sndEnter" type="BinHex"/>
+	<field name="text_sndExit" type="String"/>
+	<field name="sndExit" type="BinHex"/>
+	<field name="text_sndSelectOperative" type="String"/>
+	<field name="sndSelectOperative" type="BinHex"/>
+	<field name="text_sndChangeOperative" type="String"/>
+	<field name="sndChangeOperative" type="BinHex"/>
+	<field name="text_sndChangeAnimation" type="String"/>
+	<field name="sndChangeAnimation" type="BinHex"/>
+	<field name="text_sndChangeMask" type="String"/>
+	<field name="sndChangeMask" type="BinHex"/>
+	<field name="text_sndChangeCamera" type="String"/>
+	<field name="sndChangeCamera" type="BinHex"/>
+	<field name="text_sndRandomizeSetup" type="String"/>
+	<field name="sndRandomizeSetup" type="BinHex"/>
+	<field name="sndtpEnterType" type="BinHex"/>
+	<field name="sndtpExitType" type="BinHex"/>
+	<field name="sndtpSelectOperativeType" type="BinHex"/>
+	<field name="sndtpChangeOperativeType" type="BinHex"/>
+	<field name="sndtpChangeAnimationType" type="BinHex"/>
+	<field name="sndtpChangeMaskType" type="BinHex"/>
+	<field name="sndtpChangeCameraType" type="BinHex"/>
+	<field name="sndtpRandomizeSetupType" type="BinHex"/>
+	<object name="EmoteAnimations">
+		<object name="EmoteAnimation">
+			<field name="text_fileEmoteAnimation" type="String"/>
+			<field name="fileEmoteAnimation" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridChangeCameraLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridRandomizeSetupLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridBackLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

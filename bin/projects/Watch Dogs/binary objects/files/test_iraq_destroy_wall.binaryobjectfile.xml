@@ -1,0 +1,5 @@
+<file name="test_iraq_destroy_wall" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

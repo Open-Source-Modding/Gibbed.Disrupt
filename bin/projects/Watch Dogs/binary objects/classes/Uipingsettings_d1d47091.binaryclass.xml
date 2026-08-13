@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uipingsettings_d1d47091Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="texturedbobjectWallTexture" type="BinHex"/>
+	<field name="texturedbobjectPingLinesTexture" type="BinHex"/>
+	<field name="uisoundPingStartSound" type="BinHex"/>
+	<field name="sndPingWaveStartSound" type="BinHex"/>
+	<field name="sndPingWaveStopSound" type="BinHex"/>
+	<field name="sndPingBackWaveStartSound" type="BinHex"/>
+	<field name="sndPingBackWaveStopSound" type="BinHex"/>
+	<field name="sndtpPingWaveStartSoundType" type="BinHex"/>
+	<field name="sndtpPingWaveStopSoundType" type="BinHex"/>
+	<field name="sndtpPingBackWaveStartSoundType" type="BinHex"/>
+	<field name="sndtpPingBackWaveStopSoundType" type="BinHex"/>
+	<field name="fPingRange" type="Float"/>
+	<field name="fPingDuration" type="Float"/>
+	<field name="fPingCooldown" type="Float"/>
+	<field name="fPingFadeTime" type="Float"/>
+	<field name="colorPingColor" type="VectorColor"/>
+	<field name="fPingOpacity" type="Float"/>
+	<field name="fDiscoveryMarkerRemainRange" type="Float"/>
+	<field name="text_archScanWave" type="String"/>
+	<field name="archScanWave" type="BinHex"/>
+	<field name="text_archPingIndicator" type="String"/>
+	<field name="archPingIndicator" type="BinHex"/>
+	<field name="text_archKeyLocationProfilePath" type="String"/>
+	<field name="archKeyLocationProfilePath" type="BinHex"/>
+	<field name="profilingpathpresetDiscoveryDefaultPreset" type="BinHex"/>
+	<field name="profilingpathpresetDiscoveryTrackedOpPreset" type="BinHex"/>
+	<field name="profilingpathpresetDiscoverySearchPreset" type="BinHex"/>
+	<field name="profilingpathpresetDiscoveryEscapePreset" type="BinHex"/>
+	<field name="fKeyLocationIconRange" type="Float"/>
+	<field name="fKeyLocationIconMaximumHeight" type="Float"/>
+	<field name="bLocationLinesEnabled" type="Boolean"/>
+	<object name="SoftLock">
+		<field name="bShowRarityLines" type="Boolean"/>
+		<field name="texturedbobjectSoftLockLineTexture" type="BinHex"/>
+	</object>
+	<object name="PingLine">
+		<field name="fPingLinesMaxScaleDistance" type="Float"/>
+		<object name="CommonNPC">
+			<field name="colorStartColor" type="VectorColor"/>
+			<field name="colorEndColor" type="VectorColor"/>
+			<field name="colorContrastColor" type="VectorColor"/>
+		</object>
+		<object name="UncommonNPC">
+			<field name="colorStartColor" type="VectorColor"/>
+			<field name="colorEndColor" type="VectorColor"/>
+			<field name="colorContrastColor" type="VectorColor"/>
+		</object>
+		<object name="RareNPC">
+			<field name="colorStartColor" type="VectorColor"/>
+			<field name="colorEndColor" type="VectorColor"/>
+			<field name="colorContrastColor" type="VectorColor"/>
+		</object>
+		<object name="EpicNPC">
+			<field name="colorStartColor" type="VectorColor"/>
+			<field name="colorEndColor" type="VectorColor"/>
+			<field name="colorContrastColor" type="VectorColor"/>
+		</object>
+		<object name="LegendaryNPC">
+			<field name="colorStartColor" type="VectorColor"/>
+			<field name="colorEndColor" type="VectorColor"/>
+			<field name="colorContrastColor" type="VectorColor"/>
+		</object>
+	</object>
+	<object name="OnPingedSounds">
+		<field name="uisoundOnOpStarterPingedSound" type="BinHex"/>
+		<object name="CommonNPC">
+			<field name="uisoundOnPingedSound" type="BinHex"/>
+		</object>
+		<object name="UncommonNPC">
+			<field name="uisoundOnPingedSound" type="BinHex"/>
+		</object>
+		<object name="RareNPC">
+			<field name="uisoundOnPingedSound" type="BinHex"/>
+		</object>
+		<object name="EpicNPC">
+			<field name="uisoundOnPingedSound" type="BinHex"/>
+		</object>
+		<object name="LegendaryNPC">
+			<field name="uisoundOnPingedSound" type="BinHex"/>
+		</object>
+	</object>
+	<object name="sndvarPingWaveDistanceRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="curvePingSpreadCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="PingRadar">
+		<field name="colorPingRadarColor" type="VectorColor"/>
+		<field name="fPingRadarRange" type="Float"/>
+		<field name="fPingRadarDuration" type="Float"/>
+		<field name="fPingRadarAngle" type="Float"/>
+		<object name="curvePingRadarCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="PingCard">
+		<field name="fThreeDDrawingStartingThreshold" type="Float"/>
+		<field name="colorPeople" type="VectorColor"/>
+		<field name="colorVehicle" type="VectorColor"/>
+		<field name="colorObject" type="VectorColor"/>
+	</object>
+	<object name="Zones">
+		<field name="bShowZones" type="Boolean"/>
+		<field name="fWallHeight" type="Float"/>
+	</object>
+	<object name="EntityDurations">
+		<field name="fProfilingPathDuration" type="Float"/>
+		<field name="fLocationLineProximityDistance" type="Float"/>
+		<field name="fKeyLocationDuration" type="Float"/>
+	</object>
+	<object name="PanelOffsets">
+		<field name="vectorPeopleOffset" type="Vector3"/>
+		<field name="vectorVehicleOffset" type="Vector3"/>
+		<field name="vectorObjectOffset" type="Vector3"/>
+	</object>
+</class>

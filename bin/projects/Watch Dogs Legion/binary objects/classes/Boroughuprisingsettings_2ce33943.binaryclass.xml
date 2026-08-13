@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Boroughuprisingsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fHintCheckCooldown" type="Float"/>
+	<object name="BoroughsData">
+		<object name="BoroughData">
+			<field name="districtBoroughDistrictDB" type="BinHex"/>
+			<field name="UprisingOpMissionId" type="BinHex"/>
+			<object name="BoroughCompletionTeamspeaks"/>
+			<object name="CollectibleSpecificData">
+				<field name="entActivityEntityId" type="BinHex"/>
+				<field name="itemsHintItemDb" type="BinHex"/>
+				<field name="fHintDistance" type="Float"/>
+				<field name="phonecommunicationsettingsTeamspeak" type="BinHex"/>
+				<field name="fTeamspeakDelay" type="Float"/>
+				<field name="bCollectedOnGameStart" type="Boolean"/>
+				<object name="CollectibleSpecificData">
+					<field name="entActivityEntityId" type="BinHex"/>
+					<field name="itemsHintItemDb" type="BinHex"/>
+					<field name="fHintDistance" type="Float"/>
+					<field name="phonecommunicationsettingsTeamspeak" type="BinHex"/>
+					<field name="fTeamspeakDelay" type="Float"/>
+					<field name="bCollectedOnGameStart" type="Boolean"/>
+				</object>
+			</object>
+			<object name="DistrictsDiscoveryStateTriggeredByUprisingSettings">
+				<object name="DiscoveryTriggeredByUprisingSettings">
+					<field name="districtDistrictDB" type="BinHex"/>
+					<field name="text_progressioncollectablescategoriesfilterCategory" type="String"/>
+					<field name="progressioncollectablescategoriesfilterCategory" type="BinHex"/>
+				</object>
+			</object>
+			<object name="DistrictsDiscoveryStateTriggeredByUprising">
+				<object name="districtBoroughDistrictDB">
+					<field name="districtBoroughDistrictDB" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

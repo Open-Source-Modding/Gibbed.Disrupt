@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RaidbossblumedronesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fStatusChangeDuration" type="Float"/>
+	<field name="fInvisibilityDuration" type="Float"/>
+	<field name="fDamageZonePeriod" type="Float"/>
+	<field name="fRepairStimPeriod" type="Float"/>
+	<field name="fWeakStateAngleLookAt" type="Float"/>
+	<field name="fWeakStateAngleMaxDiff" type="Float"/>
+	<object name="Targeting">
+		<field name="fAggroDecayRelativeRate" type="Float"/>
+		<field name="fAggroGainOnBossDamage" type="Float"/>
+		<field name="fAggroGainOnOpenArea" type="Float"/>
+		<field name="fAggroOpenAreaPeriod" type="Float"/>
+		<field name="fAggroGainOnNPCDamage" type="Float"/>
+		<field name="fSwitchTargetDuration" type="Float"/>
+		<field name="bSwitchTargetOnChoosingMachineguns" type="Boolean"/>
+		<field name="bSwitchTargetInMachinegunSequence" type="Boolean"/>
+		<field name="bSwitchTargetOnChoosingRocketLaunchers" type="Boolean"/>
+		<field name="bUseDoubleTargeting" type="Boolean"/>
+		<field name="bTargetRemoteControlledUnits" type="Boolean"/>
+		<field name="fDualTargetingMaxAngle" type="Float"/>
+		<field name="fDualTargetingSwitchSideMinAngle" type="Float"/>
+	</object>
+	<object name="Weaponry">
+		<field name="fWeaponAngleOffset" type="Float"/>
+		<field name="bMachineGunChargeOnlyOnNewTarget" type="Boolean"/>
+		<field name="iBulletBurstCountMax" type="Int32"/>
+		<field name="fBulletBurstDurationCharge" type="Float"/>
+		<field name="fBulletBurstDurationRest" type="Float"/>
+		<field name="fBulletBurstDurationShooting" type="Float"/>
+		<field name="fSequenceResetDuration" type="Float"/>
+		<object name="Rockets">
+			<field name="fRocketMaxAngle" type="Float"/>
+			<field name="fRocketMaxDuration" type="Float"/>
+			<object name="RocketSequenceDuration">
+				<object name="SequenceDurationItem">
+					<field name="fHealthThreshold" type="Float"/>
+					<field name="iRocketWavesCount" type="Int32"/>
+					<field name="fWeaponFireRateModifier" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="BonesWipeAttack">
+		<field name="fDefaultStiffness" type="Float"/>
+		<object name="MobileBones">
+			<object name="MobileBones">
+				<field name="text_BoneName" type="String"/>
+				<field name="BoneName" type="BinHex"/>
+				<field name="selPosReference" type="Enum"/>
+				<field name="vectorStartPos" type="Vector3"/>
+				<field name="vectorEndPos" type="Vector3"/>
+				<field name="vectorRotAxis" type="Vector3"/>
+				<field name="fStartRot" type="Float"/>
+				<field name="fEndRot" type="Float"/>
+				<object name="curvePosCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveRotCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="DamageZoneStim">
+		<field name="text_hidEventName" type="String"/>
+		<field name="hidEventName" type="BinHex"/>
+		<field name="hidTargetEntityId" type="BinHex"/>
+		<field name="sDetail" type="BinHex"/>
+		<field name="selType" type="Enum"/>
+		<field name="bShowCone" type="Boolean"/>
+		<object name="RadiusSettings">
+			<field name="fRadius" type="Float"/>
+		</object>
+		<object name="AltitudeSliceSettings">
+			<field name="fMaxAlt" type="Float"/>
+			<field name="fMinAlt" type="Float"/>
+		</object>
+		<object name="LevelSettings">
+			<field name="fLevel" type="Float"/>
+			<field name="bFalloff" type="Boolean"/>
+			<field name="fFalloffMinLevel" type="Float"/>
+		</object>
+		<object name="EntityRestrictions">
+			<field name="bRestrictToEntities" type="Boolean"/>
+			<field name="bRestrictToPlayers" type="Boolean"/>
+			<field name="bRestrictToNpcs" type="Boolean"/>
+			<field name="bRestrictToCivilians" type="Boolean"/>
+			<field name="bRestrictToVehicles" type="Boolean"/>
+			<field name="bRestrictToCiviliansDriver" type="Boolean"/>
+			<field name="bRestrictToAnimal" type="Boolean"/>
+			<field name="bRestrictToSimpleAnimal" type="Boolean"/>
+			<field name="bRestrictToRobot" type="Boolean"/>
+			<field name="bRestrictToActivatedDrone" type="Boolean"/>
+			<field name="bRestrictToStandbyDrone" type="Boolean"/>
+			<field name="bRestrictToTurret" type="Boolean"/>
+		</object>
+	</object>
+	<object name="Wipe">
+		<field name="fWipeDurationCriticalHealth" type="Float"/>
+		<field name="fWipeDurationWipeDroneCountReached" type="Float"/>
+		<field name="fWipeDurationRoomsFailed" type="Float"/>
+		<field name="iWipeDroneCountMax" type="Int32"/>
+		<field name="fCriticalHealthRatio" type="Float"/>
+		<field name="bDestroyWipeDronesWhenWeak" type="Boolean"/>
+	</object>
+	<object name="SFX">
+		<field name="text_sndSFXMachineGunGoOut" type="String"/>
+		<field name="sndSFXMachineGunGoOut" type="BinHex"/>
+		<field name="sndSFXMachineGunGoIn" type="BinHex"/>
+		<field name="text_sndSFXMachineGunCharge" type="String"/>
+		<field name="sndSFXMachineGunCharge" type="BinHex"/>
+		<field name="text_sndSFXMachineGunChargeLoud" type="String"/>
+		<field name="sndSFXMachineGunChargeLoud" type="BinHex"/>
+		<field name="sndtpSFXMachineGunGoOutType" type="BinHex"/>
+		<field name="sndtpSFXMachineGunGoInType" type="BinHex"/>
+		<field name="sndtpSFXMachineGunChargeType" type="BinHex"/>
+		<field name="sndtpSFXMachineGunChargeLoudType" type="BinHex"/>
+		<field name="fWeaponRotationShortAngleThreshold" type="Float"/>
+		<field name="sndSFXRocketLauncherGoOut" type="BinHex"/>
+		<field name="text_sndSFXRocketLauncherGoIn" type="String"/>
+		<field name="sndSFXRocketLauncherGoIn" type="BinHex"/>
+		<field name="text_sndSFXWipeAttackGoOut" type="String"/>
+		<field name="sndSFXWipeAttackGoOut" type="BinHex"/>
+		<field name="text_sndSFXWipeAttackGoIn" type="String"/>
+		<field name="sndSFXWipeAttackGoIn" type="BinHex"/>
+		<field name="text_sndSFXWipeAttackBefore" type="String"/>
+		<field name="sndSFXWipeAttackBefore" type="BinHex"/>
+		<field name="text_sndSFXWipeAttackCondemned" type="String"/>
+		<field name="sndSFXWipeAttackCondemned" type="BinHex"/>
+		<field name="text_sndSFXStartReload" type="String"/>
+		<field name="sndSFXStartReload" type="BinHex"/>
+		<field name="text_sndSFXStopReload" type="String"/>
+		<field name="sndSFXStopReload" type="BinHex"/>
+		<field name="sndtpSFXRocketLauncherGoOutType" type="BinHex"/>
+		<field name="sndtpSFXRocketLauncherGoInType" type="BinHex"/>
+		<field name="sndtpSFXWipeAttackGoOutType" type="BinHex"/>
+		<field name="sndtpSFXWipeAttackGoInType" type="BinHex"/>
+		<field name="sndtpSFXWipeAttackBeforeType" type="BinHex"/>
+		<field name="sndtpSFXWipeAttackCondemnedType" type="BinHex"/>
+		<field name="sndtpSFXStartReloadType" type="BinHex"/>
+		<field name="sndtpSFXStopReloaTyped" type="BinHex"/>
+		<field name="fBossRotationAngleThreshold" type="Float"/>
+		<field name="sndFirstWipeDroneConnected" type="BinHex"/>
+		<field name="text_sndSecondWipeDroneConnected" type="String"/>
+		<field name="sndSecondWipeDroneConnected" type="BinHex"/>
+		<field name="sndWipeDroneDisconnected" type="BinHex"/>
+		<field name="text_sndRepairStart" type="String"/>
+		<field name="sndRepairStart" type="BinHex"/>
+		<field name="text_sndRepairStop" type="String"/>
+		<field name="sndRepairStop" type="BinHex"/>
+		<field name="text_sndBossVulnerable" type="String"/>
+		<field name="sndBossVulnerable" type="BinHex"/>
+		<field name="text_sndBossInvincible" type="String"/>
+		<field name="sndBossInvincible" type="BinHex"/>
+		<field name="text_sndBossDefeated" type="String"/>
+		<field name="sndBossDefeated" type="BinHex"/>
+		<field name="sndtpFirstWipeDroneConnectedType" type="BinHex"/>
+		<field name="sndtpSecondWipeDroneConnectedType" type="BinHex"/>
+		<field name="sndtpWipeDroneDisconnectedType" type="BinHex"/>
+		<field name="sndtpRepairStartType" type="BinHex"/>
+		<field name="sndtpRepairStopType" type="BinHex"/>
+		<field name="sndtpBossVulnerableType" type="BinHex"/>
+		<field name="sndtpBossInvincibleType" type="BinHex"/>
+		<field name="sndtpBossDefeatedType" type="BinHex"/>
+		<object name="Barks">
+			<field name="text_BarkWeakpointClosed" type="String"/>
+			<field name="BarkWeakpointClosed" type="BinHex"/>
+			<field name="BarkWeakpointOpened" type="BinHex"/>
+			<field name="text_BarkWipeAttack" type="String"/>
+			<field name="BarkWipeAttack" type="BinHex"/>
+			<field name="text_BarkWipeAttackAborted" type="String"/>
+			<field name="BarkWipeAttackAborted" type="BinHex"/>
+			<field name="text_BarkWipeAttackCriticalHealth" type="String"/>
+			<field name="BarkWipeAttackCriticalHealth" type="BinHex"/>
+			<field name="text_BarkRepaired" type="String"/>
+			<field name="BarkRepaired" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VFX">
+		<field name="text_WipeSuccessPostFX" type="String"/>
+		<field name="WipeSuccessPostFX" type="BinHex"/>
+		<field name="psCriticalSmoke" type="BinHex"/>
+		<field name="iCriticalSmokeBone" type="Int32"/>
+		<field name="text_psDamageZone" type="String"/>
+		<field name="psDamageZone" type="BinHex"/>
+		<field name="vectorDamageZoneOffset" type="Vector3"/>
+	</object>
+</class>

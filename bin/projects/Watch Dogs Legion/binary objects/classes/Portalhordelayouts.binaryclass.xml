@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PortalhordelayoutsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="MissionLayerName" type="String"/>
+	<field name="entDownloadStarter" type="BinHex"/>
+	<field name="entSpawningWaveManager" type="BinHex"/>
+</class>

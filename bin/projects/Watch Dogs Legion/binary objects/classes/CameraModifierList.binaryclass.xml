@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CameraModifierListParameters">
+	<object name="ModifierList">
+		<object name="Modifier">
+			<field name="selModifierType" type="Enum"/>
+			<field name="bFollowYaw" type="Boolean"/>
+			<field name="bFollowPitch" type="Boolean"/>
+			<object name="FollowPYSpeedTreshold">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="FollowPYEnterTime">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<field name="bFocusLockOverride" type="Boolean"/>
+			<object name="ReticleDisplay">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="IdealMid">
+				<field name="vectorValue" type="Vector3"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="Fov">
+				<field name="vectorValue" type="Vector3"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="InputYawSpeed">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="InputPitchSpeed">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="FollowPYLag">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="FollowYawDeadAngle">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="LensFocusLag">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="LensFocusLagNear">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="LensFocusLagFar">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="FocalLength">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="FStop">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="fReticleDisplay">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="InputYawExtraSpeed">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="FocusCast">
+				<field name="vec2Value" type="Vector2"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="IdealMin">
+				<field name="vectorValue" type="Vector3"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="IdealMax">
+				<field name="vectorValue" type="Vector3"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="RotationPitchMin">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="RotationPitchMax">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="RotationYawMin">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="RotationYawMax">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="FocusRange">
+				<field name="vec2Value" type="Vector2"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+		</object>
+	</object>
+</class>

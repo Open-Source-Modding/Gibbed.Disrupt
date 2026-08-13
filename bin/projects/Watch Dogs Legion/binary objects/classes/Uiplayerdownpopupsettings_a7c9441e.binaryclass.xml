@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uiplayerdownpopupsettings_a7c9441eParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uisoundGetUpHoldStarted" type="BinHex"/>
+	<field name="uisoundGetUpHoldFinished" type="BinHex"/>
+	<field name="uisoundSurrenderHoldStarted" type="BinHex"/>
+	<field name="uisoundSurrenderHoldFinished" type="BinHex"/>
+	<field name="uisoundHoldCancelled" type="BinHex"/>
+</class>

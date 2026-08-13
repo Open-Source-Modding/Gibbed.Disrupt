@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Tagvisibilitycontroller_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="SpawningSystemTagCategories">
+		<object name="DemographicDistributionTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="GraphicKitModelSelectionTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="AnimalItemSelectionTagCategories"/>
+		<object name="HumanItemSelectionTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="HumanItemOptionalSelectionTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="HumanItemMandatorySelectionTags">
+			<object name="Tags">
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+		<object name="NakedBodyItemSelectionTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="NakedBodyItemOptionalSelectionTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="NakedBodyItemMandatorySelectionTags">
+			<object name="Tags">
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+		<object name="ClothingItemSelectionTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="ClothingItemOptionalSelectionTagCategories"/>
+		<object name="ClothingItemMandatorySelectionTags"/>
+		<object name="UniformItemSelectionTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="DefaultSelectionTagCategories"/>
+	</object>
+	<object name="SelectionBlackboards">
+		<object name="LocationBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="LocationSelectionBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="LocationComplexitySelectionBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="LocationPlayerCountSelectionBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="CLOActionBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="CensusAttendanceSelectionTagCategories">
+			<object name="TagCategorySelectionDescriptors"/>
+		</object>
+		<object name="NPCBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="VehicleBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="CensusProfileFieldsBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="LCBrowserBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="DGSceneActorFeatureBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="DGSceneActorBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="DGObjectiveLogicDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="CinematicBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="PeopleSpawnInfoBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="SingleNamedLocationBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

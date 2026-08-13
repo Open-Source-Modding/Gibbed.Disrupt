@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="InteracttounlockgameplaydescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fUnlockDuration" type="Float"/>
+	<object name="YInteractGameplayDescriptor">
+		<field name="text_archDataYInteractArchetypeResource" type="String"/>
+		<field name="archDataYInteractArchetypeResource" type="BinHex"/>
+		<field name="bForceDisableAfterCompleteOnce" type="Boolean"/>
+	</object>
+	<object name="LocateGameplayDescriptor">
+		<field name="bDisplayMarkerAndText" type="Boolean"/>
+		<field name="bIsLocatedOnStart" type="Boolean"/>
+		<field name="possyselementMarker" type="BinHex"/>
+		<field name="vecMarkerOffset" type="BinHex"/>
+		<field name="bDeactivateOnDeath" type="Boolean"/>
+		<field name="bDeactivateOnDestroy" type="Boolean"/>
+		<field name="bIsMarkerOccludable" type="Boolean"/>
+		<object name="locstridOverrideText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridLocateObjectiveText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+	</object>
+	<object name="locstridUnlockMessageHeaderLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridUnlockMessageLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+	<object name="locstridSoloSessionDisableLockObjectiveOverrideLocId">
+		<field name="LocalizationId" type="UInt64"/>
+	</object>
+</class>

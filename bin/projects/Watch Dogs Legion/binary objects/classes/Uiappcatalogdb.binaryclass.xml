@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UiappcatalogdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selDefaultAppState" type="Enum"/>
+	<field name="uimenupageMenuPage" type="BinHex"/>
+	<field name="text_keyboardShortcut" type="String"/>
+	<field name="keyboardShortcut" type="BinHex"/>
+	<field name="bKeyboardShortcutIsOnlineOnly" type="Boolean"/>
+	<field name="bKeyboardShortcutIsSPOnly" type="Boolean"/>
+</class>

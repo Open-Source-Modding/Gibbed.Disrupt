@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DiscoverysettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="DiscoverySettings">
+		<field name="selInitialState" type="Enum"/>
+		<field name="bHasPersistence" type="Boolean"/>
+		<field name="bRevealByProximity" type="Boolean"/>
+		<field name="fRevealByProximityRange" type="Float"/>
+		<field name="bRequireLOSForProximityReveal" type="Boolean"/>
+		<field name="bRevealByLOSFocus" type="Boolean"/>
+		<field name="fRevealByLOSFocusDuration" type="Float"/>
+		<field name="fRevealByLOSFocusRange" type="Float"/>
+		<field name="selDistrictState" type="Enum"/>
+		<field name="bRevealByPing" type="Boolean"/>
+		<field name="fPingRevealRange" type="Float"/>
+		<field name="bIsLOSRequiredForPingReveal" type="Boolean"/>
+		<field name="bShouldPingBack" type="Boolean"/>
+		<field name="bShouldBeTrackedOp" type="Boolean"/>
+		<field name="bShouldPingOriginBeInSameLocation" type="Boolean"/>
+		<field name="fPingBackWaveDuration" type="Float"/>
+		<field name="fPingBackWaveRange" type="Float"/>
+		<field name="fPingBackWaveAngle" type="Float"/>
+		<field name="colorPingBackWaveColor" type="VectorColor"/>
+		<field name="text_psPingBackParticles" type="String"/>
+		<field name="psPingBackParticles" type="BinHex"/>
+		<field name="fPingBackParticlesDuration" type="Float"/>
+		<field name="possyselementIconRevealed" type="BinHex"/>
+		<field name="fIconRevealedShowRange" type="Float"/>
+		<field name="bIconRevealedShowOnlyInLOS" type="Boolean"/>
+		<field name="fIconRevealedShowOnlyInLOSCheckTime" type="Float"/>
+		<field name="fIconForceRevealedShowRange" type="Float"/>
+		<field name="bSinglePlayerOnly" type="Boolean"/>
+		<field name="nethackingconfigNetHackingConfigOverride" type="BinHex"/>
+		<field name="bIsIntel" type="Boolean"/>
+		<field name="bIsOnlySaveIfCompleted" type="Boolean"/>
+		<field name="possyselementIconAcquired" type="BinHex"/>
+		<field name="possyselementIconDisabled" type="BinHex"/>
+		<field name="sndRevealSound" type="BinHex"/>
+		<field name="sndtpRevealSoundType" type="BinHex"/>
+		<object name="locstridRevealMessage">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="curvePingBackWaveCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="IconVisibilityRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+		<object name="IconPreviewRule">
+			<field name="rulesmithidRule" type="BinHex"/>
+			<field name="rulesmithconstValue" type="BinHex"/>
+		</object>
+	</object>
+</class>

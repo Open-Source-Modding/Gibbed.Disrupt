@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlasmamadlookatiksettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selRootJointName" type="Enum"/>
+	<field name="selEndJointName" type="Enum"/>
+	<field name="AngleLimits" type="BinHex"/>
+	<field name="BlendOnTime" type="BinHex"/>
+	<field name="BlendOffTime" type="BinHex"/>
+	<object name="JointParams">
+		<field name="selJoint" type="Enum"/>
+		<field name="Weight" type="BinHex"/>
+		<field name="Enabled" type="BinHex"/>
+		<object name="JointParams">
+			<field name="selJoint" type="Enum"/>
+			<field name="Weight" type="BinHex"/>
+			<field name="Enabled" type="BinHex"/>
+		</object>
+	</object>
+</class>

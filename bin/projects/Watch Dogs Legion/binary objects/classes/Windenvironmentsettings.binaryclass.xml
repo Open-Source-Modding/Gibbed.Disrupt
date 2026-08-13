@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WindenvironmentsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fWindSpeedInKmPerHour" type="Float"/>
+	<field name="bWindSpeedInKmPerHourOverride" type="Boolean"/>
+	<field name="fWindSpeedNoiseDeltaInKmPerHour" type="Float"/>
+	<field name="bWindSpeedNoiseDeltaInKmPerHourOverride" type="Boolean"/>
+	<field name="fWindNoiseTextureSpeedInKmPerHour" type="Float"/>
+	<field name="bWindNoiseTextureSpeedInKmPerHourOverride" type="Boolean"/>
+	<object name="NoiseTextureChannel">
+		<field name="selValue" type="Enum"/>
+	</object>
+</class>

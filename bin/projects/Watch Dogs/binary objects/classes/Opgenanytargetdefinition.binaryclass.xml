@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="OpgenanytargetdefinitionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="opgenhumandescriptiondefinitionHumanDescription" type="BinHex"/>
+	<field name="opgenvehicledescriptiondefinitionVehicleDescription" type="BinHex"/>
+	<field name="opgendronedescriptiondefinitionDroneDescription" type="BinHex"/>
+	<field name="opgenlocationdescriptiondefinitionLocationDescription" type="BinHex"/>
+	<object name="ObjectiveTexts">
+		<object name="locstridText">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="locstridDescription">
+			<field name="LocalizationId" type="UInt64"/>
+		</object>
+		<object name="FamilyOverrides">
+			<object name="FamilyOverride">
+				<field name="opgenobjectivefamilyObjectiveLogicFamilyDb" type="BinHex"/>
+				<object name="ObjectivesOverrides">
+					<object name="ObjectiveOverride">
+						<field name="dgobjectivelogicObjectiveLogic" type="BinHex"/>
+						<object name="locstridText">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+						<object name="locstridDescription">
+							<field name="LocalizationId" type="UInt64"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,5 @@
+<file name="a02_m10_sc011_cin_bedbuginfiltration_loop" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

@@ -1,0 +1,5 @@
+<file name="a01_m01_sc050_scr_lockdoor" > 
+	<object name="Root">
+		<inherit name="SequenceParameters" />
+	</object>
+</file>

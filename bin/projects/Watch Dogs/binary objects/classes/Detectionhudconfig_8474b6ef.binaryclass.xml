@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Detectionhudconfig_8474b6efParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_filePreAlertIcon" type="String"/>
+	<field name="filePreAlertIcon" type="BinHex"/>
+	<field name="text_fileAlertIcon" type="String"/>
+	<field name="fileAlertIcon" type="BinHex"/>
+	<field name="text_fileBackgroundIcon" type="String"/>
+	<field name="fileBackgroundIcon" type="BinHex"/>
+	<field name="text_fileArrowIcon" type="String"/>
+	<field name="fileArrowIcon" type="BinHex"/>
+	<field name="fDisplayMaxDistance" type="Float"/>
+	<field name="text_fileIntuitionIcon" type="String"/>
+	<field name="fileIntuitionIcon" type="BinHex"/>
+	<object name="Sounds">
+		<field name="sndPreAlert" type="BinHex"/>
+		<field name="sndCombat" type="BinHex"/>
+		<field name="sndIntuitionStart" type="BinHex"/>
+		<field name="sndIntuitionStop" type="BinHex"/>
+		<field name="sndDetectionStart" type="BinHex"/>
+		<field name="sndDetectionStop" type="BinHex"/>
+	</object>
+</class>
