@@ -1,0 +1,3 @@
+<class name="CLocalizationId">
+	<field name="LocalizationId" type="UInt32" />
+</class>
