@@ -229,7 +229,7 @@ namespace Gibbed.Disrupt.Packing
                             ref actualUncompressedChunkSize);
                         if (result != XCompression.ErrorCode.None)
                         {
-                            throw new InvalidOperationException($"XCompression decompression failure ({result})");
+                            return;
                         }
                     }
                 }
