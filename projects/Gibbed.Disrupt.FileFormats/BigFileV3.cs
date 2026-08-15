@@ -225,7 +225,7 @@ namespace Gibbed.Disrupt.FileFormats
 
         internal static void SanityCheckEntry(BigEntry entry, Big.Platform platform, byte compressionVersion)
         {
-            var compressionScheme = ToCompressionScheme(entry.CompressionScheme, compressionVersion);
+            var compressionScheme = ToCompressionScheme(entry.CompressionScheme, compressionVersion, entry.UncompressedSize);
 
             if (compressionScheme == Big.CompressionScheme.None)
             {
@@ -244,6 +244,15 @@ namespace Gibbed.Disrupt.FileFormats
                 }
             }
             else if (compressionScheme == Big.CompressionScheme.XMemCompress)
+            {
+                if (entry.CompressedSize == 0 && entry.UncompressedSize > 0)
+                {
+                    throw new FormatException(
+                        "got entry with compression with a zero compressed size and a non-zero uncompressed size");
+                }
+            }
+            else if (compressionScheme == Big.CompressionScheme.LZ4LW ||
+                     compressionScheme == Big.CompressionScheme.LZMA)
             {
                 if (entry.CompressedSize == 0 && entry.UncompressedSize > 0)
                 {
@@ -276,6 +285,7 @@ namespace Gibbed.Disrupt.FileFormats
                 case 2: return Big.Platform.Xenon;
                 case 3: return Big.Platform.PS3;
                 case 4: return Big.Platform.Win64;
+                case 6: return Big.Platform.Orbis;
                 case 8: return Big.Platform.WiiU;
             }
             throw new NotSupportedException("unknown platform");
@@ -290,6 +300,7 @@ namespace Gibbed.Disrupt.FileFormats
                 case Big.Platform.Xenon: return 2;
                 case Big.Platform.PS3: return 3;
                 case Big.Platform.Win64: return 4;
+                case Big.Platform.Orbis: return 6;
                 case Big.Platform.WiiU: return 8;
             }
             throw new NotSupportedException("unknown platform");
@@ -341,20 +352,21 @@ namespace Gibbed.Disrupt.FileFormats
             return RenderNameHash(value);
         }
 
-        private static Big.CompressionScheme ToCompressionScheme(byte id, byte version)
+        private static Big.CompressionScheme ToCompressionScheme(byte id, byte version, int uncompressedSize)
         {
             switch (version)
             {
                 case 0: return Big.CompressionSchemeV0.ToCompressionScheme(id);
                 case 4: return Big.CompressionSchemeV4.ToCompressionScheme(id);
                 case 5: return Big.CompressionSchemeV5.ToCompressionScheme(id);
+                case 9: return Big.CompressionSchemeV9B.ToCompressionScheme(id, uncompressedSize);
             }
             throw new NotSupportedException();
         }
 
-        public Big.CompressionScheme ToCompressionScheme(byte id)
+        public Big.CompressionScheme ToCompressionScheme(byte id, int uncompressedSize)
         {
-            return ToCompressionScheme(id, this._CompressionVersion);
+            return ToCompressionScheme(id, this._CompressionVersion, uncompressedSize);
         }
 
         public byte FromCompressionSCheme(Big.CompressionScheme compressionScheme)
@@ -386,6 +398,8 @@ namespace Gibbed.Disrupt.FileFormats
                 // Watch Dogs, Wii U
                 MakeKnownVersion(8, Big.Platform.Any, 0, 58),
                 MakeKnownVersion(8, Big.Platform.WiiU, 5, 58),
+                // Watch Dogs, PlayStation 4 (Orbis) [2013 beta]
+                MakeKnownVersion(8, Big.Platform.Orbis, 9, 21),
             });
 
             _EntrySerializers = new ReadOnlyDictionary<int, Big.IEntrySerializer<uint>>(

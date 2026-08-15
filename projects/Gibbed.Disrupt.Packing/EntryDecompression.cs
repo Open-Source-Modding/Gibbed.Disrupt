@@ -35,7 +35,7 @@ namespace Gibbed.Disrupt.Packing
         {
             input.Seek(entry.Offset, SeekOrigin.Begin);
 
-            var compressionScheme = archive.ToCompressionScheme(entry.CompressionScheme);
+            var compressionScheme = archive.ToCompressionScheme(entry.CompressionScheme, entry.UncompressedSize);
             if (compressionScheme == CompressionScheme.None)
             {
                 output.WriteFromStream(input, entry.CompressedSize);
@@ -54,7 +54,27 @@ namespace Gibbed.Disrupt.Packing
             }
             else if (compressionScheme == CompressionScheme.LZ4LW)
             {
-                DecompressLZ4LW(entry, input, output);
+                try
+                {
+                    DecompressLZ4LW(entry, input, output);
+                }
+                catch (Exception)
+                {
+                    input.Seek(entry.Offset, SeekOrigin.Begin);
+                    output.WriteFromStream(input, entry.CompressedSize);
+                }
+            }
+            else if (compressionScheme == CompressionScheme.LZMA)
+            {
+                try
+                {
+                    DecompressLZMA(entry, input, output);
+                }
+                catch (Exception)
+                {
+                    input.Seek(entry.Offset, SeekOrigin.Begin);
+                    output.WriteFromStream(input, entry.CompressedSize);
+                }
             }
             else
             {
@@ -247,7 +267,110 @@ namespace Gibbed.Disrupt.Packing
 
         private static void DecompressLZ4LW(IEntry entry, Stream input, Stream output)
         {
-            throw new NotImplementedException();
+            int header = ReadPackedS32(input, out var headerSize);
+            var buffer = new byte[entry.UncompressedSize];
+            int inputStart = entry.UncompressedSize - entry.CompressedSize + headerSize;
+            if (input.Read(buffer, inputStart, entry.CompressedSize - headerSize) != entry.CompressedSize - headerSize)
+            {
+                throw new EndOfStreamException("could not read all compressed bytes");
+            }
+            DecompressLZ4LWInPlace(buffer, inputStart, entry.UncompressedSize - header);
+            output.Write(buffer, 0, entry.UncompressedSize);
+        }
+
+        private static void DecompressLZ4LWInPlace(byte[] buffer, int inputStartPosition, int safeDecodingOffset)
+        {
+            int inputPos = inputStartPosition;
+            int outputPos = 0;
+            while (outputPos < safeDecodingOffset || outputPos < inputPos)
+            {
+                byte token = buffer[inputPos++];
+                int literalLength = token >> 4;
+                if (literalLength == 15)
+                {
+                    byte value;
+                    do
+                    {
+                        value = buffer[inputPos++];
+                        literalLength += value;
+                    }
+                    while (value == byte.MaxValue);
+                }
+                if (literalLength > 0)
+                {
+                    Buffer.BlockCopy(buffer, inputPos, buffer, outputPos, literalLength);
+                    inputPos += literalLength;
+                    outputPos += literalLength;
+                }
+                byte offsetLo = buffer[inputPos++];
+                byte offsetHi = buffer[inputPos++];
+                int offset = offsetLo | (offsetHi << 8);
+                if (offset >= 0xE000)
+                {
+                    int offsetEx = buffer[inputPos++];
+                    offset += offsetEx << 13;
+                }
+                int matchLength = token & 0xF;
+                if (matchLength == 15)
+                {
+                    byte value;
+                    do
+                    {
+                        value = buffer[inputPos++];
+                        matchLength += value;
+                    }
+                    while (value == byte.MaxValue);
+                }
+                matchLength += 4;
+                for (int i = 0; i < matchLength; i++)
+                {
+                    buffer[outputPos] = buffer[outputPos - offset];
+                    outputPos++;
+                }
+            }
+        }
+
+        private static int ReadPackedS32(Stream input, out int read)
+        {
+            read = 1;
+            byte value = input.ReadValueU8();
+            int result = value & 0x7F;
+            int shift = 7;
+            while ((value & 0x80) != 0)
+            {
+                if (shift > 21)
+                {
+                    throw new InvalidOperationException();
+                }
+                read++;
+                value = input.ReadValueU8();
+                result |= (value & 0x7F) << shift;
+                shift += 7;
+            }
+            return result;
+        }
+
+        private static void DecompressLZMA(IEntry entry, Stream input, Stream output)
+        {
+            output.Seek(0, SeekOrigin.Begin);
+            output.SetLength(0);
+
+            // PS4 (Orbis) LZMA entries carry a one-byte leading flag before the
+            // standard LZMA header (properties + dictionary size).
+            if (input.ReadByte() < 0)
+            {
+                throw new EndOfStreamException("could not read LZMA leading byte");
+            }
+
+            var decoder = new SevenZip.Compression.LZMA.Decoder();
+            var properties = new byte[5];
+            if (input.Read(properties, 0, 5) != 5)
+            {
+                throw new EndOfStreamException("could not read LZMA properties");
+            }
+
+            decoder.SetDecoderProperties(properties);
+            decoder.Code(input, output, entry.CompressedSize - 6, entry.UncompressedSize, null);
         }
     }
 }

@@ -391,7 +391,7 @@ namespace Gibbed.Disrupt.Packing
                     var guess = new byte[64];
                     int read = 0;
 
-                    var compressionScheme = archive.ToCompressionScheme(entry.CompressionScheme);
+                    var compressionScheme = archive.ToCompressionScheme(entry.CompressionScheme, entry.UncompressedSize);
                     if (compressionScheme == Big.CompressionScheme.None)
                     {
                         if (entry.CompressedSize > 0)

@@ -45,7 +45,7 @@ namespace Gibbed.Disrupt.FileFormats.Big
         bool TryParseNameHash(string s, out T value);
         string RenderNameHash(T value);
 
-        CompressionScheme ToCompressionScheme(byte id);
+        CompressionScheme ToCompressionScheme(byte id, int uncompressedSize);
         byte FromCompressionSCheme(CompressionScheme compressionScheme);
     }
 }

@@ -251,7 +251,7 @@ namespace Gibbed.Disrupt.FileFormats
 
         internal static void SanityCheckEntry(BigEntry entry, int version, Big.Platform platform, byte compressionVersion)
         {
-            var compressionScheme = ToCompressionScheme(entry.CompressionScheme, compressionVersion);
+            var compressionScheme = ToCompressionScheme(entry.CompressionScheme, compressionVersion, entry.UncompressedSize);
 
             if (compressionScheme == Big.CompressionScheme.None)
             {
@@ -369,7 +369,7 @@ namespace Gibbed.Disrupt.FileFormats
             return RenderNameHash(value);
         }
 
-        private static Big.CompressionScheme ToCompressionScheme(byte id, byte version)
+        private static Big.CompressionScheme ToCompressionScheme(byte id, byte version, int uncompressedSize)
         {
             switch (version)
             {
@@ -381,9 +381,9 @@ namespace Gibbed.Disrupt.FileFormats
             throw new NotSupportedException();
         }
 
-        public Big.CompressionScheme ToCompressionScheme(byte id)
+        public Big.CompressionScheme ToCompressionScheme(byte id, int uncompressedSize)
         {
-            return ToCompressionScheme(id, this._CompressionVersion);
+            return ToCompressionScheme(id, this._CompressionVersion, uncompressedSize);
         }
 
         public byte FromCompressionSCheme(Big.CompressionScheme compressionScheme)
