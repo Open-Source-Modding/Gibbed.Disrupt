@@ -1,0 +1,973 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	User-defined attribute types
+	
+	* Composed of mostly auto-generated types courtesy of The Bastard ;)
+	* Default attributes will NOT be overriden with a user type!
+	* Don't add more than one attribute with the same name, you'll fuck everything up!
+-->
+<AttributeTypes Kind="UserTypes">
+	<!-- [dis]rupt -->
+	<AttributeGroup>
+		<Attribute Name="disLayerId"									Type="Int32" />
+		<Attribute Name="disName"										Type="StringHash" />
+		<Attribute Name="disNodeName"									Type="StringHash" />
+        
+        <Attribute Name="text_disCoverFileName"                         Type="String" />
+		<Attribute Name="text_disName"									Type="String" />
+		<Attribute Name="text_disNodeName"								Type="String" />
+	</AttributeGroup>
+	
+	<!-- hid ? -->
+	<AttributeGroup>
+		<Attribute Name="hidCentet"										Type="Vector3" /> <!-- Nice work on that typo! -->
+		<Attribute Name="hidCenter"										Type="Vector3" />
+		<Attribute Name="hidAngles"										Type="Vector3" />
+		<Attribute Name="hidBoneIndex"									Type="Byte" />
+		<Attribute Name="hidCanDetach"									Type="Byte" />
+		<Attribute Name="hidCanHang"									Type="Byte" />
+		<Attribute Name="hidComponentClassName"							Type="String" />
+		<Attribute Name="hidConstEntity"								Type="Byte" />
+		<Attribute Name="hidDamageStatePartIndex"						Type="Byte" />
+		<Attribute Name="hidDetailObject"								Type="Byte" />
+		<Attribute Name="hidEaseTimeInMovementCurve"					Type="Float" />
+		<Attribute Name="hidEaseTimeInMovementCurveOnEaseTimeRatio"		Type="Float" />
+		<Attribute Name="hidEntityClass"								Type="StringHash" />
+		<Attribute Name="hidEventName"									Type="StringHash" />
+		<Attribute Name="hidEventType"									Type="Byte" />
+		<Attribute Name="hidFXNode"										Type="StringHash" />
+		<Attribute Name="hidHasAliasName"								Type="Byte" />
+		<Attribute Name="hidIndex"										Type="Byte" />
+		<Attribute Name="hidInjected"									Type="Byte" />
+		<Attribute Name="hidLayerCount"									Type="Byte" />
+		<Attribute Name="hidLeftWheelIndex"								Type="Byte" />
+		<Attribute Name="hidLightIndex"									Type="Byte" />
+		<Attribute Name="hidLightindex"									Type="Byte" />
+		<Attribute Name="hidLightPositionOffset"						Type="Vector3" />
+		<Attribute Name="hidLightRotation"								Type="Vector3" />
+		<Attribute Name="hidMaxKnotInEaseTime"							Type="Float" />
+		<Attribute Name="hidMaxKnotTime"								Type="Float" />
+		<Attribute Name="hidMeshName"									Type="StringHash" />
+		<Attribute Name="hidName"										Type="String" />
+		<Attribute Name="hidNodeName"									Type="StringHash" />
+		<Attribute Name="hidNodeNameLOD0"								Type="StringHash" />
+		<Attribute Name="hidNumKnots"									Type="BinHex" />
+		<Attribute Name="hidParentBoneNameID"							Type="StringHash" />
+		<Attribute Name="hidPartIndex"									Type="Byte" />
+		<Attribute Name="hidPoints"										Type="Float" />
+		<Attribute Name="hidPos"										Type="Vector3" />
+		<Attribute Name="hidPos_precise"								Type="Vector3" />
+		<Attribute Name="hidResourceCount"								Type="Int32" />
+		<Attribute Name="hidRightWheelIndex"							Type="Byte" />
+		<Attribute Name="hidShape"										Type="Float" />
+		<Attribute Name="hidShapePoints"								Type="Float" />
+		<Attribute Name="hidTireDeformationIndex"						Type="Byte" />
+		<Attribute Name="hidType"										Type="StringHash" />
+		<Attribute Name="hidUseAlternateSimpleCollision"				Type="Byte" />
+		<Attribute Name="hidUseHierarchial"								Type="Byte" />
+		<Attribute Name="hidVehiclePartIndex"							Type="Byte" />
+        
+		<Attribute Name="text_hidEntityClass"							Type="String" />
+        <Attribute Name="text_hidFXNode"							    Type="String" />
+        <Attribute Name="text_hidEventName"							    Type="String" />
+        <Attribute Name="text_hidGeometryResourceForGamePlay"           Type="String" />
+        <Attribute Name="text_hidMeshName"							    Type="String" />
+        <Attribute Name="text_hidNodeName"							    Type="String" />
+        <Attribute Name="text_hidNodeNameLOD0"							Type="String" />
+        <Attribute Name="text_hidParentBoneNameID"						Type="String" />
+		<Attribute Name="text_hidResourceId"							Type="String" />
+        <Attribute Name="text_hidType"							        Type="String" />
+	</AttributeGroup>
+
+    <!-- Actually a string hash?? -->
+    <Attribute Name="CBreakableHackableComponent.sPartName" Type="StringHash" />
+    <Attribute Name="CLightEffectComponent.hidType" Type="StringHash" />
+	
+	<Attribute Name="Knot.Type"											Type="Byte" />
+	<Attribute Name="Knot.Info"											Type="Vector4" />
+	<Attribute Name="Knot.Value"										Type="Vector4" />
+	
+	<Attribute Name="Elem.Value"										Type="StringHash" />
+    
+    <Attribute Name="Entry.text_name"                                   Type="String" />
+    <Attribute Name="Entry.name"                                        Type="StringHash" />
+    
+    <!-- This pesky little punk tricked me! -->
+    <Attribute Name="fPriority"                                         Type="Byte" />
+
+    <Attribute Name="Light.LightName"                                   Type="StringHash" />
+    <Attribute Name="IntegerVariable.iVal"                              Type="Int32" />
+    <Attribute Name="StringVariable.Val"                                Type="String" />
+    <Attribute Name="Vehicle.LightName"                                 Type="String" />
+  
+    <!-- ??? -->
+    <Attribute Name="AnimalMoveStateEntry.hidName" Type="BinHex" />
+    <Attribute Name="MoveStateEntry.hidName" Type="BinHex" />
+    <Attribute Name="Element.hidName" Type="BinHex" />
+	
+	<Attribute Name="boneMovementBoneName"								Type="Int32" />
+	<Attribute Name="child"												Type="Byte" />
+	<Attribute Name="compobjstatdataStaticDataType"						Type="StringHash" />
+
+	<Attribute Name="distanceInterval"									Type="Float" />
+	<Attribute Name="driverActionMap"									Type="String" />
+	<Attribute Name="enableSpecular"									Type="Byte" />
+	<Attribute Name="entSpawnMissionTrigger"							Type="Byte" />
+    
+    <AttributeGroup Type="String">
+        <Attribute Name="text_aiagentzoneTypeClassID" />
+        <Attribute Name="text_aiwsAIWorkspace" />
+        <Attribute Name="text_archWreckArchetype" />
+        <Attribute Name="text_compobjstatdataStaticDataType" />
+        
+        <Attribute Name="text_fileAnimatedCamera" />
+        <Attribute Name="text_fileAnimationPath" />
+        <Attribute Name="text_fileBulletTraceTexture" />
+        <Attribute Name="text_fileBulletTraceBallTexture" />
+        <Attribute Name="text_fileModel" />
+        <Attribute Name="text_fileName" />
+        <Attribute Name="text_fileProjectedTexture" />
+        <Attribute Name="text_fileTexture" />
+        <Attribute Name="text_fileSkeleton" />
+        <Attribute Name="text_fileLineTexture" />
+        <Attribute Name="text_fileProfilerThumbnailOverride" />
+        <Attribute Name="text_fileRagdollResource" />
+        <Attribute Name="text_filePhysHighresResource" />
+        
+        <Attribute Name="text_mapicondescMapIconDBEntry" />
+        
+        <Attribute Name="text_matMaterial" />
+        <Attribute Name="text_matLinkedMaterial" />
+        <Attribute Name="text_matUnlinkedMaterial" />
+        <Attribute Name="text_matControlledMaterial" />
+        <Attribute Name="text_matNotControlledMaterial" />
+        <Attribute Name="text_matDeactivatedMaterial" />
+        
+        <Attribute Name="text_psParticle" />
+        <Attribute Name="text_psDamageParticles" />
+        <Attribute Name="text_psAttractFX" />
+        <Attribute Name="text_psShutdownElectricFX" />
+        <Attribute Name="text_psChangePhaseElectricFX" />
+        <Attribute Name="text_psDestructionExplosionFX" />
+        <Attribute Name="text_psJammerParticleFx" />
+        <Attribute Name="text_psExplosionParticles" />
+        <Attribute Name="text_psGroundParticles" />
+        <Attribute Name="text_psMalfunctionLeftEngineParticles" />
+        <Attribute Name="text_psMalfunctionRightEngineParticles" />
+        <Attribute Name="text_psMuzzleFlashParticleId" />
+        <Attribute Name="text_psMuzzleFlashLTrainParticleId" />
+        <Attribute Name="text_psMuzzleFlashParticleNonPlayerId" />
+        <Attribute Name="text_psMuzzleEmptyParticleId" />
+        <Attribute Name="text_psBulletCaseParticleId" />
+        <Attribute Name="text_psBulletTrailParticleId" />
+        <Attribute Name="text_psMalfunctionLeftEngineParticles" />
+        <Attribute Name="text_psMalfunctionRightEngineParticles" />
+        
+        <Attribute Name="text_psArmedParticleFxNormal" />
+        <Attribute Name="text_psArmedParticleFxAlly" />
+        <Attribute Name="text_psArmedParticleFxEnemy" />
+        
+        <Attribute Name="text_sndSound"	/>
+        <Attribute Name="text_sndGroupSound" />
+        <Attribute Name="text_sndLoopSoundEnd" />
+        <Attribute Name="text_sndInitStart"	/>
+        <Attribute Name="text_sndInitEnd" />
+        <Attribute Name="text_sndDeinitStart" />
+        <Attribute Name="text_sndDeinitEnd" />
+        <Attribute Name="text_sndMovementStart" />
+        <Attribute Name="text_sndMovementEnd" />
+        <Attribute Name="text_sndEndGridMode" />
+        <Attribute Name="text_sndZoomingStart" />
+        <Attribute Name="text_sndZoomingEnd" />
+        <Attribute Name="text_sndStartGridMode" />
+        <Attribute Name="text_sndEndGridMode" />
+        <Attribute Name="text_sndRotorLoop" />
+        <Attribute Name="text_sndDestruction" />
+        <Attribute Name="text_sndNormalHack" />
+        <Attribute Name="text_sndEndHack" />
+        <Attribute Name="text_sndExplosionSound" />
+        <Attribute Name="text_sndEventStartSoundID" />
+        <Attribute Name="text_sndEventEndSoundID" />
+        <Attribute Name="text_sndEventResumeSoundID" />
+        <Attribute Name="text_sndEventPauseSoundID" />
+        <Attribute Name="text_sndPickupSound" />
+        <Attribute Name="text_sndLaserLoopStartSoundId" />
+        <Attribute Name="text_sndLaserLoopStopSoundId" />
+        <Attribute Name="text_sndEngineSoundStart" />
+        <Attribute Name="text_sndEngineSoundStop" />
+        <Attribute Name="text_sndRotationSoundStart" />
+        <Attribute Name="text_sndRotationSoundStop" />
+        <Attribute Name="text_sndSliderSoundStart" />
+        <Attribute Name="text_sndSliderSoundStop" />
+        <Attribute Name="text_sndPlatformSoundStart" />
+        <Attribute Name="text_sndPlatformSoundStop" />
+        <Attribute Name="text_sndClawAttachSound" />
+        <Attribute Name="text_sndClawReleaseSound" />
+        <Attribute Name="text_sndClawAttachFailSound" />
+        <Attribute Name="text_sndRopeBreakSound" />
+        <Attribute Name="text_sndAttractSound" />
+        <Attribute Name="text_sndOnProfiledSound" />
+        <Attribute Name="text_sndDetectorProximitySound" />
+        <Attribute Name="text_sndDetectorProximitySoundStop" />
+        <Attribute Name="text_sndAlarmStartSound" />
+        <Attribute Name="text_sndAlarmStopSound" />
+        <Attribute Name="text_sndConnectSound" />
+        <Attribute Name="text_sndConnectThroughWallSound" />
+        <Attribute Name="text_sndDisconnectSound" />
+        <Attribute Name="text_sndDisconnectNoiseSound" />
+        <Attribute Name="text_sndOnHackOnSoundId" />
+        <Attribute Name="text_sndOnHackOffSoundId" />
+        <Attribute Name="text_sndRollingSound" />
+        <Attribute Name="text_sndRollingSoundEnd" />
+        <Attribute Name="text_sndSlidingSound" />
+        <Attribute Name="text_sndSlidingSoundEnd" />
+        <Attribute Name="text_sndAcquisitionStart" />
+        <Attribute Name="text_sndAcquisitionEnd" />
+        <Attribute Name="text_sndAcquisitionSuccess" />
+        <Attribute Name="text_sndAcquisitionFail" />
+        <Attribute Name="text_sndLoopStart" />
+        <Attribute Name="text_sndLoopEnd" />
+        <Attribute Name="text_sndZoneIn" />
+        <Attribute Name="text_sndZoneOut" />
+        <Attribute Name="text_sndDetectionStart" />
+        <Attribute Name="text_sndDetectionEnd" />
+        <Attribute Name="text_sndStartSecurityCameraMode" />
+        <Attribute Name="text_sndStartSound" />
+        <Attribute Name="text_sndStopSound" />
+        <Attribute Name="text_sndStartOpeningSound" />
+        <Attribute Name="text_sndStopClosingSound" />
+        <Attribute Name="text_sndInteractionStarted" />
+        <Attribute Name="text_sndInteractionStopped" />
+        <Attribute Name="text_sndFallingSound" />
+        <Attribute Name="text_sndScratchSoundStart" />
+        <Attribute Name="text_sndScratchSoundEnd" />
+        <Attribute Name="text_sndPlatformMoveUpStart" />
+        <Attribute Name="text_sndPlatformMoveUpStop" />
+        <Attribute Name="text_sndPlatformMoveDownStart" />
+        <Attribute Name="text_sndPlatformMoveDownStop" />
+        <Attribute Name="text_sndSpeedBoostActivation" />
+        <Attribute Name="text_sndEngineEntry" />
+        <Attribute Name="text_sndEngineExit" />
+        <Attribute Name="text_sndWheelRollingEntry" />
+        <Attribute Name="text_sndWheelRollingExit" />
+        <Attribute Name="text_sndStumblingEntry" />
+        <Attribute Name="text_sndStumblingExit" />
+        <Attribute Name="text_sndSpinningEntry" />
+        <Attribute Name="text_sndSpinningExit" />
+        <Attribute Name="text_sndWallSurfaceHitSound" />
+        <Attribute Name="text_sndGroundSurfaceHitSound" />
+        <Attribute Name="text_sndQuickStartSound" />
+        <Attribute Name="text_sndNavLoopSound" />
+        <Attribute Name="text_sndNavStopSound" />
+        <Attribute Name="text_sndScanInProgressSound" />
+        <Attribute Name="text_sndScanSuccessfulSound" />
+        <Attribute Name="text_sndScanFailedSound" />
+        <Attribute Name="text_sndBarkInterruptedSound" />
+        <Attribute Name="text_sndHackPowerDownSound" />
+        <Attribute Name="text_sndHackPowerUpSound" />
+        <Attribute Name="text_sndStartMusicLoveBullSound" />
+        <Attribute Name="text_sndStartMusicAttractorSound" />
+        <Attribute Name="text_sndEndHackMusicSound" />
+        <Attribute Name="text_sndChargeBoostSound" />
+        <Attribute Name="text_sndChargeBoostStopSound" />
+        <Attribute Name="text_sndChargeCollisionNPCSound" />
+        <Attribute Name="text_sndChargeCollisionNPCArmoredSound" />
+        <Attribute Name="text_sndCollisionOtherRobotSound" />
+        <Attribute Name="text_sndBulletImpactSound" />
+        <Attribute Name="text_sndTaserImpactSound" />
+        <Attribute Name="text_sndDamageStartSound" />
+        <Attribute Name="text_sndDamageEndSound" />
+        <Attribute Name="text_sndBootUpSound" />
+        <Attribute Name="text_sndExplosionWarnSound" />
+        <Attribute Name="text_sndExplosionWarnEndSound" />
+        <Attribute Name="text_sndKickRCCarSound" />
+        <Attribute Name="text_sndReloadingStartSound" />
+        <Attribute Name="text_sndReloadingStopSound" />
+        <Attribute Name="text_sndWeaponChargingStartSound" />
+        <Attribute Name="text_sndWeaponChargingStopSound" />
+        <Attribute Name="text_sndRebootingCombatSound" />
+        <Attribute Name="text_sndCombatRobotSpinShootingSound" />
+        <Attribute Name="text_sndCombatRobotSearchingSound" />
+        <Attribute Name="text_sndHeadShotSound" />
+        <Attribute Name="text_sndKneeShotSound" />
+        <Attribute Name="text_sndLandingFatalSoundID" />
+        <Attribute Name="text_sndDieSound" />
+        <Attribute Name="text_sndMPDieSound" />
+        <Attribute Name="text_sndHurtSound" />
+        <Attribute Name="text_sndOnCompletePhaseOneSound" />
+        <Attribute Name="text_sndOnCompletePhaseTwoSound" />
+        <Attribute Name="text_sndOnCompletePhaseThreeSound" />
+        <Attribute Name="text_sndStartAmbientSound" />
+        <Attribute Name="text_sndStopAmbientSound" />
+        
+        <Attribute Name="text_tmplDialogActor" />
+        <Attribute Name="text_tmplDialogActorNormalEnd" />
+        <Attribute Name="text_tmplDialogActorHighEnd" />
+        
+        <Attribute Name="text_PlayerDetectedBark" />
+        <Attribute Name="text_EngagingTargetBark" />
+        <Attribute Name="text_TargetSwitchBark" />
+        <Attribute Name="text_TargetLostBark" />
+        <Attribute Name="text_TargetSearchBark" />
+        
+        <Attribute Name="text_BoneName" />
+        <Attribute Name="text_LightName" />
+        <Attribute Name="text_SeatBone" />
+        <Attribute Name="text_SeatBoneAnchor" />
+        <Attribute Name="text_TexturePath" />
+        <Attribute Name="text_Value" />
+    </AttributeGroup>
+    
+	<Attribute Name="fileBoxPath"										Type="String" />
+
+	<Attribute Name="intensity"											Type="Int32" />
+	<Attribute Name="lightPosition"										Type="Vector3" />
+	<Attribute Name="lightRadius"										Type="Float" />
+	<Attribute Name="meshNameID"										Type="Int32" />
+	
+	<Attribute Name="angRainFalloffAngle"								Type="Float" />
+	<Attribute Name="angRainVerticalRotation"							Type="Float" />
+	
+	<Attribute Name="iIndependanceDayFXInclusiveStartHour"				Type="BinHex" />
+	<Attribute Name="iIndependanceDayFXInclusiveEndHour"				Type="BinHex" />
+	<Attribute Name="iVariedBulletsCountIndependenceDay"				Type="BinHex" />
+	<Attribute Name="iVariedBulletsCount"								Type="BinHex" />
+    
+    <Attribute Name="SeatBone"                                          Type="StringHash" />
+    <Attribute Name="SeatBoneAnchor"                                    Type="StringHash" />
+    
+    <Attribute Name="MultistateThreshold" 			                    Type="Float"/>
+	
+	<!-- good fucking lord this is one long attribute name! -->
+	<Attribute Name="missionareashapedescriptoridMissionAreaShapeDescriptorId"
+																		Type="Int32" />
+	
+	<!-- 
+		Vectors
+	-->
+    <AttributeGroup Type="Vector2">
+        <Attribute Name="vec2AcquisitionZoneMax" />
+        <Attribute Name="vec2AcquisitionZoneMin" />
+        <Attribute Name="vec2BackfireRpmRange" />
+        <Attribute Name="vec2BlendCurve" />
+        <Attribute Name="vec2BlendSCurve" />
+        <Attribute Name="vec2BloodDistanceFromEdge" />
+        <Attribute Name="vec2BloodDistanceFromEdgeRnd" />
+        <Attribute Name="vec2BloodScaleRnd" />
+        <Attribute Name="vec2BloodSizeOnScreen" />
+        <Attribute Name="vec2BulletHitRumbleIntensity" />
+        <Attribute Name="vec2CameraShakeIntensity" />
+        <Attribute Name="vec2ExplosionDistanceScale" />
+        <Attribute Name="vec2ExplosionLevelScale" />
+        <Attribute Name="vec2HorizontalAngle" />
+        <Attribute Name="vec2PaintScaleRnd" />
+        <Attribute Name="vec2PaintSizeOnScreen" />
+        <Attribute Name="vec2RumbleIntensity" />
+        <Attribute Name="vec2SCurveValues" />
+        <Attribute Name="vec2VerticalAngle" />
+        <Attribute Name="vector2SpeedMeeterPosition" />
+        <Attribute Name="vectorPaintPositionMargins" />
+        <Attribute Name="vec2BulletTraceDimension" />
+        <Attribute Name="vector2RegenSpeedMultiplierRange" />
+    </AttributeGroup>
+	<AttributeGroup Type="Vector3">
+        <Attribute Hash="155FD603" Type="Vector3" />
+        <Attribute Hash="196D5A2C" Type="Vector3" />
+        <Attribute Hash="885B44E4" Type="Vector3" />
+
+		<Attribute Name="BBoxIncreaseMin" />
+		<Attribute Name="BBoxIncreaseMax" />
+		
+		<Attribute Name="angvecAttractFXAngleOffset" />
+		<Attribute Name="angvecRightWeaponFXAngleOffset" />
+		<Attribute Name="angvecPRYRange" />
+		<Attribute Name="angvecLeftWeaponFXAngleOffset" />
+		<Attribute Name="angvecBackWeaponFXAngleOffset" />
+		<Attribute Name="angvecLocalRotation" />
+		<Attribute Name="angvecFrontWeaponFXAngleOffset" />
+		
+        <Attribute Name="center" />
+        
+		<!-- Legion: color*/clr* are RGBA (16 bytes). Keep RGB-only vecs here. -->
+        <Attribute Name="v" />
+		
+		<Attribute Name="vec3PosSysOffset" />
+		<Attribute Name="vec3PositionOffset" />
+		<Attribute Name="vecAutoNavOffset" />
+		<Attribute Name="vecWindFeedbackOffset" />
+		<Attribute Name="vecWindFeedbackOffsetFromBoat" />
+		<Attribute Name="vecGradientIntermediateColor1" />
+		<Attribute Name="vecGradientIntermediateColor2" />
+		<Attribute Name="vecGradientIntermediateColor3" />
+		<Attribute Name="vecIntermediateColor" />
+		<Attribute Name="vecFinalColor" />
+		<Attribute Name="vecInitialColor" />
+		<Attribute Name="vecIndicatorBoatAndSpeedMeterColor" />
+		
+		<Attribute Name="vectorBBoxMin" />
+		<Attribute Name="vectorBBoxMax" />
+		<Attribute Name="vectorCameraOffset" />
+		<Attribute Name="vectorCameraLensPosOffset" />
+		<Attribute Name="vectorAnglesOffset" />
+		<Attribute Name="vectorAlignAngles" />
+		<Attribute Name="vectorBoundingBoxSize" />
+		<Attribute Name="vectorRelativeLocation" />
+		<Attribute Name="vectorLimitsExtraRotations" />
+		<Attribute Name="vectorCenterOfMassOffset" />
+		<Attribute Name="vectorOffset" />
+		<Attribute Name="vectorMinVelocity" />
+		<Attribute Name="vectorMaxVelocity" />
+		<Attribute Name="vectorCenterOffset" />
+		<Attribute Name="vectorHackingSourcePositionOffset" />
+		<Attribute Name="vectorDestroyedFxLocalOffset" />
+		<Attribute Name="vectorTopIconOffset" />
+		<Attribute Name="vectorBaseEntityHackingIconOffset" />
+		<Attribute Name="vectorBottomLocalOffset" />
+		<Attribute Name="vectorRopeBreakParticleFXLocalOffset" />
+		<Attribute Name="vectorAutonavOffset" />
+		<Attribute Name="vectorOffsetFromEntity" />
+		<Attribute Name="vectorIconOffsetFromEntity" />
+		<Attribute Name="vectorAnchorLocalPositionOffset" />
+		<Attribute Name="vectorAnchorLocalOrientationOffset" />
+		<Attribute Name="vectorInertiaScale" />
+		<Attribute Name="vectorPos" />
+		<Attribute Name="vectorTwistAxis" />
+		<Attribute Name="vectorPlaneAxis" />
+		<Attribute Name="vectorSize" />
+		<Attribute Name="vectorPresetPositionOffset" />
+		<Attribute Name="vectorRotationOffset" />
+		<Attribute Name="vectorInitialTranslation" />
+		<Attribute Name="vectorTranslation" />
+		<Attribute Name="vectorInitialRotation" />
+		<Attribute Name="vectorRotation" />
+		<Attribute Name="vectorMovementElementForward" />
+		<Attribute Name="vectorOfflineOrientation" />
+		<Attribute Name="vectorDetectionIconOffset" />
+		<Attribute Name="vectorScale" />
+		<Attribute Name="vectorCameraPositionOffset" />
+		<Attribute Name="vectorCameraOrientationOffset" />
+		<Attribute Name="vectorLocalPosOffset" />
+		<Attribute Name="vectorRelativePosition" />
+		<Attribute Name="vectorSpecificEntryPoint" />
+		<Attribute Name="vectorObstacleTranslation" />
+		<Attribute Name="vectorBasePosition" />
+		<Attribute Name="vectorXYZRange" />
+		<Attribute Name="vectorBeamVolumeVelocity" />
+		<Attribute Name="vectorObstacleScaleFactor" />
+		<Attribute Name="vectorBoxesSize" />
+		<Attribute Name="vectorCamOffset" />
+		<Attribute Name="vectorRotationRange" />
+		<Attribute Name="vectorPositionRange" />
+		<Attribute Name="vectorBack" />
+		<Attribute Name="vectorMiddle" />
+		<Attribute Name="vectorFront" />
+		<Attribute Name="vectorDestroyedModelPartsLocalOffset" />
+		<Attribute Name="vectorDamagedParticleFXLocalOffset" />
+		<Attribute Name="vectorVerticalForce" />
+		<Attribute Name="vectorThirdRay" />
+		<Attribute Name="vectorSecondRay" />
+		<Attribute Name="vectorFirstRay" />
+		<Attribute Name="vectorStartPointSide" />
+		<Attribute Name="vectorForkLiftPlatformCastUnderSize" />
+		<Attribute Name="vectorForkLiftPlatformCastAboveSize" />
+		<Attribute Name="vectorStartPointFront" />
+		<Attribute Name="vectorScanAboveCastLocalPosOffset" />
+		<Attribute Name="vectorCameraLocationOffset" />
+		<Attribute Name="vectorCameraWorldOrientation" />
+		<Attribute Name="vectorCenterPoint" />
+		<Attribute Name="vectorStimPosition" />
+		<Attribute Name="vectorPropellerEndPoint" />
+		<Attribute Name="vectorPropellerStartPoint" />
+		<Attribute Name="vectorShakeRotationAmplitude" />
+		<Attribute Name="vectorShakeTranslationAmplitude" />
+		<Attribute Name="vectorBloodFadeInIdleOutTimeRnd" />
+		<Attribute Name="vectorBloodFadeInIdleOutTime" />
+		<Attribute Name="vectorCameraWorldLocation" />
+		<Attribute Name="vectorPhoneOffset" />
+		<Attribute Name="vectorMarkerPositon" />
+		<Attribute Name="vectorPosition" />
+		<Attribute Name="vectorBackWeaponExplosionOffset" />
+		<Attribute Name="vectorFrontWeaponFXPositionOffset" />
+		<Attribute Name="vectorRightWeaponFXPositionOffset" />
+		<Attribute Name="vectorLampRotation" />
+		<Attribute Name="vectorLampPositionOffset" />
+		<Attribute Name="vectorConnectionLineOffset" />
+		<Attribute Name="vectorLightEffectRotationOffset" />
+		<Attribute Name="vectorLightEffectOffset" />
+		<Attribute Name="vectorScanUnderCastLocalPosOffset" />
+		<Attribute Name="vectorLeftWeaponFXPositionOffset" />
+		<Attribute Name="vectorBackWeaponFXPositionOffset" />
+		<Attribute Name="vectorPositionOffset" />
+		<Attribute Name="vectorLocalNormal" />
+		<Attribute Name="vectorLocalOrigin" />
+		<Attribute Name="vectorLocalPointB" />
+		<Attribute Name="vectorLocalPointA" />
+		<Attribute Name="vectorLocalOffset" />
+		<Attribute Name="vectorBoundaryVelocity" />
+		<Attribute Name="vectorEmitterVelocity" />
+		<Attribute Name="vectorSoftwareLinkOffset" />
+		<Attribute Name="vectorShoppingAutonavOffset2" />
+		<Attribute Name="vectorAxis" />
+		<Attribute Name="vectorSteamEjectionPushBoxSize" />
+		<Attribute Name="vectorShoppingAutonavOffset" />
+		<Attribute Name="vectorCenterPosition" />
+		<Attribute Name="vectorIconOffsetFromTop" />
+		<Attribute Name="vectorAttractFXOffset" />
+		<Attribute Name="vectorLocalTranslationOffset" />
+		<Attribute Name="vectorProximityPosOffset" />
+		<Attribute Name="vectorProfilerSquareTargetOffset" />
+		<Attribute Name="vectorProfilerLineTargetOffset" />
+		<Attribute Name="vectorSoundObjectOffset" />
+		<Attribute Name="vectorBulletCaseEjectionOffset" />
+        <Attribute Name="vectorSphereParticleFxOffset" />
+        <Attribute Name="vectorPaintFadeInIdleOutTime" />
+        <Attribute Name="vectorPaintFadeInIdleOutTimeRnd" />
+        <Attribute Name="vectorIndependanceDayFXPos" />
+        <Attribute Name="vectorRightSideWeaponExplosionOffset" />
+        <Attribute Name="vectorLeftSideWeaponExplosionOffset" />
+	</AttributeGroup>
+	<AttributeGroup Type="Vector4">
+        <!-- Watch Dogs Legion: colour attributes are RGBA float4 -->
+        <Attribute Name="colorFinal" />
+        <Attribute Name="colorInit" />
+        <Attribute Name="colorIntense" />
+		<Attribute Name="clrColor" />
+		<Attribute Name="clrHighLightColor" />
+		<Attribute Name="colorColor" />
+		<Attribute Name="colorLightColorWarning" />
+		<Attribute Name="colorProfilingLightColor" />
+		<Attribute Name="colorProjectilePulseColor" />
+		<Attribute Name="colorActivatingLightColor" />
+		<Attribute Name="colorGateColor" />
+		<Attribute Name="colorColumnColor" />
+		<Attribute Name="colorColumnBackColor" />
+		<Attribute Name="colorLightColor" />
+		<Attribute Name="colorLightColorConnected" />
+		<Attribute Name="colorLightColorDisconnected" />
+		<Attribute Name="vColor" />
+        
+		<Attribute Name="vector4PostFxMask2" />
+		
+		<Attribute Name="waveMinValues" />
+		<Attribute Name="waveWidths" />
+		<Attribute Name="waveSpeeds" />
+		<Attribute Name="waveMaxValues" />
+	</AttributeGroup>
+	
+	<Attribute Name="nCollisionCountToRoll"								Type="Byte" />
+	<Attribute Name="nMaxAiEntity"										Type="Byte" />
+	<Attribute Name="nMaxAnchors"										Type="Byte" />
+	<Attribute Name="nMaxPeople"										Type="Byte" />
+	<Attribute Name="nMaxSparksInSingleBurst"							Type="Byte" />
+	<Attribute Name="nMaxSplattersOnScreen"								Type="Byte" />
+	<Attribute Name="nMinAiEntity"										Type="Byte" />
+	<Attribute Name="nNodesLimit"										Type="Float" />
+	<Attribute Name="nQuantity"											Type="Byte" />
+	
+    <Attribute Name="name"												Type="Int32" />
+	
+    <Attribute Name="olgLightGroup"										Type="Int16" />
+	
+    <Attribute Name="passengerActionMap"								Type="String" />
+	
+    <Attribute Name="radiusOfInfluence"									Type="Float" />
+	
+    <Attribute Name="remoteDriverActionMap"								Type="String" />
+	<Attribute Name="remoteDriverHackingAction"							Type="String" />
+    
+    <AttributeGroup Type="StringHash">
+        <Attribute Name="sAnchorName" />
+        <Attribute Name="sAnchorPartName" />
+        <Attribute Name="sBehavior" />
+        <Attribute Name="sBoneName" />
+        <Attribute Name="sBulletHitPostFxName" />
+        <Attribute Name="sBulletHitRumbleId" />
+        <Attribute Name="sCameraBoneName" />
+        <Attribute Name="sCameraCinemaPostFx" />
+        <Attribute Name="sCelebrationActionMap" />
+        <Attribute Name="sCinemaPostFXName" />
+        <Attribute Name="sClass" />
+        <Attribute Name="sCollisionRumbleId" />
+        <Attribute Name="sCommandName" />
+        <Attribute Name="sCraterPartID" />
+        <Attribute Name="sCustomName" />
+        <Attribute Name="sDetail" />
+        <Attribute Name="sDropObjectRumbleId" />
+        <Attribute Name="sEffectName" />
+        <Attribute Name="sExplosionBoneName" />
+        <Attribute Name="sFellDownMovingVehicleRumbleId" />
+        <Attribute Name="sFirstPersonCamPosFxName" />
+        <Attribute Name="sFxId" />
+        <Attribute Name="sGroupName" />
+        <Attribute Name="sHackingIcon" />
+        <Attribute Name="sInteractionImpactRumbleId" />
+        <Attribute Name="sJumpRumbleId" />
+        <Attribute Name="sKickedRumbleId" />
+        <Attribute Name="sLandRumbleId" />
+        <Attribute Name="sLeftEngineBoneName" />
+        <Attribute Name="sLeftTriggerRumbleID" />
+        <Attribute Name="sLeftWheelRumbleId" />
+        <Attribute Name="sMaterialOverrideSlotName" />
+        <Attribute Name="sMaterialSlot" />
+        <Attribute Name="sMistPostFXName" />
+        <Attribute Name="sNextPuzzleGroupToActivate" />
+        <Attribute Name="sPartName" />
+        <Attribute Name="sPatchPartID" />
+        <Attribute Name="sPostFXName" />
+        <Attribute Name="sPuzzleGroup" />
+        <Attribute Name="sPuzzleGroupToActivate" />
+        <Attribute Name="sRightEngineBoneName" />
+        <Attribute Name="sRightTriggerRumbleID" />
+        <Attribute Name="sRightWheelRumbleId" />
+        <Attribute Name="sRoadworksPartID" />
+        <Attribute Name="sRumble" />
+        <Attribute Name="sRumbleID" />
+        <Attribute Name="sRumbleId" />
+        <Attribute Name="sSpeedBoostRumbleId" />
+        <Attribute Name="sSpotLightBoneName" />
+        <Attribute Name="sSupportVehicleCollisionRumbleId" />
+        <Attribute Name="sSupportVehicleFallingRumbleId" />
+        <Attribute Name="sSurfaceProximityRumbleId" />
+        <Attribute Name="sTransitionCinemaPostFx" />
+    </AttributeGroup>
+    <AttributeGroup Type="String">
+        <Attribute Name="text_sAnchorName" />
+        <Attribute Name="text_sAnchorPartName" />
+        <Attribute Name="text_sBehavior" />
+        <Attribute Name="text_sBoneName" />
+        <Attribute Name="text_sBulletHitPostFxName" />
+        <Attribute Name="text_sBulletHitRumbleId" />
+        <Attribute Name="text_sCameraBoneName" />
+        <Attribute Name="text_sCameraCinemaPostFx" />
+        <Attribute Name="text_sCelebrationActionMap" />
+        <Attribute Name="text_sCinemaPostFXName" />
+        <Attribute Name="text_sClass" />
+        <Attribute Name="text_sCollisionRumbleId" />
+        <Attribute Name="text_sCommandName" />
+        <Attribute Name="text_sCraterPartID" />
+        <Attribute Name="text_sCustomName" />
+        <Attribute Name="text_sDetail" />
+        <Attribute Name="text_sDropObjectRumbleId" />
+        <Attribute Name="text_sEffectName" />
+        <Attribute Name="text_sExplosionBoneName" />
+        <Attribute Name="text_sFellDownMovingVehicleRumbleId" />
+        <Attribute Name="text_sFirstPersonCamPosFxName" />
+        <Attribute Name="text_sFxId" />
+        <Attribute Name="text_sGroupName" />
+        <Attribute Name="text_sHackingIcon" />
+        <Attribute Name="text_sInteractionImpactRumbleId" />
+        <Attribute Name="text_sJumpRumbleId" />
+        <Attribute Name="text_sKickedRumbleId" />
+        <Attribute Name="text_sLandRumbleId" />
+        <Attribute Name="text_sLeftEngineBoneName" />
+        <Attribute Name="text_sLeftTriggerRumbleID" />
+        <Attribute Name="text_sLeftWheelRumbleId" />
+        <Attribute Name="text_sMaterialOverrideSlotName" />
+        <Attribute Name="text_sMaterialSlot" />
+        <Attribute Name="text_sMistPostFXName" />
+        <Attribute Name="text_sNextPuzzleGroupToActivate" />
+        <Attribute Name="text_sPartName" />
+        <Attribute Name="text_sPatchPartID" />
+        <Attribute Name="text_sPostFXName" />
+        <Attribute Name="text_sPuzzleGroup" />
+        <Attribute Name="text_sPuzzleGroupToActivate" />
+        <Attribute Name="text_sRightEngineBoneName" />
+        <Attribute Name="text_sRightTriggerRumbleID" />
+        <Attribute Name="text_sRightWheelRumbleId" />
+        <Attribute Name="text_sRoadworksPartID" />
+        <Attribute Name="text_sRumble" />
+        <Attribute Name="text_sRumbleID" />
+        <Attribute Name="text_sRumbleId" />
+        <Attribute Name="text_sSpeedBoostRumbleId" />
+        <Attribute Name="text_sSpotLightBoneName" />
+        <Attribute Name="text_sSupportVehicleCollisionRumbleId" />
+        <Attribute Name="text_sSupportVehicleFallingRumbleId" />
+        <Attribute Name="text_sSurfaceProximityRumbleId" />
+        <Attribute Name="text_sTransitionCinemaPostFx" />
+    </AttributeGroup>
+	
+	<Attribute Name="selActivityType"									Type="Int32" />
+	<Attribute Name="selAgentType"										Type="Int32" />
+	<Attribute Name="selAnchorH"										Type="Int32" />
+	<Attribute Name="selAnchorV"										Type="Int32" />
+	<Attribute Name="selAnimalSpecies"									Type="Int32" />
+	<Attribute Name="selAttachedBone"									Type="Int32" />
+	<Attribute Name="selBlockedMovementDirection"						Type="Int32" />
+	<Attribute Name="selBodyStance"										Type="Int32" />
+	<Attribute Name="selBone"											Type="Int32" />
+	<Attribute Name="selBroadcastChannel"								Type="Int32" />
+	<Attribute Name="selCategory"										Type="Int32" />
+	<Attribute Name="selCollisionLayer"									Type="Int32" />
+	<Attribute Name="selColorMode"										Type="Int32" />
+	<Attribute Name="selConstraintType"									Type="Int32" />
+	<Attribute Name="selCraneType"										Type="Int32" />
+	<Attribute Name="selDamageType"										Type="Int32" />
+	<Attribute Name="selEmitterType"									Type="Int32" />
+	<Attribute Name="selEmotes"											Type="Int32" />
+	<Attribute Name="selEventType"										Type="Int32" />
+	<Attribute Name="selFirearm"										Type="Int32" />
+	<Attribute Name="selFlyingDrone"									Type="Int32" />
+	<Attribute Name="selHackType"										Type="Int32" />
+	<Attribute Name="selHasWind"										Type="Int32" />
+	<Attribute Name="selHighlightColor"									Type="Int32" />
+	<Attribute Name="selHornStimType"									Type="Int32" />
+	<Attribute Name="selInitWeaponType"									Type="Int32" />
+	<Attribute Name="selInitialGateState"								Type="Int32" />
+	<Attribute Name="selInteractionActionMap"							Type="Int32" />
+	<Attribute Name="selInteractionIconType"							Type="Int32" />
+	<Attribute Name="selInteractionReason"								Type="Int32" />
+	<Attribute Name="selInteractionType"								Type="Int32" />
+	<Attribute Name="selInventorySlot0"									Type="Int32" />
+	<Attribute Name="selInventorySlot1"									Type="Int32" />
+	<Attribute Name="selInventorySlot10"								Type="Int32" />
+	<Attribute Name="selInventorySlot11"								Type="Int32" />
+	<Attribute Name="selInventorySlot12"								Type="Int32" />
+	<Attribute Name="selInventorySlot13"								Type="Int32" />
+	<Attribute Name="selInventorySlot14"								Type="Int32" />
+	<Attribute Name="selInventorySlot15"								Type="Int32" />
+	<Attribute Name="selInventorySlot16"								Type="Int32" />
+	<Attribute Name="selInventorySlot17"								Type="Int32" />
+	<Attribute Name="selInventorySlot18"								Type="Int32" />
+	<Attribute Name="selInventorySlot19"								Type="Int32" />
+	<Attribute Name="selInventorySlot2"									Type="Int32" />
+	<Attribute Name="selInventorySlot20"								Type="Int32" />
+	<Attribute Name="selInventorySlot3"									Type="Int32" />
+	<Attribute Name="selInventorySlot4"									Type="Int32" />
+	<Attribute Name="selInventorySlot5"									Type="Int32" />
+	<Attribute Name="selInventorySlot6"									Type="Int32" />
+	<Attribute Name="selInventorySlot7"									Type="Int32" />
+	<Attribute Name="selInventorySlot8"									Type="Int32" />
+	<Attribute Name="selInventorySlot9"									Type="Int32" />
+	<Attribute Name="selLiftToolObjectType"								Type="Int32" />
+	<Attribute Name="selLocomotionType"									Type="Int32" />
+	<Attribute Name="selLoopType"										Type="Int32" />
+	<Attribute Name="selLuminousUnit"									Type="Int32" />
+	<Attribute Name="selMaxSpeedType"									Type="Int32" />
+	<Attribute Name="selNethackColor"									Type="Int32" />
+	<Attribute Name="selNitroPerkOverride"								Type="Int32" />
+	<Attribute Name="selNoMatchMakingZonePriority"						Type="Int32" />
+	<Attribute Name="selObjectInWheel"									Type="Int32" />
+	<Attribute Name="selObjectSizePerceptionWhenBroken"					Type="Int32" />
+	<Attribute Name="selObjectType"										Type="Int32" />
+	<Attribute Name="selOffsetBone"										Type="Int32" />
+	<Attribute Name="selOnLeafBeingDetached"							Type="Int32" />
+	<Attribute Name="selPartBoneIndex"									Type="Int32" />
+	<Attribute Name="selPatchType"										Type="Int32" />
+	<Attribute Name="selPathfindType"									Type="Int32" />
+	<Attribute Name="selPermanentStimType"								Type="Int32" />
+	<Attribute Name="selPlayerRelation"									Type="Int32" />
+	<Attribute Name="selPriority"										Type="Int32" />
+	<Attribute Name="selProfileColorTypeOverride"						Type="Int32" />
+	<Attribute Name="selProjectileType"									Type="Int32" />
+	<Attribute Name="selReactionType"									Type="Int32" />
+	<Attribute Name="selReinforcementAffiliation"						Type="Int32" />
+	<Attribute Name="selRemoteObjectType"								Type="Int32" />
+	<Attribute Name="selRewardSpecificBehaviour"						Type="Int32" />
+	<Attribute Name="selRopePhysicsModelType"							Type="Int32" />
+	<Attribute Name="selSeatType"										Type="Int32" />
+	<Attribute Name="selShape"											Type="Int32" />
+	<Attribute Name="selShapeType"										Type="Int32" />
+	<Attribute Name="selSlot0"											Type="Int32" />
+	<Attribute Name="selSlot1"											Type="Int32" />
+	<Attribute Name="selSlot2"											Type="Int32" />
+	<Attribute Name="selSlot3"											Type="Int32" />
+	<Attribute Name="selSlot4"											Type="Int32" />
+	<Attribute Name="selSlot5"											Type="Int32" />
+	<Attribute Name="selSlot6"											Type="Int32" />
+	<Attribute Name="selSlot7"											Type="Int32" />
+	<Attribute Name="selSpecificInteractionType"						Type="Int32" />
+	<Attribute Name="selTakedownType"									Type="Int32" />
+	<Attribute Name="selTaser"											Type="Int32" />
+	<Attribute Name="selTexturePlane"									Type="Int32" />
+	<Attribute Name="selTile"											Type="Int32" />
+	<Attribute Name="selToyCar"											Type="Int32" />
+	<Attribute Name="selTranFromContext"								Type="Int32" />
+	<Attribute Name="selTranToContext"									Type="Int32" />
+	<Attribute Name="selTriggerType"									Type="Int32" />
+	<Attribute Name="selType"											Type="Int32" />
+	<Attribute Name="selTypeFilter"										Type="Int32" />
+	<Attribute Name="selUsageBehaviorType"								Type="Int32" />
+	<Attribute Name="selUserEntityType"									Type="Int32" />
+	<Attribute Name="selUserType"										Type="Int32" />
+	<Attribute Name="selVehicleType"									Type="Int32" />
+	<Attribute Name="selhidLampPositionFlag"							Type="Int32" />
+    
+	<Attribute Name="sohcControllerType"								Type="StringHash" />
+	<Attribute Name="spawnNormalDistance"								Type="Float" />
+	<Attribute Name="static"											Type="Byte" />
+    
+	<Attribute Name="statuseffectRangePerkID"							Type="Int32" />
+    
+	<Attribute Name="timeInterval"										Type="Float" />
+    
+	<Attribute Name="tmplDialogActor"									Type="StringHash" />
+	<Attribute Name="tmplDialogActorHighEnd"							Type="StringHash" />
+	<Attribute Name="tmplDialogActorNormalEnd"							Type="StringHash" />
+	
+	<Attribute Name="useDistanceInterval"								Type="Byte" />
+	<Attribute Name="vehicleLoaded"										Type="Byte" />
+	<Attribute Name="wlucatBindToCategoryV3"							Type="Int16" />
+	<Attribute Name="wlucatLoadingUnitCategoryV3"						Type="Int16" />
+
+	<Attribute Name="TargetSwitchBark" Type="BinHex" />
+	
+	<Attribute Name="PlayerDetectedBark" Type="Int32" />
+	<Attribute Name="selMassHackNPC" Type="Byte" />
+	
+	<!-- Known attribute names with unknown types -->
+	<Attribute Name="selButtonType"	Type="BinHex" />
+	<Attribute Name="selReflectorTimeCurve" Type="BinHex" />
+	<Attribute Name="selHighlightType" Type="BinHex" />
+	<Attribute Name="hidResourceIndex" Type="BinHex" />
+	<Attribute Name="SoundId" Type="BinHex" />
+	<Attribute Name="selBlendType" Type="BinHex" />
+	
+	<Attribute Name="ResourceIndex" Type="BinHex" />
+	<Attribute Name="LayerCount" Type="BinHex" />
+	<Attribute Name="selLocomotionFilter" Type="BinHex" />
+	<Attribute Name="nNumLanesLeft" Type="BinHex" />
+	<Attribute Name="nNumLanesRight" Type="BinHex" />
+	<Attribute Name="selMovementType" Type="BinHex" />
+	<Attribute Name="hidSingleObject" Type="BinHex" />
+	<Attribute Name="hidValidationFailed" Type="BinHex" />
+	<Attribute Name="iShareChannel" Type="BinHex" />
+	<Attribute Name="uiStepIndex" Type="BinHex" />
+	<Attribute Name="iRandomSeedBias" Type="BinHex" />
+	<Attribute Name="nStartTextureStateIndex" Type="BinHex" />
+	<Attribute Name="animalCanJumpAgainst" Type="BinHex" />
+	<Attribute Name="iVal" Type="BinHex" />
+	<Attribute Name="selInitialRotation" Type="BinHex" />
+	<Attribute Name="affectedByTimeOfDay" Type="BinHex" />
+	<Attribute Name="uiPawnInteractionMonitorUpdateDelay" Type="BinHex" />
+	<Attribute Name="Usable" Type="BinHex" />
+	<Attribute Name="selAffiliation" Type="BinHex" />
+	<Attribute Name="selNpcSpeedType" Type="BinHex" />
+	<Attribute Name="selPointType" Type="BinHex" />
+	<Attribute Name="iPriority" Type="BinHex" />
+	<Attribute Name="selShowcaseValue" Type="BinHex" />
+	<Attribute Name="selReinforcementCallerMode" Type="BinHex" />
+	<Attribute Name="selPatrolType" Type="BinHex" />
+	<Attribute Name="selFleeDirection" Type="BinHex" />
+	<Attribute Name="selFOVType" Type="BinHex" />
+	
+	<Attribute Name="selCollectibleType" Type="BinHex" />
+	<Attribute Name="selDirection" Type="BinHex" />
+	<Attribute Name="StartOnLoad" Type="BinHex" />
+	<Attribute Name="selShapeTessellationType" Type="BinHex" />
+	<Attribute Name="iStartHour" Type="BinHex" />
+	<Attribute Name="iStartMinute" Type="BinHex" />
+	<Attribute Name="iEndHour" Type="BinHex" />
+	<Attribute Name="iEndMinute" Type="BinHex" />
+	<Attribute Name="SharedFaces0" Type="BinHex" />
+    <Attribute Name="SharedFaces1" Type="Byte" />
+	<Attribute Name="Vertices0" Type="BinHex" />
+	<Attribute Name="Vertices1" Type="BinHex" />
+	<Attribute Name="selRespawnObjectType" Type="BinHex" />
+	<Attribute Name="selBlendMode" Type="BinHex" />
+	<Attribute Name="selArenaAffiliation" Type="BinHex" />
+	<Attribute Name="iFCount" Type="BinHex" />
+	<Attribute Name="uiMaxRobotCount" Type="BinHex" />
+	<Attribute Name="uiMaxAnimalCount" Type="BinHex" />
+	<Attribute Name="nMinReinforcementCallerCount" Type="BinHex" />
+	<Attribute Name="nMaxReinforcementCallerCount" Type="BinHex" />
+	<Attribute Name="uiNumShapeSides" Type="BinHex" />
+	<Attribute Name="DamagePerJet" Type="BinHex" />
+	<Attribute Name="nMaterialIdx" Type="BinHex" />
+	<Attribute Name="uiTextureSelection" Type="BinHex" />
+	<Attribute Name="selNavmeshType" Type="BinHex" />
+	<Attribute Name="selTagType" Type="BinHex" />
+	<Attribute Name="iMaxHeathLevel" Type="BinHex" />
+	<Attribute Name="IsRiver" Type="BinHex" />
+	<Attribute Name="SortingLayer" Type="BinHex" />
+	
+    <Attribute Name="LocalizationId" 				            /><!--Type="Int16" />-->
+	<Attribute Name="Amount" 						            /><!--Type="Int32" />-->
+    <Attribute Name="AngleOffset" 					            /><!--Type="Vector3" />-->
+    <Attribute Name="AntiTankGun" 					            /><!--Type="Int32" />-->
+    <Attribute Name="AvoidSelfOcclusion" 			            /><!--Type="Int32" />-->
+    <Attribute Name="BoneName" 						            /><!--Type="Int32" />-->
+    <Attribute Name="BoxSize" 						            /><!--Type="Vector3" />-->
+    <Attribute Name="BulletCaseBone" 				            /><!--Type="Int32" />-->
+    <Attribute Name="BulletCaseEjectionDelay" 		            /><!--Type="Int32" />-->
+    <Attribute Name="CollisionBark" 				            /><!--Type="Int32" />-->
+    <Attribute Name="ColBoxParentBoneID" 			            /><!--Type="Byte" />-->
+    <Attribute Name="Color" 						            /><!--Type="Vector4" />-->
+    <Attribute Name="Darkness" 						            /><!--Type="Int32" />-->
+    <Attribute Name="Dead" 							            /><!--Type="Int32" />-->
+    <Attribute Name="DistanceMax" 					            /><!--Type="Int32" />-->
+    <Attribute Name="EnergyPickUp" 					            /><!--Type="Int32" />-->
+    <Attribute Name="ExplosionImpulseDividerHACK" 	            /><!--Type="Int32" />-->
+    <Attribute Name="ExplosionCenter" 				            /><!--Type="Vector3" />-->
+    <Attribute Name="FadeOutStartDistance" 			            /><!--Type="Int32" />-->
+    <Attribute Name="FadeInStartDistance" 			            /><!--Type="Int32" />-->
+    <Attribute Name="FadeoutStart" 					            /><!--Type="Int32" />-->
+    <Attribute Name="FallingBark" 					            /><!--Type="Int32" />-->
+    <Attribute Name="FadeOutEndDistance" 			            /><!--Type="Int32" />-->
+    <Attribute Name="FadeInEndStartDistance" 		            /><!--Type="Int32" />-->
+    <Attribute Name="FleeAnimRatio" 				            /><!--Type="Int32" />-->
+    <Attribute Name="FollowerScreenStringId" 		            /><!--Type="Int32" />-->
+    <Attribute Name="GatlingGun" 					            /><!--Type="Int32" />-->
+    <Attribute Name="HeavyDamages" 					            /><!--Type="Int32" />-->
+    <Attribute Name="HighEnd" 						            /><!--Type="Int32" />-->
+    <Attribute Name="IdleBark" 						            /><!--Type="Int32" />-->
+    <Attribute Name="InteractStimDelay" 			            /><!--Type="Int32" />-->
+    <Attribute Name="Info" 							            /><!--Type="Vector4" />-->
+    <Attribute Name="Indices" 						            /><!--Type="Int32" />-->
+    <Attribute Name="LOD0Distance" 					            /><!--Type="Int32" />-->
+    <Attribute Name="LightName" 					            /><!--Type="Int32" />-->
+    <Attribute Name="LicensePlateText" 				            /><!--Type="Byte" />-->
+    <Attribute Name="LicensePlateText" 				            /><!--Type="Int32" />-->
+    <Attribute Name="LightName" 					            /><!--Type="Vector4" />-->
+    <Attribute Name="LightDamages" 					            /><!--Type="Int32" />-->
+    <Attribute Name="LocalizationId" 				            /><!--Type="Int32" />-->
+    <Attribute Name="LocalizationId" 				            /><!--Type="Byte" />-->
+    <Attribute Name="LockBone" 						            /><!--Type="Int32" />-->
+    <Attribute Name="LoggingSize" 					            /><!--Type="Byte" />-->
+    <Attribute Name="LogicMaterial" 				            /><!--Type="Byte" />-->
+    <Attribute Name="MaxNumberOfJets" 				            /><!--Type="Byte" />-->
+    <Attribute Name="MediumDamages" 				            /><!--Type="Int32" />-->
+    <Attribute Name="MinTimeBetweenCollisions" 		            /><!--Type="Int32" />-->
+    <Attribute Name="MuzzleBone" 					            /><!--Type="Int32" />-->
+    <Attribute Name="NodeName" 						            /><!--Type="Int32" />-->
+    <Attribute Name="Normal" 						            /><!--Type="Int32" />-->
+    <Attribute Name="Offset" 						            /><!--Type="Vector3" />-->
+    <Attribute Name="Orientation" 					            /><!--Type="Vector3" />-->
+    <Attribute Name="OriginalShape" 				            /><!--Type="Int32" />-->
+    <Attribute Name="PartCount" 					            /><!--Type="Byte" />-->
+    <Attribute Name="PillStart" 					            /><!--Type="Int32" />-->
+    <Attribute Name="Plane" 						            /><!--Type="Vector4" />-->
+    <Attribute Name="Pos" 							            /><!--Type="Vector3" />-->
+    <Attribute Name="Points" 						            /><!--Type="Int32" />-->
+    <Attribute Name="RagdollCollideSpeedLimit" 		            /><!--Type="Int32" />-->
+    <Attribute Name="RegionSeparatorCount" 			            /><!--Type="Vector3" />-->
+    <Attribute Name="ResourceTypeID" 				            /><!--Type="Int32" />-->
+    <Attribute Name="Rotation" 						            /><!--Type="Vector3" />-->
+    <Attribute Name="SKToDefaultTrigger" 			            /><!--Type="Int32" />-->
+    <Attribute Name="SKGreetingTrigger" 			            /><!--Type="Int32" />-->
+    <Attribute Name="SKPurchaseMadeTrigger" 		            /><!--Type="Int32" />-->
+    <Attribute Name="SKNoPurchaseMadeTrigger" 		            /><!--Type="Int32" />-->
+    <Attribute Name="SKWakeupDistance" 				            /><!--Type="Int32" />-->
+    <Attribute Name="SKStartSleepTrigger" 			            /><!--Type="Int32" />-->
+    <Attribute Name="Scalar" 						            /><!--Type="Int32" />-->
+    <Attribute Name="SecondaryColBoxParentBoneID" 	            /><!--Type="Byte" />-->
+    <Attribute Name="SeatBone" 						            /><!--Type="Int32" />-->
+    <Attribute Name="SeatBoneAnchor" 				            /><!--Type="Int32" />-->
+    <Attribute Name="SectorID" 						            /><!--Type="Byte" />-->
+    <Attribute Name="Shapes" 						            /><!--Type="Int32" />-->
+    <Attribute Name="Size" 							            /><!--Type="Vector3" />-->
+    <Attribute Name="SlotStringId" 					            /><!--Type="Int32" />-->
+    <Attribute Name="SlideBone" 					            /><!--Type="Int32" />-->
+    <Attribute Name="SnapToTerrain" 				            /><!--Type="Byte" />-->
+    <Attribute Name="SpawnDelay" 					            /><!--Type="Int32" />-->
+    <Attribute Name="SpinningBark" 					            /><!--Type="Int32" />-->
+    <Attribute Name="StimDuration" 					            /><!--Type="Int32" />-->
+    <Attribute Name="TalkBark" 						            /><!--Type="Int32" />-->
+    <Attribute Name="TreeName" 						            /><!--Type="Int32" />-->
+    <Attribute Name="aiagentzoneTypeClassID" 		            /><!--Type="Int32" />-->
+    <Attribute Name="areaLightRadius" 				            /><!--Type="Int32" />-->
+    <Attribute Name="autoCloseNPCDetectionRadius" 	            /><!--Type="Int32" />-->
+    <Attribute Name="autoClosePlayerDetectionRadius"            /><!--Type="Int32" />-->       
+    
+    
+    
+</AttributeTypes>

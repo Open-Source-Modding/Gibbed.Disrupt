@@ -572,6 +572,10 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                     {
                         writer.WriteAttributeString("name", knownFieldName);
                     }
+                    else if (BinaryObjectInfo.StringLookup.TryResolve(kv.Key, out var resolvedName) == true)
+                    {
+                        writer.WriteAttributeString("name", resolvedName);
+                    }
                     else if (kv.Key == 0x1063B98A)
                     {
                         writer.WriteAttributeString("name", "text_AnimID");

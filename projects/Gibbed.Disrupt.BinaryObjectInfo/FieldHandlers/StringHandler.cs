@@ -48,7 +48,7 @@ namespace Gibbed.Disrupt.BinaryObjectInfo.FieldHandlers
             }
 
             int length, o;
-            for (length = 0, o = offset; buffer[o] != 0 && o < buffer.Length; length++, o++)
+            for (length = 0, o = offset; o < buffer.Length && buffer[o] != 0; length++, o++)
             {
             }
 

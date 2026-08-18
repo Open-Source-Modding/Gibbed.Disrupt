@@ -1,0 +1,47 @@
+{
+  "documents": {
+    "github_com_wasdennnoch_WDHashHelpAPI.md": {
+      "url": "https://github.com/wasdennnoch/WDHashHelpAPI",
+      "title": "GitHub - wasdennnoch/WDHashHelpAPI: WIP - Store and Search Strings and corresponding Hashes used by the Watch Dogs game engine · GitHub",
+      "fetchedAt": "2026-08-18T20:56:48.710Z",
+      "expiresAt": "2026-08-19T20:56:48.710Z",
+      "size": 4118
+    },
+    "github_com_wasdennnoch_WDHashHelpAPI_tree_master_src.md": {
+      "url": "https://github.com/wasdennnoch/WDHashHelpAPI/tree/master/src",
+      "title": "WDHashHelpAPI/src at master · wasdennnoch/WDHashHelpAPI · GitHub",
+      "fetchedAt": "2026-08-18T20:56:52.348Z",
+      "expiresAt": "2026-08-19T20:56:52.348Z",
+      "size": 3429
+    },
+    "raw_githubusercontent_com_wasdennnoch_WDHashHelpAPI_master_src_hasherts.md": {
+      "url": "https://raw.githubusercontent.com/wasdennnoch/WDHashHelpAPI/master/src/hasher.ts",
+      "title": "Plain Text",
+      "fetchedAt": "2026-08-18T20:56:55.891Z",
+      "expiresAt": "2026-08-19T20:56:55.891Z",
+      "size": 1974
+    },
+    "raw_githubusercontent_com_gibbed_GibbedDisrupt_master_projects_GibbedDisrupt.md": {
+      "url": "https://raw.githubusercontent.com/gibbed/Gibbed.Disrupt/master/projects/Gibbed.Disrupt.ConvertBinaryObject/Program.cs",
+      "title": "Plain Text",
+      "fetchedAt": "2026-08-18T23:07:46.689Z",
+      "expiresAt": "2026-08-19T23:07:46.689Z",
+      "size": 11897
+    },
+    "raw_githubusercontent_com_qstlijku_GibbedDisrupt_main_projects_GibbedDisrupt.md": {
+      "url": "https://raw.githubusercontent.com/qstlijku/Gibbed.Disrupt/main/projects/Gibbed.Disrupt.ConvertBinaryObject/Program.cs",
+      "title": "Plain Text",
+      "fetchedAt": "2026-08-18T23:08:50.029Z",
+      "expiresAt": "2026-08-19T23:08:50.029Z",
+      "size": 12742
+    },
+    "raw_githubusercontent_com_Open-Source-Modding_GibbedDisrupt_main_projects_Gi.md": {
+      "url": "https://raw.githubusercontent.com/Open-Source-Modding/Gibbed.Disrupt/main/projects/Gibbed.Disrupt.ConvertBinaryObject/Program.cs",
+      "title": "Plain Text",
+      "fetchedAt": "2026-08-18T23:08:56.857Z",
+      "expiresAt": "2026-08-19T23:08:56.857Z",
+      "size": 14640
+    }
+  },
+  "lastUpdated": "2026-08-18T23:08:56.858Z"
+}

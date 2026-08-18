@@ -189,6 +189,8 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                 Console.WriteLine("Loading binary class and object definitions...");
             }
 
+            BinaryObjectInfo.StringLookup.Load(project.ListsPath);
+
             BinaryObjectInfo.InfoManager infoManager;
 
             if (System.Diagnostics.Debugger.IsAttached == false)
@@ -266,6 +268,17 @@ namespace Gibbed.Disrupt.ConvertBinaryObject
                         else
                         {
                             baseName = GetBaseNameFromPath(inputPath);
+                        }
+                    }
+
+                    // Auto-detect output extension from root name attribute
+                    if (extras.Count < 2)
+                    {
+                        var rootName = root.GetAttribute("name", "");
+                        if (string.IsNullOrEmpty(rootName) == false)
+                        {
+                            outputPath = Path.ChangeExtension(inputPath, "." + rootName);
+                            outputPath = Path.GetFullPath(outputPath);
                         }
                     }
 
