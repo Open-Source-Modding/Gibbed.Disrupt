@@ -16,10 +16,13 @@
 	branch = main
 [submodule "bin/projects/Watch Dogs/files"]
 	path = bin/projects/Watch Dogs/files
-	url = https://github.com/gibbed/WDFileLists.git
+	url = git@github.com:Open-Source-Modding/WatchDogs-File-Lists.git
+	branch = main
 [submodule "bin/projects/Watch Dogs 2/files"]
 	path = bin/projects/Watch Dogs 2/files
-	url = https://github.com/gibbed/WD2FileLists.git
+	url = git@github.com:Open-Source-Modding/WatchDogs2-File-Lists.git
+	branch = main
 [submodule "bin/projects/Watch Dogs Legion/files"]
 	path = bin/projects/Watch Dogs Legion/files
-	url = https://github.com/gibbed/WDLFileLists.git
+	url = git@github.com:Open-Source-Modding/WatchDogsLegion-File-Lists.git
+	branch = main
