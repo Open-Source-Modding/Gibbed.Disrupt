@@ -11,7 +11,10 @@
 *.sln.docstates
 bin/projects/**/files/test*.filelist
 private/
+
+# AI Files
 .opencode/
+AGENTS.md
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
