@@ -163,12 +163,13 @@
 			<field name="characterabilityCharacterAbility" type="BinHex"/>
 		</object>
 		<object name="AssetsProperties">
-			<field name="fileItemImageFileName" type="BinHex"/>
+			<field name="fileItemImageFileName" type="String"/>
 			<field name="sItemIconTextureName" type="String"/>
 			<field name="text_archItemArchetype" type="String"/>
 			<field name="archItemArchetype" type="BinHex"/>
 			<field name="text_ConstraintForArchetypeLoading" type="String"/>
 			<field name="ConstraintForArchetypeLoading" type="BinHex"/>
+			<field name="sItemDescriptionTextureName" type="String"/>
 		</object>
 		<object name="RewardProperties">
 			<field name="selLootingFeedbackType" type="Enum"/>

@@ -113,7 +113,11 @@ namespace Gibbed.Disrupt.BinaryObjectInfo
 
             if (def != null && def.Type != type)
             {
-                if (def.Type == FieldType.BinHex && _Handlers.TryGetValue(type, out var fixedHandler) == true)
+                Console.Error.WriteLine(
+                    $"Warning: Import type mismatch — def says {def.Type} but XML has {type}, using XML type");
+                // Type mismatch between class definition and XML.
+                // Trust the XML type — it was exported from actual binary data.
+                if (_Handlers.TryGetValue(type, out var fixedHandler) == true)
                 {
                     return fixedHandler.Import(null, arrayType, nav);
                 }
@@ -136,9 +140,13 @@ namespace Gibbed.Disrupt.BinaryObjectInfo
 
         public static T Deserialize<T>(FieldDefinition def, FieldType type, byte[] buffer, int offset, int count)
         {
+            // Type mismatch between class definition and binary data.
+            // Trust the binary data type — it's what was actually written.
             if (def != null && def.Type != type)
             {
-                throw new ArgumentException("type mismatch", nameof(def));
+                Console.Error.WriteLine(
+                    $"Warning: Deserialize type mismatch — def says {def.Type} but data is {type}, ignoring definition");
+                def = null;
             }
 
             if (_Handlers.TryGetValue(type, out var handler) == false)

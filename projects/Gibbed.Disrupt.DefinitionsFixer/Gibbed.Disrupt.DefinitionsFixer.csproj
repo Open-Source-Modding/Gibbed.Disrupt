@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputPath>..\..\bin\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Product>hV_WD_DefinitionsFixer</Product>
+    <Description>.NET 8 port of hV's Watch Dogs Definitions Fixer — converts BinHex fields to proper typed values in exported XML.</Description>
+    <Copyright>Original tool by hV (2024). Ported to .NET 8.</Copyright>
+    <AssemblyTitle>hV_WD_DefinitionsFixer</AssemblyTitle>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gibbed.Disrupt.BinaryObjectInfo\Gibbed.Disrupt.BinaryObjectInfo.csproj" />
+    <ProjectReference Include="..\Gibbed.Disrupt.FileFormats\Gibbed.Disrupt.FileFormats.csproj" />
+  </ItemGroup>
+
+</Project>

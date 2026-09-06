@@ -1,0 +1,37 @@
+# User-defined string mappings for hash resolution
+# Format: one string per line (CRC32 hashed automatically by StringLookup)
+# These names were previously hardcoded in DefinitionsFixer
+libobj
+obj
+End
+text_matMaterial
+FOV
+PoV
+Fov
+Modifier
+RotationPitchMin
+RotationPitchMax
+RotationYawMin
+RotationYawMax
+Settings
+MixerContexts
+Context
+cameracontextContextParameters
+text_archShopKeeper
+text_archCashRegister
+text_sPlayerGreetingsTrigger
+text_fileInsideShopMenu
+text_fileFugitiveMediaBroadcastInProgress
+text_fileConsumingAdrenalineCameraAnimation
+text_availabilityruleRuleType
+AmbientReflectionOverride
+gradAmbientReflectionTopColor
+curveAmbientReflectionTopIntensity
+gradAmbientReflectionBottomColor
+curveAmbientReflectionBottomIntensity
+Knots
+Knot
+Color
+# locstridItemNameId
+# locstridItemDescriptionId
+# locstridItemLongDescriptionId

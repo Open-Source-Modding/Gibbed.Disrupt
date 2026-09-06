@@ -17,6 +17,8 @@ namespace Gibbed.Disrupt.BinaryObjectInfo
             {
                 Path.Combine(projectPath, "strings.txt"),
                 Path.Combine(projectPath, "strings.user.txt"),
+                Path.Combine(projectPath, "current.txt"),
+                Path.Combine(projectPath, "generic_names.txt"),
             };
 
             foreach (var file in files)

@@ -42,7 +42,8 @@ namespace Gibbed.Disrupt.Packing
 
         private static string GetListPath(string installPath, string inputPath)
         {
-            installPath = installPath.ToLowerInvariant();
+            installPath = installPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar)
+                .ToLowerInvariant();
             inputPath = inputPath.ToLowerInvariant();
 
             if (inputPath.StartsWith(installPath) == false)
@@ -66,9 +67,15 @@ namespace Gibbed.Disrupt.Packing
         public static void Main(string[] args, string projectName, Big.TryGetHashOverride<THash> tryGetHashOverride)
         {
             bool showHelp = false;
+            string installPathOverride = null;
+            string outputDirOverride = null;
+            string dataPrefix = null;
 
             var options = new OptionSet()
             {
+                { "p|install-path=", "override install path (skips registry detection)", v => installPathOverride = v },
+                { "o|output-dir=", "override output directory for filelists", v => outputDirOverride = v },
+                { "d|data-prefix=", "remap data directory prefix in filelist paths (e.g. data_win64 → data_xenon)", v => dataPrefix = v },
                 { "h|help", "show this message and exit", v => showHelp = v != null },
             };
 
@@ -90,6 +97,8 @@ namespace Gibbed.Disrupt.Packing
             {
                 Console.WriteLine("Usage: {0} [OPTIONS]+", GetExecutableName());
                 Console.WriteLine();
+                Console.WriteLine("Rebuilds per-archive file lists from the game's FAT archives.");
+                Console.WriteLine();
                 Console.WriteLine("Options:");
                 options.WriteOptionDescriptions(Console.Out);
                 return;
@@ -106,13 +115,25 @@ namespace Gibbed.Disrupt.Packing
             byte? nameHashVersion = null;
             HashList<THash> knownHashes = null;
 
-            var installPath = project.InstallPath;
-            var listsPath = project.ListsPath;
+            var installPath = installPathOverride ?? project.InstallPath;
+            var listsPath = outputDirOverride ?? project.ListsPath;
 
             if (installPath == null)
             {
                 Console.WriteLine("Could not detect install path.");
+                Console.WriteLine("Tip: use --install-path=<path> to specify manually.");
                 return;
+            }
+
+            if (installPathOverride != null)
+            {
+                Console.WriteLine("Using install path: {0}", installPath);
+            }
+
+            if (outputDirOverride != null)
+            {
+                Console.WriteLine("Using output directory: {0}", listsPath);
+                Directory.CreateDirectory(listsPath);
             }
 
             if (listsPath == null)
@@ -136,8 +157,10 @@ namespace Gibbed.Disrupt.Packing
             var outputPaths = new List<string>();
 
             var tracking = new Tracking();
+            TArchive lastFat = default;
 
             Console.WriteLine("Processing...");
+            BigFileV5.ClearSanityWarnings();
             for (int i = 0; i < fatPaths.Count; i++)
             {
                 var fatPath = fatPaths[i];
@@ -164,24 +187,57 @@ namespace Gibbed.Disrupt.Packing
                 outputPaths.Add(outputPath);
 
                 var fat = new TArchive();
-                using (var input = File.OpenRead(inputPath))
+                try
                 {
-                    fat.Deserialize(input);
+                    using (var input = File.OpenRead(inputPath))
+                    {
+                        fat.Deserialize(input);
+                    }
+                }
+                catch (FormatException ex)
+                {
+                    Console.Error.WriteLine("WARNING: skipping {0} ({1})", fatPath, ex.Message);
+                    continue;
+                }
+                catch (EndOfStreamException ex)
+                {
+                    Console.Error.WriteLine("WARNING: skipping {0} ({1})", fatPath, ex.Message);
+                    continue;
                 }
 
                 if (nameHashVersion == null)
                 {
                     nameHashVersion = fat.NameHashVersion;
+                    lastFat = fat;
 
                     Console.WriteLine("Loading file lists for version {0}...", nameHashVersion);
 
                     THash wrappedComputeNameHash(string s) =>
                         fat.ComputeNameHash(s, tryGetHashOverride);
-                    project.LoadListsFileNames(wrappedComputeNameHash, out knownHashes);
-                }
-                else if (nameHashVersion != fat.NameHashVersion)
-                {
-                    throw new InvalidOperationException();
+
+                    if (dataPrefix != null)
+                    {
+                        // Remap filelist paths: dataPrefix → actual archive base directory name
+                        // e.g. data_win64 → data_xenon for X360 archives
+                        string archiveBase = Path.GetFileName(installPath.TrimEnd(
+                            Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar));
+
+                        string PrefixModifier(string line)
+                        {
+                            line = line.Replace(@"/", @"\");
+                            if (line.StartsWith(dataPrefix + @"\", StringComparison.OrdinalIgnoreCase))
+                            {
+                                return archiveBase + line.Substring(dataPrefix.Length);
+                            }
+                            return line;
+                        }
+                        Console.WriteLine("Remapping filelist prefix: {0} → {1}", dataPrefix, archiveBase);
+                        knownHashes = project.LoadLists("*.filelist", wrappedComputeNameHash, PrefixModifier);
+                    }
+                    else
+                    {
+                        project.LoadListsFileNames(wrappedComputeNameHash, out knownHashes);
+                    }
                 }
 
                 if (knownHashes == null)
@@ -209,6 +265,56 @@ namespace Gibbed.Disrupt.Packing
 
                 // TODO(gibbed): breakdown all archives individually
             }
+
+            WriteFailures(listsPath, knownHashes, fatPaths, lastFat);
+        }
+
+        private static void WriteFailures(
+            string listsPath,
+            HashList<THash> knownHashes,
+            List<string> fatPaths,
+            TArchive fat)
+        {
+            var failures = knownHashes.GetFailures().ToList();
+            var removed = BigFileV5.RemovedEntries;
+            if (failures.Count == 0 && removed.Count == 0)
+            {
+                return;
+            }
+
+            // Use the first archive's renderer to format hash values.
+            string Render(THash hash)
+            {
+                var probe = new TArchive();
+                return probe.RenderNameHash(hash);
+            }
+
+            var failurePath = Path.Combine(listsPath, "files", "failure.txt");
+            using (var output = new StreamWriter(failurePath, false, new UTF8Encoding(false)))
+            {
+                output.WriteLine("; {0} hash collisions (filtered from file lists)", failures.Count);
+                foreach (var failure in failures.OrderBy(f => f.Key.ToString()))
+                {
+                    var names = failure.Value.Distinct().ToArray();
+                    output.WriteLine("{0}: {1}", Render(failure.Key), string.Join(" vs ", names));
+                }
+
+                if (removed.Count > 0)
+                {
+                    output.WriteLine();
+                    output.WriteLine("; {0} entries removed (failed FAT entry sanity checks)", removed.Count);
+                    foreach (var entry in removed.OrderBy(e => e.Reason))
+                    {
+                        // BigFileV5.RemovedEntries stores ulong, but THash may be uint (WD1).
+                        // Upper 32 bits are always zero for 32-bit archives, so truncation is safe.
+                        output.WriteLine("{0}: {1}",
+                            fat.RenderNameHash((THash)(object)entry.Hash), entry.Reason);
+                    }
+                }
+            }
+
+            Console.WriteLine("Wrote {0} hash collisions and {1} removed entries to {2}",
+                failures.Count, removed.Count, failurePath);
         }
 
         private static void HandleEntries(

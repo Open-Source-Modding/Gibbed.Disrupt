@@ -1,0 +1,368 @@
+/* Copyright (c) 2020 Rick (rick 'at' gibbed 'dot' us)
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty. In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Permission is granted to anyone to use this software for any purpose,
+ * including commercial applications, and to alter it and redistribute it
+ * freely, subject to the following restrictions:
+ *
+ * 1. The origin of this software must not be misrepresented; you must not
+ *    claim that you wrote the original software. If you use this software
+ *    in a product, an acknowledgment in the product documentation would
+ *    be appreciated but is not required.
+ *
+ * 2. Altered source versions must be plainly marked as such, and must not
+ *    be misrepresented as being the original software.
+ *
+ * 3. This notice may not be removed or altered from any source
+ *    distribution.
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Globalization;
+using System.IO;
+using System.Xml;
+using Gibbed.IO;
+using BigEntry = Gibbed.Disrupt.FileFormats.Big.Entry<ulong>;
+
+namespace Gibbed.Disrupt.FileFormats
+{
+    /// <summary>
+    /// BigFileV2 handles X360 FAT2 archives (Watch Dogs on Xbox 360).
+    /// FAT2 uses magic 0x46415432 ('FAT2'), version 8, 24-byte entries
+    /// with u64 FNV1a64 hashes (like BigFileV5, not truncated to u32 like BigFileV3).
+    /// </summary>
+    public class BigFileV2 : Big.IArchive<ulong>
+    {
+        public const uint Signature = 0x46415432; // 'FAT2'
+
+        #region Fields
+        private Endian _Endian;
+        private int _Version;
+        private Big.Platform _Platform;
+        private byte _CompressionVersion;
+        private byte _NameHashVersion;
+        private readonly List<BigEntry> _Entries;
+        #endregion
+
+        public BigFileV2()
+        {
+            this._Endian = Endian.Little;
+            this._Entries = new List<BigEntry>();
+        }
+
+        #region Properties
+        public Endian Endian
+        {
+            get { return this._Endian; }
+            set { this._Endian = value; }
+        }
+
+        public int Version
+        {
+            get { return this._Version; }
+            set { this._Version = value; }
+        }
+
+        public Big.Platform Platform
+        {
+            get { return this._Platform; }
+            set { this._Platform = value; }
+        }
+
+        public byte CompressionVersion
+        {
+            get { return this._CompressionVersion; }
+            set { this._CompressionVersion = value; }
+        }
+
+        public byte NameHashVersion
+        {
+            get { return this._NameHashVersion; }
+            set { this._NameHashVersion = value; }
+        }
+
+        public List<BigEntry> Entries => this._Entries;
+        #endregion
+
+        public void Serialize(Stream output)
+        {
+            var endian = this.Endian;
+            var version = this.Version;
+
+            if (version != 8)
+            {
+                throw new FormatException("unsupported version");
+            }
+
+            var platform = this._Platform;
+            var compressionVersion = this._CompressionVersion;
+            var nameHashVersion = this._NameHashVersion;
+
+            if (IsKnownVersion(version, platform, compressionVersion, nameHashVersion) == false)
+            {
+                throw new FormatException("unknown version/platform/CV/NHV combination");
+            }
+
+            output.WriteValueU32(Signature, endian);
+            output.WriteValueS32(version, endian);
+
+            uint flags = 0;
+            flags |= (uint)FromPlatform(platform) << 0;
+            flags |= (uint)compressionVersion << 8;
+            flags |= (uint)nameHashVersion << 16;
+            output.WriteValueU32(flags, endian);
+
+            var entrySerializer = GetEntrySerializer(version);
+            output.WriteValueU32((uint)this.Entries.Count, endian);
+            foreach (var entry in this.Entries)
+            {
+                entrySerializer.Serialize(output, entry, endian);
+            }
+
+            // Localization section — write count 0 (no localization data for X360).
+            output.WriteValueU32(0, endian);
+        }
+
+        public void SerializeNfo(Stream output)
+        {
+            var settings = new XmlWriterSettings
+            {
+                Indent = true,
+                IndentChars = "\t",
+                OmitXmlDeclaration = true
+            };
+
+            using (var writer = XmlWriter.Create(output, settings))
+            {
+                writer.WriteStartElement("Root");
+                writer.WriteStartElement("common");
+
+                foreach (var entry in this.Entries)
+                {
+                    writer.WriteStartElement("File");
+
+                    writer.WriteAttributeString("Path", entry.Name ?? "");
+                    writer.WriteAttributeString("Crc", entry.NameHash.ToString(CultureInfo.InvariantCulture));
+                    writer.WriteAttributeString("FilePosition", entry.Offset.ToString(CultureInfo.InvariantCulture));
+                    writer.WriteAttributeString("FileSize", entry.CompressedSize.ToString(CultureInfo.InvariantCulture));
+                    writer.WriteAttributeString("FileTime", entry.DataHash.ToString(CultureInfo.InvariantCulture));
+
+                    writer.WriteEndElement();
+                }
+
+                writer.WriteEndElement(); // common
+                writer.WriteEndElement(); // Root
+            }
+        }
+
+        public void Deserialize(Stream input)
+        {
+            var magic = input.ReadValueU32(Endian.Little);
+            if (magic != Signature && magic.Swap() != Signature)
+            {
+                throw new FormatException("bad magic");
+            }
+            var endian = magic == Signature ? Endian.Little : Endian.Big;
+
+            var version = input.ReadValueS32(endian);
+            if (version != 8)
+            {
+                throw new FormatException("unsupported version");
+            }
+
+            var flags = input.ReadValueU32(endian);
+            var platform = ToPlatform((byte)(flags & 0xFF));
+            var compressionVersion = (byte)((flags >> 8) & 0xFF);
+            var nameHashVersion = (byte)((flags >> 16) & 0xFF);
+
+            if ((flags & 0xFF000000u) != 0)
+            {
+                throw new FormatException("unknown flags");
+            }
+
+            var entrySerializer = GetEntrySerializer(version);
+
+            var entryCount = input.ReadValueU32(endian);
+            var entries = new List<BigEntry>();
+            for (uint i = 0; i < entryCount; i++)
+            {
+                entrySerializer.Deserialize(input, endian, out var entry);
+                entries.Add(entry);
+            }
+
+            // Localization section (same format as FAT3 V07/V08).
+            try
+            {
+                uint localizationCount = input.ReadValueU32(endian);
+                for (uint i = 0; i < localizationCount; i++)
+                {
+                    var nameLength = input.ReadValueU32(endian);
+                    if (nameLength > 256)
+                    {
+                        throw new FormatException("bad length for localization name");
+                    }
+                    input.Seek(nameLength, SeekOrigin.Current);
+                    input.Seek(8, SeekOrigin.Current); // unknown u64
+                }
+            }
+            catch (Exception e) when (e is FormatException || e is EndOfStreamException)
+            {
+                Console.Error.WriteLine(
+                    "WARNING: failed to parse localization section (version={0}), " +
+                    "proceeding with entries only. ({1})", version, e.Message);
+            }
+
+            this._Endian = endian;
+            this._Version = version;
+            this._Platform = platform;
+            this._CompressionVersion = compressionVersion;
+            this._NameHashVersion = nameHashVersion;
+            this._Entries.Clear();
+            this._Entries.AddRange(entries);
+        }
+
+        private static bool IsKnownVersion(
+            int version,
+            Big.Platform platform,
+            byte compressionVersion,
+            byte nameHashVersion)
+        {
+            var value = MakeKnownVersion(version, platform, compressionVersion, nameHashVersion);
+            return _KnownVersions.Contains(value) == true;
+        }
+
+        public static Big.Platform ToPlatform(byte id)
+        {
+            switch (id)
+            {
+                case 0: return Big.Platform.Any;
+                case 2: return Big.Platform.Xenon;
+            }
+            throw new NotSupportedException("unknown platform");
+        }
+
+        public static byte FromPlatform(Big.Platform platform)
+        {
+            switch (platform)
+            {
+                case Big.Platform.Any: return 0;
+                case Big.Platform.Xenon: return 2;
+            }
+            throw new NotSupportedException("unknown platform");
+        }
+
+        /// <summary>
+        /// Compute CRC64 hash for X360 FAT2 entries.
+        /// X360 uses CRC64 (not FNV1a64 like PC/WD2/WDL), no mask applied.
+        /// Verified against .nfo CRC values: CRC64('generated\\databases\\...') = 0x00040d90a7c30f74.
+        /// </summary>
+        public static ulong ComputeNameHash(string s, Big.TryGetHashOverride<ulong> tryGetOverride)
+        {
+            if (tryGetOverride != null)
+            {
+                throw new InvalidOperationException();
+            }
+            if (s == null || s.Length == 0)
+            {
+                return ulong.MaxValue;
+            }
+            return Hashing.CRC64.Compute(s.ToLowerInvariant());
+        }
+
+        public static bool TryParseNameHash(string s, out ulong value)
+        {
+            return ulong.TryParse(s, NumberStyles.AllowHexSpecifier, CultureInfo.InvariantCulture, out value);
+        }
+
+        public static string RenderNameHash(ulong value)
+        {
+            return string.Format(CultureInfo.InvariantCulture, "{0:X16}", value);
+        }
+
+        ulong Big.IArchive<ulong>.ComputeNameHash(string s, Big.TryGetHashOverride<ulong> tryGetOverride)
+        {
+            return ComputeNameHash(s, tryGetOverride);
+        }
+
+        bool Big.IArchive<ulong>.TryParseNameHash(string s, out ulong value)
+        {
+            return TryParseNameHash(s, out value);
+        }
+
+        string Big.IArchive<ulong>.RenderNameHash(ulong value)
+        {
+            return RenderNameHash(value);
+        }
+
+        public Big.CompressionScheme ToCompressionScheme(byte id, int uncompressedSize)
+        {
+            // X360 FAT2 can have scheme values (e.g. 7) not in CompressionSchemeV5.
+            // For RebuildFileLists, compression scheme is irrelevant — only hashes matter.
+            switch (id)
+            {
+                case 0: return Big.CompressionScheme.None;
+                case 1: return Big.CompressionScheme.LZO1x;
+                case 2: return Big.CompressionScheme.Zlib;
+                case 3: return Big.CompressionScheme.XMemCompress;
+                case 5: return Big.CompressionScheme.LZMA;
+                case 6: return Big.CompressionScheme.LZ4LW;
+                default: return Big.CompressionScheme.None;
+            }
+        }
+
+        public byte FromCompressionSCheme(Big.CompressionScheme compressionScheme)
+        {
+            switch (compressionScheme)
+            {
+                case Big.CompressionScheme.None: return 0;
+                case Big.CompressionScheme.LZO1x: return 1;
+                case Big.CompressionScheme.Zlib: return 2;
+                case Big.CompressionScheme.XMemCompress: return 3;
+                case Big.CompressionScheme.LZMA: return 5;
+                case Big.CompressionScheme.LZ4LW: return 6;
+            }
+            throw new NotSupportedException($"unsupported compression scheme: {compressionScheme}");
+        }
+
+        private static Big.IEntrySerializer<ulong> GetEntrySerializer(int version)
+        {
+            return _EntrySerializers.TryGetValue(version, out var entrySerializer) == true
+                ? entrySerializer
+                : throw new InvalidOperationException("entry serializer is missing");
+        }
+
+        private static readonly ReadOnlyCollection<ulong> _KnownVersions;
+        private static readonly ReadOnlyDictionary<int, Big.IEntrySerializer<ulong>> _EntrySerializers;
+
+        static BigFileV2()
+        {
+            _KnownVersions = new ReadOnlyCollection<ulong>(new ulong[]
+            {
+                // Watch Dogs, Xbox 360 (Xenon)
+                MakeKnownVersion(8, Big.Platform.Any, 0, 0),
+                MakeKnownVersion(8, Big.Platform.Xenon, 5, 0),
+            });
+
+            _EntrySerializers = new ReadOnlyDictionary<int, Big.IEntrySerializer<ulong>>(
+                new Dictionary<int, Big.IEntrySerializer<ulong>>()
+            {
+                [8] = new Big.EntrySerializerV08X360(),
+            });
+        }
+
+        private static ulong MakeKnownVersion(int version, Big.Platform platform, byte compressionVersion, byte nameHashVersion)
+        {
+            ulong value = 0;
+            value |= (uint)version;
+            value |= ((ulong)compressionVersion) << 32;
+            value |= ((ulong)nameHashVersion) << 40;
+            value |= ((ulong)platform) << 48;
+            return value;
+        }
+    }
+}

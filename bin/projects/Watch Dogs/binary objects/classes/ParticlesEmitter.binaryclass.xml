@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ParticlesEmitter.binaryclass.xml
+  Comprehensive emitter class definition extracted from WDL leak (W2EM/W3EM XMLs).
+  Covers PartEmit elements inside ParticlesEmitterLibrary XML.
+  
+  Naming conventions (C++ internal → XML attribute):
+    b* = Boolean, f* = Float, s* = String, hid* = BinHex (hash ID)
+    vector* = Vector3, sel* = Enum, text_* = String (hash text repr)
+    dis* = BinHex (Disrupt internal), snd* = BinHex (sound)
+  
+  KF curve types:
+    Init* = initial value (ValueKF + VariantKF children)
+    Part* = per-particle value (curve="Count(N) BASE64" attribute)
+    Color* = color curve (times + colors base64 attributes)
+  
+  Source: leak/ubisoft/data/Databases/ParticlesEmitters/W2EM_*.xml (155 files)
+          leak/ubisoft/data/Databases/ParticlesEmitters/W3EM_*.xml (WDL)
+          141 unique attributes, 43 child element types
+-->
+<class name="ParticlesEmitterParameters">
+  <!-- ===== Identity ===== -->
+  <field name="Name" type="String"/>
+  <field name="Id" type="BinHex"/>
+  <field name="hidKey" type="BinHex"/>
+  <field name="ParentId" type="BinHex"/>
+  <field name="Active" type="Boolean"/>
+  <field name="ShowEmitterHelper" type="Boolean"/>
+  <field name="AlwaysVisible" type="Boolean"/>
+
+  <!-- ===== Emission Control ===== -->
+  <field name="EmitDuration" type="Float"/>
+  <field name="EmitLoop" type="Boolean"/>
+  <field name="NbInitPart" type="Float"/>
+  <field name="AutoEmissionRate" type="Boolean"/>
+  <field name="InterpEmit" type="Boolean"/>
+  <field name="TweakInitLifeTime" type="Boolean"/>
+  <field name="StartupDelay" type="Float"/>
+  <object name="EmitFlag">
+    <field name="DirFromVolumeSurface" type="Boolean"/>
+    <field name="Boundary" type="Boolean"/>
+    <field name="Smooth" type="Boolean"/>
+    <field name="EvenDistribution" type="Boolean"/>
+    <field name="Type" type="Enum"/>
+  </object>
+
+  <!-- ===== Emission Direction ===== -->
+  <field name="EmitDirAxisAngle" type="Float"/>
+  <field name="degEmitDirAxisAngle" type="Boolean"/>
+  <field name="EmitDirAxisSpread" type="Float"/>
+  <field name="degEmitDirAxisSpread" type="Boolean"/>
+  <field name="EmitDirPlaneAngle" type="Float"/>
+  <field name="degEmitDirPlaneAngle" type="Boolean"/>
+  <field name="EmitDirPlaneSpread" type="Float"/>
+  <field name="degEmitDirPlaneSpread" type="Boolean"/>
+  <field name="EmitDirUseEmitterVelocity" type="Boolean"/>
+  <field name="EmitDirUseEmitterVelocityModifier" type="Float"/>
+
+  <!-- ===== Emission Volume ===== -->
+  <field name="EmitFlag" type="Enum"/>
+  <field name="EmitVolRadius" type="Float"/>
+  <field name="EmitVolHalfSizeX" type="Float"/>
+  <field name="EmitVolHalfSizeY" type="Float"/>
+  <field name="EmitVolHalfSizeZ" type="Float"/>
+  <field name="EvenDistributionSubDivX" type="Float"/>
+  <field name="EvenDistributionSubDivY" type="Float"/>
+  <field name="EvenDistributionSubDivZ" type="Float"/>
+
+  <!-- ===== Emission Distance ===== -->
+  <field name="MinEmitDist" type="Float"/>
+  <field name="MaxEmitDist" type="Float"/>
+  <field name="FadeInEmitDist" type="Float"/>
+  <field name="FadeEmitDist" type="Float"/>
+  <field name="LinearEmitDist" type="Float"/>
+
+  <!-- ===== Transform ===== -->
+  <vector name="PosOffset" type="Vector3"/>
+  <vector name="RotOffset" type="Vector3"/>
+  <field name="degRotOffset" type="Boolean"/>
+  <field name="AddEmitterRotation" type="Boolean"/>
+  <field name="StaticSize" type="Float"/>
+  <field name="AutoStaticSize" type="Boolean"/>
+
+  <!-- ===== Uniform / Mirror ===== -->
+  <field name="UniformSize" type="Boolean"/>
+  <field name="RandomMirrorU" type="Boolean"/>
+  <field name="RandomMirrorV" type="Boolean"/>
+
+  <!-- ===== Distance / Camera Scaling ===== -->
+  <field name="DistanceScalingNear" type="Float"/>
+  <field name="CameraScalingDistance" type="Float"/>
+  <field name="CameraScaling" type="Float"/>
+  <field name="DistanceScalingFarScale" type="Float"/>
+
+  <!-- ===== Visibility ===== -->
+  <field name="EnableDistFade" type="Boolean"/>
+  <field name="MinDist" type="Float"/>
+  <field name="FadeInDist" type="Float"/>
+  <field name="FadeOutDist" type="Float"/>
+  <field name="MaxDist" type="Float"/>
+  <field name="NearFade" type="Boolean"/>
+
+  <!-- ===== Time of Day ===== -->
+  <field name="TimeOfDay" type="Enum"/>
+  <field name="TimeOfDayStartHour" type="Float"/>
+  <field name="TimeOfDayEndHour" type="Float"/>
+
+  <!-- ===== Gravity / Wind / Physics ===== -->
+  <vector name="InitGravityDir" type="Vector3"/>
+  <field name="LocalGravity" type="Boolean"/>
+  <field name="UseWindSimulation" type="Boolean"/>
+  <field name="MinWindSpeed" type="Float"/>
+  <field name="MaxWindSpeed" type="Float"/>
+  <field name="EnablePhysics" type="Boolean"/>
+  <field name="CollisionPostponementPeriod" type="Float"/>
+  <field name="PhysicsGeometry" type="String"/>
+
+  <!-- ===== Weather ===== -->
+  <field name="UseWeatherIntensity" type="Boolean"/>
+
+  <!-- ===== Material / Textures ===== -->
+  <field name="Material" type="String"/>
+  <field name="DiffuseTexture" type="String"/>
+  <field name="NormalTexture" type="String"/>
+  <field name="Model" type="String"/>
+  <field name="BlendType" type="Enum"/>
+  <field name="MaterialType" type="Enum"/>
+  <field name="Masked" type="Boolean"/>
+  <field name="Translucency" type="Boolean"/>
+  <field name="HDRMul" type="Float"/>
+  <field name="AlphaTestValue" type="Float"/>
+  <field name="AlphaDissolve" type="Float"/>
+  <field name="Ambient" type="Boolean"/>
+
+  <!-- ===== Particle Pivot / Tile ===== -->
+  <field name="ParticlePivotX" type="Float"/>
+  <field name="ParticlePivotY" type="Float"/>
+  <field name="TileCountU" type="Float"/>
+  <field name="TileCountV" type="Float"/>
+  <field name="FramePlayOnce" type="Boolean"/>
+  <field name="FrameRandomStart" type="Boolean"/>
+  <field name="FramePerSecondVariant" type="Float"/>
+  <field name="BlendFrames" type="Float"/>
+
+  <!-- ===== Particle Appearance ===== -->
+  <field name="RandomColor" type="Boolean"/>
+  <field name="RandomAlpha" type="Boolean"/>
+  <field name="PartAlphaMin" type="Float"/>
+  <field name="PartAlphaMax" type="Float"/>
+  <field name="ParticleSorting" type="Boolean"/>
+
+  <!-- ===== Soft Particles ===== -->
+  <field name="Soft" type="Boolean"/>
+  <field name="SoftHighQuality" type="Boolean"/>
+  <field name="SoftRange" type="Float"/>
+  <field name="FarSoftDistance" type="Float"/>
+  <field name="FarSoftRange" type="Float"/>
+
+  <!-- ===== Z-Offset ===== -->
+  <field name="ZOffset" type="Float"/>
+
+  <!-- ===== Distortion ===== -->
+  <field name="DistortionTexture" type="String"/>
+  <field name="DistortionStrength" type="Float"/>
+  <field name="DistortionSpeedU" type="Float"/>
+  <field name="DistortionSpeedV" type="Float"/>
+  <field name="DistortionTilingU" type="Float"/>
+  <field name="DistortionTilingV" type="Float"/>
+
+  <!-- ===== Lighting ===== -->
+  <field name="PartLightAffectsFog" type="Boolean"/>
+  <field name="PartLightAffectsEnvironment" type="Boolean"/>
+  <field name="PartLightQuadraticFalloff" type="Boolean"/>
+  <field name="AffectedByEmitterLights" type="Boolean"/>
+  <field name="AffectedByLights" type="Boolean"/>
+  <field name="AffectedBySunlight" type="Boolean"/>
+  <field name="LightingExponent" type="Float"/>
+
+  <!-- ===== Fog / Water ===== -->
+  <field name="VolumetricFog" type="Boolean"/>
+  <field name="WaterDisplacement" type="Boolean"/>
+  <field name="WaterReflection" type="Boolean"/>
+  <field name="WaveSilhouette" type="Boolean"/>
+
+  <!-- ===== Shadow ===== -->
+  <field name="PixelShadowSampling" type="Boolean"/>
+
+  <!-- ===== Tessellation ===== -->
+  <field name="ScreenSpaceTessellation" type="Boolean"/>
+  <field name="TessellationIntensity" type="Float"/>
+
+  <!-- ===== Texture Projection ===== -->
+  <field name="TextureProjection" type="Enum"/>
+
+  <!-- ===== Opacity Compensation ===== -->
+  <field name="OpacityCompensation" type="Boolean"/>
+  <object name="OpacityCompensationIntensity">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- ===== Sound ===== -->
+  <field name="SoundEffectFile" type="String"/>
+  <field name="SoundEffectOnEveryEmit" type="Boolean"/>
+  <field name="SoundEffectOnEveryDeath" type="Boolean"/>
+  <field name="SoundEffectStopFile" type="String"/>
+  <field name="SoundDelay" type="Float"/>
+  <field name="SoundUpdatePosition" type="Boolean"/>
+  <field name="SoundPositionOffset" type="Vector3"/>
+
+  <!-- ===== Rain ===== -->
+  <field name="Rain" type="Boolean"/>
+  <object name="RainToEmission">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- ===== Custom Data ===== -->
+  <field name="CustomDataVersion" type="Float"/>
+
+  <!-- ===== Confetti (W2 only) ===== -->
+  <field name="ConfettiSystem" type="Boolean"/>
+  <field name="ConfettiSystemAirDragMultiplier" type="Float"/>
+  <field name="ConfettiSystemBounceMultiplier" type="Float"/>
+  <field name="ConfettiSystemEmissionDelayMultiplier" type="Float"/>
+  <field name="ConfettiSystemEmissionSpeedMultiplier" type="Float"/>
+  <field name="ConfettiSystemLooping" type="Boolean"/>
+  <field name="ConfettiSystemParticleSize" type="Float"/>
+  <field name="ConfettiSystemTextureSelection" type="Float"/>
+
+  <!-- ===== Flags (nested element) ===== -->
+  <object name="Flags">
+    <field name="Orientation" type="Enum"/>
+    <field name="OffsetWorldSpace" type="Boolean"/>
+    <field name="LocalEmitterSpace" type="Boolean"/>
+    <field name="NoDrawUnderwater" type="Boolean"/>
+    <field name="NoZTest" type="Boolean"/>
+    <field name="Culling" type="Boolean"/>
+    <field name="Censorable" type="Boolean"/>
+    <field name="NoEmitRot" type="Boolean"/>
+  </object>
+
+  <!-- ===== Derived Properties ===== -->
+  <object name="DerivedProperties">
+    <field name="text_psParticlesSystemId" type="String"/>
+    <field name="psParticlesSystemId" type="BinHex"/>
+  </object>
+
+  <!-- ============================================================ -->
+  <!-- ===== KEYFRAME CURVE PARAMETERS (29 types) ================= -->
+  <!-- ============================================================ -->
+  <!-- Each KF can be:                                              -->
+  <!--   Simple: <ValueKF Value="N"/> + <VariantKF Value="N"/>      -->
+  <!--   Curve:  curve="Count(N) BASE64" attribute (float32 pairs) -->
+  <!--   Color:  times="Count(N) BASE64" colors="Count(N) BASE64"  -->
+  <!--   Degree: degValue="1" flag on ValueKF (angles in degrees)  -->
+  <!-- ============================================================ -->
+
+  <!-- Emission Rate -->
+  <object name="EmitRateKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Initial Lifetime -->
+  <object name="InitLifeTimeKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Initial Speed -->
+  <object name="InitSpeedKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Per-Particle Speed -->
+  <object name="PartSpeedKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Initial Size -->
+  <object name="InitSizeKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Per-Particle Size (X, Y, Z) -->
+  <object name="PartSizeKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="PartSizeYKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="PartSizeZKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Initial Angles (X, Y, Z) — degValue="1" = degrees -->
+  <object name="InitAnglesXKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="degValue" type="Boolean"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="InitAnglesYKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="degValue" type="Boolean"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="InitAnglesZKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="degValue" type="Boolean"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Initial Rotation Speed (X, Y, Z) — degValue="1" = degrees -->
+  <object name="InitRotSpeedXKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="degValue" type="Boolean"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="InitRotSpeedYKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="degValue" type="Boolean"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="InitRotSpeedZKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="degValue" type="Boolean"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Per-Particle Rotation Speed -->
+  <object name="PartRotSpeedKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="PartUVRotSpeedKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Initial Gravity Intensity -->
+  <object name="InitGravityIntensityKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Per-Particle Gravity -->
+  <object name="PartGravityKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Initial External Speed Ratio -->
+  <object name="InitExtSpdRatioKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Per-Particle External Speed Ratio -->
+  <object name="PartExtSpdRatioKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Per-Particle Light Parameters -->
+  <object name="PartLightIntensityKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="PartLightFlickeringFreqKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="PartLightFlickeringAmplitudeKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="PartLightFlickeringNoiseKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Color Curves (times + colors base64) -->
+  <object name="InitColorKF">
+    <field name="times" type="BinHex"/>
+    <field name="colors" type="BinHex"/>
+  </object>
+  <object name="PartColorKF">
+    <field name="times" type="BinHex"/>
+    <field name="colors" type="BinHex"/>
+  </object>
+
+  <!-- Alpha Curves -->
+  <object name="InitAlphaKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="PartAlphaKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Animation Frame Rate -->
+  <object name="FramePerSecondKF">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Emit Spring Ratio -->
+  <object name="PartEmitSpringRatioKF">
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- ============================================================ -->
+  <!-- ===== CUSTOM DATA CURVES (8 channels) ====================== -->
+  <!-- ============================================================ -->
+  <!-- Over emitter lifetime (4 channels) -->
+  <object name="CustomDataOverEmitterLifeTimeKFCurve0">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="CustomDataOverEmitterLifeTimeKFCurve1">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="CustomDataOverEmitterLifeTimeKFCurve2">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="CustomDataOverEmitterLifeTimeKFCurve3">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+
+  <!-- Over particle lifetime (4 channels) -->
+  <object name="CustomDataOverParticleLifeTimeKFCurve0">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="CustomDataOverParticleLifeTimeKFCurve1">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="CustomDataOverParticleLifeTimeKFCurve2">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+  <object name="CustomDataOverParticleLifeTimeKFCurve3">
+    <field name="Value" type="Float"/>
+    <field name="Variant" type="Float"/>
+    <field name="curve" type="BinHex"/>
+  </object>
+</class>

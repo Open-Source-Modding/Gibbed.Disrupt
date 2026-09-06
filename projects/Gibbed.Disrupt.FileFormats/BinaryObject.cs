@@ -181,8 +181,8 @@ namespace Gibbed.Disrupt.FileFormats
                 else
                 {
                     output.WriteValueU8(0xFE);
-                    byte offset = (byte)(output.Position - initPos);
-                    output.WriteBytes(new byte[] { offset, 0, 0, 0 });
+                    uint offset = (uint)(output.Position - initPos);
+                    output.WriteValueU32(offset, endian);
                 }
                 i++;
             }

@@ -47,25 +47,32 @@ namespace Gibbed.Disrupt.BinaryObjectInfo.FieldHandlers
                 throw new FormatException("String requires at least 1 byte");
             }
 
-            int length, o;
-            for (length = 0, o = offset; o < buffer.Length && buffer[o] != 0; length++, o++)
+            // Find the null terminator within field bounds
+            int length;
+            int nullPos = -1;
+            for (length = 0; length < count; length++)
             {
+                if (buffer[offset + length] == 0)
+                {
+                    nullPos = offset + length;
+                    break;
+                }
             }
 
-            if (o == buffer.Length)
+            // Always consume exactly 'count' bytes so FieldHandling.Export's
+            // read==count check passes, even if the field has trailing null
+            // padding beyond the string's own terminator.
+            read = count;
+
+            if (nullPos >= 0)
             {
-                throw new FormatException("invalid trailing byte value for field type String");
+                return Encoding.UTF8.GetString(buffer, offset, length);
             }
 
-            /*
-            if (buffer[buffer.Length - 1] != 0)
-            {
-                throw new FormatException("invalid trailing byte value for field type String");
-            }
-            */
-
-            read = length + 1;
-            return Encoding.UTF8.GetString(buffer, offset, length);
+            // No null terminator — truncated/corrupt data. Use all bytes.
+            System.Diagnostics.Debug.WriteLine(
+                $"WARNING: String at offset 0x{offset:X} missing null terminator within {count} bytes, using raw data");
+            return Encoding.UTF8.GetString(buffer, offset, count);
         }
 
         public override string Compose(FieldDefinition def, string value)

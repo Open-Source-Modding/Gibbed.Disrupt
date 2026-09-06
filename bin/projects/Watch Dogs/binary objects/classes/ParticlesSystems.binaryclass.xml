@@ -1,55 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ParticlesSystems.binaryclass.xml
+  Comprehensive particle system class definition from WDL leak (W2FX/W3FX XMLs).
+  Covers PartSys elements inside ParticlesSystemLibrary XML.
+  
+  Structure: PartSys references emitters (PartEmit) with Mod* overrides.
+  The Mod* fields scale/offset emitter properties at the system level.
+  
+  Source: leak/ubisoft/data/Databases/ParticlesSystems/W2FX_*.xml (46 files)
+          leak/ubisoft/data/Databases/ParticlesSystems/W3FX_*.xml (WDL, 97 files)
+          57 unique attributes across PartSys + PartEmit in system context
+-->
 <class name="ParticlesSystemsParameters">
-	<field name="text_psParticlesSystemId" type="String"/>
-	<field name="psParticlesSystemId" type="BinHex"/>
-	<field name="text_psParticlesSystemIdNoHood" type="String"/>
-	<field name="psParticlesSystemIdNoHood" type="BinHex"/>
-	<field name="text_sBoneName" type="String"/>
-	<field name="sBoneName" type="BinHex"/>
-	<field name="vectorBoneRotationOffset" type="Vector3"/>
-	<field name="sndSound" type="BinHex"/>
-	<field name="bScaleAlpha" type="Boolean"/>
-	<field name="bScaleLifeTime" type="Boolean"/>
-	<field name="bScaleSpeedRatio" type="Boolean"/>
-	<field name="bScaleEmitRate" type="Boolean"/>
-	<field name="fMinPlayTime" type="Float"/>
-	<field name="selScalingValueToUse" type="Enum"/>
-    <field name="fMinSpeed" type="Float"/>
-    <field name="vec2MinSpeedTimeRange" type="Vector2"/>
-    <field name="vec2MaxSpeedTimeRange" type="Vector2"/>
-    <field name="vec2MinSpeedDurationRange" type="Vector2"/>
-    <field name="vec2MaxSpeedDurationRange" type="Vector2"/>
-    <field name="bOnlyOnDryAsphalt" type="Boolean"/>
-	<object name="AlphaScaling">
-	    <field name="fAlphaMinValue" type="Float"/>
-	    <field name="fAlphaMaxValue" type="Float"/>
-	    <field name="fMinSpeedValue" type="Float"/>
-	    <field name="fMaxSpeedValue" type="Float"/>
-	</object>
-	<object name="LifeTimeScaling">
-	    <field name="flifeTimeMinValue" type="Float"/>
-	    <field name="flifeTimeMaxValue" type="Float"/>
-	    <field name="fLifeTimeMinSpeedValue" type="Float"/>
-	    <field name="fLifeTimeMaxSpeedValue" type="Float"/>
-	</object>
-	<object name="EmitRateScaling">
-	    <field name="fEmitRateMinValue" type="Float"/>
-	    <field name="fEmitRateMaxValue" type="Float"/>
-	    <field name="fEmitRateSpeedMinValue" type="Float"/>
-	    <field name="fEmitRateSpeedMaxValue" type="Float"/>
-	</object>
-	<object name="SpeedRatioScaling">
-	    <field name="fSpeedRatioMinValue" type="Float"/>
-	    <field name="fSpeedRatioMaxValue" type="Float"/>
-	    <field name="fSpeedRatioSpeedMinValue" type="Float"/>
-	    <field name="fSpeedRatioSpeedMaxValue" type="Float"/>
-	</object>
-	<object name="ConditionList">
-	    <object name="Condition">
-	        <field name="selVariable" type="Enum"/>
-	        <field name="selComparison" type="Enum"/>
-	        <field name="bBoolValue" type="Boolean"/>
-	        <field name="fValue" type="Float"/>
-	    </object>
-	</object>
+  <!-- ===== Identity ===== -->
+  <field name="text_psParticlesSystemId" type="String"/>
+  <field name="psParticlesSystemId" type="BinHex"/>
+  <field name="text_psParticlesSystemIdNoHood" type="String"/>
+  <field name="psParticlesSystemIdNoHood" type="BinHex"/>
+  <field name="text_sBoneName" type="String"/>
+  <field name="sBoneName" type="BinHex"/>
+  <vector name="vectorBoneRotationOffset" type="Vector3"/>
+  <field name="sndSound" type="BinHex"/>
+
+  <!-- ===== Scaling Controls ===== -->
+  <field name="bScaleAlpha" type="Boolean"/>
+  <field name="bScaleLifeTime" type="Boolean"/>
+  <field name="bScaleSpeedRatio" type="Boolean"/>
+  <field name="bScaleEmitRate" type="Boolean"/>
+  <field name="fMinPlayTime" type="Float"/>
+  <field name="selScalingValueToUse" type="Enum"/>
+
+  <!-- ===== Speed Ranges ===== -->
+  <field name="fMinSpeed" type="Float"/>
+  <vector name="vec2MinSpeedTimeRange" type="Vector"/>
+  <vector name="vec2MaxSpeedTimeRange" type="Vector"/>
+  <vector name="vec2MinSpeedDurationRange" type="Vector"/>
+  <vector name="vec2MaxSpeedDurationRange" type="Vector"/>
+  <field name="bOnlyOnDryAsphalt" type="Boolean"/>
+
+  <!-- ===== Scaling Sub-Objects ===== -->
+  <object name="AlphaScaling">
+    <field name="fAlphaMinValue" type="Float"/>
+    <field name="fAlphaMaxValue" type="Float"/>
+    <field name="fMinSpeedValue" type="Float"/>
+    <field name="fMaxSpeedValue" type="Float"/>
+  </object>
+  <object name="LifeTimeScaling">
+    <field name="flifeTimeMinValue" type="Float"/>
+    <field name="flifeTimeMaxValue" type="Float"/>
+    <field name="fLifeTimeMinSpeedValue" type="Float"/>
+    <field name="fLifeTimeMaxSpeedValue" type="Float"/>
+  </object>
+  <object name="EmitRateScaling">
+    <field name="fEmitRateMinValue" type="Float"/>
+    <field name="fEmitRateMaxValue" type="Float"/>
+    <field name="fEmitRateSpeedMinValue" type="Float"/>
+    <field name="fEmitRateSpeedMaxValue" type="Float"/>
+  </object>
+  <object name="SpeedRatioScaling">
+    <field name="fSpeedRatioMinValue" type="Float"/>
+    <field name="fSpeedRatioMaxValue" type="Float"/>
+    <field name="fSpeedRatioSpeedMinValue" type="Float"/>
+    <field name="fSpeedRatioSpeedMaxValue" type="Float"/>
+  </object>
+
+  <!-- ===== Conditions ===== -->
+  <object name="ConditionList">
+    <object name="Condition">
+      <field name="selVariable" type="Enum"/>
+      <field name="selComparison" type="Enum"/>
+      <field name="bBoolValue" type="Boolean"/>
+      <field name="fValue" type="Float"/>
+    </object>
+  </object>
+
+  <!-- ============================================================ -->
+  <!-- ===== SYSTEM-LEVEL EMITTER OVERRIDES (Mod* fields) ========= -->
+  <!-- ============================================================ -->
+  <!-- These appear on PartEmit elements inside PartSys (not in the -->
+  <!-- emitter definition itself). They scale/offset emitter props. -->
+
+  <!-- Emitter Size Overrides -->
+  <object name="SystemPartEmit">
+    <field name="Name" type="String"/>
+    <field name="Id" type="BinHex"/>
+    <field name="text_LibName" type="String"/>
+    <field name="LibName" type="BinHex"/>
+    <field name="EmitterKey" type="BinHex"/>
+    <field name="Active" type="Boolean"/>
+    <field name="ShowEmitterHelper" type="Boolean"/>
+    <vector name="PosOffset" type="Vector3"/>
+    <vector name="RotOffset" type="Vector3"/>
+    <field name="degRotOffset" type="Boolean"/>
+    <field name="StartupDelay" type="Float"/>
+
+    <!-- Multiplier Overrides (scale emitter value by this factor) -->
+    <field name="ModNbParticles" type="Float"/>
+    <field name="ModParticleRate" type="Float"/>
+    <field name="ModParticleLifetime" type="Float"/>
+    <field name="ModParticleSize" type="Float"/>
+    <field name="ModParticleSpeed" type="Float"/>
+    <field name="ModParticleAlpha" type="Float"/>
+    <field name="ModParticleColor" type="Float"/>
+    <field name="ModParticleColorR" type="Float"/>
+    <field name="ModParticleColorG" type="Float"/>
+    <field name="ModParticleColorB" type="Float"/>
+    <field name="ModGravity" type="Float"/>
+    <field name="ModExternalForces" type="Float"/>
+    <field name="ModStartupParticles" type="Float"/>
+    <field name="ModSpawningDuration" type="Float"/>
+    <field name="ModRotationSpeed" type="Float"/>
+    <field name="ModInitialRotation" type="Float"/>
+
+    <!-- Emitter Size Multipliers -->
+    <field name="ModEmitterSizeX" type="Float"/>
+    <field name="ModEmitterSizeY" type="Float"/>
+    <field name="ModEmitterSizeZ" type="Float"/>
+    <field name="ModEmitterVelocity" type="Float"/>
+
+    <!-- Range Overrides (random range added to multiplier) -->
+    <field name="ModRangeStartupDelay" type="Float"/>
+    <field name="ModRangeNbParticles" type="Float"/>
+    <field name="ModRangeParticleRate" type="Float"/>
+    <field name="ModRangeParticleLifetime" type="Float"/>
+    <field name="ModRangeParticleSize" type="Float"/>
+    <field name="ModRangeParticleSpeed" type="Float"/>
+    <field name="ModRangeParticleAlpha" type="Float"/>
+    <field name="ModRangeParticleColor" type="Float"/>
+    <field name="ModRangeParticleColorR" type="Float"/>
+    <field name="ModRangeParticleColorG" type="Float"/>
+    <field name="ModRangeParticleColorB" type="Float"/>
+    <field name="ModRangeGravity" type="Float"/>
+    <field name="ModRangeExternalForces" type="Float"/>
+    <field name="ModRangeStartupParticles" type="Float"/>
+    <field name="ModRangeSpawningDuration" type="Float"/>
+    <field name="ModRangeRotationSpeed" type="Float"/>
+    <field name="ModRangeInitialRotation" type="Float"/>
+    <field name="ModRangeEmitterSizeX" type="Float"/>
+    <field name="ModRangeEmitterSizeY" type="Float"/>
+    <field name="ModRangeEmitterSizeZ" type="Float"/>
+
+    <!-- Kill Controls -->
+    <field name="InstantKill" type="Boolean"/>
+    <field name="KillFlag" type="Enum"/>
+    <field name="KillSpeed" type="Float"/>
+    <field name="MaxWindInfluence" type="Float"/>
+  </object>
 </class>

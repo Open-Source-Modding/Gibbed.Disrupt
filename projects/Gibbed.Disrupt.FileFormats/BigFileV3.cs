@@ -400,6 +400,7 @@ namespace Gibbed.Disrupt.FileFormats
                 MakeKnownVersion(8, Big.Platform.WiiU, 5, 58),
                 // Watch Dogs, PlayStation 4 (Orbis) [2013 beta]
                 MakeKnownVersion(8, Big.Platform.Orbis, 9, 21),
+                MakeKnownVersion(8, Big.Platform.Any, 0, 21),
             });
 
             _EntrySerializers = new ReadOnlyDictionary<int, Big.IEntrySerializer<uint>>(

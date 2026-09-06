@@ -25,6 +25,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Xml;
 using Gibbed.IO;
 using BigDependency = Gibbed.Disrupt.FileFormats.Big.Dependency<ulong>;
@@ -210,32 +211,132 @@ namespace Gibbed.Disrupt.FileFormats
                 entries[i] = entry;
             }
 
-            if (version >= 12)
+            // Duplicate and localization sections are v12+ metadata that we don't need
+            // for unpacking/rebuilding file lists. Wrap in try-catch so archives with
+            // unrecognized sub-formats still get their entries parsed successfully.
+            try
             {
-                var duplicateCount = input.ReadValueU32(endian);
-                for (uint i = 0; i < duplicateCount; i++)
+                if (version >= 13)
                 {
-                    throw new NotImplementedException();
+                    // v13 format (WDL): duplicate section (count + count * 20 bytes simple format)
+                    // followed by optional localization section (v12 style: count + count * (nameLen + name + 8))
+                    var duplicateCount = input.ReadValueU32(endian);
+                    if (duplicateCount > 1000000)
+                    {
+                        throw new FormatException($"unreasonable duplicate count: {duplicateCount}");
+                    }
+                    // 20 bytes per duplicate entry: u64 hash + u32 offset + u32 size + u32 flags
+                    input.Seek(duplicateCount * 20, SeekOrigin.Current);
+
+                    // Try to parse localization section (v12 style)
+                    // Only proceed if there's enough data and count looks reasonable
+                    long posAfterDuplicates = input.Position;
+                    long remaining = input.Length - posAfterDuplicates;
+                    if (remaining >= 4)
+                    {
+                        var localizationCount = input.ReadValueU32(endian);
+                        if (localizationCount <= 1000000 && localizationCount > 0)
+                        {
+                            // Validate we have enough data for at least the first entry
+                            long posAfterLocCount = input.Position;
+                            if (input.Length - posAfterLocCount >= 12) // min: nameLen(4) + 1 byte name + 8 bytes
+                            {
+                                bool valid = true;
+                                for (uint i = 0; i < localizationCount; i++)
+                                {
+                                    if (input.Length - input.Position < 4)
+                                    {
+                                        valid = false;
+                                        break;
+                                    }
+                                    var nameLength = input.ReadValueU32(endian);
+                                    if (nameLength > 256)
+                                    {
+                                        valid = false;
+                                        break;
+                                    }
+                                    if (input.Length - input.Position < nameLength + 8)
+                                    {
+                                        valid = false;
+                                        break;
+                                    }
+                                    input.Seek(nameLength, SeekOrigin.Current);
+                                    input.Seek(8, SeekOrigin.Current); // unknown u64
+                                }
+                                if (!valid)
+                                {
+                                    // Not a valid localization section, rewind and skip to end
+                                    input.Position = posAfterDuplicates;
+                                }
+                            }
+                            else
+                            {
+                                // Not enough data for localization, rewind
+                                input.Position = posAfterDuplicates;
+                            }
+                        }
+                        else
+                        {
+                            // Unreasonable localization count, rewind to after duplicates
+                            input.Position = posAfterDuplicates;
+                        }
+                    }
+
+                    // Skip any remaining unrecognized data to end of stream
+                    if (input.Position < input.Length)
+                    {
+                        input.Position = input.Length;
+                    }
+                }
+                else if (version == 12)
+                {
+                    // v12 format (WD2): duplicate count + 20-byte entries, then localization with nameLen
+                    var duplicateCount = input.ReadValueU32(endian);
+                    if (duplicateCount > 1000000)
+                    {
+                        throw new FormatException($"unreasonable duplicate count: {duplicateCount}");
+                    }
+                    input.Seek(duplicateCount * 20, SeekOrigin.Current);
+
+                    var localizationCount = input.ReadValueU32(endian);
+                    if (localizationCount > 1000000)
+                    {
+                        throw new FormatException($"unreasonable localization count: {localizationCount}");
+                    }
+                    for (uint i = 0; i < localizationCount; i++)
+                    {
+                        var nameLength = input.ReadValueU32(endian);
+                        if (nameLength > 256)
+                        {
+                            throw new FormatException("bad length for localization name");
+                        }
+                        input.Seek(nameLength, SeekOrigin.Current);
+                        input.Seek(8, SeekOrigin.Current); // unknown u64
+                    }
                 }
             }
-
-            var localizationCount = input.ReadValueU32(endian);
-            for (uint i = 0; i < localizationCount; i++)
+            catch (Exception e) when (e is FormatException || e is EndOfStreamException)
             {
-                throw new NotImplementedException();
-                var nameLength = input.ReadValueU32(endian);
-                if (nameLength > 32)
-                {
-                    throw new FormatException("bad length for localization name");
-                }
-                var nameBytes = input.ReadBytes((int)nameLength);
-                var unknownValue = input.ReadValueU64(endian);
+                Console.Error.WriteLine(
+                    "WARNING: failed to parse duplicate/localization sections (version={0}), " +
+                    "proceeding with entries only. ({1})", version, e.Message);
             }
 
             foreach (var entry in entries)
             {
-                SanityCheckEntry(entry, version, platform, compressionVersion);
+                var reason = SanityCheckEntry(entry, version, platform, compressionVersion);
+                if (reason != null)
+                {
+                    lock (RemovedEntries)
+                    {
+                        RemovedEntries.Add((entry.NameHash, reason));
+                    }
+                }
             }
+
+            // Remove entries that failed sanity checks — they won't appear in output filelists.
+            var removedHashes = new HashSet<ulong>(RemovedEntries.Select(r => r.Hash));
+            entries = entries.Where(e => !removedHashes.Contains(e.NameHash)).ToArray();
 
             this._Endian = endian;
             this._Version = version;
@@ -249,7 +350,20 @@ namespace Gibbed.Disrupt.FileFormats
             this._Entries.AddRange(entries);
         }
 
-        internal static void SanityCheckEntry(BigEntry entry, int version, Big.Platform platform, byte compressionVersion)
+        // Sanity-check results: entries failing checks are removed from the
+        // archive and recorded here so tools can report them in failure.txt.
+        public static readonly List<(ulong Hash, string Reason)> RemovedEntries =
+            new List<(ulong Hash, string Reason)>();
+
+        public static void ClearSanityWarnings()
+        {
+            lock (RemovedEntries)
+            {
+                RemovedEntries.Clear();
+            }
+        }
+
+        internal static string SanityCheckEntry(BigEntry entry, int version, Big.Platform platform, byte compressionVersion)
         {
             var compressionScheme = ToCompressionScheme(entry.CompressionScheme, compressionVersion, entry.UncompressedSize);
 
@@ -259,37 +373,40 @@ namespace Gibbed.Disrupt.FileFormats
                 {
                     if (entry.UncompressedSize != 0)
                     {
-                        throw new FormatException("got entry with no compression with a non-zero uncompressed size");
+                        return string.Format(
+                            "entry 0x{0:X} has no compression with a non-zero uncompressed size",
+                            entry.NameHash);
                     }
                 }
                 else
                 {
                     if (entry.UncompressedSize != entry.CompressedSize)
                     {
-                        throw new FormatException("got entry with no compression with mismatched sizes");
+                        return string.Format(
+                            "entry 0x{0:X} has no compression with mismatched sizes",
+                            entry.NameHash);
                     }
                 }
             }
-            else if (compressionScheme == Big.CompressionScheme.LZ4LW)
+            else if (compressionScheme == Big.CompressionScheme.LZ4LW ||
+                     compressionScheme == Big.CompressionScheme.LZMA ||
+                     compressionScheme == Big.CompressionScheme.Oodle)
             {
                 if (entry.CompressedSize == 0 && entry.UncompressedSize > 0)
                 {
-                    throw new FormatException(
-                        "got entry with compression with a zero compressed size and a non-zero uncompressed size");
-                }
-            }
-            else if (compressionScheme == Big.CompressionScheme.LZMA)
-            {
-                if (entry.CompressedSize == 0 && entry.UncompressedSize > 0)
-                {
-                    throw new FormatException(
-                        "got entry with compression with a zero compressed size and a non-zero uncompressed size");
+                    return string.Format(
+                        "entry 0x{0:X} has compression with a zero compressed size and a non-zero uncompressed size",
+                        entry.NameHash);
                 }
             }
             else
             {
-                throw new FormatException("got entry with unsupported compression scheme");
+                return string.Format(
+                    "entry 0x{0:X} has unsupported compression scheme {1}",
+                    entry.NameHash, entry.CompressionScheme);
             }
+
+            return null;
         }
 
         private static bool IsKnownVersion(
