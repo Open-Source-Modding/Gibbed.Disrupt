@@ -40,10 +40,6 @@ namespace Gibbed.Disrupt.Packing
             {
                 output.WriteFromStream(input, entry.CompressedSize);
             }
-            else if (compressionScheme == CompressionScheme.LZO1x)
-            {
-                throw new PlatformNotSupportedException("LZO decompression is not supported on this platform.");
-            }
             else if (compressionScheme == CompressionScheme.Zlib)
             {
                 DecompressZlib(entry, input, output);

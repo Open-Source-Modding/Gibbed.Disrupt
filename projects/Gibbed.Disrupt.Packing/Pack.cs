@@ -112,7 +112,7 @@ namespace Gibbed.Disrupt.Packing
             var options = new OptionSet()
             {
                 { "v|verbose", "be verbose", v => verbose = v != null },
-                { "c|compress", "compress data with LZO1x", v => compress = v != null },
+                { "c|compress", "compress data with LZ4LW (WDL scheme 3)", v => compress = v != null },
                 { "pv|package-version=", "package version", v => version = ParseVersion(v) },
                 { "pt|package-target=", "package platform (default Win64)", v => platform = ParsePlatform(v) },
                 { "nhv|name-hash-version=", "override name hash version (default: platform-based)", v => nameHashVersionOverride = int.Parse(v) },
