@@ -32,7 +32,7 @@ namespace Gibbed.Disrupt.FileFormats
     {
         public static string Modifier(string s)
         {
-            return s.Replace(@"/", @"\");
+            return s.Replace(@"/", @"\").ToLowerInvariant();
         }
 
         public static ProjectData.Project LoadProject(string projectName = null)
