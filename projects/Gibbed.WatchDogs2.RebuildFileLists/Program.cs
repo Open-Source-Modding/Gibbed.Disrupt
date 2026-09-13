@@ -28,7 +28,7 @@ namespace Gibbed.WatchDogs2.RebuildFileLists
     {
         public static void Main(string[] args)
         {
-            Disrupt.Packing.RebuildFileLists<BigFileV5, ulong>.Main(args, "Watch Dogs 2");
+            Disrupt.Packing.RebuildFileLists<BigFileV11, ulong>.Main(args, "Watch Dogs 2");
         }
     }
 }

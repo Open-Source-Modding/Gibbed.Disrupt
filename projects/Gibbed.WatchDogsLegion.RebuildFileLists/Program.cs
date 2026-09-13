@@ -28,7 +28,7 @@ namespace Gibbed.WatchDogsLegion.RebuildFileLists
     {
         public static void Main(string[] args)
         {
-            Disrupt.Packing.RebuildFileLists<BigFileV5, ulong>.Main(args, "Watch Dogs Legion");
+            Disrupt.Packing.RebuildFileLists<BigFileV13, ulong>.Main(args, "Watch Dogs Legion");
         }
     }
 }

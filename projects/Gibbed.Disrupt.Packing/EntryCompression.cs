@@ -46,8 +46,11 @@ namespace Gibbed.Disrupt.Packing
                 }
                 else if (compress == false)
                 {
+                    // Stored (uncompressed): for v13 (WDL) the engine expects
+                    // UncompressedSize == CompressedSize == file length for scheme 0.
+                    // (The reference EncryptedsPatch.fat has us == cs for every stored entry.)
                     entry.CompressionScheme = 0 /* CompressionScheme.None */;
-                    entry.UncompressedSize = 0;
+                    entry.UncompressedSize = (int)input.Length;
                     entry.CompressedSize = (int)input.Length;
                     output.WriteFromStream(input, input.Length);
                 }

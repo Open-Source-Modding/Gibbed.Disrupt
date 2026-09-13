@@ -28,7 +28,7 @@ namespace Gibbed.WatchDogs2.Unpack
     {
         public static void Main(string[] args)
         {
-            Disrupt.Packing.Unpack<BigFileV5, ulong>.Main(args, "Watch Dogs 2");
+            Disrupt.Packing.Unpack<BigFileV11, ulong>.Main(args, "Watch Dogs 2");
         }
     }
 }

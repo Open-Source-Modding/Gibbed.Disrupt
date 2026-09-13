@@ -28,7 +28,7 @@ namespace Gibbed.WatchDogsLegion.Unpack
     {
         public static void Main(string[] args)
         {
-            Disrupt.Packing.Unpack<BigFileV5, ulong>.Main(args, "Watch Dogs Legion");
+            Disrupt.Packing.Unpack<BigFileV13, ulong>.Main(args, "Watch Dogs Legion");
         }
     }
 }

@@ -28,7 +28,7 @@ namespace Gibbed.WatchDogsLegion.Pack
     {
         private static void Main(string[] args)
         {
-            Disrupt.Packing.Pack<BigFileV5, ulong>.Main(args);
+            Disrupt.Packing.Pack<BigFileV13, ulong>.Main(args);
         }
     }
 }

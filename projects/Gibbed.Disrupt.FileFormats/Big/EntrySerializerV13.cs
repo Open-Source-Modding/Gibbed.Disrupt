@@ -42,7 +42,19 @@ namespace Gibbed.Disrupt.FileFormats.Big
 
         public void Serialize(Stream output, Entry<ulong> entry, Endian endian)
         {
-            throw new NotImplementedException();
+            var a = entry.NameHash;
+
+            // offset is 34 bits: bits 2..3 land in the top of b, bits 4+ in c.
+            var b = (uint)(((long)entry.Offset >> 2) & 0x3u) << 30
+                  | (uint)(entry.CompressedSize & 0x3FFFFFFFu);
+            var c = (uint)((long)entry.Offset >> 2);
+            var d = (uint)(entry.UncompressedSize & 0x3FFFFFFFu) << 2
+                  | (uint)(entry.CompressionScheme & 0x3u);
+
+            output.WriteValueU64(a, endian);
+            output.WriteValueU32(b, endian);
+            output.WriteValueU32(c, endian);
+            output.WriteValueU32(d, endian);
         }
 
         public void Deserialize(Stream input, Endian endian, out Entry<ulong> entry)

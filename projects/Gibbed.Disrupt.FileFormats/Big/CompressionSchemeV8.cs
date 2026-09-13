@@ -37,5 +37,17 @@ namespace Gibbed.Disrupt.FileFormats.Big
             }
             throw new NotSupportedException();
         }
+
+        public static byte FromCompressionScheme(CompressionScheme scheme)
+        {
+            switch (scheme)
+            {
+                case CompressionScheme.None: return 0;
+                case CompressionScheme.Oodle: return 1;
+                case CompressionScheme.LZMA: return 2;
+                case CompressionScheme.LZ4LW: return 3;
+            }
+            throw new NotSupportedException();
+        }
     }
 }

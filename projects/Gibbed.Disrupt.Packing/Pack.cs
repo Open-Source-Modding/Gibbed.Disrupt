@@ -107,6 +107,7 @@ namespace Gibbed.Disrupt.Packing
             int? version = null;
             var platform = Big.Platform.Win64;
             int? nameHashVersionOverride = null;
+            int? compressionVersionOverride = null;
 
             var options = new OptionSet()
             {
@@ -115,6 +116,7 @@ namespace Gibbed.Disrupt.Packing
                 { "pv|package-version=", "package version", v => version = ParseVersion(v) },
                 { "pt|package-target=", "package platform (default Win64)", v => platform = ParsePlatform(v) },
                 { "nhv|name-hash-version=", "override name hash version (default: platform-based)", v => nameHashVersionOverride = int.Parse(v) },
+                { "cv|compression-version=", "override compression version (default: platform-based)", v => compressionVersionOverride = int.Parse(v) },
                 { "h|help", "show this message and exit", v => showHelp = v != null },
             };
 
@@ -190,7 +192,7 @@ namespace Gibbed.Disrupt.Packing
             {
                 Version = version.Value,
                 Platform = platform,
-                CompressionVersion = GetCompressionVersionForPlatform(platform),
+                CompressionVersion = compressionVersionOverride.HasValue ? (byte)compressionVersionOverride.Value : GetCompressionVersionForPlatform(platform),
                 NameHashVersion = nameHashVersionOverride.HasValue ? (byte)nameHashVersionOverride.Value : GetNameHashVersionForPlatform(platform),
             };
 
