@@ -10,6 +10,7 @@
 *.userosscache
 *.sln.docstates
 bin/projects/**/files/test*.filelist
+bin/projects/projects
 private/
 
 # AI Files
